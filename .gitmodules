@@ -1,3 +1,6 @@
-[submodule "dist"]
-	path = dist
+[submodule "new/dist"]
+	path = new/dist
+	url = https://github.com/wet-boew/wet-boew-dist.git
+[submodule "old/dist"]
+	path = old/dist
 	url = https://github.com/wet-boew/wet-boew-dist.git
