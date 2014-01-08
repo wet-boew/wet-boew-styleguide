@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Untitled Document</title>
+<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
+<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
+</head>
+<body class="container">
+<ol class="breadcrumb">
+  <li><a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Home</a></li>
+  <li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
+  <li><a href="../index-en.html">Style guide </a></li>
+  <li><a href="index-en.html">Design guide </a></li>
+  <li>Margin proximity </li>
+</ol>
+<h1>Margin proximity <small>Design guide</small></h1>
+<div class="wb-prettify all-pre">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mrgn-lft-md mrgn-rght-md mrgn-tp-md mrgn-bttm-md">
+              <p>Background</p>
+              <ul>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#options">Options</a></li>
+                <li><a href="#reflow">Reflow content around a grid cell</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Related style guide resources</h2>
+        </div>
+        <div class="list-group"><a href="position-en.html" class="list-group-item">Absolute positioning - Design guide </a></div>
+      </div>
+    </div>
+  </div>
+  <h2 id="description">Description</h2>
+  <p>Increase of decrease the proxmity of one object to another by using these classes.  Additionally these classes allow grid and non-grid content to exist in the same row.</p>
+  <h2 id="options">Options</h2>
+  <table class="table table-bordered">
+    <tr>
+      <th scope="col">Top margin </th>
+      <th scope="col">Right margin </th>
+      <th scope="col">Bottom margin </th>
+      <th scope="col">Left margin </th>
+    </tr>
+    <tr>
+      <td><p><code>.mrgn-tp-0</code> = 0px </p>
+        <p><code>.mrgn-tp-sm</code> = 5px </p>
+        <p><code>.mrgn-tp-md</code> = 15px </p>
+        <p><code>.mrgn-tp-lg</code> = 30px </p>
+        <p><code>.mrgn-tp-xl</code> = 50px </p></td>
+      <td><p><code>.mrgn-rght-0</code> = 0px </p>
+        <p><code>.mrgn-rght-sm</code> = 5px </p>
+        <p><code>.mrgn-rght-md</code> = 15px </p>
+        <p><code>.mrgn-rght-lg</code> = 30px </p>
+        <p><code>.mrgn-rght-xl</code> = 50px </p></td>
+      <td><p><code>.mrgn-bttm-0</code> = 0px </p>
+        <p><code>.mrgn-bttm-sm</code> = 5px </p>
+        <p><code>.mrgn-bttm-md</code> = 15px </p>
+        <p><code>.mrgn-bttm-lg</code> = 30px </p>
+        <p><code>.mrgn-bttm-xl</code> = 50px </p></td>
+      <td><p><code>.mrgn-lft-0</code> = 0px </p>
+        <p><code>.mrgn-lft-sm</code> = 5px </p>
+        <p><code>.mrgn-lft-md</code> = 15px </p>
+        <p><code>.mrgn-lft-lg</code> = 30px </p>
+        <p><code>.mrgn-lft-xl</code> = 50px </p></td>
+    </tr>
+  </table>
+  <h2 id="reflow">Reflow content around a grid cell</h2>
+  <p>The <code>mrgn-*-md</code> creates margin of 15px.   Although grids use padding instead of margins, the gutter of a grid is also 15px.   This is important to understand when mixing grids and non-grids in the same row.  In order for the content will reflow around the grid cell, yet have the gutters match, you must apply both the <code>mrgn-lft-md</code> and <code>mrgn-rght-md</code> to the non-grid content.</p>
+  <h3>Example: Grid on right with reflow on left</h3>
+  <div class="row">
+    <div class="col-md-2 pull-right">
+      <div class="well mrgn-bttm-md">
+        <p>Grid cell on right</p>
+      </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md"> This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell!</div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-2 pull-right&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;
+      &lt;p&gt;Grid cell on right&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <h3>Example: Grid on right with reflow on left</h3>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="well mrgn-bttm-md">
+        <p>Grid cell on left</p>
+      </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md"> This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell! This info will will reflow around the bottom of the neighbouring grid cell!</div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;
+      &lt;p&gt;Grid cell on left&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
