@@ -384,7 +384,12 @@
     </div>
   </div>
   <h2 id="columns">List columns</h2>
-  <p>A lists can be spread over 2, 3 or 4 columns using the CSS attribute <code>column-count</code>.</p>
+  <p>A lists can be spread over 2, 3 or 4 columns using the CSS attribute <code>column-count</code>. Since columns are similar to grids, they adhere to the same <a href="grids-en.html#options">breakpoints as grids</a>. Therefore, the classes available are:</p>
+  <ul>
+    <li><code>clmn-2-xs</code>, <code>clmn-2-sm</code>, <code>clmn-2-md</code>, <code>clmn-2-lg</code></li>
+    <li><code>clmn-3-xs</code>, <code>clmn-3-sm</code>, <code>clmn-3-md</code>, <code>clmn-3-lg</code></li>
+    <li><code>clmn-4-xs</code>, <code>clmn-4-sm</code>, <code>clmn-4-md</code>, <code>clmn-4-lg</code></li>
+  </ul>
   <div class="alert alert-danger">
     <h3 class="mrgn-tp-0">Cross-browser compatibility</h3>
     <p>Internet Explorer 9 and below does not support the <code>column-count</code> attribute.  In those browsers the list will linearize as one list in one column.</p>
@@ -414,8 +419,8 @@
 &lt;/ul&gt;</code></pre>
     </div>
     <div class="col-md-3 brdr-lft">
-      <p><code>&lt;ul class=&quot;clmn-2&quot;&gt;</code></p>
-      <ul class="clmn-2">
+      <p><code>&lt;ul class=&quot;clmn-2-sm&quot;&gt;</code></p>
+      <ul class="clmn-2-sm">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -425,7 +430,7 @@
         <li>Item 7</li>
         <li>Item 8</li>
       </ul>
-      <pre><code>&lt;ul class=&quot;clmn-2&quot;&gt;
+      <pre><code>&lt;ul class=&quot;clmn-2-sm&quot;&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
@@ -437,8 +442,8 @@
 &lt;/ul&gt;</code></pre>
     </div>
     <div class="col-md-3 brdr-lft">
-      <p><code>&lt;ul class=&quot;clmn-3&quot;&gt;</code></p>
-      <ul class="clmn-3">
+      <p><code>&lt;ul class=&quot;clmn-3-sm&quot;&gt;</code></p>
+      <ul class="clmn-3-sm">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -448,7 +453,7 @@
         <li>Item 7</li>
         <li>Item 8</li>
       </ul>
-      <pre><code>&lt;ul class=&quot;clmn-3&quot;&gt;
+      <pre><code>&lt;ul class=&quot;clmn-3-sm&quot;&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
@@ -460,8 +465,8 @@
 &lt;/ul&gt;</code></pre>
     </div>
     <div class="col-md-3 brdr-lft">
-      <p><code>&lt;ul class=&quot;clmn-4&quot;&gt;</code></p>
-      <ul class="clmn-4">
+      <p><code>&lt;ul class=&quot;clmn-4-sm&quot;&gt;</code></p>
+      <ul class="clmn-4-sm">
         <li>Item 1</li>
         <li>Item 2</li>
         <li>Item 3</li>
@@ -471,7 +476,7 @@
         <li>Item 7</li>
         <li>Item 8</li>
       </ul>
-      <pre><code>&lt;ul class=&quot;clmn-4&quot;&gt;
+      <pre><code>&lt;ul class=&quot;clmn-4-sm&quot;&gt;
   &lt;li&gt;Item 1&lt;/li&gt;
   &lt;li&gt;Item 2&lt;/li&gt;
   &lt;li&gt;Item 3&lt;/li&gt;
@@ -483,6 +488,28 @@
 &lt;/ul&gt;</code></pre>
     </div>
   </div>
+  <p>You can also multi-class the columns so they adapt to the resolution:</p>
+  <p><code>&lt;ul class=&quot;clmn-2-sm clmn-3-md clmn-4-lg&quot;&gt;</code></p>
+  <ul class="clmn-2-sm clmn-3-md clmn-4-lg">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+  </ul>
+  <pre><code>&lt;ul class=&quot;clmn-2-sm clmn-3-md clmn-4-lg&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
   <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
     <div class="col-md-6">
       <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
