@@ -12,9 +12,9 @@
   <li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
   <li><a href="../index-en.html">Style guide </a></li>
   <li><a href="index-en.html">Design guide </a></li>
-  <li>Alignment</li>
+  <li>Labels</li>
 </ol>
-<h1>Alignment <small>Design guide</small></h1>
+<h1>Labels <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
   <div class="row">
     <div class="col-md-8">
@@ -25,7 +25,7 @@
         <div class="panel-body">
           <ul>
             <li><a href="#description">Description</a></li>
-            <li><a href="#options">Alignment options</a></li>
+            <li><a href="#options">Label options</a></li>
           </ul>
         </div>
       </div>
@@ -35,24 +35,28 @@
         <div class="panel-heading">
           <h2 class="panel-title">Related style guide resources</h2>
         </div>
-        <div class="list-group"><a href="floats-en.html" class="list-group-item">Floats - Design guide </a></div>
+        <div class="list-group"><a href="badges-en.html" class="list-group-item">Badges - Design guide</a></div>
       </div>
     </div>
   </div>
   <h2 id="description">Description</h2>
-  <p>Easily realign text to components with text alignment classes.</p>
-  <h2 id="options">Alignment options</h2>
-  <p>Easily realign text to components with text alignment classes.</p>
-  <p class="text-left">Left aligned text.</p>
-  <p class="text-center">Center aligned text.</p>
-  <p class="text-right">Right aligned text.</p>
-  <div class="mrgn-tp-lg">
-    <pre><code>&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;
-&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;
-&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;
+  <p>(Info goes here)</p>
+  <h2 id="options">Label options</h2>
+  <p>Label options:</p>
+  <span class="label label-default">Default</span> <span class="label label-primary">Primary</span> <span class="label label-success">Success</span> <span class="label label-info">Info</span> <span class="label label-warning">Warning</span> <span class="label label-danger">Danger</span>
+  <pre class="mrgn-tp-md"><code class="html">&lt;span class= &quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class= &quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class= &quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class= &quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class= &quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class= &quot;label label-danger&quot;&gt;Danger&lt;/span&gt;
 </code></pre>
-  </div>
-  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <h3 id="examples">Examples</h3>
+  <p>Some text here <span class="label label-default">New</span></p>
+  <p>Some text here <span class="label label-primary">Updated</span></p>
+  <pre><code>&lt;p&gt;Some text here &lt;span class=&quot;label label-default&quot;&gt;New&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;Some text here &lt;span class=&quot;label label-primary&quot;&gt;Updated&lt;/span&gt;&lt;/p&gt;</code></pre>
+<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
     <div class="col-md-6">
       <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
       <p>(Info goes here)</p>
@@ -62,11 +66,8 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="centre">Centre content blocks </h2>
-  <p>Set an element to <code>display: block</code> and center via <code>margin</code>.</p>
-  <img src="http://placehold.it/140x140" class="img-rounded center-block" alt="A generic square placeholder image with rounded corners">
-  <pre class="mrgn-tp-lg"><code>&lt;img class=&quot;center-block&quot; class=&quot;img-rounded center-block&quot; alt=&quot;...&quot; src=&quot;x.jpg&quot; /&gt;</code></pre>
-  <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+</div>
+<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>
 </body>
 </html>
