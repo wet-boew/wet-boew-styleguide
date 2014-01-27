@@ -17,7 +17,7 @@
 <h1>Images <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 mrgn-bttm-lg">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2 class="panel-title">Table of contents</h2>
@@ -33,36 +33,50 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+      <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Related style guide resources</h2>
+          <h2 class="panel-title">Design guide </h2>
         </div>
-        <div class="list-group"><a href="icons-en.html" class="list-group-item">Icons - Design guide</a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox - Design guide</a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed interface: Carousel - Design guide</a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-picture/data-picture-en.html" class="list-group-item">Data picture - Design guide</a> <a href="../accessibility/images-en.html" class="list-group-item">Images - Accessibility guide</a> <a href="../writing/principals-en.html#image" class="list-group-item">Images - Writing guide</a></div>
+        <div class="list-group"><a href="icons-en.html" class="list-group-item">Icons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-picture/data-picture-en.html" class="list-group-item">Data picture<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Accessibility guide </h2>
+        </div>
+        <div class="list-group"><a href="../accessibility/images-en.html" class="list-group-item">Images<span class="wb-inv"> - Accessibility guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Writing guide </h2>
+        </div>
+        <div class="list-group"><a href="../writing/principals-en.html#image" class="list-group-item">Images<span class="wb-inv"> - Writing guide</span></a></div>
       </div>
     </div>
-  </div>
-  <h2 id="description">Description</h2>
-  <p>An image is a static two dimensional visual artifact that is a type of non-text content classified as <a href="../accessibility/images-en.html#decorative">decorative</a>, <a href="../accessibility/images-en.html#simple">simple</a>, <a href="../accessibility/images-en.html#complex">complex</a>, or an <a href="../accessibility/images-en.html#text">image of text</a>.</p>
-  <h2 id="bordering">Cropping and bordering images</h2>
-  <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
-  <div class="alert alert-warning">
-    <h4>Cross-browser compatibility</h4>
-    <p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
-  </div>
-  <div class="well"> <img src="http://placehold.it/140x140" class="img-rounded" alt="A generic square placeholder image with rounded corners"> <img src="http://placehold.it/140x140" class="img-circle" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible"> <img src="http://placehold.it/140x140" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera"> </div>
-  <pre><code class="html">&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 id="description">Description</h2>
+      <p>An image is a static two dimensional visual artifact that is a type of non-text content classified as <a href="../accessibility/images-en.html#decorative">decorative</a>, <a href="../accessibility/images-en.html#simple">simple</a>, <a href="../accessibility/images-en.html#complex">complex</a>, or an <a href="../accessibility/images-en.html#text">image of text</a>.</p>
+      <h2 id="bordering">Cropping and bordering images</h2>
+      <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+      <div class="alert alert-warning">
+        <h4>Cross-browser compatibility</h4>
+        <p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
+      </div>
+      <div class="well"> <img src="http://placehold.it/140x140" class="img-rounded" alt="A generic square placeholder image with rounded corners"> <img src="http://placehold.it/140x140" class="img-circle" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible"> <img src="http://placehold.it/140x140" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera"> </div>
+      <pre><code class="html">&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
 &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;
 &lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-thumbnail&quot;&gt;
 </code></pre>
-  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-    <div class="col-md-6">
-      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
-    </div>
-    <div class="col-md-6 brdr-lft">
-      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
+      <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
     </div>
   </div>
   <h2 id="overview-responsive-images">Responsive images</h2>
