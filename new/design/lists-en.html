@@ -17,7 +17,7 @@
 <h1>Lists <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 mrgn-bttm-lg">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2 class="panel-title">Table of contents</h2>
@@ -38,36 +38,121 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+      <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Related style guide resources</h2>
+          <h2 class="panel-title">Design guide</h2>
         </div>
-        <div class="list-group"><a href="listgroup-en.html" class="list-group-item">List group - Design guide</a> <a href="pills-en.html" class="list-group-item">Pills - Design guide</a> <a href="buttons-en.html" class="list-group-item">Buttons - Design guide</a> <a href="../writing/principals-en.html#lists" class="list-group-item">List principals - Writing guide</a> <a href="../writing/formatting-en.html#lists" class="list-group-item">List formatting - Writing guide</a></div>
+        <div class="list-group"><a href="listgroup-en.html" class="list-group-item">List group <span class="wb-inv">- Design guide</span></a> <a href="pills-en.html" class="list-group-item">Pills<span class="wb-inv"> - Design guide</span></a> <a href="buttons-en.html" class="list-group-item">Buttons<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Writing guide</h2>
+        </div>
+        <div class="list-group"><a href="../writing/principals-en.html#lists" class="list-group-item">List principals<span class="wb-inv"> - Writing guide</span></a> <a href="../writing/formatting-en.html#lists" class="list-group-item">List formatting<span class="wb-inv"> - Writing guide</span></a></div>
       </div>
     </div>
-  </div>
-  <h2 id="description">Description</h2>
-  <p>There are three list types:</p>
-  <ul>
-    <li> <a href="#unordered">Unordered lists</a> - 
-      A list of items in which the order does <em>not</em> explicitly matter.</li>
-    <li> <a href="#ordered">Ordered lists</a> - A list of items in which the order <em>does</em> explicitly matter.</li>
-    <li> <a href="#descriptionlist">Description lists</a> - A list of terms with their associated descriptions.</li>
-  </ul>
-  <h2 id="default">Default appearance</h2>
-  <p>The default appearance of the three list types are as follows:</p>
-  <div class="row">
-    <div class="col-md-4">
-      <h3 id="unordered">Unordered lists</h3>
-      <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 id="description">Description</h2>
+      <p>There are three list types:</p>
       <ul>
+        <li> <a href="#unordered">Unordered lists</a> - 
+          A list of items in which the order does <em>not</em> explicitly matter.</li>
+        <li> <a href="#ordered">Ordered lists</a> - A list of items in which the order <em>does</em> explicitly matter.</li>
+        <li> <a href="#descriptionlist">Description lists</a> - A list of terms with their associated descriptions.</li>
+      </ul>
+      <h2 id="default">Default appearance</h2>
+      <p>The default appearance of the three list types are as follows:</p>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 id="unordered">Unordered lists</h3>
+          <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+          <div class="mrgn-tp-lg">
+            <pre><code>&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+          </div>
+        </div>
+        <div class="col-md-4 brdr-lft">
+          <h3 id="ordered">Ordered lists</h3>
+          <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+          <ol>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Nulla volutpat aliquam velit
+              <ol>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+              </ol>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ol>
+          <div class="mrgn-tp-lg">
+            <pre><code>&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+          </div>
+        </div>
+        <div class="col-md-4 brdr-lft">
+          <h3 id="descriptionlist">Description lists</h3>
+          <p>A list of terms with their associated descriptions.</p>
+          <dl>
+            <dt>Item 1</dt>
+            <dd>Description of item 1</dd>
+            <dt>Item 2</dt>
+            <dd>Description of item 2</dd>
+            <dt>Item 3</dt>
+            <dd>Description of item 3</dd>
+          </dl>
+          <div class="mrgn-tp-lg">
+            <pre><code>&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
+      <h2 id="unstyled">Unstyled lists</h2>
+      <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+      <ul class="list-unstyled">
         <li>Lorem ipsum dolor sit amet</li>
+        <li>Consectetur adipiscing elit</li>
+        <li>Integer molestie lorem at massa</li>
+        <li>Facilisis in pretium nisl aliquet</li>
         <li>Nulla volutpat aliquam velit
           <ul>
             <li>Phasellus iaculis neque</li>
             <li>Purus sodales ultricies</li>
             <li>Vestibulum laoreet porttitor sem</li>
+            <li>Ac tristique libero volutpat at</li>
           </ul>
         </li>
         <li>Faucibus porta lacus fringilla vel</li>
@@ -75,89 +160,12 @@
         <li>Eget porttitor lorem</li>
       </ul>
       <div class="mrgn-tp-lg">
-        <pre><code>&lt;ul&gt;
+        <pre><code>&lt;ul class=&quot;list-unstyled&quot;&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
       </div>
     </div>
-    <div class="col-md-4 brdr-lft">
-      <h3 id="ordered">Ordered lists</h3>
-      <p>A list of items in which the order <em>does</em> explicitly matter.</p>
-      <ol>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Nulla volutpat aliquam velit
-          <ol>
-            <li>Phasellus iaculis neque</li>
-            <li>Purus sodales ultricies</li>
-            <li>Vestibulum laoreet porttitor sem</li>
-          </ol>
-        </li>
-        <li>Faucibus porta lacus fringilla vel</li>
-        <li>Aenean sit amet erat nunc</li>
-        <li>Eget porttitor lorem</li>
-      </ol>
-      <div class="mrgn-tp-lg">
-        <pre><code>&lt;ol&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
-      </div>
-    </div>
-    <div class="col-md-4 brdr-lft">
-      <h3 id="descriptionlist">Description lists</h3>
-      <p>A list of terms with their associated descriptions.</p>
-      <dl>
-        <dt>Item 1</dt>
-        <dd>Description of item 1</dd>
-        <dt>Item 2</dt>
-        <dd>Description of item 2</dd>
-        <dt>Item 3</dt>
-        <dd>Description of item 3</dd>
-      </dl>
-      <div class="mrgn-tp-lg">
-        <pre><code>&lt;dl&gt;
-  &lt;dt&gt;...&lt;/dt&gt;
-  &lt;dd&gt;...&lt;/dd&gt;
-&lt;/dl&gt;
-</code></pre>
-      </div>
-    </div>
-  </div>
-  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-    <div class="col-md-6">
-      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-      <p>(Info goes here)</p>
-    </div>
-    <div class="col-md-6 brdr-lft">
-      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-      <p>(Info goes here)</p>
-    </div>
-  </div>
-  <h2 id="unstyled">Unstyled lists</h2>
-  <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
-  <ul class="list-unstyled">
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Consectetur adipiscing elit</li>
-    <li>Integer molestie lorem at massa</li>
-    <li>Facilisis in pretium nisl aliquet</li>
-    <li>Nulla volutpat aliquam velit
-      <ul>
-        <li>Phasellus iaculis neque</li>
-        <li>Purus sodales ultricies</li>
-        <li>Vestibulum laoreet porttitor sem</li>
-        <li>Ac tristique libero volutpat at</li>
-      </ul>
-    </li>
-    <li>Faucibus porta lacus fringilla vel</li>
-    <li>Aenean sit amet erat nunc</li>
-    <li>Eget porttitor lorem</li>
-  </ul>
-  <div class="mrgn-tp-lg">
-    <pre><code>&lt;ul class=&quot;list-unstyled&quot;&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
   </div>
   <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
     <div class="col-md-6">

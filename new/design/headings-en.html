@@ -17,7 +17,7 @@
 <h1>Headings <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 mrgn-bttm-lg">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2 class="panel-title">Table of contents</h2>
@@ -27,47 +27,55 @@
             <li><a href="#description">Description</a></li>
             <li><a href="#default">Default appearance </a></li>
             <li><a href="#sizes">Sizes</a></li>
-			<li><a href="#secondary">Secondary text</a></li>
+            <li><a href="#secondary">Secondary text</a></li>
             <li><a href="#colours">Colours</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+      <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Related style guide resources</h2>
+          <h2 class="panel-title">Accessibility guide</h2>
         </div>
-        <div class="list-group"><a href="../accessibility/headings-en.html" class="list-group-item">Headings and page titles - Accessibility guide </a> <a href="../writing/principals-en.html#heading" class="list-group-item">Heading principals- Writing guide</a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting- Writing guide</a></div>
+        <div class="list-group"><a href="../accessibility/headings-en.html" class="list-group-item">Headings and page titles<span class="wb-inv"> - Accessibility guide </span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Writing guide</h2>
+        </div>
+        <div class="list-group"><a href="../writing/principals-en.html#heading" class="list-group-item">Heading principals<span class="wb-inv"> - Writing guide</span></a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting<span class="wb-inv"> - Writing guide</span></a></div>
       </div>
     </div>
-  </div>
-  <h2 id="description">Description</h2>
-  <p>A heading is a short text phrase which is the title for a section of content that immediately follows it. Headings are usually represented visually as enlarged bolded text and are often hierarchical in nature.</p>
-  <h2 id="default">Default appearance</h2>
-  <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
-  <h1>h1 heading</h1>
-  <h2>h2 heading</h2>
-  <h3>h3 heading</h3>
-  <h4>h4 heading</h4>
-  <h5>h5 heading</h5>
-  <h6>h6 heading</h6>
-  <div class="mrgn-tp-lg">
-    <pre><code>&lt;h1&gt;h1 heading&lt;/h1&gt;
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 id="description">Description</h2>
+      <p>A heading is a short text phrase which is the title for a section of content that immediately follows it. Headings are usually represented visually as enlarged bolded text and are often hierarchical in nature.</p>
+      <h2 id="default">Default appearance</h2>
+      <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</p>
+      <h1>h1 heading</h1>
+      <h2>h2 heading</h2>
+      <h3>h3 heading</h3>
+      <h4>h4 heading</h4>
+      <h5>h5 heading</h5>
+      <h6>h6 heading</h6>
+      <div class="mrgn-tp-lg">
+        <pre><code>&lt;h1&gt;h1 heading&lt;/h1&gt;
 &lt;h2&gt;h2 heading&lt;/h2&gt;
 &lt;h3&gt;h3 heading&lt;/h3&gt;
 &lt;h4&gt;h4 heading&lt;/h4&gt;
 &lt;h5&gt;h5 heading&lt;/h5&gt;
 &lt;h6&gt;h6 heading&lt;/h6&gt;
 </code></pre>
-    <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-      <div class="col-md-6">
-        <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-        <p>(Info goes here)</p>
-      </div>
-      <div class="col-md-6 brdr-lft">
-        <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-        <p>(Info goes here)</p>
+        <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+          <div class="col-md-6">
+            <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+            <p>(Info goes here)</p>
+          </div>
+          <div class="col-md-6 brdr-lft">
+            <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+            <p>(Info goes here)</p>
+          </div>
+        </div>
       </div>
     </div>
     <h2 id="sizes">Sizes</h2>
@@ -96,7 +104,7 @@
         <p>(Info goes here)</p>
       </div>
     </div>
-	  <h2 id="secondary">Secondary text</h2>
+    <h2 id="secondary">Secondary text</h2>
     <p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
     <h1>h1 heading <small>Secondary text</small></h1>
     <h2>h2 heading <small>Secondary text</small></h2>

@@ -33,16 +33,17 @@
             <li><a href="#offsetting">Offsetting columns</a></li>
             <li><a href="#nesting">Nesting columns</a></li>
             <li><a href="#column-ordering">Column ordering</a></li>
+            <li><a href="#reflow">Reflowing content around grids</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="col-md-4">
-      <div class="panel panel-default">
+      <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Related style guide resources</h2>
+          <h2 class="panel-title">Design guide</h2>
         </div>
-        <div class="list-group"><a href="position-en.html" class="list-group-item">Absolute positioning - Design guide</a></div>
+        <div class="list-group"><a href="position-en.html" class="list-group-item">Absolute positioning<span class="wb-inv"> - Design guide</span></a> <a href="proximity-en.html" class="list-group-item">Margin proximity<span class="wb-inv"> - Design guide</span></a> <a href="floats-en.html" class="list-group-item">Floats<span class="wb-inv"> - Design guide</span></a></div>
       </div>
     </div>
   </div>
@@ -530,6 +531,204 @@
   &lt;div class=&quot;col-md-3 col-md-pull-9&quot;&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+  </div>
+  <h2 id="reflow"> Reflowing content around grids</h2>
+  <p>Grids create boxes of content, which is typically the desired result.  However, there are times when content needs to reflow around the grids.  The <code>mrgn-*-md</code> creates margin of 15px and it mimics the same gutter on a grid. This is important to understand when mixing grids and non-grids in the same row.  In order for the content will reflow around the grid cell, yet have the gutters match, you must apply both the <code>mrgn-lft-md</code> and <code>mrgn-rght-md</code> to the non-grid content. Also refer to: <a href="proximity-en.html">Margin proximity</a> and <a href="floats-en.html">Floats</a></p>
+  <div class="row">
+    <div class="col-md-6 brdr-rght">
+      <h3>Without reflow: Example 1</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="col-md-6">
+      <h3>With reflow: Example 1</h3>
+      <div class="row">
+        <div class="col-md-4 pull-right">
+          <div class="well mrgn-bttm-md">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="mrgn-lft-md mrgn-rght-md">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  <div class="row mrgn-tp-lg">
+    <div class="col-md-6 brdr-rght">
+      <h3>Without reflow: Example 2</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <div class="col-md-6">
+      <h3>With reflow: Example 2</h3>
+      <div class="row">
+        <div class="col-md-4 pull-left">
+          <div class="well mrgn-bttm-md">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="mrgn-lft-md mrgn-rght-md">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-left&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  <div class="row mrgn-tp-lg">
+    <div class="col-md-6 brdr-rght">
+      <h3>Without reflow: Example 3</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Table of contents</h2>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Related</h2>
+            </div>
+            <div class="list-group"><a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a></div>
+          </div>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;
+    &lt;div class=&quot;panel panel-default&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Table of contents&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;panel panel-info&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Related&lt;/h2&gt;
+      &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;...&lt;/p&gt;</code></pre>
+    </div>
+    <div class="col-md-6">
+      <h3>With reflow: Example 3</h3>
+      <div class="row">
+        <div class="col-md-8 mrgn-bttm-lg">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2 class="panel-title">Table of contents</h2>
+            </div>
+            <div class="panel-body">
+              <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pull-right mrgn-bttm-lg">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">Related</h2>
+            </div>
+            <div class="list-group"><a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a></div>
+          </div>
+        </div>
+        <div class="mrgn-lft-md mrgn-rght-md">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+      </div>
+      <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8 mrgn-bttm-lg&quot;&gt;
+    &lt;div class=&quot;panel panel-default&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Table of contents&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4 pull-right mrgn-bttm-lg&quot;&gt;
+    &lt;div class=&quot;panel panel-info&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Related&lt;/h2&gt;
+      &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
   </div>
   <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>

@@ -17,7 +17,7 @@
 <h1>Tables <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 mrgn-bttm-lg">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2 class="panel-title">Table of contents</h2>
@@ -36,63 +36,77 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+      <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Related style guide resources</h2>
+          <h2 class="panel-title">Design guide </h2>
         </div>
-        <div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html" class="list-group-item">Tables plug-in - Design guide</a> <a href="../accessibility/tables-en.html" class="list-group-item">Tables - Accessibility guide</a> <a href="../writing/principals-en.html#tables" class="list-group-item">Tables - Writing guide</a></div>
+        <div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html" class="list-group-item">Tables plug-in<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Accessibility</h2>
+        </div>
+        <div class="list-group"><a href="../accessibility/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Accessibility guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title">Writing guide</h2>
+        </div>
+        <div class="list-group"><a href="../writing/principals-en.html#tables" class="list-group-item">Tables<span class="wb-inv"> - Writing guide</span></a></div>
       </div>
     </div>
-  </div>
-  <h2 id="description">Description</h2>
-  <p>(Info goes here)</p>
-  <h2 id="default">Default appearance</h2>
-  <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="mrgn-tp-lg">
-    <pre><code>&lt;table class=&quot;table&quot;&gt;
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 id="description">Description</h2>
+      <p>(Info goes here)</p>
+      <h2 id="default">Default appearance</h2>
+      <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mrgn-tp-lg">
+        <pre><code>&lt;table class=&quot;table&quot;&gt;
   ...
 &lt;/table&gt;
 </code></pre>
-  </div>
-  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-    <div class="col-md-6">
-      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
-    </div>
-    <div class="col-md-6 brdr-lft">
-      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
+      </div>
+      <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
     </div>
   </div>
   <h2 id="tables-striped">Striped rows</h2>
