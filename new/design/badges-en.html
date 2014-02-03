@@ -5,6 +5,8 @@
 <title>Untitled Document</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -35,15 +37,15 @@
     <div class="col-md-4">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Design guide</h2>
+          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
         </div>
         <div class="list-group"><a href="labels-en.html" class="list-group-item">Labels<span class="wb-inv"> - Design guide</span></a> <a href="pills-en.html" class="list-group-item">Pills<span class="wb-inv"> - Design guide</span></a></div>
       </div>
     </div>
   </div>
-  <h2 id="description">Description</h2>
+  <h2 class="page-header" id="description">Description</h2>
   <p>Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
-  <h2 id="default">Default badge</h2>
+  <h2 class="page-header" id="default">Default badge</h2>
   <p><a href="#">Inbox <span class="badge">42</span></a> </p>
   <div class="mrgn-tp-lg">
     <pre><code>&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/p&gt;&lt;/a&gt;
@@ -59,13 +61,13 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="collapsing">Self collapsing badges</h2>
+  <h2 class="page-header" id="collapsing">Self collapsing badges</h2>
   <p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty</code> selector) provided no content exists within.</p>
   <div class="alert alert-danger">
     <h3 class="mrgn-tp-0">Cross-browser compatibility</h3>
     <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
   </div>
-  <h2 id="adapting" >Adapting to active nav states</h2>
+  <h2 class="page-header" id="adapting" >Adapting to active nav states</h2>
   <p>Built-in styles are included for placing badges in active states in pill and list navigations.</p>
   <ul class="nav nav-pills">
     <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
