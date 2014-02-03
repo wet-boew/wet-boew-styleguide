@@ -5,6 +5,8 @@
 <title>Untitled Document</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 <style type="text/css">
 
 
@@ -110,18 +112,18 @@
     <div class="col-md-4 pull-right mrgn-bttm-lg">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Design guide</h2>
+          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
         </div>
         <div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/data-ajax/data-ajax-en.html" class="list-group-item">Data ajax<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-inview/data-inview-en.html" class="list-group-item">Data inview<span class="wb-inv"> - Design guide</span></a><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-en.html" class="list-group-item">Details/summary polyfill (expandable/collapsible content)<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html" class="list-group-item">Overlay<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/session-timeout/session-timeout-en.html" class="list-group-item">Session timeout<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-en.html" class="list-group-item">Tabbed Interface<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed Interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/toggle/toggle-en.html" class="list-group-item">Toggle<span class="wb-inv"> - Design guide</span></a></div>
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <h2 id="description">Description</h2>
+      <h2 class="page-header" id="description">Description</h2>
       <p>(Info goes here)</p>
-      <h2 id="responsive">Responsive showing and hiding</h2>
+      <h2 class="page-header" id="responsive">Responsive showing and hiding</h2>
       <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
       <p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. <strong>Responsive utilities are currently only available for block and table toggling.</strong> Use with inline and table elements is currently not supported.</p>
-      <h2 id="responsive-utilities-classes">Available classes</h2>
+      <h2 class="page-header" id="responsive-utilities-classes">Available classes</h2>
       <p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
       <div class="table-responsive">
         <table class="table table-bordered table-striped responsive-utilities">
@@ -286,10 +288,10 @@
           <code>hidden-sm hidden-md</code></span> <span class="visible-sm visible-md">&#10004; Hidden on small and medium<br />
           <code>visible-sm visible-md</code></span> </div>
       </div>
-      <h2 id="invisible">Invisible content for screen readers</h2>
+      <h2 class="page-header" id="invisible">Invisible content for screen readers</h2>
       <p>The <code>wb-invisible</code> class clips content into a one pixel square. It allows you to create links that are descriptive (and compliant), but not visually clutter the page. It is common to use this technique to target assistive technology users. For example, JAWS users hear the information, but the visual user does not hear or see it. The <abbr title="Cascading Style Sheet">CSS</abbr> attribute <code>display:none;</code> does not achieve the same effect, as JAWS ignores this style entirely.</p>
       <pre><code>&lt;a class=&quot;button button-small&quot; href=&quot;#&quot;&gt;1&lt;span class=&quot;wb-invisible&quot;&gt;: Page 1 of search results&lt;/span&gt;&lt;/a&gt;</code></pre>
-      <h2 id="print">Print showing and hiding</h2>
+      <h2 class="page-header" id="print">Print showing and hiding</h2>
       <p>Similar to the regular responsive classes, use these for toggling content for print.</p>
       <div class="table-responsive">
         <table class="table table-bordered table-striped responsive-utilities">

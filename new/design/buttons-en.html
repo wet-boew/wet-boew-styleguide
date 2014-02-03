@@ -5,6 +5,8 @@
 <title>Untitled Document</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -41,21 +43,21 @@
     <div class="col-md-4">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Design guide</h2>
+          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
         </div>
         <div class="list-group"><a href="forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a></div>
       </div>
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title">Accessibility guide</h2>
+          <h2 class="panel-title"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h2>
         </div>
         <div class="list-group"><a href="../accessibility/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Accessibility guide</span></a></div>
       </div>
     </div>
   </div>
-  <h2 id="description">Description</h2>
+  <h2 class="page-header" id="description">Description</h2>
   <p>(Info goes here)</p>
-  <h2 id="default">Default appearance</h2>
+  <h2 class="page-header" id="default">Default appearance</h2>
   <p>The browser will  show certain elements as a button. However, there is often a lack of visual consistency for each button type.  Furthermore, each browser can have a different button default appearance. For example: </p>
   <button type="submit">Button</button>
   <input type="button" value="Input">
@@ -63,7 +65,7 @@
   <pre><code>&lt;button type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
 &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-  <h2 id="buttons-tags">Button basics</h2>
+  <h2 class="page-header" id="buttons-tags">Button basics</h2>
   <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element to create visual consistency..</p>
   <form>
     <a class="btn btn-default" href="#" role="button">Link</a>
@@ -93,7 +95,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="buttons-options">Colour options</h2>
+  <h2 class="page-header" id="buttons-options">Colour options</h2>
   <p>Use any of the available button classes to quickly create a styled button.</p>
   <button type="button" class="btn btn-default">Default</button>
   <button type="button" class="btn btn-primary">Primary</button>
@@ -135,7 +137,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="buttons-sizes">Size options</h2>
+  <h2 class="page-header" id="buttons-sizes">Size options</h2>
   <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
   <p>
     <button type="button" class="btn btn-primary btn-lg">Large button</button>
@@ -182,7 +184,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="buttons-block">Full width buttons</h2>
+  <h2 class="page-header" id="buttons-block">Full width buttons</h2>
   <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
   <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
     <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
@@ -203,7 +205,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="buttons-active">Active state</h2>
+  <h2 class="page-header" id="buttons-active">Active state</h2>
   <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> <code>&lt;button&gt;</code>s should you need to replicate the active state progammatically.</p>
   <h3>Button element</h3>
   <p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
@@ -244,7 +246,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="buttons-disabled">Disabled state</h2>
+  <h2 class="page-header" id="buttons-disabled">Disabled state</h2>
   <p>Make buttons look unclickable by fading them back 50%.</p>
   <h3>Button element</h3>
   <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
@@ -288,7 +290,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="btn-groups">Groups and toolbars</h2>
+  <h2 class="page-header" id="btn-groups">Groups and toolbars</h2>
   <p>Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="needs-solution-en.html">our buttons plugin</a>.</p>
   <div class="alert alert-info">
     <h4>Tooltips &amp; popovers in button groups require special setting</h4>
@@ -507,7 +509,7 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h2 id="btn-dropdowns">Dropdowns</h2>
+  <h2 class="page-header" id="btn-dropdowns">Dropdowns</h2>
   <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
   <div class="alert alert-danger">
     <h4>Plugin dependency</h4>
