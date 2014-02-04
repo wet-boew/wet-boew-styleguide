@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Untitled Document</title>
+<title>Headings and page titles accessibility guide</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -38,22 +36,22 @@
     <div class="col-md-4 pull-right mrgn-bttm-lg">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
+          <h2 class="panel-title">Design guide</h2>
         </div>
-        <div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span></a></div>
+        <div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span> </a></div>
       </div>
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-font text-muted"></span> Writing guide</h2>
+          <h2 class="panel-title">Writing guide</h2>
         </div>
-        <div class="list-group"><a href="../writing/principals-en.html#heading" class="list-group-item">Heading principals<span class="wb-inv"> - Writing guide</span></a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting<span class="wb-inv"> - Writing guide</span></a></div>
+        <div class="list-group"><a href="../writing/principals-en.html#heading" class="list-group-item">Heading principals- Writing guide</a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting- Writing guide</a></div>
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <h2 class="page-header" id="description">Description</h2>
-      <p>A heading is a short text phrase which is the title for a section of content that immediately follows it. Headings are usually represented visually as enlarged bolded text and are often hierarchical in nature.</p>
-      <p>The page title is a short text phrase which identifies the contents of the web page.</p>
-      <h2 class="page-header" id="mk">Heading markup</h2>
+      <h2 id="description">Description</h2>
+      <p><strong>A heading</strong> is a short text phrase which identifies the section of content that immediately follows it.  Heading elements are <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>.</p>
+      <p><strong>The page title</strong> is a short text phrase which identifies the contents of the web page.  The title element is <code>&lt;title&gt;</code>.</p>
+      <h2 id="mk">Headings</h2>
     </div>
   </div>
   <div class="row">
@@ -63,41 +61,33 @@
           <h4 class="panel-title">Related to success criteria</h4>
         </div>
         <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></p>
+          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a><br />
+          <a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></p>
         </div>
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>When content is identified as being a heading, it must be marked up with the <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> elements.</p>
-      <p>When content is identified as NOT being a heading, it must NOT be marked up with the <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> elements.</p>
-      <p>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H42" class="external" rel="external">WCAG 2.0, Technique H42</a></p>
-      <div class="clearfix"></div>
+		<p>When using headings:</p>
+		<ul>
+		  <li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H42" rel="external" title="WCAG 2.0, Technique H42"><big>Identify heading text</big></a> using heading elements (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>).</p>
+				<ul>
+					<li><big>Start</big> at heading element <code>&lt;h1&gt;</code> <em>(recommended)</em>.</li>
+					<li><big>Don't skip</big> heading element levels <small>(e.g <code>&lt;h2&gt;</code>, <code>&lt;h4&gt;</code>)</small> <em>(recommended)</em>.</li>
+				</ul>
+				<p>
+		  </li>
+			 <li><p><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G130" rel="external" title="WCAG 2.0, Technique G130">Use descriptive text</a></big> to <strong>identify and differentiate</strong> the contents of its section from other content on the web page.</p></li>
+	  </ul>
     </div>
   </div>
-  <div class="alert alert-danger">
-    <p><strong>Attention:</strong> When an item has the meaning of a heading, it is insufficient to mark it up with only the <code>&lt;strong&gt;</code> element.  Use the &lt;h1&gt;-&lt;h6&gt; elements.</p>
-  </div>
-  <div class="alert alert-info">
-    <p><strong>Note:</strong> It is strongly recommended to not skip heading levels and to start from level <code>&lt;h1&gt;</code>.</p>
-  </div>
-  <h2 class="page-header" id="dh">Descriptive headings</h2>
-  <div class="row">
-    <div class="col-md-4 pull-right">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">Related to success criteria</h4>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Headings must identify its section of the content.   A heading does not need to be lengthy.  A word, of even a single character, may suffice if it provides an appropriate cue to finding and navigating content.</p>
-      <p>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G130" class="external" rel="external">WCAG 2.0, Technique G130</a></p>
-    </div>
-  </div>
-  <h2 class="page-header" id="dt">Descriptive page titles</h2>
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<div class="alert alert-danger mrgn-tp-lg">
+				<p id="pts"><strong>Important:</strong> Enlarge non-heading text using <strong>only</strong> CSS.  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F43" rel="external" title="WCAG 2.0, Failure F43">Do <strong>not</strong> use heading elements.</a></p>
+			</div>
+		</div>
+	</div>
+  <h2 id="dt">Page titles</h2>
   <div class="row">
     <div class="col-md-4 pull-right">
       <div class="panel panel-default">
@@ -110,16 +100,27 @@
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Every web page requires a page title marked up using the <code>&lt;title&gt;</code> element.  The page title does not need to be unique but it does need to be sufficiently descriptive to identify the contents of the web page among a group of web pages.</p>
-      <p>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G88" class="external" rel="external">WCAG 2.0, Technique G88</a> and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H25" class="external" rel="external">WCAG 2.0, Technique H25</a></p>
+	   <p>When using page titles:</p>
+	     <ul>
+		 	  <li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H25" rel="external" title="WCAG 2.0, Technique H25"><big>Use the <code>&lt;title&gt;</code> element.</big></a></p></li>
+			 <li><p><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G88" rel="external" title="WCAG 2.0, Technique G88">Use descriptive text</a></big> to <strong>identify and differentiate</strong> the contents of the web page from other content of other web pages.</p></li>
+		 </ul>
     </div>
   </div>
-  <h2 class="page-header" id="con">Accessibility considerations</h2>
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="pts"><strong>Note:</strong> It is sufficent for a web application <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html" rel="external" title="WCAG 2.0, Understanding SC 2.4.2">to use only its web application title</a> on all of its web screens.</p>
+			</div>
+		</div>
+	</div>
+
+  <h2 id="con">Accessibility considerations</h2>
   <h3>Cognitive impairments</h3>
   <p>Separate information so it is logically ordered, organized, and consistent. A properly formatted document gives users quick access, and a thorough understanding. This enhances everyone's user experience, not just those with cognitive impairments.</p>
   <h3>Visual impairments</h3>
   <p>Screen readers allow users to jump from heading to heading, as well as navigate between different levels of heading elements. Web pages that are properly structured with <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> headings are much easier to navigate by  screen readers.</p>
-  <h2 class="page-header" id="links">Related WCAG links </h2>
+  <h2 id="links">Related WCAG links </h2>
   <p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criteria: </p>
   <ul>
     <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html" class="external" rel="external">1.3.1 Info and Relationships</a></li>

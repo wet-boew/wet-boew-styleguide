@@ -2,164 +2,158 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Untitled Document</title>
+<title>Colour accessibility guide</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
-  <li><a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Home</a></li>
-  <li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
-  <li><a href="../index-en.html">Style guide </a></li>
-  <li><a href="index-en.html">Accessibility guide </a></li>
-  <li>Colour</li>
-</ol>
+	<li><a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Home</a></li>
+	<li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
+	<li><a href="../index-en.html">Style guide </a></li>
+	<li><a href="index-en.html">Accessibility guide </a></li>
+	<li>Colour</li>
+</ol>	
 <h1>Colour <small>Accessibility guide</small></h1>
-<p>The following summarizes selected techniques from the <a href="http://www.w3.org/TR/WCAG20/" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0</a> for satisfying the most common applicable success criteria related to   this topic.  Additional WCAG 2.0 success criteria, techniques, and   failures not listed here may also be applicable depending on the   content.</p>
+<p>The following summarizes selected techniques from the <a href="http://www.w3.org/TR/WCAG20/" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0</a> for satisfying the most common applicable success criteria related to	 this topic.	Additional WCAG 2.0 success criteria, techniques, and	 failures not listed here may also be applicable depending on the	 content.</p>
 <div class="wb-prettify all-pre">
-  <div class="row">
-    <div class="col-md-8 mrgn-bttm-lg">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 class="panel-title">Table of contents</h2>
-        </div>
-        <ul class="mrgn-tp-md">
-          <li><a href="#description">Description</a></li>
-          <li><a href="#ct">Colour contrast</a></li>
-          <li><a href="#us">Colour use </a></li>
-          <li><a href="#con">Accessibility considerations</a></li>
-          <li><a href="#links">Related WCAG links</a></li>
-          <li><a href="#tools">Tools</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-4 pull-right mrgn-bttm-lg">
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
-        </div>
-        <div class="list-group"><a href="../design/alerts-en.html" class="list-group-item">Alerts<span class="wb-inv"> - Design guide</span></a> <a href="../design/colour-en.html" class="list-group-item">Colour<span class="wb-inv"> - Design guide</span></a> <a href="../design/labels-en.html" class="list-group-item">Labels<span class="wb-inv"> - Design guide</span></a> <a href="../design/panels-en.html" class="list-group-item">Panels<span class="wb-inv"> - Design guide</span></a> <a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a></div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <h2 class="page-header" id="description">Description</h2>
-      <p>Colour is a presentation element on a web page used either for decorative purposes or to convey information.</p>
-      <h2 class="page-header" id="ct">Colour contrast</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="pull-right col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Related to success criteria</h3>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Foreground text must have sufficient colour contrast from the background.  The amount of contrast required is based on the size and weight of the text.  Text size is measured in <a href="#pts">points</a> (instead of pixels).</p>
-      <p><strong>Large size text</strong> requires <strong>4.5:1</strong> colour contrast ratio and is defined as:</p>
-      <ul>
-        <li>Regular text which is 18 points or greater.</li>
-        <li>Bold text which is 14 points or greater.</li>
-      </ul>
-      <p><strong>Small size text</strong> requires <strong>3:1</strong> colour contrast ratio and is defined as:</p>
-      <ul>
-        <li>Regular text which is less than 18 points.</li>
-        <li>Bold text which is less than 14 points.</li>
-      </ul>
-      <p>Colour contrast can be measured by using free software tools listed in the <a href="#links">Related WCAG links</a>.</p>
-      <p>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" class="external" rel="external">WCAG 2.0, Technique G18</a> and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G145" class="external" rel="external">WCAG 2.0, Technique G145</a></p>
-      <div class="alert alert-info mrgn-tp-lg">
-        <p id="pts"><strong>Note:</strong> A point of text is a fixed unit of measurement equivalent to 1/72 of an inch.  Points are used for colour contrast because pixels are a variable unit of measurement that changes according to a user's screen resolution.</p>
-      </div>
-    </div>
-  </div>
-  <h2 class="page-header" id="us">Colour use </h2>
-  <div class="row">
-    <div class="pull-right col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Related to success criteria</h3>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Color</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>When colour is used to convey information, an alternate visual cue or text description is required.</p>
-      <p>The following are common situations where colour conveys information:</p>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>Element</th>
-            <th>Potential issue</th>
-            <th>Correction</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Charts and Graphs</td>
-            <td>Multiple series or values identified by colour.</td>
-            <td><p>Provide a supplementary data table<br />
-                <strong>OR</strong><br />
-                Use pattern shading or  text labels on the chart or graph with a <a href="images-en.html#textdesc">text description</a>.<br />
-              </p></td>
-          </tr>
-          <tr>
-            <td>Forms and User Controls</td>
-            <td>Required fields identified by colour.</td>
-            <td>Provide a supplementary indicator, such as an asterisk (*) on required fields. Explain the meaning of the indicator prior to its usage on the page.</td>
-          </tr>
-          <tr>
-            <td>Links</td>
-            <td>Links identified from regular text by colour.</td>
-            <td>Underline (preferred), italicize, or bold the link.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <h2 class="page-header" id="con">Accessibility considerations</h2>
-  <h3>Visual impairments</h3>
-  <ul>
-    <li>
-      <p>Ensure there is sufficient contrast between textual elements, and background colours or images.</p>
-    </li>
-    <li>
-      <p>Ensure users can see the page even if they have colour deficits, or view it on a black and white screen. If the colour contrast for any colour combination is not significant enough, users with colour deficiencies will have problems seeing the content. It is helpful to determine compliance by using the <a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck color vision  simulator tool (external link)</a> to simulate what the page looks like for users with certain colour  deficiencies.</p>
-      <ul>
-        <li>
-          <p>Individuals classified as totally (uncommon) or partially colour  deficit (more common) can have colour vision deficiencies that are either  acquired or inherited.</p>
-        </li>
-        <li>
-          <p>The difficulty in distinguishing colours is usually between red and green, or between blue and yellow.</p>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  <h2 class="page-header" id="links">Related WCAG links </h2>
-  <p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criteria:</p>
-  <ul>
-    <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Colour</a></li>
-    <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></li>
-  </ul>
-  <p>Web Content Accessibility Guidelines (WCAG) 2.0 Sufficient Techniques: </p>
-  <ul>
-    <li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external">G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text.</a></li>
-    <li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G145" rel="external">G145: Ensuring that a contrast ratio of at least 3:1 exists between text (and images of text) and background behind the text.</a></li>
-  </ul>
-  <h2 class="page-header" id="tools">Tools</h2>
-  <ul>
-    <li><a href="http://www.paciellogroup.com/resources/contrast-analyser.html" rel="external">Contrast Analyser for Windows and Mac</a></li>
-    <li><a href="http://juicystudio.com/services/luminositycontrastratio.php" rel="external">Juicy Studios Luminosity Analyzer</a> </li>
-    <li><a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck Color Vision Simulator Tool</a> </li>
-  </ul>
+	<div class="row">
+		<div class="col-md-8 mrgn-bttm-lg">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Table of contents</h2>
+				</div>
+				<ul class="mrgn-tp-md">
+					<li><a href="#description">Description</a></li>
+					<li><a href="#ct">Colour contrast</a></li>
+					<li><a href="#us">Colour use </a></li>
+					<li><a href="#con">Accessibility considerations</a></li>
+					<li><a href="#links">Related WCAG links</a></li>
+					<li><a href="#tools">Tools</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4 pull-right mrgn-bttm-lg">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title">Design guide</h2>
+				</div>
+				<div class="list-group"><a href="../design/alerts-en.html" class="list-group-item">Alerts<span class="wb-inv"> - Design guide</span></a> <a href="../design/colour-en.html" class="list-group-item">Colour<span class="wb-inv"> - Design guide</span></a> <a href="../design/labels-en.html" class="list-group-item">Labels<span class="wb-inv"> - Design guide</span></a> <a href="../design/panels-en.html" class="list-group-item">Panels<span class="wb-inv"> - Design guide</span></a> <a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="description">Description</h2>
+			<p>Colour is a presentation element on a web page used either for decorative purposes or to convey information.</p>
+			<h2 id="ct">Colour contrast</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pull-right col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Related to success criteria</h3>
+				</div>
+				<div class="panel-body">
+					<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a>
+				</div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>Colour contrast is a ratio calculated using a text's foreground colour against its background colour using <a href="#links">free software tools</a>.</p>
+			<ul>
+				<li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><big><strong>4.5:1</strong> minimum color contrast ratio</big></a> is required for all text.</p></li>
+				<li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><big><strong>3:1</strong> minimum color contrast ratio</big></a> may be used for large text which is at least 18 <a href="#pts">points</a> (or 14 <a href="#pts">points</a> <strong>if bolded)</strong></p></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="pts"><strong>Note:</strong> A point of text is a fixed unit of measurement equivalent to 1/72 of an inch, while pixels is a variable unit of measurement that changes according to a user's screen resolution.</p>
+			</div>
+		</div>
+	</div>
+	<h2 id="us">Colour use </h2>
+	<div class="row">
+		<div class="pull-right col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Related to success criteria</h3>
+				</div>
+				<div class="panel-body">
+					<p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Color</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>When colour is used to convey information, an alternate visual cue or text description is required.</p>
+			<p>The following are common situations where colour conveys information:</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Element</th>
+						<th>Potential issue</th>
+						<th>Correction</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Charts and Graphs</td>
+						<td>Multiple series or values identified by colour.</td>
+						<td><p>Provide a supplementary data table<br />
+								<strong>OR</strong><br />
+								Use pattern shading or	text labels on the chart or graph with a <a href="images-en.html#textdesc">text description</a>.<br />
+							</p></td>
+					</tr>
+					<tr>
+						<td>Forms and User Controls</td>
+						<td>Required fields identified by colour.</td>
+						<td>Provide a supplementary indicator, such as an asterisk (*) on required fields. Explain the meaning of the indicator prior to its usage on the page.</td>
+					</tr>
+					<tr>
+						<td>Links</td>
+						<td>Links identified from regular text by colour.</td>
+						<td>Underline (preferred), italicize, or bold the link.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<h2 id="con">Accessibility considerations</h2>
+	<h3>Visual impairments</h3>
+	<ul>
+		<li>
+			<p>Ensure there is sufficient contrast between textual elements, and background colours or images.</p>
+		</li>
+		<li>
+			<p>Ensure users can see the page even if they have colour deficits, or view it on a black and white screen. If the colour contrast for any colour combination is not significant enough, users with colour deficiencies will have problems seeing the content. It is helpful to determine compliance by using the <a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck color vision	simulator tool (external link)</a> to simulate what the page looks like for users with certain colour	deficiencies.</p>
+			<ul>
+				<li>
+					<p>Individuals classified as totally (uncommon) or partially colour	deficit (more common) can have colour vision deficiencies that are either	acquired or inherited.</p>
+				</li>
+				<li>
+					<p>The difficulty in distinguishing colours is usually between red and green, or between blue and yellow.</p>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<h2 id="links">Related WCAG links </h2>
+	<p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criteria:</p>
+	<ul>
+		<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Colour</a></li>
+		<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></li>
+	</ul>
+	<p>Web Content Accessibility Guidelines (WCAG) 2.0 Sufficient Techniques: </p>
+	<ul>
+		<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external">G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text.</a></li>
+		<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G145" rel="external">G145: Ensuring that a contrast ratio of at least 3:1 exists between text (and images of text) and background behind the text.</a></li>
+	</ul>
+	<h2 id="tools">Tools</h2>
+	<ul>
+		<li><a href="http://www.paciellogroup.com/resources/contrast-analyser.html" rel="external">Contrast Analyser for Windows and Mac</a></li>
+		<li><a href="http://juicystudio.com/services/luminositycontrastratio.php" rel="external">Juicy Studios Luminosity Analyzer</a> </li>
+		<li><a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck Color Vision Simulator Tool</a> </li>
+	</ul>
 </div>
 </body>
 </html>

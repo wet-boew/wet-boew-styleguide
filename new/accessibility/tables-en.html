@@ -5,8 +5,6 @@
 <title>Untitled Document</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -40,7 +38,7 @@
     <div class="col-md-4 pull-right mrgn-bttm-lg">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
+          <h2 class="panel-title">Design guide</h2>
         </div>
         <div class="list-group"><a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html" class="list-group-item">Tables plug-in<span class="wb-inv"> - Design guide</span></a></div>
       </div>
@@ -51,13 +49,15 @@
         <div class="list-group"><a href="../writing/principals-en.html#tables" class="list-group-item">Tables<span class="wb-inv"> - Writing guide</span></a></div>
       </div>
     </div>
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 id="description">Description</h2>
+      <p>Colour is a presentation element on a web page used either for decorative purposes or to convey information.</p>
+      <div class="alert alert-info mrgn-tp-md">
+        <p><strong>Note:</strong> The <code>summary</code> attribute is deprecated in HTML5, see alternatives: <a class="external" href="http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques" rel="external">http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques</a></p>
+      </div>
+      <h2 id="cl">Header and data cell association</h2>
+    </div>
   </div>
-  <h2 class="page-header mrgn-tp-0" id="description">Description</h2>
-  <p>Colour is a presentation element on a web page used either for decorative purposes or to convey information.</p>
-  <div class="alert alert-info mrgn-tp-md">
-    <p><strong>Note:</strong> The <code>summary</code> attribute is deprecated in HTML5, see alternatives: <a class="external" href="http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques" rel="external">http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques</a></p>
-  </div>
-  <h2 class="page-header" id="cl">Header and data cell association</h2>
   <div class="row">
     <div class="pull-right col-md-4">
       <div class="panel panel-default">
@@ -122,7 +122,7 @@
     <p><strong>Note:</strong> The Web Content Accessibility Guidelines (WCAG) 2.0 permit the use of the <code>scope</code> and <code>headers</code> attribute for header and data cell association in complex tables (Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H43" class="external" rel="external">WCAG 2.0, Technique H43</a> and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H63" class="external" rel="external">WCAG 2.0, Technique H63</a>).</p>
     <p>However based on actual testing, assistive technologies do not consistently implement these features and their use often introduces usability problems into a complex table.   As a result, it is strongly recommended that all complex tables be converted to simple tables.</p>
   </div>
-  <h2 class="page-header" id="cx">Complex coding</h2>
+  <h2 id="cx">Complex coding</h2>
   <p>Structuring complex tables:</p>
   <ul>
     <li><a href="http://wet-boew.github.io/wet-boew/demos/tableparser/keycell-techniques.html">Defining a Key Cell</a></li>
@@ -138,7 +138,7 @@
     <li><a href="http://wet-boew.github.io/wet-boew/demos/tableparser/colheader-description-techniques.html">Describing a Column Header Cell</a></li>
     <li><a href="http://wet-boew.github.io/wet-boew/demos/tableparser/layoutcell-techniques.html">Defining a Layout Cell</a></li>
   </ul>
-  <h2 class="page-header" id="mk">Table markup</h2>
+  <h2 id="mk">Table markup</h2>
   <div class="row">
     <div class="pull-right col-md-4">
       <div class="panel panel-default">
@@ -153,9 +153,9 @@
     <div class="mrgn-lft-md mrgn-rght-md">
       <p>When content is tabular data (with associated rows and columns), it must be marked up accordingly using table markup.</p>
       <p>Source: <a href="http://www.w3.org/TR/WCAG20-TECHS/H51" class="external" rel="external">WCAG 2.0, Technique H51</a></p>
-      <h2 class="page-header" id="cl">Use of colour</h2>
+      <h2 id="cl">Use of colour</h2>
       <p>See general web accessibility requirements for <a href="colour-en.html">colour</a>.</p>
-      <h2 class="page-header" id="ex">Examples</h2>
+      <h2 id="ex">Examples</h2>
       <h3>Basic columns</h3>
       <table class="table">
         <caption>
@@ -336,7 +336,7 @@
     </tbody>
   </table>
   <pre><code>&lt;h4&gt;Statement of financial position (unaudited) as of March 31, 2011 <br />(in dollars and percentage)&lt;/h4&gt;<br />&lt;table&gt;<br />	&lt;caption&gt;Expenses&lt;/caption&gt;<br />	&lt;colgroup&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />	&lt;/colgroup&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;&lt;/td&gt;<br />		&lt;th&gt;Dollars (2009)&lt;/th&gt;<br />		&lt;th&gt;Percentage (2009)&lt;/th&gt;<br />		&lt;th&gt;Dollars (2008)&lt;/th&gt;<br />		&lt;th&gt;Percentage (2008)&lt;/th&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Human Resources&lt;/td&gt;<br />		&lt;td&gt;$1,442,421&lt;/td&gt;<br />		&lt;td&gt;14.89%&lt;/td&gt;<br />		&lt;td&gt;$1,524,241&lt;/td&gt;<br />		&lt;td&gt;12.99%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Communications&lt;/td&gt;<br />		&lt;td&gt;$677,325&lt;/td&gt;<br />		&lt;td&gt;6.99%&lt;/td&gt;<br />		&lt;td&gt;$786,533&lt;/td&gt;<br />		&lt;td&gt;6.70%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Compensation&lt;/td&gt;<br />		&lt;td&gt;$1,532,523&lt;/td&gt;<br />		&lt;td&gt;15.82%&lt;/td&gt;<br />		&lt;td&gt;$1,678,235&lt;/td&gt;<br />		&lt;td&gt;14.30%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Information Technology&lt;/td&gt;<br />		&lt;td&gt;$5,361,325&lt;/td&gt;<br />		&lt;td&gt;55.36%&lt;/td&gt;<br />		&lt;td&gt;$6,836,643&lt;/td&gt;<br />		&lt;td&gt;58.27%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Administration&lt;/td&gt;<br />		&lt;td&gt;$437,634&lt;/td&gt;<br />		&lt;td&gt;4.52%&lt;/td&gt;<br />		&lt;td&gt;$563,235&lt;/td&gt;<br />		&lt;td&gt;4.80%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Other&lt;/td&gt;<br />		&lt;td&gt;$233,353&lt;/td&gt;<br />		&lt;td&gt;2.41%&lt;/td&gt;<br />		&lt;td&gt;$344,455&lt;/td&gt;<br />		&lt;td&gt;2.94%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;$9,684,581&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;100.00%&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;$11,733,342&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;100.00%&lt;/strong&gt;&lt;/td&gt;<br />	&lt;/tr&gt;<br />&lt;/table&gt;<br />&lt;table&gt;<br />	&lt;caption&gt;Revenues&lt;/caption&gt;<br />	&lt;colgroup&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />	&lt;/colgroup&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;&lt;/td&gt;<br />		&lt;th&gt;Dollars (2009)&lt;/th&gt;<br />		&lt;th&gt;Percentage (2009)&lt;/th&gt;<br />		&lt;th&gt;Dollars (2008)&lt;/th&gt;<br />		&lt;th&gt;Percentage (2008)&lt;/th&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Administration&lt;/td&gt;<br />		&lt;td&gt;$553,253&lt;/td&gt;<br />		&lt;td&gt;94.15%&lt;/td&gt;<br />		&lt;td&gt;$735,235&lt;/td&gt;<br />		&lt;td&gt;93.13%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;Other&lt;/td&gt;<br />		&lt;td&gt;$34,352&lt;/td&gt;<br />		&lt;td&gt;5.85%&lt;/td&gt;<br />		&lt;td&gt;$54,242&lt;/td&gt;<br />		&lt;td&gt;6.87%&lt;/td&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;$587,605&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;100.00%&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;$789,477&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;100.00%&lt;/strong&gt;&lt;/td&gt;<br />	&lt;/tr&gt;<br />&lt;/table&gt;<br />&lt;table&gt;<br />	&lt;caption&gt;Totals&lt;/caption&gt;<br />	&lt;colgroup&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />		&lt;col /&gt;<br />	&lt;/colgroup&gt;<br />	&lt;tr&gt;<br />		&lt;td&gt;&lt;/td&gt;<br />		&lt;th&gt;2009&lt;/th&gt;<br />		&lt;th&gt;2008&lt;/th&gt;<br />	&lt;/tr&gt;<br />	&lt;tr&gt;<br />		&lt;th&gt;Net cost of operations&lt;/th&gt;<br />		&lt;td&gt;&lt;strong&gt;$9,096,976&lt;/strong&gt;&lt;/td&gt;<br />		&lt;td&gt;&lt;strong&gt;$10,943,865&lt;/strong&gt;&lt;/td&gt;<br />	&lt;/tr&gt;<br />&lt;/table&gt;</code></pre>
-  <h2 class="page-header" id="links">Related Links</h2>
+  <h2 id="links">Related Links</h2>
   <ul>
     <li>
       <p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criterions</p>
@@ -355,14 +355,14 @@
       </ul>
     </li>
   </ul>
-  <h2 class="page-header" id="con">Accessibility considerations</h2>
+  <h2 id="con">Accessibility considerations</h2>
   <h3>Cognitive impairments</h3>
   <p>Keep tables as simple as possible. Unnecessarily complex tables are hard to understand for users who have attention deficit disorder   (ADD), dyslexia (difficulty reading), dyscalculia (difficulty with math), and   learning disabilities in general.</p>
   <h3>Mobility, dexterity and coordination impairments</h3>
   <p>Keep tables simple, and where possible, break them out into separate tables. If a table is long and requires vertical scrolling, then the header row may no   longer be visible when viewing information further down the table. Therefore, users mobility impairments have to navigate back up to the top header,   and then back down again to the content, in order to cross-reference rows with columns.</p>
   <h3>Visual impairments</h3>
   <p>Code tables properly to ensure that screen readers  can navigate through the header and data cells.</p>
-  <h2 class="page-header" id="links">Accessibility resources for tables</h2>
+  <h2 id="links">Accessibility resources for tables</h2>
   <p><a href="http://wet-boew.github.io/wet-boew/demos/tableparser/tbl-simp-en.html">Table Simplification - Optimal Content Examples</a></p>
   <p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criterions:</p>
   <ul>
