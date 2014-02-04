@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Untitled Document</title>
+<title>Forms accessibility guide</title>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -40,22 +38,22 @@
     <div class="col-md-4 pull-right mrgn-bttm-lg">
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h2>
+          <h2 class="panel-title">Accessibility guide</h2>
         </div>
         <div class="list-group"><a href="keyboard-en.html" class="list-group-item">Keyboard and User Controls<span class="wb-inv"> - Accessibility guide</span></a></div>
       </div>
       <div class="panel panel-info">
         <div class="panel-heading">
-          <h2 class="panel-title"><span class="fa fa-code text-muted"></span> Design guide </h2>
+          <h2 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h2>
         </div>
         <div class="list-group"><a href="../design/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a> <a href="../design/buttons-en.html" class="list-group-item">Buttons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html" class="list-group-item">Form validation<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/feedback/feedback-en.html" class="list-group-item">Feedback form<span class="wb-inv"> - Design guide</span></a></div>
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <h2 class="page-header" id="description">Description</h2>
-      <p>A form contains a set of form elements, which are a type <a href="keyboard-en.html">user control</a> that accepts user input.  Form elements are the foundation for nearly all web applications.</p>
-      <h2 class="page-header" id="accessibility">Labels</h2>
-      <h3 id="lb">Associate labels</h3>
+      <h2 id="description" class="page-header">Description</h2>
+      <p class="lead">A form contains a set of form elements, which are <a href="keyboard-en.html">user controls</a> that accepts input.</p>
+	   <p>Form elements are <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code>.</p>
+      <h2 id="accessibility" class="page-header">Labels and Instructions</h2>
     </div>
   </div>
   <div class="row">
@@ -68,6 +66,8 @@
           <ul class="list-unstyled">
             <li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html" rel="external">1.1.1 Non-text Content</a></li>
             <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+            <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></li>
+            <li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-consistent-functionality.html" rel="external">3.2.4 Consistent Identification</a></li>
             <li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html" rel="external">3.3.2 Labels or Instructions</a></li>
             <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html" rel="external">4.1.2 Name, Role, Value</a></li>
           </ul>
@@ -75,74 +75,29 @@
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Every form element (<code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>) must be labeled using <strong>one</strong> of these techniques:</p>
+      <p><big>Associate form elements to labels</big> by setting <strong>either</strong> its:</p>
       <ul>
         <li>
-          <p>Set the form element's <code>id</code> attribute and associate a <code>&lt;label&gt;</code> element by setting its <code>for</code> attribute to the same value. (e.g. <code>&lt;label for="mylabel"&gt;Name:&lt;/label&gt; &lt;input type="text" id="myname"&gt;</code>)</p>
+          <p><code>id</code> attribute to the <code>for</code> value of a <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44" title="WCAG 2.0, Technique H44"><code>&lt;label&gt;</code> element</a> enclosing the label value.</p>
         </li>
         <li>
-          <p>Set the form element's <code>title</code> attribute and add a supplementary visual label, instruction, or adjacent button to explain the form element's purpose.</p>
+          <p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65" title="WCAG 2.0, Technique H65"><code>title</code> attribute</a> to a label value.</p>
         </li>
         <li>
-          <p>Set the form element's <code>value</code> attribute if it is a button <em>(for example, a <code>&lt;button&gt;</code> element or an <code>&lt;input&gt;</code> element with <code>type</code> attribute set to <code>"submit"</code> or <code>"reset"</code>)</em>.</p>
+          <p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G167" title="WCAG 2.0, Technique G167"><code>value</code> attribute</a>, <strong>if it is a button</strong>, to a label value.</p>
         </li>
       </ul>
-      <p><em>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44" rel="external">WCAG 2.0, Technique H44</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65" rel="external">WCAG 2.0, Technique H65</a> and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G167" rel="external">WCAG 2.0, Technique G167</a></em>.</p>
+      <p><big>Use <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G197" rel="external" title="WCAG 2.0, Technique G197">consistent label text</a></big> for all form elements which perform the same function.</p>
+      <p><big>Describe form elements purposes clearly</big> with <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G131" rel="external" title="WCAG 2.0, Technique G131">descriptive label text</a>.</p>
+      <p><big><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html" title="WCAG 2.0, Sufficient Techniques #1">Provide clear instructions</a></big> <em>(with examples, if applicable)</em> for form elements requiring:
+		  <ul>
+		  	<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H90" rel="external" title="WCAG 2.0, Technique H90">mandatory data</a></big> <small><em>(e.g. required fields)</em></small></li>
+			<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G184" rel="external" title="WCAG 2.0, Technique G184">limited set of values</a></big> <small><em>(e.g. numeric or text only, upper and/or lower limits)</em></small></li>
+			<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G89" rel="external" title="WCAG 2.0, Technique G89">expected data format</a></big> <small><em>(e.g. dates, phone numbers, postal codes)</em></small></li>
+		   </ul></p>
     </div>
   </div>
-  <h3 id="ds">Descriptive labels</h3>
-  <div class="row">
-    <div class="pull-right col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">Related to Success Criteria</h4>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Form elements must have descriptive labels that make a form element's purpose clear.</p>
-      <p><em>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G131" class="external" rel="external">WCAG 2.0, Technique G131</a></em></p>
-    </div>
-  </div>
-  <h3 id="cs">Consistent labels</h3>
-  <div class="row">
-    <div class="pull-right col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">Related to Success Criteria</h4>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-consistent-functionality.html" rel="external">3.2.4 Consistent Identification</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Form elements must also be labeled consistently.  Form elements which provide the same function on one or more pages should have a consistent label.</p>
-      <p>For example, a button labeled <em>Go To Chapter 4</em> on one page, and <em>Go To Chapter 5</em> on another is consistent.  However, a button labeled <em>Go To Chapter 4</em> on one page and <em>Open Chapter 5</em> on another is not.</p>
-      <p><em>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G197" class="external" rel="external">WCAG 2.0, Technique G197</a></em></p>
-    </div>
-  </div>
-  <h3 id="is">Instructions</h3>
-  <div class="row">
-    <div class="pull-right col-md-4">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">Related to Success Criteria</h4>
-        </div>
-        <div class="panel-body">
-          <p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html" rel="external">3.3.2 Labels or Instructions</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="mrgn-lft-md mrgn-rght-md">
-      <p>Some form controls require user input data that is mandatory, provided in a specific format, or selected from a set of values.  These instructions must be provided to the user through explanation, expected data formats, or examples  before the form control.</p>
-      <p><em>Source: <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html#minimize-error-cues-techniques-head" rel="external">WCAG 2.0, Success Criterion 3.3.2, Sufficient Techniques #1</a></em></p>
-    </div>
-  </div>
-  <h2 class="page-header" id="err">Error messages</h2>
+  <h2 id="err" class="page-header">Error messages</h2>
   <div class="row">
     <div class="pull-right col-md-4">
       <div class="panel panel-default">
@@ -158,25 +113,29 @@
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>When provided, an error message must:</p>
+      <p>When providing error messages:</p>
       <ul>
         <li>
-          <p>Be provided at the top of the form (when it is server side generated).</p>
-        </li>
-        <li>
-          <p>Indicate the form element containing the error.</p>
-        </li>
-        <li>
-          <p>Indicate the type of error (i.e. missing data, incorrect format, outside of allowed values).</p>
-        </li>
-        <li>
-          <p>Where possible, suggest corrections (unless it would jeopardize the security or purpose of the content).</p>
+          <p><big>Identify</big> the form(s) element affected.</p>
+		</li>
+		<li><big>Explain the error</big> and, if applicable, <strong>how to fix it</strong>:
+		  <ul>
+		  	<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83" rel="external" title="WCAG 2.0, Technique G83">missing data</a></big> <small><em>(e.g. required fields)</em></small></li>
+			<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G84" rel="external" title="WCAG 2.0, Technique G84">outside of allowed values</a></big> <small><em>(e.g. numeric or text only, upper and/or lower limits)</em></small></li>
+			<li><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85" rel="external" title="WCAG 2.0, Technique G85">incorrect format</a></big> <small><em>(e.g. dates, phone numbers, postal codes)</em></small></li>
+		   </ul></p>
         </li>
       </ul>
-      <p><em>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83" rel="external">WCAG 2.0, Technique G83</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G84" rel="external">WCAG 2.0, Technique G84</a>, and <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85" rel="external">WCAG 2.0, Technique G85</a></em></p>
     </div>
   </div>
-  <h2 class="page-header" id="lt">Session time limits</h2>
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="pts"><strong>Note:</strong> For optimal use, it is recommended that error messages appear at the top of the form (when they are server generated).</p>
+			</div>
+		</div>
+	</div>
+  <h2 id="lt" class="page-header">Session time limits</h2>
   <div class="row">
     <div class="pull-right col-md-4">
       <div class="panel panel-default">
@@ -189,31 +148,33 @@
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>When a time limit is present, one of the following is required:</p>
+      <p>When a time limit is present, <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external" title="WCAG 2.0, Success Criterion 2.2.1 Timing Adjustable">a user must be able</a> to <strong>either</strong>:</p>
       <ul>
         <li>
-          <p><strong>Turn off:</strong> The user is allowed to turn off the time limit before encountering it; or</p>
+          <p><big>Turn off</big> the time limit.</p>
         </li>
         <li>
-          <p><strong>Adjust:</strong> The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or</p>
+          <p><big>Adjust</big> the time limit by extending incrementally up to at least ten times the length of the default setting, ensuring:</p>
+		  <ul>
+		  	<li><big>Prompting</big> the user, on each occurence, to adjust the time limit at least 20 seconds before the time expires.</li>
+			</ul>
+        </li>
+		</ul>
+      <p>Turning off or adjusting the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external" title="WCAG 2.0, Success Criterion 2.2.1 Timing Adjustable">time limit is <strong>not</strong> required</a> when the time limit is <strong>either</strong>:</p>
+		<ul>
+        <li>
+          <p><big>Real-time</big> <small><em>(e.g. auctions)</em></small></p>
         </li>
         <li>
-          <p><strong>Extend:</strong> The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or</p>
+          <p><big>Essential to the activity</big> and extending it would invalidate the activity <small><em>(e.g. exams)</em></small></p>
         </li>
         <li>
-          <p><strong>Real-time Exception:</strong> The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or</p>
-        </li>
-        <li>
-          <p><strong>Essential Exception:</strong> The time limit is essential and extending it would invalidate the activity; or</p>
-        </li>
-        <li>
-          <p><strong>20 Hour Exception:</strong> The time limit is longer than 20 hours.</p>
+          <p><big>20 hours or more</big> in length</p>
         </li>
       </ul>
-      <p><em>Source: <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external">WCAG 2.0, Success Criterion 2.2.1 Timing Adjustable</a></em></p>
     </div>
   </div>
-  <h2 class="page-header" id="lg">Legal committments and financial transactions</h2>
+  <h2 id="lg" class="page-header">Legal committments and financial transactions</h2>
   <div class="row">
     <div class="pull-right col-md-4">
       <div class="panel panel-default">
@@ -226,19 +187,25 @@
       </div>
     </div>
     <div class="mrgn-lft-md mrgn-rght-md">
-      <p>When a user submits changes through a web page that cause a legal committment or financial transaction to occur, one of the following is required:</p>
+      <p>When legal committments or financial transactions occur as a result of a user submission, a user must be able to <strong>either</strong>:</p>
       <ul>
         <li>
-          <p>Allow the submission to be reversed.   A time limit for the reversal is permitted provided it is stated on the form.</p>
+          <p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G164" rel="external" title="WCAG 2.0, Technique G164"><big>Reverse</big></a> the submission <small>(or <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G99" rel="external" title="WCAG 2.0, Technique G99">recover</a> the original data)</small>
+		  	<ul>
+				<li><big>Time limits</big> on the reversal are permitted provided it is stated on the form.</li>
+			</ul>
+			</p>
         </li>
         <li>
-          <p>Provide a mechanism to review, confirm, and correct before finalizing the submission.  Check the data for user input errors.</p>
+          <p><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G98" rel="external" title="WCAG 2.0, Technique G98">Review and correct input</a></big> before finalizing the submission.</p>
+        </li>
+        <li>
+          <p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G168" rel="external" title="WCAG 2.0, Technique G168"><big>Confirm</big></a> their intent to finalize the submission.</p>
         </li>
       </ul>
-      <p><em>Source: <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G98" rel="external">WCAG 2.0, Technique G98</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G99" rel="external">WCAG 2.0, Technique G99</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G155" rel="external">WCAG 2.0, Technique G155</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G164" rel="external">WCAG 2.0, Technique G164</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G168" rel="external">WCAG 2.0, Technique G168</a></em></p>
     </div>
   </div>
-  <h2 class="page-header" id="ex">Examples</h2>
+  <h2 id="ex" class="page-header">Examples</h2>
   <h3>Form Field Examples</h3>
   <label for="homeaddress">Home Address:</label>
   <input type="text" name="homeaddress" id="homeaddress" size="60">
@@ -341,7 +308,7 @@
   &lt;input type=&quot;submit&quot; value=&quot;Search&quot; class=&quot;btn btn-primary&quot;&gt;
 &lt;/form&gt;</pre>
   </div>
-  <h2 class="page-header" id="con">Accessibility considerations</h2>
+  <h2 id="con" class="page-header">Accessibility considerations</h2>
   <h3>Cognitive Impairments</h3>
   <p>Formulate questions so that the options are as short as possible. Users can get overwhelmed if they have to choose between several options with large amounts of text.</p>
   <h3>Mobility, Dexterity and Coordination Impairments</h3>
@@ -355,7 +322,7 @@
       <p>Do not use radio buttons, as users with low vision have difficulty determining when a radio button is selected. Additionally, radio buttons introduce multiple form controls into the tab order. This results in extra effort for screen reader users to navigate a form.</p>
     </li>
   </ul>
-  <h2 class="page-header" id="links">Related WCAG links </h2>
+  <h2 id="links" class="page-header">Related WCAG links </h2>
   <p>Web Content Accessibility Guidelines (WCAG) 2.0 Success Criteria: </p>
   <ul>
     <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html" class="external" rel="external">1.1.1 Non-text Content</a></li>
