@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Examples accessibility guide</title>
+<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
+<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
+</head>
+<body class="container">
+<ol class="breadcrumb">
+  <li><a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Home</a></li>
+  <li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
+  <li><a href="../index-en.html">Style guide </a></li>
+  <li><a href="index-en.html">Accessibility guide </a></li>
+  <li>Examples</li>
+</ol>
+<h1>Examples <small>Accessibility guide</small></h1>
+
+<div class="wb-prettify all-pre">
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 class="page-header">Examples</h2>
+
+
+
+  <h3>Form Field Examples</h3>
+  <label for="homeaddress">Home Address:</label>
+  <input type="text" name="homeaddress" id="homeaddress" size="60">
+  <div class="mrgn-tp-lg">
+    <label for="homeprovince">Home Province:</label>
+    <select id="homeprovince" name="homeprovince" size="1">
+      <option value="nl">Newfoundland</option>
+      <option value="ns">Nova Scotia</option>
+      <option value="pe">Prince Edward Island</option>
+      <option value="nb">New Brunswick</option>
+      <option value="qc">Quebec</option>
+      <option value="on">Ontario</option>
+      <option value="mb">Manitoba</option>
+      <option value="sk">Saskatchewan</option>
+      <option value="ab">Alberta</option>
+      <option value="bc">British Columbia</option>
+      <option value="nu">Nunavut</option>
+      <option value="nt">North West Territories</option>
+      <option value="yk">Yukon</option>
+    </select>
+  </div>
+  <div class="mrgn-tp-lg">
+    <fieldset>
+    <legend>Provinces Lived:</legend>
+    <label for="pl_n1">
+    <input type="checkbox" name="livedprovince" id="pl_n1" value="pl_nl">
+    Newfoundland</label>
+    <label for="pl_ns">
+    <input type="checkbox" name="livedprovince" id="pl_ns" value="pl_ns">
+    Nova Scotia</label>
+    <label for="pl_pe">
+    <input type="checkbox" name="livedprovince" id="pl_pe" value="pl_pe">
+    Prince Edward Island</label>
+    <label for="pl_nb">
+    <input type="checkbox" name="livedprovince" id="pl_nb" value="pl_nb">
+    New Brunswick</label>
+    <label for="pl_qc">
+    <input type="checkbox" name="livedprovince" id="pl_qc" value="pl_qc">
+    Quebec</label>
+    <label for="pl_on">
+    <input type="checkbox" name="livedprovince" id="pl_on" value="pl_on">
+    Ontario</label>
+    <label for="pl_mb">
+    <input type="checkbox" name="livedprovince" id="pl_mb" value="pl_mb">
+    Manitoba</label>
+    <label for="pl_sk">
+    <input type="checkbox" name="livedprovince" id="pl_sk" value="pl_sk">
+    Saskatchewan</label>
+    <label for="pl_ab">
+    <input type="checkbox" name="livedprovince" id="pl_ab" value="pl_ab">
+    Alberta</label>
+    <label for="pl_bc">
+    <input type="checkbox" name="livedprovince" id="pl_bc" value="pl_bc">
+    British Columbia</label>
+    <label for="pl_nu">
+    <input type="checkbox" name="livedprovince" id="pl_nu" value="pl_nu">
+    Nunavut</label>
+    <label for="pl_nt">
+    <input type="checkbox" name="livedprovince" id="pl_nt" value="pl_nt">
+    North West Territories</label>
+    <label for="pl_yk">
+    <input type="checkbox" name="livedprovince" id="pl_yk" value="pl_yk">
+    Yukon</label>
+    </fieldset>
+    <pre><code>To follow</code></pre>
+  </div>
+  <div class="mrgn-tp-lg">
+    <label for="searchTerm">Search for:</label>
+    <input id="searchTerm" type="text" size="30" value="" name="searchTerm">
+    <select title="Search in" id="scope">
+      <option value="books">Books</option>
+      <option value="music">Music</option>
+
+      <option value="software">Software</option>
+    </select>
+  </div>
+  <div class="mrgn-tp-lg">
+    <label for="comments">Comments:</label>
+    <textarea name="comments" cols="65" rows="3" id="comments"></textarea>
+  </div>
+  <h3>Required data, format, and values</h3>
+  <p>See the <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html">form validation</a> project.</p>
+  <h3>Search box</h3>
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="search" class="wb-invisible">Search</label>
+      <input type="text" id="search" class="form-control">
+    </div>
+    <input type="submit" value="Search" class="btn btn-primary">
+  </form>
+
+
+
+      <div class="alert alert-info">
+        <h3 class="mrgn-tp-0">Example</h3>
+        <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor.gif"  alt=""> </div>
+    </div>
+
+      <div class="alert alert-info">
+        <h3 class="mrgn-tp-0">Example</h3>
+        <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg"  alt="The RCMP musical ride performing, an example of a simple image"> </div>
+    </div>
+
+      <div class="alert alert-info">
+        <h3 class="mrgn-tp-0">Examples</h3>
+        <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-cplx.jpg" alt="A bar graph, pie chart, and flow chart, which are all examples of complex images."> </div>
+    </div>
+
+      <div class="alert alert-info">
+        <h3 class="mrgn-tp-0">Example</h3>
+        <h3><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-txt-en.jpg" alt="This is an example of an image of text"> </h3>
+      </div>
+
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 1</h4>
+        <h4><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-news-nouvelles.gif" width="40" height="35" alt=""> News</h4>
+        <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-lin.gif" width="200" height="12" alt="">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 2</h4>
+        <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-clr.png" width="16" height="16" alt=""> <a href="#">Pick A Colour</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 3</h4>
+        <p class="media"><span class="pull-left"><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor-photo.jpg" width="125" height="120" alt="" class="media-object"></span>(An image with no relationship to other content  can be deemed decorative because it serves only an aesthetic purpose, provides no information, and has no functionality).</p>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 1</h4>
+        <p class="media"><span class="pull-left"><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor-photo.jpg" width="125" height="120" alt="Hand writing with pen" class="media-object"></span>(The image of the hand writing with a pen may also be used in a non-decorative context as a simple image.  In this case, it is being referenced directly and is related to the context of this paragraph.)</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 2</h4>
+        <p><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg" alt="The RCMP musical ride performing"></p>
+        <p><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg" alt="The RCMP musical ride performing"></p>
+        <p><strong>Caption:</strong> The RCMP musical ride performing at the Sunset Ceremonies in Ottawa</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info">
+        <h4>Example 3</h4>
+        <p><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl-dog-chien.jpg" alt="Two puppies"></p>
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <div class="alert alert-info">
+        <h4>Example 1</h4>
+        <p><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-pie-en.jpg" width="320" height="251" alt="Pie chart of favourite movie genres in Mrs. Smyth's Film class.  Data table follows."></p>
+        <table class="table mrgn-tp-md">
+          <caption>
+          Figure 5. Favourite movie genres in Mrs. Smyth's Film class
+          </caption>
+          <tr>
+            <th>Genre</th>
+            <th>Percentage</th>
+          </tr>
+          <tr>
+            <td>Comedy</td>
+            <td>27%</td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td>18%</td>
+          </tr>
+          <tr>
+            <td>Romance</td>
+            <td>14%</td>
+          </tr>
+          <tr>
+            <td>Drama</td>
+            <td>14%</td>
+          </tr>
+          <tr>
+            <td>Horror</td>
+            <td>11%</td>
+          </tr>
+          <tr>
+            <td>Foreign</td>
+            <td>8%</td>
+          </tr>
+          <tr>
+            <td>Science fiction</td>
+            <td>8%</td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="alert alert-info">
+        <h4 id="org">Example 2</h4>
+        <p><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-org-en.jpg" alt="Example organizational chart. Description follows." class="img-responsive"></p>
+        <p class="text-center"><a href="examples-images-textdesc-en.html">Text Description of Image</a></p>
+      </div>
+    </div>
+
+    <h3>Link text</h3>
+    <p><a href="#">Current routes at Boulders Climbing Gym</a></p>
+    <h2 class="page-header">Link text and images</h2>
+    <p><a href="#"><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/sport.gif" alt="Current routes at Boulders Climbing Gym" class="image-actual"></a></p>
+    <p><a href="#"><img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/sport.gif" alt="" class="image-actual"> Current routes at Boulders Climbing Gym</a></p>
+    <p><a href="#">Feedback <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/yes-oui.gif" alt="Response received icon" class="image-actual"></a></p>
+    <p><a href="#">Woodend Music Festival Program <img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/pdf.gif" alt="PDF format" class="image-actual"></a></p>
+    <h3>Link text and enclosing sentence</h3>
+    <p>For more information about this topic, <a href="#">click here</a></p>
+    <p>The Smallville Times <a href="#">reports that</a> the School Board chose a 2007 school calendar that starts on August 27."</p>
+    <h3>Link text and title attribute</h3>
+    <p><a href="#" title="Read more about failed elephant evacuation">Evacuation Crumbles Under Jumbo load</a></p>
+    <h3>Link text and enclosing list item</h3>
+    <ul>
+      <li>Check out the video report for last year's <a href="#">National Folk Festival</a>.</li>
+    </ul>
+    <h3>Link text and enclosing paragraph</h3>
+    <h4>The final 15</h4>
+    <p>Coming soon to a town near you...the final 15 in the National Folk Festival lineup. <a href="#">[Read more...]</a></p>
+    <h3>Link text and preceding heading</h3>
+    <h4>Annual Report 2006-2007</h4>
+    <p><a href="#">(HTML)</a>&#160;<a href="#">(PDF)</a>&#160;<a href="#">(RTF)</a></p>
+    <h3>Link text and parent list item</h3>
+    <ul>
+      <li>Annual Report 2005-2006
+        <ul>
+          <li><a href="#">(HTML)</a></li>
+          <li><a href="#">(PDF)</a></li>
+          <li><a href="#">(RTF)</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Link text and table cells</h3>
+    <table class="table">
+      <tr>
+        <td></td>
+        <th>National</th>
+      </tr>
+      <tr>
+        <th>Economy cars</th>
+        <td><a href="#">$67/day</a></td>
+      </tr>
+    </table>
+
+  <h3>Quotations, Same Natural Human Language</h3>
+  <p><strong>Short Quotation (Inline):</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elementum, "<q>nisl et aliquam volutpat, orci metus egestas leo, pulvinar varius justo tellus at quam.</q>" Aliquam erat volutpat. Duis feugiat est tempor diam.</p>
+  <pre><code>&lt;p&gt;&lt;strong&gt;Short Quotation (Inline):&lt;/strong&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing <br />elit. Sed elementum, &amp;quot;&lt;q&gt;nisl et aliquam volutpat, orci metus egestas leo, pulvinar varius <br />justo tellus at quam.&lt;/q&gt;&amp;quot; Aliquam erat volutpat. Duis feugiat est tempor diam.&lt;/p&gt;</code></pre>
+  <blockquote><strong>Long Quotation (Block):</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elementum, nisl et aliquam volutpat, orci metus egestas leo, pulvinar varius justo tellus at quam.</blockquote>
+  <pre><code>&lt;blockquote&gt;&lt;strong&gt;Long Quotation (Block):&lt;/strong&gt; <br />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elementum, nisl et aliquam volutpat, <br />orci metus egestas leo, pulvinar varius justo tellus at quam.&lt;/blockquote&gt;</code></pre>
+  <h3>Quotations, Different Natural Human Language</h3>
+  <p>The RCMP crest contains the words "<q><span lang="fr">Maintiens le droit</span></q>".</p>
+  <pre><code>&lt;p&gt;The RCMP crest contains the words &amp;quot;&lt;q&gt;&lt;span lang="fr"&gt;Maintiens le droit&lt;/span&gt;&lt;/q&gt;&amp;quot;.&lt;/p&gt;</code></pre>
+  <h2 id="con" class="page-header">Accessibility considerations</h2>
+  <h3>Visual Impairments</h3>
+  <p>The use of language attributes in the source code tell screen readers to say those words with the proper pronunciation. </p>
+
+
+
+      <h3>Simple table example</h3>
+      <table class="table">
+        <tr>
+          <td></td>
+          <th><code>&lt;th&gt;</code></th>
+          <th><code>&lt;th&gt;</code></th>
+          <th><code>&lt;th&gt;</code></th>
+          <th><code>&lt;th&gt;</code></th>
+          <th><code>&lt;th&gt;</code></th>
+        </tr>
+        <tr>
+          <th><code>&lt;th&gt;</code></th>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+        </tr>
+        <tr>
+          <th><code>&lt;th&gt;</code></th>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+        </tr>
+        <tr>
+          <th><code>&lt;th&gt;</code></th>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+          <td><code>&lt;td&gt;</code></td>
+        </tr>
+      </table>
+
+
+      <h2 id="ex" class="page-header">Examples</h2>
+      <h3>Basic columns</h3>
+      <table class="table">
+        <caption>
+        Current employees
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Doe, Jane</td>
+            <td>Manager</td>
+            <td>$1296.41</td>
+          </tr>
+          <tr>
+            <td>Doe, John</td>
+            <td>Director</td>
+            <td>$1584.50</td>
+          </tr>
+          <tr>
+            <td>Smith, John</td>
+            <td>Programmer Analyst</td>
+            <td>$965.10</td>
+          </tr>
+          <tr>
+            <th colspan="2" scope="row">Total</th>
+            <td>$3846.01</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <h3>Financial</h3>
+  <h4>Statement of financial position (unaudited) as of March 31, 2011 (in dollars and percentage)</h4>
+  <table class="table">
+    <caption>
+    Expenses
+    </caption>
+    <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <td></td>
+        <th>Dollars (2009)</th>
+        <th>Percentage (2009)</th>
+        <th>Dollars (2008)</th>
+        <th>Percentage (2008)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Human Resources</td>
+        <td>$1,442,421</td>
+        <td>14.89%</td>
+        <td>$1,524,241</td>
+        <td>12.99%</td>
+      </tr>
+      <tr>
+        <td>Communications</td>
+        <td>$677,325</td>
+        <td>6.99%</td>
+        <td>$786,533</td>
+        <td>6.70%</td>
+      </tr>
+      <tr>
+        <td>Compensation</td>
+        <td>$1,532,523</td>
+        <td>15.82%</td>
+        <td>$1,678,235</td>
+        <td>14.30%</td>
+      </tr>
+      <tr>
+        <td>Information Technology</td>
+        <td>$5,361,325</td>
+        <td>55.36%</td>
+        <td>$6,836,643</td>
+        <td>58.27%</td>
+      </tr>
+      <tr>
+        <td>Administration</td>
+        <td>$437,634</td>
+        <td>4.52%</td>
+        <td>$563,235</td>
+        <td>4.80%</td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td>$233,353</td>
+        <td>2.41%</td>
+        <td>$344,455</td>
+        <td>2.94%</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>$9,684,581</strong></td>
+        <td><strong>100.00%</strong></td>
+        <td><strong>$11,733,342</strong></td>
+        <td><strong>100.00%</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <caption>
+    Revenues
+    </caption>
+    <colgroup>
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <td></td>
+        <th>Dollars (2009)</th>
+        <th>Percentage (2009)</th>
+        <th>Dollars (2008)</th>
+        <th>Percentage (2008)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Administration</td>
+        <td>$553,253</td>
+        <td>94.15%</td>
+        <td>$735,235</td>
+        <td>93.13%</td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td>$34,352</td>
+        <td>5.85%</td>
+        <td>$54,242</td>
+        <td>6.87%</td>
+      </tr>
+      <tr>
+        <td><strong>Total</strong></td>
+        <td><strong>$587,605</strong></td>
+        <td><strong>100.00%</strong></td>
+        <td><strong>$789,477</strong></td>
+        <td><strong>100.00%</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <caption>
+    Totals
+    </caption>
+    <colgroup>
+    <col>
+    <col>
+    <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <td></td>
+        <th>2009</th>
+        <th>2008</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Net cost of operations</th>
+        <td><strong>$9,096,976</strong></td>
+        <td><strong>$10,943,865</strong></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
