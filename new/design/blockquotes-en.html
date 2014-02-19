@@ -71,16 +71,21 @@
         </div>
       </div>
       <h3>Naming a source</h3>
-      <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+      <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+      <h3>&nbsp;</h3>
+      <p>&nbsp;</p>
       <blockquote>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
+        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
       <div class="mrgn-tp-lg">
-        <pre><code>&lt;blockquote&gt;
+        <div>
+          <pre><code>&lt;blockquote&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-  &lt;small&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
-&lt;/blockquote&gt;
-</code></pre>
+  &lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;  </code></pre>
+        </div>
+        <pre>&nbsp;</pre>
       </div>
       <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
         <div class="col-md-6">
@@ -93,13 +98,13 @@
         </div>
       </div>
       <h3>Alternate displays</h3>
-      <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
-      <blockquote class="pull-right">
+      <p>Use <code>.blockquote-reverse</code> for a floated, right-aligned blockquote.</p>
+      <blockquote class="blockquote-reverse">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         <small>Someone famous in <cite title="Source Title">Source Title</cite></small> </blockquote>
       <div class="clearfix"></div>
       <div class="mrgn-tp-lg">
-        <pre><code>&lt;blockquote class=&quot;pull-right&quot;&gt;
+        <pre><code>&lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
   ...
 &lt;/blockquote&gt;
 </code></pre>
