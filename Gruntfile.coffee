@@ -90,6 +90,19 @@ module.exports = (grunt) ->
 						dest: "dist"
 				]
 
+			menu:
+				options:
+					layout: "ajax.hbs"
+					environment:
+						suffix: ".min"
+					assets: "dist"
+				cwd: "lib/wet-boew/site/pages/ajax"
+				src: [
+					"*.hbs"
+				]
+				dest: "dist/v4/ajax/"
+				expand: true
+				flatten: true
 
 			splash:
 				options:
