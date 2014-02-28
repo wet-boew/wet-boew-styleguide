@@ -14,23 +14,11 @@ module.exports = (grunt) ->
 		"dist"
 		"Produces the production files"
 		[
-			"build"
-			"assets-dist"
-			"assemble"
-		]
-	)
-
-	@registerTask(
-		"build"
-		"Produces unminified files"
-		[
 			"clean:dist"
 			"hub"
 			"copy:wetboew"
 			"copy:old_styleguide"
-			"copy:json"
-			"assets"
-			"js"
+			"assemble"
 		]
 	)
 
@@ -56,36 +44,6 @@ module.exports = (grunt) ->
 		[
 			"copy:deploy"
 			"gh-pages:travis"
-		]
-	)
-
-	@registerTask(
-		"assets-dist"
-		"INTERNAL: Process non-CSS/JS assets to dist"
-		[
-			"copy:site_min"
-			"copy:assets_min"
-			"copy:fonts_min"
-		]
-	)
-
-	@registerTask(
-		"assets"
-		"INTERNAL: Process non-CSS/JS assets to dist"
-		[
-			"copy:site"
-			"copy:assets"
-			"copy:fonts"
-		]
-	)
-
-	@registerTask(
-		"js"
-		"INTERNAL: Brings in the custom JavaScripts."
-		[
-			"copy:customJS"
-			"copy:json"
-			"copy:json_min"
 		]
 	)
 
@@ -116,7 +74,7 @@ module.exports = (grunt) ->
 				layoutdir: "lib/wet-boew/site/layouts"
 				layout: "default.hbs"
 
-			demos_min:
+			guides:
 				options:
 					environment:
 						suffix: ".min"
@@ -126,14 +84,14 @@ module.exports = (grunt) ->
 						expand: true
 						cwd: "site/pages"
 						src: [
-							"*.hbs",
+							"**/*.hbs",
 							"!index.hbs"
 						]
 						dest: "dist"
 				]
 
 
-			index_min:
+			splash:
 				options:
 					layout: "splashpage.hbs"
 					environment:
@@ -155,47 +113,7 @@ module.exports = (grunt) ->
 					"!demos/**/*.*"
 					"!unmin/**/*.*"
 				]
-				dest: "dist/"
-			site:
-				expand: true
-				cwd: "site/img"
-				src: "**/*.*"
-				dest: "dist/unmin/img"
-			assets:
-				expand: true
-				cwd: "src/assets"
-				src: "**/*.*"
-				dest: "dist/unmin/assets"
-			assets_min:
-				expand: true
-				cwd: "src/assets"
-				src: "**/*.*"
-				dest: "dist/assets"
-			json:
-				expand: true
-				cwd: "site/pages/ajax"
-				src: "**/*.json"
-				dest: "dist/unmin/ajax"
-			json_min:
-				expand: true
-				cwd: "site/pages/ajax"
-				src: "**/*.json"
-				dest: "dist/ajax"
-			fonts:
-				expand: true
-				cwd: "src/fonts"
-				src: "**/*.*"
-				dest: "dist/unmin/fonts"
-			site_min:
-				expand: true
-				cwd: "site/img"
-				src: "**/*.*"
-				dest: "dist/img"
-			fonts_min:
-				expand: true
-				cwd: "src/fonts"
-				src: "**/*.*"
-				dest: "dist/fonts"
+				dest: "dist/v4"
 			deploy:
 				src: [
 					"*.txt"
@@ -203,11 +121,6 @@ module.exports = (grunt) ->
 				]
 				dest: "dist"
 				expand: true
-			customJS:
-				expand: true
-				cwd: "src/js"
-				src: "*.js"
-				dest: "dist/unmin/js/customJS"
 			old_styleguide:
 				expand: true
 				cwd: "old/"
@@ -235,6 +148,7 @@ module.exports = (grunt) ->
 				]
 				tasks: [
 					"build"
+					"assets-dist"
 				]
 
 		"install-dependencies":
