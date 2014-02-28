@@ -183,6 +183,22 @@ module.exports = (grunt) ->
 					"**/*.*"
 				]
 
+		connect:
+			options:
+				port: 8000
+
+			server:
+				options:
+					base: "dist"
+					middleware: (connect, options) ->
+						middlewares = []
+						middlewares.push(connect.compress(
+							filter: (req, res) ->
+								/json|text|javascript|dart|image\/svg\+xml|application\/x-font-ttf|application\/vnd\.ms-opentype|application\/vnd\.ms-fontobject/.test(res.getHeader('Content-Type'))
+						))
+						middlewares.push(connect.static(options.base));
+						middlewares
+
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
 	@loadNpmTasks "grunt-contrib-clean"
