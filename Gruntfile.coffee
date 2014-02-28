@@ -42,6 +42,7 @@ module.exports = (grunt) ->
 		"deploy"
 		"Build and deploy artifacts to wet-boew-dist"
 		[
+			"dist"
 			"copy:deploy"
 			"gh-pages:travis"
 		]
@@ -175,8 +176,6 @@ module.exports = (grunt) ->
 
 			travis:
 				options:
-					repo: "https://" + process.env.GH_TOKEN + "@github.com/wet-boew/themes-dist.git"
-					branch: "<%= pkg.name %>"
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
 				src: [

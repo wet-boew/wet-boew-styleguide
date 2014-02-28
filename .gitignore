@@ -219,3 +219,6 @@ node_modules/
 
 # Bower
 lib/
+
+# Grunt publish
+.grunt/
