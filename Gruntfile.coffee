@@ -78,7 +78,7 @@ module.exports = (grunt) ->
 				options:
 					environment:
 						suffix: ".min"
-					assets: "dist"
+					assets: "dist/v4"
 				files: [
 						#site
 						expand: true
