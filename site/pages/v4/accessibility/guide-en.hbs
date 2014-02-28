@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Requirements accessibility guide</title>
-<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/wet-boew.min.css"/>
-<link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
-</head>
-<body class="container">
-<ol class="breadcrumb">
-	<li><a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Home</a></li>
-	<li><a href="https://github.com/wet-boew/wet-boew/wiki/Implementing-WET">Implement WET </a></li>
-	<li><a href="../index-en.html">Style guide </a></li>
-	<li><a href="index-en.html">Accessibility guide </a></li>
-	<li>Requirements guide</li>
-</ol>	
-<h1>Requirements <small>Accessibility guide</small></h1>
-<p>The following summarizes selected techniques from the <a href="http://www.w3.org/TR/WCAG20/" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0</a> for satisfying the most common applicable success criteria related to	 this topic.	Additional WCAG 2.0 success criteria, techniques, and	 failures not listed here may also be applicable depending on the	 content.</p>
+---
+{
+	"title": "Requirements",
+	"language": "en",
+	"altLangPrefix": "guide",
+	"css": "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome",
+	"dateModified": "2014-02-28"
+}
+---
+<p>The following summarizes selected techniques from the <a href="http://www.w3.org/TR/WCAG20/" rel="external">Web Content Accessibility Guidelines (WCAG) 2.0</a> for satisfying the most common applicable success criteria related to this topic.Additional WCAG 2.0 success criteria, techniques, and failures not listed here may also be applicable depending on the content.</p>
 <div class="wb-prettify all-pre">
 	<div class="row">
 		<div class="col-md-6 mrgn-bttm-lg">
@@ -25,7 +17,7 @@
 				</div>
 				<ul class="mrgn-tp-md">
 					<li><a href="#text">Text</a></li>
-					<li><a href="#head">Headings</a></li>
+					<li><a href="#headings">Headings</a></li>
 					<li><a href="#links">Links</a></li>
 					<li><a href="#images">Images</a></li>
 					<li><a href="#quot">Quotations</a></li>
@@ -33,7 +25,7 @@
 					<li><a href="#pgtitle">Page titles</a></li>
 					<li><a href="#forms">Forms</a></li>
 					<li><a href="#tables">Tables</a></li>
-					<li><a href="#links">Related Links</a></li>
+					<li><a href="#related-links">Related Links</a></li>
 				</ul>
 			</div>
 		</div>
@@ -42,7 +34,7 @@
 	<!-- Text -->
 	<div class="row">
 		<div class="mrgn-lft-md mrgn-rght-md">
-			<h2 id="pgtitle" class="page-header">Text</h2>
+			<h2 id="text" class="page-header">Text</h2>
 		</div>
 		<div class="col-md-4 pull-right">
 			<div class="panel panel-default">
@@ -57,7 +49,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/alerts-en.html" class="list-group-item">Alerts<span class="wb-inv"> - Design guide</span></a> <a href="../design/colour-en.html" class="list-group-item">Colour<span class="wb-inv"> - Design guide</span></a> <a href="../design/labels-en.html" class="list-group-item">Labels<span class="wb-inv"> - Design guide</span></a> <a href="../design/panels-en.html" class="list-group-item">Panels<span class="wb-inv"> - Design guide</span></a> <a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a></div>
 			</div>
@@ -74,7 +66,7 @@
 				<p id="pts"><strong>Note:</strong> A point of text is a fixed unit of measurement equivalent to 1/72 of an inch, while pixels is a variable unit of measurement that changes according to a user's screen resolution.</p>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 	<!-- Headings -->
 	<div class="row">
@@ -95,7 +87,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span> </a></div>
 			</div>
@@ -107,7 +99,7 @@
 			</div>
 		</div>
 		<div class="mrgn-lft-md mrgn-rght-md">
-			<p>A heading is a short text phrase which identifies the section of content that immediately follows it.  Heading elements are <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>.</p>
+			<p>A heading is a short text phrase which identifies the section of content that immediately follows it. Heading elements are <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>.</p>
 			<p>When using headings:</p>
 			<ul>
 				<li><p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H42" rel="external" title="WCAG 2.0, Technique H42"><big>Identify heading text</big></a> using heading elements (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>).</p>
@@ -119,7 +111,7 @@
 				<li><p><big><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G130" rel="external" title="WCAG 2.0, Technique G130">Use descriptive text</a></big> to <strong>identify and differentiate</strong> the contents of its section from other content on the web page.</p></li>
 			</ul>
 			<div class="alert alert-danger mrgn-tp-lg col-md-8">
-				<p id="nonhead"><strong>Important:</strong> Enlarge non-heading text using <strong>only</strong> CSS.  <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F43" rel="external" title="WCAG 2.0, Failure F43">Do <strong>not</strong> use heading elements.</a></p>
+				<p id="nonhead"><strong>Important:</strong> Enlarge non-heading text using <strong>only</strong> CSS. <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F43" rel="external" title="WCAG 2.0, Failure F43">Do <strong>not</strong> use heading elements.</a></p>
 			</div>
 		</div>
 	</div>
@@ -148,7 +140,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span> </a></div>
 			</div>
@@ -174,7 +166,7 @@
 				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33" rel="external" title="WCAG 2.0, Technique H33"><code>title</code> attribute</a></li>
 				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30" rel="external" title="WCAG 2.0, Technique H30"><code>alt</code> attribute of any <code>&lt;img&gt;</code> element</a> within the link</li>
 			</ul>
-			<p><big>Ensure <a href="#ic">independent context</a></big> of link text.  Additional context can be established using <strong>either</strong>:</p>
+			<p><big>Ensure <a href="#ic">independent context</a></big> of link text. Additional context can be established using <strong>either</strong>:</p>
 			<ul>
 				<li>The <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H78" rel="external" title="WCAG 2.0, Technique H78">paragraph</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G53" rel="external" title="WCAG 2.0, Technique G53">sentence</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H77" rel="external" title="WCAG 2.0, Technique H77">list item</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H81" rel="external" title="WCAG 2.0, Technique H81">parent list item</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H79" rel="external" title="WCAG 2.0, Technique H79">table cell, or table heading enclosing the link</a>; or</li>
 				<li>The <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H80" rel="external" title="WCAG 2.0, Technique H80">preceding heading element</a>.</li>
@@ -222,7 +214,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/images-en.html" class="list-group-item">Images<span class="wb-inv"> - Design guide</span></a> <a href="../design/icons-en.html" class="list-group-item">Icons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-picture/data-picture-en.html" class="list-group-item">Data picture<span class="wb-inv"> - Design guide</span></a></div>
 			</div>
@@ -295,7 +287,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/blockquotes-en.html" class="list-group-item">Blockquotes<span class="wb-inv"> - Design guide</span></a> </div>
 			</div>
@@ -323,7 +315,7 @@
 				</li>
 			</ul>
 		</div>
-	</div>	
+	</div>
 
 
 	<!-- Language -->
@@ -358,7 +350,7 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<!-- Page Titles -->
 	<div class="row">
 		<div class="mrgn-lft-md mrgn-rght-md">
@@ -386,7 +378,7 @@
 				<p id="webapptitle"><strong>Note:</strong> It is sufficent for a web application <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html" rel="external" title="WCAG 2.0, Understanding SC 2.4.2">to use only its web application title</a> on all of its web screens.</p>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 	<!-- Forms -->
 	<div class="row">
@@ -422,7 +414,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h3 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h3>
+					<h3 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
 				</div>
 				<div class="list-group"><a href="../design/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a> <a href="../design/buttons-en.html" class="list-group-item">Buttons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html" class="list-group-item">Form validation<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/feedback/feedback-en.html" class="list-group-item">Feedback form<span class="wb-inv"> - Design guide</span></a></div>
 			</div>
@@ -494,7 +486,7 @@
 				<p id="ic"><strong>Important:</strong> Form elements have additional requirements because they are a type of <a href="#ui"><abbr title="User Interface">UI control</abbr></a>.</p>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 
 	<!-- UI Controls -->
@@ -521,11 +513,11 @@
 		</div>
 		<div class="mrgn-lft-md mrgn-rght-md">
 			<p><abbr title="User Interface">UI</abbr> controls are elements that can perform an action (or "do something").</p>
-			<p><abbr title="User Interface">UI</abbr> controls are <a href="links-en.html">links</a> and <a href="forms-en.html">form elements</a> by default.  However scripting can transform <strong>any element</strong> into a <abbr title="User Interface">UI</abbr> control.</p>
+			<p><abbr title="User Interface">UI</abbr> controls are <a href="links-en.html">links</a> and <a href="forms-en.html">form elements</a> by default. However scripting can transform <strong>any element</strong> into a <abbr title="User Interface">UI</abbr> control.</p>
 			<h3 id="ap">Appearance</h3>
 			<p><big>Without colour</big>, <abbr title="User Interface">UI</abbr> controls <small>(specifically links)</small> must be <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/F73" rel="external" title="WCAG 2.0, Technique F73">visually evident</a> <small><em>(e.g. text decoration or using layout)</em></small>.</li></p>
 			<h3 id="fi">Focus and input</h3>
-			<p><big>Focus</big> <strong>exclusively</strong> activates a <abbr title="User Interface">UI</abbr> control for use by the user.  Losing focus deactivates the <abbr title="User Interface">UI</abbr> control.</p>
+			<p><big>Focus</big> <strong>exclusively</strong> activates a <abbr title="User Interface">UI</abbr> control for use by the user. Losing focus deactivates the <abbr title="User Interface">UI</abbr> control.</p>
 			<p><big>Input</big> occurs when a user changes the value of the active <abbr title="User Interface">UI</abbr> control by interacting with it.</p>
 			<p>When using <abbr title="User Interface">UI</abbr> controls with a keyboard,</p>
 			<ul>
@@ -545,7 +537,7 @@
 				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR20.html" rel="external" title="WCAG 2.0 Technique SCR20"><big>Independent</big></a> (<code>onFocus</code>, <code>onBlur</code>, <code>onSelect</code>, <code>onChange</code>, and <code>onClick</code>)</li>
 			</ul>
 		</div>
-	</div>	
+	</div>
 
 	<!-- Tables -->
 	<div class="row">
@@ -565,7 +557,7 @@
 			</div>
 			<div class="panel panel-info">
 				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture text-muted"></span> Design guide</h2>
+					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide</h2>
 				</div>
 				<div class="list-group"><a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html" class="list-group-item">Tables plug-in<span class="wb-inv"> - Design guide</span></a></div>
 			</div>
@@ -603,7 +595,7 @@
 	<!-- Related Links -->
 	<div class="row">
 		<div class="mrgn-lft-md mrgn-rght-md">
-			<h2 class="page-header" id="links">Related links</h2>
+			<h2 class="page-header" id="related-links">Related links</h2>
 			<ul>
 				<li><a href="http://www.paciellogroup.com/resources/contrast-analyser.html" rel="external">Contrast Analyser for Windows and Mac</a></li>
 				<li><a href="http://juicystudio.com/services/luminositycontrastratio.php" rel="external">Juicy Studios Luminosity Analyzer</a></li>
@@ -614,5 +606,3 @@
 	</div>
 
 </div>
-</body>
-</html>
