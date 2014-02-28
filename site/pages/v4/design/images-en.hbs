@@ -1,0 +1,278 @@
+---
+{
+	"title": "Images",
+	"language": "en",
+	"altLangPrefix": "images",
+	"css": "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome",
+	"dateModified": "2014-02-28"
+}
+---
+<div class="wb-prettify all-pre">
+	<div class="row">
+		<div class="col-md-8 mrgn-bttm-lg">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Table of contents</h2>
+				</div>
+				<div class="panel-body">
+					<ul>
+						<li><a href="#description">Description</a></li>
+						<li><a href="#bordering">Cropping and bordering images</a></li>
+						<li><a href="#overview-responsive-images">Responsive images</a></li>
+						<li><a href="#thumbnails">Thumbnails</a></li>
+						<li><a href="#media">Media objects</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 pull-right mrgn-bttm-lg">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
+				</div>
+				<div class="list-group"><a href="icons-en.html" class="list-group-item">Icons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-picture/data-picture-en.html" class="list-group-item">Data picture<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h2>
+				</div>
+				<div class="list-group"><a href="../accessibility/images-en.html" class="list-group-item">Images<span class="wb-inv"> - Accessibility guide</span></a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title"><span class="fa fa-font text-muted"></span> Writing guide</h2>
+				</div>
+				<div class="list-group"><a href="../writing/principals-en.html#image" class="list-group-item">Images<span class="wb-inv"> - Writing guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 class="page-header" id="description">Description</h2>
+			<p>An image is a static two dimensional visual artifact that is a type of non-text content classified as <a href="../accessibility/images-en.html#decorative">decorative</a>, <a href="../accessibility/images-en.html#simple">simple</a>, <a href="../accessibility/images-en.html#complex">complex</a>, or an <a href="../accessibility/images-en.html#text">image of text</a>.</p>
+			<h2 class="page-header" id="bordering">Cropping and bordering images</h2>
+			<p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
+			<div class="alert alert-warning">
+				<h4>Cross-browser compatibility</h4>
+				<p>Keep in mind that Internet Explorer 8 lacks support for rounded corners.</p>
+			</div>
+			<div class="well"> <img src="http://placehold.it/140x140" class="img-rounded" alt="A generic square placeholder image with rounded corners"> <img src="http://placehold.it/140x140" class="img-circle" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible"> <img src="http://placehold.it/140x140" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera"> </div>
+			<pre><code class="html">&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-rounded&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-circle&quot;&gt;
+&lt;img src=&quot;...&quot; alt=&quot;...&quot; class=&quot;img-thumbnail&quot;&gt;
+</code></pre>
+			<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+				<div class="col-md-6">
+					<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+					<p>(Info goes here)</p>
+				</div>
+				<div class="col-md-6 brdr-lft">
+					<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+					<p>(Info goes here)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2 class="page-header" id="overview-responsive-images">Responsive images</h2>
+	<p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code> and <code>height: auto;</code> to the image so that it scales nicely to the parent element.</p>
+	<div class="highlight">
+		<pre><code class="html">&lt;img src=&quot;...&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;
+</code></pre>
+	</div>
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<div class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+			<p>(Info goes here)</p>
+		</div>
+		<div class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+			<p>(Info goes here)</p>
+		</div>
+	</div>
+	<h2 class="page-header" id="thumbnails">Thumbnails</h2>
+	<p>Extend Bootstrap's <a href="grids-en.html">grid system</a> with the thumbnail component to easily display grids of images, videos, text, and more.</p>
+	<h3 id="thumbnails-default">Default thumbnail example</h3>
+	<p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+	<div class="row">
+		<div class="col-sm-6 col-md-3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/300x180" alt="Generic placeholder thumbnail"> </a></div>
+		<div class="col-sm-6 col-md-3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/300x180" alt="Generic placeholder thumbnail"> </a></div>
+		<div class="col-sm-6 col-md-3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/300x180" alt="Generic placeholder thumbnail"> </a></div>
+		<div class="col-sm-6 col-md-3"> <a href="#" class="thumbnail"> <img src="http://placehold.it/300x180" alt="Generic placeholder thumbnail"> </a></div>
+	</div>
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-6 col-md-3&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;thumbnail&quot;&gt;
+			&lt;img src=&quot;image.jpg&quot; alt=&quot;...&quot;&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	...
+&lt;/div&gt;
+</code></pre>
+	</div>
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<div class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+			<p>(Info goes here)</p>
+		</div>
+		<div class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+			<p>(Info goes here)</p>
+		</div>
+	</div>
+	<h3 id="thumbnails-custom-content">Custom thumbnail content</h3>
+	<p>With a bit of extra markup, it's possible to add any kind of HTML content like headings, paragraphs, or buttons into thumbnails.</p>
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail"> <img src="http://placehold.it/350x200" alt="Generic placeholder thumbnail">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail"> <img src="http://placehold.it/350x200" alt="Generic placeholder thumbnail">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail"> <img src="http://placehold.it/350x200" alt="Generic placeholder thumbnail">
+				<div class="caption">
+					<h3>Thumbnail label</h3>
+					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+		&lt;div class=&quot;thumbnail&quot;&gt;
+			&lt;img data-src=&quot;holder.js/350x200&quot; alt=&quot;...&quot;&gt;
+			&lt;div class=&quot;caption&quot;&gt;
+				&lt;h3&gt;Thumbnail label&lt;/h3&gt;
+				&lt;p&gt;...&lt;/p&gt;
+				&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;btn btn-default&quot; role=&quot;button&quot;&gt;Button&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<div class="col-md-6">
+			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+		<div class="col-md-6 brdr-lft">
+			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+	</div>
+	<h2 class="page-header" id="media">Media objects</h2>
+	<p>Abstract object styles for building various types of components (like blog comments, Tweets, etc) that feature a left- or right-aligned image alongside textual content.</p>
+	<h3 id="media-default">Default media</h3>
+	<p>The default media allow to float a media object (images, video, audio) to the left or right of a content block.</p>
+	<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+		<div class="media-body">
+			<h4 class="media-heading">Media heading</h4>
+			Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
+	</div>
+	<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+		<div class="media-body">
+			<h4 class="media-heading">Media heading</h4>
+			Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+			<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+				<div class="media-body">
+					<h4 class="media-heading">Media heading</h4>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
+			</div>
+		</div>
+	</div>
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class=&quot;media&quot;&gt;
+	&lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+		&lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+	&lt;/a&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+		&lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<div class="col-md-6">
+			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+		<div class="col-md-6 brdr-lft">
+			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+	</div>
+	<h3 id="media-list">Media list</h3>
+	<p>With a bit of extra markup, you can use media inside list (useful for comment threads or articles lists).</p>
+	<ul class="media-list">
+		<li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+				<!-- Nested media object -->
+				<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						<!-- Nested media object -->
+						<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+							<div class="media-body">
+								<h4 class="media-heading">Nested media heading</h4>
+								Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+						</div>
+					</div>
+				</div>
+				<!-- Nested media object -->
+				<div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+				</div>
+			</div>
+		</li>
+		<li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image"> </a>
+			<div class="media-body">
+				<h4 class="media-heading">Media heading</h4>
+				Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+		</li>
+	</ul>
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class=&quot;media-list&quot;&gt;
+	&lt;li class=&quot;media&quot;&gt;
+		&lt;a class=&quot;pull-left&quot; href=&quot;#&quot;&gt;
+			&lt;img class=&quot;media-object&quot; src=&quot;...&quot; alt=&quot;...&quot;&gt;
+		&lt;/a&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h4 class=&quot;media-heading&quot;&gt;Media heading&lt;/h4&gt;
+			...
+		&lt;/div&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+	</div>
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<div class="col-md-6">
+			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+		<div class="col-md-6 brdr-lft">
+			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+			<p>(Info goes here)</p>
+		</div>
+	</div>
+	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+</div>
