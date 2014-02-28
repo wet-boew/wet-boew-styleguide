@@ -17,7 +17,8 @@ module.exports = (grunt) ->
 			"clean:dist"
 			"hub"
 			"copy:wetboew"
-			"copy:old_styleguide"
+			"copy:v3_styleguide"
+			"copy:v3_menu"
 			"assemble"
 		]
 	)
@@ -135,12 +136,19 @@ module.exports = (grunt) ->
 				]
 				dest: "dist"
 				expand: true
-			old_styleguide:
+			v3_styleguide:
 				expand: true
 				cwd: "old/"
 				src: [
 					"*.html"
 					"dist/dist/**/*.*"
+				]
+				dest: "dist/v3"
+			v3_menu:
+				expand: true
+				cwd: "old/dist/demos"
+				src: [
+					"includes/projectmenu-*.txt"
 				]
 				dest: "dist/v3"
 
