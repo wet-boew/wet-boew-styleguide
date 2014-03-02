@@ -7,6 +7,24 @@
 <link rel="stylesheet" href="http://wet-boew.github.io/v4.0-ci/css/theme.min.css"/>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="../design/fa/css/font-awesome.min.css">
+<style type="text/css">
+.tbl-gridify {display:block;}
+.tbl-gridify tr {background-clip: content-box;
+    background-color: #f5f5f5;
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");
+    background-origin: content-box;
+    background-position: left top, left top, left bottom, right top;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+	padding-bottom:30px;
+   }
+   .tbl-gridify td:first-child {
+   padding-top:15px;
+   }
+   .tbl-gridify td {
+   padding:0 15px 15px 15px;
+   }
+
+</style>
 </head>
 <body class="container">
 <ol class="breadcrumb">
@@ -34,6 +52,7 @@
             <li><a href="#tables-condensed">Condensed table</a></li>
             <li><a href="#tables-contextual-classes">Coloured cells</a></li>
             <li><a href="#tables-responsive">Responsive tables</a></li>
+            <li><a href="#gridify">Gridify a table</a></li>
           </ul>
         </div>
       </div>
@@ -520,6 +539,148 @@
 &lt;/div&gt;
 </code></pre>
   </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 id="gridify">Gridify a table</h2>
+  <p>Turn a table into a grid with <code>tbl-gridify</code>.</p>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Default table</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h3>Table with <code>.tbl-gridify</code> and grid code</h3>
+      <table class="tbl-gridify">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody class="row wb-eqht">
+          <tr class="col-xs-12 col-sm-6 col-md-4">
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr class="col-xs-12 col-sm-6 col-md-4">
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr class="col-xs-12 col-sm-6 col-md-4">
+            <td>3</td>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Use grid code to set breakpoints. Resize the browser to see how this gridified table adjusts.</p>
+  <table class="tbl-gridify">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+      </tr>
+    </thead>
+    <tbody class="row wb-eqht">
+      <tr class="col-xs-12 col-sm-6 col-md-4">
+        <td>1</td>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr class="col-xs-12 col-sm-6 col-md-4">
+        <td>2</td>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr class="col-xs-12 col-sm-6 col-md-4">
+        <td>3</td>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+  <pre><code>&lt;table class=&quot;tbl-gridify&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class=&quot;row wb-eqht&quot;&gt;
+    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
   <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
     <div class="col-md-6">
       <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>

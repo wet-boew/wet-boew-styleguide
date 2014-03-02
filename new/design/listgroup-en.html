@@ -30,6 +30,7 @@
             <li><a href="#example">Basic example</a></li>
             <li><a href="#badges">Add badges</a></li>
             <li><a href="#links">Add links</a></li>
+			<li><a href="#colour">Add colour</a></li>
             <li><a href="#custom">Add custom content</a></li>
           </ul>
         </div>
@@ -126,6 +127,55 @@
       <p>(Info goes here)</p>
     </div>
   </div>
+  
+  <h3 id="colour">Add colour</h3>
+  <p>Use colour classes to style list items, default or linked. Also includes <code>.active</code> state.</p>
+  
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+          <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+          <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+          <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+          <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+        </div>
+      </div>
+    </div>
+ 
+<div class="mrgn-tp-lg"><pre><code>&lt;ul class="list-group"&gt;
+  &lt;li class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/li&gt;
+  &lt;li class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="list-group"&gt;
+  &lt;a href="#" class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/a&gt;
+  &lt;a href="#" class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/a&gt;
+&lt;/div&gt;
+</code></pre></div>
+  
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  
+  
   <h2 class="page-header" id="custom">Add custom content</h2>
   <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
   <div class="list-group"><a href="#" class="list-group-item active">

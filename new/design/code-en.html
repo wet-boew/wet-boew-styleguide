@@ -27,7 +27,9 @@
         <div class="panel-body">
           <ul>
             <li><a href="#description">Description</a></li>
-            <li><a href="#options">Code options </a></li>
+            <li><a href="#inline">Inline code </a></li>
+            <li><a href="#keyboard">Keyboard keys </a></li>
+            <li><a href="#block">Code block </a></li>
           </ul>
         </div>
       </div>
@@ -43,9 +45,10 @@
   </div>
   <h2 id="description">Description</h2>
   <p>For quoting blocks of content from another source within your document.</p>
-  <h2 id="options">Code options</h2>
-  <h3>Inline</h3>
-  <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+  <h2 id="inline">Inline code</h2>
+  <div class="well">
+    <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+  </div>
   For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   <div class="mrgn-tp-lg">
     <pre><code>For example, &lt;code&gt;&amp;lt;section&amp;gt;&lt;/code&gt; should be wrapped as inline.
@@ -61,7 +64,24 @@
       <p>(Info goes here)</p>
     </div>
   </div>
-  <h3>Basic block</h3>
+  <h2 id="keyboard">Keyboard keys</h2>
+  <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
+  <div class="well">
+    <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.</p>
+  </div>
+  <pre><code>  To switch directories, type &lt;kbd&gt;cd&lt;/kbd&gt; followed by the name of the directory.
+</code></pre>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="block">Code block</h2>
   <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
   <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
   <div class="mrgn-tp-lg">

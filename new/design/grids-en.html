@@ -29,6 +29,7 @@
             <li><a href="#intro">Introduction</a></li>
             <li><a href="#options">Grid options</a></li>
             <li><a href="#example-basic">Stacked-to-horizonal</a></li>
+			<li><a href="#example-fluid">Fluid container</a></li>
             <li><a href="#example-mixed">Mobile and desktops</a></li>
             <li><a href="#example-mixed-complete">Mobile, tablet, desktops</a></li>
             <li><a href="#responsive-resets">Responsive column resets</a></li>
@@ -53,10 +54,10 @@
   <h2 class="page-header" id="intro">Introduction</h2>
   <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
   <ul>
-    <li>Rows must be placed within a <code>.container</code> for proper alignment and padding.</li>
+    <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
     <li>Use rows to create horizontal groups of columns.</li>
     <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
-    <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts.</li>
+    <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
     <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
     <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
   </ul>
@@ -82,10 +83,22 @@
       <thead>
         <tr>
           <th></th>
-          <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
-          <th> Small devices <small>Tablets (&ge;768px)</small> </th>
-          <th> Medium devices <small>Desktops (&ge;992px)</small> </th>
-          <th> Large devices <small>Desktops (&ge;1200px)</small> </th>
+          <th>
+            Extra small devices
+            <small>Phones (&lt;768px)</small>
+          </th>
+          <th>
+            Small devices
+            <small>Tablets (≥768px)</small>
+          </th>
+          <th>
+            Medium devices
+            <small>Desktops (≥992px)</small>
+          </th>
+          <th>
+            Large devices
+            <small>Desktops (≥1200px)</small>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -95,7 +108,7 @@
           <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
         </tr>
         <tr>
-          <th>Max container width</th>
+          <th>Container width</th>
           <td>None (auto)</td>
           <td>750px</td>
           <td>970px</td>
@@ -113,7 +126,7 @@
           <td colspan="4">12</td>
         </tr>
         <tr>
-          <th>Max column width</th>
+          <th>Column width</th>
           <td class="text-muted">Auto</td>
           <td>60px</td>
           <td>78px</td>
@@ -129,13 +142,11 @@
         </tr>
         <tr>
           <th>Offsets</th>
-          <td colspan="1" class="text-muted">N/A</td>
-          <td colspan="3">Yes</td>
+          <td colspan="4">Yes</td>
         </tr>
         <tr>
           <th>Column ordering</th>
-          <td class="text-muted">N/A</td>
-          <td colspan="3">Yes</td>
+          <td colspan="4">Yes</td>
         </tr>
       </tbody>
     </table>
@@ -251,6 +262,24 @@
 </code></pre>
   </div>
   <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 id="example-fluid" class="page-header">Fluid container</h2>
+  <p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
+<pre><code>&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
     <div class="col-md-6">
       <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
       <p>(Info goes here)</p>
@@ -479,7 +508,7 @@
   <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column. Nested rows should include a set of columns that add up to 12.</p>
   <div class="row">
     <div class="col-md-9">
-      <div class="well"> Level 1: .col-md-9
+      <div class="brdr-tp brdr-lft brdr-bttm brdr-rght"> <p class="mrgn-tp-md mrgn-lft-md mrgn-bttm-md">Level 1: .col-md-9</p>
         <div class="row">
           <div class="col-md-6">
             <div class="well">Level 2: .col-md-6 </div>
