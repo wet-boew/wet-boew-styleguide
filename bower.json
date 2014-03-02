@@ -1,0 +1,25 @@
+{
+  "name": "wet-boew-styleguide",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nschonni/wet-boew-styleguide",
+  "authors": [
+    "WET-BOEW Team"
+  ],
+  "description": "Style guide for the web experience toolkit",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "wet-boew": "https://github.com/wet-boew/wet-boew/tarball/v4.0"
+  },
+  "resolutions": {
+    "jquery": ">= 1.9.0"
+  },
+  "main": "index.html"
+}
