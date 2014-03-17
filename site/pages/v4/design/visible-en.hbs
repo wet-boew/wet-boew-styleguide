@@ -83,240 +83,300 @@
 
 <h1>Invisible and visible content <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title">Table of contents</h2>
-				</div>
-				<div class="panel-body">
-					<ul>
-						<li><a href="#description">Description</a></li>
-						<li><a href="#responsive">Responsive showing and hiding</a></li>
-						<li><a href="#invisible">Invisible content for screen readers</a></li>
-						<li><a href="#print">Print showing and hiding</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pull-right mrgn-bttm-lg">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
-				</div>
-				<div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/data-ajax/data-ajax-en.html" class="list-group-item">Data ajax<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-inview/data-inview-en.html" class="list-group-item">Data inview<span class="wb-inv"> - Design guide</span></a><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-en.html" class="list-group-item">Details/summary polyfill (expandable/collapsible content)<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html" class="list-group-item">Overlay<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/session-timeout/session-timeout-en.html" class="list-group-item">Session timeout<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-en.html" class="list-group-item">Tabbed Interface<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed Interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/toggle/toggle-en.html" class="list-group-item">Toggle<span class="wb-inv"> - Design guide</span></a></div>
-			</div>
-		</div>
-		<div class="mrgn-lft-md mrgn-rght-md">
-			<h2 class="page-header" id="description">Description</h2>
-			<p>(Info goes here)</p>
-			<h2 class="page-header" id="responsive">Responsive showing and hiding</h2>
-			<p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
-			<p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. <strong>Responsive utilities are currently only available for block and table toggling.</strong> Use with inline and table elements is currently not supported.</p>
-			<h2 class="page-header" id="responsive-utilities-classes">Available classes</h2>
-			<p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped responsive-utilities">
-					<thead>
-						<tr>
-							<th></th>
-							<th> Extra small devices <small>Phones (&lt;768px)</small> </th>
-							<th> Small devices <small>Tablets (&ge;768px)</small> </th>
-							<th> Medium devices <small>Desktops (&ge;992px)</small> </th>
-							<th> Large devices <small>Desktops (&ge;1200px)</small> </th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th><code>.visible-xs</code></th>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-						</tr>
-						<tr>
-							<th><code>.visible-sm</code></th>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-						</tr>
-						<tr>
-							<th><code>.visible-md</code></th>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-						</tr>
-						<tr>
-							<th><code>.visible-lg</code></th>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-						</tr>
-					</tbody>
-					<tbody>
-						<tr>
-							<th><code>.hidden-xs</code></th>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-						</tr>
-						<tr>
-							<th><code>.hidden-sm</code></th>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-						</tr>
-						<tr>
-							<th><code>.hidden-md</code></th>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-						</tr>
-						<tr>
-							<th><code>.hidden-lg</code></th>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-				<div class="col-md-6">
-					<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-					<p>(Info goes here)</p>
-				</div>
-				<div class="col-md-6 brdr-lft">
-					<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-					<p>(Info goes here)</p>
-				</div>
-			</div>
-			<h3 id="tests">Examples</h3>
-			<p>Resize your browser or load on different devices to test the responsive utility classes.</p>
-			<h4>Visible on...</h4>
-			<p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
-			<div class="row responsive-utilities-test visible-on">
-				<div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small<br />
-					<code>hidden-xs</code></span> <span class="visible-xs">&#10004; Visible on x-small<br />
-					<code>visible-xs</code></span> </div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small<br />
-					<code>hidden-sm</code></span> <span class="visible-sm">&#10004; Visible on small<br />
-					<code>visible-sm</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium<br />
-					<code>hidden-md</code></span> <span class="visible-md">&#10004; Visible on medium<br />
-					<code>visible-md</code></span> </div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large<br />
-					<code>hidden-lg</code></span> <span class="visible-lg">&#10004; Visible on large<br />
-					<code>visible-lg</code></span> </div>
-			</div>
-			<div class="row responsive-utilities-test visible-on">
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-sm">Extra small and small<br />
-					<code>hidden-xs hidden-sm</code></span> <span class="visible-xs visible-sm">&#10004; Visible on x-small and small<br />
-					<code>visible-xs visible-sm</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-md hidden-lg">Medium and large<br />
-					<code>hidden-md hidden-lg</code></span> <span class="visible-md visible-lg">&#10004; Visible on medium and large<br />
-					<code>visible-md visible-lg</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-md">Extra small and medium<br />
-					<code>hidden-xs hidden-md</code></span> <span class="visible-xs visible-md">&#10004; Visible on x-small and medium<br />
-					<code>visible-xs visible-md</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-lg">Small and large<br />
-					<code>hidden-sm hidden-lg</code></span> <span class="visible-sm visible-lg">&#10004; Visible on small and large<br />
-					<code>visible-sm visible-lg</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-lg">Extra small and large<br />
-					<code>hidden-xs hidden-lg</code></span> <span class="visible-xs visible-lg">&#10004; Visible on x-small and large<br />
-					<code>visible-xs visible-lg</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-md">Small and medium<br />
-					<code>hidden-sm hidden-md</code></span> <span class="visible-sm visible-md">&#10004; Visible on small and medium<br />
-					<code>visible-sm visible-md</code></span> </div>
-			</div>
-			<h4>Hidden on...</h4>
-			<p>Here, green checkmarks also indicate the element <strong>is hidden</strong> in your current viewport.</p>
-			<div class="row responsive-utilities-test hidden-on">
-				<div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small<br />
-					<code>hidden-xs</code></span> <span class="visible-xs">&#10004; Hidden on x-small<br />
-					<code>visible-xs</code></span> </div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small<br />
-					<code>hidden-sm</code></span> <span class="visible-sm">&#10004; Hidden on small<br />
-					<code>visible-sm</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium<br />
-					<code>hidden-md</code></span> <span class="visible-md">&#10004; Hidden on medium<br />
-					<code>visible-md</code></span> </div>
-				<div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large<br />
-					<code>hidden-lg</code></span> <span class="visible-lg">&#10004; Hidden on large<br />
-					<code>visible-lg</code></span> </div>
-			</div>
-			<div class="row responsive-utilities-test hidden-on">
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-sm">Extra small and small<br />
-					<code>hidden-xs hidden-sm</code></span> <span class="visible-xs visible-sm">&#10004; Hidden on x-small and small<br />
-					<code>visible-xs visible-sm</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-md hidden-lg">Medium and large<br />
-					<code>hidden-md hidden-lg</code></span> <span class="visible-md visible-lg">&#10004; Hidden on medium and large<br />
-					<code>visible-md visible-lg</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-md">Extra small and medium<br />
-					<code>hidden-xs hidden-md</code></span> <span class="visible-xs visible-md">&#10004; Hidden on x-small and medium<br />
-					<code>visible-xs visible-md</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-lg">Small and large<br />
-					<code>hidden-sm hidden-lg</code></span> <span class="visible-sm visible-lg">&#10004; Hidden on small and large<br />
-					<code>visible-sm visible-lg</code></span> </div>
-				<div class="clearfix visible-xs"></div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-lg">Extra small and large<br />
-					<code>hidden-xs hidden-lg</code></span> <span class="visible-xs visible-lg">&#10004; Hidden on x-small and large<br />
-					<code>visible-xs visible-lg</code></span> </div>
-				<div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-md">Small and medium<br />
-					<code>hidden-sm hidden-md</code></span> <span class="visible-sm visible-md">&#10004; Hidden on small and medium<br />
-					<code>visible-sm visible-md</code></span> </div>
-			</div>
-			<h2 class="page-header" id="invisible">Invisible content for screen readers</h2>
-			<p>The <code>wb-invisible</code> class clips content into a one pixel square. It allows you to create links that are descriptive (and compliant), but not visually clutter the page. It is common to use this technique to target assistive technology users. For example, JAWS users hear the information, but the visual user does not hear or see it. The <abbr title="Cascading Style Sheet">CSS</abbr> attribute <code>display:none;</code> does not achieve the same effect, as JAWS ignores this style entirely.</p>
-			<pre><code>&lt;a class=&quot;button button-small&quot; href=&quot;#&quot;&gt;1&lt;span class=&quot;wb-invisible&quot;&gt;: Page 1 of search results&lt;/span&gt;&lt;/a&gt;</code></pre>
-			<h2 class="page-header" id="print">Print showing and hiding</h2>
-			<p>Similar to the regular responsive classes, use these for toggling content for print.</p>
-			<div class="table-responsive">
-				<table class="table table-bordered table-striped responsive-utilities">
-					<thead>
-						<tr>
-							<th>Class</th>
-							<th>Browser</th>
-							<th>Print</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th><code>.visible-print</code></th>
-							<td class="is-hidden">Hidden</td>
-							<td class="is-visible">Visible</td>
-						</tr>
-						<tr>
-							<th><code>.hidden-print</code></th>
-							<td class="is-visible">Visible</td>
-							<td class="is-hidden">Hidden</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-				<div class="col-md-6">
-					<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-					<p>(Info goes here)</p>
-				</div>
-				<div class="col-md-6 brdr-lft">
-					<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-					<p>(Info goes here)</p>
-				</div>
-			</div>
-			<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#responsive">Responsive showing and hiding</a></li>
+            <li><a href="#invisible">Screen reader invisible content</a></li>
+			<li><a href="#invisible">General showing and hiding</a></li>
+			<li><a href="#replacement">Image replacement</a></li>
+            <li><a href="#print">Print showing and hiding</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
+        </div>
+        <div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/data-ajax/data-ajax-en.html" class="list-group-item">Data ajax<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-inview/data-inview-en.html" class="list-group-item">Data inview<span class="wb-inv"> - Design guide</span></a><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-en.html" class="list-group-item">Details/summary polyfill (expandable/collapsible content)<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html" class="list-group-item">Overlay<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/session-timeout/session-timeout-en.html" class="list-group-item">Session timeout<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-en.html" class="list-group-item">Tabbed Interface<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed Interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/toggle/toggle-en.html" class="list-group-item">Toggle<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md">
+      <h2 class="page-header" id="description">Description</h2>
+      <p>(Info goes here)</p>
+      <h2 class="page-header" id="responsive">Responsive showing and hiding</h2>
+      <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device via media query. Also included are utility classes for toggling content when printed.</p>
+      <p>Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. <strong>Responsive utilities are currently only available for block and table toggling.</strong> Use with inline and table elements is currently not supported.</p>
+      <h2 class="page-header" id="responsive-utilities-classes">Available classes</h2>
+      <p>Use a single or combination of the available classes for toggling content across viewport breakpoints.</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped responsive-utilities">
+          <thead>
+            <tr>
+              <th></th>
+              <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+              <th> Small devices <small>Tablets (&ge;768px)</small> </th>
+              <th> Medium devices <small>Desktops (&ge;992px)</small> </th>
+              <th> Large devices <small>Desktops (&ge;1200px)</small> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><code>.visible-xs</code></th>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+            </tr>
+            <tr>
+              <th><code>.visible-sm</code></th>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+            </tr>
+            <tr>
+              <th><code>.visible-md</code></th>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+            </tr>
+            <tr>
+              <th><code>.visible-lg</code></th>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th><code>.hidden-xs</code></th>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+              <th><code>.hidden-sm</code></th>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+              <th><code>.hidden-md</code></th>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+              <th><code>.hidden-lg</code></th>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
+      <h3 id="tests">Examples</h3>
+      <p>Resize your browser or load on different devices to test the responsive utility classes.</p>
+      <h4>Visible on...</h4>
+      <p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+      <div class="row responsive-utilities-test visible-on">
+        <div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small<br />
+          <code>hidden-xs</code></span> <span class="visible-xs">&#10004; Visible on x-small<br />
+          <code>visible-xs</code></span> </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small<br />
+          <code>hidden-sm</code></span> <span class="visible-sm">&#10004; Visible on small<br />
+          <code>visible-sm</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium<br />
+          <code>hidden-md</code></span> <span class="visible-md">&#10004; Visible on medium<br />
+          <code>visible-md</code></span> </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large<br />
+          <code>hidden-lg</code></span> <span class="visible-lg">&#10004; Visible on large<br />
+          <code>visible-lg</code></span> </div>
+      </div>
+      <div class="row responsive-utilities-test visible-on">
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-sm">Extra small and small<br />
+          <code>hidden-xs hidden-sm</code></span> <span class="visible-xs visible-sm">&#10004; Visible on x-small and small<br />
+          <code>visible-xs visible-sm</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-md hidden-lg">Medium and large<br />
+          <code>hidden-md hidden-lg</code></span> <span class="visible-md visible-lg">&#10004; Visible on medium and large<br />
+          <code>visible-md visible-lg</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-md">Extra small and medium<br />
+          <code>hidden-xs hidden-md</code></span> <span class="visible-xs visible-md">&#10004; Visible on x-small and medium<br />
+          <code>visible-xs visible-md</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-lg">Small and large<br />
+          <code>hidden-sm hidden-lg</code></span> <span class="visible-sm visible-lg">&#10004; Visible on small and large<br />
+          <code>visible-sm visible-lg</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-lg">Extra small and large<br />
+          <code>hidden-xs hidden-lg</code></span> <span class="visible-xs visible-lg">&#10004; Visible on x-small and large<br />
+          <code>visible-xs visible-lg</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-md">Small and medium<br />
+          <code>hidden-sm hidden-md</code></span> <span class="visible-sm visible-md">&#10004; Visible on small and medium<br />
+          <code>visible-sm visible-md</code></span> </div>
+      </div>
+      <h4>Hidden on...</h4>
+      <p>Here, green checkmarks also indicate the element <strong>is hidden</strong> in your current viewport.</p>
+      <div class="row responsive-utilities-test hidden-on">
+        <div class="col-xs-6 col-sm-3"><span class="hidden-xs">Extra small<br />
+          <code>hidden-xs</code></span> <span class="visible-xs">&#10004; Hidden on x-small<br />
+          <code>visible-xs</code></span> </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-sm">Small<br />
+          <code>hidden-sm</code></span> <span class="visible-sm">&#10004; Hidden on small<br />
+          <code>visible-sm</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-md">Medium<br />
+          <code>hidden-md</code></span> <span class="visible-md">&#10004; Hidden on medium<br />
+          <code>visible-md</code></span> </div>
+        <div class="col-xs-6 col-sm-3"><span class="hidden-lg">Large<br />
+          <code>hidden-lg</code></span> <span class="visible-lg">&#10004; Hidden on large<br />
+          <code>visible-lg</code></span> </div>
+      </div>
+      <div class="row responsive-utilities-test hidden-on">
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-sm">Extra small and small<br />
+          <code>hidden-xs hidden-sm</code></span> <span class="visible-xs visible-sm">&#10004; Hidden on x-small and small<br />
+          <code>visible-xs visible-sm</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-md hidden-lg">Medium and large<br />
+          <code>hidden-md hidden-lg</code></span> <span class="visible-md visible-lg">&#10004; Hidden on medium and large<br />
+          <code>visible-md visible-lg</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-md">Extra small and medium<br />
+          <code>hidden-xs hidden-md</code></span> <span class="visible-xs visible-md">&#10004; Hidden on x-small and medium<br />
+          <code>visible-xs visible-md</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-lg">Small and large<br />
+          <code>hidden-sm hidden-lg</code></span> <span class="visible-sm visible-lg">&#10004; Hidden on small and large<br />
+          <code>visible-sm visible-lg</code></span> </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-xs hidden-lg">Extra small and large<br />
+          <code>hidden-xs hidden-lg</code></span> <span class="visible-xs visible-lg">&#10004; Hidden on x-small and large<br />
+          <code>visible-xs visible-lg</code></span> </div>
+        <div class="col-xs-6 col-sm-6"><span class="hidden-sm hidden-md">Small and medium<br />
+          <code>hidden-sm hidden-md</code></span> <span class="visible-sm visible-md">&#10004; Hidden on small and medium<br />
+          <code>visible-sm visible-md</code></span> </div>
+      </div>
+      <h2 class="page-header" id="invisible">Screen reader invisible content</h2>
+      <p>The <code>wb-invisible</code> class clips content into a one pixel square. It allows you to create links that are descriptive (and compliant), but not visually clutter the page. It is common to use this technique to target assistive technology users. For example, JAWS users hear the information, but the visual user does not hear or see it. The <abbr title="Cascading Style Sheet">CSS</abbr> attribute <code>display:none;</code> does not achieve the same effect, as JAWS ignores this style entirely.</p>
+      <pre><code>&lt;a class=&quot;button button-small&quot; href=&quot;#&quot;&gt;1&lt;span class=&quot;wb-invisible&quot;&gt;: Page 1 of search results&lt;/span&gt;&lt;/a&gt;</code></pre>
+	  
+	  
+	  
+	  
+	  
+	  <h2 class="page-header" id="general">General showing and hiding</h2>
+	  
+	  <p>Force an element to be shown or hidden with the use of <code>.show</code> and <code>.hidden</code> classes. These classes use <code>!important</code> to a
+  <p>Furthermore, <code>.invisible</code> can be used to toggle only the visibility of an element, meaning its <code>display</code> is not modified and the element can still affect the flow of the document.</p>
+<div class="mrgn-tp-lg"><pre><code>&lt;div class=<span class="s">"show"&gt;...&lt;/div&gt;
+&lt;div class=<span class="s">"hidden"&gt;...&lt;/div&gt;
+</code></pre></div>
+<div class="mrgn-tp-lg"><pre><code>// Classes
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.invisible {
+  visibility: hidden;
+}
+</code></pre></div>
+<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
+
+
+
+  <h2 id="replacement">Image replacement</h2>
+  <p>Utilize the <code>.text-hide</code> class or mixin to help replace an element's text content with a background image.</p>
+<div class="mrgn-tp-lg"><pre><code>&lt;h1 class=<span class="s">"text-hide"&gt;Custom heading&lt;/h1&gt;
+</code></pre></div>
+	  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <h2 class="page-header" id="print">Print showing and hiding</h2>
+      <p>Similar to the regular responsive classes, use these for toggling content for print.</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped responsive-utilities">
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Browser</th>
+              <th>Print</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><code>.visible-print</code></th>
+              <td class="is-hidden">Hidden</td>
+              <td class="is-visible">Visible</td>
+            </tr>
+            <tr>
+              <th><code>.hidden-print</code></th>
+              <td class="is-visible">Visible</td>
+              <td class="is-hidden">Hidden</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+        <div class="col-md-6">
+          <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+        <div class="col-md-6 brdr-lft">
+          <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+          <p>(Info goes here)</p>
+        </div>
+      </div>
+      <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+    </div>
+  </div>
 </div>

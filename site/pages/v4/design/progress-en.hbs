@@ -8,210 +8,241 @@
 }
 ---
 <div class="wb-prettify all-pre">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title">Table of contents</h2>
-				</div>
-				<div class="panel-body">
-					<ul>
-						<li><a href="#description">Description</a></li>
-						<li><a href="#basic">Basic progress bar</a></li>
-						<li><a href="#coloured">Coloured progress bar</a></li>
-						<li><a href="#striped">Striped progress bar</a></li>
-						<li><a href="#animated">Animated progress bar</a></li>
-						<li><a href="#stacked">Stacked progress bar</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
-				</div>
-				<div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/progress/progress-en.html" class="list-group-item">Progress polyfill (progress bar)<span class="wb-inv"> - Design guide</span></a></div>
-			</div>
-		</div>
-	</div>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
-	<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
-	<div class="alert alert-danger">
-		<h4>Cross-browser compatibility</h4>
-		<p>Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.</p>
-	</div>
-	<h2 class="page-header" id="basic">Basic progress bar</h2>
-	<p>Default progress bar.</p>
-	<div class="progress">
-		<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;60% Complete&lt;/span&gt;
-	&lt;/div&gt;
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </div>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#basic">Basic progress bar</a></li>
+			<li><a href="#text">Text on progress bar</a></li>
+            <li><a href="#coloured">Coloured progress bar</a></li>
+            <li><a href="#striped">Striped progress bar</a></li>
+            <li><a href="#animated">Animated progress bar</a></li>
+            <li><a href="#stacked">Stacked progress bar</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
+        </div>
+        <div class="list-group"><a href="http://wet-boew.github.io/v4.0-ci/demos/progress/progress-en.html" class="list-group-item">Progress polyfill (progress bar)<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+    </div>
+  </div>
+  <h2 class="page-header" id="description">Description</h2>
+  <p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>
+  <div class="alert alert-danger">
+    <h4>Cross-browser compatibility</h4>
+    <p>Progress bars use CSS3 transitions and animations to achieve some of their effects. These features are not supported in Internet Explorer 9 and below or older versions of Firefox. Opera 12 does not support animations.</p>
+  </div>
+  <h2 class="page-header" id="basic">Basic progress bar</h2>
+  <p>Default progress bar.</p>
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="wb-inv">60% Complete</span> </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%;&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;60% Complete&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="coloured">Coloured progress bar</h2>
-	<p>Progress bars use some of the same button and alert classes for consistent styles.</p>
-	<div class="progress">
-		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
-	</div>
-	<div class="progress">
-		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
-	</div>
-	<div class="progress">
-		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
-	</div>
-	<div class="progress">
-		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;40% Complete (success)&lt;/span&gt;
-	&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  
+  
+  <h2 id="text">Text on progress bar</h2>
+  <p>Remove the <code>.wb-inv</code> class from within the progress bar to show a visible percentage. For low percentages, consider adding a <code>min-width</code> to ensure the label's text is fully visible.</p>
+  <div class="bs-example">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+      </div>
+    </div>
+  </div>
+<div class="mrgn-tp-lg"><pre><code>&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"&gt;
+    60%
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div>
+  
+    <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  
+  
+  
+  <h2 class="page-header" id="coloured">Coloured progress bar</h2>
+  <p>Progress bars use some of the same button and alert classes for consistent styles.</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="wb-inv">40% Complete (success)</span> </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="wb-inv">20% Complete</span> </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="wb-inv">60% Complete (warning)</span> </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="wb-inv">80% Complete (danger)</span> </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;20% Complete&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;60% Complete (warning)&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;80% Complete&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;80% Complete&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="striped">Striped progress bar</h2>
-	<p>Uses a gradient to create a striped effect. Not available in IE8.</p>
-	<div class="progress progress-striped" >
-		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
-	</div>
-	<div class="progress progress-striped">
-		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
-	</div>
-	<div class="progress progress-striped">
-		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
-	</div>
-	<div class="progress progress-striped">
-		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;progress progress-striped&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;40% Complete (success)&lt;/span&gt;
-	&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="striped">Striped progress bar</h2>
+  <p>Uses a gradient to create a striped effect. Not available in IE8.</p>
+  <div class="progress progress-striped" >
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="wb-inv">40% Complete (success)</span> </div>
+  </div>
+  <div class="progress progress-striped">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="wb-inv">20% Complete</span> </div>
+  </div>
+  <div class="progress progress-striped">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="wb-inv">60% Complete (warning)</span> </div>
+  </div>
+  <div class="progress progress-striped">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="wb-inv">80% Complete (danger)</span> </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;progress progress-striped&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 40%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;40% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress progress-striped&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;20% Complete&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;20% Complete&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress progress-striped&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;60% Complete (warning)&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 60%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;60% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;progress progress-striped&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;80% Complete (danger)&lt;/span&gt;
-	&lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 80%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;80% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="animated">Animated progress bar</h2>
-	<p>Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.</p>
-	<div class="progress progress-striped active">
-		<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="sr-only">45% Complete</span></div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;progress progress-striped active&quot;&gt;
-	&lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 45%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;45% Complete&lt;/span&gt;
-	&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="animated">Animated progress bar</h2>
+  <p>Add <code>.active</code> to <code>.progress-striped</code> to animate the stripes right to left. Not available in all versions of IE.</p>
+  <div class="progress progress-striped active">
+    <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><span class="wb-inv">45% Complete</span></div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;progress progress-striped active&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;45&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width: 45%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;45% Complete&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="stacked">Stacked progress bar</h2>
-	<p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
-	<div class="progress">
-		<div class="progress-bar progress-bar-success" style="width: 35%"> <span class="sr-only">35% Complete (success)</span> </div>
-		<div class="progress-bar progress-bar-warning" style="width: 20%"> <span class="sr-only">20% Complete (warning)</span> </div>
-		<div class="progress-bar progress-bar-danger" style="width: 10%"> <span class="sr-only">10% Complete (danger)</span> </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;progress&quot;&gt;
-	&lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 35%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;35% Complete (success)&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 20%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;20% Complete (warning)&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 10%&quot;&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;10% Complete (danger)&lt;/span&gt;
-	&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="stacked">Stacked progress bar</h2>
+  <p>Place multiple bars into the same <code>.progress</code> to stack them.</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" style="width: 35%"> <span class="wb-inv">35% Complete (success)</span> </div>
+    <div class="progress-bar progress-bar-warning" style="width: 20%"> <span class="wb-inv">20% Complete (warning)</span> </div>
+    <div class="progress-bar progress-bar-danger" style="width: 10%"> <span class="wb-inv">10% Complete (danger)</span> </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-success&quot; style=&quot;width: 35%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;35% Complete (success)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-warning&quot; style=&quot;width: 20%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;20% Complete (warning)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;progress-bar progress-bar-danger&quot; style=&quot;width: 10%&quot;&gt;
+    &lt;span class=&quot;wb-inv&quot;&gt;10% Complete (danger)&lt;/span&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>

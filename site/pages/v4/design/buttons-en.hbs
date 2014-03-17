@@ -9,94 +9,94 @@
 ---
 <h1>Buttons <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title">Table of contents</h2>
-				</div>
-				<div class="panel-body">
-					<ul class="clmn-2-sm">
-						<li><a href="#description">Description</a></li>
-						<li><a href="#default">Default appearance </a></li>
-						<li><a href="#buttons-tags">Button basics</a></li>
-						<li><a href="#buttons-options">Colour options</a></li>
-						<li><a href="#buttons-sizes">Size options</a></li>
-						<li><a href="#buttons-block">Full width</a></li>
-						<li><a href="#buttons-active">Active state</a></li>
-						<li><a href="#buttons-disabled">Disabled state</a></li>
-						<li><a href="#btn-groups">Groups and toolbars</a></li>
-						<li><a href="#btn-dropdowns">Dropdowns</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
-				</div>
-				<div class="list-group"><a href="forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a></div>
-			</div>
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h2>
-				</div>
-				<div class="list-group"><a href="../accessibility/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Accessibility guide</span></a></div>
-			</div>
-		</div>
-	</div>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>(Info goes here)</p>
-	<h2 class="page-header" id="default">Default appearance</h2>
-	<p>The browser will	show certain elements as a button. However, there is often a lack of visual consistency for each button type.	Furthermore, each browser can have a different button default appearance. For example: </p>
-	<button type="submit">Button</button>
-	<input type="button" value="Input">
-	<input type="submit" value="Submit">
-	<pre><code>&lt;button type=&quot;submit&quot;&gt;Button&lt;/button&gt;
+  <div class="row">
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </div>
+        <div class="panel-body">
+          <ul class="clmn-2-sm">
+            <li><a href="#description">Description</a></li>
+            <li><a href="#default">Default appearance </a></li>
+            <li><a href="#buttons-tags">Button basics</a></li>
+            <li><a href="#buttons-options">Colour options</a></li>
+            <li><a href="#buttons-sizes">Size options</a></li>
+            <li><a href="#buttons-block">Full width</a></li>
+            <li><a href="#buttons-active">Active state</a></li>
+            <li><a href="#buttons-disabled">Disabled state</a></li>
+            <li><a href="#btn-groups">Groups and toolbars</a></li>
+            <li><a href="#btn-dropdowns">Dropdowns</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
+        </div>
+        <div class="list-group"><a href="forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a></div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-title"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h2>
+        </div>
+        <div class="list-group"><a href="../accessibility/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Accessibility guide</span></a></div>
+      </div>
+    </div>
+  </div>
+  <h2 class="page-header" id="description">Description</h2>
+  <p>(Info goes here)</p>
+  <h2 class="page-header" id="default">Default appearance</h2>
+  <p>The browser will  show certain elements as a button. However, there is often a lack of visual consistency for each button type.  Furthermore, each browser can have a different button default appearance. For example: </p>
+  <button type="submit">Button</button>
+  <input type="button" value="Input">
+  <input type="submit" value="Submit">
+  <pre><code>&lt;button type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;input type=&quot;button&quot; value=&quot;Input&quot;&gt;
 &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;</code></pre>
-	<h2 class="page-header" id="buttons-tags">Button basics</h2>
-	<p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element to create visual consistency..</p>
-	<form>
-		<a class="btn btn-default" href="#" role="button">Link</a>
-		<button class="btn btn-default" type="submit">Button</button>
-		<input class="btn btn-default" type="button" value="Input">
-		<input class="btn btn-default" type="submit" value="Submit">
-	</form>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
+  <h2 class="page-header" id="buttons-tags">Button basics</h2>
+  <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element to create visual consistency..</p>
+  <form>
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+  </form>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;a class=&quot;btn btn-default&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
 &lt;button class=&quot;btn btn-default&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;input class=&quot;btn btn-default&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
 &lt;input class=&quot;btn btn-default&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 </code></pre>
-	</div>
-	<div class="alert alert-info">
-		<h3>Cross-browser rendering</h3>
-		<p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
-		<p>Among other things, there's <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451">a Firefox bug</a> that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="buttons-options">Colour options</h2>
-	<p>Use any of the available button classes to quickly create a styled button.</p>
-	<button type="button" class="btn btn-default">Default</button>
-	<button type="button" class="btn btn-primary">Primary</button>
-	<button type="button" class="btn btn-success">Success</button>
-	<button type="button" class="btn btn-info">Info</button>
-	<button type="button" class="btn btn-warning">Warning</button>
-	<button type="button" class="btn btn-danger">Danger</button>
-	<button type="button" class="btn btn-link">Link</button>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;!-- Standard button --&gt;
+  </div>
+  <div class="alert alert-info">
+    <h3>Cross-browser rendering</h3>
+    <p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
+    <p>Among other things, there's <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451">a Firefox bug</a> that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="buttons-options">Colour options</h2>
+  <p>Use any of the available button classes to quickly create a styled button.</p>
+  <button type="button" class="btn btn-default">Default</button>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-link">Link</button>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;!-- Standard button --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
 
 &lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
@@ -117,705 +117,759 @@
 &lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="buttons-sizes">Size options</h2>
-	<p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
-	<p>
-		<button type="button" class="btn btn-primary btn-lg">Large button</button>
-		<button type="button" class="btn btn-default btn-lg">Large button</button>
-	</p>
-	<p>
-		<button type="button" class="btn btn-primary">Default button</button>
-		<button type="button" class="btn btn-default">Default button</button>
-	</p>
-	<p>
-		<button type="button" class="btn btn-primary btn-sm">Small button</button>
-		<button type="button" class="btn btn-default btn-sm">Small button</button>
-	</p>
-	<p>
-		<button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-		<button type="button" class="btn btn-default btn-xs">Extra small button</button>
-	</p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;p&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;/button&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="buttons-sizes">Size options</h2>
+  <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code>, <code>.btn-sm</code>, or <code>.btn-xs</code> for additional sizes.</p>
+  <p>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-default btn-lg">Large button</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-default">Default button</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-default btn-sm">Small button</button>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+    <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+  </p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;p&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;/button&gt;
 &lt;/p&gt;
 &lt;p&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-xs&quot;&gt;Extra small button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;/button&gt;
 &lt;/p&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="buttons-block">Full width buttons</h2>
-	<p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
-	<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-		<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-		<button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="buttons-block">Full width buttons</h2>
+  <p>Create block level buttons&mdash;those that span the full width of a parent&mdash; by adding <code>.btn-block</code>.</p>
+  <div class="row">
+  <div class="col-xs-6">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+  </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;col-xs-6&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;
+&lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="buttons-active">Active state</h2>
-	<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> <code>&lt;button&gt;</code>s should you need to replicate the active state progammatically.</p>
-	<h3>Button element</h3>
-	<p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
-	<p>
-		<button type="button" class="btn btn-primary btn-lg active">Primary button</button>
-		<button type="button" class="btn btn-default btn-lg active">Button</button>
-	</p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg active&quot;&gt;Primary button&lt;/button&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="buttons-active">Active state</h2>
+  <p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For <code>&lt;button&gt;</code> elements, this is done via <code>:active</code>. For <code>&lt;a&gt;</code> elements, it's done with <code>.active</code>. However, you may use <code>.active</code> <code>&lt;button&gt;</code>s should you need to replicate the active state progammatically.</p>
+  <h3>Button element</h3>
+  <p>No need to add <code>:active</code> as it's a pseudo-class, but if you need to force the same appearance, go ahead and add <code>.active</code>.</p>
+  <p>
+    <button type="button" class="btn btn-primary btn-lg active">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg active">Button</button>
+  </p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg active&quot;&gt;Primary button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg active&quot;&gt;Button&lt;/button&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3>Anchor element</h3>
-	<p>Add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.</p>
-	<p> <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a> <a href="#" class="btn btn-default btn-lg active" role="button">Link</a> </p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg active&quot; role=&quot;button&quot;&gt;Primary link&lt;/a&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3>Anchor element</h3>
+  <p>Add the <code>.active</code> class to <code>&lt;a&gt;</code> buttons.</p>
+  <p> <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a> <a href="#" class="btn btn-default btn-lg active" role="button">Link</a> </p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg active&quot; role=&quot;button&quot;&gt;Primary link&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg active&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="buttons-disabled">Disabled state</h2>
-	<p>Make buttons look unclickable by fading them back 50%.</p>
-	<h3>Button element</h3>
-	<p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
-	<p>
-		<button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
-		<button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
-	</p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-primary&quot; disabled=&quot;disabled&quot;&gt;Primary button&lt;/button&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="buttons-disabled">Disabled state</h2>
+  <p>Make buttons look unclickable by fading them back 50%.</p>
+  <h3>Button element</h3>
+  <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+  <p>
+    <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+  </p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;button type=&quot;button&quot; class=&quot;btn btn-lg btn-primary&quot; disabled=&quot;disabled&quot;&gt;Primary button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; disabled=&quot;disabled&quot;&gt;Button&lt;/button&gt;
 </code></pre>
-	</div>
-	<div class="alert alert-danger">
-		<h4>Cross-browser compatibility</h4>
-		<p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
-	</div>
-	<h3>Anchor element</h3>
-	<p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
-	<p> <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a> <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a> </p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg disabled&quot; role=&quot;button&quot;&gt;Primary link&lt;/a&gt;
+  </div>
+  <div class="alert alert-danger">
+    <h4>Cross-browser compatibility</h4>
+    <p>If you add the <code>disabled</code> attribute to a <code>&lt;button&gt;</code>, Internet Explorer 9 and below will render text gray with a nasty text-shadow that we cannot fix.</p>
+  </div>
+  <h3>Anchor element</h3>
+  <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+  <p> <a href="#" class="btn btn-primary btn-lg disabled" role="button">Primary link</a> <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a> </p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary btn-lg disabled&quot; role=&quot;button&quot;&gt;Primary link&lt;/a&gt;
 &lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg disabled&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
 </code></pre>
-	</div>
-	<p> We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. </p>
-	<div class="alert alert-warning">
-		<h4>Link functionality not impacted</h4>
-		<p>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality. Use custom JavaScript to disable links here.</p>
-	</div>
-	<div class="alert alert-warning">
-		<h4>Context-specific usage</h4>
-		<p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="btn-groups">Groups and toolbars</h2>
-	<p>Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="needs-solution-en.html">our buttons plugin</a>.</p>
-	<div class="alert alert-info">
-		<h4>Tooltips &amp; popovers in button groups require special setting</h4>
-		<p>When using tooltips or popovers on elements within a <code>.btn-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
-	</div>
-	<h3 id="btn-groups-single">Basic example</h3>
-	<p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
-	<div class="btn-group" style="margin: 9px 0 5px;">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
+  </div>
+  <p> We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. </p>
+  <div class="alert alert-warning">
+    <h4>Link functionality not impacted</h4>
+    <p>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality. Use custom JavaScript to disable links here.</p>
+  </div>
+  <div class="alert alert-warning">
+    <h4>Context-specific usage</h4>
+    <p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="btn-groups">Groups and toolbars</h2>
+  <p>Group a series of buttons together on a single line with the button group. Add on optional JavaScript radio and checkbox style behavior with <a href="needs-solution-en.html">our buttons plugin</a>.</p>
+  <div class="alert alert-info">
+    <h4>Tooltips &amp; popovers in button groups require special setting</h4>
+    <p>When using tooltips or popovers on elements within a <code>.btn-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered).</p>
+  </div>
+  <h3 id="btn-groups-single">Basic example</h3>
+  <p>Wrap a series of buttons with <code>.btn</code> in <code>.btn-group</code>.</p>
+  <div class="btn-group" style="margin: 9px 0 5px;">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Left&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Middle&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<h3 id="btn-groups-toolbar">Button toolbar</h3>
-	<p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
-	<div class="btn-toolbar" role="toolbar" style="margin: 0;">
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">1</button>
-			<button type="button" class="btn btn-default">2</button>
-			<button type="button" class="btn btn-default">3</button>
-			<button type="button" class="btn btn-default">4</button>
-		</div>
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">5</button>
-			<button type="button" class="btn btn-default">6</button>
-			<button type="button" class="btn btn-default">7</button>
-		</div>
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">8</button>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot;&gt;
-	&lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
-	&lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
+  </div>
+  <h3 id="btn-groups-toolbar">Button toolbar</h3>
+  <p>Combine sets of <code>&lt;div class="btn-group"&gt;</code> into a <code>&lt;div class="btn-toolbar"&gt;</code> for more complex components.</p>
+  <div class="btn-toolbar" role="toolbar" style="margin: 0;">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">1</button>
+      <button type="button" class="btn btn-default">2</button>
+      <button type="button" class="btn btn-default">3</button>
+      <button type="button" class="btn btn-default">4</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">5</button>
+      <button type="button" class="btn btn-default">6</button>
+      <button type="button" class="btn btn-default">7</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">8</button>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-toolbar&quot; role=&quot;toolbar&quot;&gt;
+  &lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-groups-sizing">Sizing</h3>
-	<p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to the <code>.btn-group</code>.</p>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-default">Left</button>
-			<button type="button" class="btn btn-default">Middle</button>
-			<button type="button" class="btn btn-default">Right</button>
-		</div>
-	</div>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group">
-			<button type="button" class="btn btn-default">Left</button>
-			<button type="button" class="btn btn-default">Middle</button>
-			<button type="button" class="btn btn-default">Right</button>
-		</div>
-	</div>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group btn-group-sm">
-			<button type="button" class="btn btn-default">Left</button>
-			<button type="button" class="btn btn-default">Middle</button>
-			<button type="button" class="btn btn-default">Right</button>
-		</div>
-	</div>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group btn-group-xs">
-			<button type="button" class="btn btn-default">Left</button>
-			<button type="button" class="btn btn-default">Middle</button>
-			<button type="button" class="btn btn-default">Right</button>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group btn-group-lg&quot;&gt;...&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-groups-sizing">Sizing</h3>
+  <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to the <code>.btn-group</code>.</p>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+    <div class="btn-group btn-group-lg">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+    <div class="btn-group btn-group-sm">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group btn-group-xs">
+      <button type="button" class="btn btn-default">Left</button>
+      <button type="button" class="btn btn-default">Middle</button>
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-group btn-group-lg&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;btn-group&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;btn-group btn-group-sm&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;btn-group btn-group-xs&quot;&gt;...&lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-groups-nested">Nesting</h3>
-	<p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
-	<div class="btn-group">
-		<button type="button" class="btn btn-default">1</button>
-		<button type="button" class="btn btn-default">2</button>
-		<div class="btn-group">
-			<button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
-				<li><a href="#">Dropdown link</a></li>
-				<li><a href="#">Dropdown link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
-	&lt;div class=&quot;btn-group&quot;&gt;
-		&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
-			Dropdown
-			&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-		&lt;/button&gt;
-		&lt;ul class=&quot;dropdown-menu&quot;&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
-			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
-		&lt;/ul&gt;
-	&lt;/div&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-groups-nested">Nesting</h3>
+  <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
+    <div class="btn-group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+  &lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+      Dropdown
+      &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class=&quot;dropdown-menu&quot;&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Dropdown link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-groups-vertical">Vertical variation</h3>
-	<p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
-	<div class="btn-group-vertical">
-		<button type="button" class="btn btn-default">Button</button>
-		<button type="button" class="btn btn-default">Button</button>
-		<div class="btn-group">
-			<button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
-				<li><a href="#">Dropdown link</a></li>
-				<li><a href="#">Dropdown link</a></li>
-			</ul>
-		</div>
-		<button type="button" class="btn btn-default">Button</button>
-		<button type="button" class="btn btn-default">Button</button>
-		<div class="btn-group">
-			<button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
-				<li><a href="#">Dropdown link</a></li>
-				<li><a href="#">Dropdown link</a></li>
-			</ul>
-		</div>
-		<div class="btn-group">
-			<button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
-				<li><a href="#">Dropdown link</a></li>
-				<li><a href="#">Dropdown link</a></li>
-			</ul>
-		</div>
-		<div class="btn-group">
-			<button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
-				<li><a href="#">Dropdown link</a></li>
-				<li><a href="#">Dropdown link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group-vertical&quot;&gt;
-	...
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-groups-vertical">Vertical variation</h3>
+  <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+  <div class="btn-group-vertical">
+    <button type="button" class="btn btn-default">Button</button>
+    <button type="button" class="btn btn-default">Button</button>
+    <div class="btn-group">
+      <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-default">Button</button>
+    <button type="button" class="btn btn-default">Button</button>
+    <div class="btn-group">
+      <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+        <li><a href="#">Dropdown link</a></li>
+        <li><a href="#">Dropdown link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-group-vertical&quot;&gt;
+  ...
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-groups-justified">Justified link variation</h3>
-	<p>Make a group of buttons stretch at the same size to span the entire width of its parent.</p>
-	<div class="alert alert-warning">
-		<h4>Element-specific usage</h4>
-		<p>This only works with <code>&lt;a&gt;</code> elements as the <code>&lt;button&gt;</code> doesn't pick up these styles.</p>
-	</div>
-	<div class="btn-group btn-group-justified"> <a class="btn btn-default" role="button">Left</a> <a class="btn btn-default" role="button">Middle</a> <a class="btn btn-default" role="button">Right</a></div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group btn-group-justified&quot;&gt;
-	...
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-groups-justified">Justified button groups</h3>
+  <div class="alert alert-warning">
+    <h4>Handling borders</h4>
+    <p>Due to the specific HTML and CSS used to justify buttons (namely <code>display: table-cell</code>), the borders between them are doubled. In regular button groups, <code>margin-left: -1px</code> is used to stack the borders instead of removing them. However, <code>margin</code> doesn't work with <code>display: table-cell</code>. As a result, depending on your customizations to Bootstrap, you may wish to remove or re-color the borders.</p>
+  </div>
+  <h4>With <code>&lt;a&gt;</code> elements</h4>
+  <p>Just wrap a series of <code>.btn</code>s in <code>.btn-group.btn-group-justified</code>.</p>
+  <div class="btn-group btn-group-justified"> <a class="btn btn-default" role="button">Left</a> <a class="btn btn-default" role="button">Middle</a> <a class="btn btn-default" role="button">Right</a> </div>
+  <br>
+  <div class="btn-group btn-group-justified"> <a class="btn btn-default" role="button">Left</a> <a class="btn btn-default" role="button">Middle</a>
+    <div class="btn-group"> <a class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </a>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code class="html">&lt;div class="btn-group btn-group-justified"&gt;
+  ...
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="btn-dropdowns">Dropdowns</h2>
-	<p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
-	<div class="alert alert-danger">
-		<h4>Plugin dependency</h4>
-		<p>Button dropdowns require the <a href="needs-solution-en.html">dropdown plugin</a> to be included in your version of Bootstrap.</p>
-	</div>
-	<h3 id="btn-dropdowns-single">Single button dropdowns</h3>
-	<p>Turn a button into a dropdown toggle with some basic markup changes.</p>
-	<div class="btn-group">
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;!-- Single button --&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h4 class="mrgn-tp-lg">With <code>&lt;button&gt;</code> elements</h4>
+  <p>To use justified button groups with <code>&lt;button&gt;</code> elements, <strong class="text-danger">you must wrap each button in a button group</strong>. Most browsers don't properly apply our CSS for justification to <code>&lt;button&gt;</code> elements, but since we support button dropdowns, we can workaround that.</p>
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Left</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Middle</button>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default">Right</button>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class="btn-group btn-group-justified"&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-default"&gt;Left&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-default"&gt;Middle&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button type="button" class="btn btn-default"&gt;Right&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h2 class="page-header" id="btn-dropdowns">Dropdowns</h2>
+  <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
+  <div class="alert alert-danger">
+    <h4>Plugin dependency</h4>
+    <p>Button dropdowns require the <a href="needs-solution-en.html">dropdown plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
+  <h3 id="btn-dropdowns-single">Single button dropdowns</h3>
+  <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;!-- Single button --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
-		Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+    Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-dropdowns-split">Split button dropdowns</h3>
-	<p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
-	<div class="btn-group">
-		<button type="button" class="btn btn-default">Default</button>
-		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-primary">Primary</button>
-		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-success">Success</button>
-		<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-info">Info</button>
-		<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-warning">Warning</button>
-		<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="btn-group">
-		<button type="button" class="btn btn-danger">Danger</button>
-		<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-		<ul class="dropdown-menu" role="menu">
-			<li><a href="#">Action</a></li>
-			<li><a href="#">Another action</a></li>
-			<li><a href="#">Something else here</a></li>
-			<li class="divider"></li>
-			<li><a href="#">Separated link</a></li>
-		</ul>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;!-- Split button --&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
+  <p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;!-- Split button --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
-		&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-dropdowns-sizing">Sizing</h3>
-	<p>Button dropdowns work with buttons of all sizes.</p>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group">
-			<button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> Large button <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group">
-			<button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"> Small button <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group">
-			<button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"> Extra small button <span class="caret"></span> </button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;!-- Large button group --&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-dropdowns-sizing">Sizing</h3>
+  <p>Button dropdowns work with buttons of all sizes.</p>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+    <div class="btn-group">
+      <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> Large button <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+    <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"> Small button <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+      <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"> Extra small button <span class="caret"></span> </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;!-- Large button group --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn btn-default btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
-		Large button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot;&gt;
-		...
-	&lt;/ul&gt;
+  &lt;button class=&quot;btn btn-default btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
+    Large button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
 &lt;/div&gt;
 &lt;!-- Small button group --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn btn-default btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
-		Small button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot;&gt;
-		...
-	&lt;/ul&gt;
+  &lt;button class=&quot;btn btn-default btn-sm dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
+    Small button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
 &lt;/div&gt;
 &lt;!-- Extra small button group --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn btn-default btn-xs dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
-		Extra small button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot;&gt;
-		...
-	&lt;/ul&gt;
+  &lt;button class=&quot;btn btn-default btn-xs dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
+    Extra small button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    ...
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h3 id="btn-dropdowns-dropup">Dropup variation</h3>
-	<p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
-	<div class="btn-toolbar" role="toolbar">
-		<div class="btn-group dropup">
-			<button type="button" class="btn btn-default">Dropup</button>
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-			<ul class="dropdown-menu" role="menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-		</div>
-		<div class="btn-group dropup">
-			<button type="button" class="btn btn-primary">Right dropup</button>
-			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-			<ul class="dropdown-menu pull-right" role="menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;btn-group dropup&quot;&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Dropup&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
-		&lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
-	&lt;/button&gt;
-	&lt;ul class=&quot;dropdown-menu&quot;&gt;
-		&lt;!-- Dropdown menu links --&gt;
-	&lt;/ul&gt;
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <h3 id="btn-dropdowns-dropup">Dropup variation</h3>
+  <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
+  <div class="btn-toolbar" role="toolbar">
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-default">Dropup</button>
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-primary">Right dropup</button>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+      <ul class="dropdown-menu pull-right" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;btn-group dropup&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Dropup&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Toggle Dropdown&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;!-- Dropdown menu links --&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+  </div>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+    <div class="col-md-6">
+      <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+    <div class="col-md-6 brdr-lft">
+      <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+      <p>(Info goes here)</p>
+    </div>
+  </div>
+  <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>
