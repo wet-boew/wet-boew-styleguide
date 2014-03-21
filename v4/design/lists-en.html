@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Lists
+
+	
+		
+		 - Working examples
+	
+
+ - Web Experience Toolkit
+</title>
+		<link href="../assets/favicon.ico" rel="shortcut icon" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
+		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities" />
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
+<link rel="stylesheet" href="../css/wet-boew.min.css" />
+<!--<![endif]-->
+<link rel="stylesheet" href="../css/theme.min.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+
+<noscript><link rel="stylesheet" href="../css/noscript.min.css" /></noscript>
+
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<ul id="wb-tphp">
+			<li class="wb-slc">
+				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+			</li>
+
+			<li class="wb-slc visible-md visible-lg">
+				<a class="wb-sl" href="#wb-info">Skip to site information</a>
+			</li>
+
+
+		</ul>
+		<header role="banner">
+			<div id="wb-bnr">
+				<div id="wb-bar">
+					<div class="container">
+						<div class="row">
+
+							<section id="wb-lng" class="visible-md visible-lg">
+								<h2>Language selection</h2>
+								<ul class="text-right">
+
+	
+	<li><a lang="fr" hreflang="fr" href="lists-fr.html">Français</a></li>
+
+
+	<li class="curr">English&#32;<span>(current)</span></li>
+
+</ul>
+
+							</section>
+
+
+							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+								<h2>Menu</h2>
+								<ul class="pnl-btn list-inline text-right">
+	<li><a href="#mb-pnl" title="Menu" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menu</span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+
+							</section>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div id="wb-sttl" class="col-md-8">
+							<a href="../index-en.html">
+	<object type="image/svg+xml" tabindex="-1" role="img" data="../assets/logo.svg" aria-label="Web Experience Toolkit"></object>
+	<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+
+						</div>
+
+						<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+							<h2>Search</h2>
+							<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+
+	<div class="form-group">
+		<label for="wb-srch-q">Search website</label>
+		<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150" />
+		<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/" />
+	</div>
+
+	<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+
+</form>
+
+						</section>
+
+					</div>
+				</div>
+			</div>
+
+			<nav role="navigation" id="wb-sm" data-ajax-fetch="../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+				<div class="container nvbar">
+	<h2>Site menu</h2>
+    <div class="row">
+        <ul class="list-inline menu">
+			<li><a href="../index-en.html">WET project</a></li>
+			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/impl-en.html">Implement WET</a></li>
+			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/contrib-en.html">Contribute to WET</a></li>
+        </ul>
+    </div>
+</div>
+
+			</nav>
+
+
+	
+			<nav role="navigation" id="wb-bc" property="breadcrumb">
+				<h2>You are here:</h2>
+				<div class="container">
+	<div class="row">
+		<ol class="breadcrumb">
+			<li>
+				<a href="../index-en.html">Home</a>
+			</li>
+
+	
+			<li>
+				<a href="../demos/index-en.html">Working examples</a>
+			</li>
+		
+	
+
+			<li>Lists</li>
+		</ol>
+	</div>
+</div>
+
+			</nav>
+	
+
+		</header>
+
+
+		<main role="main" property="mainContentOfPage" class="container">
+			<h1 id="wb-cont" property="name">Lists</h1>
+			
+
+
+			
+<div class="wb-prettify all-pre">
+ <div class="row">
+  <div class="col-md-8">
+   <div class="panel panel-default">
+    <div class="panel-heading">
+     <h2 class="panel-title">Table of contents</h2>
+    </div>
+    <div class="panel-body">
+     <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#default">Default appearance</a></li>
+      <li><a href="#unstyled">Unstyled lists</a></li>
+      <li><a href="#alpha">Alpha lists</a></li>
+      <li><a href="#roman">Roman numeral lists</a></li>
+      <li><a href="#numeric">Numbered lists</a></li>
+      <li><a href="#inline">Inline lists</a></li>
+      <li><a href="#horizontal">Horizontal definition lists</a></li>
+      <li><a href="#columns">List columns</a></li>
+      <li><a href="#menu">Menu, navigation and toolbar lists</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="well">
+    <h2 class="h3 mrgn-tp-0">Related </h2>
+    <ul class="list-unstyled">
+     <li><span class="fa fa-picture-o text-muted"></span> <strong>Design guide</strong>
+      <ul class="list-unstyled mrgn-lft-md">
+       <li><a href="listgroup-en.html">List group <span class="wb-inv">- Design guide</span></a></li>
+      </ul>
+     </li>
+     <li><span class="fa fa-font text-muted"></span> <strong>Writing guide</strong>
+      <ul class="list-unstyled mrgn-lft-md">
+       <li><a href="../writing/principals-en.html#lists">List principals<span class="wb-inv"> - Writing guide</span></a></li>
+       <li><a href="../writing/formatting-en.html#lists">List formatting<span class="wb-inv"> - Writing guide</span></a></li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <h2 class="page-header" id="description">Description</h2>
+ <p>There are three list types:</p>
+ <ul>
+  <li> <a href="#unordered">Unordered lists</a> - 
+   A list of items in which the order does <em>not</em> explicitly matter.</li>
+  <li> <a href="#ordered">Ordered lists</a> - A list of items in which the order <em>does</em> explicitly matter.</li>
+  <li> <a href="#descriptionlist">Description lists</a> - A list of terms with their associated descriptions.</li>
+ </ul>
+ <h2 class="page-header" id="default">Default appearance</h2>
+ <p>The default appearance of the three list types are as follows:</p>
+ <div class="row">
+  <div class="col-md-4">
+   <h3 id="unordered">Unordered lists</h3>
+   <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+   <ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Nulla volutpat aliquam velit
+     <ul>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+     </ul>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ul>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+   </div>
+  </div>
+  <div class="col-md-4 brdr-lft">
+   <h3 id="ordered">Ordered lists</h3>
+   <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+   <ol>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Nulla volutpat aliquam velit
+     <ol>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+     </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ol>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+   </div>
+  </div>
+  <div class="col-md-4 brdr-lft">
+   <h3 id="descriptionlist">Description lists</h3>
+   <p>A list of terms with their associated descriptions.</p>
+   <dl>
+    <dt>Item 1</dt>
+    <dd>Description of item 1</dd>
+    <dt>Item 2</dt>
+    <dd>Description of item 2</dd>
+    <dt>Item 3</dt>
+    <dd>Description of item 3</dd>
+   </dl>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;dl&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+   </div>
+  </div>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="unstyled">Unstyled lists</h2>
+ <p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
+ <ul class="list-unstyled">
+  <li>Lorem ipsum dolor sit amet</li>
+  <li>Consectetur adipiscing elit</li>
+  <li>Integer molestie lorem at massa</li>
+  <li>Facilisis in pretium nisl aliquet</li>
+  <li>Nulla volutpat aliquam velit
+   <ul>
+    <li>Phasellus iaculis neque</li>
+    <li>Purus sodales ultricies</li>
+    <li>Vestibulum laoreet porttitor sem</li>
+    <li>Ac tristique libero volutpat at</li>
+   </ul>
+  </li>
+  <li>Faucibus porta lacus fringilla vel</li>
+  <li>Aenean sit amet erat nunc</li>
+  <li>Eget porttitor lorem</li>
+ </ul>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;ul class=&quot;list-unstyled&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="alpha">Alpha lists</h2>
+ <p>Modify an <code>&lt;ol&gt;</code> to display letters instead of numeric numbers. This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
+ <div class="row">
+  <div class="col-md-6">
+   <p>Lower Alpha:</p>
+   <ol class="lst-lwr-alph">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+     <ol>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+     </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ol>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ul class=&quot;lst-lwr-alph&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+   </div>
+  </div>
+  <div class="col-md-6">
+   <p>Upper alpha:</p>
+   <ol class="lst-upr-alph">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+     <ol>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+     </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ol>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ul class=&quot;lst-upr-alph&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+   </div>
+  </div>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="roman">Roman numeral lists</h2>
+ <p>Modify an <code>&lt;ol&gt;</code> to display roman numbers instead of numeric numbers. This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
+ <div class="row">
+  <div class="col-md-6">
+   <p>Lower Roman:</p>
+   <ol class="lst-lwr-rmn">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+     <ol>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+     </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ol>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ul class=&quot;lst-lwr-rmn&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+   </div>
+  </div>
+  <div class="col-md-6">
+   <p>Upper Roman:</p>
+   <ol class="lst-upr-rmn">
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Consectetur adipiscing elit</li>
+    <li>Integer molestie lorem at massa</li>
+    <li>Facilisis in pretium nisl aliquet</li>
+    <li>Nulla volutpat aliquam velit
+     <ol>
+      <li>Phasellus iaculis neque</li>
+      <li>Purus sodales ultricies</li>
+      <li>Vestibulum laoreet porttitor sem</li>
+      <li>Ac tristique libero volutpat at</li>
+     </ol>
+    </li>
+    <li>Faucibus porta lacus fringilla vel</li>
+    <li>Aenean sit amet erat nunc</li>
+    <li>Eget porttitor lorem</li>
+   </ol>
+   <div class="mrgn-tp-lg">
+    <pre><code>&lt;ul class=&quot;lst-upr-rmn&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+   </div>
+  </div>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="numeric">Numbered lists</h2>
+ <p>An <code>&lt;ol&gt;</code> already defaults to listing numbers.  This class is represented only because all the other list options have been provided.  It has limited use.</p>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;ul class=&quot;lst-num&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="inline">Inline lists</h2>
+ <p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
+ <ul class="list-inline">
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+ </ul>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;ul class=&quot;list-inline&quot;&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="horizontal">Horizontal description lists</h2>
+ <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
+ <dl class="dl-horizontal">
+  <dt>Item 1</dt>
+  <dd>Description of item 1</dd>
+  <dt>Item 2</dt>
+  <dd>Description of item 2</dd>
+  <dt>Item 3</dt>
+  <dd>Description of item 3</dd>
+ </dl>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;dl class=&quot;dl-horizontal&quot;&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre>
+ </div>
+ <div class="alert alert-info">
+  <h4>Auto-truncating</h4>
+  <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="columns">List columns</h2>
+ <p>A lists can be spread over 2, 3 or 4 columns using the CSS attribute <code>column-count</code>. Since columns are similar to grids, they adhere to the same <a href="grids-en.html#options">breakpoints as grids</a>. Therefore, the classes available are:</p>
+ <ul>
+  <li><code>colcount-xs-2</code>, <code>colcount-sm-2</code>, <code>colcount-md-2</code>, <code>colcount-lg-2</code></li>
+  <li><code>colcount-xs-3</code>, <code>colcount-sm-3</code>, <code>colcount-md-3</code>, <code>colcount-lg-3</code></li>
+  <li><code>colcount-xs-4</code>, <code>colcount-sm-4</code>, <code>colcount-md-4</code>, <code>colcount-lg-4</code></li>
+ </ul>
+ <div class="alert alert-danger">
+  <h3 class="mrgn-tp-0">Cross-browser compatibility</h3>
+  <p>Internet Explorer 9 and below does not support the <code>column-count</code> attribute.  In those browsers the list will linearize as one list in one column.</p>
+ </div>
+ <div class="row">
+  <div class="col-md-3">
+   <p><code>&lt;ul&gt;</code> default</p>
+   <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+   </ul>
+   <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+  <div class="col-md-3 brdr-lft">
+   <p><code>&lt;ul class=&quot;colcount-sm-2&quot;&gt;</code></p>
+   <ul class="colcount-sm-2">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+   </ul>
+   <pre><code>&lt;ul class=&quot;colcount-sm-2&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+  <div class="col-md-3 brdr-lft">
+   <p><code>&lt;ul class=&quot;colcount-sm-3&quot;&gt;</code></p>
+   <ul class="colcount-sm-3">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+   </ul>
+   <pre><code>&lt;ul class=&quot;colcount-sm-3&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+  <div class="col-md-3 brdr-lft">
+   <p><code>&lt;ul class=&quot;colcount-sm-4&quot;&gt;</code></p>
+   <ul class="colcount-sm-4">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+   </ul>
+   <pre><code>&lt;ul class=&quot;colcount-sm-4&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  </div>
+ </div>
+ <p>You can also multi-class the columns so they adapt to the resolution:</p>
+ <p><code>&lt;ul class=&quot;colcount-sm-2 colcount-md-3 colcount-lg-4&quot;&gt;</code></p>
+ <ul class="colcount-sm-2 colcount-md-3 colcount-lg-4">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+  <li>Item 5</li>
+  <li>Item 6</li>
+  <li>Item 7</li>
+  <li>Item 8</li>
+ </ul>
+ <pre><code>&lt;ul class=&quot;colcount-sm-2 colcount-md-3 colcount-lg-4&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+  &lt;li&gt;Item 5&lt;/li&gt;
+  &lt;li&gt;Item 6&lt;/li&gt;
+  &lt;li&gt;Item 7&lt;/li&gt;
+  &lt;li&gt;Item 8&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="menu">Menu, navigation and toolbar lists</h2>
+ <p>Lists can be used to create menus, navigational features and toolbars.  Refer to:</p>
+ <ul>
+  <li>(Info goes here)</li>
+ </ul>
+ <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+</div>
+
+			<dl id="wb-dtmd" property="dateModified">
+	<dt>Date modified:&#32;</dt>
+	<dd><time>2014-02-28</time></dd>
+</dl>
+
+
+		</main>
+
+
+
+		<footer role="contentinfo" id="wb-info" class="container visible-md visible-lg">
+			<nav role="navigation" class="row">
+				<h2>Site information</h2>
+				<section class="col-sm-3">
+	<h3>About</h3>
+	<ul class="list-unstyled">
+		<li><a href="/index-en.html#about">About the Web Experience Toolkit</a></li>
+		<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Contact us</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>News</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+		<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Stay connected</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+	</ul>
+</section>
+
+			</nav>
+		</footer>
+
+		<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+
+
+	</body>
+</html>

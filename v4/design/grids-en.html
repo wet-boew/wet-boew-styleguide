@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+		<title>Grid system
+
+	
+		
+		 - Working examples
+	
+
+ - Web Experience Toolkit
+</title>
+		<link href="../assets/favicon.ico" rel="shortcut icon" />
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
+		<meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities" />
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
+<link rel="stylesheet" href="../css/wet-boew.min.css" />
+<!--<![endif]-->
+<link rel="stylesheet" href="../css/theme.min.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="../css/ie8-wet-boew.min.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../js/ie8-wet-boew.min.js"></script>
+<![endif]-->
+
+<noscript><link rel="stylesheet" href="../css/noscript.min.css" /></noscript>
+
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		<ul id="wb-tphp">
+			<li class="wb-slc">
+				<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+			</li>
+
+			<li class="wb-slc visible-md visible-lg">
+				<a class="wb-sl" href="#wb-info">Skip to site information</a>
+			</li>
+
+
+		</ul>
+		<header role="banner">
+			<div id="wb-bnr">
+				<div id="wb-bar">
+					<div class="container">
+						<div class="row">
+
+							<section id="wb-lng" class="visible-md visible-lg">
+								<h2>Language selection</h2>
+								<ul class="text-right">
+
+	
+	<li><a lang="fr" hreflang="fr" href="grids-fr.html">Français</a></li>
+
+
+	<li class="curr">English&#32;<span>(current)</span></li>
+
+</ul>
+
+							</section>
+
+
+							<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+								<h2>Menu</h2>
+								<ul class="pnl-btn list-inline text-right">
+	<li><a href="#mb-pnl" title="Menu" aria-controls="mb-pnl" class="overlay-lnk" role="button"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Menu</span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+
+							</section>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+
+						<div id="wb-sttl" class="col-md-8">
+							<a href="../index-en.html">
+	<object type="image/svg+xml" tabindex="-1" role="img" data="../assets/logo.svg" aria-label="Web Experience Toolkit"></object>
+	<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+
+						</div>
+
+						<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+							<h2>Search</h2>
+							<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+
+	<div class="form-group">
+		<label for="wb-srch-q">Search website</label>
+		<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150" />
+		<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/" />
+	</div>
+
+	<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+
+</form>
+
+						</section>
+
+					</div>
+				</div>
+			</div>
+
+			<nav role="navigation" id="wb-sm" data-ajax-fetch="../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+				<div class="container nvbar">
+	<h2>Site menu</h2>
+    <div class="row">
+        <ul class="list-inline menu">
+			<li><a href="../index-en.html">WET project</a></li>
+			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/impl-en.html">Implement WET</a></li>
+			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/contrib-en.html">Contribute to WET</a></li>
+        </ul>
+    </div>
+</div>
+
+			</nav>
+
+
+	
+			<nav role="navigation" id="wb-bc" property="breadcrumb">
+				<h2>You are here:</h2>
+				<div class="container">
+	<div class="row">
+		<ol class="breadcrumb">
+			<li>
+				<a href="../index-en.html">Home</a>
+			</li>
+
+	
+			<li>
+				<a href="../demos/index-en.html">Working examples</a>
+			</li>
+		
+	
+
+			<li>Grid system</li>
+		</ol>
+	</div>
+</div>
+
+			</nav>
+	
+
+		</header>
+
+
+		<main role="main" property="mainContentOfPage" class="container">
+			<h1 id="wb-cont" property="name">Grid system</h1>
+			
+
+
+			
+<div class="wb-prettify all-pre">
+ <div class="row">
+  <div class="col-md-8">
+   <div class="panel panel-default">
+    <div class="panel-heading">
+     <h2 class="panel-title">Table of contents</h2>
+    </div>
+    <div class="panel-body">
+     <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#options">Grid options</a></li>
+      <li><a href="#example-basic">Stacked-to-horizonal</a></li>
+      <li><a href="#example-fluid">Fluid container</a></li>
+      <li><a href="#example-mixed">Mobile and desktops</a></li>
+      <li><a href="#example-mixed-complete">Mobile, tablet, desktops</a></li>
+      <li><a href="#responsive-resets">Responsive column resets</a></li>
+      <li><a href="#offsetting">Offsetting columns</a></li>
+      <li><a href="#nesting">Nesting columns</a></li>
+      <li><a href="#column-ordering">Column ordering</a></li>
+      <li><a href="#reflow">Reflowing content around grids</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+ <p>Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+ <h2 class="page-header" id="intro">Introduction</h2>
+ <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+ <ul>
+  <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
+  <li>Use rows to create horizontal groups of columns.</li>
+  <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+  <li>Predefined grid classes like <code>.row</code> and <code>.col-xs-4</code> are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+  <li>Columns create gutters (gaps between column content) via <code>padding</code>. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>s.</li>
+  <li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three <code>.col-xs-4</code>.</li>
+ </ul>
+ <p>Look to the examples for applying these principles to your code.</p>
+ <div class="alert alert-info">
+  <h3>Grids and full-width layouts</h3>
+  <p>Folks looking to create fully fluid layouts (meaning your site stretches the entire width of the viewport) must wrap their grid content in a containing element with <code>padding: 0 15px;</code> to offset the <code>margin: 0 -15px;</code> used on <code>.row</code>s.</p>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="options">Grid options</h2>
+ <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+ <div class="table-responsive">
+  <table class="table table-bordered table-striped">
+   <thead>
+    <tr>
+     <th></th>
+     <th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+     <th> Small devices <small>Tablets (=768px)</small> </th>
+     <th> Medium devices <small>Desktops (=992px)</small> </th>
+     <th> Large devices <small>Desktops (=1200px)</small> </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <th>Grid behavior</th>
+     <td>Horizontal at all times</td>
+     <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+    </tr>
+    <tr>
+     <th>Container width</th>
+     <td>None (auto)</td>
+     <td>750px</td>
+     <td>970px</td>
+     <td>1170px</td>
+    </tr>
+    <tr>
+     <th>Class prefix</th>
+     <td><code>.col-xs-</code></td>
+     <td><code>.col-sm-</code></td>
+     <td><code>.col-md-</code></td>
+     <td><code>.col-lg-</code></td>
+    </tr>
+    <tr>
+     <th># of columns</th>
+     <td colspan="4">12</td>
+    </tr>
+    <tr>
+     <th>Column width</th>
+     <td class="text-muted">Auto</td>
+     <td>60px</td>
+     <td>78px</td>
+     <td>95px</td>
+    </tr>
+    <tr>
+     <th>Gutter width</th>
+     <td colspan="4">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+     <th>Nestable</th>
+     <td colspan="4">Yes</td>
+    </tr>
+    <tr>
+     <th>Offsets</th>
+     <td colspan="4">Yes</td>
+    </tr>
+    <tr>
+     <th>Column ordering</th>
+     <td colspan="4">Yes</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any <code>.col-md-</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not present.</p>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="example-basic">Stacked-to-horizontal</h2>
+ <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
+ <div class="text-center">
+  <div class="row">
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+   <div class="col-md-1">
+    <div class="well">.col-md-1</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-8">
+    <div class="well">.col-md-8</div>
+   </div>
+   <div class="col-md-4">
+    <div class="well">.col-md-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-4">
+    <div class="well">.col-md-4</div>
+   </div>
+   <div class="col-md-4">
+    <div class="well">.col-md-4</div>
+   </div>
+   <div class="col-md-4">
+    <div class="well">.col-md-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-6">
+    <div class="well">.col-md-6</div>
+   </div>
+   <div class="col-md-6">
+    <div class="well">.col-md-6</div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;.col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 id="example-fluid" class="page-header">Fluid container</h2>
+ <p>Turn any fixed-width grid layout into a full-width layout by changing your outermost <code>.container</code> to <code>.container-fluid</code>.</p>
+ <pre><code>&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="example-mixed">Mobile and desktop</h2>
+ <p>Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
+ <div class="text-center">
+  <div class="row">
+   <div class="col-xs-12 col-md-8">
+    <div class="well">.col-xs-12 .col-md-8</div>
+   </div>
+   <div class="col-xs-6 col-md-4">
+    <div class="well">.col-xs-6 .col-md-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-xs-6 col-md-4">
+    <div class="well">.col-xs-6 .col-md-4</div>
+   </div>
+   <div class="col-xs-6 col-md-4">
+    <div class="well">.col-xs-6 .col-md-4</div>
+   </div>
+   <div class="col-xs-6 col-md-4">
+    <div class="well">.col-xs-6 .col-md-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-xs-6">
+    <div class="well">.col-xs-6</div>
+   </div>
+   <div class="col-xs-6">
+    <div class="well">.col-xs-6</div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-md-8&quot;&gt;.col-xs-12 .col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6&quot;&gt;.col-xs-6&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="example-mixed-complete">Mobile, tablet, desktops</h2>
+ <p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
+ <div class="text-center">
+  <div class="row">
+   <div class="col-xs-12 col-sm-6 col-md-8">
+    <div class="well">.col-xs-12 .col-sm-6 .col-md-8</div>
+   </div>
+   <div class="col-xs-6 col-md-4">
+    <div class="well">.col-xs-6 .col-md-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-xs-6 col-sm-4">
+    <div class="well">.col-xs-6 .col-sm-4</div>
+   </div>
+   <div class="col-xs-6 col-sm-4">
+    <div class="well">.col-xs-6 .col-sm-4</div>
+   </div>
+   <!-- Optional: clear the XS cols if their content doesn't match in height -->
+   <div class="clearfix visible-xs"></div>
+   <div class="col-xs-6 col-sm-4">
+    <div class="well">.col-xs-6 .col-sm-4</div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-8&quot;&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-md-4&quot;&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+  &lt;!-- Optional: clear the XS cols if their content doesn&#39;t match in height --&gt;
+  &lt;div class=&quot;clearfix visible-xs&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="responsive-resets">Responsive column resets</h2>
+ <p>With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our <a href="visible-en.html">invisible and visible classes</a>.</p>
+ <div class="text-center">
+  <div class="row">
+   <div class="col-xs-6 col-sm-3">
+    <div class="well">.col-xs-6 .col-sm-3 <br>
+     Resize your viewport or check it out on your phone for an example.</div>
+   </div>
+   <div class="col-xs-6 col-sm-3">
+    <div class="well">.col-xs-6 .col-sm-3</div>
+   </div>
+   <!-- Add the extra clearfix for only the required viewport -->
+   <div class="clearfix visible-xs"></div>
+   <div class="col-xs-6 col-sm-3">
+    <div class="well">.col-xs-6 .col-sm-3</div>
+   </div>
+   <div class="col-xs-6 col-sm-3">
+    <div class="well">.col-xs-6 .col-sm-3</div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;!-- Add the extra clearfix for only the required viewport --&gt;
+  &lt;div class=&quot;clearfix visible-xs&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+  &lt;div class=&quot;col-xs-6 col-sm-3&quot;&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. Those resets are available for medium and large grid tiers only, since they start only at the (second) small grid tier. See this in action in <a href="file:///C|/Users/Toshiba/Desktop/examples/grid">the grid example</a>.</p>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-5 col-md-6&quot;&gt;.col-sm-5 .col-md-6&lt;/div&gt;
+  &lt;div class=&quot;col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0&quot;&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6 col-md-5 col-lg-6&quot;&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0&quot;&gt;.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="offsetting">Offsetting columns</h2>
+ <p>Move columns to the right using <code>.col-md-offset-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.col-md-offset-4</code> moves <code>.col-md-4</code> over four columns.</p>
+ <div class="text-center">
+  <div class="row">
+   <div class="col-md-4">
+    <div class="well">.col-md-4</div>
+   </div>
+   <div class="col-md-4 col-md-offset-4">
+    <div class="well">.col-md-4 .col-md-offset-4</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-3 col-md-offset-3">
+    <div class="well">.col-md-3 .col-md-offset-3</div>
+   </div>
+   <div class="col-md-3 col-md-offset-3">
+    <div class="well">.col-md-3 .col-md-offset-3</div>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+    <div class="well">.col-md-6 .col-md-offset-3</div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4 col-md-offset-4&quot;&gt;.col-md-4 .col-md-offset-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-3 col-md-offset-3&quot;&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+  &lt;div class=&quot;col-md-3 col-md-offset-3&quot;&gt;.col-md-3 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6 col-md-offset-3&quot;&gt;.col-md-6 .col-md-offset-3&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="nesting">Nesting columns</h2>
+ <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-md-*</code> columns within an existing <code>.col-md-*</code> column. Nested rows should include a set of columns that add up to 12.</p>
+ <div class="row">
+  <div class="col-md-9">
+   <div class="brdr-tp brdr-lft brdr-bttm brdr-rght">
+    <p class="mrgn-tp-md mrgn-lft-md mrgn-bttm-md">Level 1: .col-md-9</p>
+    <div class="row">
+     <div class="col-md-6">
+      <div class="well">Level 2: .col-md-6 </div>
+     </div>
+     <div class="col-md-6">
+      <div class="well"> Level 2: .col-md-6 </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-9&quot;&gt;
+    Level 1: .col-md-9
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        Level 2: .col-md-6
+      &lt;/div&gt;
+      &lt;div class=&quot;col-md-6&quot;&gt;
+        Level 2: .col-md-6
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="column-ordering">Column ordering</h2>
+ <p>Easily change the order of our built-in grid columns with <code>.col-md-push-*</code> and <code>.col-md-pull-*</code> modifier classes.</p>
+ <div class="row">
+  <div class="col-md-9 col-md-push-3">
+   <div class="well">.col-md-9 .col-md-push-3</div>
+  </div>
+  <div class="col-md-3 col-md-pull-9">
+   <div class="well">.col-md-3 .col-md-pull-9</div>
+  </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-9 col-md-push-3&quot;&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
+  &lt;div class=&quot;col-md-3 col-md-pull-9&quot;&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+ </div>
+ <h2 class="page-header" id="reflow"> Reflowing content around grids</h2>
+ <p>Grids create boxes of content, which is typically the desired result.  However, there are times when content needs to reflow around the grids.  The <code>mrgn-*-md</code> creates margin of 15px and it mimics the same gutter on a grid. This is important to understand when mixing grids and non-grids in the same row.  In order for the content will reflow around the grid cell, yet have the gutters match, you must apply both the <code>mrgn-lft-md</code> and <code>mrgn-rght-md</code> to the non-grid content. Also refer to: <a href="proximity-en.html">Margin proximity</a> and <a href="floats-en.html">Floats</a></p>
+ <div class="row">
+  <div class="col-md-6 brdr-rght">
+   <h3>Without reflow: Example 1</h3>
+   <div class="row">
+    <div class="col-md-8">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </div>
+    <div class="col-md-4">
+     <div class="well">
+      <p>Lorem ipsum dolor sit amet.</p>
+     </div>
+    </div>
+   </div>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+  <div class="col-md-6">
+   <h3>With reflow: Example 1</h3>
+   <div class="row">
+    <div class="col-md-4 pull-right">
+     <div class="well mrgn-bttm-md">
+      <p>Lorem ipsum dolor sit amet.</p>
+     </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </div>
+   </div>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+ </div>
+ <div class="row mrgn-tp-lg">
+  <div class="col-md-6 brdr-rght">
+   <h3>Without reflow: Example 2</h3>
+   <div class="row">
+    <div class="col-md-4">
+     <div class="well">
+      <p>Lorem ipsum dolor sit amet.</p>
+     </div>
+    </div>
+    <div class="col-md-8">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </div>
+   </div>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+  <div class="col-md-6">
+   <h3>With reflow: Example 2</h3>
+   <div class="row">
+    <div class="col-md-4 pull-left">
+     <div class="well mrgn-bttm-md">
+      <p>Lorem ipsum dolor sit amet.</p>
+     </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </div>
+   </div>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-left&quot;&gt;
+    &lt;div class=&quot;well mrgn-bttm-md&quot;&gt;&lt;p&gt;...&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+ </div>
+ <div class="row mrgn-tp-lg">
+  <div class="col-md-6 brdr-rght">
+   <h3>Without reflow: Example 3</h3>
+   <div class="row">
+    <div class="col-md-8">
+     <div class="panel panel-default">
+      <div class="panel-heading">
+       <h2 class="panel-title">Table of contents</h2>
+      </div>
+      <div class="panel-body">
+       <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="panel panel-info">
+      <div class="panel-heading">
+       <h2 class="panel-title">Related</h2>
+      </div>
+      <div class="list-group"><a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a></div>
+     </div>
+    </div>
+   </div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;
+    &lt;div class=&quot;panel panel-default&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Table of contents&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+    &lt;div class=&quot;panel panel-info&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Related&lt;/h2&gt;
+      &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;...&lt;/p&gt;</code></pre>
+  </div>
+  <div class="col-md-6">
+   <h3>With reflow: Example 3</h3>
+   <div class="row">
+    <div class="col-md-8 mrgn-bttm-lg">
+     <div class="panel panel-default">
+      <div class="panel-heading">
+       <h2 class="panel-title">Table of contents</h2>
+      </div>
+      <div class="panel-body">
+       <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 pull-right mrgn-bttm-lg">
+     <div class="panel panel-info">
+      <div class="panel-heading">
+       <h2 class="panel-title">Related</h2>
+      </div>
+      <div class="list-group"><a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a> <a href="#" class="list-group-item">Link</a></div>
+     </div>
+    </div>
+    <div class="mrgn-lft-md mrgn-rght-md">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </div>
+   </div>
+   <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8 mrgn-bttm-lg&quot;&gt;
+    &lt;div class=&quot;panel panel-default&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Table of contents&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4 pull-right mrgn-bttm-lg&quot;&gt;
+    &lt;div class=&quot;panel panel-info&quot;&gt;
+      &lt;div class=&quot;panel-heading&quot;&gt;
+        &lt;h2 class=&quot;panel-title&quot;&gt;Related&lt;/h2&gt;
+      &lt;/div&gt;
+        ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;mrgn-lft-md mrgn-rght-md&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+</div>
+
+			<dl id="wb-dtmd" property="dateModified">
+	<dt>Date modified:&#32;</dt>
+	<dd><time>2014-02-28</time></dd>
+</dl>
+
+
+		</main>
+
+
+
+		<footer role="contentinfo" id="wb-info" class="container visible-md visible-lg">
+			<nav role="navigation" class="row">
+				<h2>Site information</h2>
+				<section class="col-sm-3">
+	<h3>About</h3>
+	<ul class="list-unstyled">
+		<li><a href="/index-en.html#about">About the Web Experience Toolkit</a></li>
+		<li><a href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Contact us</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>News</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+		<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Stay connected</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+	</ul>
+</section>
+
+			</nav>
+		</footer>
+
+		<!--[if gte IE 9 | !IE ]><!-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="../js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="../js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+
+
+	</body>
+</html>
