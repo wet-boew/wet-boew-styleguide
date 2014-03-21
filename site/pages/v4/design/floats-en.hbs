@@ -8,124 +8,119 @@
 }
 ---
 <div class="wb-prettify all-pre">
-	<div class="row">
-		<div class="col-md-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title">Table of contents</h2>
-				</div>
-				<div class="panel-body">
-					<ul>
-						<li><a href="#description">Description</a></li>
-						<li><a href="#options">Floats options</a></li>
-						<li><a href="#clearing">Clearing floats </a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
-				</div>
-				<div class="list-group"><a href="alignment-en.html" class="list-group-item">Alignment<span class="wb-inv"> - Design guide</span></a> <a href="grids-en.html#reflow" class="list-group-item">Grids: Reflowing content around grids<span class="wb-inv"> - Design guide </span></a></div>
-			</div>
-		</div>
-	</div>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>(Info goes here) </p>
-	<h2 class="page-header" id="options">Float options</h2>
-	<p>Float an element to the left or right with a class. </p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;pull-left&quot;&gt;...&lt;/div&gt;
+ <div class="row">
+  <div class="col-md-8">
+   <div class="panel panel-default">
+    <div class="panel-heading">
+     <h2 class="panel-title">Table of contents</h2>
+    </div>
+    <div class="panel-body">
+     <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#options">Floats options</a></li>
+      <li><a href="#clearing">Clearing floats </a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="well">
+    <h2 class="h3 mrgn-tp-0">Related </h2>
+    <ul class="list-unstyled">
+     <li><span class="fa fa-picture-o text-muted"></span> <strong>Design guide</strong>
+      <ul class="list-unstyled mrgn-lft-md">
+       <li><a href="alignment-en.html">Alignment<span class="wb-inv"> - Design guide</span></a></li>
+       <li><a href="grids-en.html#reflow">Grids:  Reflowing content around grids<span class="wb-inv"> - Design guide </span></a></li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <h2 class="page-header" id="description">Description</h2>
+ <p>(Info goes here) </p>
+ <h2 class="page-header" id="options">Float options</h2>
+ <p>Float an element to the left or right with a class. </p>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;pull-left&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;pull-right&quot;&gt;...&lt;/div&gt;</code></pre>
-	</div>
-	<h3>Example</h3>
-	<div class="row">
-		<div class="col-md-4 pull-right">
-			<div class="well">
-				<p>Pulled right A</p>
-			</div>
-		</div>
-		<div class="col-md-4 pull-right">
-			<div class="well">
-				<p>Pulled right B</p>
-			</div>
-		</div>
-	</div>
-	<pre>&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-md-4 pull-right&quot;&gt;
-		&lt;div class=&quot;well&quot;&gt;
-			&lt;p&gt;Pulled right A&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 pull-right&quot;&gt;
-		&lt;div class=&quot;well&quot;&gt;
-			&lt;p&gt;Pulled right B&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+ </div>
+ <h3>Example</h3>
+ <div class="row">
+  <div class="col-md-4 pull-right">
+   <div class="well">
+    <p>Pulled right A</p>
+   </div>
+  </div>
+  <div class="col-md-4 pull-right">
+   <div class="well">
+    <p>Pulled right B</p>
+   </div>
+  </div>
+ </div>
+ <pre>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;
+      &lt;p&gt;Pulled right A&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;
+      &lt;p&gt;Pulled right B&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="clearing">Clearing floats</h2>
-	<p>Clear the <code>float </code>on any element with the <code>.clearfix</code> class. </p>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;clearfix&quot;&gt;...&lt;/div&gt;</code></pre>
-	</div>
-	<h3>Example</h3>
-	<div class="row">
-		<div class="col-md-4 pull-right">
-			<div class="well">
-				<p>Pulled right A</p>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-		<div class="col-md-4 pull-right">
-			<div class="well">
-				<p>Pulled right B</p>
-			</div>
-		</div>
-	</div>
-	<pre>&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-md-4 pull-right&quot;&gt;
-		&lt;div class=&quot;well&quot;&gt;
-			&lt;p&gt;Pulled right A&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
-	&lt;div class=&quot;col-md-4 pull-right&quot;&gt;
-		&lt;div class=&quot;well&quot;&gt;
-			&lt;p&gt;Pulled right B&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="clearing">Clearing floats</h2>
+ <p>Clear the <code>float </code>on any element with the <code>.clearfix</code> class. </p>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;clearfix&quot;&gt;...&lt;/div&gt;</code></pre>
+ </div>
+ <h3>Example</h3>
+ <div class="row">
+  <div class="col-md-4 pull-right">
+   <div class="well">
+    <p>Pulled right A</p>
+   </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-md-4 pull-right">
+   <div class="well">
+    <p>Pulled right B</p>
+   </div>
+  </div>
+ </div>
+ <pre>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;
+      &lt;p&gt;Pulled right A&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-md-4 pull-right&quot;&gt;
+    &lt;div class=&quot;well&quot;&gt;
+      &lt;p&gt;Pulled right B&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</pre>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>

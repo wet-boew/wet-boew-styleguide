@@ -7,336 +7,338 @@
 	"dateModified": "2014-02-28"
 }
 ---
-<h1>Panels <small>Design guide</small></h1>
 <div class="wb-prettify all-pre">
-	<div class="row">
-		<div class="col-md-8 mrgn-bttm-lg">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title">Table of contents</h2>
-				</div>
-				<div class="panel-body">
-					<ul>
-						<li><a href="#description">Description</a></li>
-						<li><a href="#basic">Basic panel</a></li>
-						<li><a href="#heading">Add a heading</a></li>
-						<li><a href="#footer">Add a footer</a></li>
-						<li><a href="#colour">Add colour </a></li>
-						<li><a href="#full">Full width content </a></li>
-						<li><a href="#mix">Mix padded content with full width content</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pull-right mrgn-bttm-lg">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h2 class="panel-title"><span class="fa fa-picture-o text-muted"></span> Design guide </h2>
-				</div>
-				<div class="list-group"><a href="alerts-en.html" class="list-group-item">Alerts<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/archived/archived-en.html" class="list-group-item">Archiving content<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-inview/data-inview-en.html" class="list-group-item">Data Inview<span class="wb-inv"> - Design guide</span> </a> <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html" class="list-group-item">Form validation<span class="wb-inv"> - Design guide</span> </a><a href="http://wet-boew.github.io/v4.0-ci/demos/overlay/overlay-en.html" class="list-group-item">Overlay<span class="wb-inv"> - Design guide</span> </a> <a href="http://wet-boew.github.io/v4.0-ci/demos/session-timeout/session-timeout-en.html" class="list-group-item">Session timeout<span class="wb-inv"> - Design guide</span> </a></div>
-			</div>
-		</div>
-		<div class="mrgn-lft-md mrgn-rght-md">
-			<h2 class="page-header" id="description">Description</h2>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="basic">Basic panel</h2>
-	<p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
-	<div class="panel panel-default">
-		<div class="panel-body"> Basic panel example </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		Basic panel example
-	&lt;/div&gt;
+ <div class="row">
+  <div class="col-md-8">
+   <div class="panel panel-default">
+    <div class="panel-heading">
+     <h2 class="panel-title">Table of contents</h2>
+    </div>
+    <div class="panel-body">
+     <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#basic">Basic panel</a></li>
+      <li><a href="#heading">Add a heading</a></li>
+      <li><a href="#footer">Add a footer</a></li>
+      <li><a href="#colour">Add colour </a></li>
+      <li><a href="#full">Full width content </a></li>
+      <li><a href="#mix">Mix padded content with full width content</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div class="col-md-4">
+   <div class="well">
+    <h2 class="h3 mrgn-tp-0">Related </h2>
+    <ul class="list-unstyled">
+     <li><span class="fa fa-picture-o text-muted"></span> <strong>Design guide</strong>
+      <ul class="list-unstyled mrgn-lft-md">
+       <li><a href="alerts-en.html">Alerts<span class="wb-inv"> - Design guide</span></a></li>
+       <li><a href="wells-en.html">Wells<span class="wb-inv"> - Design guide</span></a></li>
+      </ul>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </div>
+ <h2 class="page-header" id="description">Description</h2>
+ <p>(Info goes here)</p>
+ <h2 class="page-header" id="basic">Basic panel</h2>
+ <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+ <div class="panel panel-default">
+  <div class="panel-body"> Basic panel example </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Basic panel example
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="heading">Add a heading</h2>
-	<p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading.</p>
-	<div class="panel panel-default">
-		<div class="panel-heading">Panel heading without title</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;/div&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		Panel content
-	&lt;/div&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="heading">Add a heading</h2>
+ <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+ <div class="panel panel-default">
+  <div class="panel-heading">Panel heading without title</div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="panel panel-default">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading without title&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;div class=&quot;panel-heading&quot;&gt;
-		&lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		Panel content
-	&lt;/div&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;
+    &lt;h3 class=&quot;panel-title&quot;&gt;Panel title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="footer">Add a footer</h2>
-	<p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
-	<div class="panel panel-default">
-		<div class="panel-body"> Panel content </div>
-		<div class="panel-footer">Panel footer</div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		Panel content
-	&lt;/div&gt;
-	&lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;/div&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="footer">Add a footer</h2>
+ <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers <strong>do not</strong> inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+ <div class="panel panel-default">
+  <div class="panel-body"> Panel content </div>
+  <div class="panel-footer">Panel footer</div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    Panel content
+  &lt;/div&gt;
+  &lt;div class=&quot;panel-footer&quot;&gt;Panel footer&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="colour">Add colour</h2>
-	<p>Easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="panel panel-success">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="panel panel-info">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="panel panel-warning">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="panel panel-danger">
-		<div class="panel-heading">
-			<h3 class="panel-title">Panel title</h3>
-		</div>
-		<div class="panel-body"> Panel content </div>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-primary&quot;&gt;...&lt;/div&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="colour">Add colour</h2>
+ <p>Easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+ <div class="panel panel-primary">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="panel panel-success">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="panel panel-info">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="panel panel-warning">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="panel panel-danger">
+  <div class="panel-heading">
+   <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body"> Panel content </div>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-primary&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;panel panel-success&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;panel panel-info&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;panel panel-warning&quot;&gt;...&lt;/div&gt;
 &lt;div class=&quot;panel panel-danger&quot;&gt;...&lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="full">Full width content</h2>
-	<p>Content inside the <code>panel-body</code> has a padding applied to it, creating white space. To remove the padding and have content that is flush with the borders, do not use the <code>panel-body</code> code.</p>
-	<div class="panel panel-default">
-		<div class="panel-heading">Panel heading</div>
-		<table class="table">
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Username</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;!-- Default panel contents --&gt;
-	&lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
-	&lt;!-- Table --&gt;
-	&lt;table class=&quot;table&quot;&gt;
-		...
-	&lt;/table&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="full">Full width content</h2>
+ <p>Content inside the <code>panel-body</code> has a padding applied to it, creating white space.  To remove the padding and have content that is flush with the borders, do not use the <code>panel-body</code> code.</p>
+ <div class="panel panel-default">
+  <div class="panel-heading">Panel heading</div>
+  <table class="table">
+   <thead>
+    <tr>
+     <th>#</th>
+     <th>First Name</th>
+     <th>Last Name</th>
+     <th>Username</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>Mark</td>
+     <td>Otto</td>
+     <td>@mdo</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td>Jacob</td>
+     <td>Thornton</td>
+     <td>@fat</td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td>Larry</td>
+     <td>the Bird</td>
+     <td>@twitter</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<h2 class="page-header" id="mix">Mix padded content with full width content</h2>
-	<p>Mix content that is inside the <code>panel-body</code> with content that is outside the <code>panel-body</code>.</p>
-	<div class="panel panel-default">
-		<div class="panel-heading">Panel heading</div>
-		<div class="panel-body">
-			<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		</div>
-		<table class="table">
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Username</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;!-- Default panel contents --&gt;
-	&lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		&lt;p&gt;...&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;!-- Table --&gt;
-	&lt;table class=&quot;table&quot;&gt;
-		...
-	&lt;/table&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <h2 class="page-header" id="mix">Mix padded content with full width content</h2>
+ <p>Mix content that is inside the <code>panel-body</code> with content that is outside the <code>panel-body</code>.</p>
+ <div class="panel panel-default">
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+   <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+  </div>
+  <table class="table">
+   <thead>
+    <tr>
+     <th>#</th>
+     <th>First Name</th>
+     <th>Last Name</th>
+     <th>Username</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>Mark</td>
+     <td>Otto</td>
+     <td>@mdo</td>
+    </tr>
+    <tr>
+     <td>2</td>
+     <td>Jacob</td>
+     <td>Thornton</td>
+     <td>@fat</td>
+    </tr>
+    <tr>
+     <td>3</td>
+     <td>Larry</td>
+     <td>the Bird</td>
+     <td>@twitter</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!-- Table --&gt;
+  &lt;table class=&quot;table&quot;&gt;
+    ...
+  &lt;/table&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<p>Easily include full-width <a href="listgroup-en.html">list groups</a> within any panel.</p>
-	<div class="panel panel-default">
-		<div class="panel-heading">Panel heading</div>
-		<div class="panel-body">
-			<p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		</div>
-		<ul class="list-group">
-			<li class="list-group-item">Cras justo odio</li>
-			<li class="list-group-item">Dapibus ac facilisis in</li>
-			<li class="list-group-item">Morbi leo risus</li>
-			<li class="list-group-item">Porta ac consectetur ac</li>
-			<li class="list-group-item">Vestibulum at eros</li>
-		</ul>
-	</div>
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
-	&lt;!-- Default panel contents --&gt;
-	&lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
-	&lt;div class=&quot;panel-body&quot;&gt;
-		&lt;p&gt;...&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;!-- List group --&gt;
-	&lt;ul class=&quot;list-group&quot;&gt;
-		&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
-		&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
-		&lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
-		&lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
-		&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
-	&lt;/ul&gt;
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <p>Easily include full-width <a href="listgroup-en.html">list groups</a> within any panel.</p>
+ <div class="panel panel-default">
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+   <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+  </div>
+  <ul class="list-group">
+   <li class="list-group-item">Cras justo odio</li>
+   <li class="list-group-item">Dapibus ac facilisis in</li>
+   <li class="list-group-item">Morbi leo risus</li>
+   <li class="list-group-item">Porta ac consectetur ac</li>
+   <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+ </div>
+ <div class="mrgn-tp-lg">
+  <pre><code>&lt;div class=&quot;panel panel-default&quot;&gt;
+  &lt;!-- Default panel contents --&gt;
+  &lt;div class=&quot;panel-heading&quot;&gt;Panel heading&lt;/div&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!-- List group --&gt;
+  &lt;ul class=&quot;list-group&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
-	</div>
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<div class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-		<div class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-			<p>(Info goes here)</p>
-		</div>
-	</div>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+ </div>
+ <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+  <div class="col-md-6">
+   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+  <div class="col-md-6 brdr-lft">
+   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
+   <p>(Info goes here)</p>
+  </div>
+ </div>
+ <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>
