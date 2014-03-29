@@ -19,7 +19,7 @@
     "wet-boew": "https://github.com/wet-boew/wet-boew/tarball/v4.0"
   },
   "resolutions": {
-    "jquery": ">= 1.9.0"
+    "jquery": "~2.1.0"
   },
   "main": "index.html"
 }
