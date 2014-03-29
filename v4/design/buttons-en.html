@@ -118,9 +118,11 @@
 	<h2>Site menu</h2>
     <div class="row">
         <ul class="list-inline menu">
+
 			<li><a href="../index-en.html">WET project</a></li>
 			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/impl-en.html">Implement WET</a></li>
 			<li><a href="http://wet-boew.github.io/wet-boew/docs/gs-cd/contrib-en.html">Contribute to WET</a></li>
+
         </ul>
     </div>
 </div>
@@ -188,12 +190,9 @@
   <div class="col-md-4">
    <div class="well">
     <h2 class="h3 mrgn-tp-0">Related </h2>
-    <ul class="list-unstyled">
-     <li><span class="fa fa-picture-o text-muted"></span> <strong>Design guide</strong>
-      <ul class="list-unstyled mrgn-lft-md">
-       <li><a href="forms-en.html">Forms<span class="wb-inv"> - Design guide</span></a></li>
-      </ul>
-     </li>
+    <h3 class="h4"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
+    <ul class="list-unstyled mrgn-lft-lg lst-spcd">
+     <li><a href="forms-en.html">Forms<span class="wb-inv"> - Design guide</span></a></li>
     </ul>
    </div>
   </div>
@@ -542,20 +541,22 @@
   </div>
  </div>
  <h3 id="btn-groups-nested">Nesting</h3>
- <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
- <div class="btn-group">
-  <button type="button" class="btn btn-default">1</button>
-  <button type="button" class="btn btn-default">2</button>
+ <div class="alert alert-danger">
+  <p class="lead text-danger">Nesting is not currently available in WET.  This is a Bootstrap feature that has not been ported to WET due to accessibility or usability concerns.  Clarifying documentation will be posted soon.</p>
+  <p>Place a <code>.btn-group</code> within another <code>.btn-group</code> when you want dropdown menus mixed with a series of buttons.</p>
   <div class="btn-group">
-   <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
-    <li><a href="#">Dropdown link</a></li>
-    <li><a href="#">Dropdown link</a></li>
-   </ul>
+   <button type="button" class="btn btn-default">1</button>
+   <button type="button" class="btn btn-default">2</button>
+   <div class="btn-group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupDrop1">
+     <li><a href="#">Dropdown link</a></li>
+     <li><a href="#">Dropdown link</a></li>
+    </ul>
+   </div>
   </div>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;btn-group&quot;&gt;
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;div class=&quot;btn-group&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
   &lt;div class=&quot;btn-group&quot;&gt;
@@ -570,67 +571,71 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
  </div>
  <h3 id="btn-groups-vertical">Vertical variation</h3>
- <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
- <div class="btn-group-vertical">
-  <button type="button" class="btn btn-default">Button</button>
-  <button type="button" class="btn btn-default">Button</button>
-  <div class="btn-group">
-   <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
-    <li><a href="#">Dropdown link</a></li>
-    <li><a href="#">Dropdown link</a></li>
-   </ul>
+ <div class="alert alert-warning">
+  <p class="lead text-danger">Although this is available in WET, the drop-down option is a Bootstrap feature that has not been ported to WET due to accessibility or usability concerns. Clarifying documentation will be posted soon.</p>
+  <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
+  <div class="btn-group-vertical">
+   <button type="button" class="btn btn-default">Button</button>
+   <button type="button" class="btn btn-default">Button</button>
+   <div class="btn-group">
+    <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop1">
+     <li><a href="#">Dropdown link</a></li>
+     <li><a href="#">Dropdown link</a></li>
+    </ul>
+   </div>
+   <button type="button" class="btn btn-default">Button</button>
+   <button type="button" class="btn btn-default">Button</button>
+   <div class="btn-group">
+    <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
+     <li><a href="#">Dropdown link</a></li>
+     <li><a href="#">Dropdown link</a></li>
+    </ul>
+   </div>
+   <div class="btn-group">
+    <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
+     <li><a href="#">Dropdown link</a></li>
+     <li><a href="#">Dropdown link</a></li>
+    </ul>
+   </div>
+   <div class="btn-group">
+    <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
+     <li><a href="#">Dropdown link</a></li>
+     <li><a href="#">Dropdown link</a></li>
+    </ul>
+   </div>
   </div>
-  <button type="button" class="btn btn-default">Button</button>
-  <button type="button" class="btn btn-default">Button</button>
-  <div class="btn-group">
-   <button id="btnGroupVerticalDrop2" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop2">
-    <li><a href="#">Dropdown link</a></li>
-    <li><a href="#">Dropdown link</a></li>
-   </ul>
-  </div>
-  <div class="btn-group">
-   <button id="btnGroupVerticalDrop3" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop3">
-    <li><a href="#">Dropdown link</a></li>
-    <li><a href="#">Dropdown link</a></li>
-   </ul>
-  </div>
-  <div class="btn-group">
-   <button id="btnGroupVerticalDrop4" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="btnGroupVerticalDrop4">
-    <li><a href="#">Dropdown link</a></li>
-    <li><a href="#">Dropdown link</a></li>
-   </ul>
-  </div>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;btn-group-vertical&quot;&gt;
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;div class=&quot;btn-group-vertical&quot;&gt;
   ...
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
  </div>
  <h3 id="btn-groups-justified">Justified button groups</h3>
@@ -707,75 +712,77 @@
   </div>
  </div>
  <h2 class="page-header" id="btn-dropdowns">Dropdowns</h2>
- <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
  <div class="alert alert-danger">
-  <h4>Plugin dependency</h4>
-  <p>Button dropdowns require the <a href="needs-solution-en.html">dropdown plugin</a> to be included in your version of Bootstrap.</p>
- </div>
- <h3 id="btn-dropdowns-single">Single button dropdowns</h3>
- <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
- <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;!-- Single button --&gt;
+  <p class="lead text-danger">Dropdowns are not currently available in WET.  This is a Bootstrap feature that has not been ported to WET due to accessibility or usability concerns. Clarifying documentation will be posted soon.</p>
+  <p>Use any button to trigger a dropdown menu by placing it within a <code>.btn-group</code> and providing the proper menu markup.</p>
+  <div class="alert alert-danger">
+   <h4>Plugin dependency</h4>
+   <p>Button dropdowns require the <a href="needs-solution-en.html">dropdown plugin</a> to be included in your version of Bootstrap.</p>
+  </div>
+  <h3 id="btn-dropdowns-single">Single button dropdowns</h3>
+  <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
+  <div class="btn-group">
+   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;!-- Single button --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
     Action &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
@@ -789,87 +796,87 @@
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
- </div>
- <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
- <p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
- <div class="btn-group">
-  <button type="button" class="btn btn-default">Default</button>
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="btn-group">
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-  <ul class="dropdown-menu" role="menu">
-   <li><a href="#">Action</a></li>
-   <li><a href="#">Another action</a></li>
-   <li><a href="#">Something else here</a></li>
-   <li class="divider"></li>
-   <li><a href="#">Separated link</a></li>
-  </ul>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;!-- Split button --&gt;
+  <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
+  <p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
+  <div class="btn-group">
+   <button type="button" class="btn btn-default">Default</button>
+   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-primary">Primary</button>
+   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-success">Success</button>
+   <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-info">Info</button>
+   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-warning">Warning</button>
+   <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="btn-group">
+   <button type="button" class="btn btn-danger">Danger</button>
+   <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+   <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+   </ul>
+  </div>
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;!-- Split button --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Action&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-danger dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
@@ -885,57 +892,57 @@
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
- </div>
- <h3 id="btn-dropdowns-sizing">Sizing</h3>
- <p>Button dropdowns work with buttons of all sizes.</p>
- <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
-  <div class="btn-group">
-   <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> Large button <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-   </ul>
+  <h3 id="btn-dropdowns-sizing">Sizing</h3>
+  <p>Button dropdowns work with buttons of all sizes.</p>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+   <div class="btn-group">
+    <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown"> Large button <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu">
+     <li><a href="#">Action</a></li>
+     <li><a href="#">Another action</a></li>
+     <li><a href="#">Something else here</a></li>
+     <li class="divider"></li>
+     <li><a href="#">Separated link</a></li>
+    </ul>
+   </div>
   </div>
- </div>
- <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
-  <div class="btn-group">
-   <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"> Small button <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-   </ul>
+  <div class="btn-toolbar mrgn-bttm-md" role="toolbar">
+   <div class="btn-group">
+    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"> Small button <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu">
+     <li><a href="#">Action</a></li>
+     <li><a href="#">Another action</a></li>
+     <li><a href="#">Something else here</a></li>
+     <li class="divider"></li>
+     <li><a href="#">Separated link</a></li>
+    </ul>
+   </div>
   </div>
- </div>
- <div class="btn-toolbar" role="toolbar">
-  <div class="btn-group">
-   <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"> Extra small button <span class="caret"></span> </button>
-   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-   </ul>
+  <div class="btn-toolbar" role="toolbar">
+   <div class="btn-group">
+    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown"> Extra small button <span class="caret"></span> </button>
+    <ul class="dropdown-menu" role="menu">
+     <li><a href="#">Action</a></li>
+     <li><a href="#">Another action</a></li>
+     <li><a href="#">Something else here</a></li>
+     <li class="divider"></li>
+     <li><a href="#">Separated link</a></li>
+    </ul>
+   </div>
   </div>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;!-- Large button group --&gt;
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;!-- Large button group --&gt;
 &lt;div class=&quot;btn-group&quot;&gt;
   &lt;button class=&quot;btn btn-default btn-lg dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;
     Large button &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
@@ -963,45 +970,45 @@
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
- </div>
- <h3 id="btn-dropdowns-dropup">Dropup variation</h3>
- <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
- <div class="btn-toolbar" role="toolbar">
-  <div class="btn-group dropup">
-   <button type="button" class="btn btn-default">Dropup</button>
-   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-   </ul>
+  <h3 id="btn-dropdowns-dropup">Dropup variation</h3>
+  <p>Trigger dropdown menus above elements by adding <code>.dropup</code> to the parent.</p>
+  <div class="btn-toolbar" role="toolbar">
+   <div class="btn-group dropup">
+    <button type="button" class="btn btn-default">Dropup</button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu" role="menu">
+     <li><a href="#">Action</a></li>
+     <li><a href="#">Another action</a></li>
+     <li><a href="#">Something else here</a></li>
+     <li class="divider"></li>
+     <li><a href="#">Separated link</a></li>
+    </ul>
+   </div>
+   <div class="btn-group dropup">
+    <button type="button" class="btn btn-primary">Right dropup</button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
+    <ul class="dropdown-menu pull-right" role="menu">
+     <li><a href="#">Action</a></li>
+     <li><a href="#">Another action</a></li>
+     <li><a href="#">Something else here</a></li>
+     <li class="divider"></li>
+     <li><a href="#">Separated link</a></li>
+    </ul>
+   </div>
   </div>
-  <div class="btn-group dropup">
-   <button type="button" class="btn btn-primary">Right dropup</button>
-   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span> <span class="sr-only">Toggle Dropdown</span> </button>
-   <ul class="dropdown-menu pull-right" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-   </ul>
-  </div>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;btn-group dropup&quot;&gt;
+  <div class="mrgn-tp-lg">
+   <pre><code>&lt;div class=&quot;btn-group dropup&quot;&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Dropup&lt;/button&gt;
   &lt;button type=&quot;button&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
     &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
@@ -1012,20 +1019,20 @@
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
   </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
+  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+   <div class="col-md-6">
+    <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
+   <div class="col-md-6 brdr-lft">
+    <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
+    <p>(Info goes here)</p>
+   </div>
   </div>
  </div>
  <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </div>
-
 
 			<dl id="wb-dtmd" property="dateModified">
 	<dt>Date modified:&#32;</dt>
