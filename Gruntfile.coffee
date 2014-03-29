@@ -51,6 +51,8 @@ module.exports = (grunt) ->
 
 	@initConfig
 		pkg: @file.readJSON "package.json"
+		jqueryVersion: @file.readJSON "lib/jquery/bower.json"
+		jqueryOldIEVersion: @file.readJSON "lib/jquery-oldIE/bower.json"
 		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" * <%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
 
@@ -75,11 +77,13 @@ module.exports = (grunt) ->
 				]
 				layoutdir: "lib/wet-boew/site/layouts"
 				layout: "default.hbs"
+				environment:
+					suffix: ".min"
+					jqueryVersion: "<%= jqueryVersion.version %>"
+					jqueryOldIEVersion: "<%= jqueryOldIEVersion.version %>"
 
 			guides:
 				options:
-					environment:
-						suffix: ".min"
 					assets: "dist/v4"
 				files: [
 						#site
@@ -95,8 +99,6 @@ module.exports = (grunt) ->
 			menu:
 				options:
 					layout: "ajax.hbs"
-					environment:
-						suffix: ".min"
 					assets: "dist"
 				cwd: "lib/wet-boew/site/pages/ajax"
 				src: [
@@ -109,8 +111,6 @@ module.exports = (grunt) ->
 			splash:
 				options:
 					layout: "splashpage.hbs"
-					environment:
-						suffix: ".min"
 					assets: "dist"
 				cwd: "site/pages"
 				src: [
@@ -153,7 +153,7 @@ module.exports = (grunt) ->
 				dest: "dist/v3"
 
 		clean:
-			dist: [ "dist"]
+			dist: ["dist"]
 			lib: ["lib"]
 			non_mincss:
 				expand: true
