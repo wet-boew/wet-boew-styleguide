@@ -19,6 +19,7 @@ module.exports = (grunt) ->
 			"copy:wetboew"
 			"copy:v3_styleguide"
 			"copy:v3_menu"
+			"cssmin:v4"
 			"assemble"
 		]
 	)
@@ -152,6 +153,19 @@ module.exports = (grunt) ->
 				]
 				dest: "dist/v3"
 
+		cssmin:
+			options:
+				banner: ""
+			v4:
+				options:
+					banner: ""
+				expand: true
+				cwd: "site/pages/v4"
+				src: [
+					"**/*.css"
+				]
+				dest: "dist/v4"
+				ext: ".min.css"
 		clean:
 			dist: ["dist"]
 			lib: ["lib"]
@@ -209,6 +223,7 @@ module.exports = (grunt) ->
 
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
+	@loadNpmTasks "grunt-contrib-cssmin"
 	@loadNpmTasks "grunt-contrib-clean"
 	@loadNpmTasks "grunt-contrib-connect"
 	@loadNpmTasks "grunt-contrib-copy"
