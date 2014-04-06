@@ -17,11 +17,12 @@
   },
   "homepage": "https://github.com/nschonni/wet-boew-styleguide",
   "devDependencies": {
-    "grunt": "^0.4.2",
     "assemble": "^0.4.36",
+    "grunt": "^0.4.2",
     "grunt-contrib-clean": "^0.5.0",
     "grunt-contrib-connect": "^0.7.1",
     "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.9.0",
     "grunt-gh-pages": "^0.9.1",
     "grunt-hub": "^0.6.2",
     "grunt-install-dependencies": "^0.1.0"
