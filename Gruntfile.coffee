@@ -97,18 +97,6 @@ module.exports = (grunt) ->
 						dest: "dist"
 				]
 
-			menu:
-				options:
-					layout: "ajax.hbs"
-					assets: "dist"
-				cwd: "lib/wet-boew/site/pages/ajax"
-				src: [
-					"*.hbs"
-				]
-				dest: "dist/v4/ajax/"
-				expand: true
-				flatten: true
-
 			splash:
 				options:
 					layout: "splashpage.hbs"
@@ -185,6 +173,7 @@ module.exports = (grunt) ->
 				tasks: [
 					"build"
 					"assets-dist"
+					"assemble:ajax_min"
 				]
 
 		"install-dependencies":
