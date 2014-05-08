@@ -211,23 +211,23 @@
  <h2 class="page-header" id="default">Default pagination</h2>
  <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
  <ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
+  <li><a href="#" rel="prev">Previous</a></li>
   <li><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
  </div>
@@ -244,17 +244,17 @@
  <h2 class="page-header" id="disabled">Disabled and active states</h2>
  <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable links and <code>.active</code> to indicate the current page.</p>
  <ul class="pagination">
-  <li class="disabled"><a href="#">&laquo;</a></li>
+  <li class="disabled" rel="prev"><a href="#">Previous</a></li>
   <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
   &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   ...
 &lt;/ul&gt;
@@ -263,7 +263,7 @@
  <p>You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code> to remove click functionality while retaining intended styles.</p>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li class=&quot;disabled&quot;&gt;&lt;span&gt;&amp;laquo;&lt;/span&gt;&lt;/li&gt;
+  &lt;li class=&quot;disabled&quot; rel=&quot;prev&quot;&gt;&lt;span&gt;Previous&lt;/span&gt;&lt;/li&gt;
   &lt;li class=&quot;active&quot;&gt;&lt;span&gt;1 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
   ...
 &lt;/ul&gt;
@@ -282,31 +282,31 @@
  <h2 class="page-header" id="sizing">Sizing</h2>
  <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
  <ul class="pagination pagination-lg">
-  <li><a href="#">&laquo;</a></li>
+  <li><a href="#" rel="prev">Previous</a></li>
   <li><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <ul class="pagination">
-  <li><a href="#">&laquo;</a></li>
+  <li><a href="#" rel="prev">Previous</a></li>
   <li><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <ul class="pagination pagination-sm">
-  <li><a href="#">&laquo;</a></li>
+  <li><a href="#" rel="prev">Previous</a></li>
   <li><a href="#">1</a></li>
   <li><a href="#">2</a></li>
   <li><a href="#">3</a></li>
   <li><a href="#">4</a></li>
   <li><a href="#">5</a></li>
-  <li><a href="#">&raquo;</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pagination pagination-lg&quot;&gt;...&lt;/ul&gt;
@@ -329,13 +329,13 @@
  <h3>Default example</h3>
  <p>By default, the pager centers links.</p>
  <ul class="pager">
-  <li><a href="#">Previous</a></li>
-  <li><a href="#">Next</a></li>
+  <li><a href="#" rel="prev">Previous</a></li>
+  <li><a href="#" rel="next">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
  </div>
@@ -352,13 +352,13 @@
  <h3>Aligned links</h3>
  <p>Alternatively, you can align each link to the sides:</p>
  <ul class="pager">
-  <li class="previous"><a href="#">&larr; Older</a></li>
-  <li class="next"><a href="#">Newer &rarr;</a></li>
+  <li class="previous" rel="prev"><a href="#">Previous</a></li>
+  <li class="next" rel="next"><a href="#">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;larr; Older&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &amp;rarr;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;previous&quot; rel=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;next&quot; rel=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
  </div>
@@ -375,13 +375,13 @@
  <h3>Optional disabled state</h3>
  <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
  <ul class="pager">
-  <li class="previous disabled"><a href="#">&larr; Older</a></li>
-  <li class="next"><a href="#">Newer &rarr;</a></li>
+  <li class="previous disabled" rel="prev"><a href="#">Previous</a></li>
+  <li class="next" rel="next"><a href="#">Next</a></li>
  </ul>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;&amp;larr; Older&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot;&gt;Newer &amp;rarr;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;previous disabled&quot; rel=&quot;prev&quot;&gt;&lt;a href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
  </div>
