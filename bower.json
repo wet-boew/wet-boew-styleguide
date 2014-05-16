@@ -18,8 +18,5 @@
   "devDependencies": {
     "wet-boew": "https://github.com/wet-boew/wet-boew/tarball/master"
   },
-  "resolutions": {
-    "jquery": "~2.1.0"
-  },
   "main": "index.html"
 }
