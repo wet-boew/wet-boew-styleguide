@@ -172,8 +172,8 @@ module.exports = (grunt) ->
 				]
 				tasks: [
 					"build"
-					"assets-dist"
-					"assemble:ajax_min"
+					"assets-min"
+					"pages:ajax_min"
 				]
 
 		"install-dependencies":
