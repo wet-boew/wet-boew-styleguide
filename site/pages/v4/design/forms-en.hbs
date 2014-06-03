@@ -4,7 +4,7 @@
 	"language": "en",
 	"altLangPrefix": "forms",
 	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome"],
-	"dateModified": "2014-02-28"
+	"dateModified": "2014-06-03"
 }
 ---
 <div class="wb-prettify all-pre">
@@ -707,31 +707,53 @@
  <p>Create larger or smaller form controls that match button sizes.</p>
  <form role="form" method="get" action="#">
   <div class="controls">
-   <input class="form-control input-lg mrgn-bttm-md" type="text" title=".input-lg" placeholder=".input-lg" />
-   <input type="text" class="form-control mrgn-bttm-md" title="Default input" placeholder="Default input" />
-   <input class="form-control input-sm mrgn-bttm-md" type="text" title=".input-sm" placeholder=".input-sm" />
-   <select class="form-control input-lg mrgn-bttm-md" title=".input-lg">
+   <label for="form-input-lg" class="wb-inv"><code>input-lg</code> class on an input element</label>
+   <input class="form-control input-lg mrgn-bttm-md" type="text" id="form-input-lg" placeholder="input-lg" />
+
+   <label for="form-input-md" class="wb-inv">Default input element</label>
+   <input type="text" class="form-control mrgn-bttm-md" id="form-input-md" placeholder="Default input" />
+
+   <label for="form-input-sm" class="wb-inv"><code>input-sm</code> class on an input element</label>
+   <input class="form-control input-sm mrgn-bttm-md" type="text" id="form-input-sm" placeholder="input-sm" />
+
+   <label for="form-select-lg" class="wb-inv"><code>input-lg</code> class on a select element</label>
+   <select class="form-control input-lg mrgn-bttm-md" id="form-select-lg">
     <option value="">.input-lg</option>
    </select>
-   <select class="form-control mrgn-bttm-md" title="Default select">
+
+   <label for="form-select-md" class="wb-inv">Default select element</label>
+   <select class="form-control mrgn-bttm-md" id="form-select-md">
     <option value="">Default select</option>
    </select>
-   <select class="form-control input-sm mrgn-bttm-md" title=".input-sm">
+
+   <label for="form-select-sm" class="wb-inv"><code>input-sm</code> class on a select element</label>
+   <select class="form-control input-sm mrgn-bttm-md" id="form-select-sm">
     <option value="">.input-sm</option>
    </select>
   </div>
  </form>
  <div class="mrgn-tp-lg">
-  <pre><code>&lt;input class=&quot;form-control input-lg&quot; type=&quot;text&quot; title=&quot;.input-lg&quot; placeholder=&quot;.input-lg&quot; /&gt;
-&lt;input class=&quot;form-control&quot; type=&quot;text&quot; title=&quot;Default input&quot; placeholder=&quot;Default input&quot; /&gt;
-&lt;input class=&quot;form-control input-sm&quot; type=&quot;text&quot; title=&quot;.input-sm&quot; placeholder=&quot;.input-sm&quot; /&gt;
-   &lt;select class=&quot;form-control input-lg mrgn-bttm-md&quot; title=&quot;.input-lg&quot;&gt;
+  <pre><code>   &lt;label for=&quot;form-input-lg&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;input-lg&lt;/code&gt; class on an input element&lt;/label&gt;
+   &lt;input class=&quot;form-control input-lg mrgn-bttm-md&quot; type=&quot;text&quot; id=&quot;form-input-lg&quot; placeholder=&quot;input-lg&quot; /&gt;
+
+   &lt;label for=&quot;form-input-md&quot; class=&quot;wb-inv&quot;&gt;Default input element&lt;/label&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control mrgn-bttm-md&quot; id=&quot;form-input-md&quot; placeholder=&quot;Default input&quot; /&gt;
+
+   &lt;label for=&quot;form-input-sm&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;input-sm&lt;/code&gt; class on an input element&lt;/label&gt;
+   &lt;input class=&quot;form-control input-sm mrgn-bttm-md&quot; type=&quot;text&quot; id=&quot;form-input-sm&quot; placeholder=&quot;input-sm&quot; /&gt;
+
+   &lt;label for=&quot;form-select-lg&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;input-lg&lt;/code&gt; class on a select element&lt;/label&gt;
+   &lt;select class=&quot;form-control input-lg mrgn-bttm-md&quot; id=&quot;form-select-lg&quot;&gt;
     &lt;option value=&quot;&quot;&gt;.input-lg&lt;/option&gt;
    &lt;/select&gt;
-   &lt;select class=&quot;form-control mrgn-bttm-md&quot; title=&quot;Default select&quot;&gt;
+
+   &lt;label for=&quot;form-select-md&quot; class=&quot;wb-inv&quot;&gt;Default select element&lt;/label&gt;
+   &lt;select class=&quot;form-control mrgn-bttm-md&quot; id=&quot;form-select-md&quot;&gt;
     &lt;option value=&quot;&quot;&gt;Default select&lt;/option&gt;
    &lt;/select&gt;
-   &lt;select class=&quot;form-control input-sm mrgn-bttm-md&quot; title=&quot;.input-sm&quot;&gt;
+
+   &lt;label for=&quot;form-select-sm&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;input-sm&lt;/code&gt; class on a select element&lt;/label&gt;
+   &lt;select class=&quot;form-control input-sm mrgn-bttm-md&quot; id=&quot;form-select-sm&quot;&gt;
     &lt;option value=&quot;&quot;&gt;.input-sm&lt;/option&gt;
    &lt;/select&gt;
 </code></pre>
@@ -751,27 +773,33 @@
  <form role="form" method="get" action="#">
   <div class="row">
    <div class="col-xs-2">
-    <input type="text" class="form-control" title=".col-xs-2" placeholder=".col-xs-2" />
+    <label for="form-input-col-xs-2" class="wb-inv"><code>col-xs-2</code> class on the parent element</label>
+    <input type="text" class="form-control" id="form-input-col-xs-2" placeholder="col-xs-2" />
    </div>
    <div class="col-xs-3">
-    <input type="text" class="form-control" title=".col-xs-3" placeholder=".col-xs-3" />
+    <label for="form-input-col-xs-3" class="wb-inv"><code>col-xs-3</code> class on the parent element</label>
+    <input type="text" class="form-control" id="form-input-col-xs-3" placeholder="col-xs-3" />
    </div>
    <div class="col-xs-4">
-    <input type="text" class="form-control" title=".col-xs-4" placeholder=".col-xs-4" />
+    <label for="form-input-col-xs-4" class="wb-inv"><code>col-xs-4</code> class on the parent element</label>
+    <input type="text" class="form-control" id="form-input-col-xs-4" placeholder="col-xs-4" />
    </div>
   </div>
  </form>
  <div class="mrgn-tp-lg">
   <pre><code>&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-xs-2&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; title=&quot;.col-xs-2&quot; placeholder=&quot;.col-xs-2&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-xs-3&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; title=&quot;.col-xs-3&quot; placeholder=&quot;.col-xs-3&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-xs-4&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; title=&quot;.col-xs-4&quot; placeholder=&quot;.col-xs-4&quot;&gt;
-  &lt;/div&gt;
+	&lt;div class=&quot;col-xs-2&quot;&gt;
+		&lt;label for=&quot;form-input-col-xs-2&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;col-xs-2&lt;/code&gt; class on the parent element&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;form-input-col-xs-2&quot; placeholder=&quot;col-xs-2&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-3&quot;&gt;
+		&lt;label for=&quot;form-input-col-xs-3&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;col-xs-3&lt;/code&gt; class on the parent element&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;form-input-col-xs-3&quot; placeholder=&quot;col-xs-3&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-4&quot;&gt;
+		&lt;label for=&quot;form-input-col-xs-4&quot; class=&quot;wb-inv&quot;&gt;&lt;code&gt;col-xs-4&lt;/code&gt; class on the parent element&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;form-input-col-xs-4&quot; placeholder=&quot;col-xs-4&quot; /&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
  </div>
