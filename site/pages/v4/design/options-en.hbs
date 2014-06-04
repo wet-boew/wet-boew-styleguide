@@ -56,7 +56,7 @@
     <p class="text-success">Success color paragraph.</p>
     <p><kbd>This is text in a &lt;kbd&gt; keyboard wrapper </kbd></p>
     <p><code>This is text in a &lt;code&gt; wrapper </code></p>
-    <p><small>This is text in a <code>&lt;small&gt;</code> wrapper.</p>
+    <p><small>This is text in a <code>&lt;small&gt;</code> wrapper.</small></p>
     <p class="lead">This is text in a <code>.lead</code> class.</p>
     <p class="h1">This is text in a <code>.h1</code> class.</p>
     <p class="h2">This is text in a <code>.h2</code> class.</p>
@@ -811,7 +811,7 @@
      <div class="form-group">
       <label for="inputEmail" class="col-md-2 control-label">Email</label>
       <div class="col-md-10">
-       <input type="text" class="form-control" placeholder="Email">
+       <input type="text" class="form-control" id="inputEmail" placeholder="Email">
       </div>
      </div>
      <div class="form-group">
@@ -936,7 +936,7 @@
       <input type="text" class="form-control">
       <span class="input-group-addon">.00</span> </div>
     </form>
-    <form role="form mrgn-tp-lg">
+    <form class="mrgn-tp-lg" role="form">
      <div class="input-group input-group-lg"> <span class="input-group-addon">@</span>
       <input type="text" class="form-control" placeholder="Username">
      </div>
@@ -1465,7 +1465,7 @@
   </ul>
  </div>
  <div class="panel-footer text-right">
-  <p class="mrgn-bttm-0 h4">In detail: <a href="images-en.html" class="btn btn-primary">Images <span class="glyphicon glyphicon-chevron-right"></span></a></a></p>
+  <p class="mrgn-bttm-0 h4">In detail: <a href="images-en.html" class="btn btn-primary">Images <span class="glyphicon glyphicon-chevron-right"></span></a></p>
  </div>
 </section>
 <section class="panel panel-default" id="wells">
@@ -1486,7 +1486,7 @@
   </div>
  </div>
  <div class="panel-footer text-right">
-  <p class="mrgn-bttm-0 h4">In detail: <a href="wells-en.html" class="btn btn-primary">Wells <span class="glyphicon glyphicon-chevron-right"></span></a></a></p>
+  <p class="mrgn-bttm-0 h4">In detail: <a href="wells-en.html" class="btn btn-primary">Wells <span class="glyphicon glyphicon-chevron-right"></span></a></p>
  </div>
 </section>
 <section class="panel panel-default" id="list-groups">
@@ -1522,7 +1522,7 @@
   </div>
  </div>
  <div class="panel-footer text-right">
-  <p class="mrgn-bttm-0 h4">In detail: <a href="listgroup-en.html" class="btn btn-primary">List group <span class="glyphicon glyphicon-chevron-right"></span></a></a></p>
+  <p class="mrgn-bttm-0 h4">In detail: <a href="listgroup-en.html" class="btn btn-primary">List group <span class="glyphicon glyphicon-chevron-right"></span></a></p>
  </div>
 </section>
 <section class="panel panel-default" id="panels">
@@ -1583,23 +1583,27 @@
   </div>
  </div>
  <div class="panel-footer text-right">
-  <p class="mrgn-bttm-0 h4">In detail: <a href="panels-en.html" class="btn btn-primary">Panels <span class="glyphicon glyphicon-chevron-right"></span></a></a></p>
+  <p class="mrgn-bttm-0 h4">In detail: <a href="panels-en.html" class="btn btn-primary">Panels <span class="glyphicon glyphicon-chevron-right"></span></a></p>
  </div>
 </section>
 <div class="row">
  <div class="col-md-6">
   <section class="panel panel-default" id="comboboxes">
-   <div class="panel-heading">Opacity</div>
+   <div class="panel-heading">
+    <h2 class="panel-title">Opacity</h2>
+   </div>
    <div class="panel-body"> <img class="media-object pull-left mrgn-rght-md mrgn-bttm-md" src="http://placehold.it/64x64" alt="Generic placeholder image" > <img class="media-object opct-20 pull-left mrgn-rght-md mrgn-bttm-md" src="http://placehold.it/64x64" alt="Generic placeholder image"> <img class="media-object opct-70 pull-left mrgn-rght-md mrgn-bttm-md" src="http://placehold.it/64x64" alt="Generic placeholder image">
     <p class="opct-20">Demo text</p>
     <p class="opct-70">Demo text</p>
    </div>
    <div class="panel-footer text-right">
-    <p class="mrgn-bttm-0 h4">In detail: <a href="opacity-en.html" class="btn btn-primary">Opacity <span class="glyphicon glyphicon-chevron-right"></span></a></a></p>
+    <p class="mrgn-bttm-0 h4">In detail: <a href="opacity-en.html" class="btn btn-primary">Opacity <span class="glyphicon glyphicon-chevron-right"></span></a></p>
    </div>
   </section>
   <section class="panel panel-default" id="selects">
-   <div class="panel-heading">Absolute positioniing</div>
+   <div class="panel-heading">
+    <h2 class="panel-title">Absolute positioniing</h2>
+   </div>
    <div class="panel-body">
     <div class="row">
      <div class="col-md-12"><img height="190" width="700" class="img-responsive" alt="" src="http://wet-boew.github.io/wet-boew/demos/grids/images/position.png">
@@ -1625,7 +1629,9 @@
    </div>
   </section>
   <section class="panel panel-default">
-   <div class="panel-heading">Visible / Invisible</div>
+   <div class="panel-heading">
+    <h2 class="panel-title">Visible / Invisible</h2>
+   </div>
    <div class="panel-body">
     <p>Content can be made appear or hide using CSS.</p>
    </div>
@@ -1636,7 +1642,9 @@
  </div>
  <div class="col-md-6">
   <section class="panel panel-default">
-   <div class="panel-heading">Icons</div>
+   <div class="panel-heading">
+    <h2 class="panel-title">Icons</h2>
+   </div>
    <div class="panel-body">
     <ul class="list-unstyled clmn-2-sm clmn-3-md">
      <li> <span class="glyphicon glyphicon-adjust"></span></li>
