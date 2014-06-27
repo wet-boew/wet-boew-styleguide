@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nschonni/wet-boew-styleguide.git"
+    "url": "https://github.com/wet-boew/wet-boew-styleguide.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nschonni/wet-boew-styleguide/issues"
+    "url": "https://github.com/wet-boew/wet-boew-styleguide/issues"
   },
-  "homepage": "https://github.com/nschonni/wet-boew-styleguide",
+  "homepage": "https://github.com/wet-boew/wet-boew-styleguide",
   "devDependencies": {
     "assemble": "^0.4.36",
     "grunt": "^0.4.2",

@@ -1,11 +1,11 @@
 {
   "name": "wet-boew-styleguide",
   "version": "0.0.0",
-  "homepage": "https://github.com/nschonni/wet-boew-styleguide",
+  "homepage": "https://github.com/wet-boew/wet-boew-styleguide",
   "authors": [
     "WET-BOEW Team"
   ],
-  "description": "Style guide for the web experience toolkit",
+  "description": "Style guide for the Web Experience Toolkit",
   "license": "MIT",
   "private": true,
   "ignore": [
