@@ -4,661 +4,727 @@
 	"language": "en",
 	"altLangPrefix": "tables",
 	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome"],
-	"dateModified": "2014-02-28"
+	"dateModified": "2014-07-09"
 }
 ---
-<div class="wb-prettify all-pre">
- <div class="row">
-  <div class="col-md-8">
-   <div class="panel panel-default">
-    <div class="panel-heading">
-     <h2 class="panel-title">Table of contents</h2>
-    </div>
-    <div class="panel-body">
-     <ul>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#default">Default appearance</a></li>
-      <li><a href="#tables-striped">Striped rows</a></li>
-      <li><a href="#tables-bordered">Bordered table</a></li>
-      <li><a href="#tables-hover-rows">Hover rows</a></li>
-      <li><a href="#tables-condensed">Condensed table</a></li>
-      <li><a href="#tables-contextual-classes">Coloured cells</a></li>
-      <li><a href="#tables-responsive">Responsive tables</a></li>
-      <!-- <li><a href="#gridify">Gridify a table</a></li> -->
-     </ul>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4 pull-right">
-   <div class="well">
-    <h2 class="h3 mrgn-tp-0">Related </h2>
-    <h3 class="h4"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
-    <ul class="list-unstyled mrgn-lft-lg lst-spcd">
-     <li><a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html">Tables plug-in<span class="wb-inv"> - Design guide</span></a></li>
-    </ul>
-    <h3 class="h4"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h3>
-    <ul class="list-unstyled mrgn-lft-lg lst-spcd">
-     <li><a href="../accessibility/tables-en.html">Tables<span class="wb-inv"> - Accessibility guide</span></a></li>
-    </ul>
-    <h3 class="h4"><span class="fa fa-font text-muted"></span> Writing guide</h3>
-    <ul class="list-unstyled mrgn-lft-lg lst-spcd">
-     <li><a href="../writing/principals-en.html#tables">Tables<span class="wb-inv"> - Writing guide</span></a></li>
-    </ul>
-   </div>
-  </div>
- </div>
- <h2 class="page-header" id="description">Description</h2>
- <p>(Info goes here)</p>
- <h2 class="page-header" id="default">Default appearance</h2>
- <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
- <table class="table">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td>1</td>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-   </tr>
-   <tr>
-    <td>3</td>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;table class=&quot;table&quot;&gt;
-  ...
-&lt;/table&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-striped">Striped rows</h2>
- <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
- <div class="alert alert-danger">
-  <h4>Cross-browser compatibility</h4>
-  <p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
- </div>
- <table class="table table-striped">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td>1</td>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-   </tr>
-   <tr>
-    <td>3</td>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;table class=&quot;table table-striped&quot;&gt;
-  ...
-&lt;/table&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-bordered">Bordered table</h2>
- <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
- <table class="table table-bordered">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td rowspan="2">1</td>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-   </tr>
-   <tr>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@TwBootstrap</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-   </tr>
-   <tr>
-    <td>3</td>
-    <td colspan="2">Larry the Bird</td>
-    <td>@twitter</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;table class=&quot;table table-bordered&quot;&gt;
-  ...
-&lt;/table&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-hover-rows">Hover rows</h2>
- <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
- <table class="table table-hover">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td>1</td>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-   </tr>
-   <tr>
-    <td>3</td>
-    <td colspan="2">Larry the Bird</td>
-    <td>@twitter</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;table class=&quot;table table-hover&quot;&gt;
-  ...
-&lt;/table&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-condensed">Condensed table</h2>
- <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
- <table class="table table-condensed">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Username</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <td>1</td>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-   </tr>
-   <tr>
-    <td>3</td>
-    <td colspan="2">Larry the Bird</td>
-    <td>@twitter</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;table class=&quot;table table-condensed&quot;&gt;
-  ...
-&lt;/table&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-contextual-classes">Coloured cells</h2>
- <p>Use contextual classes to color table rows or individual cells.</p>
- <div class="table-responsive">
-  <table class="table table-bordered table-striped">
-   <colgroup>
-   <col class="col-xs-1">
-   <col class="col-xs-7">
-   </colgroup>
-   <thead>
-    <tr>
-     <th>Class</th>
-     <th>Description</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-     <td><code>.active</code> </td>
-     <td>Applies the hover color to a particular row or cell</td>
-    </tr>
-    <tr>
-     <td><code>.success</code> </td>
-     <td>Indicates a successful or positive action</td>
-    </tr>
-    <tr>
-     <td><code>.warning</code> </td>
-     <td>Indicates a warning that might need attention</td>
-    </tr>
-    <tr>
-     <td><code>.danger</code> </td>
-     <td>Indicates a dangerous or potentially negative action</td>
-    </tr>
-   </tbody>
-  </table>
- </div>
- <table class="table">
-  <thead>
-   <tr>
-    <th>#</th>
-    <th>Column heading</th>
-    <th>Column heading</th>
-    <th>Column heading</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr class="active">
-    <td>1</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr>
-    <td>2</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr class="success">
-    <td>3</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr>
-    <td>4</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr class="warning">
-    <td>5</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr>
-    <td>6</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-   <tr class="danger">
-    <td>7</td>
-    <td>Column content</td>
-    <td>Column content</td>
-    <td>Column content</td>
-   </tr>
-  </tbody>
- </table>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;!-- On rows --&gt;
+<span class="wb-prettify all-pre"></span>
+
+<div class="row">
+	<section class="col-md-8">
+		<div class="panel panel-default">
+			<header class="panel-heading">
+				<h2 class="panel-title">Table of contents</h2>
+			</header>
+			<div class="panel-body">
+				<ul>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#default">Default appearance</a></li>
+					<li><a href="#tables-striped">Striped rows</a></li>
+					<li><a href="#tables-bordered">Bordered table</a></li>
+					<li><a href="#tables-hover-rows">Hover rows</a></li>
+					<li><a href="#tables-condensed">Condensed table</a></li>
+					<li><a href="#tables-contextual-classes">Coloured cells</a></li>
+					<li><a href="#tables-responsive">Responsive tables</a></li>
+					<!-- <li><a href="#gridify">Gridify a table</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="col-md-4 pull-right">
+		<div class="well">
+			<h2 class="h3 mrgn-tp-0">Related</h2>
+			<section>
+				<h3 class="h4"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
+				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
+					<li><a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html">Tables plug-in<span class="wb-inv"> - Design guide</span></a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 class="h4"><span class="fa fa-wheelchair text-muted"></span> Accessibility guide</h3>
+				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
+					<li><a href="../accessibility/tables-en.html">Tables<span class="wb-inv"> - Accessibility guide</span></a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 class="h4"><span class="fa fa-font text-muted"></span> Writing guide</h3>
+				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
+					<li><a href="../writing/principals-en.html#tables">Tables<span class="wb-inv"> - Writing guide</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</section>
+</div>
+
+<section>
+	<h2 class="page-header" id="description">Description</h2>
+	<p>(Info goes here)</p>
+</section>
+
+<section>
+	<h2 class="page-header" id="default">Default appearance</h2>
+	<p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;table class=&quot;table&quot;&gt;
+	...
+&lt;/table&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="tables-striped">Striped rows</h2>
+	<p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+
+	<section class="alert alert-danger">
+		<h3 class="h4">Cross-browser compatibility</h3>
+		<p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
+	</section>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Larry</td>
+				<td>the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;table class=&quot;table table-striped&quot;&gt;
+	...
+&lt;/table&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="tables-bordered">Bordered table</h2>
+	<p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@TwBootstrap</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;table class=&quot;table table-bordered&quot;&gt;
+	...
+&lt;/table&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="tables-hover-rows">Hover rows</h2>
+	<p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+			</tbody>
+		</table>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;table class=&quot;table table-hover&quot;&gt;
+	...
+&lt;/table&gt;</code></pre>
+	</div>
+ 
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+<section>
+
+<section>
+	<h2 class="page-header" id="tables-condensed">Condensed table</h2>
+	<p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
+
+	<table class="table table-condensed">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Username</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Mark</td>
+				<td>Otto</td>
+				<td>@mdo</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;table class=&quot;table table-condensed&quot;&gt;
+	...
+&lt;/table&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="tables-contextual-classes">Coloured cells</h2>
+	<p>Use contextual classes to color table rows or individual cells.</p>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+			<colgroup>
+				<col class="col-xs-1">
+				<col class="col-xs-7">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Class</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>.active</code> </td>
+					<td>Applies the hover color to a particular row or cell</td>
+				</tr>
+				<tr>
+					<td><code>.success</code> </td>
+					<td>Indicates a successful or positive action</td>
+				</tr>
+				<tr>
+					<td><code>.warning</code> </td>
+					<td>Indicates a warning that might need attention</td>
+				</tr>
+				<tr>
+					<td><code>.danger</code> </td>
+					<td>Indicates a dangerous or potentially negative action</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Column heading</th>
+				<th>Column heading</th>
+				<th>Column heading</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="active">
+				<td>1</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr class="success">
+				<td>3</td>
+				<td>Successful or positive action</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr class="warning">
+				<td>5</td>
+				<td>Warning that might need attention</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr class="danger">
+				<td>7</td>
+				<td>Dangerous or potentially negative action</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+		</tbody>
+	</table>
+ 
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;!-- On rows --&gt;
 &lt;tr class=&quot;active&quot;&gt;...&lt;/tr&gt;
 &lt;tr class=&quot;success&quot;&gt;...&lt;/tr&gt;
 &lt;tr class=&quot;warning&quot;&gt;...&lt;/tr&gt;
 &lt;tr class=&quot;danger&quot;&gt;...&lt;/tr&gt;
 &lt;!-- On cells (`td` or `th`) --&gt;
 &lt;tr&gt;
-  &lt;td class=&quot;active&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;success&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;warning&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;danger&quot;&gt;...&lt;/td&gt;
-&lt;/tr&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="tables-responsive">Responsive tables</h2>
- <p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
- <div class="table-responsive">
-  <table class="table">
-   <thead>
-    <tr>
-     <th>#</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-     <td>1</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-    <tr>
-     <td>2</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-    <tr>
-     <td>3</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-   </tbody>
-  </table>
- </div>
- <div class="table-responsive">
-  <table class="table table-bordered">
-   <thead>
-    <tr>
-     <th>#</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-     <th>Table heading</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-     <td>1</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-    <tr>
-     <td>2</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-    <tr>
-     <td>3</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-     <td>Table cell</td>
-    </tr>
-   </tbody>
-  </table>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;table-responsive&quot;&gt;
-  &lt;table class=&quot;table&quot;&gt;
-    ...
-  &lt;/table&gt;
-&lt;/div&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
+	&lt;td class=&quot;active&quot;&gt;...&lt;/td&gt;
+	&lt;td class=&quot;success&quot;&gt;...&lt;/td&gt;
+	&lt;td class=&quot;warning&quot;&gt;...&lt;/td&gt;
+	&lt;td class=&quot;danger&quot;&gt;...&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="tables-responsive">Responsive tables</h2>
+	<p>Create responsive tables by wrapping any <code>.table</code> in <code>.table-responsive</code> to make them scroll horizontally up to small devices (under 768px). When viewing on anything larger than 768px wide, you will not see any difference in these tables.</p>
+	<div class="table-responsive">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+					<th>Table heading</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+					<td>Table cell</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class=&quot;table-responsive&quot;&gt;
+	&lt;table class=&quot;table&quot;&gt;
+		...
+	&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+ </section>
+ 
  <!--
-  <h2 id="gridify">Gridify a table</h2>
-  <p>Turn a table into a grid with <code>tbl-gridify</code>.</p>
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Default table</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-md-6">
-      <h3>Table with <code>.tbl-gridify</code> and grid code</h3>
-      <table class="tbl-gridify">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody class="row wb-eqht">
-          <tr class="col-xs-12 col-sm-6 col-md-4">
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr class="col-xs-12 col-sm-6 col-md-4">
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr class="col-xs-12 col-sm-6 col-md-4">
-            <td>3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <p>Use grid code to set breakpoints. Resize the browser to see how this gridified table adjusts.</p>
-  <table class="tbl-gridify">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-      </tr>
-    </thead>
-    <tbody class="row wb-eqht">
-      <tr class="col-xs-12 col-sm-6 col-md-4">
-        <td>1</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr class="col-xs-12 col-sm-6 col-md-4">
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr class="col-xs-12 col-sm-6 col-md-4">
-        <td>3</td>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-  <pre><code>&lt;table class=&quot;tbl-gridify&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;#&lt;/th&gt;
-      &lt;th&gt;First Name&lt;/th&gt;
-      &lt;th&gt;Last Name&lt;/th&gt;
-      &lt;th&gt;Username&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody class=&quot;row wb-eqht&quot;&gt;
-    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
-      &lt;td&gt;1&lt;/td&gt;
-      &lt;td&gt;Mark&lt;/td&gt;
-      &lt;td&gt;Otto&lt;/td&gt;
-      &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
-      &lt;td&gt;2&lt;/td&gt;
-      &lt;td&gt;Jacob&lt;/td&gt;
-      &lt;td&gt;Thornton&lt;/td&gt;
-      &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
-      &lt;td&gt;3&lt;/td&gt;
-      &lt;td&gt;Larry&lt;/td&gt;
-      &lt;td&gt;the Bird&lt;/td&gt;
-      &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</code></pre>
-  <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-    <div class="col-md-6">
-      <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
-    </div>
-    <div class="col-md-6 brdr-lft">
-      <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-      <p>(Info goes here)</p>
-    </div>
-  </div>
-  -->
- <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-</div>
+ <section>
+	<h2 id="gridify">Gridify a table</h2>
+	<p>Turn a table into a grid with <code>tbl-gridify</code>.</p>
+	<div class="row">
+		<section class="col-md-6">
+			<h3>Default table</h3>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="col-md-6">
+			<h3>Table with <code>.tbl-gridify</code> and grid code</h3>
+			<table class="tbl-gridify">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Username</th>
+					</tr>
+				</thead>
+				<tbody class="row wb-eqht">
+					<tr class="col-xs-12 col-sm-6 col-md-4">
+						<td>1</td>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+					</tr>
+					<tr class="col-xs-12 col-sm-6 col-md-4">
+						<td>2</td>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+					</tr>
+					<tr class="col-xs-12 col-sm-6 col-md-4">
+						<td>3</td>
+						<td>Larry</td>
+						<td>the Bird</td>
+						<td>@twitter</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</div>
+
+	<section>
+		<h3>Set breakpoints</h3>
+		<p>Use grid code to set breakpoints. Resize the browser to see how this gridified table adjusts.</p>
+		<table class="tbl-gridify">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody class="row wb-eqht">
+				<tr class="col-xs-12 col-sm-6 col-md-4">
+					<td>1</td>
+					<td>Mark</td>
+					<td>Otto</td>
+					<td>@mdo</td>
+				</tr>
+				<tr class="col-xs-12 col-sm-6 col-md-4">
+					<td>2</td>
+					<td>Jacob</td>
+					<td>Thornton</td>
+					<td>@fat</td>
+				</tr>
+				<tr class="col-xs-12 col-sm-6 col-md-4">
+					<td>3</td>
+					<td>Larry</td>
+					<td>the Bird</td>
+					<td>@twitter</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<pre><code>&lt;table class=&quot;tbl-gridify&quot;&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;#&lt;/th&gt;
+			&lt;th&gt;First Name&lt;/th&gt;
+			&lt;th&gt;Last Name&lt;/th&gt;
+			&lt;th&gt;Username&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody class=&quot;row wb-eqht&quot;&gt;
+		&lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+			&lt;td&gt;1&lt;/td&gt;
+			&lt;td&gt;Mark&lt;/td&gt;
+			&lt;td&gt;Otto&lt;/td&gt;
+			&lt;td&gt;@mdo&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+			&lt;td&gt;2&lt;/td&gt;
+			&lt;td&gt;Jacob&lt;/td&gt;
+			&lt;td&gt;Thornton&lt;/td&gt;
+			&lt;td&gt;@fat&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;col-xs-12 col-sm-6 col-md-4&quot;&gt;
+			&lt;td&gt;3&lt;/td&gt;
+			&lt;td&gt;Larry&lt;/td&gt;
+			&lt;td&gt;the Bird&lt;/td&gt;
+			&lt;td&gt;@twitter&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+	</section>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+-->
+
+<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
