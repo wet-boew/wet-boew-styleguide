@@ -1,0 +1,126 @@
+
+/* Responsive (scrollable) doc tables */
+.table-responsive {
+	.highlight {
+		pre {
+			white-space: normal;
+		}
+	}
+}
+
+%color-grey-display-block-font-weight-normal {
+	color: #767676;
+	display: block;
+	font-weight: normal;
+}
+
+/* Utility classes table  */
+.bs-table {
+	th {
+		small {
+			@extend %color-grey-display-block-font-weight-normal;
+		}
+	}
+}
+
+.responsive-utilities {
+	tbody {
+		th {
+			font-weight: normal;
+		}
+	}
+
+	th {
+		small {
+			@extend %color-grey-display-block-font-weight-normal;
+		}
+	}
+
+	td {
+		text-align: center;
+
+		&.is-visible {
+			background-color: #dff0d8 !important;
+			color: #468847;
+		}
+
+		&.is-hidden {
+			background-color: #f9f9f9 !important;		
+			color: #767676;
+		}
+	}
+}
+
+/* Responsive tests */
+.responsive-utilities-test {
+	margin-top: 5px;
+
+	.col-xs-6 {
+		margin-bottom: 10px;
+	}
+
+	span {
+		border-radius: 4px;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 1.1;
+		padding: 15px 10px;
+		text-align: center;
+	}
+}
+
+%col-xs-6-hidden {
+	border: 1px solid #ddd;
+	color: #767676;
+	display: block;
+}
+
+.visible-on {
+	.col-xs-6 {
+		.hidden-xs,
+		.hidden-sm,
+		.hidden-md,
+		.hidden-lg {
+			@extend %col-xs-6-hidden;
+		}
+	}
+}
+
+.hidden-on {
+	.col-xs-6 {
+		.hidden-xs,
+		.hidden-sm,
+		.hidden-md,
+		.hidden-lg {
+			@extend %col-xs-6-hidden;
+		}
+	}
+}
+
+%col-xs-6-visible {
+	background-color: #dff0d8;
+	border: 1px solid #d6e9c6;
+	color: #468847;
+}
+
+.visible-on {
+	.col-xs-6 {
+		.visible-xs,
+		.visible-sm,
+		.visible-md,
+		.visible-lg {
+			@extend %col-xs-6-visible;
+		}
+	}
+}
+
+.hidden-on {
+	.col-xs-6 {
+		.visible-xs,
+		.visible-sm,
+		.visible-md,
+		.visible-lg {
+			@extend %col-xs-6-visible;
+		}
+	}
+}
