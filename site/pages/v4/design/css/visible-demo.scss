@@ -9,7 +9,7 @@
 }
 
 %color-grey-display-block-font-weight-normal {
-	color: #767676;
+	color: #717171;
 	display: block;
 	font-weight: normal;
 }
@@ -41,12 +41,12 @@
 
 		&.is-visible {
 			background-color: #dff0d8 !important;
-			color: #468847;
+			color: #266827;
 		}
 
 		&.is-hidden {
 			background-color: #f9f9f9 !important;		
-			color: #767676;
+			color: #717171;
 		}
 	}
 }
@@ -71,7 +71,7 @@
 
 %col-xs-6-hidden {
 	border: 1px solid #ddd;
-	color: #767676;
+	color: #717171;
 	display: block;
 }
 
@@ -100,7 +100,7 @@
 %col-xs-6-visible {
 	background-color: #dff0d8;
 	border: 1px solid #d6e9c6;
-	color: #468847;
+	color: #266827;
 }
 
 .visible-on {
