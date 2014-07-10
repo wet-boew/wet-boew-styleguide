@@ -19,7 +19,7 @@ module.exports = (grunt) ->
 			"copy:wetboew"
 			"copy:v3_styleguide"
 			"copy:v3_menu"
-			"cssmin:v4"
+			"css"
 			"assemble"
 		]
 	)
@@ -47,6 +47,17 @@ module.exports = (grunt) ->
 			"dist"
 			"copy:deploy"
 			"gh-pages:travis"
+		]
+	)
+
+	@registerTask(
+		"css"
+		"Build and deploy artifacts to wet-boew-dist"
+		[
+			"sass:all"
+			"autoprefixer"
+			#"csslint:unmin"
+			"cssmin:v4"
 		]
 	)
 
@@ -141,6 +152,109 @@ module.exports = (grunt) ->
 				]
 				dest: "dist/v3"
 
+		# Compiles the Sass files
+		sass:
+			all:
+				files: [
+					expand: true
+					cwd: "site/pages/v4"
+					src: [
+						"**/*.scss"
+					]
+					dest: "dist/v4"
+					ext: ".css"
+				]
+
+		autoprefixer:
+			# Only vendor prefixing and no IE8
+			modern:
+				options:
+					browsers: [
+						"last 2 versions"
+						"android >= 2.3"
+						"bb >= 7"
+						"ff >= 17"
+						"ie > 8"
+						"ios 5"
+						"opera 12.1"
+					]
+				cwd: "dist/v4"
+				src: [
+					"**/*.css"
+					"!ie8*.css"
+				]
+				dest: "dist/v4"
+				expand: true
+
+			# Needs both IE8 and vendor prefixing
+			mixed:
+				options:
+					browsers: [
+						"last 2 versions"
+						"android >= 2.3"
+						"bb >= 7"
+						"ff >= 17"
+						"ie >= 8"
+						"ios 5"
+						"opera 12.1"
+					]
+				files: [
+					cwd: "dist/v4"
+					src: [
+						"**/*.css"
+						"!**/*.min.css"
+					]
+					dest: "dist/v4"
+					expand: true
+					flatten: true
+				]
+
+			# Only IE8 support
+			oldIE:
+				options:
+					browsers: [
+						"ie 8"
+					]
+				cwd: "dist/v4"
+				src: [
+					"ie8*.css"
+				]
+				dest: "dist/v4"
+				expand: true
+				flatten: true
+
+		csslint:
+			options:
+				"adjoining-classes": false
+				"box-model": false
+				"box-sizing": false
+				"compatible-vendor-prefixes": false
+				"duplicate-background-images": false
+				"duplicate-properties": false
+				# Can be turned off after https://github.com/dimsemenov/Magnific-Popup/pull/303 lands
+				"empty-rules": false
+				"fallback-colors": false
+				"floats": false
+				"font-sizes": false
+				"gradients": false
+				"headings": false
+				"ids": false
+				"important": false
+				# Need due to use of "\9" hacks for oldIE
+				"known-properties": false
+				"outline-none": false
+				"overqualified-elements": false
+				"qualified-headings": false
+				"regex-selectors": false
+				# Some Bootstrap mixins end up listing all the longhand properties
+				"shorthand": false
+				"text-indent": false
+				"unique-headings": false
+				"universal-selector": false
+				"unqualified-attributes": false
+				# Zeros are output by some of the Bootstrap mixins, but shouldn't be used in our code
+				"zero-units": false
+				
 		cssmin:
 			options:
 				banner: ""
@@ -148,7 +262,7 @@ module.exports = (grunt) ->
 				options:
 					banner: ""
 				expand: true
-				cwd: "site/pages/v4"
+				cwd: "dist/v4"
 				src: [
 					"**/*.css"
 				]
@@ -213,13 +327,16 @@ module.exports = (grunt) ->
 
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
-	@loadNpmTasks "grunt-contrib-cssmin"
+	@loadNpmTasks "grunt-autoprefixer"
 	@loadNpmTasks "grunt-contrib-clean"
 	@loadNpmTasks "grunt-contrib-connect"
 	@loadNpmTasks "grunt-contrib-copy"
+	@loadNpmTasks "grunt-contrib-csslint"
+	@loadNpmTasks "grunt-contrib-cssmin"
 	@loadNpmTasks "grunt-gh-pages"
 	@loadNpmTasks "grunt-hub"
 	@loadNpmTasks "grunt-install-dependencies"
+	@loadNpmTasks "grunt-sass"
 
 	@
 
