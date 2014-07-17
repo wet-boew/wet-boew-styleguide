@@ -4,217 +4,257 @@
 	"language": "en",
 	"altLangPrefix": "pagination",
 	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome"],
-	"dateModified": "2014-05-12"
+	"dateModified": "2014-07-17"
 }
 ---
-<div class="wb-prettify all-pre">
- <div class="row">
-  <div class="col-md-8">
-   <div class="panel panel-default">
-    <div class="panel-heading">
-     <h2 class="panel-title">Table of contents</h2>
-    </div>
-    <div class="panel-body">
-     <ul>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#default">Default pagination</a></li>
-      <li><a href="#disabled">Disabled and active states</a></li>
-      <li><a href="#sizing">Sizing</a></li>
-      <li><a href="#pager">Simple pager</a></li>
-     </ul>
-    </div>
-   </div>
-  </div>
-  <div class="col-md-4">
-   <div class="well">
-    <h2 class="h3 mrgn-tp-0">Related </h2>
-    <h3 class="h4"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
-    <ul class="list-unstyled mrgn-lft-lg lst-spcd">
-     <li><a href="buttons-en.html">Buttons<span class="wb-inv"> - Design guide</span></a></li>
-    </ul>
-   </div>
-  </div>
- </div>
- <h2 class="page-header" id="description">Description</h2>
- <p>(Info goes here)</p>
- <h2 class="page-header" id="default">Default pagination</h2>
- <p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
- <ul class="pagination">
-  <li><a href="#" rel="prev">Previous</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="disabled">Disabled and active states</h2>
- <p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable (hidden) links and <code>.active</code> to indicate the current page.</p>
- <ul class="pagination">
-  <li class="disabled"><a href="#" rel="prev">Previous</a></li>
-  <li class="active"><a href="#">1 <span class="wb-inv">(current)</span></a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pagination&quot;&gt;
-  &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1 &lt;span class=&quot;wb-inv&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  ...
-&lt;/ul&gt;
-</code></pre>
- </div>
+<span class="wb-prettify all-pre"></span>
 
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
+<div class="row">
+	<section class="col-md-8">
+		<div class="panel panel-default">
+			<header class="panel-heading">
+				<h2 class="panel-title">Table of contents</h2>
+			</header>
+			<div class="panel-body">
+				<ul>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#default">Default pagination</a></li>
+					<li><a href="#disabled">Disabled and active states</a></li>
+					<li><a href="#sizing">Sizing</a></li>
+					<li><a href="#pager">Simple pager</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="col-md-4">
+		<div class="well">
+			<h2 class="h3 mrgn-tp-0">Related</h2>
+			<section>
+				<h3 class="h4"><span class="fa fa-picture-o text-muted"></span> Design guide</h3>
+				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
+					<li><a href="buttons-en.html">Buttons<span class="wb-inv"> - Design guide</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</section>
  </div>
- <h2 class="page-header" id="sizing">Sizing</h2>
- <p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
- <ul class="pagination pagination-lg">
-  <li><a href="#" rel="prev">Previous</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <ul class="pagination">
-  <li><a href="#" rel="prev">Previous</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <ul class="pagination pagination-sm">
-  <li><a href="#" rel="prev">Previous</a></li>
-  <li><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pagination pagination-lg&quot;&gt;...&lt;/ul&gt;
+ 
+ <section>
+	<h2 class="page-header" id="description">Description</h2>
+	<p>(Info goes here)</p>
+</section>
+
+<section>
+	<h2 class="page-header" id="default">Default pagination</h2>
+	<p>Simple pagination inspired by Rdio, great for apps and search results. The large block is hard to miss, easily scalable, and provides large click areas.</p>
+	<ul class="pagination">
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class=&quot;pagination&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="disabled">Disabled and active states</h2>
+	<p>Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable (hidden) links and <code>.active</code> to indicate the current page.</p>
+	<ul class="pagination">
+		<li class="disabled"><a href="#" rel="prev">Previous</a></li>
+		<li class="active"><a href="#">1 <span class="wb-inv">(current)</span></a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class=&quot;pagination&quot;&gt;
+	&lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;1 &lt;span class=&quot;wb-inv&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+	...
+&lt;/ul&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="sizing">Sizing</h2>
+	<p>Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional sizes.</p>
+	<ul class="pagination pagination-lg">
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+
+	<ul class="pagination">
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+
+	<ul class="pagination pagination-sm">
+		<li><a href="#" rel="prev">Previous</a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class=&quot;pagination pagination-lg&quot;&gt;...&lt;/ul&gt;
 &lt;ul class=&quot;pagination&quot;&gt;...&lt;/ul&gt;
-&lt;ul class=&quot;pagination pagination-sm&quot;&gt;...&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="pager">Simple pager</h2>
- <p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
- <h3>Default example</h3>
- <p>By default, the pager centers links.</p>
- <ul class="pager">
-  <li><a href="#" rel="prev">Previous</a></li>
-  <li><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h3>Aligned links</h3>
- <p>Alternatively, you can align each link to the sides:</p>
- <ul class="pager">
-  <li class="previous"><a href="#" rel="prev">Previous</a></li>
-  <li class="next"><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h3>Optional disabled state</h3>
- <p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
- <ul class="pager">
-  <li class="previous disabled"><a href="#" rel="prev">Previous</a></li>
-  <li class="next"><a href="#" rel="next">Next</a></li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;pager&quot;&gt;
-  &lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
-  &lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h4 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h4 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h4>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-</div>
+&lt;ul class=&quot;pagination pagination-sm&quot;&gt;...&lt;/ul&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="pager">Simple pager</h2>
+	<p>Quick previous and next links for simple pagination implementations with light markup and styles. It's great for simple sites like blogs or magazines.</p>
+	<section>
+		<h3>Default example</h3>
+		<p>By default, the pager centers links.</p>
+		<ul class="pager">
+			<li><a href="#" rel="prev">Previous</a></li>
+			<li><a href="#" rel="next">Next</a></li>
+		</ul>
+
+		<div class="mrgn-tp-lg">
+			<pre><code>&lt;ul class=&quot;pager&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		</div>
+
+		<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+			<section class="col-md-6">
+				<h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+
+			<section class="col-md-6 brdr-lft">
+				<h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+		</div>
+	</section>
+
+	<section>
+		<h3>Aligned links</h3>
+		<p>Alternatively, you can align each link to the sides:</p>
+		<ul class="pager">
+			<li class="previous"><a href="#" rel="prev">Previous</a></li>
+			<li class="next"><a href="#" rel="next">Next</a></li>
+		</ul>
+
+		<div class="mrgn-tp-lg">
+			<pre><code>&lt;ul class=&quot;pager&quot;&gt;
+	&lt;li class=&quot;previous&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		</div>
+
+		<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+			<section class="col-md-6">
+				<h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+
+			<section class="col-md-6 brdr-lft">
+				<h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+		</div>
+	</section>
+
+	<section>
+		<h3>Optional disabled state</h3>
+		<p>Pager links also use the general <code>.disabled</code> utility class from the pagination.</p>
+		<ul class="pager">
+			<li class="previous disabled"><a href="#" rel="prev">Previous</a></li>
+			<li class="next"><a href="#" rel="next">Next</a></li>
+		</ul>
+
+		<div class="mrgn-tp-lg">
+			<pre><code>&lt;ul class=&quot;pager&quot;&gt;
+	&lt;li class=&quot;previous disabled&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;prev&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+	&lt;li class=&quot;next&quot;&gt;&lt;a href=&quot;#&quot; rel=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		</div>
+
+		<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+			<section class="col-md-6">
+				<h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+
+			<section class="col-md-6 brdr-lft">
+				<h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+		</div>
+	</section>
+</section>
+
+<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
