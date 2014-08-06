@@ -19,6 +19,7 @@ module.exports = (grunt) ->
 			"copy:wetboew"
 			"copy:v3_styleguide"
 			"copy:v3_menu"
+			"copy:assets"
 			"css"
 			"assemble"
 		]
@@ -127,6 +128,13 @@ module.exports = (grunt) ->
 					"**/*.*"
 					"!demos/**/*.*"
 					"!unmin/**/*.*"
+				]
+				dest: "dist/v4"
+			assets:
+				expand: true
+				cwd: "site/pages/v4"
+				src: [
+					"**/images/*.*"
 				]
 				dest: "dist/v4"
 			deploy:
@@ -254,7 +262,7 @@ module.exports = (grunt) ->
 				"unqualified-attributes": false
 				# Zeros are output by some of the Bootstrap mixins, but shouldn't be used in our code
 				"zero-units": false
-				
+
 		cssmin:
 			options:
 				banner: ""
