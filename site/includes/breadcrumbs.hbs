@@ -7,24 +7,24 @@
 			<li>
 				<a href="{{assets}}/index-{{language}}.html">{{{i18n "tmpl-style-guide"}}}</a>
 			</li>
-{{#contains page.src "index"}}
-{{else}}
-	{{#contains page.src "/accessibility/"}}
-			<li>
-				<a href="{{assets}}/accessibility/index-{{language}}.html">{{{i18n "tmpl-accessibility-guide"}}}</a>
-			</li>
-	{{/contains}}
-	{{#contains page.src "/design/"}}
-			<li>
-				<a href="{{assets}}/design/index-{{language}}.html">{{{i18n "tmpl-design-guide"}}}</a>
-			</li>
-	{{/contains}}
-	{{#contains page.src "/writing/"}}
-			<li>
-				<a href="{{assets}}/writing/index-{{language}}.html">{{{i18n "tmpl-writing-guide"}}}</a>
-			</li>
-	{{/contains}}
-{{/contains}}
+			{{#contains page.src "index"}}
+			{{else}}
+				{{#contains page.src "/accessibility/"}}
+				<li>
+					<a href="{{assets}}/accessibility/index-{{language}}.html">{{{i18n "tmpl-accessibility-guide"}}}</a>
+				</li>
+			{{/contains}}
+				{{#contains page.src "/design/"}}
+				<li>
+					<a href="{{assets}}/design/index-{{language}}.html">{{{i18n "tmpl-design-guide"}}}</a>
+				</li>
+			{{/contains}}
+				{{#contains page.src "/writing/"}}
+				<li>
+					<a href="{{assets}}/writing/index-{{language}}.html">{{{i18n "tmpl-writing-guide"}}}</a>
+				</li>
+			{{/contains}}
+			{{/contains}}
 			<li>{{title}}</li>
 		</ol>
 	</div>
