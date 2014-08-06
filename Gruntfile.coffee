@@ -19,6 +19,7 @@ module.exports = (grunt) ->
 			"copy:wetboew"
 			"copy:v3_styleguide"
 			"copy:v3_menu"
+			"copy:assets"
 			"css"
 			"assemble"
 		]
@@ -66,7 +67,7 @@ module.exports = (grunt) ->
 		jqueryVersion: @file.readJSON "lib/jquery/bower.json"
 		jqueryOldIEVersion: @file.readJSON "lib/jquery-oldIE/bower.json"
 		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
-				" * <%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n *\n */"
+				" * <%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
 		assemble:
 			options:
@@ -127,6 +128,13 @@ module.exports = (grunt) ->
 					"**/*.*"
 					"!demos/**/*.*"
 					"!unmin/**/*.*"
+				]
+				dest: "dist/v4"
+			assets:
+				expand: true
+				cwd: "site/pages/v4"
+				src: [
+					"**/images/*.*"
 				]
 				dest: "dist/v4"
 			deploy:
@@ -254,7 +262,7 @@ module.exports = (grunt) ->
 				"unqualified-attributes": false
 				# Zeros are output by some of the Bootstrap mixins, but shouldn't be used in our code
 				"zero-units": false
-				
+
 		cssmin:
 			options:
 				banner: ""
