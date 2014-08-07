@@ -3,182 +3,246 @@
 	"title": "List group",
 	"language": "en",
 	"altLangPrefix": "listgroup",
-	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome"],
-	"dateModified": "2014-02-28"
+	"dateModified": "2014-08-06"
 }
 ---
-<div class="wb-prettify all-pre">
- <div class="row">
-  <div class="col-md-8">
-   <div class="panel panel-default">
-    <div class="panel-heading">
-     <h2 class="panel-title">Table of contents</h2>
-    </div>
-    <div class="panel-body">
-     <ul>
-      <li><a href="#description">Description</a></li>
-      <li><a href="#example">Basic example</a></li>
-      <li><a href="#badges">Add badges</a></li>
-      <li><a href="#links">Add links</a></li>
-      <li><a href="#colour">Add colour</a></li>
-      <li><a href="#custom">Add custom content</a></li>
-     </ul>
-    </div>
-   </div>
-  </div>
- </div>
- <h2 class="page-header" id="description">Description</h2>
- <p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
- <h2 class="page-header" id="example">Basic example</h2>
- <p>The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.</p>
- <ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;list-group&quot;&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="badges">Add badges</h2>
- <p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
- <ul class="list-group">
-  <li class="list-group-item"> <span class="badge">14</span> Cras justo odio </li>
-  <li class="list-group-item"> <span class="badge">2</span> Dapibus ac facilisis in </li>
-  <li class="list-group-item"> <span class="badge">1</span> Morbi leo risus </li>
- </ul>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class=&quot;list-group&quot;&gt;
-  &lt;li class=&quot;list-group-item&quot;&gt;
-    &lt;span class=&quot;badge&quot;&gt;14&lt;/span&gt;
-    Cras justo odio
-  &lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="links">Add links</h2>
- <p>Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>). No need for individual parents around each element.</p>
- <div class="list-group"><a href="#" class="list-group-item active"> Cras justo odio </a> <a href="#" class="list-group-item">Dapibus ac facilisis in</a> <a href="#" class="list-group-item">Morbi leo risus</a> <a href="#" class="list-group-item">Porta ac consectetur ac</a> <a href="#" class="list-group-item">Vestibulum at eros</a></div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;list-group&quot;&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
-    Cras justo odio
-  &lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h3 id="colour">Add colour</h3>
- <p>Use colour classes to style list items, default or linked. Also includes <code>.active</code> state.</p>
- <div class="row">
-  <div class="col-sm-6">
-   <ul class="list-group">
-    <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
-    <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
-    <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
-    <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
-   </ul>
-  </div>
-  <div class="col-sm-6">
-   <div class="list-group"> <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a> <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a> <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a> <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a> </div>
-  </div>
- </div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;ul class="list-group"&gt;
-  &lt;li class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/li&gt;
-  &lt;li class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/li&gt;
-  &lt;li class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/li&gt;
-  &lt;li class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="list-group"&gt;
-  &lt;a href="#" class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/a&gt;
-  &lt;a href="#" class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/a&gt;
-  &lt;a href="#" class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/a&gt;
-  &lt;a href="#" class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <h2 class="page-header" id="custom">Add custom content</h2>
- <p>Add nearly any HTML within, even for linked list groups like the one below.</p>
- <div class="list-group"><a href="#" class="list-group-item active">
-  <h4 class="list-group-item-heading">List group item heading</h4>
-  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </a> <a href="#" class="list-group-item">
-  <h4 class="list-group-item-heading">List group item heading</h4>
-  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </a> <a href="#" class="list-group-item">
-  <h4 class="list-group-item-heading">List group item heading</h4>
-  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-  </a></div>
- <div class="mrgn-tp-lg">
-  <pre><code>&lt;div class=&quot;list-group&quot;&gt;
-  &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;
-    &lt;h4 class=&quot;list-group-item-heading&quot;&gt;List group item heading&lt;/h4&gt;
-    &lt;p class=&quot;list-group-item-text&quot;&gt;...&lt;/p&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-</code></pre>
- </div>
- <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-  <div class="col-md-6">
-   <h3 class="mrgn-tp-0 text-success h4"><strong>Use when <span class="glyphicon glyphicon-ok-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
-  <div class="col-md-6 brdr-lft">
-   <h3 class="mrgn-tp-0 text-danger h4"><strong>Do not use when <span class="glyphicon glyphicon-remove-circle"></span></strong></h3>
-   <p>(Info goes here)</p>
-  </div>
- </div>
- <p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
+<span class="wb-prettify all-pre"></span>
+
+<div class="row">
+	<section class="col-md-8">
+		<div class="panel panel-default">
+			<header class="panel-heading">
+				<h2 class="panel-title">Table of contents</h2>
+			</header>
+			<div class="panel-body">
+				<ul>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#example">Basic example</a></li>
+					<li><a href="#badges">Add badges</a></li>
+					<li><a href="#links">Add links</a></li>
+					<li><a href="#colour">Add colour</a></li>
+					<li><a href="#custom">Add custom content</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 </div>
+
+<section>
+	<h2 class="page-header" id="description">Description</h2>
+	<p>List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.</p>
+</section>
+
+<section>
+	<h2 class="page-header" id="example">Basic example</h2>
+	<p>The most basic list group is simply an unordered list with list items, and the proper classes. Build upon it with the options that follow, or your own CSS as needed.</p>
+	<ul class="list-group">
+		<li class="list-group-item">Cras justo odio</li>
+		<li class="list-group-item">Dapibus ac facilisis in</li>
+		<li class="list-group-item">Morbi leo risus</li>
+		<li class="list-group-item">Porta ac consectetur ac</li>
+		<li class="list-group-item">Vestibulum at eros</li>
+	</ul>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class=&quot;list-group&quot;&gt;
+	&lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+	&lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+	&lt;li class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/li&gt;
+	&lt;li class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/li&gt;
+	&lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="badges">Add badges</h2>
+	<p>Add the badges component to any list group item and it will automatically be positioned on the right.</p>
+	<ul class="list-group">
+		<li class="list-group-item"><span class="badge">14</span> Cras justo odio </li>
+		<li class="list-group-item"><span class="badge">2</span> Dapibus ac facilisis in</li>
+		<li class="list-group-item"><span class="badge">1</span> Morbi leo risus</li>
+	</ul>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;ul class="list-group"&gt;
+	&lt;li class="list-group-item"&gt;&lt;span class="badge"&gt;14&lt;/span&gt; Cras justo odio &lt;/li&gt;
+	&lt;li class="list-group-item"&gt;&lt;span class="badge"&gt;2&lt;/span&gt; Dapibus ac facilisis in&lt;/li&gt;
+	&lt;li class="list-group-item"&gt;&lt;span class="badge"&gt;1&lt;/span&gt; Morbi leo risus&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<section>
+	<h2 class="page-header" id="links">Add links</h2>
+	<p>Linkify list group items by using anchor tags instead of list items (that also means a parent <code>&lt;div&gt;</code> instead of an <code>&lt;ul&gt;</code>). No need for individual parents around each element.</p>
+	<div class="list-group">
+		<a href="#" class="list-group-item active">Cras justo odio</a>
+		<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+		<a href="#" class="list-group-item">Morbi leo risus</a>
+		<a href="#" class="list-group-item">Porta ac consectetur ac</a>
+		<a href="#" class="list-group-item">Vestibulum at eros</a>
+	</div>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class=&quot;list-group&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;Cras justo odio&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Morbi leo risus&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Porta ac consectetur ac&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+
+	<section>
+		<h3 id="colour">Add colour</h3>
+		<p>Use colour classes to style list items, default or linked. Also includes <code>.active</code> state.</p>
+		<div class="row">
+			<section class="col-sm-6">
+				<h4>Without links</h4>
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+					<li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+					<li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+					<li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+				</ul>
+			</section>
+
+			<section class="col-sm-6">
+				<h4>With links</h4>
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+					<a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+					<a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+					<a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+				</div>
+			</section>
+		</div>
+
+		<div class="mrgn-tp-lg">
+			<pre><code>&lt;ul class="list-group"&gt;
+	&lt;li class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/li&gt;
+	&lt;li class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/li&gt;
+	&lt;li class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/li&gt;
+	&lt;li class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="list-group"&gt;
+	&lt;a href="#" class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/a&gt;
+	&lt;a href="#" class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/a&gt;
+	&lt;a href="#" class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/a&gt;
+	&lt;a href="#" class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+		</div>
+
+		<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+			<section class="col-md-6">
+				<h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+
+			<section class="col-md-6 brdr-lft">
+				<h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+		</div>
+	</section>
+</section>
+
+<section>
+	<h2 class="page-header" id="custom">Add custom content</h2>
+	<p>Add nearly any HTML within, even for linked list groups like the one below.</p>
+	<div class="list-group">
+		<a href="#" class="list-group-item active">
+			<section>
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			</section>
+		</a>
+		<a href="#" class="list-group-item">
+			<section>
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			</section>
+		</a>
+		<a href="#" class="list-group-item">
+			<section>
+				<h4 class="list-group-item-heading">List group item heading</h4>
+				<p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+			</section>
+		</a>
+	</div>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;div class="list-group"&gt;
+	&lt;a href="#" class="list-group-item active"&gt;
+		&lt;section&gt;
+			&lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+			&lt;p class="list-group-item-text"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+		&lt;/section&gt;
+	&lt;/a&gt;
+	&lt;a href="#" class="list-group-item"&gt;
+		&lt;section&gt;
+			&lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+			&lt;p class="list-group-item-text"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+		&lt;/section&gt;
+	&lt;/a&gt;
+	&lt;a href="#" class="list-group-item"&gt;
+		&lt;section&gt;
+			&lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+			&lt;p class="list-group-item-text"&gt;Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.&lt;/p&gt;
+		&lt;/section&gt;
+	&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
+</section>
+
+<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
