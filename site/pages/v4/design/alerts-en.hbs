@@ -167,3 +167,82 @@
 	</div>
 	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span>Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
 </section>
+
+<section>
+	<h2 class="page-header" id="dismiss">Dismissible alerts</h2>
+	<p>You can use a <code>details</code>/<code>summary</code> elements group to produce dismissible alerts. The open and closed state will be remembered via Local Storage which relies on the <code>id</code> attribute of the <code>details</code> element. You can use the same <code>id</code> value across different pages to have an alert remember its state from page to page.</p>
+
+	<section>
+		<details class="alert alert-success" id="alert-success-en" open="open">
+			<summary class="h3">
+				<h3>Well done!</h3>
+			</summary>
+			<p>You successfully read <a href="#" class="alert-link">this important alert message</a>.</p>
+		</details>
+	</section>
+
+	<section>
+		<details class="alert alert-info" id="alert-info-en" open="open">
+			<summary class="h3">
+				<h3>Heads up!</h3>
+			</summary>
+			<p>This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.</p>
+		</details>
+	</section>
+
+	<section>
+		<details class="alert alert-warning" id="alert-warning-en" open="open">
+			<summary class="h3">
+				<h3>Warning!</h3>
+			</summary>
+			<p>Best check yourself, you're <a href="#" class="alert-link">not looking too good</a>.</p>
+		</details>
+	</section>
+
+	<section>
+		<details class="alert alert-danger" id="alert-danger-en" open="open">
+			<summary class="h3">
+				<h3>Oh snap!</h3>
+			</summary>
+			<p><a href="#" class="alert-link">Change a few things up</a> and try submitting again.</p>
+		</details>
+	</section>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;section&gt;
+	&lt;details class=&quot;alert alert-success&quot; id=&quot;alert-success-en&quot; open=&quot;open&quot;&gt;
+		&lt;summary class=&quot;h3&quot;&gt;
+			&lt;h3&gt;Well done!&lt;/h3&gt;
+		&lt;/summary&gt;
+		&lt;p&gt;You successfully read &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;this important alert message&lt;/a&gt;.&lt;/p&gt;
+	&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+	&lt;details class=&quot;alert alert-info&quot; id=&quot;alert-info-en&quot; open=&quot;open&quot;&gt;
+		&lt;summary class=&quot;h3&quot;&gt;
+			&lt;h3&gt;Heads up!&lt;/h3&gt;
+		&lt;/summary&gt;
+		&lt;p&gt;This &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;alert needs your attention&lt;/a&gt;, but it's not super important.&lt;/p&gt;
+	&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+	&lt;details class=&quot;alert alert-warning&quot; id=&quot;alert-warning-en&quot; open=&quot;open&quot;&gt;
+		&lt;summary class=&quot;h3&quot;&gt;
+			&lt;h3&gt;Warning!&lt;/h3&gt;
+		&lt;/summary&gt;
+		&lt;p&gt;Best check yourself, you're &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;not looking too good&lt;/a&gt;.&lt;/p&gt;
+	&lt;/details&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+	&lt;details class=&quot;alert alert-danger&quot; id=&quot;alert-en&quot; open=&quot;open&quot;&gt;
+		&lt;summary class=&quot;h3&quot;&gt;
+			&lt;h3&gt;Oh snap!&lt;/h3&gt;
+		&lt;/summary&gt;
+		&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;Change a few things up&lt;/a&gt; and try submitting again.&lt;/p&gt;
+	&lt;/details&gt;
+&lt;/section&gt;</code></pre>
+	</div>
+</section>
