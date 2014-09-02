@@ -15,7 +15,6 @@ module.exports = (grunt) ->
 		"Produces the production files"
 		[
 			"clean:dist"
-			"hub"
 			"copy:wetboew"
 			"copy:v3_styleguide"
 			"copy:v3_menu"
@@ -30,6 +29,7 @@ module.exports = (grunt) ->
 		"Only needed when the repo is first cloned"
 		[
 			"install-dependencies"
+			"hub"
 		]
 	)
 
