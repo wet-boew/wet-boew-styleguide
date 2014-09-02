@@ -3,10 +3,6 @@ language: node_js
 node_js:
   - "0.10"
 
-env:
- global:
-  - secure: "smt7Sqhm/TbTC+aVOVA8Rg8ZH2QA1Na9b1Vgs5H4U8GF45KUVPPLnm1Gc8zdlY4BCEtbbU1Lz1jElwzco5M013VUiiDYcrlpFlzSNe3NDgPigsOKCtn1SUNZwvTKYXQQVy6CBdnTUJ6uK7m4reCBStNwLRF0D7ZJOXD3ESWhALc="
-
 branches:
  only:
   - master
