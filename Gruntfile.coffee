@@ -347,5 +347,6 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-install-dependencies"
 	@loadNpmTasks "grunt-sass"
 
+	require( "time-grunt" )( grunt )
 	@
 
