@@ -1,6 +1,7 @@
 wet-boew-styleguide
 ===================
 [![Build Status](https://secure.travis-ci.org/wet-boew/wet-boew-styleguide.png?branch=master)](http://travis-ci.org/wet-boew/wet-boew-styleguide)
+[![devDependency Status](https://david-dm.org/wet-boew/wet-boew-styleguide/dev-status.svg)](https://david-dm.org/wet-boew/wet-boew-styleguide#info=devDependencies)
 
 A style guide for the WxT project.
 
