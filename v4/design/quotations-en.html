@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-		<title>Blockquotes
+		<title>Quotations
 
 	
 		
@@ -59,7 +59,7 @@
 								<ul class="text-right">
 
 	
-	<li><a lang="fr" hreflang="fr" href="blockquotes-fr.html">Français</a></li>
+	<li><a lang="fr" hreflang="fr" href="quotations-fr.html">Français</a></li>
 
 
 	<li class="curr">English&#32;<span>(current)</span></li>
@@ -120,8 +120,8 @@
         <ul class="list-inline menu">
 
 			<li><a href="../index-en.html">WET project</a></li>
-			<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html#implement">Implement WET</a></li>
-			<li><a href="http://wet-boew.github.io/wet-boew/docs/start-en.html">Contribute to WET</a></li>
+			<li><a href="../docs/start-en.html#implement">Implement WET</a></li>
+			<li><a href="../docs/start-en.html">Contribute to WET</a></li>
 
         </ul>
     </div>
@@ -151,7 +151,7 @@
 			
 				
 			
-			<li>Blockquotes</li>
+			<li>Quotations</li>
 		</ol>
 	</div>
 </div>
@@ -164,7 +164,7 @@
 
 		<main role="main" property="mainContentOfPage" class="container">
 
-			<h1 id="wb-cont" property="name">Blockquotes</h1>
+			<h1 id="wb-cont" property="name">Quotations</h1>
 
 			<section class="alert alert-info">
 	<h2 class="h3">Work in progress</h2>
@@ -196,8 +196,8 @@
             </header>
             <div class="panel-body">
                 <ul>
-                    <li><a href="#description">Description</a></li>
-                    <li><a href="#options">Blockquote options </a></li>
+                    <li><a href="#blockquote">Blockquotes</a></li>
+					<li><a href="#inline">Inline quotes</a></li>
                 </ul>
             </div>
         </div>
@@ -216,7 +216,7 @@
             <section>
                 <h3 class="h4">Writing guide</h3>
                 <ul class="list-unstyled mrgn-lft-lg lst-spcd">
-                    <li><a href="../writing/formatting-en.html#blockquotes">Blockquotes<span class="wb-inv"> - Writing guide</span></a></li>
+                    <li><a href="../writing/formatting-en.html#quotations">Quotations<span class="wb-inv"> - Writing guide</span></a></li>
                 </ul>
             </section>
         </div>
@@ -224,104 +224,124 @@
 </div>
 
 <section>
-    <h2 class="page-header" id="description">Description</h2>
+    <h2 class="page-header" id="blockquote">Blockquotes</h2>
     <p>For quoting blocks of content from another source within your document.</p>
-</section>
 
-<section>
-    <h2 class="page-header" id="options">Blockquote options</h2>
-    <p>
-        Wrap <code>&lt;blockquote&gt;</code> around any
-			<abbr title="HyperText Markup Language">HTML</abbr>
-        as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.
-    </p>
+	<section>
+		<h3 class="page-header" id="blockquote-options">Blockquote options</h3>
+		<p>
+			Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. We recommend the use of <code>&lt;p&gt;</code> inside of <code>&lt;blockquote&gt;</code>.
+		</p>
 
-    <blockquote>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-    </blockquote>
+		<blockquote>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		</blockquote>
 
-    <div class="mrgn-tp-lg">
-        <pre><code>&lt;blockquote&gt;
+		<div class="mrgn-tp-lg">
+			<pre><code>&lt;blockquote&gt;
 	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
 &lt;/blockquote&gt;</code></pre>
-    </div>
+		</div>
 
-    <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-        <section class="col-md-6">
-            <h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-            <p>(Info goes here)</p>
-        </section>
+		<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+			<section class="col-md-6">
+				<h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
 
-        <section class="col-md-6 brdr-lft">
-            <h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-            <p>(Info goes here)</p>
-        </section>
-    </div>
+			<section class="col-md-6 brdr-lft">
+				<h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
+				<p>(Info goes here)</p>
+			</section>
+		</div>
 
-    <section>
-        <h3>Naming a source</h3>
-        <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+		<section>
+			<h4>Naming a source</h4>
+			<p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
 
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
 
-        <div class="mrgn-tp-lg">
-
-            <pre><code>&lt;blockquote&gt;
+			<div class="mrgn-tp-lg">
+				<pre><code>&lt;blockquote&gt;
 	&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
 	&lt;footer&gt;Someone famous in &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
 &lt;/blockquote&gt;</code></pre>
-        </div>
+			</div>
 
-        <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-            <section class="col-md-6">
-                <h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
-                <p>(Info goes here)</p>
-            </section>
+			<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+				<section class="col-md-6">
+					<h5 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h5>
+					<p>(Info goes here)</p>
+				</section>
 
-            <section class="col-md-6 brdr-lft">
-                <h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
-                <p>(Info goes here)</p>
-            </section>
-        </div>
-    </section>
+				<section class="col-md-6 brdr-lft">
+					<h5 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h5>
+					<p>(Info goes here)</p>
+				</section>
+			</div>
+		</section>
 
-    <section>
-        <h3>Alternate displays</h3>
-        <p>Use <code>.blockquote-reverse</code> for a floated, right-aligned blockquote.</p>
+		<section>
+			<h4>Alternate displays</h4>
+			<p>Use <code>blockquote-reverse</code> for a floated, right-aligned blockquote.</p>
 
-        <blockquote class="blockquote-reverse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-        </blockquote>
-        <div class="clearfix"></div>
+			<blockquote class="blockquote-reverse">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+			</blockquote>
+			<div class="clearfix"></div>
 
-        <div class="mrgn-tp-lg">
-            <pre><code>&lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
+			<div class="mrgn-tp-lg">
+				<pre><code>&lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
 	...
 &lt;/blockquote&gt;</code></pre>
-        </div>
+			</div>
 
-        <div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-            <section class="col-md-6">
-                <h4 class="mrgn-tp-0 text-success">Use when <span class="glyphicon glyphicon-ok-circle"></span></h4>
-                <p>(Info goes here)</p>
-            </section>
+			<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+				<section class="col-md-6">
+					<h5 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h5>
+					<p>(Info goes here)</p>
+				</section>
 
-            <section class="col-md-6 brdr-lft">
-                <h4 class="mrgn-tp-0 text-danger">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h4>
-                <p>(Info goes here)</p>
-            </section>
-        </div>
-    </section>
+				<section class="col-md-6 brdr-lft">
+					<h5 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h5>
+					<p>(Info goes here)</p>
+				</section>
+			</div>
+		</section>
+	</section>
+</section>
+
+<section>
+    <h2 class="page-header" id="inline">Inline quotes</h2>
+    <p>For phrasing content quoted from another source. Use <code>&lt;&gt;</code> if a quotation is short and appears within a paragraph.</p>
+	
+	<p>"<q>Our Government is committed to protecting livestock health</q>" said Minister Ritz.</p>
+
+	<div class="mrgn-tp-lg">
+		<pre><code>&lt;p&gt;"&lt;q&gt;Our Government is committed to protecting livestock health&lt;/q&gt;" said Minister Ritz.&lt;/p&gt;</code></pre>
+	</div>
+
+	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
+		<section class="col-md-6">
+			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+
+		<section class="col-md-6 brdr-lft">
+			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
+			<p>(Info goes here)</p>
+		</section>
+	</div>
 </section>
 
 
 			<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2014-07-02</time></dd>
+	<dd><time property="dateModified">2014-09-23</time></dd>
 </dl>
 
 
