@@ -97,7 +97,7 @@ module.exports = (grunt) ->
 
 			guides:
 				options:
-					assets: "dist/v4"
+					assets: "dist/v4/wet-boew"
 				files: [
 						#site
 						expand: true
