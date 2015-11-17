@@ -295,7 +295,6 @@ module.exports = (grunt) ->
 				tasks: [
 					"build"
 					"minify"
-					"assets-min"
 					"pages:ajax"
 					"pages:min"
 				]
@@ -348,4 +347,3 @@ module.exports = (grunt) ->
 
 	require( "time-grunt" )( grunt )
 	@
-
