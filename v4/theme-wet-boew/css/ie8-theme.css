@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.19-development - 2015-11-17
+ * v4.0.20-development - 2015-12-02
  *
  */
 @charset "UTF-8";
@@ -5514,7 +5514,7 @@ a {
   background: #e8f2f4;
   border-color: #083c6c; }
 
-.label-success, .label-success[href]:hover, .label-success[href]:focus, .label-success[href]:active, .alert-success, details.alert-success {
+.label-success, .label-success[href]:hover, .label-success[href]:focus, .label-success[href]:active, .alert-success, details.alert.alert-success, details.alert[open].alert-success {
   background: #d8eeca;
   border-color: #278400; }
 
@@ -5522,7 +5522,7 @@ a {
   color: #278400;
   content: "\e084"; }
 
-.label-info, .label-info[href]:hover, .label-info[href]:focus, .label-info[href]:active, .alert-info, details.alert-info {
+.label-info, .label-info[href]:hover, .label-info[href]:focus, .label-info[href]:active, .alert-info, details.alert.alert-info, details.alert[open].alert-info {
   background: #d7faff;
   border-color: #269abc; }
 
@@ -5530,7 +5530,7 @@ a {
   color: #269abc;
   content: "\e086"; }
 
-.label-warning, .label-warning[href]:hover, .label-warning[href]:focus, .label-warning[href]:active, .alert-warning, details.alert-warning {
+.label-warning, .label-warning[href]:hover, .label-warning[href]:focus, .label-warning[href]:active, .alert-warning, details.alert.alert-warning, details.alert[open].alert-warning {
   background: #f9f4d4;
   border-color: #f90; }
 
@@ -5538,7 +5538,7 @@ a {
   color: #f90;
   content: "\e107"; }
 
-.label-danger, .label-danger[href]:hover, .label-danger[href]:focus, .label-danger[href]:active, .alert-danger, details.alert-danger {
+.label-danger, .label-danger[href]:hover, .label-danger[href]:focus, .label-danger[href]:active, .alert-danger, details.alert.alert-danger, details.alert[open].alert-danger {
   background: #f3e9e8;
   border-color: #d3080c; }
 
@@ -6923,43 +6923,46 @@ figure .pieLabel {
   color: #000;
   padding: 1px; }
 
-details.alert {
+details.alert, details.alert[open] {
+  border-radius: 0;
+  border-width: 0 0 0 4px;
   padding-left: 45px; }
-  details.alert:before {
+  details.alert:before, details.alert[open]:before {
     display: inline-block;
     font-family: "Glyphicons Halflings";
     font-size: 24px;
     margin-left: -1.3em;
     margin-top: -3px;
     position: absolute; }
-  details.alert > * {
+  details.alert summary, details.alert[open] summary {
+    border-width: 0; }
+  details.alert > *, details.alert[open] > * {
     margin-left: 0.7em; }
-  details.alert > :first-child {
+  details.alert > :first-child, details.alert[open] > :first-child {
     margin-left: 0.4em; }
-    details.alert > :first-child:before {
+    details.alert > :first-child:before, details.alert[open] > :first-child:before {
       color: #000;
       content: ""; }
+  details.alert.alert-success:before, details.alert[open].alert-success:before {
+    color: #278400;
+    content: "\e084"; }
+  details.alert.alert-info:before, details.alert[open].alert-info:before {
+    color: #269abc;
+    content: "\e086"; }
+  details.alert.alert-warning:before, details.alert[open].alert-warning:before {
+    color: #f90;
+    content: "\e107"; }
+  details.alert.alert-danger:before, details.alert[open].alert-danger:before {
+    color: #d3080c;
+    content: "\e101"; }
 
-details.alert-success:before {
-  color: #278400;
-  content: "\e084"; }
-
-details.alert-info:before {
-  color: #269abc;
-  content: "\e086"; }
-
-details.alert-warning:before {
-  color: #f90;
-  content: "\e107"; }
-
-details.alert-danger:before {
-  color: #d3080c;
-  content: "\e101"; }
-
-.no-details details.alert > summary {
+.no-details details.alert > summary, .no-details details.alert[open] > summary {
   margin-left: 1.4em; }
-  .no-details details.alert > summary:before {
+  .no-details details.alert > summary:before, .no-details details.alert[open] > summary:before {
     content: "\25BA\a0"; }
+
+.no-details details.alert[open] > summary:before, .no-details details.alert[open][open] > summary:before {
+  content: "\25BC\a0"; }
 
 .no-details[dir="rtl"] details.alert > summary {
   margin-right: 1.4em; }
@@ -7595,12 +7598,12 @@ img.mfp-img {
 .wb-menu .sm-open .expicon {
   z-index: -1; }
 
-.wb-menu details {
+.wb-menu details, .wb-menu details[open] {
   border: 0; }
-  .wb-menu details summary {
+  .wb-menu details summary, .wb-menu details[open] summary {
     border: 0;
     color: #fff; }
-    .wb-menu details summary:focus, .wb-menu details summary:hover {
+    .wb-menu details summary:focus, .wb-menu details summary:hover, .wb-menu details[open] summary:focus, .wb-menu details[open] summary:hover {
       text-decoration: none; }
 
 #mb-pnl nav a.wb-navcurr, #mb-pnl nav summary.wb-navcurr {
@@ -8545,6 +8548,8 @@ table.dataTable {
   /**
 	 * Style 2 - Slider-like carousel style
 	 */ }
+  .wb-tabs details[open] {
+    border-top-left-radius: 0; }
   .wb-tabs > .tabpanels {
     overflow: hidden;
     position: relative; }
@@ -9132,12 +9137,18 @@ details.alert:not([open]) {
  * Mobile-friendly styles
  */
   .wb-tabs > details, .wb-tabs > .tabpanels > details {
-    border-bottom: #ccc solid 1px; }
+    border: 0;
+    border-bottom: #ccc solid 1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
     .wb-tabs > details:last-of-type, .wb-tabs > .tabpanels > details:last-of-type {
       border-bottom: 0; }
     .wb-tabs > details[style], .wb-tabs > .tabpanels > details[style] {
       min-height: 0 !important; }
+    .wb-tabs > details > summary, .wb-tabs > .tabpanels > details > summary {
+      border: 0; }
     .wb-tabs > details[open] > summary, .wb-tabs > .tabpanels > details[open] > summary {
+      border: 0;
       margin-bottom: 0; }
   .wb-tabs {
     /* Only for backwards compatibility. Should be removed in v4.1. */
