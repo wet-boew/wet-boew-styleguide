@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.20-development - 2015-12-02
+ * v4.0.21-development - 2015-12-16
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
@@ -587,7 +587,7 @@ Modernizr.load( [
 	// Escapes the characters in a string for use in a jQuery selector
 	// Based on http://totaldev.com/content/escaping-characters-get-valid-jquery-id
 	wb.jqEscape = function( selector ) {
-		return selector.replace( /([;&,\.\+\*\~':"\!\^\/#$%@\[\]\(\)=>\|])/g, "\\$1" );
+		return selector.replace( /([;&,\.\+\*\~':"\\\!\^\/#$%@\[\]\(\)=>\|])/g, "\\$1" );
 	};
 
 	// RegEx used by formattedNumCompare
@@ -5442,12 +5442,8 @@ var componentName = "wb-feeds",
 	 */
 	jsonRequest = function( url, limit ) {
 
-		var requestURL = wb.pageUrlParts.protocol + "//ajax.googleapis.com/ajax/services/feed/load?v=1.0&callback=?&q=" + encodeURIComponent( decodeURIComponent( url ) );
+		var requestURL = wb.pageUrlParts.protocol + "//query.yahooapis.com/v1/public/yql?q=select%20*%20from%20feed%20where%20url%20%3D%20'" + encodeURIComponent( decodeURIComponent( url ) ) + "'%20limit%20" + ( limit ? limit : 4 ) + "&format=json";
 
-		// API returns a maximum of 4 entries by default so only override if more entries should be returned
-		if ( limit > 4 ) {
-			requestURL += "&num=" + limit;
-		}
 		return requestURL;
 	},
 
@@ -5562,8 +5558,14 @@ var componentName = "wb-feeds",
 		for ( i = 0; i !== len; i += 1 ) {
 			items[ i ].fIcon =  icon ;
 
-			if ( items[ i ].publishedDate === undef && items[ i ].published !== undef ) {
-				items[ i ].publishedDate = items[ i ].published;
+			if ( items[ i ].publishedDate === undef ) {
+				items[ i ].publishedDate = ( items[ i ].published || items[ i ].pubDate || items[ i ].updated || "" );
+			}
+
+			var link = items[ i ].link;
+
+			if ( link && link.href ) {
+				items[ i ].link = link.href;
 			}
 
 			entries.push( items[ i ] );
@@ -5692,7 +5694,23 @@ $document.on( "ajax-fetched.wb data-ready.wb-feeds", selector + " " + feedLinkSe
 		switch ( event.type ) {
 			case "ajax-fetched":
 				response = event.fetch.response;
-				data = ( response.responseData ) ? response.responseData.feed.entries : response.items || response.feed.entry;
+
+				if ( response.query ) {
+					var results = response.query.results;
+
+					if ( results ) {
+						data = results.entry ? results.entry : results.item;
+
+						if ( !Array.isArray( data ) ) {
+							data = [ data ];
+						}
+					} else {
+						data = [];
+					}
+				} else {
+					data = ( response.responseData ) ? response.responseData.feed.entries : response.items || response.feed.entry;
+				}
+
 				break;
 			default:
 				data = event.feedsData;
@@ -11434,7 +11452,8 @@ var componentName = "wb-toggle",
 			var top,
 				isOn = data.isOn,
 				$elms = data.elms,
-				$detail = $( this );
+				$this = $( this ),
+				$detail = $this.is( "summary" ) ? $this.parent() : $this;
 
 			// Stop propagation of the toggleDetails event
 			if ( event.stopPropagation ) {
@@ -11583,7 +11602,7 @@ $document.on( "timerpoke.wb " + initEvent + " " + toggleEvent +
 	}
 } );
 
-$document.on( toggledEvent, "details", toggleDetails );
+$document.on( toggledEvent, "summary, details", toggleDetails );
 
 // Keyboard handling for the accordion
 $document.on( "keydown", selectorTab, function( event ) {

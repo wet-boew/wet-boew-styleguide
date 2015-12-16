@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.20-development - 2015-12-02
+ * v4.0.21-development - 2015-12-16
  *
  */
 @charset "UTF-8";
@@ -6296,6 +6296,9 @@ q:before, q:after {
 .brdr-bttm {
   border-bottom-width: 1px; }
 
+.brdr-0 {
+  border: 0; }
+
 .brdr-rds-0 {
   border-radius: 0; }
 
@@ -6398,15 +6401,14 @@ summary {
   summary > :first-child {
     display: inline; }
 
-details > :not(summary) {
-  margin-left: 1.1em; }
-
-details[open] {
-  padding-bottom: 1em; }
-
-[dir=rtl] details > :not(summary) {
-  margin-left: 0;
-  margin-right: 1.1em; }
+details {
+  padding-left: 1.1em;
+  padding-right: 1.1em; }
+  details > summary {
+    margin-left: -1.1em;
+    margin-right: -1.1em; }
+  details[open] {
+    padding-bottom: 1em; }
 
 /*
  Plugins
@@ -7269,7 +7271,8 @@ img.mfp-img {
   z-index: -1; }
 
 .wb-menu details, .wb-menu details[open] {
-  border: 0; }
+  border: 0;
+  margin-bottom: 0; }
   .wb-menu details summary, .wb-menu details[open] summary {
     border: 0;
     color: #fff; }
@@ -8652,33 +8655,33 @@ summary {
 details:not([open]) details summary, details .out details summary {
   display: none !important; }
 
-details summary {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  color: #295376;
-  padding: 5px 15px; }
-  details summary:focus, details summary:hover {
-    background-color: transparent;
-    color: #0535d2;
-    text-decoration: underline; }
-
-details[open] {
-  border: 1px solid #ddd;
-  border-radius: 4px; }
-  details[open] summary {
-    border: 0;
-    border-bottom: 1px solid #ddd;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
-
-details:not([open]) {
-  visibility: hidden; }
-  details:not([open]) > details,
-  details:not([open]) > * {
-    display: none; }
-
-details.alert:not([open]) {
-  visibility: visible; }
+details {
+  margin-bottom: .25em; }
+  details summary {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #295376;
+    padding: 5px 15px; }
+    details summary:focus, details summary:hover {
+      background-color: transparent;
+      color: #0535d2;
+      text-decoration: underline; }
+  details[open] {
+    border: 1px solid #ddd;
+    border-radius: 4px; }
+    details[open] > summary {
+      border: 0;
+      border-bottom: 1px solid #ddd;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: .25em; }
+  details:not([open]) {
+    visibility: hidden; }
+    details:not([open]) > details,
+    details:not([open]) > * {
+      display: none; }
+  details.alert:not([open]) {
+    visibility: visible; }
 
 .tabpanels > details:not([open]) {
   visibility: visible; }
