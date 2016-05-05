@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " hibák léptek fel.",
 	"err-fnd": " hiba lépett fel.",
 	/* Date picker */
+	"date-hide": "A naptár elrejtése",
 	"date-show": "Válasszon egy dátumot a naptárból:",
 	"date-sel": "Kijelölt",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"December"
 	],
 	cal: "Naptár",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Mai nap)",
 	"cal-goToLnk": "Ugrás<span class=\"wb-inv\"> erre a hónapra</span>",
 	"cal-goToTtl": "Ugrás erre a hónapra",
@@ -219,24 +221,24 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: HU (Hungarian; Magyar)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Kötelező megadni.",
-	maxlength: $.validator.format("Legfeljebb {0} karakter hosszú legyen."),
-	minlength: $.validator.format("Legalább {0} karakter hosszú legyen."),
-	rangelength: $.validator.format("Legalább {0} és legfeljebb {1} karakter hosszú legyen."),
+	maxlength: $.validator.format( "Legfeljebb {0} karakter hosszú legyen." ),
+	minlength: $.validator.format( "Legalább {0} karakter hosszú legyen." ),
+	rangelength: $.validator.format( "Legalább {0} és legfeljebb {1} karakter hosszú legyen." ),
 	email: "Érvényes e-mail címnek kell lennie.",
 	url: "Érvényes URL-nek kell lennie.",
 	date: "Dátumnak kell lennie.",
 	number: "Számnak kell lennie.",
 	digits: "Csak számjegyek lehetnek.",
 	equalTo: "Meg kell egyeznie a két értéknek.",
-	range: $.validator.format("{0} és {1} közé kell esnie."),
-	max: $.validator.format("Nem lehet nagyobb, mint {0}."),
-	min: $.validator.format("Nem lehet kisebb, mint {0}."),
+	range: $.validator.format( "{0} és {1} közé kell esnie." ),
+	max: $.validator.format( "Nem lehet nagyobb, mint {0}." ),
+	min: $.validator.format( "Nem lehet kisebb, mint {0}." ),
 	creditcard: "Érvényes hitelkártyaszámnak kell lennie.",
 	remote: "Kérem javítsa ki ezt a mezőt.",
 	dateISO: "Kérem írjon be egy érvényes dátumot (ISO)."
-});
+} );
 
 
 });

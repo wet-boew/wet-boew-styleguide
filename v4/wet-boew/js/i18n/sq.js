@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " gabime u gjetën.",
 	"err-fnd": " gabim u gjet.",
 	/* Date picker */
+	"date-hide": "Hide kalendar",
 	"date-show": "Zgjidh një datë nga një kalendar për fushën:",
 	"date-sel": "I zgjedhur",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Dhjetor"
 	],
 	cal: "Kalendar",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Dita aktual)",
 	"cal-goToLnk": "Shko tek<span class=\"wb-inv\"> muaji të vitit</span>",
 	"cal-goToTtl": "Shko tek muaji të vitit",

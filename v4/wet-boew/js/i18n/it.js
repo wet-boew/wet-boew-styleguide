@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " errori sono stati trovati.",
 	"err-fnd": " errore è stato trovato.",
 	/* Date picker */
+	"date-hide": "Nascondi calendario",
 	"date-show": "Scegli una data da un calendario per il campo:",
 	"date-sel": "Selezionato",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Dicembre"
 	],
 	cal: "Calendario",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Giorno attuale)",
 	"cal-goToLnk": "Vai ad un<span class=\"wb-inv\"> mese dell'anno</span>",
 	"cal-goToTtl": "Vai al mese dell'anno",
@@ -219,28 +221,29 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: IT (Italian; Italiano)
  */
-$.extend($.validator.messages, {
-	required: "Campo obbligatorio.",
-	remote: "Controlla questo campo.",
-	email: "Inserisci un indirizzo email valido.",
-	url: "Inserisci un indirizzo web valido.",
-	date: "Inserisci una data valida.",
-	dateISO: "Inserisci una data valida (ISO).",
-	number: "Inserisci un numero valido.",
-	digits: "Inserisci solo numeri.",
-	creditcard: "Inserisci un numero di carta di credito valido.",
-	equalTo: "Il valore non corrisponde.",
-	extension: "Inserisci un valore con un&apos;estensione valida.",
-	maxlength: $.validator.format("Non inserire pi&ugrave; di {0} caratteri."),
-	minlength: $.validator.format("Inserisci almeno {0} caratteri."),
-	rangelength: $.validator.format("Inserisci un valore compreso tra {0} e {1} caratteri."),
-	range: $.validator.format("Inserisci un valore compreso tra {0} e {1}."),
-	max: $.validator.format("Inserisci un valore minore o uguale a {0}."),
-	min: $.validator.format("Inserisci un valore maggiore o uguale a {0}."),
-	nifES: "Inserisci un NIF valido.",
-	nieES: "Inserisci un NIE valido.",
-	cifES: "Inserisci un CIF valido."
-});
+$.extend( $.validator.messages, {
+	required: "Campo obbligatorio",
+	remote: "Controlla questo campo",
+	email: "Inserisci un indirizzo email valido",
+	url: "Inserisci un indirizzo web valido",
+	date: "Inserisci una data valida",
+	dateISO: "Inserisci una data valida (ISO)",
+	number: "Inserisci un numero valido",
+	digits: "Inserisci solo numeri",
+	creditcard: "Inserisci un numero di carta di credito valido",
+	equalTo: "Il valore non corrisponde",
+	extension: "Inserisci un valore con un&apos;estensione valida",
+	maxlength: $.validator.format( "Non inserire pi&ugrave; di {0} caratteri" ),
+	minlength: $.validator.format( "Inserisci almeno {0} caratteri" ),
+	rangelength: $.validator.format( "Inserisci un valore compreso tra {0} e {1} caratteri" ),
+	range: $.validator.format( "Inserisci un valore compreso tra {0} e {1}" ),
+	max: $.validator.format( "Inserisci un valore minore o uguale a {0}" ),
+	min: $.validator.format( "Inserisci un valore maggiore o uguale a {0}" ),
+	nifES: "Inserisci un NIF valido",
+	nieES: "Inserisci un NIE valido",
+	cifES: "Inserisci un CIF valido",
+	currency: "Inserisci una valuta valida"
+} );
 
 
 });

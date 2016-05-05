@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " սխալներ չեն հայտնաբերվել.",
 	"err-fnd": " սխալ է գտնվել.",
 	/* Date picker */
+	"date-hide": "Թաքցնել Օրացույց",
 	"date-show": "Ընտրեք ամսաթիվը ից Օրացույց ոլորտում:",
 	"date-sel": "Նյութերի բազա",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Դեկտեմբեր"
 	],
 	cal: "Օրացույց",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Ընթացիկ օր)",
 	"cal-goToLnk": "Գնալ<span class=\"wb-inv\"> ամսվա տարվա</span>",
 	"cal-goToTtl": "Գնալ ամսվա տարվա",

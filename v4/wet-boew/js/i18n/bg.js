@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " бяха открити грешки.",
 	"err-fnd": " грешка е намерен.",
 	/* Date picker */
+	"date-hide": "Скриване на календара",
 	"date-show": "Изберете дата от календара за областта:",
 	"date-sel": "Подбран",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Декември"
 	],
 	cal: "Календар",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Текущия ден)",
 	"cal-goToLnk": "Отиди на<span class=\"wb-inv\"> месец на годината</span>",
 	"cal-goToTtl": "Отиди на месец на годината",
@@ -219,7 +221,7 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: BG (Bulgarian; български език)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Полето е задължително.",
 	remote: "Моля, въведете правилната стойност.",
 	email: "Моля, въведете валиден email.",
@@ -231,13 +233,13 @@ $.extend($.validator.messages, {
 	creditcard: "Моля, въведете валиден номер на кредитна карта.",
 	equalTo: "Моля, въведете същата стойност отново.",
 	extension: "Моля, въведете стойност с валидно разширение.",
-	maxlength: $.validator.format("Моля, въведете повече от {0} символа."),
-	minlength: $.validator.format("Моля, въведете поне {0} символа."),
-	rangelength: $.validator.format("Моля, въведете стойност с дължина между {0} и {1} символа."),
-	range: $.validator.format("Моля, въведете стойност между {0} и {1}."),
-	max: $.validator.format("Моля, въведете стойност по-малка или равна на {0}."),
-	min: $.validator.format("Моля, въведете стойност по-голяма или равна на {0}.")
-});
+	maxlength: $.validator.format( "Моля, въведете повече от {0} символа." ),
+	minlength: $.validator.format( "Моля, въведете поне {0} символа." ),
+	rangelength: $.validator.format( "Моля, въведете стойност с дължина между {0} и {1} символа." ),
+	range: $.validator.format( "Моля, въведете стойност между {0} и {1}." ),
+	max: $.validator.format( "Моля, въведете стойност по-малка или равна на {0}." ),
+	min: $.validator.format( "Моля, въведете стойност по-голяма или равна на {0}." )
+} );
 
 
 });

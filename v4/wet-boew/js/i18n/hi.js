@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " त्रुटियों पाया गया.",
 	"err-fnd": " त्रुटि पाया गया था.",
 	/* Date picker */
+	"date-hide": "कैलेंडर छिपाएँ",
 	"date-show": "कैलेंडर से क्षेत्र के लिए एक तारीख उठाओ",
 	"date-sel": "चयनित",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"दिसंबर"
 	],
 	cal: "कैलेंडर",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(वर्तमान दिन)",
 	"cal-goToLnk": "<span class=\"wb-inv\">वर्ष के महीने के लिए </span>जाओ",
 	"cal-goToTtl": "वर्ष के महीने के लिए जाओ",

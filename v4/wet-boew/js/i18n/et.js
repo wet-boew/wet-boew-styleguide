@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": "on leitud vigu.",
 	"err-fnd": "on leitud viga.",
 	/* Date picker */
+	"date-hide": "Peida kalender",
 	"date-show": "Vali kalendrist kuupäev:",
 	"date-sel": "Valitud",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Detsember"
 	],
 	cal: "Kalender",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Tänane päev)",
 	"cal-goToLnk": "Mine aastas</span>  kuule <span class=\"wb-inv\"> ",
 	"cal-goToTtl": "Mine sellele kuule aastas",
@@ -219,11 +221,11 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: ET (Estonian; eesti, eesti keel)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "See väli peab olema täidetud.",
-	maxlength: $.validator.format("Palun sisestage vähem kui {0} tähemärki."),
-	minlength: $.validator.format("Palun sisestage vähemalt {0} tähemärki."),
-	rangelength: $.validator.format("Palun sisestage väärtus vahemikus {0} kuni {1} tähemärki."),
+	maxlength: $.validator.format( "Palun sisestage vähem kui {0} tähemärki." ),
+	minlength: $.validator.format( "Palun sisestage vähemalt {0} tähemärki." ),
+	rangelength: $.validator.format( "Palun sisestage väärtus vahemikus {0} kuni {1} tähemärki." ),
 	email: "Palun sisestage korrektne e-maili aadress.",
 	url: "Palun sisestage korrektne URL.",
 	date: "Palun sisestage korrektne kuupäev.",
@@ -231,11 +233,11 @@ $.extend($.validator.messages, {
 	number: "Palun sisestage korrektne number.",
 	digits: "Palun sisestage ainult numbreid.",
 	equalTo: "Palun sisestage sama väärtus uuesti.",
-	range: $.validator.format("Palun sisestage väärtus vahemikus {0} kuni {1}."),
-	max: $.validator.format("Palun sisestage väärtus, mis on väiksem või võrdne arvuga {0}."),
-	min: $.validator.format("Palun sisestage väärtus, mis on suurem või võrdne arvuga {0}."),
+	range: $.validator.format( "Palun sisestage väärtus vahemikus {0} kuni {1}." ),
+	max: $.validator.format( "Palun sisestage väärtus, mis on väiksem või võrdne arvuga {0}." ),
+	min: $.validator.format( "Palun sisestage väärtus, mis on suurem või võrdne arvuga {0}." ),
 	creditcard: "Palun sisestage korrektne krediitkaardi number."
-});
+} );
 
 
 });

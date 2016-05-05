@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " foute is gevind nie.",
 	"err-fnd": " fout gevind word.",
 	/* Date picker */
+	"date-hide": "Steek kalender",
 	"date-show": "Kies 'n datum van \\'n kalender vir die veld:",
 	"date-sel": "Gekies",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Desember"
 	],
 	cal: "Kalender",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Huidige dag)",
 	"cal-goToLnk": "Gaan na<span class=\"wb-inv\"> maand van die jaar</span>",
 	"cal-goToTtl": "Gaan na maand van die jaar",

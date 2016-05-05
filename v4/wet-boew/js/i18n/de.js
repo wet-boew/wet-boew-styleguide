@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " Fehler gefunden wurden.",
 	"err-fnd": " Fehler festgestellt wurde.",
 	/* Date picker */
+	"date-hide": "Ausblenden Kalender",
 	"date-show": "Wählen Sie ein Datum aus einem Kalender für das Feld:",
 	"date-sel": "Ausgewählt",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Dezember"
 	],
 	cal: "Kalender",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Aktueller Tag)",
 	"cal-goToLnk": "Gehe zu<span class=\"wb-inv\"> Monat des Jahres</span>",
 	"cal-goToTtl": "Gehe zu Monat des Jahres",
@@ -219,34 +221,34 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: DE (German, Deutsch)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Dieses Feld ist ein Pflichtfeld.",
-	maxlength: $.validator.format("Geben Sie bitte maximal {0} Zeichen ein."),
-	minlength: $.validator.format("Geben Sie bitte mindestens {0} Zeichen ein."),
-	rangelength: $.validator.format("Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein."),
+	maxlength: $.validator.format( "Geben Sie bitte maximal {0} Zeichen ein." ),
+	minlength: $.validator.format( "Geben Sie bitte mindestens {0} Zeichen ein." ),
+	rangelength: $.validator.format( "Geben Sie bitte mindestens {0} und maximal {1} Zeichen ein." ),
 	email: "Geben Sie bitte eine gültige E-Mail Adresse ein.",
 	url: "Geben Sie bitte eine gültige URL ein.",
 	date: "Bitte geben Sie ein gültiges Datum ein.",
 	number: "Geben Sie bitte eine Nummer ein.",
 	digits: "Geben Sie bitte nur Ziffern ein.",
 	equalTo: "Bitte denselben Wert wiederholen.",
-	range: $.validator.format("Geben Sie bitte einen Wert zwischen {0} und {1} ein."),
-	max: $.validator.format("Geben Sie bitte einen Wert kleiner oder gleich {0} ein."),
-	min: $.validator.format("Geben Sie bitte einen Wert größer oder gleich {0} ein."),
+	range: $.validator.format( "Geben Sie bitte einen Wert zwischen {0} und {1} ein." ),
+	max: $.validator.format( "Geben Sie bitte einen Wert kleiner oder gleich {0} ein." ),
+	min: $.validator.format( "Geben Sie bitte einen Wert größer oder gleich {0} ein." ),
 	creditcard: "Geben Sie bitte eine gültige Kreditkarten-Nummer ein."
-});
+} );
 
 /*
  * Localized default methods for the jQuery validation plugin.
  * Locale: DE
  */
-$.extend($.validator.methods, {
-	date: function(value, element) {
-		return this.optional(element) || /^\d\d?\.\d\d?\.\d\d\d?\d?$/.test(value);
+$.extend( $.validator.methods, {
+	date: function( value, element ) {
+		return this.optional( element ) || /^\d\d?\.\d\d?\.\d\d\d?\d?$/.test( value );
 	},
-	number: function(value, element) {
-		return this.optional(element) || /^-?(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?$/.test(value);
+	number: function( value, element ) {
+		return this.optional( element ) || /^-?(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d+)?$/.test( value );
 	}
-});
+} );
 
 });

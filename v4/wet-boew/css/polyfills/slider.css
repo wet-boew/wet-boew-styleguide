@@ -152,7 +152,7 @@ body.fd-slider-drag-horizontal * {
 
 .fd-slider-disabled {
   cursor: default;
-  opacity: 0.8; }
+  opacity: .8; }
   .fd-slider-disabled .fd-slider-handle {
     background-position: 0 -40px;
     cursor: default !important;

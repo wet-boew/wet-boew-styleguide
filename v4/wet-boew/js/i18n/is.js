@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " villur fundust.",
 	"err-fnd": " villa fannst.",
 	/* Date picker */
+	"date-hide": "Fela dagatal",
 	"date-show": "Veldu dagsetningu af dagatali fyrir akur:",
 	"date-sel": "Valin",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Desember"
 	],
 	cal: "Dagbók",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Núverandi dag)",
 	"cal-goToLnk": "Fara í<span class=\"wb-inv\"> mánuð á ári</span>",
 	"cal-goToTtl": "Fara í mánuð á ári",
@@ -219,23 +221,23 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: IS (Icelandic; íslenska)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Þessi reitur er nauðsynlegur.",
 	remote: "Lagaðu þennan reit.",
-	maxlength: $.validator.format("Sláðu inn mest {0} stafi."),
-	minlength: $.validator.format("Sláðu inn minnst {0} stafi."),
-	rangelength: $.validator.format("Sláðu inn minnst {0} og mest {1} stafi."),
+	maxlength: $.validator.format( "Sláðu inn mest {0} stafi." ),
+	minlength: $.validator.format( "Sláðu inn minnst {0} stafi." ),
+	rangelength: $.validator.format( "Sláðu inn minnst {0} og mest {1} stafi." ),
 	email: "Sláðu inn gilt netfang.",
 	url: "Sláðu inn gilda vefslóð.",
 	date: "Sláðu inn gilda dagsetningu.",
 	number: "Sláðu inn tölu.",
 	digits: "Sláðu inn tölustafi eingöngu.",
 	equalTo: "Sláðu sama gildi inn aftur.",
-	range: $.validator.format("Sláðu inn gildi milli {0} og {1}."),
-	max: $.validator.format("Sláðu inn gildi sem er minna en eða jafnt og {0}."),
-	min: $.validator.format("Sláðu inn gildi sem er stærra en eða jafnt og {0}."),
+	range: $.validator.format( "Sláðu inn gildi milli {0} og {1}." ),
+	max: $.validator.format( "Sláðu inn gildi sem er minna en eða jafnt og {0}." ),
+	min: $.validator.format( "Sláðu inn gildi sem er stærra en eða jafnt og {0}." ),
 	creditcard: "Sláðu inn gilt greiðslukortanúmer."
-});
+} );
 
 
 });

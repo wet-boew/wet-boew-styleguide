@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": "找到错误。",
 	"err-fnd": "找到错误。",
 	/* Date picker */
+	"date-hide": "隐藏日历",
 	"date-show": "从日历选择一个日期：",
 	"date-sel": "选中",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"十二月"
 	],
 	cal: "日历",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "当天",
 	"cal-goToLnk": "转到<span class=\"wb-inv\">月份的一年</span>",
 	"cal-goToTtl": "转到月份的一年",

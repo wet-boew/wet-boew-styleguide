@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " 오류가 발견되었습니다.",
 	"err-fnd": " 오류가 발견되었습니다.",
 	/* Date picker */
+	"date-hide": "캘린더 숨기기",
 	"date-show": "필드에 달력에서 날짜를 선택:",
 	"date-sel": "선택된",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"12월"
 	],
 	cal: "달력",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(현재 일)",
 	"cal-goToLnk": "<span class=\"wb-inv\">년 개월</span>로 이동",
 	"cal-goToTtl": "년 개월로 이동",
@@ -219,7 +221,7 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: KO (Korean; 한국어)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "필수 항목입니다.",
 	remote: "항목을 수정하세요.",
 	email: "유효하지 않은 E-Mail주소입니다.",
@@ -231,13 +233,13 @@ $.extend($.validator.messages, {
 	creditcard: "신용카드 번호가 바르지 않습니다.",
 	equalTo: "같은 값을 다시 입력하세요.",
 	extension: "올바른 확장자가 아닙니다.",
-	maxlength: $.validator.format("{0}자를 넘을 수 없습니다. "),
-	minlength: $.validator.format("{0}자 이상 입력하세요."),
-	rangelength: $.validator.format("문자 길이가 {0} 에서 {1} 사이의 값을 입력하세요."),
-	range: $.validator.format("{0} 에서 {1} 사이의 값을 입력하세요."),
-	max: $.validator.format("{0} 이하의 값을 입력하세요."),
-	min: $.validator.format("{0} 이상의 값을 입력하세요.")
-});
+	maxlength: $.validator.format( "{0}자를 넘을 수 없습니다. " ),
+	minlength: $.validator.format( "{0}자 이상 입력하세요." ),
+	rangelength: $.validator.format( "문자 길이가 {0} 에서 {1} 사이의 값을 입력하세요." ),
+	range: $.validator.format( "{0} 에서 {1} 사이의 값을 입력하세요." ),
+	max: $.validator.format( "{0} 이하의 값을 입력하세요." ),
+	min: $.validator.format( "{0} 이상의 값을 입력하세요." )
+} );
 
 
 });

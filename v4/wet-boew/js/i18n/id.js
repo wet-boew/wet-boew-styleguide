@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " error ditemukan.",
 	"err-fnd": " error ditemukan.",
 	/* Date picker */
+	"date-hide": "Sembunyikan kalender",
 	"date-show": "Pilih satu tanggal pada kalender:",
 	"date-sel": "Sudah dipilih",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Desember"
 	],
 	cal: "Kalender",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "Hari ini",
 	"cal-goToLnk": "Pilih<span class=\"invisible\"> bulan dan tahun</span>",
 	"cal-goToTtl": "Pilih bulan dan tahun",
@@ -219,7 +221,7 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: ID (Indonesia; Indonesian)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Kolom ini diperlukan.",
 	remote: "Harap benarkan kolom ini.",
 	email: "Silakan masukkan format email yang benar.",
@@ -230,13 +232,13 @@ $.extend($.validator.messages, {
 	digits: "Harap masukan angka saja.",
 	creditcard: "Harap masukkan format kartu kredit yang benar.",
 	equalTo: "Harap masukkan nilai yg sama dengan sebelumnya.",
-	maxlength: $.validator.format("Input dibatasi hanya {0} karakter."),
-	minlength: $.validator.format("Input tidak kurang dari {0} karakter."),
-	rangelength: $.validator.format("Panjang karakter yg diizinkan antara {0} dan {1} karakter."),
-	range: $.validator.format("Harap masukkan nilai antara {0} dan {1}."),
-	max: $.validator.format("Harap masukkan nilai lebih kecil atau sama dengan {0}."),
-	min: $.validator.format("Harap masukkan nilai lebih besar atau sama dengan {0}.")
-});
+	maxlength: $.validator.format( "Input dibatasi hanya {0} karakter." ),
+	minlength: $.validator.format( "Input tidak kurang dari {0} karakter." ),
+	rangelength: $.validator.format( "Panjang karakter yg diizinkan antara {0} dan {1} karakter." ),
+	range: $.validator.format( "Harap masukkan nilai antara {0} dan {1}." ),
+	max: $.validator.format( "Harap masukkan nilai lebih kecil atau sama dengan {0}." ),
+	min: $.validator.format( "Harap masukkan nilai lebih besar atau sama dengan {0}." )
+} );
 
 
 });

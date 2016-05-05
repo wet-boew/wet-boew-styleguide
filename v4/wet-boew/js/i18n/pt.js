@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " erros encontrados.",
 	"err-fnd": " erro encontrado.",
 	/* Date picker */
+	"date-hide": "Ocultar o calendário",
 	"date-show": "Selecionar uma data de um calendário para o campo:",
 	"date-sel": "Selecionado",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Dezembro"
 	],
 	cal: "Calendário",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(hoje)",
 	"cal-goToLnk": "Ir para o<span class=\"wb-inv\"> mês do ano</span>",
 	"cal-goToTtl": "Ir para o mês do ano",
@@ -220,10 +222,10 @@ wb.doc.one( "formLanguages.wb", function() {
  * Localized default methods for the jQuery validation plugin.
  * Locale: PT_BR
  */
-$.extend($.validator.methods, {
-	date: function(value, element) {
-		return this.optional(element) || /^\d\d?\/\d\d?\/\d\d\d?\d?$/.test(value);
+$.extend( $.validator.methods, {
+	date: function( value, element ) {
+		return this.optional( element ) || /^\d\d?\/\d\d?\/\d\d\d?\d?$/.test( value );
 	}
-});
+} );
 
 });

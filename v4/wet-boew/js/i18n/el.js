@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " τα σφάλματα βρέθηκαν.",
 	"err-fnd": " σφάλμα ήταν που βρέθηκαν.",
 	/* Date picker */
+	"date-hide": "Απόκρυψη ημερολόγιο",
 	"date-show": "Επιλέξτε μια ημερομηνία από το ημερολόγιο για τον τομέα:",
 	"date-sel": "Επιλεγμένα",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Δεκέμβριος"
 	],
 	cal: "Ημερολόγιο",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Τρέχουσα ημέρα)",
 	"cal-goToLnk": "Πηγαίνετε στο<span class=\"wb-inv\"> μήνα του έτους</span>",
 	"cal-goToTtl": "Πηγαίνετε στο μήνα του έτους",
@@ -219,7 +221,7 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: EL (Greek; ελληνικά)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "Αυτό το πεδίο είναι υποχρεωτικό.",
 	remote: "Παρακαλώ διορθώστε αυτό το πεδίο.",
 	email: "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email.",
@@ -231,13 +233,13 @@ $.extend($.validator.messages, {
 	creditcard: "Παρακαλώ εισάγετε έναν έγκυρο αριθμό πιστωτικής κάρτας.",
 	equalTo: "Παρακαλώ εισάγετε την ίδια τιμή ξανά.",
 	extension: "Παρακαλώ εισάγετε μια τιμή με έγκυρη επέκταση αρχείου.",
-	maxlength: $.validator.format("Παρακαλώ εισάγετε μέχρι και {0} χαρακτήρες."),
-	minlength: $.validator.format("Παρακαλώ εισάγετε τουλάχιστον {0} χαρακτήρες."),
-	rangelength: $.validator.format("Παρακαλώ εισάγετε μια τιμή με μήκος μεταξύ {0} και {1} χαρακτήρων."),
-	range: $.validator.format("Παρακαλώ εισάγετε μια τιμή μεταξύ {0} και {1}."),
-	max: $.validator.format("Παρακαλώ εισάγετε μια τιμή μικρότερη ή ίση του {0}."),
-	min: $.validator.format("Παρακαλώ εισάγετε μια τιμή μεγαλύτερη ή ίση του {0}.")
-});
+	maxlength: $.validator.format( "Παρακαλώ εισάγετε μέχρι και {0} χαρακτήρες." ),
+	minlength: $.validator.format( "Παρακαλώ εισάγετε τουλάχιστον {0} χαρακτήρες." ),
+	rangelength: $.validator.format( "Παρακαλώ εισάγετε μια τιμή με μήκος μεταξύ {0} και {1} χαρακτήρων." ),
+	range: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μεταξύ {0} και {1}." ),
+	max: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μικρότερη ή ίση του {0}." ),
+	min: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μεγαλύτερη ή ίση του {0}." )
+} );
 
 
 });

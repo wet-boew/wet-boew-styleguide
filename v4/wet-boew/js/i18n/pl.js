@@ -104,6 +104,7 @@ wb.i18nDict = {
 	"errs-fnd": " znaleziono błędy",
 	"err-fnd": " znaleziono błąd",
 	/* Date picker */
+	"date-hide": "Ukryj kalendarz",
 	"date-show": "Proszę wybrać datę z kalendarza:",
 	"date-sel": "Wybrany",
 	/* Calendar */
@@ -131,6 +132,7 @@ wb.i18nDict = {
 		"Grudzień"
 	],
 	cal: "Kalendarz",
+	"cal-format": "<span class='wb-inv'>{ddd}, {M} </span>{d}<span class='wb-inv'>, {Y}</span>",
 	currDay: "(Bieżący dzień)",
 	"cal-goToLnk": "Idź do<span class=\"wb-inv\"> miesiąca w roku</span>",
 	"cal-goToTtl": "Idź do miesiąca w roku",
@@ -219,7 +221,7 @@ wb.doc.one( "formLanguages.wb", function() {
  * Translated default messages for the jQuery validation plugin.
  * Locale: PL (Polish; język polski, polszczyzna)
  */
-$.extend($.validator.messages, {
+$.extend( $.validator.messages, {
 	required: "To pole jest wymagane.",
 	remote: "Proszę o wypełnienie tego pola.",
 	email: "Proszę o podanie prawidłowego adresu email.",
@@ -231,13 +233,14 @@ $.extend($.validator.messages, {
 	creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
 	equalTo: "Proszę o podanie tej samej wartości ponownie.",
 	extension: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
-	maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
-	minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
-	rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
-	range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
-	max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
-	min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
-});
+	maxlength: $.validator.format( "Proszę o podanie nie więcej niż {0} znaków." ),
+	minlength: $.validator.format( "Proszę o podanie przynajmniej {0} znaków." ),
+	rangelength: $.validator.format( "Proszę o podanie wartości o długości od {0} do {1} znaków." ),
+	range: $.validator.format( "Proszę o podanie wartości z przedziału od {0} do {1}." ),
+	max: $.validator.format( "Proszę o podanie wartości mniejszej bądź równej {0}." ),
+	min: $.validator.format( "Proszę o podanie wartości większej bądź równej {0}." ),
+	pattern: $.validator.format( "Pole zawiera niedozwolone znaki." )
+} );
 
 
 });
