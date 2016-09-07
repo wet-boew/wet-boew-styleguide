@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.22-development - 2016-05-05
+ * v4.0.23-development - 2016-09-07
  *
  */
 @charset "UTF-8";
@@ -6476,6 +6476,12 @@ q:before, q:after {
   opacity: .1; }
 
 /*
+ *	Removes bold from elements
+ */
+.fnt-nrml {
+  font-weight: normal; }
+
+/*
  *	Fix for missing bullets in Chrome and Safari
  */
 [class*=clmn-] {
@@ -6823,16 +6829,41 @@ figure .pieLabel {
 details.alert, details.alert[open] {
   border-radius: 0;
   border-width: 0 0 0 4px;
-  padding-left: 45px; }
+  padding-left: 45px;
+  padding-right: 0;
+  position: relative; }
   details.alert:before, details.alert[open]:before {
     display: inline-block;
     font-family: "Glyphicons Halflings";
     font-size: 24px;
     margin-left: -1.3em;
     margin-top: -3px;
-    position: absolute; }
+    position: absolute;
+    top: 15px; }
   details.alert summary, details.alert[open] summary {
-    border-width: 0; }
+    border-width: 0;
+    margin-right: 15px;
+    padding-left: 5px; }
+    details.alert summary:focus, details.alert summary:hover, details.alert[open] summary:focus, details.alert[open] summary:hover {
+      text-decoration: none; }
+      details.alert summary:focus h2,
+      details.alert summary:focus h3,
+      details.alert summary:focus h4,
+      details.alert summary:focus h5,
+      details.alert summary:focus h6, details.alert summary:hover h2,
+      details.alert summary:hover h3,
+      details.alert summary:hover h4,
+      details.alert summary:hover h5,
+      details.alert summary:hover h6, details.alert[open] summary:focus h2,
+      details.alert[open] summary:focus h3,
+      details.alert[open] summary:focus h4,
+      details.alert[open] summary:focus h5,
+      details.alert[open] summary:focus h6, details.alert[open] summary:hover h2,
+      details.alert[open] summary:hover h3,
+      details.alert[open] summary:hover h4,
+      details.alert[open] summary:hover h5,
+      details.alert[open] summary:hover h6 {
+        text-decoration: underline; }
   details.alert > *, details.alert[open] > * {
     margin-left: .7em; }
   details.alert > :first-child, details.alert[open] > :first-child {
@@ -8534,6 +8565,8 @@ table.dataTable {
     background: #eee; }
     .wb-tabs.carousel-s2.wb-init {
       padding-bottom: 4.375em; }
+    .wb-tabs.carousel-s2.exclude-controls {
+      padding-bottom: 0; }
     .wb-tabs.carousel-s2 [role="tablist"] {
       bottom: 0;
       position: absolute;
@@ -8898,7 +8931,7 @@ datalist {
   @title: Details/summary polyfill pre-Modernizr CSS
  */
 summary {
-  display: block !important;
+  display: list-item !important;
   visibility: visible !important; }
 
 details:not([open]) details summary, details .out details summary {
