@@ -1,0 +1,82 @@
+---
+{
+	"title": "Espacement / No wrap",
+	"language": "fr",
+	"altLangPrefix": "whitespace",
+	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome", "css/gridify" ],
+	"dateModified": "2016-10-17"
+}
+---
+
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table des matières</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Usage</a></li>
+            <li><a href="#design">Conception et codage</a>
+              <ul>
+                <li><a href="#basic">Utilisation de base</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Chantier</h2>
+          <p>Cette page est en chantier.</p>
+          <p>Veuillez <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">transmettre un problème</a> ou soumettre une demande de tirage s'il manque des renseignements ou des codes ou si la synchronisation est incorrecte ou déphasée avec le principal référentiel (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Usage</h2>
+  <p>Les utiliser pour empêcher que du texte retourne à la ligne suivante.</p>
+  <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
+  <h3 id="basic">Utilisation de base</h3>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <p>S'en servir pour contrôler où et comment les mots retournent automatiquement à la ligne suivante à l'intérieur d'une ligne de texte. </p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <p>Défaut :</p>
+          <p>Cette année, la date limite pour produire sa déclaration de revenus est le 30 avril.</p>
+          <p class="mrgn-tp-lg">Avec <code>.nowrap</code> :</p>
+          <p>Cette année, la date limite pour produire sa déclaration de revenus est le <span class="nowrap">30 avril</span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Bonne utilisation</h5>
+      <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
+      <ul>
+        <li>L'utiliser pour empêcher que des éléments de contenu comme le numéro de téléphone, le code postal, une équation mathématique, une date et la ponctuation française (le deux-points, les crochets et les autres éléments qui nécessitent des espaces) retournent automatiquement à la ligne suivante sur plusieurs lignes</li>
+        <li>Rappelez-vous que la page est réactive à la largeur du navigateur
+          <ul>
+            <li>Le texte retourne automatiquement à la ligne suivante à des points différents sur des appareils et des espaces de visionnement différents</li>
+            <li>Ajoutez <code>.nowrap</code> pour convenir aux résolutions différentes</li>
+          </ul>
+        </li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Mauvaise utilisation</h5>
+      <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
+      <ul>
+        <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec <span class="nowrap">les points</span>  d'observation  <span class="nowrap">précédents</span></li>
+        <li>Ne l'utilisez pas pour renvoyer automatiquement des phrases complètes à la ligne suivante</li>
+        <li>Ne l'utilisez pas pour l'information non textuelle</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;p&gt;... &lt;span<strong> class=&quot;nowrap&quot;</strong>&gt;30 avril&lt;/span&gt;.&lt;/p&gt;</code></pre>
+    </div>
+  </div>
