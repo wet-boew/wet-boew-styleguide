@@ -3,247 +3,343 @@
 	"title": "Alerts",
 	"language": "en",
 	"altLangPrefix": "alerts",
-	"dateModified": "2014-06-16"
+	"css": ["http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome", "css/gridify" ],
+	"dateModified": "2016-10-17"
 }
 ---
-<span class="wb-prettify all-pre"></span>
-<div class="row">
-	<div class="col-md-8">
-		<section class="panel panel-default">
-			<header class="panel-heading">
-				<h2 class="panel-title">Table of contents</h2>
-			</header>
-			<div class="panel-body">
-				<ul>
-					<li><a href="#description">Description</a></li>
-					<li><a href="#options">Alert options</a></li>
-					<li><a href="#links">Alert links</a></li>
-					<li><a href="#collapsible">Collapsible alerts</a></li>
-				</ul>
-			</div>
-		</section>
-	</div>
-	<div class="col-md-4 pull-right">
-		<section class="well">
-			<h2 class="h3 mrgn-tp-0">Related</h2>
-			<section>
-				<h3 class="h4">Design guide</h3>
-				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
-					<li><a href="panels-en.html">Panels<span class="wb-inv"> - Design guide</span></a></li>
-					<li><a href="wells-en.html">Wells<span class="wb-inv"> - Design guide</span></a></li>
-				</ul>
-			</section>
-		</section>
-	</div>
-</div>
 
-<section>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
-</section>
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#design">Design and coding</a>
+              <ul>
+                <li><a href="#basic">Basic use</a> </li>
+                <li><a href="#enhanced">Enhanced use</a>
+                  <ul>
+                    <li><a href="#links">Alert links</a></li>
+                    <li><a href="#addon">Add-on features</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Work in progress</h2>
+          <p>This page is a work in progress.</p>
+          <p>Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section>
+    <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
+    <p>Use  to provide  contextual feedback messages for typical user actions. Choose from a handful of  available and flexible alert messages.</p>
+  </section>
+  <section>
+    <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
+    <h3 id="basic">Basic use</h3>
+    <p>Use to wrap any text and an optional dismiss button in <code>.alert</code>, or one of the four contextual classes (for example, <code>.alert-success</code>) for basic alert messages.</p>
+    <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so always specify a type with a contextual class. Choose from success, info, warning, or danger.</p>
+    <h4 id="success"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-check fa-stack-1x fa-inverse"></span></span> Success alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With the Success alert, the  title appears next to a a checkmark icon; the content background is green.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <h6>Alert with a heading</h6>
+            <section class="alert alert-success">
+              <h3>(Title)</h3>
+              <p>(Success content here.)</p>
+            </section>
 
-<section>
-	<h2 class="page-header" id="options">Alert options</h2>
-	<p>Wrap any text and an optional dismiss button in <code>.alert</code> and one of the four contextual classes (e.g., <code>.alert-success</code>) for basic alert messages.</p>
-	<p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.</p>
+<h6>Alert without a heading</h6>
+<p>(Regular content here.)</p>
+ <div class="alert alert-success">
+<p>(Success content here.)</p>
+ </div>
 
-	<section class="alert alert-success">
-		<h3>Well done!</h3>
-		<p>You successfully read this important alert message.</p>
-	</section>
-
-	<section class="alert alert-info">
-		<h3>Heads up!</h3>
-		<p>This alert needs your attention, but it's not super important.</p>
-	</section>
-
-	<section class="alert alert-warning">
-		<h3>Warning!</h3>
-		<p>Best check yourself, you're not looking too good.</p>
-	</section>
-
-	<section class="alert alert-danger">
-		<h3>Oh snap!</h3>
-		<p>Change a few things up and try submitting again.</p>
-	</section>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;section class=&quot;alert alert-success&quot;&gt;
-	&lt;h3&gt;Well done!&lt;/h3&gt;
-	&lt;p&gt;You successfully read this important alert message.&lt;/p&gt;
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.alert-success</code> <strong>to acknowledge something positive</strong> for example, a completed task, something that  is correct</li>
+          <li>Place in the logical flow of a page</li>
+          <li>Ensure it relates to the content immediately around it</li>
+          <li>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and containded within it</li>
+          <li> Use a general heading only if a specific heading is not possible (for example, "Congratulations")</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
+            <ul>
+              <li>Use <code>&lt;div&gt;</code> to style the alert</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+       <pre><code>// Alert with a heading
+&lt;section <strong>class=&quot;alert alert-success&quot;</strong>&gt;
+<strong>  &lt;h*&gt;...&lt;/h*&gt;</strong>
+  ...
 &lt;/section&gt;
 
-&lt;section class=&quot;alert alert-info&quot;&gt;
-	&lt;h3&gt;Heads up!&lt;/h3&gt;
-	&lt;p&gt;This alert needs your attention, but it's not super important.&lt;/p&gt;
+// Alert without a heading
+&lt;div <strong>class=&quot;alert alert-success&quot;</strong>&gt;
+   &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+    </div>
+    <h4 id="info"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Info alert</h4>
+    <p>Use to highlight targeted information for specific segment groups.With the Info alert, the  title appears next to a letter &quot;i&quot; icon; the content background is blue. Use this alert to call attention to feature-worthy information that needs to stand out from the rest of the page content. </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <h6>Alert with a heading</h6>
+            <section class="alert alert-info">
+              <h3>(Title)</h3>
+              <p>(Info content here.)</p>
+            </section>
+            
+
+<h6>Alert without a heading</h6>
+<p>(Regular content here.)</p>
+ <div class="alert alert-info">
+<p>(Info content here.)</p>
+ </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.alert-info</code> <strong>to highlight fairly important information</strong></li>
+          <li>Place in the logical flow of a page</li>
+          <li>Ensure it relates to the content immediately around it</li>
+          <li>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and containded within it</li>
+          <li>Use a general heading only if a specific heading is not possible (for example, "Tip", "Summary", "Note")</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
+            <ul>
+              <li>Use <code>&lt;div&gt;</code> to style the alert</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Alert with a heading<strong>
+</strong>&lt;section <strong>class=&quot;alert alert-info&quot;</strong>&gt;
+<strong>  &lt;h*&gt;...&lt;/h*&gt;</strong>
+  ...
 &lt;/section&gt;
 
-&lt;section class=&quot;alert alert-warning&quot;&gt;
-	&lt;h3&gt;Warning!&lt;/h3&gt;
-	&lt;p&gt;Best check yourself, you're not looking too good.&lt;/p&gt;
+// Alert without a heading
+&lt;div <strong>class=&quot;alert alert-info&quot;</strong>&gt;
+   &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+    </div>
+    <h4 id="warning"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-exclamation-triangle fa-stack-1x fa-inverse"></span></span> Warning alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content.  With the Warning alert, the  title appears next to a caution icon; the content background is yellow. </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <h6>Alert with a heading</h6>
+            <section class="alert alert-warning">
+              <h3>(Title)</h3>
+              <p>(Warning content here.)</p>
+            </section>
+            
+            
+<h6>Alert without a heading</h6>
+<p>(Regular content here.)</p>
+ <div class="alert alert-warning">
+<p>(Warning content here.)</p>
+ </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.alert-warning</code> <strong>to warn the user</strong></li>
+          <li>Place in the logical flow of a page</li>
+          <li>Ensure it relates to the content immediately around it</li>
+          <li>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and containded within it</li>
+          <li>Use a general heading only if a specific heading is not possible (for example, "Warning", "Alert")</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
+            <ul>
+              <li>Use <code>&lt;div&gt;</code> to style the alert</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Alert with a heading<strong>
+</strong>&lt;section <strong>class=&quot;alert alert-warning&quot;</strong>&gt;
+<strong>  &lt;h*&gt;...&lt;/h*&gt;</strong>
+  ...
 &lt;/section&gt;
 
-&lt;section class=&quot;alert alert-danger&quot;&gt;
-	&lt;h3&gt;Oh snap!&lt;/h3&gt;
-	&lt;p&gt;Change a few things up and try submitting again.&lt;/p&gt;
+// Alert without a heading
+&lt;div <strong>class=&quot;alert alert-warning&quot;</strong>&gt;
+   &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+    </div>
+    <h4 id="danger"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-exclamation-circle fa-stack-1x fa-inverse"></span></span> Danger alert</h4>
+    <p>Use this alert to call attention to information that needs to stand out from the rest of the page content. With the Danger alert, the  title appears next to an exclamation icon; the content background is red. </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <h6>Alert with a heading</h6>
+            <section class="alert alert-danger">
+              <h3>(Title)</h3>
+              <p>(Danger content here.)</p>
+            </section>
+            
+            
+<h6>Alert without a heading</h6>
+<p>(Regular content here.)</p>
+ <div class="alert alert-danger">
+<p>(Danger content here.)</p>
+ </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.alert-danger</code><strong> for</strong> <strong>very important, negative or dangerous, information/actions</strong> for example, systems that are down, 
+            pending changes to X, "Are you sure you want to delete X?" </li>
+          <li>Place in the logical flow of a page</li>
+          <li>Ensure it relates to the content immediately around it</li>
+          <li>Begin <code>&lt;section&gt;</code> with a heading that is specific to the featured content, and containded within it</li>
+          <li>Use a general heading only if a specific heading is not possible (for example, "Important warning", "Attention")</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use <code>&lt;section&gt;</code> within another section, or validation issues occur
+            <ul>
+              <li>Use <code>&lt;div&gt;</code> to style the alert</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Alert with a heading<strong>
+</strong>&lt;section <strong>class=&quot;alert alert-danger&quot;</strong>&gt;
+<strong>  &lt;h*&gt;...&lt;/h*&gt;</strong>
+  ...
+&lt;/section&gt;
+
+// Alert without a heading
+&lt;div <strong>class=&quot;alert alert-danger&quot;</strong>&gt;
+    &lt;p&gt;...&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3 id="enhanced">Enhanced use</h3>
+    <h4 id="links"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-link fa-stack-1x fa-inverse"></span></span> Alert links</h4>
+    <p>Use to override the default appearance of a link, use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <section class="alert alert-success">
+              <h3>(Title)</h3>
+              <p>(Success content goes here <a href="#" class="alert-link">link text</a>.)</p>
+            </section>
+            <section class="alert alert-info">
+              <h3>(Title)</h3>
+              <p>(Info content goes here <a href="#" class="alert-link">link text</a>.)</p>
+            </section>
+            <section class="alert alert-warning">
+              <h3>(Title)</h3>
+              <p>(Warning content goes here <a href="#" class="alert-link">link text</a>.)</p>
+            </section>
+            <section class="alert alert-danger">
+              <h3>(Title)</h3>
+              <p>(Danger content goes here <a href="#" class="alert-link">link text</a>.)</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h5 class="mrgn-tp-md">Code</h5>
+        <pre><code>&lt;section <strong>class=&quot;alert alert-success&quot;</strong>&gt;
+  &lt;p&gt;... &lt;a href=&quot;#&quot; <strong>class=&quot;alert-link&quot;</strong>&gt;link text&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section <strong>class=&quot;alert alert-info&quot;</strong>&gt;
+  &lt;p&gt;... &lt;a href=&quot;#&quot; <strong>class=&quot;alert-link&quot;</strong>&gt;link text&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section <strong>class=&quot;alert alert-warning&quot;</strong>&gt;
+ &lt;p&gt;... &lt;a href=&quot;#&quot; <strong>class=&quot;alert-link&quot;</strong>&gt;link text&lt;/a&gt;.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section <strong>class=&quot;alert alert-danger&quot;</strong>&gt;
+  &lt;p&gt;... &lt;a href=&quot;#&quot; <strong>class=&quot;alert-link&quot;</strong>&gt;link text&lt;/a&gt;.&lt;/p&gt;
 &lt;/section&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="links">Links in alerts</h2>
-	<p>A link within an alert will default to the standard appearance. For example:</p>
-
-	<section class="alert alert-success">
-		<h3>Well done!</h3>
-		<p>You successfully read <a href="#">this important alert message</a>.</p>
-	</section>
-
-	<p>To override that appearance, use the <code>.alert-link</code> utility class to quickly provide matching colored links within any alert.</p>
-
-	<section class="alert alert-success">
-		<h3>Well done!</h3>
-		<p>You successfully read <a href="#" class="alert-link">this important alert message</a>.</p>
-	</section>
-
-	<section class="alert alert-info">
-		<h3>Heads up!</h3>
-		<p>This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.</p>
-	</section>
-
-	<section class="alert alert-warning">
-		<h3>Warning!</h3>
-		<p>Best check yourself, you're <a href="#" class="alert-link">not looking too good</a>.</p>
-	</section>
-
-	<section class="alert alert-danger">
-		<h3>Oh snap!</h3>
-		<p><a href="#" class="alert-link">Change a few things up</a> and try submitting again.</p>
-	</section>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;section class=&quot;alert alert-success&quot;&gt;
-	&lt;h3&gt;Well done!&lt;/h3&gt;
-	&lt;p&gt;You successfully read &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;this important alert message&lt;/a&gt;.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;alert alert-info&quot;&gt;
-	&lt;h3&gt;Heads up!&lt;/h3&gt;
-	&lt;p&gt;This &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;alert needs your attention&lt;/a&gt;, but it's not super important.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;alert alert-warning&quot;&gt;
-	&lt;h3&gt;Warning!&lt;/h3&gt;
-	&lt;p&gt;Best check yourself, you're &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;not looking too good&lt;/a&gt;.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;alert alert-danger&quot;&gt;
-	&lt;h3&gt;Oh snap!&lt;/h3&gt;
-	&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;Change a few things up&lt;/a&gt; and try submitting again.&lt;/p&gt;
-&lt;/section&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span>Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-</section>
-
-<section>
-	<h2 class="page-header" id="collapsible">Collapsible alerts</h2>
-	<p>You can use a <code>details</code>/<code>summary</code> elements group to produce collapsible alerts. The open and closed state will be remembered via Local Storage which relies on the <code>id</code> attribute of the <code>details</code> element. You can use the same <code>id</code> value across different pages to have an alert remember its state from page to page.</p>
-
-	<section>
-		<details class="alert alert-success" id="alert-success-en" open="open">
-			<summary class="h3">
-				<h3>Well done!</h3>
-			</summary>
-			<p>You successfully read <a href="#" class="alert-link">this important alert message</a>.</p>
-		</details>
-	</section>
-
-	<section>
-		<details class="alert alert-info" id="alert-info-en" open="open">
-			<summary class="h3">
-				<h3>Heads up!</h3>
-			</summary>
-			<p>This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.</p>
-		</details>
-	</section>
-
-	<section>
-		<details class="alert alert-warning" id="alert-warning-en" open="open">
-			<summary class="h3">
-				<h3>Warning!</h3>
-			</summary>
-			<p>Best check yourself, you're <a href="#" class="alert-link">not looking too good</a>.</p>
-		</details>
-	</section>
-
-	<section>
-		<details class="alert alert-danger" id="alert-danger-en" open="open">
-			<summary class="h3">
-				<h3>Oh snap!</h3>
-			</summary>
-			<p><a href="#" class="alert-link">Change a few things up</a> and try submitting again.</p>
-		</details>
-	</section>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;section&gt;
-	&lt;details class=&quot;alert alert-success&quot; id=&quot;alert-success-en&quot; open=&quot;open&quot;&gt;
-		&lt;summary class=&quot;h3&quot;&gt;
-			&lt;h3&gt;Well done!&lt;/h3&gt;
-		&lt;/summary&gt;
-		&lt;p&gt;You successfully read &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;this important alert message&lt;/a&gt;.&lt;/p&gt;
-	&lt;/details&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-	&lt;details class=&quot;alert alert-info&quot; id=&quot;alert-info-en&quot; open=&quot;open&quot;&gt;
-		&lt;summary class=&quot;h3&quot;&gt;
-			&lt;h3&gt;Heads up!&lt;/h3&gt;
-		&lt;/summary&gt;
-		&lt;p&gt;This &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;alert needs your attention&lt;/a&gt;, but it's not super important.&lt;/p&gt;
-	&lt;/details&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-	&lt;details class=&quot;alert alert-warning&quot; id=&quot;alert-warning-en&quot; open=&quot;open&quot;&gt;
-		&lt;summary class=&quot;h3&quot;&gt;
-			&lt;h3&gt;Warning!&lt;/h3&gt;
-		&lt;/summary&gt;
-		&lt;p&gt;Best check yourself, you're &lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;not looking too good&lt;/a&gt;.&lt;/p&gt;
-	&lt;/details&gt;
-&lt;/section&gt;
-
-&lt;section&gt;
-	&lt;details class=&quot;alert alert-danger&quot; id=&quot;alert-en&quot; open=&quot;open&quot;&gt;
-		&lt;summary class=&quot;h3&quot;&gt;
-			&lt;h3&gt;Oh snap!&lt;/h3&gt;
-		&lt;/summary&gt;
-		&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;alert-link&quot;&gt;Change a few things up&lt;/a&gt; and try submitting again.&lt;/p&gt;
-	&lt;/details&gt;
-&lt;/section&gt;</code></pre>
-	</div>
-</section>
+      </div>
+    </div>
+  </section>
+  <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
+  <p>Additional add-on features and behaviours are available.</p>
+  <ul class="list-inline lst-spcd">
+    <li><a href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html"  class="btn btn-default">Equalize (Equal height)</a></li>
+  </ul>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
