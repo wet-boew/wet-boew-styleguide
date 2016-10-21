@@ -29,7 +29,7 @@
     "grunt-gh-pages": "^0.9.1",
     "grunt-hub": "~0.7.0",
     "grunt-install-dependencies": "^0.2.0",
-    "grunt-sass": "~0.14.0",
+    "grunt-sass": "^1.0.0",
     "time-grunt": "^1.0.0"
   }
 }
