@@ -26,7 +26,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/theme.css" />
 <!--<![endif]-->
-
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link rel="stylesheet" href="css/gridify.css" />
 <!--[if lt IE 9]>
 <link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
 <link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/ie8-theme.css" />
@@ -178,584 +178,661 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		
-<span class="wb-prettify all-pre"></span>
-<div class="row">
-	<section class="col-md-8">
-		<div class="panel panel-default">
-			<header class="panel-heading">
-				<h2 class="panel-title">Table of contents</h2>
-			</header>
-			<div class="panel-body">
-				<ul>
-					<li><a href="#description">Description</a></li>
-					<li><a href="#default">Default appearance</a></li>
-					<li><a href="#unstyled">Unstyled lists</a></li>
-					<li><a href="#alpha">Alpha lists</a></li>
-					<li><a href="#roman">Roman numeral lists</a></li>
-					<li><a href="#numeric">Numbered lists</a></li>
-					<li><a href="#inline">Inline lists</a></li>
-					<li><a href="#horizontal">Horizontal definition lists</a></li>
-					<li><a href="#columns">List columns</a></li>
-					<li><a href="#menu">Menu, navigation and toolbar lists</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="col-md-4">
-		<div class="well">
-			<h2 class="h3 mrgn-tp-0">Related</h2>
-			<section>
-				<h3 class="h4">Design guide</h3>
-				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
-					<li><a href="listgroup-en.html">List group<span class="wb-inv"> - Design guide</span></a></li>
-				</ul>
-			</section>
 
-			<section>
-				<h3 class="h4">Writing guide</h3>
-				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
-					<li><a href="../writing/principals-en.html#lists">List principles<span class="wb-inv"> - Writing guide</span></a></li>
-					<li><a href="../writing/formatting-en.html#lists">List formatting<span class="wb-inv"> - Writing guide</span></a></li>
-				</ul>
-			</section>
-		</div>
-	</section>
-</div>
-
-<section>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>There are three list types:</p>
-	<ul>
-		<li><a href="#unordered">Unordered lists</a> - A list of items in which the order does <em>not</em> explicitly matter.</li>
-		<li><a href="#ordered">Ordered lists</a> - A list of items in which the order <em>does</em> explicitly matter.</li>
-		<li><a href="#descriptionlist">Description lists</a> - A list of terms with their associated descriptions.</li>
-	</ul>
-</section>
-
-<section>
-	<h2 class="page-header" id="default">Default appearance</h2>
-	<p>The default appearance of the three list types are as follows:</p>
-	<div class="row">
-		<section class="col-md-4">
-			<h3 id="unordered">Unordered lists</h3>
-			<p>A list of items in which the order does <em>not</em> explicitly matter.</p>
-			<ul>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Nulla volutpat aliquam velit
-					<ul>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-					</ul>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ul>
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ul&gt;
-	&lt;li&gt;...&lt;/li&gt;
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#design">Design and coding</a>
+              <ul>
+                <li><a href="#basic">Basic use</a>
+                  <ul>
+                    <li><a href="#unordered">Unordered lists</a></li>
+                    <li><a href="#ordered">Ordered lists</a></li>
+                    <li><a href="#definition">Definition lists</a></li>
+                  </ul>
+                </li>
+                <li><a href="#enhanced">Enhanced use</a>
+                  <ul>
+                    <li><a href="#unstyled">Unstyled lists</a></li>
+                    <li><a href="#alpha-lower">Alpha lists − Lower alpha</a></li>
+                    <li><a href="#alpha-upper">Alpha lists − Upper alpha</a></li>
+                    <li><a href="#roman-lower">Roman numeral lists − Lower roman</a></li>
+                    <li><a href="#roman-upper">Roman numeral lists − Upper roman</a></li>
+                    <li><a href="#inline">Inline lists</a></li>
+                    <li><a href="#spacing">Spacing lists</a></li>
+                    <li><a href="#horizontal">Definition lists − Horizontal layout</a></li>
+                    <li><a href="#columns">List columns</a></li>
+                    <li><a href="#addon">Add-on features</a>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#supporting">Supporting principles</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Work in progress</h2>
+          <p>This page is a work in progress.</p>
+          <p>Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section>
+    <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
+    <p>Use  to display a number of connected items in a consecutive manner. Typically list  items appear one below the other. </p>
+  </section>
+  <section>
+    <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
+    <h3 id="basic">Basic use</h3>
+    <h4 id="unordered"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-list-ul fa-stack-1x fa-inverse"></span></span> Unordered lists</h4>
+    <p>Use to  list items when the order does not explicitly matter.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use an unordered list ( <code>&lt;ul&gt;</code>) when the list item order  <strong>does not</strong> explicitly matter</li>
+          <li>Use similar text and list types consistently within the same document</li>
+          <li>Understand and implement the related <a href="#supporting">supporting principles</a></li>
+        </ul>
+        <h5 class=" mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code><strong>&lt;ul&gt;</strong>
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-			</div>
-		</section>
-
-		<section class="col-md-4 brdr-lft">
-			<h3 id="ordered">Ordered lists</h3>
-			<p>A list of items in which the order <em>does</em> explicitly matter.</p>
-			<ol>
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Nulla volutpat aliquam velit
-					<ol>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-					</ol>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ol>
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ol&gt;
-	&lt;li&gt;...&lt;/li&gt;
+      </div>
+    </div>
+    <h4 id="ordered"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-list-ol fa-stack-1x fa-inverse"></span></span> Ordered lists</h4>
+    <p>Use to list of items when the order  <strong>does</strong> explicitly matter.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use an ordered list (<code>&lt;ol&gt;</code>) when the list item order <strong>explicitly matters</strong></li>
+          <li>Use similar text and list types consistently within the same document</li>
+          <li>Understand and implement the related <a href="#supporting">supporting principles</a></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code><strong>&lt;ol&gt;</strong>
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-			</div>
-		</section>
+      </div>
+    </div>
+    
+    <h4 id="definition"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-align-left fa-stack-1x fa-inverse"></span></span> Definition lists</h4>
+    <p>Use to list data terms with their associated definitions.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0"> Appearance</h5>
+            <dl>
+              <dt>Term 1</dt>
+              <dd>Definition of term 1</dd>
+              <dt>Term 2</dt>
+              <dd>Definition of term 2</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use datalists (<code>&lt;dl&gt;</code>) for terms (<code>&lt;dt&gt;</code>) and the associated definitions (<code>&lt;dd&gt;</code>) that follow them</li>
+          <li>Use similar text and list types consistently within the same document</li>
+          <li>Understand and implement the related <a href="#supporting">supporting principles</a></li>
+          <li>Ensure all compliance points are adhered to in <a href="#horizontal">definition lists − horizontal layout</a></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Data list
+&lt;dl&gt;
 
-		<section class="col-md-4 brdr-lft">
-			<h3 id="descriptionlist">Description lists</h3>
-			<p>A list of terms with their associated descriptions.</p>
-			<dl>
-				<dt>Item 1</dt>
-				<dd>Description of item 1</dd>
-				<dt>Item 2</dt>
-				<dd>Description of item 2</dd>
-				<dt>Item 3</dt>
-				<dd>Description of item 3</dd>
-			</dl>
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;dl&gt;
-	&lt;dt&gt;...&lt;/dt&gt;
-	&lt;dd&gt;...&lt;/dd&gt;
+// Data term:
+  <strong>&lt;dt&gt;</strong>...&lt;/dt&gt;
+
+// Data definition:
+  <strong>&lt;dd&gt;</strong>...&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
-			</div>
-		</section>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="unstyled">Unstyled lists</h2>
-	<p>Remove the default <code>list-style</code> and left margin on list items (immediate children only). <strong>This only applies to immediate children list items</strong>, meaning you will need to add the class for any nested lists as well.</p>
-	<ul class="list-unstyled">
-		<li>Lorem ipsum dolor sit amet</li>
-		<li>Consectetur adipiscing elit</li>
-		<li>Integer molestie lorem at massa</li>
-		<li>Facilisis in pretium nisl aliquet</li>
-		<li>Nulla volutpat aliquam velit
-			<ul>
-				<li>Phasellus iaculis neque</li>
-				<li>Purus sodales ultricies</li>
-				<li>Vestibulum laoreet porttitor sem</li>
-				<li>Ac tristique libero volutpat at</li>
-			</ul>
-		</li>
-		<li>Faucibus porta lacus fringilla vel</li>
-		<li>Aenean sit amet erat nunc</li>
-		<li>Eget porttitor lorem</li>
-	</ul>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;ul class=&quot;list-unstyled&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3 id="enhanced">Enhanced use</h3>
+    <h4 id="unstyled"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-bars fa-stack-1x fa-inverse"></span></span> Unstyled lists</h4>
+    <p>Use to remove the bullets or numbers from a list, as well as the left margin on list items (for only the immediate children).</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <ul class="list-unstyled lst-spcd">
+              <li>List item 1</li>
+              <li>List item 2
+                <ul>
+                  <li>List item 2a</li>
+                  <li>List item 2b</li>
+                </ul>
+              </li>
+              <li>List item 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.list-unstyled</code> to  remove the bullets or numbers from a list</li>
+          <li>Add <code>.lst-spcd</code> to increase the white space between the items, and make them visually separate and distinct</li>
+          <li>Apply only to immediate children list items        <ul>
+              <li>Add only to  nested lists,  if needed</li>
+            </ul>
+          </li>
+          <li>Use similar text and list types consistently within the same document</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>&lt;ul <strong>class=&quot;list-unstyled lst-spcd&quot;</strong>&gt;
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="alpha">Alpha lists</h2>
-	<p>Modify an <code>&lt;ol&gt;</code> to display letters instead of numeric numbers. This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
-	<div class="row">
-		<section class="col-md-6">
-			<h3>Lower alpha</h3>
-			<ol class="lst-lwr-alph">
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Facilisis in pretium nisl aliquet</li>
-				<li>Nulla volutpat aliquam velit
-					<ol>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-						<li>Ac tristique libero volutpat at</li>
-					</ol>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ol>
-
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ol class=&quot;lst-lwr-alph&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+      </div>
+    </div>
+  </section>
+  <section>
+    <h4 id="alpha-lower"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">ab</span></span> Alpha lists − Lower alpha</h4>
+    <p>Use to modify an <code>&lt;ol&gt;</code> to display letters instead of numbers. This applies only to immediate children list items. This means you also need to<strong> add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2
+                <ol class="lst-lwr-alph">
+                  <li>List item 2a</li>
+                  <li>List item 2b</li>
+                </ol>
+              </li>
+              <li>List item 3</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.lst-lwr-alph</code> to apply lower case alphabet letters to a an ordered list</li>
+          <li>Use mainly as a nested <strong>second</strong> level list</li>
+          <li>Use similar text and list types consistently within the same document</li>
+          <li>Ensure all compliance points are adhered to in <a href="#ordered">ordered lists</a></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>&lt;ol&gt;
+  &lt;li&gt;...
+    &lt;ol <strong>class=&quot;lst-lwr-alph&quot;</strong>&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-			</div>
-		</section>
-
-		<section class="col-md-6">
-			<h3>Upper alpha</h3>
-			<ol class="lst-upr-alph">
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Facilisis in pretium nisl aliquet</li>
-				<li>Nulla volutpat aliquam velit
-					<ol>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-						<li>Ac tristique libero volutpat at</li>
-					</ol>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ol>
-
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ol class=&quot;lst-upr-alph&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+      </div>
+    </div>
+ 
+    <h4 id="alpha-upper"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">AB</span></span> Alpha lists − Upper alpha</h4>
+    <p>Use to modify an <code>&lt;ol&gt;</code> to display letters instead of numbers. This applies only to immediate children list items. This means you also <strong>need to add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <ol class="lst-upr-alph">
+              <li>List item 1</li>
+              <li>List item 2
+                <ol>
+                  <li>List item 2a</li>
+                  <li>List item 2b</li>
+                </ol>
+              </li>
+              <li>List item 3</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use <code>.lst-upr-alph</code> to apply upper case alphabet letters to a an ordered list</li>
+          <li>Use mainly in legal documents</li>
+          <li>Use similar text and list types consistently within the same document</li>
+          <li>Ensure all compliance points are adhered to in <a href="#ordered">ordered lists</a></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+	  <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>&lt;ol <strong>class=&quot;lst-upr-alph&quot;</strong>&gt;
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-			</div>
-		</section>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="roman">Roman numeral lists</h2>
-	<p>Modify an <code>&lt;ol&gt;</code> to display roman numbers instead of numeric numbers. This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
-	<div class="row">
-		<section class="col-md-6">
-			<h3>Lower roman</h3>
-			<ol class="lst-lwr-rmn">
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Facilisis in pretium nisl aliquet</li>
-				<li>Nulla volutpat aliquam velit
-					<ol>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-						<li>Ac tristique libero volutpat at</li>
-					</ol>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ol>
-
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ol class=&quot;lst-lwr-rmn&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+      </div>
+    </div>
+  </section>
+ 
+<h4 id="roman-lower"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">vii</span></span> Roman numeral − Lower Roman</h4>
+  <p>Use to modify an <code>&lt;ol&gt;</code> to display Roman (<abbr title="Roman numeral one two three four">I, II, III, IV</abbr> or <abbr title="Lower case Roman numeral one two three four">i, ii, iii, iv</abbr>&hellip;) instead of Arabic (1, 2, 3, 4&hellip;) numerals. This applies only to immediate children list items. This means you <strong>also need to add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Appearance</h5>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2
+              <ol class="lst-lwr-rmn">
+                <li>List item 2a</li>
+                <li>List item 2b</li>
+              </ol>
+            </li>
+            <li>List item 3</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+        <li>Use <code>.lst-lwr-rmn</code> to apply  lower case Roman numerals to  an ordered list</li>
+        <li>Use mainly  as a nested <strong>second</strong> level list</li>
+        <li>Use similar text and list types consistently within the same document</li>
+        <li>Ensure all compliance points are adhered to in <a href="#ordered">ordered lists</a></li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;ol&gt;
+  &lt;li&gt;...
+    &lt;ol <strong>class=&quot;lst-lwr-rmn&quot;</strong>&gt;
+      &lt;li&gt;...&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-			</div>
-		</section>
-
-		<section class="col-md-6">
-			<h3>Upper roman</h3>
-			<ol class="lst-upr-rmn">
-				<li>Lorem ipsum dolor sit amet</li>
-				<li>Consectetur adipiscing elit</li>
-				<li>Integer molestie lorem at massa</li>
-				<li>Facilisis in pretium nisl aliquet</li>
-				<li>Nulla volutpat aliquam velit
-					<ol>
-						<li>Phasellus iaculis neque</li>
-						<li>Purus sodales ultricies</li>
-						<li>Vestibulum laoreet porttitor sem</li>
-						<li>Ac tristique libero volutpat at</li>
-					</ol>
-				</li>
-				<li>Faucibus porta lacus fringilla vel</li>
-				<li>Aenean sit amet erat nunc</li>
-				<li>Eget porttitor lorem</li>
-			</ol>
-
-			<div class="mrgn-tp-lg">
-				<pre><code>&lt;ol class=&quot;lst-upr-rmn&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+    </div>
+  </div>
+  <h4 id="roman-upper"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">VII</span></span> Roman numeral − Upper Roman</h4>
+  <p>Use to modify an <code>&lt;ol&gt;</code> element to display Roman (<abbr title="Roman numeral one two three four">I, II, III, IV</abbr> or <abbr title="Lower case Roman numeral one two three four">i, ii, iii, iv</abbr>&hellip;) instead of Arabic (1, 2, 3, 4&hellip;) numerals. This applies only to immediate children list items. This means you <strong>also need to add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>. This applies only to immediate children list items. This means you also need to <strong>add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Appearance</h5>
+          <ol class="lst-upr-rmn">
+            <li>List item 1</li>
+            <li>List item 2
+              <ol>
+                <li>List item 2a</li>
+                <li>List item 2b</li>
+              </ol>
+            </li>
+            <li>List item 3</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+        <li>Use<code>.lst-upr-rmn</code> to apply upper case Roman numerals to an ordered list</li>
+        <li>Use mainly in legal documents</li>
+        <li>Use similar text and list types consistently within the same document</li>
+        <li>Ensure all compliance points are adhered to in <a href="#ordered">ordered lists</a></li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;ol<strong> class=&quot;lst-upr-rmn&quot;</strong>&gt;
+  &lt;li&gt;...&lt;/li&gt;
 &lt;/ol&gt;</code></pre>
-			</div>
-		</section>
-	</div>
+    </div>
+  </div>
+ 
+  <h4 id="inline"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-ellipsis-h fa-inverse"></span></span> List inline</h4>
+  <p>Use to horizontally align list items. </p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Appearance</h5>
+          <ul class="list-inline">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+        <li>Use <code>.list-inline</code> to horizontally align list items</li>
+        <li>Use similar text and list types consistently within the same document</li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;ol <strong>class=&quot;list-inline&quot;</strong>&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </div>
+  </div>
+  <h4 id="spacing"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-v fa-stack-1x fa-inverse"></span></span> Spacing lists</h4>
+  <p>Use to add space between list items. </p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Appearance</h5>
+          <p>Default:</p>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+          <p>Added spacing: </p>
+          <ul class="lst-spcd">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+        <li>Use <code>.lst-spcd</code> to separate list items, and increase the white space between them</li>
+        <li>Use similar text and list types consistently within the same document</li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre>
+<code>// Default list:
+&lt;ol&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt;
 
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="numeric">Numbered lists</h2>
-	<p>An <code>&lt;ol&gt;</code> already defaults to listing numbers. This class is represented only because all the other list options have been provided.  It has limited use.</p>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;ol class=&quot;lst-num&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
+// Spaced list:
+&lt;ul <strong>class=&quot;lst-spcd&quot;</strong>&gt;
+  &lt;li&gt;List item 1&lt;/li&gt;
+  &lt;li&gt;List item 2&lt;/li&gt;
+  &lt;li&gt;List item 3&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="inline">Inline lists</h2>
-	<p>Place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
-	<ul class="list-inline">
-		<li>First item</li>
-		<li>Second item</li>
-		<li>Third item</li>
-	</ul>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;ul class=&quot;list-inline&quot;&gt;
-	&lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="horizontal">Horizontal description lists</h2>
-	<p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side. Starts off stacked like default <code>&lt;dl&gt;</code>s, but when the navbar expands, so do these.</p>
-	<dl class="dl-horizontal">
-		<dt>Item 1</dt>
-		<dd>Description of item 1</dd>
-		<dt>Item 2</dt>
-		<dd>Description of item 2</dd>
-		<dt>Item 3</dt>
-		<dd>Description of item 3</dd>
-	</dl>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;dl class=&quot;dl-horizontal&quot;&gt;
-	&lt;dt&gt;...&lt;/dt&gt;
-	&lt;dd&gt;...&lt;/dd&gt;
+    </div>
+  </div>
+  <h4 id="horizontal"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-th-list fa-stack-1x fa-inverse"></span></span> Definition lists − horizontal layout</h4>
+  <p>Use to make terms and definitions in a <code>&lt;dl&gt;</code> element line up side-by-side. It starts off stacked like the default <code>&lt;dl&gt;</code>, but when the navbar expands, so do these.</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Appearance</h5>
+          <dl class="dl-horizontal">
+            <dt>Term 1</dt>
+            <dd>Definition of term 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition of term 2</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+        <li>Use <code>.dl-horizontal</code> to align definitions in the same horizontal line as their  their definition term</li>
+        <li>Use similar text and list types consistently within the same document</li>
+        <li>Ensure all compliance points are adhered to in <a href="#definition">definition lists</a></li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;dl <strong>class=&quot;dl-horizontal&quot;</strong>&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
-	</div>
-
-	<section class="alert alert-info">
-		<h3>Auto-truncation</h3>
-		<p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
-	</section>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="columns">List columns</h2>
-	<p>A lists can be spread over 2, 3 or 4 columns using the CSS attribute <code>column-count</code>. Since columns are similar to grids, they adhere to the same <a href="grids-en.html#options">breakpoints as grids</a>. Therefore, the classes available are:</p>
-	<ul>
-		<li><code>colcount-xxs-2</code>, <code>colcount-xs-2</code>, <code>colcount-sm-2</code>, <code>colcount-md-2</code>, <code>colcount-lg-2</code>, <code>colcount-xl-2</code></li>
-		<li><code>colcount-xxs-3</code>, <code>colcount-xs-3</code>, <code>colcount-sm-3</code>, <code>colcount-md-3</code>, <code>colcount-lg-3</code>, <code>colcount-xl-3</code></li>
-		<li><code>colcount-xxs-4</code>, <code>colcount-xs-4</code>, <code>colcount-sm-4</code>, <code>colcount-md-4</code>, <code>colcount-lg-4</code>, <code>colcount-xl-4</code></li>
-	</ul>
-
-	<section class="alert alert-danger">
-		<h3 class="mrgn-tp-0">Cross-browser compatibility</h3>
-		<p>Internet Explorer 9 and below does not support the <code>column-count</code> attribute.  In those browsers the list will linearize as one list in one column.</p>
-	</section>
-
-	<div class="row">
-		<section class="col-md-3">
-			<h3><code>&lt;ul&gt;</code> default</h3>
-			<ul>
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-				<li>Item 6</li>
-				<li>Item 7</li>
-				<li>Item 8</li>
-			</ul>
-
-			<pre><code>&lt;ul&gt;
-	&lt;li&gt;Item 1&lt;/li&gt;
-	&lt;li&gt;Item 2&lt;/li&gt;
-	&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;li&gt;Item 4&lt;/li&gt;
-	&lt;li&gt;Item 5&lt;/li&gt;
-	&lt;li&gt;Item 6&lt;/li&gt;
-	&lt;li&gt;Item 7&lt;/li&gt;
-	&lt;li&gt;Item 8&lt;/li&gt;
+    </div>
+  </div>
+ 
+  <h4 id="columns"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-columns fa-inverse"></span></span> List columns</h4>
+  <p>Use to make a list spread over 2, 3 or 4 columns with the <abbr title="cascading style sheet">CSS</abbr> attribute <code>.column-count</code>. Since columns are similar to grids, they adhere to the same <a href="grids-en.html#options">breakpoints as grids</a>. Therefore, the classes available are:</p>
+  <ul>
+    <li><code>.colcount-xxs-2</code>, <code>.colcount-xs-2</code>, <code>.colcount-sm-2</code>, <code>.colcount-md-2</code>, <code>.colcount-lg-2</code>, <code>.colcount-xl-2</code></li>
+    <li><code>.colcount-xxs-3</code>, <code>.colcount-xs-3</code>, <code>.colcount-sm-3</code>, <code>.colcount-md-3</code>, <code>.colcount-lg-3</code>, <code>.colcount-xl-3</code></li>
+    <li><code>.colcount-xxs-4</code>, <code>.colcount-xs-4</code>, <code>.colcount-sm-4</code>, <code>.colcount-md-4</code>, <code>.colcount-lg-4</code>, <code>.colcount-xl-4</code></li>
+  </ul>
+  <section class="alert alert-warning">
+    <h5 class="mrgn-tp-0">Cross-browser compatibility</h5>
+    <p>Internet Explorer 9 and below does not support the <code>.column-count</code> attribute.  In those browsers the list becomes linear as one list in one column.</p>
+  </section>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Appearance − Two columns</h5>
+          <ul class="colcount-sm-2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+	<h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;ul<strong> class=&quot;colcount-sm-2&quot;</strong>&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  ...
+  &lt;li&gt;Item 8&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-		</section>
-
-		<section class="col-md-3 brdr-lft">
-			<h3><code>&lt;ul class=&quot;colcount-sm-2&quot;&gt;</code></h3>
-			<ul class="colcount-sm-2">
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-				<li>Item 6</li>
-				<li>Item 7</li>
-				<li>Item 8</li>
-			</ul>
-
-			<pre><code>&lt;ul class=&quot;colcount-sm-2&quot;&gt;
-	&lt;li&gt;Item 1&lt;/li&gt;
-	&lt;li&gt;Item 2&lt;/li&gt;
-	&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;li&gt;Item 4&lt;/li&gt;
-	&lt;li&gt;Item 5&lt;/li&gt;
-	&lt;li&gt;Item 6&lt;/li&gt;
-	&lt;li&gt;Item 7&lt;/li&gt;
-	&lt;li&gt;Item 8&lt;/li&gt;
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Appearance − Three columns</h5>
+          <ul class="colcount-sm-3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <pre><code>&lt;ul <strong>class=&quot;colcount-sm-3&quot;</strong>&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  ...
+  &lt;li&gt;Item 8&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-		</section>
-
-		<section class="col-md-3 brdr-lft">
-			<h3><code>&lt;ul class=&quot;colcount-sm-3&quot;&gt;</code></h3>
-			<ul class="colcount-sm-3">
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-				<li>Item 6</li>
-				<li>Item 7</li>
-				<li>Item 8</li>
-			</ul>
-
-			<pre><code>&lt;ul class=&quot;colcount-sm-3&quot;&gt;
-	&lt;li&gt;Item 1&lt;/li&gt;
-	&lt;li&gt;Item 2&lt;/li&gt;
-	&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;li&gt;Item 4&lt;/li&gt;
-	&lt;li&gt;Item 5&lt;/li&gt;
-	&lt;li&gt;Item 6&lt;/li&gt;
-	&lt;li&gt;Item 7&lt;/li&gt;
-	&lt;li&gt;Item 8&lt;/li&gt;
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Appearance − Four columns</h5>
+          <ul class="colcount-sm-4">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <pre><code>&lt;ul <strong>class=&quot;colcount-sm-4&quot;</strong>&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  ...
+  &lt;li&gt;Item 8&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-		</section>
-
-		<section class="col-md-3 brdr-lft">
-			<h3><code>&lt;ul class=&quot;colcount-sm-4&quot;&gt;</code></h3>
-			<ul class="colcount-sm-4">
-				<li>Item 1</li>
-				<li>Item 2</li>
-				<li>Item 3</li>
-				<li>Item 4</li>
-				<li>Item 5</li>
-				<li>Item 6</li>
-				<li>Item 7</li>
-				<li>Item 8</li>
-			</ul>
-
-			<pre><code>&lt;ul class=&quot;colcount-sm-4&quot;&gt;
-	&lt;li&gt;Item 1&lt;/li&gt;
-	&lt;li&gt;Item 2&lt;/li&gt;
-	&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;li&gt;Item 4&lt;/li&gt;
-	&lt;li&gt;Item 5&lt;/li&gt;
-	&lt;li&gt;Item 6&lt;/li&gt;
-	&lt;li&gt;Item 7&lt;/li&gt;
-	&lt;li&gt;Item 8&lt;/li&gt;
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Appearance − Multi-class</h5>
+          <p>You can also multi-class the columns so they adapt to the resolution:</p>
+          <ul class="colcount-sm-2 colcount-md-3 colcount-lg-4">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <pre><code>&lt;ul <strong>class=&quot;colcount-sm-2 colcount-md-3 colcount-lg-4&quot;</strong>&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  ...
+  &lt;li&gt;Item 8&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-		</section>
-	</div>
-
-	<section>
-		<h3>Multi-class</h3>
-		<p>You can also multi-class the columns so they adapt to the resolution:</p>
-		<p><code>&lt;ul class=&quot;colcount-sm-2 colcount-md-3 colcount-lg-4&quot;&gt;</code></p>
-		<ul class="colcount-sm-2 colcount-md-3 colcount-lg-4">
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-			<li>Item 4</li>
-			<li>Item 5</li>
-			<li>Item 6</li>
-			<li>Item 7</li>
-			<li>Item 8</li>
-		</ul>
-
-		<pre><code>&lt;ul class=&quot;colcount-sm-2 colcount-md-3 colcount-lg-4&quot;&gt;
-	&lt;li&gt;Item 1&lt;/li&gt;
-	&lt;li&gt;Item 2&lt;/li&gt;
-	&lt;li&gt;Item 3&lt;/li&gt;
-	&lt;li&gt;Item 4&lt;/li&gt;
-	&lt;li&gt;Item 5&lt;/li&gt;
-	&lt;li&gt;Item 6&lt;/li&gt;
-	&lt;li&gt;Item 7&lt;/li&gt;
-	&lt;li&gt;Item 8&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-	</section>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="menu">Menu, navigation and toolbar lists</h2>
-	<p>Lists can be used to create menus, navigational features and toolbars.  Refer to:</p>
-	<ul>
-		<li>(Info goes here)</li>
-	</ul>
-	<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-</section>
+    </div>
+  </div>
+  <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+    <li>Apply to  <code>&lt;ul&gt;</code> or  <code>&lt;ol&gt;</code> elements</li>
+    <li>Check the viewport, and multi-class the list to optimize the number of columns for each resolution</li>
+    <li>Use similar text and list types consistently within the same document</li>
+  </ul>
+  <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+    <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+  </ul>
+  <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
+  <p>Additional add-on features and behaviours are available.</p>
+  <ul class="list-inline lst-spcd">
+    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-en.html" class="btn btn-default" >Feeds</a></li>
+    <li><a href="listgroup-en.html" class="btn btn-default">List group</a></li>
+  </ul>
+  <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Supporting principles</h2>
+  <div data-ajax-replace="../writing/strctr-en.html #lists-info"></div>
+  <h3><span data-ajax-replace="../writing/stl-en.html #scan-heading"></span></h3>
+  <div data-ajax-replace="../writing/stl-en.html #scan-info"></div>
+  <h3><span data-ajax-replace="../writing/stl-en.html #parallel-heading"></span></h3>
+  <div data-ajax-replace="../writing/stl-en.html #parallel-info"></div>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 
 
 		<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2014-07-02</time></dd>
+	<dd><time property="dateModified">2016-10-17</time></dd>
 </dl>
 
 

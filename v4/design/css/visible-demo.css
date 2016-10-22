@@ -10,6 +10,7 @@
 /* Utility classes table  */
 .responsive-utilities tbody th {
   font-weight: normal; }
+
 .responsive-utilities td {
   text-align: center; }
   .responsive-utilities td.is-visible {
@@ -32,13 +33,24 @@
     padding: 15px 10px;
     text-align: center; }
 
-.visible-on .col-xs-6 .hidden-xs, .visible-on .col-xs-6 .hidden-sm, .visible-on .col-xs-6 .hidden-md, .visible-on .col-xs-6 .hidden-lg, .hidden-on .col-xs-6 .hidden-xs, .hidden-on .col-xs-6 .hidden-sm, .hidden-on .col-xs-6 .hidden-md, .hidden-on .col-xs-6 .hidden-lg {
+.visible-on .col-xs-6 .hidden-xs,
+.visible-on .col-xs-6 .hidden-sm,
+.visible-on .col-xs-6 .hidden-md,
+.visible-on .col-xs-6 .hidden-lg, .hidden-on .col-xs-6 .hidden-xs,
+.hidden-on .col-xs-6 .hidden-sm,
+.hidden-on .col-xs-6 .hidden-md,
+.hidden-on .col-xs-6 .hidden-lg {
   border: 1px solid #ddd;
   color: #717171;
   display: block; }
 
-.visible-on .col-xs-6 .visible-xs, .visible-on .col-xs-6 .visible-sm, .visible-on .col-xs-6 .visible-md, .visible-on .col-xs-6 .visible-lg, .hidden-on .col-xs-6 .visible-xs, .hidden-on .col-xs-6 .visible-sm, .hidden-on .col-xs-6 .visible-md, .hidden-on .col-xs-6 .visible-lg {
+.visible-on .col-xs-6 .visible-xs,
+.visible-on .col-xs-6 .visible-sm,
+.visible-on .col-xs-6 .visible-md,
+.visible-on .col-xs-6 .visible-lg, .hidden-on .col-xs-6 .visible-xs,
+.hidden-on .col-xs-6 .visible-sm,
+.hidden-on .col-xs-6 .visible-md,
+.hidden-on .col-xs-6 .visible-lg {
   background-color: #dff0d8;
   border: 1px solid #d6e9c6;
   color: #266827; }
-

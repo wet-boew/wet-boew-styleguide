@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+		<title>
+
+	
+		
+		 - Exemples pratiques
+	
+
+ - Boîte à outils de l'expérience Web
+</title>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
+		<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes." />
+
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
+<link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/theme.css" />
+<!--<![endif]-->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link rel="stylesheet" href="css/gridify.css" />
+<!--[if lt IE 9]>
+<link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+<link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/ie8-theme.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+<script src="../wet-boew/../wet-boew/js/ie8-wet-boew.js"></script>
+<![endif]-->
+
+<noscript><link rel="stylesheet" href="../wet-boew/../wet-boew/css/noscript.css" /></noscript>
+
+	</head>
+	<body vocab="http://schema.org/" typeof="WebPage">
+		
+<ul id="wb-tphp">
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+	</li>
+
+	<li class="wb-slc visible-sm visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+	</li>
+
+
+</ul>
+
+<header role="banner">
+	<div id="wb-bnr">
+		<div id="wb-bar">
+			<div class="container">
+				<div class="row">
+					
+	<section id="wb-lng" class="visible-md visible-lg">
+	<h2>Sélection de la langue</h2>
+	<ul class="text-right">
+	
+		<li class="curr">Français&#32;<span>(actuel)</span></li>
+	
+	
+		<li><a lang="en" hreflang="en" href="grids-en.html">English</a></li>
+	
+	</ul>
+</section>
+
+
+
+
+	<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+	<h2>Recherche et menus</h2>
+	<ul class="pnl-btn list-inline text-right">
+	<li><a href="#mb-pnl" title="Recherche et menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Recherche et menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+
+</section>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div id="wb-sttl" class="col-md-8">
+	<a href="../wet-boew/index-fr.html">
+		<object type="image/svg+xml" tabindex="-1" data="../wet-boew/../theme-wet-boew/assets/logo.svg"></object>
+		<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
+	</a>
+</div>
+
+
+	<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+	<h2>Recherche</h2>
+	<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+
+		<div class="form-group">
+			<label for="wb-srch-q">Recherchez le site Web</label>
+			<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150" />
+			<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/" />
+		</div>
+
+		<button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
+
+	</form>
+</section>
+
+
+			</div>
+		</div>
+	</div>
+
+	<nav role="navigation" id="wb-sm" data-ajax-replace="http://wet-boew.github.io/wet-boew/ajax/sitemenu-fr.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+	<div class="container nvbar">
+		<h2>Menu des sujets</h2>
+		<div class="row">
+			<ul class="list-inline menu">
+				
+	<li><a href="../wet-boew/index-fr.html">Projet de la BOEW</a></li>
+	<li><a href="../wet-boew/docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+	<li><a href="../wet-boew/docs/start-fr.html">Contribuer à la BOEW</a></li>
+
+
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+	<div class="container">
+	<div class="row">
+		<ol class="breadcrumb">
+			<li>
+				<a href="http://wet-boew.github.io/wet-boew/index-fr.html">Accueil</a>
+			</li>
+			<li>
+				<a href="../wet-boew/index-fr.html">Guide de style</a>
+			</li>
+			
+				
+				
+				<li>
+					<a href="../wet-boew/design/index-fr.html">Guide de conception</a>
+				</li>
+			
+				
+			
+			<li>Grilles</li>
+		</ol>
+	</div>
+</div>
+
+
+
+</header>
+
+
+
+	<main role="main" property="mainContentOfPage" class="container">
+
+		<h1 id="wb-cont" property="name">Grilles</h1>
+
+		<section class="alert alert-info">
+	<h2 class="h3">Work in progress</h2>
+	<p>This page is a work in progress and requires review. Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+</section>
+
+		
+
+
+
+		
+
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table des matières </h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Usage</a></li>
+            <li><a href="#design">Conception et codage </a>
+              <ul>
+                <li><a href="#basic">Utilisation de base </a>
+                  <ul>
+                    <li><a href="#responsive">Options de grilles souples</a></li>
+                    <li><a href="#basic">Rangée d'une grille de base</a></li>
+                    <li><a href="#fluid">Conteneur fluide </a></li>
+                  </ul>
+                </li>
+                <li><a href="#enhanced">Utilisation améliorée</a>
+                  <ul>
+                    <li><a href="#mixed">Appareils mobiles et ordinateurs de bureau </a></li>
+                    <li><a href="#mixed-complete">Appareils mobiles, tablettes et ordinateurs de bureau</a></li>
+                    <li><a href="#resets">Réinitialisation de colonnes souples</a></li>
+                    <li><a href="#offsetting">Décalage de colonnes</a></li>
+                    <li><a href="#nesting">Imbrication de colonnes</a></li>
+                    <li><a href="#ordering">Ordonnancement de colonnes</a></li>
+                    <li><a href="#addon">Caractéristiques complémentaires </a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Chantier</h2>
+          <p>Cette page est en chantier.</p>
+          <p>Veuillez  <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">transmettre un problème </a> ou soumettre une demande de tirage s'il manque des renseignements ou des codes ou si la synchronisation est incorrecte ou déphasée avec le principal référentiel (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Usage </h2>
+  <p>Utiliser un système de grille (une série de rangées et de colonnes qui hébergent du contenu) afin de créer de la mise en page. </p>
+  <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
+  <h3 id="basic">Utilisation de base </h3>
+  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Options de grilles souples </h4>
+  <p>Utilisez un système de grilles afin de créer un système de grille souple, fluide et mobile d'abord. Il met à l'échelle jusqu'à 12 colonnes environ, au fur et à mesure que la taille de l'appareil ou de la fenêtre d'affichage augmente.</p>
+  <ul>
+    <li>Placez les rangées dans  <code>.container</code> (largeur fixe) ou <code>.container-fluid</code> (pleine largeur) pour un alignement et un remplissage appropriés</li>
+    <li>Utilisez des rangées pour créer des groupes  de colonnes horizontales</li>
+    <li>Placez le contenu dans les colonnes
+              <ul>
+        <li>Seules les colonnes peuvent être des enfants immédiats de rangées</li>
+        <li>Les colonnes créent des gouttières (un espacement entre les colonnes) par <code>padding:</code> de <abbr title="feuille de style en cascade">CSS</abbr>. Ce remplissage est souvent décalé dans les rangées pour la première et dernière colonnes à l'aide d'un marge négative sur <code>.row</code></li>
+      </ul>
+    </li>
+    <li>Précisez le nombre   à étendre (parmi 12 colonnes disponibles)  afin de créer des colonnes de grille. Par exemple, pour trois colonnes égales utilisez trois  <code>.col-xs-4</code>
+              <ul>
+        <li>Les catégories de grilles s'appliquent aux appareils ayant des largeurs supérieures ou égales aux tailles de point d'interruption et remplacent les catégories de grille  ciblant des appareils plus petits</li>
+        <li>L'application de  toute catégorie <code>.col-md-</code> à un élément a une incidence sur la stylisation sur les appareils moyens ainsi que sur les grands  si une catégorie <code>.col-lg-</code> ne s'y trouve pas</li>
+      </ul>
+    </li>
+    <li>Créez des mises en page entièrement fluides (le site Web s'étend sur toute la largeur de la fenêtre d'affichage)
+              <ul>
+        <li>Pour ce faire, enveloppez le contenu de la grille dans un élément du conteneur avec <code>padding: 0 15px;</code> afin de décaler  <code>margin: 0 -15px;</code> sur <code>.row</code> </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <caption>
+      Options souples
+      </caption>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col"> Téléphones – appareils <small> très petits (&lt;768 px)</small></th>
+          <th scope="col"><small>Tablettes – appareils petits (=768 px)</small></th>
+          <th scope="col">Ordinateurs de bureau – appareils de taille moyenne<small> (=992 px)</small></th>
+          <th scope="col">Ordinateurs de bureau – grands appareil<small>s (=1200 px)</small></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Comportement de grille</th>
+          <td>Horizontal en tout temps </td>
+          <td colspan="3">Réduit pour commencer et horizontal au-dessus des points d'interruption </td>
+        </tr>
+        <tr>
+          <th scope="row">Largeur des conteneurs </th>
+          <td>Aucune (automatique)</td>
+          <td>750px</td>
+          <td>970px</td>
+          <td>1170px</td>
+        </tr>
+        <tr>
+          <th scope="row">Préfixe de catégorie  </th>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+        </tr>
+        <tr>
+          <th scope="row">Nombre de colonnes</th>
+          <td colspan="4">12</td>
+        </tr>
+        <tr>
+          <th scope="row">Largeur de la colonne</th>
+          <td class="text-muted">Automatique</td>
+          <td>60px</td>
+          <td>78px</td>
+          <td>95px</td>
+        </tr>
+        <tr>
+          <th scope="row">Largeur de la gouttière</th>
+          <td colspan="4">30px (15px sur chaque côté d'une colonne)</td>
+        </tr>
+        <tr>
+          <th scope="row">Emboîtable</th>
+          <td colspan="4">Oui</td>
+        </tr>
+        <tr>
+          <th scope="row">Décalages</th>
+          <td colspan="4">Oui</td>
+        </tr>
+        <tr>
+          <th scope="row">Ordonnancement des colonnes</th>
+          <td colspan="4">Oui</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h4 id="row"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-desktop fa-stack-1x fa-inverse"></span></span> Rangée d'une grille de base </h4>
+  <p>Utilisez un seul ensemble de catégories de grille <code>.col-md-*</code> afin de créer un système de grille de base qui commence  empilé sur les appareils mobiles et les  tablettes (de taille très petite à petite). Il commence ensuite horizontal sur des appareils d'ordinateur de bureau (moyen). Placez des colonnes de grille dans n'importe quelle rangée <code>.row</code>.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="text-center">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+              <div class="col-md-2">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-2</code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-8</code></div>
+              </div>
+              <div class="col-md-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4</code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4</code></div>
+              </div>
+              <div class="col-md-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4</code></div>
+              </div>
+              <div class="col-md-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4</code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-6</code></div>
+              </div>
+              <div class="col-md-6">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-6</code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-md-2&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-2&quot;&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-md-8&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-md-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div<strong> class=&quot;col-md-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-md-4</strong>&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-md-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-md-6&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-md-6&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="fluid"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Conteneur fluide</h4>
+  <p>Utilisez pour  transformer n'importe quelle mise en page de grille à largeur fixe en  mise en page de pleine largeur. Changez le <code>.container</code> le plus à l'extérieur pour  <code>.container-fluid</code>.</p>
+  <h5 class="mrgn-tp-0">Code</h5>
+  <pre><code>&lt;div <strong>class=&quot;container-fluid&quot;</strong>&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		...
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  <h3 id="enhanced">Utilisation améliorée </h3>
+  <h4 id="mixed"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-mobile fa-stack-1x fa-inverse"></span></span> Appareils mobiles et ordinateurs de bureau</h4>
+  <p>Utilisez-le pour empêcher les colonnes de simplement s'empiler dans des appareils plus petits. Utilisez les catégories de grille d'appareils très petits et moyens. Ajoutez <code>.col-xs-*</code> <code>.col-md-*</code> aux colonnes. Reportez-vous à l'exemple ci-dessous pour avoir une meilleure idée de son fonctionnement.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="row">
+            <div class="col-xs-12 col-md-8">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-12 .col-md-8</code></div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-md-4</code></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-md-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-md-4</code></div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-md-4</code></div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-md-4</code></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6</code></div>
+            </div>
+            <div class="col-xs-6">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6</code></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;!-- Empiler les colonnes sur un appareil mobile en faisant une pleine largeur et l'autre, une demi-largeur --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-12 col-md-8&quot;</strong>&gt;...&lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-md-4&quot;</strong>&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Les colonnes commencent à 50&nbsp;% de largeur sur les appareils mobiles et montent jusqu'à une largeur de 33,3&nbsp;% sur les appareils de bureau --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-md-4&quot;</strong>&gt;...&lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-md-4&quot;</strong>&gt;...&lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-md-4&quot;</strong>&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Les colonnes ont toujours une largeur de 50&nbsp;% sur les appareils mobiles et les ordinateurs de bureau --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-6&quot;</strong>&gt;...&lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6&quot;</strong>&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="mixed-complete"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-tablet fa-stack-1x fa-inverse"></span></span> Appareils mobiles, tablettes et ordinateurs de bureau</h4>
+  <p>Utilisez pour créer des mises en page encore plus dynamiques et puissantes avec des catégories <code>.col-sm-*</code> de tablette.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-8">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-12 .col-sm-6 .col-md-8</code></div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-md-4</code></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <div class="well well-sm brdr-rds-0"><code>col-xs-6 .col-sm-4</code></div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-4</code></div>
+            </div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+            <div class="clearfix visible-xs"></div>
+            <div class="col-xs-6 col-sm-4">
+              <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-4</code></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-12 col-sm-6 col-md-8&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-md-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-4&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+
+  &lt;!-- facultatif : effacez les colonnes XS si leur contenu n'est pas de la même hauteur --&gt;
+  &lt;div <strong>class=&quot;clearfix visible-xs&quot;</strong>&gt;&lt;/div&gt;
+			
+  &lt;div class=&quot;col-xs-6 col-sm-4&quot;&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="resets"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-ban fa-stack-1x fa-inverse"></span></span> Réinitialisation de colonnes souples </h4>
+  <p>Utilisez pour forcer des points d'interruption dans le contenu. Avec les quatre niveaux de grille disponibles, des problèmes peuvent survenir.  À certains points d'interruption, les colonnes ne s'effacent pas toujours convenablement, par exemple, si une colonne est plus haute que l'autre. Pour corriger ce problème, utilisez une combinaison de  <code>.clearfix</code> et de <a href="visible-fr.html"> catégories invisibles et visibles</a>.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="text-center">
+            <div class="row">
+              <div class="col-xs-6 col-sm-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-3</code><br />
+                  Redimensionnez la fenêtre d'affichage ou vérifiez-la sur un téléphone cellulaire par exemple. </div>
+              </div>
+              <div class="col-xs-6 col-sm-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-3</code></div>
+              </div>
+              <!-- Add the extra clearfix for only the required viewport -->
+              <div class="clearfix visible-xs"></div>
+              <div class="col-xs-6 col-sm-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-3</code></div>
+              </div>
+              <div class="col-xs-6 col-sm-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-xs-6 .col-sm-3</code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-3&quot;&gt;</strong>
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-3&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+ 
+  &lt;!-- Ajoutez une autre fonction d'effacement total pour seulement la fenêtre d'affichage requis --&gt;
+  &lt;div <strong>class=&quot;clearfix visible-xs&quot;</strong>&gt;&lt;/div&gt;
+  
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-3&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div <strong>class=&quot;col-xs-6 col-sm-3&quot;</strong>&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </details>
+    </div>
+  </div>
+  <h5>Réinitialisation des décalages, pousser (<span lang="en">pushes</span>) et tirer (<span lang="en">pulls</span>)</h5>
+  <p>Utilisez la réinitialisation des <strong>décalages, de pousser et de tirer</strong> en plus de l'effacement de colonne aux points d'interruption souples. La réinitialisation est disponible pour <strong>les niveaux de grille moyenne et grande seulement</strong> puisqu'ils commencent au niveau de petite grille (deuxième niveau). Reportez-vous à l'exemple de grille.</p>
+  <div class="mrgn-tp-lg">
+    <pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-5 col-md-6&quot;&gt;.col-sm-5 .col-md-6&lt;/div&gt;
+	&lt;div class=&quot;col-sm-5 <strong>col-sm-offset-2</strong> col-md-6 <strong>col-md-offset-0&quot;</strong>&gt;.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-6 col-md-5 col-lg-6&quot;&gt;.col-sm-6 .col-md-5 .col-lg-6&lt;/div&gt;
+	&lt;div class=&quot;col-sm-6 col-md-5 <strong>col-md-offset-2</strong> col-lg-6 <strong>col-lg-offset-0</strong>&quot;&gt;.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+  <h4 id="offsetting"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">&#8614;</span></span> Décaler des colonnes</h4>
+  <p>Utilisez pour déplacer les colonnes à droite avec la catégorie <code>.col-md-offset-*</code>. Ces catégories augmentent la marge de gauche d'une colonne par les colonnes <code>*</code>. Par exemple, <code>.col-md-offset-4</code> déplace <code>.col-md-4</code> sur quatre colonnes.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="text-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4</code></div>
+              </div>
+              <div class="col-md-4 col-md-offset-4">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-4 .col-md-offset-4</code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-md-offset-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-3 .col-md-offset-3</code></div>
+              </div>
+              <div class="col-md-3 col-md-offset-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-3 .col-md-offset-3</code></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm brdr-rds-0"><code>.col-md-6 .col-md-offset-3</code></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-4 <strong>col-md-offset-4</strong>&quot;&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-3 <strong>col-md-offset-3</strong>&quot;&gt;
+   ...
+  &lt;/div&gt;
+  &lt;div class=&quot;col-md-3 <strong>col-md-offset-3</strong>&quot;&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6 <strong>col-md-offset-3</strong>&quot;&gt;
+   ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="nesting"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-table fa-stack-1x fa-inverse"></span></span> Imbrication de colonnes</h4>
+  <p>Utilisez pour imbriquer le contenu avec la grille par défaut. Ajoutez une nouvelle <code>.row</code> et un ensemble de colonnes  <code>.col-md-*</code>  dans la colonne <code>.col-md-*</code> existante. Les colonnes imbriquées devraient inclure un ensemble de colonnes qui s'accumulent jusqu'à 12.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="brdr-tp brdr-lft brdr-bttm brdr-rght">
+                <p class="mrgn-tp-md mrgn-lft-md mrgn-bttm-md">Niveau 1&nbsp;: <code>.col-md-9</code></p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="well well-sm brdr-rds-0">Niveau 2&nbsp;: <code>.col-md-6</code></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="well well-sm brdr-rds-0">Niveau 2&nbsp;: <code>.col-md-6</code></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div <strong>class=&quot;col-md-9&quot;</strong>&gt;
+   &lt;div class=&quot;row&quot;&gt;
+    &lt;div <strong>class=&quot;col-md-6&quot;</strong>&gt;
+     ...
+    &lt;/div&gt;
+    &lt;div <strong>class=&quot;col-md-6&quot;</strong>&gt;
+     ...
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="ordering"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">&#8633; </span></span> Ordonnancement de colonnes </h4>
+  <p>Utilisez-le pour facilement changer l'ordre des colonnes de grille intégrées par les catégories de modificateur <code>.col-md-push-*</code> et <code>.col-md-pull-*</code>.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <div class="row">
+            <div class="col-md-9 col-md-push-3">
+              <div class="well well-sm brdr-rds-0"><code>.col-md-9 .col-md-push-3</code></div>
+            </div>
+            <div class="col-md-3 col-md-pull-9">
+              <div class="well well-sm brdr-rds-0"><code>.col-md-3 .col-md-pull-9</code></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <details>
+        <summary>Code</summary>
+        <pre><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-9 <strong>col-md-push-3</strong>&quot;&gt;.col-md-9 .col-md-push-3&lt;/div&gt;
+	&lt;div class=&quot;col-md-3 <strong>col-md-pull-9</strong>&quot;&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </details>
+    </div>
+  </div>
+  <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
+  <p>Des fonctions et des comportements complémentaires sont disponibles.</p>
+  <ul class="list-inline lst-spcd">
+    <li><a class="btn btn-default" href="reflow-fr.html">Redistribuer le contenu autour des grilles</a></li>
+  </ul>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
+
+		<dl id="wb-dtmd">
+	<dt>Date de modification&#160;:&#32;</dt>
+	<dd><time property="dateModified">2016-10-17</time></dd>
+</dl>
+
+
+	</main>
+
+
+
+	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+	<div class="container">
+		<nav role="navigation" class="row">
+			<h2>À propos de ce site</h2>
+			<section class="col-sm-3">
+	<h3>Contactez-nous</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>À propos</h3>
+	<ul class="list-unstyled">
+		<li><a href="../wet-boew/index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+		<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Nouvelles</h3>
+	<ul class="list-unstyled">
+		<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
+		<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
+	</ul>
+</section>
+<section class="col-sm-3">
+	<h3>Restez branchés</h3>
+	<ul class="list-unstyled">
+		<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
+	</ul>
+</section>
+		</nav>
+	</div>
+</footer>
+
+
+
+		<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="../wet-boew/../wet-boew/js/wet-boew.js"></script>
+<!--<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="../wet-boew/../wet-boew/js/ie8-wet-boew2.js"></script>
+
+<![endif]-->
+
+
+	</body>
+</html>

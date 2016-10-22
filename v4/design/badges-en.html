@@ -26,7 +26,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 <link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 <link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/theme.css" />
 <!--<![endif]-->
-
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" /><link rel="stylesheet" href="css/gridify.css" />
 <!--[if lt IE 9]>
 <link href="../wet-boew/../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
 <link rel="stylesheet" href="../wet-boew/../theme-wet-boew/css/ie8-theme.css" />
@@ -178,119 +178,130 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		
-<span class="wb-prettify all-pre"></span>
 
-<div class="row">
-	<section class="col-md-8">
-		<div class="panel panel-default">
-			<header class="panel-heading">
-				<h2 class="panel-title">Table of contents</h2>
-			</header>
-			<div class="panel-body">
-				<ul>
-					<li><a href="#description">Description</a></li>
-					<li><a href="#default">Default badge</a></li>
-					<li><a href="#collapsing">Self collapsing badges</a></li>
-					<li><a href="#adapting">Adapting to active nav states</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#design">Design and coding</a>
+              <ul>
+                <li><a href="#basic">Basic use</a> </li>
+                <li><a href="#enhanced">Enhanced use</a>
+                  <ul>
+                    <li><a href="#collapsing">Self collapsing badges</a></li>
+                    <li><a href="#addon">Add-on features</a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Work in progress</h2>
+          <p>This page is a work in progress.</p>
+          <p>Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section>
+    <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
+    <p>Use badges (numerical indicators) to highlight the number of  updates, new or unread items associated with a link.</p>
+  </section>
+  <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
+  <h3 id="basic">Basic use</h3>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <p>Use to highlight new or updated items with a simple grey numeric, or  blue button-like badge. </p>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0 h5">Appearance</h5>
+          <p><a href="#">Inbox <span class="badge">42<span class="wb-inv"> unread emails</span></span></a></p>
+          <p><a class="btn btn-primary" href="#">Inbox <span class="badge">42<span class="wb-inv"> unread emails</span></span></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+      <p>Compliance point(s):</p>
+      <ul>
+        <li>Place <code>.badge</code> on the right side of the link</li>
+        <li>Ensure the badge is dynamic, in that once items are actioned, the numeric value goes down</li>
+        <li>Ensure it contains only numerical information</li>
+        <li>Ensure the badge includes invisible text to make it descriptive.  For example: <code>&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;span class=&quot;wb-inv&quot;&gt; unread emails&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</code></li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger h5"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+      <p>Compliance point(s):</p>
+      <ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+        <li>Do not show there are zero "0" items; if there are no items, the badge should disappear</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>// Grey badge:
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Inbox &lt;span <strong>class=&quot;badge&quot;</strong>&gt;42&lt;span class=&quot;wb-inv&quot;&gt; unread emails&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 
-	<section class="col-md-4">
-		<div class="well">
-			<h2 class="h3 mrgn-tp-0">Related</h2>
-			<section>
-				<h3 class="h4">Design guide</h3>
-				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
-					<li><a href="labels-en.html">Labels<span class="wb-inv"> - Design guide</span></a></li>
-					<li><a href="pills-en.html">Pills<span class="wb-inv"> - Design guide</span></a></li>
-				</ul>
-			</section>
-		</div>
-	</section>
-</div>
-
-<section>
-	<h2 class="page-header" id="description">Description</h2>
-	<p>Easily highlight new or unread items by adding a <code>&lt;span class="badge"&gt;</code> to links, Bootstrap navs, and more.</p>
-</section>
-
-<section>
-	<h2 class="page-header" id="default">Default badge</h2>
-	<p><a href="#">Inbox <span class="badge">42</span></a> </p>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/p&gt;&lt;/a&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<section>
-	<h2 class="page-header" id="collapsing">Self collapsing badges</h2>
-	<p>When there are no new or unread items, badges will simply collapse (via CSS's <code>:empty</code> selector) provided no content exists within.</p>
-
-	<section class="alert alert-danger">
-		<h3 class="mrgn-tp-0">Cross-browser compatibility</h3>
-		<p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
-	</section>
-</section>
-
-<section>
-	<h2 class="page-header" id="adapting">Adapting to active nav states</h2>
-	<p>Built-in styles are included for placing badges in active states in pill and list navigations.</p>
-
-	<ul class="nav nav-pills">
-		<li class="active"><a href="#">Home <span class="badge">42</span></a></li>
-		<li><a href="#">Profile</a></li>
-		<li><a href="#">Messages <span class="badge">3</span></a></li>
-	</ul>
-
-	<br />
-	
-	<ul class="nav nav-pills nav-stacked">
-		<li class="active"><a href="#"><span class="badge pull-right">42</span> Home</a></li>
-		<li><a href="#">Profile</a></li>
-		<li><a href="#"> <span class="badge pull-right">3</span> Messages </a> </li>
-	</ul>
-
-	<div class="mrgn-tp-lg">
-		<pre><code>&lt;ul class=&quot;nav nav-pills nav-stacked&quot;&gt;
-	&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;badge pull-right&quot;&gt;42&lt;/span&gt; Home&lt;/a&gt;&lt;/li&gt;
-	...
-&lt;/ul&gt;</code></pre>
-	</div>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
-<p class="mrgn-tp-lg"><span class="glyphicon glyphicon-info-sign"></span> Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap</a></p>
-
+// Blue button-like badge:	  
+&lt;p&gt;&lt;a <strong>class=&quot;btn btn-primary&quot;</strong> href=&quot;#&quot;&gt;Inbox &lt;span <strong>class=&quot;badge&quot;</strong>&gt;42&lt;span class=&quot;wb-inv&quot;&gt; unread emails&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+  <h3 id="enhanced">Enhanced use</h3>
+  <h4 id="collapsing"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-times fa-stack-1x fa-inverse"></span></span> Self collapsing badges</h4>
+  <p>Use when there are no new or unread items. Badges  simply collapse (via <abbr title="cascading style sheet">CSS</abbr> <code>:empty</code> selector). </p>
+  <section class="alert alert-danger">
+    <h4 class="mrgn-tp-0">Cross-browser compatibility</h4>
+    <p>Badges won't self collapse in Internet Explorer 8 because it lacks support for the <code>:empty</code> selector.</p>
+  </section>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Appearance</h5>
+          <p><a href="#">Inbox <span class="badge"></span></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+      <p>Compliance point(s):</p>
+      <ul>
+        <li>Remove the content within the badge and it will self-collapse, rather than removing the badge</li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+      <p>Compliance point(s):</p>
+      <ul>
+        <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>// No content inside badge:
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;... &lt;span <strong>class=&quot;badge&quot;</strong>&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+  <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
+  <p>Additional add-on features and behaviours are available.</p>
+  <ul class="list-inline lst-spcd">
+    <li><a class="btn btn-default" href="buttons-en.html">Buttons</a></li>
+    <li><a class="btn btn-default" href="listgroup-en.html">List group</a></li>
+  </ul>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 
 		<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2014-07-02</time></dd>
+	<dd><time property="dateModified">2016-10-17</time></dd>
 </dl>
 
 
