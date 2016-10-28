@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.23-development - 2016-10-22
+ * v4.0.23-development - 2016-10-28
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
@@ -3756,10 +3756,10 @@ var getUrlParts = function( url ) {
 			div = document.createElement( "div" ),
 			all = div.getElementsByTagName( "i" );
 
-		while (
+		while ( (
 			div.innerHTML = "<!--[if gt IE " + ( v += 1 ) + "]><i></i><![endif]-->",
 			all[ 0 ]
-		) {}
+		) ) {};
 
 		return v > 4 ? v : undef;
 	}() ),
@@ -3873,16 +3873,16 @@ var getUrlParts = function( url ) {
 		},
 
 		// Lets load some variables into wb for IE detection
-		other:  !oldie,
+		other: !oldie,
 		desktop: ( window.orientation === undefined ),
-		ie:     !!oldie,
-		ie6:    ( oldie === 6 ),
-		ie7:    ( oldie === 7 ),
-		ie8:    ( oldie === 8 ),
-		ie9:    ( oldie === 9 ),
-		ielt7:  ( oldie < 7 ),
-		ielt8:  ( oldie < 8 ),
-		ielt9:  ( oldie < 9 ),
+		ie: !!oldie,
+		ie6: ( oldie === 6 ),
+		ie7: ( oldie === 7 ),
+		ie8: ( oldie === 8 ),
+		ie9: ( oldie === 9 ),
+		ielt7: ( oldie < 7 ),
+		ielt8: ( oldie < 8 ),
+		ielt9: ( oldie < 9 ),
 		ielt10: ( oldie < 10 ),
 
 		selectors: [],
@@ -4000,22 +4000,22 @@ var getUrlParts = function( url ) {
 					( typeof mixin === "string" && mixin !== "" ) << 2;
 
 			switch ( truthiness ) {
-				case 1:
+			case 1:
 
-					// only key was provided
-					return dictionary[ key ];
+				// only key was provided
+				return dictionary[ key ];
 
-				case 3:
+			case 3:
 
-					// key and state were provided
-					return dictionary[ key ][ state ];
+				// key and state were provided
+				return dictionary[ key ][ state ];
 
-				case 7:
+			case 7:
 
-					// key, state, and mixin were provided
-					return dictionary[ key ][ state ].replace( "[MIXIN]", mixin );
-				default:
-					return "";
+				// key, state, and mixin were provided
+				return dictionary[ key ][ state ].replace( "[MIXIN]", mixin );
+			default:
+				return "";
 			}
 		},
 

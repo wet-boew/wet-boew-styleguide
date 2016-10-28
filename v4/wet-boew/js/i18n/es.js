@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "es",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Volver a la lista de pestañas",
 	"tab-pnl-end3": "o continuar al resto de la página.",
 	"tab-play": "Reproducir",
+
 	/* Multimedia player */
 	"mmp-play": "Reproducir",
 	pause: "Pausa",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Posición actual:",
 	dur: "Tiempo total:",
+
 	/* Share widget */
 	"shr-txt": "Compartir",
 	"shr-pg": " esta página",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " este archivo de audio",
 	"shr-hnt": " con {s} ",
 	"shr-disc": "No implica la promoción ni recomendación de ningún producto o servicio.",
+
 	/* Form validation */
 	"frm-nosubmit": "El formulario no pudo ser enviado debido a ",
 	"errs-fnd": " errores encontrados.",
 	"err-fnd": " error encontrado.",
+
 	/* Date picker */
 	"date-hide": "Ocultar calendario",
 	"date-show": "Escoger una fecha de un calendario para el campo:",
 	"date-sel": "Seleccionado",
+
 	/* Calendar */
 	days: [
 		"Domingo",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Ir",
 	prvMnth: "Mes anterior: ",
 	nxtMnth: "Mes siguiente: ",
+
 	/* Lightbox */
 	"lb-curr": "Artículo %curr% de %total%",
 	"lb-xhr-err": "Este contenido no pudo ser cargado.",
 	"lb-img-err": "Esta imagen no pudo ser cargada.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabla",
 	"tbl-dtls": "Cuadro. Los detalles aparecen en la siguiente tabla.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Su sesión expirará automáticamente en #min# min #sec# sec.",
 	"st-to-msg-end": "Seleccione \"Continuar sesión\" para prolongar tu sesión.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Lo sentimos, su sesión ha expirado. Por favor ingrese nuevamente.",
 	"st-btn-cont": "Continuar sesión",
 	"st-btn-end": "Finalizar sesión ahora",
+
 	/* Toggle details */
 	"td-toggle": "Alternar todo",
 	"td-open": "Expandir todo",
 	"td-close": "Colapsar todo",
 	"td-ttl-open": "Expandir todas las secciones de contenido",
 	"td-ttl-close": "Colapsar todas las secciones de contenido",
+
 	/* Table enhancement */
 	sortAsc: "active para ordenar en sentido ascendente",
 	sortDesc: "active para ordenar en sentido decendente",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ".",
 	lenMenu: "Mostrar _MENU_ entradas",
 	filter: "filtrar artículos",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Aumentar",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Ubicación falló. Por favor asegúrese de que los servicios de localización están habilitados.",
 	"geo-geoloc-uncapable": "Localización puede no ser compatible con su navegador.",
 	"geo-lgnd-grphc": "Gráfico leyenda para la capa de mapa.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versión HTML básica",
 	"wb-enable": "Versión estándar",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Iniciar sesión"
 };

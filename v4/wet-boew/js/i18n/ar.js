@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "ar",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "العودة إلى قائمة التبويب",
 	"tab-pnl-end3": "أو الاستمرار في بقية الصفحة.",
 	"tab-play": "لعب",
+
 	/* Multimedia player */
 	"mmp-play": "لعب",
 	pause: "وقفة",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "الوظيفة الحالية:",
 	dur: "إجمالي الوقت:",
+
 	/* Share widget */
 	"shr-txt": "مشاركة",
 	"shr-pg": " هذه الصفحة",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " هذا الملف الصوتي",
 	"shr-hnt": " مع {s} ",
 	"shr-disc": "وأعرب عن تأييد أي أي منتجات أو خدمات أو ضمنية.",
+
 	/* Form validation */
 	"frm-nosubmit": "لا يمكن أن تقدم على شكل ل ",
 	"errs-fnd": " تم العثور على أخطاء.",
 	"err-fnd": " تم العثور على خطأ.",
+
 	/* Date picker */
 	"date-hide": "إخفاء التقويم",
 	"date-show": "اختيار تاريخ من التقويم لحقل:",
 	"date-sel": "مختار",
+
 	/* Calendar */
 	days: [
 		"الأحد",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "تذهب",
 	prvMnth: "الشهر الماضي: ",
 	nxtMnth: "الشهر المقبل: ",
+
 	/* Lightbox */
 	"lb-curr": "البند %curr% من %total%",
 	"lb-xhr-err": "فشل هذا المحتوى ليتم تحميلها.",
 	"lb-img-err": "فشلت هذه الصورة ليتم تحميلها.",
+
 	/* Charts widget */
 	"tbl-txt": "جدول",
 	"tbl-dtls": "الرسم البياني. التفاصيل في الجدول التالي.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "سوف تنتهي جلسة العمل الخاصة بك تلقائيا في على  #min# دقيقة #sec# ثانية.",
 	"st-to-msg-end": "اختر \"متابعة الجلسة\" لتمديد جلسة العمل الخاصة بك.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "عذرا انتهت صلاحية جلسة العمل الخاصة بك بالفعل. يرجى تسجيل الدخول مرة أخرى.",
 	"st-btn-cont": "تستمر الدورة",
 	"st-btn-end": "إنهاء جلسة الآن",
+
 	/* Toggle details */
 	"td-toggle": "تبديل جميع",
 	"td-open": "توسيع الكل",
 	"td-close": "طي الكل",
 	"td-ttl-open": "توسيع كافة أقسام محتوى",
 	"td-ttl-close": "انهيار جميع قطاعات المحتوى",
+
 	/* Table enhancement */
 	sortAsc: ": تفعيل لنوع تصاعدي",
 	sortDesc: ": تفعيل لفرز تنازلي",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "عرض _MENU_ مقالات",
 	filter: "تصفية العناصر",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "تكبير",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "فشل الموقع. يرجى التأكد من أن يتم تمكين خدمات الموقع.",
 	"geo-geoloc-uncapable": "غير معتمد التعريب بواسطة المتصفح الخاص بك.",
 	"geo-lgnd-grphc": "رسم خريطة لأسطورة طبقة.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "إصدار HTML الأساسي",
 	"wb-enable": "الإصدار القياسي",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "تسجيل الدخول"
 };

@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "ru",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Вернитесь на вкладку список",
 	"tab-pnl-end3": "или продолжать остальной страницы.",
 	"tab-play": "Проиграть",
+
 	/* Multimedia player */
 	"mmp-play": "Проиграть",
 	pause: "Пауза",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Текущая позиция:",
 	dur: "Общее время:",
+
 	/* Share widget */
 	"shr-txt": "Поделиться",
 	"shr-pg": " ссылкой на страницу",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " это аудио",
 	"shr-hnt": " с {s} ",
 	"shr-disc": "Нет одобрение любых продуктов или услуг, выраженных или подразумеваемых.",
+
 	/* Form validation */
 	"frm-nosubmit": "Формы не могут быть представлены, потому что ",
 	"errs-fnd": " были обнаружены ошибки.",
 	"err-fnd": " была обнаружена ошибка.",
+
 	/* Date picker */
 	"date-hide": "Скрыть календарь",
 	"date-show": "Выберите дату из календаря для поля:",
 	"date-sel": "Выбранный",
+
 	/* Calendar */
 	days: [
 		"Воскресенье",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Перейти",
 	prvMnth: "Предыдущий месяц: ",
 	nxtMnth: "Следующий месяц: ",
+
 	/* Lightbox */
 	"lb-curr": "Пункт %curr% из %total%",
 	"lb-xhr-err": "Этот контент не удалось загрузить.",
 	"lb-img-err": "Это изображение не удалось загрузить.",
+
 	/* Charts widget */
 	"tbl-txt": "Таблица",
 	"tbl-dtls": "График. Подробности в таблице ниже.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Ваш сеанс закончится автоматически в #min# мин #sec# сек.",
 	"st-to-msg-end": "Выберите \"Продолжить сеанс\" продлить сессию.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Извините сеанс уже истек. Пожалуйста, войдите снова.",
 	"st-btn-cont": "Продолжить сеанс",
 	"st-btn-end": "Завершить сеанс сейчас",
+
 	/* Toggle details */
 	"td-toggle": "Свернуть все",
 	"td-open": "Развернуть все",
 	"td-close": "Свернуть все",
 	"td-ttl-open": "Развернуть все разделы содержания",
 	"td-ttl-close": "Свернуть все разделы содержания",
+
 	/* Table enhancement */
 	sortAsc: ": aктивировать для сортировке по возрастанию",
 	sortDesc: ": aктивировать для сортировки по убыванию",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Показать _MENU_ записей",
 	filter: "Фильтровать",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Приблизить",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Расположение не удалось. Пожалуйста, убедитесь, что услуги определения местоположения включены.",
 	"geo-geoloc-uncapable": "Локализация не поддерживается браузером.",
 	"geo-lgnd-grphc": "Легенда графика для слоя карты.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Базовая версия HTML",
 	"wb-enable": "Стандартная версия",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Войти"
 };

@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "id",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Kembali ke daftar tab",
 	"tab-pnl-end3": "atau melanjutkan ke seluruh halaman.",
 	"tab-play": "Main",
+
 	/* Multimedia player */
 	"mmp-play": "Main",
 	pause: "Jeda",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Posisi saat ini:",
 	dur: "Total waktu:",
+
 	/* Share widget */
 	"shr-txt": "Berbagi",
 	"shr-pg": " halaman ini",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " file musik ini",
 	"shr-hnt": " dengan {s} ",
 	"shr-disc": "Tidak ada dukungan dari produk atau jasa yang tersurat maupun tersi",
+
 	/* Form validation */
 	"frm-nosubmit": "Il modulo non poteva essere presentata in quanto ",
 	"errs-fnd": " error ditemukan.",
 	"err-fnd": " error ditemukan.",
+
 	/* Date picker */
 	"date-hide": "Sembunyikan kalender",
 	"date-show": "Pilih satu tanggal pada kalender:",
 	"date-sel": "Sudah dipilih",
+
 	/* Calendar */
 	days: [
 		"Minggu",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Pilih",
 	prvMnth: "Bulan sebelumnya: ",
 	nxtMnth: "Bulan berikutnya: ",
+
 	/* Lightbox */
 	"lb-curr": "Artikel ke-%curr% dari %total%",
 	"lb-xhr-err": "Halaman tidak berhasil ditampilkan.",
 	"lb-img-err": "Gambar ini tidak berhasil ditampilkan.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabel",
 	"tbl-dtls": "Infografis. Detail pada tabel berikut.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Sesi Anda akan berakhir secara otomatis dalam #min# menit #sec# detik.",
 	"st-to-msg-end": "Pilih \"Lanjutkan sesi\" untuk memperpanjang sesi Anda.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Maaf sesi Anda sudah berakhir. Silahkan login kembali.",
 	"st-btn-cont": "Lanjutkan sesi",
 	"st-btn-end": "Mengakhiri sesi sekarang",
+
 	/* Toggle details */
 	"td-toggle": "Beralih semua",
 	"td-open": "Memperluas semua",
 	"td-close": "Tutup semua",
 	"td-ttl-open": "Memperluas semua bagian dari konten",
 	"td-ttl-close": "Perkecil semua bagian dari konten",
+
 	/* Table enhancement */
 	sortAsc: ": aktifkan untuk menaik semacam",
 	sortDesc: ": aktifkan untuk turun semacam",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Tampilkan _MENU_ entri",
 	filter: "Filter artikel",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Perbesar",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Lokalisasi gagal. Pastikan bahwa layanan lokasi diaktifkan.",
 	"geo-geoloc-uncapable": "Lokalisasi tidak didukung oleh browser Anda.",
 	"geo-lgnd-grphc": "Legenda grafis untuk layer peta.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versi HTML dasar",
 	"wb-enable": "Versi standar",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Masuk"
 };

@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "zh",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "返回到籤頁列表",
 	"tab-pnl-end3": "或繼續其餘的頁面。",
 	"tab-play": "播放",
+
 	/* Multimedia player */
 	"mmp-play": "播放",
 	pause: "暫停",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "目前位置：",
 	dur: "所有時間：",
+
 	/* Share widget */
 	"shr-txt": "分享",
 	"shr-pg": "此頁",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": "這個音頻文件",
 	"shr-hnt": "與{s}",
 	"shr-disc": "沒有明示或暗示保證代言任何產品或服務。",
+
 	/* Form validation */
 	"frm-nosubmit": "本表格不能傳送因為",
 	"errs-fnd": "內有錯誤。",
 	"err-fnd": "出現錯誤。",
+
 	/* Date picker */
 	"date-hide": "隱藏行事曆",
 	"date-show": "選擇一個日期：",
 	"date-sel": "選擇",
+
 	/* Calendar */
 	days: [
 		"星期天",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "前往",
 	prvMnth: "上一月：",
 	nxtMnth: "下一月：",
+
 	/* Lightbox */
 	"lb-curr": "所有項目%curr%的%total%",
 	"lb-xhr-err": "本內容無法載入。",
 	"lb-img-err": "圖形無法顯示。",
+
 	/* Charts widget */
 	"tbl-txt": "表格",
 	"tbl-dtls": "圖表，詳細內容在表格中。",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "#min#＃分#sec#秒，您的會話將自動失效。",
 	"st-to-msg-end": "選擇“繼續會話”來擴展您的會話。",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "很抱歉，您的連線已經過期。請重新登錄。",
 	"st-btn-cont": "繼續會話",
 	"st-btn-end": "現在結束會話",
+
 	/* Toggle details */
 	"td-toggle": "切換所有",
 	"td-open": "展開全部",
 	"td-close": "關閉全部",
 	"td-ttl-open": "展開所有內容",
 	"td-ttl-close": "關閉所有的內容",
+
 	/* Table enhancement */
 	sortAsc: ": 使用大小排序",
 	sortDesc: "：使用小大排序",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "顯示_MENU_項",
 	filter: "過濾選項...",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "放大",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "位置失敗。請確保該位置的服務被啟用。",
 	"geo-geoloc-uncapable": "本地化不是由您的瀏覽器支持。",
 	"geo-lgnd-grphc": "傳說中的圖形在地圖圖層。",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "基本HTML版本",
 	"wb-enable": "標準版本",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "登入"
 };

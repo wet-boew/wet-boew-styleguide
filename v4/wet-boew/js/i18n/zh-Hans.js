@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "zh-Hans",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "返回到标签列表",
 	"tab-pnl-end3": "或继续其余的页面。",
 	"tab-play": "播放",
+
 	/* Multimedia player */
 	"mmp-play": "播放",
 	pause: "暂停",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "现在位置：",
 	dur: "总时间：",
+
 	/* Share widget */
 	"shr-txt": "分享",
 	"shr-pg": "该页面",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": "这个音频文件",
 	"shr-hnt": "与{s}",
 	"shr-disc": "没有代言的任何产品或服务的明示或暗示的保证。",
+
 	/* Form validation */
 	"frm-nosubmit": "表格无法提交，因为",
 	"errs-fnd": "找到错误。",
 	"err-fnd": "找到错误。",
+
 	/* Date picker */
 	"date-hide": "隐藏日历",
 	"date-show": "从日历选择一个日期：",
 	"date-sel": "选中",
+
 	/* Calendar */
 	days: [
 		"星期天",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "去",
 	prvMnth: "上个月：",
 	nxtMnth: "下个月：",
+
 	/* Lightbox */
 	"lb-curr": "项目%curr%的%total%",
 	"lb-xhr-err": "该内容无法下载。",
 	"lb-img-err": "该图像无法下载。",
+
 	/* Charts widget */
 	"tbl-txt": "表格",
 	"tbl-dtls": "图表。详细资料表如下。",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "#min#＃分#sec#秒，您的会话将自动失效。",
 	"st-to-msg-end": "选择“继续会话”来扩展您的会话。",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "很抱歉，您的会话已经过期。请重新登录。",
 	"st-btn-cont": "继续会话",
 	"st-btn-end": "现在结束会话",
+
 	/* Toggle details */
 	"td-toggle": "切换所有",
 	"td-open": "展开全部",
 	"td-close": "关闭全部",
 	"td-ttl-open": "展开所有部分的内容",
 	"td-ttl-close": "关闭所有部分的内容",
+
 	/* Table enhancement */
 	sortAsc: ": 激活升序排序",
 	sortDesc: "：激活降序排序",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "显示_MENU_项",
 	filter: "过滤项目",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "放大",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "位置失败。请确保该位置的服务被启用。",
 	"geo-geoloc-uncapable": "本地化不是由您的浏览器支持。",
 	"geo-lgnd-grphc": "传说中的图形在地图图层。",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "基本网页格式",
 	"wb-enable": "标准格式",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "登录"
 };

@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "sq",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Kthehuni tek lista tab",
 	"tab-pnl-end3": "ose të vazhdojë për pjesën tjetër të faqes.",
 	"tab-play": "Luaj",
+
 	/* Multimedia player */
 	"mmp-play": "Luaj",
 	pause: "Pushim",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Pozicioni aktual:",
 	dur: "Koha totale:",
+
 	/* Share widget */
 	"shr-txt": "Share",
 	"shr-pg": " këtë faqe",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " hierdie audio",
 	"shr-hnt": " me {s} ",
 	"shr-disc": "Asnjë miratimi i ndonjë produkteve apo shërbimeve është shprehur apo të nënkuptuar",
+
 	/* Form validation */
 	"frm-nosubmit": "Formulari nuk mund të paraqitet për shkak ",
 	"errs-fnd": " gabime u gjetën.",
 	"err-fnd": " gabim u gjet.",
+
 	/* Date picker */
 	"date-hide": "Hide kalendar",
 	"date-show": "Zgjidh një datë nga një kalendar për fushën:",
 	"date-sel": "I zgjedhur",
+
 	/* Calendar */
 	days: [
 		"E diel",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Shkoj",
 	prvMnth: "Muajin e kaluar: ",
 	nxtMnth: "Muajin e ardhshëm: ",
+
 	/* Lightbox */
 	"lb-curr": "Pika %curr% e %total%",
 	"lb-xhr-err": "Kjo përmbajtje nuk arriti të ngarkesës.",
 	"lb-img-err": "Ky imazh nuk arriti të ngarkesës.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabelë",
 	"tbl-dtls": "Chart. Detajet në tabelën e mëposhtme.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Sesioni juaj do të përfundojë automatikisht në #min# min #sec# sec.",
 	"st-to-msg-end": "Zgjidhni \"Vazhdo seancë\" për të zgjeruar sesionin tuaj.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Na vjen keq Sesioni juaj ka skaduar tashmë. Ju lutemi identifikohuni përsëri.",
 	"st-btn-cont": "Vazhdo seancë",
 	"st-btn-end": "Fundi sesion tani",
+
 	/* Toggle details */
 	"td-toggle": "Toggle gjitha",
 	"td-open": "Zgjerimin e të gjitha",
 	"td-close": "Collapse gjitha",
 	"td-ttl-open": "Expand gjitha seksionet e përmbajtjes",
 	"td-ttl-close": "Collapse gjitha seksionet e përmbajtjes",
+
 	/* Table enhancement */
 	sortAsc: ": aktivizuar për ngjitje lloj",
 	sortDesc: ": aktivizuar për zbritës lloj",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Trego _MENU_ hyra",
 	filter: "Artikuj filtër",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Zoom në",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Vendndodhja dështuar. Ju lutemi të sigurojë që shërbimet lokacioni janë të aktivizuara.",
 	"geo-geoloc-uncapable": "Lokalizimi nuk mbështetet nga browseri juaj.",
 	"geo-lgnd-grphc": "Legjenda grafik për shtresë hartë.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versioni bazë HTML",
 	"wb-enable": "Versioni standard",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Kyqeni në"
 };

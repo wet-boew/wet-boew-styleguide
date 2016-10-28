@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "en",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Return to the tab list",
 	"tab-pnl-end3": "or continue to the rest of page.",
 	"tab-play": "Play",
+
 	/* Multimedia player */
 	"mmp-play": "Play",
 	pause: "Pause",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Current position:",
 	dur: "Total time:",
+
 	/* Share widget */
 	"shr-txt": "Share",
 	"shr-pg": " this page",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " this audio file",
 	"shr-hnt": " with {s} ",
 	"shr-disc": "No endorsement of any products or services is expressed or implied.",
+
 	/* Form validation */
 	"frm-nosubmit": "The form could not be submitted because ",
 	"errs-fnd": " errors were found.",
 	"err-fnd": " error was found.",
+
 	/* Date picker */
 	"date-hide": "Hide calendar",
 	"date-show": "Pick a date from a calendar for field:",
 	"date-sel": "Selected",
+
 	/* Calendar */
 	days: [
 		"Sunday",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Go",
 	prvMnth: "Previous Month: ",
 	nxtMnth: "Next Month: ",
+
 	/* Lightbox */
 	"lb-curr": "Item %curr% of %total%",
 	"lb-xhr-err": "This content failed to load.",
 	"lb-img-err": "This image failed to load.",
+
 	/* Charts widget */
 	"tbl-txt": "Table",
 	"tbl-dtls": "Chart. Details in the following table.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Your session will expire automatically in #min# min #sec# sec.",
 	"st-to-msg-end": "Select \"Continue session\" to extend your session.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Sorry your session has already expired. Please sign in again.",
 	"st-btn-cont": "Continue session",
 	"st-btn-end": "End session now",
+
 	/* Toggle details */
 	"td-toggle": "Toggle all",
 	"td-open": "Expand all",
 	"td-close": "Collapse all",
 	"td-ttl-open": "Expand all sections of content",
 	"td-ttl-close": "Collapse all sections of content",
+
 	/* Table enhancement */
 	sortAsc: ": activate for ascending sort",
 	sortDesc: ": activate for descending sort",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Show _MENU_ entries",
 	filter: "Filter items",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Zoom in",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Geolocation failed. Please ensure that location services are enabled.",
 	"geo-geoloc-uncapable": "Geolocation is not supported by your browser.",
 	"geo-lgnd-grphc": "Legend graphic for map layer.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Basic HTML version",
 	"wb-enable": "Standard version",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Sign in"
 };

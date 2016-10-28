@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "pt-BR",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Voltar para a lista de guias",
 	"tab-pnl-end3": "ou continuar com o restante da página.",
 	"tab-play": "Executar",
+
 	/* Multimedia player */
 	"mmp-play": "Executar",
 	pause: "Pausar",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Posição atual:",
 	dur: "Tempo total:",
+
 	/* Share widget */
 	"shr-txt": "Compartilhar",
 	"shr-pg": " esta página",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " este arquivo de áudio",
 	"shr-hnt": " com {s} ",
 	"shr-disc": "Nenhum endosso, expresso ou implícito, é concedido a quaisquer produtos ou serviços",
+
 	/* Form validation */
 	"frm-nosubmit": "O formulário não pode ser submetido porque ",
 	"errs-fnd": " foram encontrados erros.",
 	"err-fnd": " foi encontrado um erro.",
+
 	/* Date picker */
 	"date-hide": "Ocultar o calendário",
 	"date-show": "Selecionar uma data de um calendário para o campo:",
 	"date-sel": "Selecionado",
+
 	/* Calendar */
 	days: [
 		"Domingo",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Ir",
 	prvMnth: "Mês anterior: ",
 	nxtMnth: "Próximo mês: ",
+
 	/* Lightbox */
 	"lb-curr": "Ítem %curr% de %total%",
 	"lb-xhr-err": "O carragemento deste conteúdo falhou.",
 	"lb-img-err": "O carregamento desta imagem falhou.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabela",
 	"tbl-dtls": "Gráfico. Mais detalhes na tabela a seguir.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Sua sessão expira automaticamente em #min# min #sec# sec.",
 	"st-to-msg-end": "Selecione \"Continuar sessão\" para estender sua sessão.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Desculpe, sua sessão já expirou. Por favor, faça novo login.",
 	"st-btn-cont": "Continuar sessão",
 	"st-btn-end": "Terminar sessão agora",
+
 	/* Toggle details */
 	"td-toggle": "Alternar todos",
 	"td-open": "Expandir todos",
 	"td-close": "Ocultar tudo",
 	"td-ttl-open": "Expandir todas as seções do conteúdo",
 	"td-ttl-close": "Ocultar todas as seções do conteúdo",
+
 	/* Table enhancement */
 	sortAsc: "ativar classificação ascendente",
 	sortDesc: "ativar para descer tipo",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Mostrar _MENU_ entradas",
 	filter: "Filtrar os ítens",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Ampliar",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Localização falhou. Certifique-se que os serviços de localização estão habilitados.",
 	"geo-geoloc-uncapable": "A localização não é suportado pelo seu navegador.",
 	"geo-lgnd-grphc": "Gráfico Legend para a camada mapa.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versão HTML simplificada",
 	"wb-enable": "Versão padrão",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Iniciar a sessão"
 };

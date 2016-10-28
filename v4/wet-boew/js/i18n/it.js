@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "it",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Ritorna alla lista schede",
 	"tab-pnl-end3": "o continuare con il resto della pagina.",
 	"tab-play": "Play",
+
 	/* Multimedia player */
 	"mmp-play": "Play",
 	pause: "Pausa",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Posizione attuale:",
 	dur: "Tempo totale:",
+
 	/* Share widget */
 	"shr-txt": "Condividi",
 	"shr-pg": " questa pagina",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " questo file audio",
 	"shr-hnt": " con {s} ",
 	"shr-disc": "Nessuna approvazione di prodotti o servizi è espressa o implicita",
+
 	/* Form validation */
 	"frm-nosubmit": "Non è stato possibile inviare il modulo in quanto ",
 	"errs-fnd": " errori sono stati trovati.",
 	"err-fnd": " errore è stato trovato.",
+
 	/* Date picker */
 	"date-hide": "Nascondi calendario",
 	"date-show": "Scegli una data da un calendario per il campo:",
 	"date-sel": "Selezionato",
+
 	/* Calendar */
 	days: [
 		"Domenica",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Andare",
 	prvMnth: "Mese Precedente: ",
 	nxtMnth: "Prossimo Mese: ",
+
 	/* Lightbox */
 	"lb-curr": "Articolo %curr% di %total%",
 	"lb-xhr-err": "Questo contenuto non è stato caricato.",
 	"lb-img-err": "Questa immagine non è stata caricata.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabella",
 	"tbl-dtls": "Grafico. Dettagli nella tabella riportata di seguito.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "La sessione scadrà automaticamente in #min# min #sec# sec .",
 	"st-to-msg-end": "Seleziona \"Continua sessione\" per estendere la tua sessione.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Spiacenti la sessione è già scaduta. Effettua il login di nuovo.",
 	"st-btn-cont": "Continuare sessione",
 	"st-btn-end": "Termina sessione ora",
+
 	/* Toggle details */
 	"td-toggle": "Alterna tutto",
 	"td-open": "Espandi tutto",
 	"td-close": "Riduci tutto",
 	"td-ttl-open": "Espandi tutte le sezioni di contenuto",
 	"td-ttl-close": "Riduci tutte le sezioni di contenuto",
+
 	/* Table enhancement */
 	sortAsc: ": organizza in ordine crescente",
 	sortDesc: ": organizza in ordine decrescente",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Mostra _MENU_ voci",
 	filter: "Filtra gli articoli",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Zoom avanti",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Posizione non riuscita. Assicurarsi che i servizi di localizzazione sono abilitati.",
 	"geo-geoloc-uncapable": "La localizzazione non è supportato dal browser.",
 	"geo-lgnd-grphc": "Legenda grafica per layer.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versione HTML di base",
 	"wb-enable": "Versione standard",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Accedi"
 };

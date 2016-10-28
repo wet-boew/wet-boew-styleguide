@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "bg",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Назад към списъка раздела",
 	"tab-pnl-end3": "или да продължат да останалата част от страницата.",
 	"tab-play": "Играя",
+
 	/* Multimedia player */
 	"mmp-play": "Играя",
 	pause: "Пауза",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Позиция:",
 	dur: "Общо време:",
+
 	/* Share widget */
 	"shr-txt": "Споделете",
 	"shr-pg": " тази страница",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " този аудио файл",
 	"shr-hnt": " с {s} ",
 	"shr-disc": "Липса на одобрение на продукти или услуги, изрични или подразбиращи се",
+
 	/* Form validation */
 	"frm-nosubmit": "Форма не могат да се подават, тъй като ",
 	"errs-fnd": " бяха открити грешки.",
 	"err-fnd": " грешка е намерен.",
+
 	/* Date picker */
 	"date-hide": "Скриване на календара",
 	"date-show": "Изберете дата от календара за областта:",
 	"date-sel": "Подбран",
+
 	/* Calendar */
 	days: [
 		"Неделя",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Отивам",
 	prvMnth: "Предходния месец: ",
 	nxtMnth: "Следващия месец: ",
+
 	/* Lightbox */
 	"lb-curr": "Член %curr% от %total%",
 	"lb-xhr-err": "Това съдържание не успя да се зареди.",
 	"lb-img-err": "Това изображение не успя да се зареди.",
+
 	/* Charts widget */
 	"tbl-txt": "Маса",
 	"tbl-dtls": "Графика. Подробности в таблицата по-долу.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Вашата сесия ще изтече автоматично в #min# мин. #sec# сек.",
 	"st-to-msg-end": "Изберете \"Продължи сесия\" да се разшири вашата сесия.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "За съжаление вашата сесия вече е изтекъл. Моля, влезте отново.",
 	"st-btn-cont": "Продължи сесия",
 	"st-btn-end": "Край на сесията сега",
+
 	/* Toggle details */
 	"td-toggle": "Превключване всички",
 	"td-open": "Разгъване на всички",
 	"td-close": "Свиване на всички",
 	"td-ttl-open": "Разгъване на всички раздели на съдържание",
 	"td-ttl-close": "Сгъване на всички раздели на съдържание",
+
 	/* Table enhancement */
 	sortAsc: "активира за възходящ вид",
 	sortDesc: "активирате за низходяща вид",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Покажи _MENU_ вписвания",
 	filter: "Филтриране на елементи",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Увеличаване на мащаба",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Местоположение провали. Моля, уверете се, че местоположението услуги са разрешени.",
 	"geo-geoloc-uncapable": "Локализация не се поддържа от вашия браузър.",
 	"geo-lgnd-grphc": "Legend графичен за карта слой.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Базов HTML версия",
 	"wb-enable": "Стандартната версия",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Вход"
 };

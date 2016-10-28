@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "nl",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Terug naar de lijst met tabs",
 	"tab-pnl-end3": "of om met de rest van de pagina door te gaan.",
 	"tab-play": "Afspelen",
+
 	/* Multimedia player */
 	"mmp-play": "Afspelen",
 	pause: "Pauze",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Huidige positie:",
 	dur: "Totale afspeelduur:",
+
 	/* Share widget */
 	"shr-txt": "Deel",
 	"shr-pg": " deze pagina",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " dit audiobestand",
 	"shr-hnt": " met {s} ",
 	"shr-disc": "Er wordt hier geen goedkeuring van producten of diensten uitgedrukt.",
+
 	/* Form validation */
 	"frm-nosubmit": "Het formulier kon niet worden verwerkt omdat ",
 	"errs-fnd": " er zijn fouten opgetreden.",
 	"err-fnd": " er is een fout opgetreden.",
+
 	/* Date picker */
 	"date-hide": "Kalender verbergen",
 	"date-show": "Kies een kalenderdatum voor het veld:",
 	"date-sel": "Geselecteerd",
+
 	/* Calendar */
 	days: [
 		"Zondag",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Ga",
 	prvMnth: "Vorige maand: ",
 	nxtMnth: "Volgende maand: ",
+
 	/* Lightbox */
 	"lb-curr": "Onderdeel %curr% van een totaal van %total%",
 	"lb-xhr-err": "De inhoud is niet geladen",
 	"lb-img-err": "Het beeld is niet geladen",
+
 	/* Charts widget */
 	"tbl-txt": "Tabel",
 	"tbl-dtls": "Grafiek. Meer details in volgende tabel",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Uw sessie zal automatisch vervallen in #min# min. #sec# sec.",
 	"st-to-msg-end": "Kies \"Doorgaan sessie\" om uw sessie te verlengen",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Excuses, uw sessie is verlopen. Log opnieuw in.",
 	"st-btn-cont": "Doorgaan sessie",
 	"st-btn-end": "Einde sessie nu",
+
 	/* Toggle details */
 	"td-toggle": "Alles tuimelen",
 	"td-open": "Alles uitvouwen",
 	"td-close": "Alles invouwen",
 	"td-ttl-open": "Alle onderdelen van de inhoud tonen",
 	"td-ttl-close": "Alle onderdelen van de inhoud verbergen",
+
 	/* Table enhancement */
 	sortAsc: ": activeren voor oplopende sortering",
 	sortDesc: ": activeren voor aflopende sortering",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Toon _MENU_ lemma's",
 	filter: "Artikelen filteren",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Inzoomen",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Locatie mislukt. Zorg ervoor dat locatiediensten zijn ingeschakeld.",
 	"geo-geoloc-uncapable": "Lokalisatie wordt niet ondersteund door uw browser.",
 	"geo-lgnd-grphc": "Legende grafische kaart voor laag.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Versie in basis-HTML",
 	"wb-enable": "Standaardversie",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Aanmelden"
 };

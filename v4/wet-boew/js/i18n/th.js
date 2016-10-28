@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "th",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "กลับไปที่รายการแท็บ",
 	"tab-pnl-end3": "หรือดำเนินการต่อในส่วนที่เหลือของหน้า.",
 	"tab-play": "เล่น",
+
 	/* Multimedia player */
 	"mmp-play": "เล่น",
 	pause: "หยุด",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "ตำแหน่งปัจจุบัน:",
 	dur: "รวมเวลา:",
+
 	/* Share widget */
 	"shr-txt": "แบ่งปัน",
 	"shr-pg": "หน้านี้",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " ไฟล์เสียงนี้",
 	"shr-hnt": "ด้วย {s} ",
 	"shr-disc": "รับรองของผลิตภัณฑ์หรือบริการใด ๆ จะไม่มีการแสดงหรือโดยนัย.",
+
 	/* Form validation */
 	"frm-nosubmit": "รูปแบบไม่สามารถส่งเพราะ ",
 	"errs-fnd": " พบข้อผิดพลาด.",
 	"err-fnd": " ข้อผิดพลาดที่พบ.",
+
 	/* Date picker */
 	"date-hide": "ซ่อนปฏิทิน",
 	"date-show": "เลือกวันที่จากปฏิทินสำหรับเขต",
 	"date-sel": "เลือก",
+
 	/* Calendar */
 	days: [
 		"วันอาทิตย์",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "ไป",
 	prvMnth: "เดือนก่อน: ",
 	nxtMnth: "เดือนถัดไป: ",
+
 	/* Lightbox */
 	"lb-curr": "%curr% รายการจาก %total%",
 	"lb-xhr-err": "เนื้อหานี้ไม่สามารถโหลด.",
 	"lb-img-err": "ภาพนี้ไม่สามารถโหลด.",
+
 	/* Charts widget */
 	"tbl-txt": "ตาราง",
 	"tbl-dtls": "แผนภูมิ รายละเอียดในตารางต่อไปนี้.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "เซสชั่นของคุณจะหมดอายุโดยอัตโนมัติใน #min# นาที #sec# วินาที.ที่จะขยายเซสชั่นของคุณ",
 	"st-to-msg-end": "เลือก \"Continue เซสชั่น\" ที่จะขยายเซสชั่นของคุณ",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "ขออภัยเซสชันของคุณหมดอายุแล้ว กรุณาเข้าสู่ระบบอีกครั้ง.",
 	"st-btn-cont": "ดำเนินการต่อเซสชั่น",
 	"st-btn-end": "จบเซสชั่นในขณะนี้",
+
 	/* Toggle details */
 	"td-toggle": "สลับทั้งหมด",
 	"td-open": "ขยายทั้งหมด",
 	"td-close": "ย่อทั้งหมด",
 	"td-ttl-open": "ขยายส่วนทั้งหมดของเนื้อหา",
 	"td-ttl-close": "ยุบทุกส่วนของเนื้อหา",
+
 	/* Table enhancement */
 	sortAsc: ": เปิดใช้งานสำหรับการจัดเรียงจากน้อยไปมาก",
 	sortDesc: ": เปิดใช้งานสำหรับการจัดเรียงจากมากไปน้อย",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "แสดงรายการ _MENU_",
 	filter: "กรองรายการ",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "ขยาย",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "ที่ล้มเหลว โปรดตรวจสอบว่าบริการสถานที่มีการใช้งาน",
 	"geo-geoloc-uncapable": "ท้องถิ่นไม่ได้รับการสนับสนุนโดยเบราว์เซอร์ของคุณ",
 	"geo-lgnd-grphc": "กราฟิกตำนานสำหรับชั้นแผนที่",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "เวอร์ชันพื้นฐานของ HTM​​L",
 	"wb-enable": "รุ่นมาตรฐาน",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "เข้าสู่ระบบ"
 };

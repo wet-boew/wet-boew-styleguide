@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "hu",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Vissza a lap listája",
 	"tab-pnl-end3": "vagy továbbra is a többi oldalon.",
 	"tab-play": "Lejátszás",
+
 	/* Multimedia player */
 	"mmp-play": "Lejátszás",
 	pause: "Pillanatmegállító",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Jelenlegi pozíció:",
 	dur: "Összidő:",
+
 	/* Share widget */
 	"shr-txt": "Oszd",
 	"shr-pg": " meg a oldal",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " ezt a hangfájlt",
 	"shr-hnt": " a {s} ",
 	"shr-disc": "I jóváhagyását olyan termékek vagy szolgáltatások kifejezett vagy hallgatólagos.",
+
 	/* Form validation */
 	"frm-nosubmit": "Az adatokat nem lehet elküldeni mert ",
 	"errs-fnd": " hibák léptek fel.",
 	"err-fnd": " hiba lépett fel.",
+
 	/* Date picker */
 	"date-hide": "A naptár elrejtése",
 	"date-show": "Válasszon egy dátumot a naptárból:",
 	"date-sel": "Kijelölt",
+
 	/* Calendar */
 	days: [
 		"Vasárnap",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Indít",
 	prvMnth: "Előző hónap: ",
 	nxtMnth: "Következő hónap: ",
+
 	/* Lightbox */
 	"lb-curr": "%total%-ből %curr%",
 	"lb-xhr-err": "A tartalom betöltése nem sikerült.",
 	"lb-img-err": "A kép betöltése nem sikerült.",
+
 	/* Charts widget */
 	"tbl-txt": "Táblázat",
 	"tbl-dtls": "Részletek a következő táblázatban.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "A munkamenet lejár automatikusan #min# perc #sec# másodperc.",
 	"st-to-msg-end": "Válassza a \"Folytatás session\" kiterjeszteni a munkamenet.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Sajnos a munkamenet már lejárt. Kérjük, jelentkezzen be újra.",
 	"st-btn-cont": "Folytatás ülés",
 	"st-btn-end": "Vége ülésen már",
+
 	/* Toggle details */
 	"td-toggle": "Váltás az összes",
 	"td-open": "Az összes kibontása",
 	"td-close": "Az összes összecsukása",
 	"td-ttl-open": "Az összes kibontása rétegei tartalom",
 	"td-ttl-close": "Elrejt minden rétege tartalom",
+
 	/* Table enhancement */
 	sortAsc: ": aktiválja a növekvő sort",
 	sortDesc: ": aktiválja csökkenő rendezési",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Megjelenítés _MENU_ bejegyzés",
 	filter: "Szűrés",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Nagyítás",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Hely sikerült. Ügyeljen arra, hogy a helymeghatározó szolgáltatások engedélyezve vannak.",
 	"geo-geoloc-uncapable": "A honosítás nem támogatja a böngészője.",
 	"geo-lgnd-grphc": "Legend grafika térképen réteg.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Egyszerű HTML verzió",
 	"wb-enable": "Standard verzió",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Bejelentkezés"
 };

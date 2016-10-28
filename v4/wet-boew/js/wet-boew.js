@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.23-development - 2016-10-22
+ * v4.0.23-development - 2016-10-28
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
@@ -115,10 +115,10 @@ var getUrlParts = function( url ) {
 			div = document.createElement( "div" ),
 			all = div.getElementsByTagName( "i" );
 
-		while (
+		while ( (
 			div.innerHTML = "<!--[if gt IE " + ( v += 1 ) + "]><i></i><![endif]-->",
 			all[ 0 ]
-		) {}
+		) ) {};
 
 		return v > 4 ? v : undef;
 	}() ),
@@ -232,16 +232,16 @@ var getUrlParts = function( url ) {
 		},
 
 		// Lets load some variables into wb for IE detection
-		other:  !oldie,
+		other: !oldie,
 		desktop: ( window.orientation === undefined ),
-		ie:     !!oldie,
-		ie6:    ( oldie === 6 ),
-		ie7:    ( oldie === 7 ),
-		ie8:    ( oldie === 8 ),
-		ie9:    ( oldie === 9 ),
-		ielt7:  ( oldie < 7 ),
-		ielt8:  ( oldie < 8 ),
-		ielt9:  ( oldie < 9 ),
+		ie: !!oldie,
+		ie6: ( oldie === 6 ),
+		ie7: ( oldie === 7 ),
+		ie8: ( oldie === 8 ),
+		ie9: ( oldie === 9 ),
+		ielt7: ( oldie < 7 ),
+		ielt8: ( oldie < 8 ),
+		ielt9: ( oldie < 9 ),
 		ielt10: ( oldie < 10 ),
 
 		selectors: [],
@@ -359,22 +359,22 @@ var getUrlParts = function( url ) {
 					( typeof mixin === "string" && mixin !== "" ) << 2;
 
 			switch ( truthiness ) {
-				case 1:
+			case 1:
 
-					// only key was provided
-					return dictionary[ key ];
+				// only key was provided
+				return dictionary[ key ];
 
-				case 3:
+			case 3:
 
-					// key and state were provided
-					return dictionary[ key ][ state ];
+				// key and state were provided
+				return dictionary[ key ][ state ];
 
-				case 7:
+			case 7:
 
-					// key, state, and mixin were provided
-					return dictionary[ key ][ state ].replace( "[MIXIN]", mixin );
-				default:
-					return "";
+				// key, state, and mixin were provided
+				return dictionary[ key ][ state ].replace( "[MIXIN]", mixin );
+			default:
+				return "";
 			}
 		},
 
@@ -570,1159 +570,1164 @@ Modernizr.load( [
  * Credits: http://kaibun.net/blog/2013/04/19/a-fully-fledged-coffeescript-boilerplate-for-jquery-plugins/
  */
 ( function( $, wb ) {
-	wb.getData = function( element, dataName ) {
-		var elm = !element.jquery ? element : element[ 0 ],
-			dataAttr = elm.getAttribute( "data-" + dataName ),
-			dataObj;
 
-		if ( dataAttr ) {
-			try {
-				dataObj = JSON.parse( dataAttr );
-				$.data( elm, dataName, dataObj );
-			} catch ( error ) {
-				$.error( "Bad JSON array in data-" + dataName + " attribute" );
-			}
+wb.getData = function( element, dataName ) {
+	var elm = !element.jquery ? element : element[ 0 ],
+		dataAttr = elm.getAttribute( "data-" + dataName ),
+		dataObj;
+
+	if ( dataAttr ) {
+		try {
+			dataObj = JSON.parse( dataAttr );
+			$.data( elm, dataName, dataObj );
+		} catch ( error ) {
+			$.error( "Bad JSON array in data-" + dataName + " attribute" );
 		}
+	}
 
-		return dataObj;
-	};
+	return dataObj;
+};
+
 } )( jQuery, wb );
 
 ( function( wb ) {
-	"use strict";
 
-	// Escapes the characters in a string for use in a jQuery selector
-	// Based on http://totaldev.com/content/escaping-characters-get-valid-jquery-id
-	wb.jqEscape = function( selector ) {
-		return selector.replace( /([;&,\.\+\*\~':"\\\!\^\/#$%@\[\]\(\)=>\|])/g, "\\$1" );
-	};
+"use strict";
 
-	// RegEx used by formattedNumCompare
-	wb.formattedNumCompareRegEx = /(<[^>]*>|[^\d\.])/g;
+// Escapes the characters in a string for use in a jQuery selector
+// Based on http://totaldev.com/content/escaping-characters-get-valid-jquery-id
+wb.jqEscape = function( selector ) {
+	return selector.replace( /([;&,\.\+\*\~':"\\\!\^\/#$%@\[\]\(\)=>\|])/g, "\\$1" );
+};
 
-	// Compares two formatted numbers (e.g., 1.2.12 or 1,000,345)
-	wb.formattedNumCompare = function( a, b ) {
-		var regEx = wb.formattedNumCompareRegEx,
-			aMultiple = a.indexOf( "-" ) === -1 ? 1 : -1,
-			aNumbers = ( ( a === "-" || a === "" ) ? "0" : a.replace( regEx, "" ) ).split( "." ),
-			bMultiple = b.indexOf( "-" ) === -1 ? 1 : -1,
-			bNumbers = ( ( b === "-" || b === "" ) ? "0" : b.replace( regEx, "" ) ).split( "." ),
-			len = aNumbers.length,
-			i, result;
+// RegEx used by formattedNumCompare
+wb.formattedNumCompareRegEx = /(<[^>]*>|[^\d\.])/g;
 
-		for ( i = 0; i !== len; i += 1 ) {
-			result = parseInt( aNumbers[ i ], 10 ) * aMultiple - parseInt( bNumbers[ i ], 10 ) * bMultiple;
-			if ( result !== 0 ) {
-				break;
-			}
+// Compares two formatted numbers (e.g., 1.2.12 or 1,000,345)
+wb.formattedNumCompare = function( a, b ) {
+	var regEx = wb.formattedNumCompareRegEx,
+		aMultiple = a.indexOf( "-" ) === -1 ? 1 : -1,
+		aNumbers = ( ( a === "-" || a === "" ) ? "0" : a.replace( regEx, "" ) ).split( "." ),
+		bMultiple = b.indexOf( "-" ) === -1 ? 1 : -1,
+		bNumbers = ( ( b === "-" || b === "" ) ? "0" : b.replace( regEx, "" ) ).split( "." ),
+		len = aNumbers.length,
+		i, result;
+
+	for ( i = 0; i !== len; i += 1 ) {
+		result = parseInt( aNumbers[ i ], 10 ) * aMultiple - parseInt( bNumbers[ i ], 10 ) * bMultiple;
+		if ( result !== 0 ) {
+			break;
 		}
-		return result;
-	};
+	}
+	return result;
+};
 
-	// Compare two strings with special characters (e.g., Cyrillic or Chinese characters)
-	wb.i18nTextCompare = function( a, b ) {
-		return wb.normalizeDiacritics( a ).localeCompare( wb.normalizeDiacritics( b ) );
-	};
+// Compare two strings with special characters (e.g., Cyrillic or Chinese characters)
+wb.i18nTextCompare = function( a, b ) {
+	return wb.normalizeDiacritics( a ).localeCompare( wb.normalizeDiacritics( b ) );
+};
 
-	// Based upon https://gist.github.com/instanceofme/1731620
-	// Licensed under WTFPL v2 http://sam.zoy.org/wtfpl/COPYING
-	wb.normalizeDiacritics = function( str ) {
-		var diacritics = {
-				"\u24B6": "A",
-				"\uFF21": "A",
-				"\u00C0": "A",
-				"\u00C1": "A",
-				"\u00C2": "A",
-				"\u1EA6": "A",
-				"\u1EA4": "A",
-				"\u1EAA": "A",
-				"\u1EA8": "A",
-				"\u00C3": "A",
-				"\u0100": "A",
-				"\u0102": "A",
-				"\u1EB0": "A",
-				"\u1EAE": "A",
-				"\u1EB4": "A",
-				"\u1EB2": "A",
-				"\u0226": "A",
-				"\u01E0": "A",
-				"\u00C4": "A",
-				"\u01DE": "A",
-				"\u1EA2": "A",
-				"\u00C5": "A",
-				"\u01FA": "A",
-				"\u01CD": "A",
-				"\u0200": "A",
-				"\u0202": "A",
-				"\u1EA0": "A",
-				"\u1EAC": "A",
-				"\u1EB6": "A",
-				"\u1E00": "A",
-				"\u0104": "A",
-				"\u023A": "A",
-				"\u2C6F": "A",
-				"\uA732": "AA",
-				"\u00C6": "AE",
-				"\u01FC": "AE",
-				"\u01E2": "AE",
-				"\uA734": "AO",
-				"\uA736": "AU",
-				"\uA738": "AV",
-				"\uA73A": "AV",
-				"\uA73C": "AY",
-				"\u24B7": "B",
-				"\uFF22": "B",
-				"\u1E02": "B",
-				"\u1E04": "B",
-				"\u1E06": "B",
-				"\u0243": "B",
-				"\u0182": "B",
-				"\u0181": "B",
-				"\u24B8": "C",
-				"\uFF23": "C",
-				"\u0106": "C",
-				"\u0108": "C",
-				"\u010A": "C",
-				"\u010C": "C",
-				"\u00C7": "C",
-				"\u1E08": "C",
-				"\u0187": "C",
-				"\u023B": "C",
-				"\uA73E": "C",
-				"\u24B9": "D",
-				"\uFF24": "D",
-				"\u1E0A": "D",
-				"\u010E": "D",
-				"\u1E0C": "D",
-				"\u1E10": "D",
-				"\u1E12": "D",
-				"\u1E0E": "D",
-				"\u0110": "D",
-				"\u018B": "D",
-				"\u018A": "D",
-				"\u0189": "D",
-				"\uA779": "D",
-				"\u01F1": "DZ",
-				"\u01C4": "DZ",
-				"\u01F2": "Dz",
-				"\u01C5": "Dz",
-				"\u24BA": "E",
-				"\uFF25": "E",
-				"\u00C8": "E",
-				"\u00C9": "E",
-				"\u00CA": "E",
-				"\u1EC0": "E",
-				"\u1EBE": "E",
-				"\u1EC4": "E",
-				"\u1EC2": "E",
-				"\u1EBC": "E",
-				"\u0112": "E",
-				"\u1E14": "E",
-				"\u1E16": "E",
-				"\u0114": "E",
-				"\u0116": "E",
-				"\u00CB": "E",
-				"\u1EBA": "E",
-				"\u011A": "E",
-				"\u0204": "E",
-				"\u0206": "E",
-				"\u1EB8": "E",
-				"\u1EC6": "E",
-				"\u0228": "E",
-				"\u1E1C": "E",
-				"\u0118": "E",
-				"\u1E18": "E",
-				"\u1E1A": "E",
-				"\u0190": "E",
-				"\u018E": "E",
-				"\u24BB": "F",
-				"\uFF26": "F",
-				"\u1E1E": "F",
-				"\u0191": "F",
-				"\uA77B": "F",
-				"\u24BC": "G",
-				"\uFF27": "G",
-				"\u01F4": "G",
-				"\u011C": "G",
-				"\u1E20": "G",
-				"\u011E": "G",
-				"\u0120": "G",
-				"\u01E6": "G",
-				"\u0122": "G",
-				"\u01E4": "G",
-				"\u0193": "G",
-				"\uA7A0": "G",
-				"\uA77D": "G",
-				"\uA77E": "G",
-				"\u24BD": "H",
-				"\uFF28": "H",
-				"\u0124": "H",
-				"\u1E22": "H",
-				"\u1E26": "H",
-				"\u021E": "H",
-				"\u1E24": "H",
-				"\u1E28": "H",
-				"\u1E2A": "H",
-				"\u0126": "H",
-				"\u2C67": "H",
-				"\u2C75": "H",
-				"\uA78D": "H",
-				"\u24BE": "I",
-				"\uFF29": "I",
-				"\u00CC": "I",
-				"\u00CD": "I",
-				"\u00CE": "I",
-				"\u0128": "I",
-				"\u012A": "I",
-				"\u012C": "I",
-				"\u0130": "I",
-				"\u00CF": "I",
-				"\u1E2E": "I",
-				"\u1EC8": "I",
-				"\u01CF": "I",
-				"\u0208": "I",
-				"\u020A": "I",
-				"\u1ECA": "I",
-				"\u012E": "I",
-				"\u1E2C": "I",
-				"\u0197": "I",
-				"\u24BF": "J",
-				"\uFF2A": "J",
-				"\u0134": "J",
-				"\u0248": "J",
-				"\u24C0": "K",
-				"\uFF2B": "K",
-				"\u1E30": "K",
-				"\u01E8": "K",
-				"\u1E32": "K",
-				"\u0136": "K",
-				"\u1E34": "K",
-				"\u0198": "K",
-				"\u2C69": "K",
-				"\uA740": "K",
-				"\uA742": "K",
-				"\uA744": "K",
-				"\uA7A2": "K",
-				"\u24C1": "L",
-				"\uFF2C": "L",
-				"\u013F": "L",
-				"\u0139": "L",
-				"\u013D": "L",
-				"\u1E36": "L",
-				"\u1E38": "L",
-				"\u013B": "L",
-				"\u1E3C": "L",
-				"\u1E3A": "L",
-				"\u0141": "L",
-				"\u023D": "L",
-				"\u2C62": "L",
-				"\u2C60": "L",
-				"\uA748": "L",
-				"\uA746": "L",
-				"\uA780": "L",
-				"\u01C7": "LJ",
-				"\u01C8": "Lj",
-				"\u24C2": "M",
-				"\uFF2D": "M",
-				"\u1E3E": "M",
-				"\u1E40": "M",
-				"\u1E42": "M",
-				"\u2C6E": "M",
-				"\u019C": "M",
-				"\u24C3": "N",
-				"\uFF2E": "N",
-				"\u01F8": "N",
-				"\u0143": "N",
-				"\u00D1": "N",
-				"\u1E44": "N",
-				"\u0147": "N",
-				"\u1E46": "N",
-				"\u0145": "N",
-				"\u1E4A": "N",
-				"\u1E48": "N",
-				"\u0220": "N",
-				"\u019D": "N",
-				"\uA790": "N",
-				"\uA7A4": "N",
-				"\u01CA": "NJ",
-				"\u01CB": "Nj",
-				"\u24C4": "O",
-				"\uFF2F": "O",
-				"\u00D2": "O",
-				"\u00D3": "O",
-				"\u00D4": "O",
-				"\u1ED2": "O",
-				"\u1ED0": "O",
-				"\u1ED6": "O",
-				"\u1ED4": "O",
-				"\u00D5": "O",
-				"\u1E4C": "O",
-				"\u022C": "O",
-				"\u1E4E": "O",
-				"\u014C": "O",
-				"\u1E50": "O",
-				"\u1E52": "O",
-				"\u014E": "O",
-				"\u022E": "O",
-				"\u0230": "O",
-				"\u00D6": "O",
-				"\u022A": "O",
-				"\u1ECE": "O",
-				"\u0150": "O",
-				"\u01D1": "O",
-				"\u020C": "O",
-				"\u020E": "O",
-				"\u01A0": "O",
-				"\u1EDC": "O",
-				"\u1EDA": "O",
-				"\u1EE0": "O",
-				"\u1EDE": "O",
-				"\u1EE2": "O",
-				"\u1ECC": "O",
-				"\u1ED8": "O",
-				"\u01EA": "O",
-				"\u01EC": "O",
-				"\u00D8": "O",
-				"\u01FE": "O",
-				"\u0186": "O",
-				"\u019F": "O",
-				"\uA74A": "O",
-				"\uA74C": "O",
-				"\u0152": "OE",
-				"\u01A2": "OI",
-				"\uA74E": "OO",
-				"\u0222": "OU",
-				"\u24C5": "P",
-				"\uFF30": "P",
-				"\u1E54": "P",
-				"\u1E56": "P",
-				"\u01A4": "P",
-				"\u2C63": "P",
-				"\uA750": "P",
-				"\uA752": "P",
-				"\uA754": "P",
-				"\u24C6": "Q",
-				"\uFF31": "Q",
-				"\uA756": "Q",
-				"\uA758": "Q",
-				"\u024A": "Q",
-				"\u24C7": "R",
-				"\uFF32": "R",
-				"\u0154": "R",
-				"\u1E58": "R",
-				"\u0158": "R",
-				"\u0210": "R",
-				"\u0212": "R",
-				"\u1E5A": "R",
-				"\u1E5C": "R",
-				"\u0156": "R",
-				"\u1E5E": "R",
-				"\u024C": "R",
-				"\u2C64": "R",
-				"\uA75A": "R",
-				"\uA7A6": "R",
-				"\uA782": "R",
-				"\u24C8": "S",
-				"\uFF33": "S",
-				"\u015A": "S",
-				"\u1E64": "S",
-				"\u015C": "S",
-				"\u1E60": "S",
-				"\u0160": "S",
-				"\u1E66": "S",
-				"\u1E62": "S",
-				"\u1E68": "S",
-				"\u0218": "S",
-				"\u015E": "S",
-				"\u2C7E": "S",
-				"\uA7A8": "S",
-				"\uA784": "S",
-				"\u1E9E": "SS",
-				"\u24C9": "T",
-				"\uFF34": "T",
-				"\u1E6A": "T",
-				"\u0164": "T",
-				"\u1E6C": "T",
-				"\u021A": "T",
-				"\u0162": "T",
-				"\u1E70": "T",
-				"\u1E6E": "T",
-				"\u0166": "T",
-				"\u01AC": "T",
-				"\u01AE": "T",
-				"\u023E": "T",
-				"\uA786": "T",
-				"\uA728": "TZ",
-				"\u24CA": "U",
-				"\uFF35": "U",
-				"\u00D9": "U",
-				"\u00DA": "U",
-				"\u00DB": "U",
-				"\u0168": "U",
-				"\u1E78": "U",
-				"\u016A": "U",
-				"\u1E7A": "U",
-				"\u016C": "U",
-				"\u00DC": "U",
-				"\u01DB": "U",
-				"\u01D7": "U",
-				"\u01D5": "U",
-				"\u01D9": "U",
-				"\u1EE6": "U",
-				"\u016E": "U",
-				"\u0170": "U",
-				"\u01D3": "U",
-				"\u0214": "U",
-				"\u0216": "U",
-				"\u01AF": "U",
-				"\u1EEA": "U",
-				"\u1EE8": "U",
-				"\u1EEE": "U",
-				"\u1EEC": "U",
-				"\u1EF0": "U",
-				"\u1EE4": "U",
-				"\u1E72": "U",
-				"\u0172": "U",
-				"\u1E76": "U",
-				"\u1E74": "U",
-				"\u0244": "U",
-				"\u24CB": "V",
-				"\uFF36": "V",
-				"\u1E7C": "V",
-				"\u1E7E": "V",
-				"\u01B2": "V",
-				"\uA75E": "V",
-				"\u0245": "V",
-				"\uA760": "VY",
-				"\u24CC": "W",
-				"\uFF37": "W",
-				"\u1E80": "W",
-				"\u1E82": "W",
-				"\u0174": "W",
-				"\u1E86": "W",
-				"\u1E84": "W",
-				"\u1E88": "W",
-				"\u2C72": "W",
-				"\u24CD": "X",
-				"\uFF38": "X",
-				"\u1E8A": "X",
-				"\u1E8C": "X",
-				"\u24CE": "Y",
-				"\uFF39": "Y",
-				"\u1EF2": "Y",
-				"\u00DD": "Y",
-				"\u0176": "Y",
-				"\u1EF8": "Y",
-				"\u0232": "Y",
-				"\u1E8E": "Y",
-				"\u0178": "Y",
-				"\u1EF6": "Y",
-				"\u1EF4": "Y",
-				"\u01B3": "Y",
-				"\u024E": "Y",
-				"\u1EFE": "Y",
-				"\u24CF": "Z",
-				"\uFF3A": "Z",
-				"\u0179": "Z",
-				"\u1E90": "Z",
-				"\u017B": "Z",
-				"\u017D": "Z",
-				"\u1E92": "Z",
-				"\u1E94": "Z",
-				"\u01B5": "Z",
-				"\u0224": "Z",
-				"\u2C7F": "Z",
-				"\u2C6B": "Z",
-				"\uA762": "Z",
-				"\u24D0": "a",
-				"\uFF41": "a",
-				"\u1E9A": "a",
-				"\u00E0": "a",
-				"\u00E1": "a",
-				"\u00E2": "a",
-				"\u1EA7": "a",
-				"\u1EA5": "a",
-				"\u1EAB": "a",
-				"\u1EA9": "a",
-				"\u00E3": "a",
-				"\u0101": "a",
-				"\u0103": "a",
-				"\u1EB1": "a",
-				"\u1EAF": "a",
-				"\u1EB5": "a",
-				"\u1EB3": "a",
-				"\u0227": "a",
-				"\u01E1": "a",
-				"\u00E4": "a",
-				"\u01DF": "a",
-				"\u1EA3": "a",
-				"\u00E5": "a",
-				"\u01FB": "a",
-				"\u01CE": "a",
-				"\u0201": "a",
-				"\u0203": "a",
-				"\u1EA1": "a",
-				"\u1EAD": "a",
-				"\u1EB7": "a",
-				"\u1E01": "a",
-				"\u0105": "a",
-				"\u2C65": "a",
-				"\u0250": "a",
-				"\uA733": "aa",
-				"\u00E6": "ae",
-				"\u01FD": "ae",
-				"\u01E3": "ae",
-				"\uA735": "ao",
-				"\uA737": "au",
-				"\uA739": "av",
-				"\uA73B": "av",
-				"\uA73D": "ay",
-				"\u24D1": "b",
-				"\uFF42": "b",
-				"\u1E03": "b",
-				"\u1E05": "b",
-				"\u1E07": "b",
-				"\u0180": "b",
-				"\u0183": "b",
-				"\u0253": "b",
-				"\u24D2": "c",
-				"\uFF43": "c",
-				"\u0107": "c",
-				"\u0109": "c",
-				"\u010B": "c",
-				"\u010D": "c",
-				"\u00E7": "c",
-				"\u1E09": "c",
-				"\u0188": "c",
-				"\u023C": "c",
-				"\uA73F": "c",
-				"\u2184": "c",
-				"\u24D3": "d",
-				"\uFF44": "d",
-				"\u1E0B": "d",
-				"\u010F": "d",
-				"\u1E0D": "d",
-				"\u1E11": "d",
-				"\u1E13": "d",
-				"\u1E0F": "d",
-				"\u0111": "d",
-				"\u018C": "d",
-				"\u0256": "d",
-				"\u0257": "d",
-				"\uA77A": "d",
-				"\u01F3": "dz",
-				"\u01C6": "dz",
-				"\u24D4": "e",
-				"\uFF45": "e",
-				"\u00E8": "e",
-				"\u00E9": "e",
-				"\u00EA": "e",
-				"\u1EC1": "e",
-				"\u1EBF": "e",
-				"\u1EC5": "e",
-				"\u1EC3": "e",
-				"\u1EBD": "e",
-				"\u0113": "e",
-				"\u1E15": "e",
-				"\u1E17": "e",
-				"\u0115": "e",
-				"\u0117": "e",
-				"\u00EB": "e",
-				"\u1EBB": "e",
-				"\u011B": "e",
-				"\u0205": "e",
-				"\u0207": "e",
-				"\u1EB9": "e",
-				"\u1EC7": "e",
-				"\u0229": "e",
-				"\u1E1D": "e",
-				"\u0119": "e",
-				"\u1E19": "e",
-				"\u1E1B": "e",
-				"\u0247": "e",
-				"\u025B": "e",
-				"\u01DD": "e",
-				"\u24D5": "f",
-				"\uFF46": "f",
-				"\u1E1F": "f",
-				"\u0192": "f",
-				"\uA77C": "f",
-				"\u24D6": "g",
-				"\uFF47": "g",
-				"\u01F5": "g",
-				"\u011D": "g",
-				"\u1E21": "g",
-				"\u011F": "g",
-				"\u0121": "g",
-				"\u01E7": "g",
-				"\u0123": "g",
-				"\u01E5": "g",
-				"\u0260": "g",
-				"\uA7A1": "g",
-				"\u1D79": "g",
-				"\uA77F": "g",
-				"\u24D7": "h",
-				"\uFF48": "h",
-				"\u0125": "h",
-				"\u1E23": "h",
-				"\u1E27": "h",
-				"\u021F": "h",
-				"\u1E25": "h",
-				"\u1E29": "h",
-				"\u1E2B": "h",
-				"\u1E96": "h",
-				"\u0127": "h",
-				"\u2C68": "h",
-				"\u2C76": "h",
-				"\u0265": "h",
-				"\u0195": "hv",
-				"\u24D8": "i",
-				"\uFF49": "i",
-				"\u00EC": "i",
-				"\u00ED": "i",
-				"\u00EE": "i",
-				"\u0129": "i",
-				"\u012B": "i",
-				"\u012D": "i",
-				"\u00EF": "i",
-				"\u1E2F": "i",
-				"\u1EC9": "i",
-				"\u01D0": "i",
-				"\u0209": "i",
-				"\u020B": "i",
-				"\u1ECB": "i",
-				"\u012F": "i",
-				"\u1E2D": "i",
-				"\u0268": "i",
-				"\u0131": "i",
-				"\u24D9": "j",
-				"\uFF4A": "j",
-				"\u0135": "j",
-				"\u01F0": "j",
-				"\u0249": "j",
-				"\u24DA": "k",
-				"\uFF4B": "k",
-				"\u1E31": "k",
-				"\u01E9": "k",
-				"\u1E33": "k",
-				"\u0137": "k",
-				"\u1E35": "k",
-				"\u0199": "k",
-				"\u2C6A": "k",
-				"\uA741": "k",
-				"\uA743": "k",
-				"\uA745": "k",
-				"\uA7A3": "k",
-				"\u24DB": "l",
-				"\uFF4C": "l",
-				"\u0140": "l",
-				"\u013A": "l",
-				"\u013E": "l",
-				"\u1E37": "l",
-				"\u1E39": "l",
-				"\u013C": "l",
-				"\u1E3D": "l",
-				"\u1E3B": "l",
-				"\u0142": "l",
-				"\u019A": "l",
-				"\u026B": "l",
-				"\u2C61": "l",
-				"\uA749": "l",
-				"\uA781": "l",
-				"\uA747": "l",
-				"\u01C9": "lj",
-				"\u24DC": "m",
-				"\uFF4D": "m",
-				"\u1E3F": "m",
-				"\u1E41": "m",
-				"\u1E43": "m",
-				"\u0271": "m",
-				"\u026F": "m",
-				"\u24DD": "n",
-				"\uFF4E": "n",
-				"\u01F9": "n",
-				"\u0144": "n",
-				"\u00F1": "n",
-				"\u1E45": "n",
-				"\u0148": "n",
-				"\u1E47": "n",
-				"\u0146": "n",
-				"\u1E4B": "n",
-				"\u1E49": "n",
-				"\u019E": "n",
-				"\u0272": "n",
-				"\u0149": "n",
-				"\uA791": "n",
-				"\uA7A5": "n",
-				"\u01CC": "nj",
-				"\u24DE": "o",
-				"\uFF4F": "o",
-				"\u00F2": "o",
-				"\u00F3": "o",
-				"\u00F4": "o",
-				"\u1ED3": "o",
-				"\u1ED1": "o",
-				"\u1ED7": "o",
-				"\u1ED5": "o",
-				"\u00F5": "o",
-				"\u1E4D": "o",
-				"\u022D": "o",
-				"\u1E4F": "o",
-				"\u014D": "o",
-				"\u1E51": "o",
-				"\u1E53": "o",
-				"\u014F": "o",
-				"\u022F": "o",
-				"\u0231": "o",
-				"\u00F6": "o",
-				"\u022B": "o",
-				"\u1ECF": "o",
-				"\u0151": "o",
-				"\u01D2": "o",
-				"\u020D": "o",
-				"\u020F": "o",
-				"\u01A1": "o",
-				"\u1EDD": "o",
-				"\u1EDB": "o",
-				"\u1EE1": "o",
-				"\u1EDF": "o",
-				"\u1EE3": "o",
-				"\u1ECD": "o",
-				"\u1ED9": "o",
-				"\u01EB": "o",
-				"\u01ED": "o",
-				"\u00F8": "o",
-				"\u01FF": "o",
-				"\u0254": "o",
-				"\uA74B": "o",
-				"\uA74D": "o",
-				"\u0275": "o",
-				"\u0153": "oe",
-				"\u0276": "oe",
-				"\u01A3": "oi",
-				"\u0223": "ou",
-				"\uA74F": "oo",
-				"\u24DF": "p",
-				"\uFF50": "p",
-				"\u1E55": "p",
-				"\u1E57": "p",
-				"\u01A5": "p",
-				"\u1D7D": "p",
-				"\uA751": "p",
-				"\uA753": "p",
-				"\uA755": "p",
-				"\u24E0": "q",
-				"\uFF51": "q",
-				"\u024B": "q",
-				"\uA757": "q",
-				"\uA759": "q",
-				"\u24E1": "r",
-				"\uFF52": "r",
-				"\u0155": "r",
-				"\u1E59": "r",
-				"\u0159": "r",
-				"\u0211": "r",
-				"\u0213": "r",
-				"\u1E5B": "r",
-				"\u1E5D": "r",
-				"\u0157": "r",
-				"\u1E5F": "r",
-				"\u024D": "r",
-				"\u027D": "r",
-				"\uA75B": "r",
-				"\uA7A7": "r",
-				"\uA783": "r",
-				"\u24E2": "s",
-				"\uFF53": "s",
-				"\u015B": "s",
-				"\u1E65": "s",
-				"\u015D": "s",
-				"\u1E61": "s",
-				"\u0161": "s",
-				"\u1E67": "s",
-				"\u1E63": "s",
-				"\u1E69": "s",
-				"\u0219": "s",
-				"\u015F": "s",
-				"\u023F": "s",
-				"\uA7A9": "s",
-				"\uA785": "s",
-				"\u017F": "s",
-				"\u1E9B": "s",
-				"\u00DF": "ss",
-				"\u24E3": "t",
-				"\uFF54": "t",
-				"\u1E6B": "t",
-				"\u1E97": "t",
-				"\u0165": "t",
-				"\u1E6D": "t",
-				"\u021B": "t",
-				"\u0163": "t",
-				"\u1E71": "t",
-				"\u1E6F": "t",
-				"\u0167": "t",
-				"\u01AD": "t",
-				"\u0288": "t",
-				"\u2C66": "t",
-				"\uA787": "t",
-				"\uA729": "tz",
-				"\u24E4": "u",
-				"\uFF55": "u",
-				"\u00F9": "u",
-				"\u00FA": "u",
-				"\u00FB": "u",
-				"\u0169": "u",
-				"\u1E79": "u",
-				"\u016B": "u",
-				"\u1E7B": "u",
-				"\u016D": "u",
-				"\u00FC": "u",
-				"\u01DC": "u",
-				"\u01D8": "u",
-				"\u01D6": "u",
-				"\u01DA": "u",
-				"\u1EE7": "u",
-				"\u016F": "u",
-				"\u0171": "u",
-				"\u01D4": "u",
-				"\u0215": "u",
-				"\u0217": "u",
-				"\u01B0": "u",
-				"\u1EEB": "u",
-				"\u1EE9": "u",
-				"\u1EEF": "u",
-				"\u1EED": "u",
-				"\u1EF1": "u",
-				"\u1EE5": "u",
-				"\u1E73": "u",
-				"\u0173": "u",
-				"\u1E77": "u",
-				"\u1E75": "u",
-				"\u0289": "u",
-				"\u24E5": "v",
-				"\uFF56": "v",
-				"\u1E7D": "v",
-				"\u1E7F": "v",
-				"\u028B": "v",
-				"\uA75F": "v",
-				"\u028C": "v",
-				"\uA761": "vy",
-				"\u24E6": "w",
-				"\uFF57": "w",
-				"\u1E81": "w",
-				"\u1E83": "w",
-				"\u0175": "w",
-				"\u1E87": "w",
-				"\u1E85": "w",
-				"\u1E98": "w",
-				"\u1E89": "w",
-				"\u2C73": "w",
-				"\u24E7": "x",
-				"\uFF58": "x",
-				"\u1E8B": "x",
-				"\u1E8D": "x",
-				"\u24E8": "y",
-				"\uFF59": "y",
-				"\u1EF3": "y",
-				"\u00FD": "y",
-				"\u0177": "y",
-				"\u1EF9": "y",
-				"\u0233": "y",
-				"\u1E8F": "y",
-				"\u00FF": "y",
-				"\u1EF7": "y",
-				"\u1E99": "y",
-				"\u1EF5": "y",
-				"\u01B4": "y",
-				"\u024F": "y",
-				"\u1EFF": "y",
-				"\u24E9": "z",
-				"\uFF5A": "z",
-				"\u017A": "z",
-				"\u1E91": "z",
-				"\u017C": "z",
-				"\u017E": "z",
-				"\u1E93": "z",
-				"\u1E95": "z",
-				"\u01B6": "z",
-				"\u0225": "z",
-				"\u0240": "z",
-				"\u2C6C": "z",
-				"\uA763": "z",
-				"\uFF10": "0",
-				"\u2080": "0",
-				"\u24EA": "0",
-				"\u2070": "0",
-				"\u00B9": "1",
-				"\u2474": "1",
-				"\u2081": "1",
-				"\u2776": "1",
-				"\u24F5": "1",
-				"\u2488": "1",
-				"\u2460": "1",
-				"\uFF11": "1",
-				"\u00B2": "2",
-				"\u2777": "2",
-				"\u2475": "2",
-				"\uFF12": "2",
-				"\u2082": "2",
-				"\u24F6": "2",
-				"\u2461": "2",
-				"\u2489": "2",
-				"\u00B3": "3",
-				"\uFF13": "3",
-				"\u248A": "3",
-				"\u2476": "3",
-				"\u2083": "3",
-				"\u2778": "3",
-				"\u24F7": "3",
-				"\u2462": "3",
-				"\u24F8": "4",
-				"\u2463": "4",
-				"\u248B": "4",
-				"\uFF14": "4",
-				"\u2074": "4",
-				"\u2084": "4",
-				"\u2779": "4",
-				"\u2477": "4",
-				"\u248C": "5",
-				"\u2085": "5",
-				"\u24F9": "5",
-				"\u2478": "5",
-				"\u277A": "5",
-				"\u2464": "5",
-				"\uFF15": "5",
-				"\u2075": "5",
-				"\u2479": "6",
-				"\u2076": "6",
-				"\uFF16": "6",
-				"\u277B": "6",
-				"\u2086": "6",
-				"\u2465": "6",
-				"\u24FA": "6",
-				"\u248D": "6",
-				"\uFF17": "7",
-				"\u2077": "7",
-				"\u277C": "7",
-				"\u24FB": "7",
-				"\u248E": "7",
-				"\u2087": "7",
-				"\u247A": "7",
-				"\u2466": "7",
-				"\u2467": "8",
-				"\u248F": "8",
-				"\u24FC": "8",
-				"\u247B": "8",
-				"\u2078": "8",
-				"\uFF18": "8",
-				"\u277D": "8",
-				"\u2088": "8",
-				"\u24FD": "9",
-				"\uFF19": "9",
-				"\u2490": "9",
-				"\u277E": "9",
-				"\u247C": "9",
-				"\u2089": "9",
-				"\u2468": "9",
-				"\u2079": "9"
-			},
-			chars = str.split( "" ),
-			len = chars.length,
-			normalized = false,
-			i, character;
-		for ( i = 0; i !== len; i += 1 ) {
-			character = chars[ i ];
-			if ( diacritics.hasOwnProperty( character ) ) {
-				chars[ i ] = diacritics[ character ];
-				normalized = true;
-			}
+// Based upon https://gist.github.com/instanceofme/1731620
+// Licensed under WTFPL v2 http://sam.zoy.org/wtfpl/COPYING
+wb.normalizeDiacritics = function( str ) {
+	var diacritics = {
+			"\u24B6": "A",
+			"\uFF21": "A",
+			"\u00C0": "A",
+			"\u00C1": "A",
+			"\u00C2": "A",
+			"\u1EA6": "A",
+			"\u1EA4": "A",
+			"\u1EAA": "A",
+			"\u1EA8": "A",
+			"\u00C3": "A",
+			"\u0100": "A",
+			"\u0102": "A",
+			"\u1EB0": "A",
+			"\u1EAE": "A",
+			"\u1EB4": "A",
+			"\u1EB2": "A",
+			"\u0226": "A",
+			"\u01E0": "A",
+			"\u00C4": "A",
+			"\u01DE": "A",
+			"\u1EA2": "A",
+			"\u00C5": "A",
+			"\u01FA": "A",
+			"\u01CD": "A",
+			"\u0200": "A",
+			"\u0202": "A",
+			"\u1EA0": "A",
+			"\u1EAC": "A",
+			"\u1EB6": "A",
+			"\u1E00": "A",
+			"\u0104": "A",
+			"\u023A": "A",
+			"\u2C6F": "A",
+			"\uA732": "AA",
+			"\u00C6": "AE",
+			"\u01FC": "AE",
+			"\u01E2": "AE",
+			"\uA734": "AO",
+			"\uA736": "AU",
+			"\uA738": "AV",
+			"\uA73A": "AV",
+			"\uA73C": "AY",
+			"\u24B7": "B",
+			"\uFF22": "B",
+			"\u1E02": "B",
+			"\u1E04": "B",
+			"\u1E06": "B",
+			"\u0243": "B",
+			"\u0182": "B",
+			"\u0181": "B",
+			"\u24B8": "C",
+			"\uFF23": "C",
+			"\u0106": "C",
+			"\u0108": "C",
+			"\u010A": "C",
+			"\u010C": "C",
+			"\u00C7": "C",
+			"\u1E08": "C",
+			"\u0187": "C",
+			"\u023B": "C",
+			"\uA73E": "C",
+			"\u24B9": "D",
+			"\uFF24": "D",
+			"\u1E0A": "D",
+			"\u010E": "D",
+			"\u1E0C": "D",
+			"\u1E10": "D",
+			"\u1E12": "D",
+			"\u1E0E": "D",
+			"\u0110": "D",
+			"\u018B": "D",
+			"\u018A": "D",
+			"\u0189": "D",
+			"\uA779": "D",
+			"\u01F1": "DZ",
+			"\u01C4": "DZ",
+			"\u01F2": "Dz",
+			"\u01C5": "Dz",
+			"\u24BA": "E",
+			"\uFF25": "E",
+			"\u00C8": "E",
+			"\u00C9": "E",
+			"\u00CA": "E",
+			"\u1EC0": "E",
+			"\u1EBE": "E",
+			"\u1EC4": "E",
+			"\u1EC2": "E",
+			"\u1EBC": "E",
+			"\u0112": "E",
+			"\u1E14": "E",
+			"\u1E16": "E",
+			"\u0114": "E",
+			"\u0116": "E",
+			"\u00CB": "E",
+			"\u1EBA": "E",
+			"\u011A": "E",
+			"\u0204": "E",
+			"\u0206": "E",
+			"\u1EB8": "E",
+			"\u1EC6": "E",
+			"\u0228": "E",
+			"\u1E1C": "E",
+			"\u0118": "E",
+			"\u1E18": "E",
+			"\u1E1A": "E",
+			"\u0190": "E",
+			"\u018E": "E",
+			"\u24BB": "F",
+			"\uFF26": "F",
+			"\u1E1E": "F",
+			"\u0191": "F",
+			"\uA77B": "F",
+			"\u24BC": "G",
+			"\uFF27": "G",
+			"\u01F4": "G",
+			"\u011C": "G",
+			"\u1E20": "G",
+			"\u011E": "G",
+			"\u0120": "G",
+			"\u01E6": "G",
+			"\u0122": "G",
+			"\u01E4": "G",
+			"\u0193": "G",
+			"\uA7A0": "G",
+			"\uA77D": "G",
+			"\uA77E": "G",
+			"\u24BD": "H",
+			"\uFF28": "H",
+			"\u0124": "H",
+			"\u1E22": "H",
+			"\u1E26": "H",
+			"\u021E": "H",
+			"\u1E24": "H",
+			"\u1E28": "H",
+			"\u1E2A": "H",
+			"\u0126": "H",
+			"\u2C67": "H",
+			"\u2C75": "H",
+			"\uA78D": "H",
+			"\u24BE": "I",
+			"\uFF29": "I",
+			"\u00CC": "I",
+			"\u00CD": "I",
+			"\u00CE": "I",
+			"\u0128": "I",
+			"\u012A": "I",
+			"\u012C": "I",
+			"\u0130": "I",
+			"\u00CF": "I",
+			"\u1E2E": "I",
+			"\u1EC8": "I",
+			"\u01CF": "I",
+			"\u0208": "I",
+			"\u020A": "I",
+			"\u1ECA": "I",
+			"\u012E": "I",
+			"\u1E2C": "I",
+			"\u0197": "I",
+			"\u24BF": "J",
+			"\uFF2A": "J",
+			"\u0134": "J",
+			"\u0248": "J",
+			"\u24C0": "K",
+			"\uFF2B": "K",
+			"\u1E30": "K",
+			"\u01E8": "K",
+			"\u1E32": "K",
+			"\u0136": "K",
+			"\u1E34": "K",
+			"\u0198": "K",
+			"\u2C69": "K",
+			"\uA740": "K",
+			"\uA742": "K",
+			"\uA744": "K",
+			"\uA7A2": "K",
+			"\u24C1": "L",
+			"\uFF2C": "L",
+			"\u013F": "L",
+			"\u0139": "L",
+			"\u013D": "L",
+			"\u1E36": "L",
+			"\u1E38": "L",
+			"\u013B": "L",
+			"\u1E3C": "L",
+			"\u1E3A": "L",
+			"\u0141": "L",
+			"\u023D": "L",
+			"\u2C62": "L",
+			"\u2C60": "L",
+			"\uA748": "L",
+			"\uA746": "L",
+			"\uA780": "L",
+			"\u01C7": "LJ",
+			"\u01C8": "Lj",
+			"\u24C2": "M",
+			"\uFF2D": "M",
+			"\u1E3E": "M",
+			"\u1E40": "M",
+			"\u1E42": "M",
+			"\u2C6E": "M",
+			"\u019C": "M",
+			"\u24C3": "N",
+			"\uFF2E": "N",
+			"\u01F8": "N",
+			"\u0143": "N",
+			"\u00D1": "N",
+			"\u1E44": "N",
+			"\u0147": "N",
+			"\u1E46": "N",
+			"\u0145": "N",
+			"\u1E4A": "N",
+			"\u1E48": "N",
+			"\u0220": "N",
+			"\u019D": "N",
+			"\uA790": "N",
+			"\uA7A4": "N",
+			"\u01CA": "NJ",
+			"\u01CB": "Nj",
+			"\u24C4": "O",
+			"\uFF2F": "O",
+			"\u00D2": "O",
+			"\u00D3": "O",
+			"\u00D4": "O",
+			"\u1ED2": "O",
+			"\u1ED0": "O",
+			"\u1ED6": "O",
+			"\u1ED4": "O",
+			"\u00D5": "O",
+			"\u1E4C": "O",
+			"\u022C": "O",
+			"\u1E4E": "O",
+			"\u014C": "O",
+			"\u1E50": "O",
+			"\u1E52": "O",
+			"\u014E": "O",
+			"\u022E": "O",
+			"\u0230": "O",
+			"\u00D6": "O",
+			"\u022A": "O",
+			"\u1ECE": "O",
+			"\u0150": "O",
+			"\u01D1": "O",
+			"\u020C": "O",
+			"\u020E": "O",
+			"\u01A0": "O",
+			"\u1EDC": "O",
+			"\u1EDA": "O",
+			"\u1EE0": "O",
+			"\u1EDE": "O",
+			"\u1EE2": "O",
+			"\u1ECC": "O",
+			"\u1ED8": "O",
+			"\u01EA": "O",
+			"\u01EC": "O",
+			"\u00D8": "O",
+			"\u01FE": "O",
+			"\u0186": "O",
+			"\u019F": "O",
+			"\uA74A": "O",
+			"\uA74C": "O",
+			"\u0152": "OE",
+			"\u01A2": "OI",
+			"\uA74E": "OO",
+			"\u0222": "OU",
+			"\u24C5": "P",
+			"\uFF30": "P",
+			"\u1E54": "P",
+			"\u1E56": "P",
+			"\u01A4": "P",
+			"\u2C63": "P",
+			"\uA750": "P",
+			"\uA752": "P",
+			"\uA754": "P",
+			"\u24C6": "Q",
+			"\uFF31": "Q",
+			"\uA756": "Q",
+			"\uA758": "Q",
+			"\u024A": "Q",
+			"\u24C7": "R",
+			"\uFF32": "R",
+			"\u0154": "R",
+			"\u1E58": "R",
+			"\u0158": "R",
+			"\u0210": "R",
+			"\u0212": "R",
+			"\u1E5A": "R",
+			"\u1E5C": "R",
+			"\u0156": "R",
+			"\u1E5E": "R",
+			"\u024C": "R",
+			"\u2C64": "R",
+			"\uA75A": "R",
+			"\uA7A6": "R",
+			"\uA782": "R",
+			"\u24C8": "S",
+			"\uFF33": "S",
+			"\u015A": "S",
+			"\u1E64": "S",
+			"\u015C": "S",
+			"\u1E60": "S",
+			"\u0160": "S",
+			"\u1E66": "S",
+			"\u1E62": "S",
+			"\u1E68": "S",
+			"\u0218": "S",
+			"\u015E": "S",
+			"\u2C7E": "S",
+			"\uA7A8": "S",
+			"\uA784": "S",
+			"\u1E9E": "SS",
+			"\u24C9": "T",
+			"\uFF34": "T",
+			"\u1E6A": "T",
+			"\u0164": "T",
+			"\u1E6C": "T",
+			"\u021A": "T",
+			"\u0162": "T",
+			"\u1E70": "T",
+			"\u1E6E": "T",
+			"\u0166": "T",
+			"\u01AC": "T",
+			"\u01AE": "T",
+			"\u023E": "T",
+			"\uA786": "T",
+			"\uA728": "TZ",
+			"\u24CA": "U",
+			"\uFF35": "U",
+			"\u00D9": "U",
+			"\u00DA": "U",
+			"\u00DB": "U",
+			"\u0168": "U",
+			"\u1E78": "U",
+			"\u016A": "U",
+			"\u1E7A": "U",
+			"\u016C": "U",
+			"\u00DC": "U",
+			"\u01DB": "U",
+			"\u01D7": "U",
+			"\u01D5": "U",
+			"\u01D9": "U",
+			"\u1EE6": "U",
+			"\u016E": "U",
+			"\u0170": "U",
+			"\u01D3": "U",
+			"\u0214": "U",
+			"\u0216": "U",
+			"\u01AF": "U",
+			"\u1EEA": "U",
+			"\u1EE8": "U",
+			"\u1EEE": "U",
+			"\u1EEC": "U",
+			"\u1EF0": "U",
+			"\u1EE4": "U",
+			"\u1E72": "U",
+			"\u0172": "U",
+			"\u1E76": "U",
+			"\u1E74": "U",
+			"\u0244": "U",
+			"\u24CB": "V",
+			"\uFF36": "V",
+			"\u1E7C": "V",
+			"\u1E7E": "V",
+			"\u01B2": "V",
+			"\uA75E": "V",
+			"\u0245": "V",
+			"\uA760": "VY",
+			"\u24CC": "W",
+			"\uFF37": "W",
+			"\u1E80": "W",
+			"\u1E82": "W",
+			"\u0174": "W",
+			"\u1E86": "W",
+			"\u1E84": "W",
+			"\u1E88": "W",
+			"\u2C72": "W",
+			"\u24CD": "X",
+			"\uFF38": "X",
+			"\u1E8A": "X",
+			"\u1E8C": "X",
+			"\u24CE": "Y",
+			"\uFF39": "Y",
+			"\u1EF2": "Y",
+			"\u00DD": "Y",
+			"\u0176": "Y",
+			"\u1EF8": "Y",
+			"\u0232": "Y",
+			"\u1E8E": "Y",
+			"\u0178": "Y",
+			"\u1EF6": "Y",
+			"\u1EF4": "Y",
+			"\u01B3": "Y",
+			"\u024E": "Y",
+			"\u1EFE": "Y",
+			"\u24CF": "Z",
+			"\uFF3A": "Z",
+			"\u0179": "Z",
+			"\u1E90": "Z",
+			"\u017B": "Z",
+			"\u017D": "Z",
+			"\u1E92": "Z",
+			"\u1E94": "Z",
+			"\u01B5": "Z",
+			"\u0224": "Z",
+			"\u2C7F": "Z",
+			"\u2C6B": "Z",
+			"\uA762": "Z",
+			"\u24D0": "a",
+			"\uFF41": "a",
+			"\u1E9A": "a",
+			"\u00E0": "a",
+			"\u00E1": "a",
+			"\u00E2": "a",
+			"\u1EA7": "a",
+			"\u1EA5": "a",
+			"\u1EAB": "a",
+			"\u1EA9": "a",
+			"\u00E3": "a",
+			"\u0101": "a",
+			"\u0103": "a",
+			"\u1EB1": "a",
+			"\u1EAF": "a",
+			"\u1EB5": "a",
+			"\u1EB3": "a",
+			"\u0227": "a",
+			"\u01E1": "a",
+			"\u00E4": "a",
+			"\u01DF": "a",
+			"\u1EA3": "a",
+			"\u00E5": "a",
+			"\u01FB": "a",
+			"\u01CE": "a",
+			"\u0201": "a",
+			"\u0203": "a",
+			"\u1EA1": "a",
+			"\u1EAD": "a",
+			"\u1EB7": "a",
+			"\u1E01": "a",
+			"\u0105": "a",
+			"\u2C65": "a",
+			"\u0250": "a",
+			"\uA733": "aa",
+			"\u00E6": "ae",
+			"\u01FD": "ae",
+			"\u01E3": "ae",
+			"\uA735": "ao",
+			"\uA737": "au",
+			"\uA739": "av",
+			"\uA73B": "av",
+			"\uA73D": "ay",
+			"\u24D1": "b",
+			"\uFF42": "b",
+			"\u1E03": "b",
+			"\u1E05": "b",
+			"\u1E07": "b",
+			"\u0180": "b",
+			"\u0183": "b",
+			"\u0253": "b",
+			"\u24D2": "c",
+			"\uFF43": "c",
+			"\u0107": "c",
+			"\u0109": "c",
+			"\u010B": "c",
+			"\u010D": "c",
+			"\u00E7": "c",
+			"\u1E09": "c",
+			"\u0188": "c",
+			"\u023C": "c",
+			"\uA73F": "c",
+			"\u2184": "c",
+			"\u24D3": "d",
+			"\uFF44": "d",
+			"\u1E0B": "d",
+			"\u010F": "d",
+			"\u1E0D": "d",
+			"\u1E11": "d",
+			"\u1E13": "d",
+			"\u1E0F": "d",
+			"\u0111": "d",
+			"\u018C": "d",
+			"\u0256": "d",
+			"\u0257": "d",
+			"\uA77A": "d",
+			"\u01F3": "dz",
+			"\u01C6": "dz",
+			"\u24D4": "e",
+			"\uFF45": "e",
+			"\u00E8": "e",
+			"\u00E9": "e",
+			"\u00EA": "e",
+			"\u1EC1": "e",
+			"\u1EBF": "e",
+			"\u1EC5": "e",
+			"\u1EC3": "e",
+			"\u1EBD": "e",
+			"\u0113": "e",
+			"\u1E15": "e",
+			"\u1E17": "e",
+			"\u0115": "e",
+			"\u0117": "e",
+			"\u00EB": "e",
+			"\u1EBB": "e",
+			"\u011B": "e",
+			"\u0205": "e",
+			"\u0207": "e",
+			"\u1EB9": "e",
+			"\u1EC7": "e",
+			"\u0229": "e",
+			"\u1E1D": "e",
+			"\u0119": "e",
+			"\u1E19": "e",
+			"\u1E1B": "e",
+			"\u0247": "e",
+			"\u025B": "e",
+			"\u01DD": "e",
+			"\u24D5": "f",
+			"\uFF46": "f",
+			"\u1E1F": "f",
+			"\u0192": "f",
+			"\uA77C": "f",
+			"\u24D6": "g",
+			"\uFF47": "g",
+			"\u01F5": "g",
+			"\u011D": "g",
+			"\u1E21": "g",
+			"\u011F": "g",
+			"\u0121": "g",
+			"\u01E7": "g",
+			"\u0123": "g",
+			"\u01E5": "g",
+			"\u0260": "g",
+			"\uA7A1": "g",
+			"\u1D79": "g",
+			"\uA77F": "g",
+			"\u24D7": "h",
+			"\uFF48": "h",
+			"\u0125": "h",
+			"\u1E23": "h",
+			"\u1E27": "h",
+			"\u021F": "h",
+			"\u1E25": "h",
+			"\u1E29": "h",
+			"\u1E2B": "h",
+			"\u1E96": "h",
+			"\u0127": "h",
+			"\u2C68": "h",
+			"\u2C76": "h",
+			"\u0265": "h",
+			"\u0195": "hv",
+			"\u24D8": "i",
+			"\uFF49": "i",
+			"\u00EC": "i",
+			"\u00ED": "i",
+			"\u00EE": "i",
+			"\u0129": "i",
+			"\u012B": "i",
+			"\u012D": "i",
+			"\u00EF": "i",
+			"\u1E2F": "i",
+			"\u1EC9": "i",
+			"\u01D0": "i",
+			"\u0209": "i",
+			"\u020B": "i",
+			"\u1ECB": "i",
+			"\u012F": "i",
+			"\u1E2D": "i",
+			"\u0268": "i",
+			"\u0131": "i",
+			"\u24D9": "j",
+			"\uFF4A": "j",
+			"\u0135": "j",
+			"\u01F0": "j",
+			"\u0249": "j",
+			"\u24DA": "k",
+			"\uFF4B": "k",
+			"\u1E31": "k",
+			"\u01E9": "k",
+			"\u1E33": "k",
+			"\u0137": "k",
+			"\u1E35": "k",
+			"\u0199": "k",
+			"\u2C6A": "k",
+			"\uA741": "k",
+			"\uA743": "k",
+			"\uA745": "k",
+			"\uA7A3": "k",
+			"\u24DB": "l",
+			"\uFF4C": "l",
+			"\u0140": "l",
+			"\u013A": "l",
+			"\u013E": "l",
+			"\u1E37": "l",
+			"\u1E39": "l",
+			"\u013C": "l",
+			"\u1E3D": "l",
+			"\u1E3B": "l",
+			"\u0142": "l",
+			"\u019A": "l",
+			"\u026B": "l",
+			"\u2C61": "l",
+			"\uA749": "l",
+			"\uA781": "l",
+			"\uA747": "l",
+			"\u01C9": "lj",
+			"\u24DC": "m",
+			"\uFF4D": "m",
+			"\u1E3F": "m",
+			"\u1E41": "m",
+			"\u1E43": "m",
+			"\u0271": "m",
+			"\u026F": "m",
+			"\u24DD": "n",
+			"\uFF4E": "n",
+			"\u01F9": "n",
+			"\u0144": "n",
+			"\u00F1": "n",
+			"\u1E45": "n",
+			"\u0148": "n",
+			"\u1E47": "n",
+			"\u0146": "n",
+			"\u1E4B": "n",
+			"\u1E49": "n",
+			"\u019E": "n",
+			"\u0272": "n",
+			"\u0149": "n",
+			"\uA791": "n",
+			"\uA7A5": "n",
+			"\u01CC": "nj",
+			"\u24DE": "o",
+			"\uFF4F": "o",
+			"\u00F2": "o",
+			"\u00F3": "o",
+			"\u00F4": "o",
+			"\u1ED3": "o",
+			"\u1ED1": "o",
+			"\u1ED7": "o",
+			"\u1ED5": "o",
+			"\u00F5": "o",
+			"\u1E4D": "o",
+			"\u022D": "o",
+			"\u1E4F": "o",
+			"\u014D": "o",
+			"\u1E51": "o",
+			"\u1E53": "o",
+			"\u014F": "o",
+			"\u022F": "o",
+			"\u0231": "o",
+			"\u00F6": "o",
+			"\u022B": "o",
+			"\u1ECF": "o",
+			"\u0151": "o",
+			"\u01D2": "o",
+			"\u020D": "o",
+			"\u020F": "o",
+			"\u01A1": "o",
+			"\u1EDD": "o",
+			"\u1EDB": "o",
+			"\u1EE1": "o",
+			"\u1EDF": "o",
+			"\u1EE3": "o",
+			"\u1ECD": "o",
+			"\u1ED9": "o",
+			"\u01EB": "o",
+			"\u01ED": "o",
+			"\u00F8": "o",
+			"\u01FF": "o",
+			"\u0254": "o",
+			"\uA74B": "o",
+			"\uA74D": "o",
+			"\u0275": "o",
+			"\u0153": "oe",
+			"\u0276": "oe",
+			"\u01A3": "oi",
+			"\u0223": "ou",
+			"\uA74F": "oo",
+			"\u24DF": "p",
+			"\uFF50": "p",
+			"\u1E55": "p",
+			"\u1E57": "p",
+			"\u01A5": "p",
+			"\u1D7D": "p",
+			"\uA751": "p",
+			"\uA753": "p",
+			"\uA755": "p",
+			"\u24E0": "q",
+			"\uFF51": "q",
+			"\u024B": "q",
+			"\uA757": "q",
+			"\uA759": "q",
+			"\u24E1": "r",
+			"\uFF52": "r",
+			"\u0155": "r",
+			"\u1E59": "r",
+			"\u0159": "r",
+			"\u0211": "r",
+			"\u0213": "r",
+			"\u1E5B": "r",
+			"\u1E5D": "r",
+			"\u0157": "r",
+			"\u1E5F": "r",
+			"\u024D": "r",
+			"\u027D": "r",
+			"\uA75B": "r",
+			"\uA7A7": "r",
+			"\uA783": "r",
+			"\u24E2": "s",
+			"\uFF53": "s",
+			"\u015B": "s",
+			"\u1E65": "s",
+			"\u015D": "s",
+			"\u1E61": "s",
+			"\u0161": "s",
+			"\u1E67": "s",
+			"\u1E63": "s",
+			"\u1E69": "s",
+			"\u0219": "s",
+			"\u015F": "s",
+			"\u023F": "s",
+			"\uA7A9": "s",
+			"\uA785": "s",
+			"\u017F": "s",
+			"\u1E9B": "s",
+			"\u00DF": "ss",
+			"\u24E3": "t",
+			"\uFF54": "t",
+			"\u1E6B": "t",
+			"\u1E97": "t",
+			"\u0165": "t",
+			"\u1E6D": "t",
+			"\u021B": "t",
+			"\u0163": "t",
+			"\u1E71": "t",
+			"\u1E6F": "t",
+			"\u0167": "t",
+			"\u01AD": "t",
+			"\u0288": "t",
+			"\u2C66": "t",
+			"\uA787": "t",
+			"\uA729": "tz",
+			"\u24E4": "u",
+			"\uFF55": "u",
+			"\u00F9": "u",
+			"\u00FA": "u",
+			"\u00FB": "u",
+			"\u0169": "u",
+			"\u1E79": "u",
+			"\u016B": "u",
+			"\u1E7B": "u",
+			"\u016D": "u",
+			"\u00FC": "u",
+			"\u01DC": "u",
+			"\u01D8": "u",
+			"\u01D6": "u",
+			"\u01DA": "u",
+			"\u1EE7": "u",
+			"\u016F": "u",
+			"\u0171": "u",
+			"\u01D4": "u",
+			"\u0215": "u",
+			"\u0217": "u",
+			"\u01B0": "u",
+			"\u1EEB": "u",
+			"\u1EE9": "u",
+			"\u1EEF": "u",
+			"\u1EED": "u",
+			"\u1EF1": "u",
+			"\u1EE5": "u",
+			"\u1E73": "u",
+			"\u0173": "u",
+			"\u1E77": "u",
+			"\u1E75": "u",
+			"\u0289": "u",
+			"\u24E5": "v",
+			"\uFF56": "v",
+			"\u1E7D": "v",
+			"\u1E7F": "v",
+			"\u028B": "v",
+			"\uA75F": "v",
+			"\u028C": "v",
+			"\uA761": "vy",
+			"\u24E6": "w",
+			"\uFF57": "w",
+			"\u1E81": "w",
+			"\u1E83": "w",
+			"\u0175": "w",
+			"\u1E87": "w",
+			"\u1E85": "w",
+			"\u1E98": "w",
+			"\u1E89": "w",
+			"\u2C73": "w",
+			"\u24E7": "x",
+			"\uFF58": "x",
+			"\u1E8B": "x",
+			"\u1E8D": "x",
+			"\u24E8": "y",
+			"\uFF59": "y",
+			"\u1EF3": "y",
+			"\u00FD": "y",
+			"\u0177": "y",
+			"\u1EF9": "y",
+			"\u0233": "y",
+			"\u1E8F": "y",
+			"\u00FF": "y",
+			"\u1EF7": "y",
+			"\u1E99": "y",
+			"\u1EF5": "y",
+			"\u01B4": "y",
+			"\u024F": "y",
+			"\u1EFF": "y",
+			"\u24E9": "z",
+			"\uFF5A": "z",
+			"\u017A": "z",
+			"\u1E91": "z",
+			"\u017C": "z",
+			"\u017E": "z",
+			"\u1E93": "z",
+			"\u1E95": "z",
+			"\u01B6": "z",
+			"\u0225": "z",
+			"\u0240": "z",
+			"\u2C6C": "z",
+			"\uA763": "z",
+			"\uFF10": "0",
+			"\u2080": "0",
+			"\u24EA": "0",
+			"\u2070": "0",
+			"\u00B9": "1",
+			"\u2474": "1",
+			"\u2081": "1",
+			"\u2776": "1",
+			"\u24F5": "1",
+			"\u2488": "1",
+			"\u2460": "1",
+			"\uFF11": "1",
+			"\u00B2": "2",
+			"\u2777": "2",
+			"\u2475": "2",
+			"\uFF12": "2",
+			"\u2082": "2",
+			"\u24F6": "2",
+			"\u2461": "2",
+			"\u2489": "2",
+			"\u00B3": "3",
+			"\uFF13": "3",
+			"\u248A": "3",
+			"\u2476": "3",
+			"\u2083": "3",
+			"\u2778": "3",
+			"\u24F7": "3",
+			"\u2462": "3",
+			"\u24F8": "4",
+			"\u2463": "4",
+			"\u248B": "4",
+			"\uFF14": "4",
+			"\u2074": "4",
+			"\u2084": "4",
+			"\u2779": "4",
+			"\u2477": "4",
+			"\u248C": "5",
+			"\u2085": "5",
+			"\u24F9": "5",
+			"\u2478": "5",
+			"\u277A": "5",
+			"\u2464": "5",
+			"\uFF15": "5",
+			"\u2075": "5",
+			"\u2479": "6",
+			"\u2076": "6",
+			"\uFF16": "6",
+			"\u277B": "6",
+			"\u2086": "6",
+			"\u2465": "6",
+			"\u24FA": "6",
+			"\u248D": "6",
+			"\uFF17": "7",
+			"\u2077": "7",
+			"\u277C": "7",
+			"\u24FB": "7",
+			"\u248E": "7",
+			"\u2087": "7",
+			"\u247A": "7",
+			"\u2466": "7",
+			"\u2467": "8",
+			"\u248F": "8",
+			"\u24FC": "8",
+			"\u247B": "8",
+			"\u2078": "8",
+			"\uFF18": "8",
+			"\u277D": "8",
+			"\u2088": "8",
+			"\u24FD": "9",
+			"\uFF19": "9",
+			"\u2490": "9",
+			"\u277E": "9",
+			"\u247C": "9",
+			"\u2089": "9",
+			"\u2468": "9",
+			"\u2079": "9"
+		},
+		chars = str.split( "" ),
+		len = chars.length,
+		normalized = false,
+		i, character;
+	for ( i = 0; i !== len; i += 1 ) {
+		character = chars[ i ];
+		if ( diacritics.hasOwnProperty( character ) ) {
+			chars[ i ] = diacritics[ character ];
+			normalized = true;
 		}
-		return ( normalized ? chars.join( "" ) : str );
-	};
+	}
+	return ( normalized ? chars.join( "" ) : str );
+};
 
-	/**
-	 * @namespace wb.string
-	 */
-	wb.string = {
-		/*
-		 * Left-pads a number with zeros.
-		 * @memberof wb.string
-		 * @param {number} number The original number to pad.
-		 * @param {number} length The width of the resulting padded number, not the number of zeros to add to the front of the string.
-		 * @return {string} The padded string
-		 */
-		pad: function( number, length ) {
-			var str = number + "",
-				diff = length - str.length,
-				i;
-			for ( i = 0; i !== diff; i += 1 ) {
-				str = "0" + str;
-			}
-			return str;
-		}
-	};
+/**
+ * @namespace wb.string
+ */
+wb.string = {
 
 	/*
-	 * A suite of date related functions for easier parsing of dates
-	 * @namespace wb.date
+	 * Left-pads a number with zeros.
+	 * @memberof wb.string
+	 * @param {number} number The original number to pad.
+	 * @param {number} length The width of the resulting padded number, not the number of zeros to add to the front of the string.
+	 * @return {string} The padded string
 	 */
-	wb.date = {
-		/*
-		 * Converts the date to a date-object. The input can be:
-		 * <ul>
-		 * <li>a Date object: returned without modification.</li>
-		 * <li>an array: Interpreted as [year,month,day]. NOTE: month is 0-11.</li>
-		 * <li>a number: Interpreted as number of milliseconds since 1 Jan 1970 (a timestamp).</li>
-		 * <li>a string: Any format supported by the javascript engine, like 'YYYY/MM/DD', 'MM/DD/YYYY', 'Jan 31 2009' etc.</li>
-		 * <li>an object: Interpreted as an object with year, month and date attributes. **NOTE** month is 0-11.</li>
-		 * </ul>
-		 * @memberof wb.date
-		 * @param {Date | number[] | number | string | object} dateValue
-		 * @return {Date | NaN}
-		 */
-		convert: function( dateValue ) {
-			var dateConstructor = dateValue.constructor;
-
-			switch ( dateConstructor ) {
-			case Date:
-				return dateConstructor;
-			case Array:
-				return new Date( dateValue[ 0 ], dateValue[ 1 ], dateValue[ 2 ] );
-			case Number:
-			case String:
-				return new Date( dateValue );
-			default:
-				return typeof dateValue === "object" ? new Date( dateValue.year, dateValue.month, dateValue.date ) : NaN;
-			}
-		},
-
-		/*
-		 * Compares two dates (input can be any type supported by the convert function).
-		 * @memberof wb.date
-		 * @param {Date | number[] | number | string | object} dateValue1
-		 * @param {Date | number[] | number | string | object} dateValue2
-		 * @return {number | NaN}
-		 * @example returns
-		 * -1 if dateValue1 < dateValue2
-		 * 0 if dateValue1 = dateValue2
-		 * 1 if dateValue1 > dateValue2
-		 * NaN if dateValue1 or dateValue2 is an illegal date
-		 */
-		compare: function( dateValue1, dateValue2 ) {
-			var convert = wb.date.convert;
-
-			if ( isFinite( dateValue1 = convert( dateValue1 ).valueOf() ) && isFinite( dateValue2 = convert( dateValue2 ).valueOf() ) ) {
-				return ( dateValue1 > dateValue2 ) - ( dateValue1 < dateValue2 );
-			}
-			return NaN;
-		},
-
-		/*
-		 * Cross-browser safe way of translating a date to ISO format
-		 * @memberof wb.date
-		 * @param {Date | number[] | number | string | object} dateValue
-		 * @param {boolean} withTime Optional. Whether to include the time in the result, or just the date. False if blank.
-		 * @return {string}
-		 * @example
-		 * toDateISO( new Date() )
-		 * returns "2012-04-27"
-		 * toDateISO( new Date(), true )
-		 * returns "2012-04-27 13:46"
-		 */
-		toDateISO: function( dateValue, withTime ) {
-			var date = wb.date.convert( dateValue ),
-				pad = wb.string.pad;
-
-			return date.getFullYear() + "-" + pad( date.getMonth() + 1, 2, "0" ) + "-" + pad( date.getDate(), 2, "0" ) +
-				( withTime ? " " + pad( date.getHours(), 2, "0" ) + ":" + pad( date.getMinutes(), 2, "0" ) : "" );
-		},
-
-		/*
-		 * Cross-browser safe way of creating a date object from a date string in ISO format
-		 * @memberof wb.date
-		 * @param {string} dateISO Date string in ISO format
-		 * @return {Date}
-		 */
-		fromDateISO: function( dateISO ) {
-			var date = null;
-
-			if ( dateISO && dateISO.match( /\d{4}-\d{2}-\d{2}/ ) ) {
-				date = new Date( dateISO.substr( 0, 4 ), dateISO.substr( 5, 2 ) - 1, dateISO.substr( 8, 2 ), 0, 0, 0, 0 );
-			}
-			return date;
+	pad: function( number, length ) {
+		var str = number + "",
+			diff = length - str.length,
+			i;
+		for ( i = 0; i !== diff; i += 1 ) {
+			str = "0" + str;
 		}
-	};
+		return str;
+	}
+};
+
+/*
+ * A suite of date related functions for easier parsing of dates
+ * @namespace wb.date
+ */
+wb.date = {
 
 	/*
-	 * Returns a RFC4122 compliant Global Unique ID (GUID).
-	 * Originally from http://stackoverflow.com/a/2117523/455535
+	 * Converts the date to a date-object. The input can be:
+	 * <ul>
+	 * <li>a Date object: returned without modification.</li>
+	 * <li>an array: Interpreted as [year,month,day]. NOTE: month is 0-11.</li>
+	 * <li>a number: Interpreted as number of milliseconds since 1 Jan 1970 (a timestamp).</li>
+	 * <li>a string: Any format supported by the javascript engine, like 'YYYY/MM/DD', 'MM/DD/YYYY', 'Jan 31 2009' etc.</li>
+	 * <li>an object: Interpreted as an object with year, month and date attributes. **NOTE** month is 0-11.</li>
+	 * </ul>
+	 * @memberof wb.date
+	 * @param {Date | number[] | number | string | object} dateValue
+	 * @return {Date | NaN}
 	 */
-	wb.guid = function() {
-		return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace( /[xy]/g, function( replacementChar ) {
-			var rand = Math.random() * 16 | 0,
-				newChar = replacementChar === "x" ? rand : ( rand & 0x3 | 0x8 );
-			return newChar.toString( 16 );
-		} );
-	};
+	convert: function( dateValue ) {
+		var dateConstructor = dateValue.constructor;
 
-	wb.escapeAttribute = function( str ) {
-		return str.replace( /'/g, "&#39;" ).replace( /"/g, "&#34;" );
-	};
+		switch ( dateConstructor ) {
+		case Date:
+			return dateConstructor;
+		case Array:
+			return new Date( dateValue[ 0 ], dateValue[ 1 ], dateValue[ 2 ] );
+		case Number:
+		case String:
+			return new Date( dateValue );
+		default:
+			return typeof dateValue === "object" ? new Date( dateValue.year, dateValue.month, dateValue.date ) : NaN;
+		}
+	},
+
+	/*
+	 * Compares two dates (input can be any type supported by the convert function).
+	 * @memberof wb.date
+	 * @param {Date | number[] | number | string | object} dateValue1
+	 * @param {Date | number[] | number | string | object} dateValue2
+	 * @return {number | NaN}
+	 * @example returns
+	 * -1 if dateValue1 < dateValue2
+	 * 0 if dateValue1 = dateValue2
+	 * 1 if dateValue1 > dateValue2
+	 * NaN if dateValue1 or dateValue2 is an illegal date
+	 */
+	compare: function( dateValue1, dateValue2 ) {
+		var convert = wb.date.convert;
+
+		if ( isFinite( dateValue1 = convert( dateValue1 ).valueOf() ) && isFinite( dateValue2 = convert( dateValue2 ).valueOf() ) ) {
+			return ( dateValue1 > dateValue2 ) - ( dateValue1 < dateValue2 );
+		}
+		return NaN;
+	},
+
+	/*
+	 * Cross-browser safe way of translating a date to ISO format
+	 * @memberof wb.date
+	 * @param {Date | number[] | number | string | object} dateValue
+	 * @param {boolean} withTime Optional. Whether to include the time in the result, or just the date. False if blank.
+	 * @return {string}
+	 * @example
+	 * toDateISO( new Date() )
+	 * returns "2012-04-27"
+	 * toDateISO( new Date(), true )
+	 * returns "2012-04-27 13:46"
+	 */
+	toDateISO: function( dateValue, withTime ) {
+		var date = wb.date.convert( dateValue ),
+			pad = wb.string.pad;
+
+		return date.getFullYear() + "-" + pad( date.getMonth() + 1, 2, "0" ) + "-" + pad( date.getDate(), 2, "0" ) +
+			( withTime ? " " + pad( date.getHours(), 2, "0" ) + ":" + pad( date.getMinutes(), 2, "0" ) : "" );
+	},
+
+	/*
+	 * Cross-browser safe way of creating a date object from a date string in ISO format
+	 * @memberof wb.date
+	 * @param {string} dateISO Date string in ISO format
+	 * @return {Date}
+	 */
+	fromDateISO: function( dateISO ) {
+		var date = null;
+
+		if ( dateISO && dateISO.match( /\d{4}-\d{2}-\d{2}/ ) ) {
+			date = new Date( dateISO.substr( 0, 4 ), dateISO.substr( 5, 2 ) - 1, dateISO.substr( 8, 2 ), 0, 0, 0, 0 );
+		}
+		return date;
+	}
+};
+
+/*
+ * Returns a RFC4122 compliant Global Unique ID (GUID).
+ * Originally from http://stackoverflow.com/a/2117523/455535
+ */
+wb.guid = function() {
+	return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace( /[xy]/g, function( replacementChar ) {
+		var rand = Math.random() * 16 | 0,
+			newChar = replacementChar === "x" ? rand : ( rand & 0x3 | 0x8 );
+		return newChar.toString( 16 );
+	} );
+};
+
+wb.escapeAttribute = function( str ) {
+	return str.replace( /'/g, "&#39;" ).replace( /"/g, "&#34;" );
+};
 
 } )( wb );
 
 ( function( $, undef ) {
-	"use strict";
+"use strict";
 
-	var methods,
-		settings = {
-			"default": "wet-boew"
-		};
+var methods,
+	settings = {
+		"default": "wet-boew"
+	};
 
-	methods = {
+methods = {
 
-		init: function( options ) {
-			return $.extend( settings, options || {} );
-		},
+	init: function( options ) {
+		return $.extend( settings, options || {} );
+	},
 
-		show: function( onlyAria ) {
-			$( this ).each( function() {
+	show: function( onlyAria ) {
+		$( this ).each( function() {
+			var $elm = $( this );
+			$elm.attr( "aria-hidden", "false" );
+			if ( onlyAria === undef ) {
+				$elm.removeClass( "wb-inv" );
+			}
+		} );
+	},
+
+	hide: function( onlyAria ) {
+		$( this )
+			.each( function() {
 				var $elm = $( this );
-				$elm.attr( "aria-hidden", "false" );
+				$elm.attr( "aria-hidden", "true" );
 				if ( onlyAria === undef ) {
-					$elm.removeClass( "wb-inv" );
+					return $elm.addClass( "wb-inv" );
 				}
 			} );
-		},
+	},
 
-		hide: function( onlyAria ) {
-			$( this )
-				.each( function() {
-					var $elm = $( this );
-					$elm.attr( "aria-hidden", "true" );
-					if ( onlyAria === undef ) {
-						return $elm.addClass( "wb-inv" );
-					}
-				} );
-		},
+	toggle: function( to, from ) {
+		$( this )
+			.addClass( to )
+			.removeClass( from );
+	}
+};
 
-		toggle: function( to, from ) {
-			$( this )
-				.addClass( to )
-				.removeClass( from );
-		}
-	};
+$.fn.wb = function( method ) {
 
-	$.fn.wb = function( method ) {
-
-		if ( methods[ method ] ) {
-			methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ) );
-		} else if ( typeof method === "object" || !method ) {
-			methods.init.apply( this, arguments );
-		} else {
-			$.error( "Method " + method + " does not exist on jquery.wb" );
-		}
-	};
+	if ( methods[ method ] ) {
+		methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ) );
+	} else if ( typeof method === "object" || !method ) {
+		methods.init.apply( this, arguments );
+	} else {
+		$.error( "Method " + method + " does not exist on jquery.wb" );
+	}
+};
 
 } )( jQuery );
 
@@ -1730,68 +1735,69 @@ Modernizr.load( [
 :focusable and :tabable jQuery helper expressions - https://github.com/jquery/jquery-ui/blob/24756a978a977d7abbef5e5bce403837a01d964f/ui/jquery.ui.core.js
 */
 ( function( $ ) {
-	"use strict";
 
-	function focusable( element, isTabIndexNotNaN, visibility ) {
-		var map, mapName, img,
-			nodeName = element.nodeName.toLowerCase( );
-		if ( nodeName === "area" ) {
-			map = element.parentNode;
-			mapName = map.name;
-			if ( !element.href || !mapName || map.nodeName.toLowerCase( ) !== "map" ) {
-				return false;
-			}
-			img = $( "img[usemap=#" + mapName + "]" )[ 0 ];
-			return !!img && visible( img );
+"use strict";
+
+function focusable( element, isTabIndexNotNaN, visibility ) {
+	var map, mapName, img,
+		nodeName = element.nodeName.toLowerCase( );
+	if ( nodeName === "area" ) {
+		map = element.parentNode;
+		mapName = map.name;
+		if ( !element.href || !mapName || map.nodeName.toLowerCase( ) !== "map" ) {
+			return false;
 		}
-		if ( visibility ) {
-			return ( /input|select|textarea|button|object/.test( nodeName ) ? !element.disabled :
-				nodeName === "a" ?
-				element.href || isTabIndexNotNaN :
-				isTabIndexNotNaN ) &&
-			visible( element ); /* the element and all of its ancestors must be visible */
-		} else {
-			return ( /input|select|textarea|button|object/.test( nodeName ) ? !element.disabled :
-				nodeName === "a" ?
-				element.href || isTabIndexNotNaN :
-				isTabIndexNotNaN );
-		}
+		img = $( "img[usemap=#" + mapName + "]" )[ 0 ];
+		return !!img && visible( img );
 	}
-
-	function visible( element ) {
-		return $.expr.filters.visible( element ) && !$( element )
-			.parents( )
-			.addBack( )
-			.filter( function() {
-				return $.css( this, "visibility" ) === "hidden";
-			} )
-			.length;
+	if ( visibility ) {
+		return ( /input|select|textarea|button|object/.test( nodeName ) ? !element.disabled :
+			nodeName === "a" ?
+			element.href || isTabIndexNotNaN :
+			isTabIndexNotNaN ) &&
+		visible( element ); /* the element and all of its ancestors must be visible */
+	} else {
+		return ( /input|select|textarea|button|object/.test( nodeName ) ? !element.disabled :
+			nodeName === "a" ?
+			element.href || isTabIndexNotNaN :
+			isTabIndexNotNaN );
 	}
+}
 
-	$.extend( $.expr[ ":" ], {
-		data: $.expr.createPseudo ? $.expr.createPseudo( function( dataName ) {
-			return function( elem ) {
-				return !!$.data( elem, dataName );
-			};
-		} ) :
+function visible( element ) {
+	return $.expr.filters.visible( element ) && !$( element )
+		.parents( )
+		.addBack( )
+		.filter( function() {
+			return $.css( this, "visibility" ) === "hidden";
+		} )
+		.length;
+}
 
-		// support: jQuery <1.8
+$.extend( $.expr[ ":" ], {
+	data: $.expr.createPseudo ? $.expr.createPseudo( function( dataName ) {
+		return function( elem ) {
+			return !!$.data( elem, dataName );
+		};
+	} ) :
 
-		function( elem, i, match ) {
-			return !!$.data( elem, match[ 3 ] );
-		},
-		focusable: function( element ) {
-			return focusable( element, !isNaN( $.attr( element, "tabindex" ) ), true );
-		},
-		discoverable: function( element ) {
-			return focusable( element, !isNaN( $.attr( element, "tabindex" ) ) );
-		},
-		tabbable: function( element ) {
-			var tabIndex = $.attr( element, "tabindex" ),
-				isTabIndexNaN = isNaN( tabIndex );
-			return ( isTabIndexNaN || tabIndex >= 0 ) && focusable( element, !isTabIndexNaN );
-		}
-	} );
+	// support: jQuery <1.8
+
+	function( elem, i, match ) {
+		return !!$.data( elem, match[ 3 ] );
+	},
+	focusable: function( element ) {
+		return focusable( element, !isNaN( $.attr( element, "tabindex" ) ), true );
+	},
+	discoverable: function( element ) {
+		return focusable( element, !isNaN( $.attr( element, "tabindex" ) ) );
+	},
+	tabbable: function( element ) {
+		var tabIndex = $.attr( element, "tabindex" ),
+			isTabIndexNaN = isNaN( tabIndex );
+		return ( isTabIndexNaN || tabIndex >= 0 ) && focusable( element, !isTabIndexNaN );
+	}
+} );
 
 } )( jQuery );
 
@@ -2172,12 +2178,12 @@ var componentName = "wb-calevt",
 					//Get the appropriate day events if a day link exists
 					if ( $day.parent().get( 0 ).nodeName !== "A" ) {
 						$dayEvents = $day.next();
-					}else{
+					} else {
 						$dayEvents = $day.parent().next();
 					}
 
 					//Create the event list container if it doesn't exist
-					if ( $dayEvents.length !== 1) {
+					if ( $dayEvents.length !== 1 ) {
 						$dayEvents = $( "<ul></ul>" ).insertAfter( $day );
 
 						//Determine the focus based on the day before
@@ -2247,18 +2253,18 @@ $document.on( "focusin focusout keydown", ".wb-calevt-cal .cal-days td > a", fun
 		$link;
 
 	switch ( eventType ) {
-		case "focusin":
-			showEvents.call( event.target );
-			break;
-		case "focusout":
-			hideEvents.call( event.target );
-			break;
-		case "keydown":
-			$link = $( event.target );
-			if ( ( event.which === 13 || event.which === 32 ) && $link.hasClass( "cal-evt" ) ) {
-				$( event.target ).next().find( "a:first" ).trigger( setFocusEvent );
-			}
-			break;
+	case "focusin":
+		showEvents.call( event.target );
+		break;
+	case "focusout":
+		hideEvents.call( event.target );
+		break;
+	case "keydown":
+		$link = $( event.target );
+		if ( ( event.which === 13 || event.which === 32 ) && $link.hasClass( "cal-evt" ) ) {
+			$( event.target ).next().find( "a:first" ).trigger( setFocusEvent );
+		}
+		break;
 	}
 } );
 
@@ -2267,24 +2273,24 @@ $document.on( "keydown", ".wb-calevt-cal .cal-days td > ul li", function( event 
 		$toFocus, $itemParent;
 
 	switch ( event.which ) {
-		case 38:
-			$toFocus = $item.prev().find( "a" );
-			if ( $toFocus.length === 0 ) {
-				$toFocus = $item.siblings( ":last" ).find( "a" );
-			}
-			$toFocus.trigger( setFocusEvent );
-			break;
-		case 40:
-			$toFocus = $item.next().find( "a" );
-			if ( $toFocus.length === 0 ) {
-				$toFocus = $item.siblings( ":first" ).find( "a" );
-			}
-			$toFocus.trigger( setFocusEvent );
-			break;
-		case 27:
-			$itemParent = $item.closest( "td" ).children( "a" );
-			$itemParent.trigger( setFocusEvent );
-			break;
+	case 38:
+		$toFocus = $item.prev().find( "a" );
+		if ( $toFocus.length === 0 ) {
+			$toFocus = $item.siblings( ":last" ).find( "a" );
+		}
+		$toFocus.trigger( setFocusEvent );
+		break;
+	case 40:
+		$toFocus = $item.next().find( "a" );
+		if ( $toFocus.length === 0 ) {
+			$toFocus = $item.siblings( ":first" ).find( "a" );
+		}
+		$toFocus.trigger( setFocusEvent );
+		break;
+	case 27:
+		$itemParent = $item.closest( "td" ).children( "a" );
+		$itemParent.trigger( setFocusEvent );
+		break;
 	}
 } );
 
@@ -2367,7 +2373,7 @@ var i18nText,
 							}
 
 							return days;
-					} )() +
+						} )() +
 					"</tr>" +
 				"</thead>" +
 				"<tbody class='cal-days'></tbody>" +
@@ -2379,8 +2385,8 @@ var i18nText,
 
 	createCalendar = function( $container, settings ) {
 		var calendar = {
-			reInit: initCalendar
-		}, $calendarObj, calendarObj;
+				reInit: initCalendar
+			}, $calendarObj, calendarObj;
 
 		if ( !inited ) {
 			init();
@@ -2421,7 +2427,7 @@ var i18nText,
 		lastYear = this.maxDate.getFullYear();
 		$yearField = $calendarObj.find( ".cal-year" ).empty();
 		for ( y = this.minDate.getFullYear(); y <= lastYear; y += 1 ) {
-			years += "<option value='" + y + "'>" + y + "</option>" ;
+			years += "<option value='" + y + "'>" + y + "</option>";
 		}
 		$yearField.append( years );
 
@@ -2513,14 +2519,14 @@ var i18nText,
 
 		return i18nText.format.replace( /\{ddd\}|\{d\}|\{M\}|\{Y\}/g, function( match ) {
 			switch ( match ) {
-				case "{ddd}":
-					return textWeekDayNames[ parseInt( date.getDay(), 10 ) ];
-				case "{d}":
-					return parseInt( date.getDate(), 10 );
-				case "{M}":
-					return textMonthNames[ parseInt( date.getMonth(), 10 ) ];
-				case "{Y}":
-					return date.getFullYear();
+			case "{ddd}":
+				return textWeekDayNames[ parseInt( date.getDay(), 10 ) ];
+			case "{d}":
+				return parseInt( date.getDate(), 10 );
+			case "{M}":
+				return textMonthNames[ parseInt( date.getMonth(), 10 ) ];
+			case "{Y}":
+				return date.getFullYear();
 			}
 		} );
 	};
@@ -2640,21 +2646,22 @@ $document.on( "keydown", selector, function( event ) {
 		//Key binding for the entire calendar
 		switch ( which ) {
 
-			//page up
-			case 33:
-				date.setDate( minDate.getDate() );
-				/* falls through */
+		//page up
+		case 33:
+			date.setDate( minDate.getDate() );
 
-			//page down
-			case 34:
-				modifier = ( which === 33 ? -1 : 1 );
+			/* falls through */
 
-				if ( event.ctrlKey || event.shiftKey || event.altKey ) {
-					date.setYear( date.getFullYear() + modifier );
-				} else {
-					date.setMonth( date.getMonth() + modifier );
-				}
-				break;
+		//page down
+		case 34:
+			modifier = ( which === 33 ? -1 : 1 );
+
+			if ( event.ctrlKey || event.shiftKey || event.altKey ) {
+				date.setYear( date.getFullYear() + modifier );
+			} else {
+				date.setMonth( date.getMonth() + modifier );
+			}
+			break;
 		}
 
 		//Key binding for navigating calendar days
@@ -2666,27 +2673,27 @@ $document.on( "keydown", selector, function( event ) {
 
 			switch ( which ) {
 
-				// end / home
-				case 35:
-					date.setDate( lastDay );
-					break;
-				case 36:
-					date.setDate( 1 );
-					break;
+			// end / home
+			case 35:
+				date.setDate( lastDay );
+				break;
+			case 36:
+				date.setDate( 1 );
+				break;
 
-				// left / up / right / down arrows
-				case 37:
-					date.setDate( day - 1 );
-					break;
-				case 38:
-					date.setDate( day - 7 );
-					break;
-				case 39:
-					date.setDate( day + 1 );
-					break;
-				case 40:
-					date.setDate( day + 7 );
-					break;
+			// left / up / right / down arrows
+			case 37:
+				date.setDate( day - 1 );
+				break;
+			case 38:
+				date.setDate( day - 7 );
+				break;
+			case 39:
+				date.setDate( day + 1 );
+				break;
+			case 40:
+				date.setDate( day + 7 );
+				break;
 			}
 		}
 
@@ -2777,7 +2784,7 @@ $document.on( "keydown", selector, function( event ) {
  * not once per instance of plugin on the page. So, this is a good place to define
  * variables that are common to all instances of the plugin on a page.
  */
- var componentName = "wb-charts",
+var componentName = "wb-charts",
 	selector = "." + componentName,
 	initEvent = "wb-init" + selector,
 	tableParsingEvent = "passiveparse.wb-tableparser",
@@ -3999,7 +4006,7 @@ $document.on( "timerpoke.wb", function() {
 				( event.type === "toggle" && event.namespace === componentName ) ) ) {
 
 				details = currentTarget.parentNode;
-				isClosed = details.getAttribute( "open" ) === null ;
+				isClosed = details.getAttribute( "open" ) === null;
 				key = "alert-collapsible-state-" + details.getAttribute( "id" );
 
 				if ( isClosed ) {
@@ -5179,6 +5186,7 @@ var componentName = "wb-feeds",
 			// Due to CORS we cannot default to simple ajax pulls of the image. We have to inline the content box
 			return "<li class='col-md-4 col-sm-6 feed-youtube' data-youtube='" + wb.escapeAttribute( JSON.stringify( youtubeDate ) ) + "'><a href='javascript:;'><img src='http://img.youtube.com/vi/" + youtubeDate.videoId + "/mqdefault.jpg' alt='" + wb.escapeAttribute( youtubeDate.title ) + "' title='" + wb.escapeAttribute( youtubeDate.title ) + "' class='img-responsive' /></a></li>";
 		},
+
 		/**
 		 * [pinterest template]
 		 * @param  {entry object}    data
@@ -5190,6 +5198,7 @@ var componentName = "wb-feeds",
 			( data.publishedDate !== "" ? " <small class='small feeds-date'><time>" +
 			wb.date.toDateISO( data.publishedDate, true ) + "</time></small>" : "" ) + "</li>";
 		},
+
 		/**
 		 * [generic template]
 		 * @param  {entry object}	data
@@ -5362,7 +5371,7 @@ var componentName = "wb-feeds",
 
 		len = items.length;
 		for ( i = 0; i !== len; i += 1 ) {
-			items[ i ].fIcon =  icon ;
+			items[ i ].fIcon =  icon;
 
 			if ( items[ i ].publishedDate === undef ) {
 				items[ i ].publishedDate = ( items[ i ].published || items[ i ].pubDate || items[ i ].updated || "" );
@@ -5385,7 +5394,7 @@ var componentName = "wb-feeds",
 			return 0;
 		}
 
-		toProcess -= 1 ;
+		toProcess -= 1;
 		$content.data( {
 			"toProcess": toProcess,
 			"entries": entries
@@ -5498,28 +5507,28 @@ $document.on( "ajax-fetched.wb data-ready.wb-feeds", selector + " " + feedLinkSe
 	// Filter out any events triggered by descendants
 	if ( event.currentTarget === eventTarget ) {
 		switch ( event.type ) {
-			case "ajax-fetched":
-				response = event.fetch.response;
+		case "ajax-fetched":
+			response = event.fetch.response;
 
-				if ( response.query ) {
-					var results = response.query.results;
+			if ( response.query ) {
+				var results = response.query.results;
 
-					if ( results ) {
-						data = results.entry ? results.entry : results.item;
+				if ( results ) {
+					data = results.entry ? results.entry : results.item;
 
-						if ( !Array.isArray( data ) ) {
-							data = [ data ];
-						}
-					} else {
-						data = [];
+					if ( !Array.isArray( data ) ) {
+						data = [ data ];
 					}
 				} else {
-					data = ( response.responseData ) ? response.responseData.feed.entries : response.items || response.feed.entry;
+					data = [];
 				}
+			} else {
+				data = ( response.responseData ) ? response.responseData.feed.entries : response.items || response.feed.entry;
+			}
 
-				break;
-			default:
-				data = event.feedsData;
+			break;
+		default:
+			data = event.feedsData;
 		}
 
 		// Identify that initialization has completed
@@ -5640,7 +5649,7 @@ var componentName = "wb-fnote",
 				dtId = dd.id + "-dt";
 				dd.setAttribute( "tabindex", "-1" );
 				dd.setAttribute( "aria-labelledby", dtId );
-				dt.id = dtId ;
+				dt.id = dtId;
 			}
 
 			// Remove "first/premier/etc"-style text from certain footnote return links (via the child spans that hold those bits of text)
@@ -6420,8 +6429,8 @@ $( document ).on( "open" + selector, function( event, items, modal, title, ajax 
 		var isGallery = items.length > 1,
 			isModal = modal && !isGallery ? modal : false,
 			titleSrc = title ? function() {
-					return title[ $.magnificPopup.instance.index ];
-				} : "title";
+				return title[ $.magnificPopup.instance.index ];
+			} : "title";
 
 		event.preventDefault();
 
@@ -6668,165 +6677,182 @@ var componentName = "wb-menu",
 	 * @param {jQuery DOM element} $ajaxResult The AJAXed in menu content to import
 	 */
 	onAjaxLoaded = function( $elm, $ajaxResult ) {
-		var $ajaxed = $ajaxResult && $ajaxResult.attr( "data-type" ) === "string" ? $ajaxResult : $elm,
-			$menubar = $ajaxed.find( ".menu" ),
-			$menu = $menubar.find( "> li > a" ),
-			target = $elm.data( "trgt" ),
-			$secnav = $( "#wb-sec" ),
-			$info = $( "#wb-info" ),
-			$language = $( "#wb-lng" ),
-			search = document.getElementById( "wb-srch" ),
-			panel = "",
-			panelDOM = document.getElementById( target ),
-			$panel = $( panelDOM ),
-			allProperties = [],
-			$navCurr, $menuItem, $langItems, len, i;
+		var $info = $( "#wb-info" ),
+			inner = function() {
+				var $ajaxed = $ajaxResult && $ajaxResult.attr( "data-type" ) === "string" ? $ajaxResult : $elm,
+					$menubar = $ajaxed.find( ".menu" ),
+					$menu = $menubar.find( "> li > a" ),
+					target = $elm.data( "trgt" ),
+					$secnav = $( "#wb-sec" ),
+					$language = $( "#wb-lng" ),
+					search = document.getElementById( "wb-srch" ),
+					panel = "",
+					panelDOM = document.getElementById( target ),
+					$panel = $( panelDOM ),
+					allProperties = [],
+					$navCurr, $menuItem, $langItems, len, i;
 
-		/*
-		 * Build the mobile panel
-		 */
+				/*
+				 * Build the mobile panel
+				 */
 
-		// Add search
-		if ( search !== null ) {
-			panel += "<section class='srch-pnl'>" +
-				search.innerHTML
-					.replace( /h2>/i, "h3>" )
-					.replace( /(for|id)="([^"]+)"/gi, "$1='$2-imprt'" ) +
-				"</section>";
-		}
-
-		// Add active language offer
-		if ( $language.length !== 0 ) {
-			$langItems = $language.find( "li:not(.curr)" );
-			len = $langItems.length;
-			panel += "<section class='lng-ofr'>" +
-				"<h3>" + $language.children( "h2" ).html() + "</h3>" +
-				"<ul class='list-inline'>";
-			for ( i = 0; i !== len; i += 1 ) {
-				panel += $langItems[ i ].innerHTML
-					.replace( /(<a\s.*<\/a>?)/, "<li>$1</li>" );
-			}
-			panel += "</ul></section>";
-		}
-
-		// Create menu system
-		if ( $secnav.length !== 0 || $menubar.length !== 0 || $info.length !== 0 ) {
-
-			// Add the secondary menu
-			if ( $secnav.length !== 0 ) {
-				allProperties.push( [
-					$secnav.find( "ul" ).filter( ":not(li > ul)" ).find( " > li > *:first-child" ).get(),
-					"sec-pnl",
-					$secnav.find( "h2" ).html()
-				] );
-
-				if ( $secnav.find( ".wb-navcurr" ).length === 0 ) {
-
-					// Trigger the navcurrent plugin
-					$secnav.trigger( navCurrentEvent, breadcrumb );
-				}
-			}
-
-			// Add the site menu
-			if ( $menubar.length !== 0 ) {
-
-				// Add the menubar role if it is missing
-				if ( !$menubar.attr( "role" ) ) {
-					$menubar.attr( "role", "menubar" );
+				// Add search
+				if ( search !== null ) {
+					panel += "<section class='srch-pnl'>" +
+						search.innerHTML
+							.replace( /h2>/i, "h3>" )
+							.replace( /(for|id)="([^"]+)"/gi, "$1='$2-imprt'" ) +
+						"</section>";
 				}
 
-				allProperties.push( [
-					$menu.get(),
-					"sm-pnl",
-					$ajaxed.find( "h2" ).html()
-				] );
-			}
-
-			// Add the site information
-			if ( $info.length !== 0 ) {
-				allProperties.push( [
-					$info.find( "h3, a" ).not( "section a" ),
-					"info-pnl",
-					$info.find( "h2" ).html()
-				] );
-
-				if ( $info.find( ".wb-navcurr" ).length === 0 ) {
-
-					// Trigger the navcurrent plugin
-					$info.trigger( navCurrentEvent, breadcrumb );
+				// Add active language offer
+				if ( $language.length !== 0 ) {
+					$langItems = $language.find( "li:not(.curr)" );
+					len = $langItems.length;
+					panel += "<section class='lng-ofr'>" +
+						"<h3>" + $language.children( "h2" ).html() + "</h3>" +
+						"<ul class='list-inline'>";
+					for ( i = 0; i !== len; i += 1 ) {
+						panel += $langItems[ i ].innerHTML
+							.replace( /(<a\s.*<\/a>?)/, "<li>$1</li>" );
+					}
+					panel += "</ul></section>";
 				}
-			}
 
-			panel += createMobilePanelMenu( allProperties );
-		}
+				// Create menu system
+				if ( $secnav.length !== 0 || $menubar.length !== 0 || $info.length !== 0 ) {
 
-		// Let's now populate the DOM since we have done all the work in a documentFragment
-		panelDOM.innerHTML = "<header class='modal-header'><div class='modal-title'>" +
-				document.getElementById( "wb-glb-mn" )
-					.getElementsByTagName( "h2" )[ 0 ]
-						.innerHTML +
-				"</div></header><div class='modal-body'>" + panel + "</div>";
-		panelDOM.className += " wb-overlay modal-content overlay-def wb-panel-r";
-		$panel
-			.trigger( "wb-init.wb-overlay" )
-			.find( "summary" )
-				.attr( "tabindex", "-1" )
-				.trigger( detailsInitEvent );
-		$panel
-			.find( ".mb-menu > li:first-child" )
-				.find( ".mb-item" )
-					.attr( "tabindex", "0" );
+					// Add the secondary menu
+					if ( $secnav.length !== 0 ) {
+						allProperties.push( [
+							$secnav.find( "ul" ).filter( ":not(li > ul)" ).find( " > li > *:first-child" ).get(),
+							"sec-pnl",
+							$secnav.find( "h2" ).html()
+						] );
 
-		/*
-		 * Build the regular mega menu
-		 */
-		$ajaxed
-			.find( ":discoverable" )
-				.attr( "tabindex", "-1" );
+						if ( $secnav.find( ".wb-navcurr" ).length === 0 ) {
 
-		if ( $menu.length !== 0 ) {
-			$menu[ 0 ].setAttribute( "tabindex", "0" );
-			drizzleAria( $menu );
-			$menu
-				.filter( "[aria-haspopup=true]" )
-					.append( "<span class='expicon glyphicon glyphicon-chevron-down'></span>" );
-		}
+							// Trigger the navcurrent plugin
+							$secnav.trigger( navCurrentEvent, breadcrumb );
+						}
+					}
 
-		// Replace elements
-		$elm.html( $ajaxed.html() );
+					// Add the site menu
+					if ( $menubar.length !== 0 ) {
 
-		// Trigger the navcurrent plugin
-		setTimeout( function() {
-			$elm.trigger( navCurrentEvent, breadcrumb );
-			$panel.find( "#sm-pnl" ).trigger( navCurrentEvent, breadcrumb );
+						// Add the menubar role if it is missing
+						if ( !$menubar.attr( "role" ) ) {
+							$menubar.attr( "role", "menubar" );
+						}
 
-			// Ensure that wb-navcurr is reflected in the top level
-			$navCurr = $panel.find( ".wb-navcurr" );
-			len = $navCurr.length;
-			for ( i = 0; i !== len; i += 1 ) {
-				$menuItem = $navCurr.eq( i );
+						allProperties.push( [
+							$menu.get(),
+							"sm-pnl",
+							$ajaxed.find( "h2" ).html()
+						] );
+					}
 
-				// If not at the top level, then add wb-navcurr to the top level
-				if ( !$menuItem.hasClass( ".mb-item" ) ) {
-					$menuItem = $menuItem
-									.closest( "details" )
-										.children( "summary" )
-											.addClass( "wb-navcurr" );
+					// Add the site information
+					if ( $info.length !== 0 ) {
+						allProperties.push( [
+							$info.find( "h3, a" ).not( "section a" ),
+							"info-pnl",
+							$info.find( "h2" ).html()
+						] );
+
+						if ( $info.find( ".wb-navcurr" ).length === 0 ) {
+
+							// Trigger the navcurrent plugin
+							$info.trigger( navCurrentEvent, breadcrumb );
+						}
+					}
+
+					panel += createMobilePanelMenu( allProperties );
 				}
-			}
 
-			// Open up the secondary menu if it has wb-navcurr and has a submenu
-			$menuItem = $panel.find( "#sec-pnl .wb-navcurr.mb-item" );
-			if ( $menuItem.attr( "aria-haspopup" ) === "true" ) {
-				$menuItem
-					.trigger( "click" )
-					.parent()
-						.prop( "open", "open" );
-			}
+				// Let's now populate the DOM since we have done all the work in a documentFragment
+				panelDOM.innerHTML = "<header class='modal-header'><div class='modal-title'>" +
+						document.getElementById( "wb-glb-mn" )
+							.getElementsByTagName( "h2" )[ 0 ]
+								.innerHTML +
+						"</div></header><div class='modal-body'>" + panel + "</div>";
+				panelDOM.className += " wb-overlay modal-content overlay-def wb-panel-r";
+				$panel
+					.trigger( "wb-init.wb-overlay" )
+					.find( "summary" )
+						.attr( "tabindex", "-1" )
+						.trigger( detailsInitEvent );
+				$panel
+					.find( ".mb-menu > li:first-child" )
+						.find( ".mb-item" )
+							.attr( "tabindex", "0" );
 
-			// Identify that initialization has completed
-			wb.ready( $elm, componentName );
-		}, 1 );
+				/*
+				 * Build the regular mega menu
+				 */
+				$ajaxed
+					.find( ":discoverable" )
+						.attr( "tabindex", "-1" );
+
+				if ( $menu.length !== 0 ) {
+					$menu[ 0 ].setAttribute( "tabindex", "0" );
+					drizzleAria( $menu );
+					$menu
+						.filter( "[aria-haspopup=true]" )
+							.append( "<span class='expicon glyphicon glyphicon-chevron-down'></span>" );
+				}
+
+				// Replace elements
+				$elm.html( $ajaxed.html() );
+
+				// Trigger the navcurrent plugin
+				setTimeout( function() {
+					$elm.trigger( navCurrentEvent, breadcrumb );
+					$panel.find( "#sm-pnl" ).trigger( navCurrentEvent, breadcrumb );
+
+					// Ensure that wb-navcurr is reflected in the top level
+					$navCurr = $panel.find( ".wb-navcurr" );
+					len = $navCurr.length;
+					for ( i = 0; i !== len; i += 1 ) {
+						$menuItem = $navCurr.eq( i );
+
+						// If not at the top level, then add wb-navcurr to the top level
+						if ( !$menuItem.hasClass( ".mb-item" ) ) {
+							$menuItem = $menuItem
+											.closest( "details" )
+												.children( "summary" )
+													.addClass( "wb-navcurr" );
+						}
+					}
+
+					// Open up the secondary menu if it has wb-navcurr and has a submenu
+					$menuItem = $panel.find( "#sec-pnl .wb-navcurr.mb-item" );
+					if ( $menuItem.attr( "aria-haspopup" ) === "true" ) {
+						$menuItem
+							.trigger( "click" )
+							.parent()
+								.prop( "open", "open" );
+					}
+
+					// Identify that initialization has completed
+					wb.ready( $elm, componentName );
+				}, 1 );
+			},
+			$footerAjax  = $info.find( "[data-ajax-replace],[data-ajax-append],[data-ajax-prepend]" ),
+			footerAjaxLength = $footerAjax.length,
+			ajaxCount = 0;
+
+		//Delay the execution the menu until any ajaxed footer content is in
+		if ( footerAjaxLength === 0 ) {
+			inner();
+		} else {
+			$info.on( "wb-contentupdated ajax-failed.wb", function() {
+				ajaxCount += 1;
+				if ( ajaxCount === footerAjaxLength ) {
+					inner();
+				}
+			} );
+		}
 	},
 
 	/**
@@ -6950,7 +6976,7 @@ $document.on( "timerpoke.wb " + initEvent + " ajax-fetched.wb ajax-failed.wb", s
 } );
 
 $document.on( "mouseleave", selector + " .menu", function( event ) {
-    var $currentTarget = $( event.currentTarget );
+	var $currentTarget = $( event.currentTarget );
 
 	// Clear the timeout for open/closing menus
 	clearTimeout( globalTimeout );
@@ -6991,25 +7017,25 @@ $document.on( "click", selector + " [role=menu] [aria-haspopup=true]", function(
 		isOpen = submenu.getAttribute( "aria-hidden" ) === "false",
 		menuItemOffsetTop, menuContainer;
 
-		// Close any other open menus
-		if ( !isOpen ) {
-			$( parent )
-				.closest( "[role^='menu']" )
-					.find( "[aria-hidden=false]" )
-						.parent()
-							.find( "[aria-haspopup=true]" )
-								.not( menuItem )
-									.trigger( "click" );
+	// Close any other open menus
+	if ( !isOpen ) {
+		$( parent )
+			.closest( "[role^='menu']" )
+				.find( "[aria-hidden=false]" )
+					.parent()
+						.find( "[aria-haspopup=true]" )
+							.not( menuItem )
+								.trigger( "click" );
 
-			// Ensure the opened menu is in view if in a mobile panel
-			menuContainer = document.getElementById( "mb-pnl" );
-			menuItemOffsetTop = menuItem.offsetTop;
-			if ( $.contains( menuContainer, menuItem ) &&
-				menuItemOffsetTop < menuContainer.scrollTop ) {
+		// Ensure the opened menu is in view if in a mobile panel
+		menuContainer = document.getElementById( "mb-pnl" );
+		menuItemOffsetTop = menuItem.offsetTop;
+		if ( $.contains( menuContainer, menuItem ) &&
+			menuItemOffsetTop < menuContainer.scrollTop ) {
 
-				menuContainer.scrollTop = menuItemOffsetTop;
-			}
+			menuContainer.scrollTop = menuItemOffsetTop;
 		}
+	}
 
 	submenu.setAttribute( "aria-expanded", !isOpen );
 	submenu.setAttribute( "aria-hidden", isOpen );
@@ -7870,7 +7896,7 @@ $document.on( initializedEvent, selector, function( event ) {
 		} else {
 
 			// Do nothing since IE8 support is no longer required
-            return;
+			return;
 		}
 
 		// Identify that initialization has completed
@@ -8033,18 +8059,17 @@ $document.on( "keydown", dispCtrls, function( event ) {
 	if ( !( event.ctrlKey || event.altKey || event.metaKey ) ) {
 		switch ( which ) {
 		case 32:
+
 			// Mute/unmute if focused on the mute/unmute button or volume input.
 			if ( $( event.target ).hasClass( "mute" ) || event.target.nodeName === "INPUT" ) {
 				$playerTarget.find( ".mute" ).trigger( "click" );
-			}
+			} else if ( $( event.target ).hasClass( "cc" ) ) {
 
-			// Show/hide captions if focused on the closed captions button.
-			else if ( $( event.target ).hasClass( "cc" ) ) {
+				// Show/hide captions if focused on the closed captions button.
 				$playerTarget.find( ".cc" ).trigger( "click" );
-			}
+			} else {
 
-			// Play/pause if focused on anything else (i.e. the video itself, play/pause button or progress bar).
-			else {
+				// Play/pause if focused on anything else (i.e. the video itself, play/pause button or progress bar).
 				$playerTarget.find( ".playpause" ).trigger( "click" );
 			}
 			break;
@@ -8083,7 +8108,7 @@ $document.on( "keyup", ctrls, function( event ) {
 } );
 
 $document.on( "wb-activate", selector, function() {
-    this.player( "play" );
+	this.player( "play" );
 } );
 
 $document.on( multimediaEvents, selector, function( event, simulated ) {
@@ -8164,8 +8189,8 @@ $document.on( multimediaEvents, selector, function( event, simulated ) {
 		// Skip to pointer from the querystring
 		skipTo = wb.pageUrlParts.params[ event.target.id ];
 		if ( skipTo ) {
-				skipTo = parseTime( skipTo );
-				eventTarget.player( "setCurrentTime", skipTo );
+			skipTo = parseTime( skipTo );
+			eventTarget.player( "setCurrentTime", skipTo );
 		}
 		break;
 
@@ -8526,7 +8551,7 @@ var componentName = "wb-overlay",
 	};
 
 $document.on( "timerpoke.wb " + initEvent + " keydown open" + selector +
-	" close" + selector, selector, function( event ) {
+" close" + selector, selector, function( event ) {
 
 	var eventType = event.type,
 		which = event.which,
@@ -9050,8 +9075,8 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 		method: "POST",				/* the request method to use */
 		additionalData: null,		/* additional data to send with the request */
 		refreshCallback: function( response ) {	/* callback function used to check the server response */
-				return response.replace( /\s/g, "" ) === "true";
-			}
+			return response.replace( /\s/g, "" ) === "true";
+		}
 	},
 
 	/**
@@ -9429,7 +9454,7 @@ var $modal, $modalLink, countdownInterval, i18n, i18nText,
 
 // Bind the plugin events
 $document.on( "timerpoke.wb " + initEvent + " " + keepaliveEvent + " " +
-	inactivityEvent + " " + resetEvent, selector, function( event, settings ) {
+inactivityEvent + " " + resetEvent, selector, function( event, settings ) {
 
 	var eventType = event.type;
 
@@ -9891,41 +9916,41 @@ $document.on( "init.dt draw.dt", selector, function( event, settings ) {
 } );
 
 // Handle the draw.dt event
-$document.on( "submit", ".wb-tables-filter", function(event) {
+$document.on( "submit", ".wb-tables-filter", function( event ) {
 
-    event.preventDefault();
+	event.preventDefault();
 
-    var $form = $(this),
-		$datatable = $("#" + $form.data("bind-to") ).dataTable({ "retrieve": true }).api();
+	var $form = $( this ),
+		$datatable = $( "#" + $form.data( "bind-to" ) ).dataTable( { "retrieve": true } ).api();
 
-    // Lets reset the search;
-    $datatable.search('').columns().search('');
+	// Lets reset the search;
+	$datatable.search( "" ).columns().search( "" );
 
     // Lets loop throug all options
-    $form.find('[name]').each(function() {
-        var $elm= $(this),
-            $value = ($elm.is('select')) ? $elm.find('option:selected').val() : $elm.val();
+	$form.find( "[name]" ).each( function() {
+		var $elm = $( this ),
+			$value = ( $elm.is( "select" ) ) ? $elm.find( "option:selected" ).val() : $elm.val();
 
-        if ($value) {
-            $datatable.column( parseInt($elm.attr('data-column'),10 ) ).search( $value ).draw();
-        }
-    });
+		if ( $value ) {
+			$datatable.column( parseInt( $elm.attr( "data-column" ), 10 ) ).search( $value ).draw();
+		}
+	} );
 
-    return false;
-});
+	return false;
+} );
 
-$document.on( "click", ".wb-tables-filter [type='reset']" ,function(event) {
-    event.preventDefault();
+$document.on( "click", ".wb-tables-filter [type='reset']", function( event ) {
+	event.preventDefault();
 
-    var $form = $(this).closest(".wb-tables-filter"),
-        $datatable = $("#" + $form.data("bind-to") ).dataTable({ "retrieve": true }).api();
+	var $form = $( this ).closest( ".wb-tables-filter" ),
+		$datatable = $( "#" + $form.data( "bind-to" ) ).dataTable( { "retrieve": true } ).api();
 
-    $datatable.search('').columns().search('').draw();
+	$datatable.search( "" ).columns().search( "" ).draw();
 
-    $form.find("select").prop("selectedIndex",0);
+	$form.find( "select" ).prop( "selectedIndex", 0 );
 
-    return false;
-});
+	return false;
+} );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
@@ -10617,9 +10642,9 @@ var componentName = "wb-tabs",
 							$openDetails
 								.addClass( "fade in" )
 								.attr( {
-										"aria-hidden": "false",
-										"aria-expanded": "true"
-									} );
+									"aria-hidden": "false",
+									"aria-expanded": "true"
+								} );
 						}
 
 						// Enable equal heights for large view or disable for small view
@@ -10666,58 +10691,58 @@ var componentName = "wb-tabs",
 		}
 	};
 
- // Bind the init event of the plugin
- $document.on( "timerpoke.wb " + initEvent + " " + shiftEvent + " " + selectEvent, selector, function( event ) {
+// Bind the init event of the plugin
+$document.on( "timerpoke.wb " + initEvent + " " + shiftEvent + " " + selectEvent, selector, function( event ) {
 	var eventTarget = event.target,
 		eventCurrentTarget = event.currentTarget,
 		$elm;
 
-		// Filter out any events triggered by descendants
-		if ( eventCurrentTarget === eventTarget ) {
-			switch ( event.type ) {
-			case "timerpoke":
-				$elm = $( eventTarget );
-				if ( !$elm.hasClass( componentName + "-inited" ) ) {
-					init( event );
-				} else if ( $elm.hasClass( "playing" ) ) {
-					onTimerPoke( $elm );
-				}
-				break;
-
-			/*
-			 * Init
-			 */
-			case "wb-init":
+	// Filter out any events triggered by descendants
+	if ( eventCurrentTarget === eventTarget ) {
+		switch ( event.type ) {
+		case "timerpoke":
+			$elm = $( eventTarget );
+			if ( !$elm.hasClass( componentName + "-inited" ) ) {
 				init( event );
-				break;
-
-			/*
-			 * Change tab panels by a delta
-			 */
-			case "wb-shift":
-				onShift( event, $( eventTarget ) );
-				break;
-
-			/*
-			 * Select a specific tab panel
-			 */
-			case "wb-select":
-				onSelect( event.id );
-				break;
+			} else if ( $elm.hasClass( "playing" ) ) {
+				onTimerPoke( $elm );
 			}
+			break;
+
+		/*
+		 * Init
+		 */
+		case "wb-init":
+			init( event );
+			break;
+
+		/*
+		 * Change tab panels by a delta
+		 */
+		case "wb-shift":
+			onShift( event, $( eventTarget ) );
+			break;
+
+		/*
+		 * Select a specific tab panel
+		 */
+		case "wb-select":
+			onSelect( event.id );
+			break;
 		}
+	}
 
 	/*
 	 * Since we are working with events we want to ensure that we are being passive about our control,
 	 * so returning true allows for events to always continue
 	 */
 	return true;
- } );
+} );
 
- /*
-  * Tabs, next, previous and play/pause
-  */
- $document.on( activateEvent, controls, function( event ) {
+/*
+ * Tabs, next, previous and play/pause
+ */
+$document.on( activateEvent, controls, function( event ) {
 	var which = event.which,
 		elm = event.currentTarget,
 		className = elm.className,
@@ -11406,7 +11431,7 @@ var componentName = "wb-toggle",
 
 // Bind the plugin's events
 $document.on( "timerpoke.wb " + initEvent + " " + toggleEvent +
-	" click", selector, function( event, data ) {
+" click", selector, function( event, data ) {
 
 	var eventType = event.type;
 
@@ -11754,7 +11779,7 @@ $document.on( clickEvents, linkSelector, function( event ) {
  * not once per instance of plugin on the page. So, this is a good place to define
  * variables that are common to all instances of the plugin on a page.
  */
- var componentName = "wb-zebra",
+var componentName = "wb-zebra",
 	selector = "." + componentName,
 	hoverColClass = componentName + "-col-hover",
 	selectorHoverCol = "." + hoverColClass + " td, " + hoverColClass + " th",

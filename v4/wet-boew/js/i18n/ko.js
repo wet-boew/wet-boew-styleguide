@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "ko",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "탭 목록으로 돌아 가기",
 	"tab-pnl-end3": "또는 페이지의 나머지를 계속합니다.",
 	"tab-play": "놀이",
+
 	/* Multimedia player */
 	"mmp-play": "놀이",
 	pause: "중지",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "현재 위치 :",
 	dur: "총 시간",
+
 	/* Share widget */
 	"shr-txt": "공유",
 	"shr-pg": " 이 페이지",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " 이 오디오 파일",
 	"shr-hnt": "{s} 로 ",
 	"shr-disc": "제품이나 서비스의 어떠한 보증을 표현하거나 암시합니다.",
+
 	/* Form validation */
 	"frm-nosubmit": "양식을 제출 할 수 없습니다 때문에 ",
 	"errs-fnd": " 오류가 발견되었습니다.",
 	"err-fnd": " 오류가 발견되었습니다.",
+
 	/* Date picker */
 	"date-hide": "캘린더 숨기기",
 	"date-show": "필드에 달력에서 날짜를 선택:",
 	"date-sel": "선택된",
+
 	/* Calendar */
 	days: [
 		"일요일",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "가다",
 	prvMnth: "이전 월: ",
 	nxtMnth: "다음 월: ",
+
 	/* Lightbox */
 	"lb-curr": "%total% 항목 %curr%",
 	"lb-xhr-err": "이 콘텐츠를로드하지 못했습니다.",
 	"lb-img-err": "이 이미지를로드하지 못했습니다.",
+
 	/* Charts widget */
 	"tbl-txt": "표",
 	"tbl-dtls": "차트. 다음 테이블의 세부 사항.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "세션이 #min# 분 #sec# 초에 자동으로 만료됩니다.",
 	"st-to-msg-end": "선택은 세션을 확장하는 \"세션 계속\".",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "미안 세션이 이미 만료되었습니다. 다시 로그인 해주십시오.",
 	"st-btn-cont": "세션을 계속",
 	"st-btn-end": "현재 세션을 종료",
+
 	/* Toggle details */
 	"td-toggle": "모두 전환",
 	"td-open": "모두 확장",
 	"td-close": "모두 접기",
 	"td-ttl-open": "의 모든 콘텐츠 섹션을 확장합니다",
 	"td-ttl-close": "의 모든 콘텐츠 섹션을 축소",
+
 	/* Table enhancement */
 	sortAsc: ": 정렬 오름차순을위한 활성화",
 	sortDesc: ": 정렬 내림차순에 대한 활성화",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "_MENU_ 항목을 표시",
 	filter: "필터 항목",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "확대",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "위치에 실패했습니다. 위치 서비스가 활성화되어 있는지 확인하십시오.",
 	"geo-geoloc-uncapable": "현지화는 브라우저에서 지원되지 않습니다.",
 	"geo-lgnd-grphc": "지도 계층에 대한 전설 그래픽.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "기본 HTML 버전",
 	"wb-enable": "표준 버전",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "로그인"
 };

@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "pl",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Powrót do listy zakładek",
 	"tab-pnl-end3": "lub kontynuuj do końca strony.",
 	"tab-play": "Odtwarzanie",
+
 	/* Multimedia player */
 	"mmp-play": "Odtwarzanie",
 	pause: "Pauza",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Aktualna pozycja:",
 	dur: "Czas całkowity:",
+
 	/* Share widget */
 	"shr-txt": "Prześlij",
 	"shr-pg": " tę stronę",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " audiofile",
 	"shr-hnt": " do {s} ",
 	"shr-disc": "Nie wyrażamy bezposrednio lub pośrednio poparcia dla żadnych produktów ani usług.",
+
 	/* Form validation */
 	"frm-nosubmit": "Nie można było wysłać formularza, ponieważ ",
 	"errs-fnd": " znaleziono błędy",
 	"err-fnd": " znaleziono błąd",
+
 	/* Date picker */
 	"date-hide": "Ukryj kalendarz",
 	"date-show": "Proszę wybrać datę z kalendarza:",
 	"date-sel": "Wybrany",
+
 	/* Calendar */
 	days: [
 		"Niedziela",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Przejdź",
 	prvMnth: "Poprzedni miesiąc: ",
 	nxtMnth: "Następny miesiąc: ",
+
 	/* Lightbox */
 	"lb-curr": "Pozycja %curr% z %total%",
 	"lb-xhr-err": "Nie udało się załadować treści.",
 	"lb-img-err": "Nie udało się załadować obrazu.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabela",
 	"tbl-dtls": "Wykres. Szczegóły w tabeli poniżej.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Twoja sesja wygaśnie automatycznie w #min# min #sec# sek.",
 	"st-to-msg-end": "Wybierz \"Kontynuuj sesję\" przedłużyć sesję.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Niestety sesja już się skończyła. Zaloguj się ponownie.",
 	"st-btn-cont": "Kontynuuj sesji",
 	"st-btn-end": "Koniec sesji teraz",
+
 	/* Toggle details */
 	"td-toggle": "Wyłącz wszystko",
 	"td-open": "Rozwiń wszystko",
 	"td-close": "Zwiń wszystko",
 	"td-ttl-open": "Rozwiń wszystkie sekcje zawartości",
 	"td-ttl-close": "Zwiń wszystkie sekcje zawartości",
+
 	/* Table enhancement */
 	sortAsc: ": włączyć dla sortowania rosnąco",
 	sortDesc: ": włączyć dla sortowania malejąco",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Pokaż _MENU_ wpisów",
 	filter: "Filtruj pozycje",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Powiększ",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Lokalizacja nie powiodło się. Proszę upewnić się, że usługi lokalizacyjne są włączone.",
 	"geo-geoloc-uncapable": "Lokalizacja nie jest obsługiwany przez przeglądarkę.",
 	"geo-lgnd-grphc": "Grafika Legenda warstwy mapy.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Podstawowa wersja HTML",
 	"wb-enable": "Wersja standardowa",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Zaloguj się"
 };

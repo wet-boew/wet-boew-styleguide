@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "lv",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Atgriezties uz sarakstu cilnēm",
 	"tab-pnl-end3": "vai turpināt uz pārējo lapu.",
 	"tab-play": "Spēlēt",
+
 	/* Multimedia player */
 	"mmp-play": "Spēlēt",
 	pause: "Pauze",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Šobdrīdējā pozīcija:",
 	dur: "Kopējais laiks:",
+
 	/* Share widget */
 	"shr-txt": "Ieteikt",
 	"shr-pg": " šo lapu",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " šis audio fails",
 	"shr-hnt": " ar {s} ",
 	"shr-disc": "Neviena jebkuru produktu vai pakalpojumu apstiprināšanu vai ietverta.",
+
 	/* Form validation */
 	"frm-nosubmit": "Formu nav iespējams iesniegt, jo ",
 	"errs-fnd": " tika atrastas kļūdas.",
 	"err-fnd": " tika atrasta kļūda.",
+
 	/* Date picker */
 	"date-hide": "Slēpt kalendāru",
 	"date-show": "Izvēlēties datumu no kalendāra lauka:",
 	"date-sel": "Atlasīts",
+
 	/* Calendar */
 	days: [
 		"Pirmdiena",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Iet uz",
 	prvMnth: "Iepriekšējais mēnesis: ",
 	nxtMnth: "Nākošais mēnesis: ",
+
 	/* Lightbox */
 	"lb-curr": "Vienums %curr% no %total%",
 	"lb-xhr-err": "Šo saturu nevar ielādēt",
 	"lb-img-err": "Šo attēlu nevar ielādēt",
+
 	/* Charts widget */
 	"tbl-txt": "Tabula",
 	"tbl-dtls": "Grafiks. Detaļas tabulā.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Jūsu sesija beigsies automātiski #min# min sekundē #sec#.",
 	"st-to-msg-end": "Izvēlieties \"Turpināt sesiju\", lai paplašinātu savu sesiju.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Atvainojiet, jūsu sesija jau ir beidzies. Lūdzu pieteikties vēlreiz.",
 	"st-btn-cont": "Turpināt sesiju",
 	"st-btn-end": "Beigt sesiju tagad",
+
 	/* Toggle details */
 	"td-toggle": "Pārslēgt visas",
 	"td-open": "Izvērst visu",
 	"td-close": "Sakļaut visu",
 	"td-ttl-open": "Paplašināt visas sadaļas satura",
 	"td-ttl-close": "Sakļaut visas sadaļas satura",
+
 	/* Table enhancement */
 	sortAsc: ": aktivizēt uz augošā šķirot",
 	sortDesc: ": aktivizēt par dilstošā šķirot",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Parādīt _MENU_ ieraksti",
 	filter: "Atlasīt vienumu",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Pievelciet",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Atrašanās vieta neizdevās. Lūdzu, pārliecinieties, ka uz atrašanās vietas pakalpojumi tiek iespējots.",
 	"geo-geoloc-uncapable": "Lokalizācija neatbalsta pārlūkprogramma.",
 	"geo-lgnd-grphc": "Leģenda grafiskais attiecīgā karte slāni.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Pamata HTML versija",
 	"wb-enable": "Standarta versija",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Pierakstīties"
 };

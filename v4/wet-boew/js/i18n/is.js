@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "is",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Fara aftur á flipann lista",
 	"tab-pnl-end3": "eða halda áfram til the hvíla af síðunni.",
 	"tab-play": "Spila",
+
 	/* Multimedia player */
 	"mmp-play": "Spila",
 	pause: "Brot",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Núverandi staða:",
 	dur: "Samtals tími:",
+
 	/* Share widget */
 	"shr-txt": "Deila",
 	"shr-pg": " þessari síðu",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " þetta hljóðskrá",
 	"shr-hnt": " með {s} ",
 	"shr-disc": "Engin áritun allar vörur eða þjónustu er gefið eða gefið í skyn.",
+
 	/* Form validation */
 	"frm-nosubmit": "Eyðublaðið var ekki hægt að skila því ",
 	"errs-fnd": " villur fundust.",
 	"err-fnd": " villa fannst.",
+
 	/* Date picker */
 	"date-hide": "Fela dagatal",
 	"date-show": "Veldu dagsetningu af dagatali fyrir akur:",
 	"date-sel": "Valin",
+
 	/* Calendar */
 	days: [
 		"Sunnudagur",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Farðu",
 	prvMnth: "Fyrri mánuður: ",
 	nxtMnth: "Næsti mánuður: ",
+
 	/* Lightbox */
 	"lb-curr": "Item %curr% af %total%",
 	"lb-xhr-err": "Þetta efni tókst að hlaða.",
 	"lb-img-err": "Þessi mynd tókst að hlaða.",
+
 	/* Charts widget */
 	"tbl-txt": "Tafla",
 	"tbl-dtls": "Töfluna. Upplýsingar í eftirfarandi töflu.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Fundur mun renna sjálfkrafa í #min# mín #sec# sek.",
 	"st-to-msg-end": "Sækja Veldu \"Áfram fundur\" til að lengja setu.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Því miður fundur hefur þegar útrunninn. Vinsamlegast skráðu þig inn aftur.",
 	"st-btn-cont": "Halda áfram setu",
 	"st-btn-end": "Endir setu nú",
+
 	/* Toggle details */
 	"td-toggle": "Gera alla",
 	"td-open": "Stækka allt",
 	"td-close": "Draga allt",
 	"td-ttl-open": "Stækka alla hluta af efni",
 	"td-ttl-close": "Fella alla hluta af efni",
+
 	/* Table enhancement */
 	sortAsc: ": virkja til hækkandi raða",
 	sortDesc: ": virkja til lækkandi konar",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Sýna _MENU_ færslur",
 	filter: "Sía atriði",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Auka aðdrátt",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Staðsetning mistókst. Skaltu tryggja að staðsetningu þjónustu eru virk.",
 	"geo-geoloc-uncapable": "Staðsetning er ekki stutt af vafranum þínum.",
 	"geo-lgnd-grphc": "Legend grafík fyrir kortinu lag.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Undirstöðu HTML útgáfa",
 	"wb-enable": "Standard útgáfa",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Skrá inn"
 };

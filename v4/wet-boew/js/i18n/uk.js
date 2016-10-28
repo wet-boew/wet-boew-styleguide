@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "uk",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Повернутися на вкладку списку",
 	"tab-pnl-end3": "або продовжити до кінця сторінки.",
 	"tab-play": "Програти",
+
 	/* Multimedia player */
 	"mmp-play": "Програти",
 	pause: "Пауза",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Поточне положення:",
 	dur: "Загальний час:",
+
 	/* Share widget */
 	"shr-txt": "Поділитись ",
 	"shr-pg": " цією сторінкою",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " це аудіо",
 	"shr-hnt": "з {s}",
 	"shr-disc": "Не мається на увазі схвалення або просування будь-яких продукції або послуг",
+
 	/* Form validation */
 	"frm-nosubmit": "Форма не подається через те, що",
 	"errs-fnd": "знайдено помилки.",
 	"err-fnd": "знайдено помилку.",
+
 	/* Date picker */
 	"date-hide": "Сховати календар",
 	"date-show": "Оберіть дату в календарі:",
 	"date-sel": "Вибрано",
+
 	/* Calendar */
 	days: [
 		"Неділя",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Перейти",
 	prvMnth: "Попередній місяць: ",
 	nxtMnth: "Наступний місяць: ",
+
 	/* Lightbox */
 	"lb-curr": "Знайдено %curr% із %total%",
 	"lb-xhr-err": "Цей зміст не завантажується.",
 	"lb-img-err": "Це зображення не завантажується.",
+
 	/* Charts widget */
 	"tbl-txt": "Таблиця",
 	"tbl-dtls": "Графік. Див. деталі в таблиці.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Ваш сеанс закінчиться автоматично в #min# хв #sec# сек .",
 	"st-to-msg-end": "Виберіть \"Продовжити сеанс\" продовжити сесію.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Вибачте, сесія вже закінчилася. Будь ласка, увійдіть знову.",
 	"st-btn-cont": "продовжити сеанс",
 	"st-btn-end": "Завершити сеанс зараз",
+
 	/* Toggle details */
 	"td-toggle": "Згорнути все",
 	"td-open": "Розгорнути все",
 	"td-close": "Згорнути все",
 	"td-ttl-open": "Розгорнути всі розділи змісту",
 	"td-ttl-close": "Згорнути всі розділи змісту",
+
 	/* Table enhancement */
 	sortAsc: ": активація для сортування за зростанням ",
 	sortDesc: ": активація для сортування за спаданням",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "Показати _MENU_ записів",
 	filter: "Фільтр",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Збільшити",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Розташування не вдалося. Будь ласка, переконайтеся, що послуги визначення місця розташування включені.",
 	"geo-geoloc-uncapable": "Локалізація не підтримується браузером.",
 	"geo-lgnd-grphc": "Легенда графіка для шару карти.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Базова версія HTML",
 	"wb-enable": "Стандартна версія",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Увійти"
 };

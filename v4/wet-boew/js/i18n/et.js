@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "et",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Tagasi sakkide nimekirja",
 	"tab-pnl-end3": "või edasi ülejäänud lehele",
 	"tab-play": "Mängi",
+
 	/* Multimedia player */
 	"mmp-play": "Mängi",
 	pause: "Paus",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Praegune asukoht",
 	dur: "Kogu kestvus:",
+
 	/* Share widget */
 	"shr-txt": "Jaga seda lehekülge",
 	"shr-pg": " seda lehekülge",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " see helifail",
 	"shr-hnt": "koos {s}",
 	"shr-disc": "Mistahes tootele või teenusele pole otseselt ega kaudselt toetust avaldatud.",
+
 	/* Form validation */
 	"frm-nosubmit": "Ankeeti ei saa esitada, kuna",
 	"errs-fnd": "on leitud vigu.",
 	"err-fnd": "on leitud viga.",
+
 	/* Date picker */
 	"date-hide": "Peida kalender",
 	"date-show": "Vali kalendrist kuupäev:",
 	"date-sel": "Valitud",
+
 	/* Calendar */
 	days: [
 		"Pühapäev",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Mine",
 	prvMnth: "Eelmine kuu: ",
 	nxtMnth: "Järgmine kuu: ",
+
 	/* Lightbox */
 	"lb-curr": "Kirje %curr% koguhulgast %total%",
 	"lb-xhr-err": "Sisu laadimine ebaõnnestus",
 	"lb-img-err": "Pildi laadimine ebaõnnestus",
+
 	/* Charts widget */
 	"tbl-txt": "Tabel",
 	"tbl-dtls": "Graafik. Täpsemad andmed järgnevas tabelis.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Teie sessioon aegub automaatselt #min# min #sec# sec.",
 	"st-to-msg-end": "Valige \"Jätka sessioon\" laiendada oma istungil.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Kahjuks on su sessioon aegunud. Palun logi uuesti sisse.",
 	"st-btn-cont": "Jätka istung",
 	"st-btn-end": "Lõpetage seanss nüüd",
+
 	/* Toggle details */
 	"td-toggle": "Lülita kõik",
 	"td-open": "Laienda kõiki",
 	"td-close": "Sulge kõik",
 	"td-ttl-open": "Laienda kõiki sisu osasid",
 	"td-ttl-close": "Sulge kõik sisu osad",
+
 	/* Table enhancement */
 	sortAsc: ": aktiveeri kasvavaks järjestuseks",
 	sortDesc: ": aktiveeri kahanevaks järjestuseks",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Näita _MENU_ kandeid",
 	filter: "Filtreeri",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Suumi",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Asukoht ei ole. Palun veenduge, et asukoha määramise teenuste on lubatud.",
 	"geo-geoloc-uncapable": "Lokaliseerimine ei toeta teie brauser.",
 	"geo-lgnd-grphc": "Legend graafika kaardi kiht.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Lihtsustatud HTML versioon",
 	"wb-enable": "Standardversioon",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Logi sisse"
 };

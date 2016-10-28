@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "cs",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Návrat na kartu seznamu",
 	"tab-pnl-end3": "nebo pokračovat až do konce stránky.",
 	"tab-play": "Hrát",
+
 	/* Multimedia player */
 	"mmp-play": "Hrát",
 	pause: "Pauza",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Aktuální pozice:",
 	dur: "Celkový čas:",
+
 	/* Share widget */
 	"shr-txt": "Sdílet",
 	"shr-pg": " tuto stránku",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " tento audio soubor",
 	"shr-hnt": " s {s} ",
 	"shr-disc": "Č. schválení jakýchkoli výrobků nebo služeb je vyjádřené nebo předpokládané.",
+
 	/* Form validation */
 	"frm-nosubmit": "Formulář nelze předloženy, protože ",
 	"errs-fnd": " chyby byly nalezeny.",
 	"err-fnd": " chyba byla nalezena.",
+
 	/* Date picker */
 	"date-hide": "Skrýt kalendář",
 	"date-show": "Vyberte datum z kalendáře pro pole:",
 	"date-sel": "Vybraný",
+
 	/* Calendar */
 	days: [
 		"Neděle",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Jít",
 	prvMnth: "Předchozí měsíc: ",
 	nxtMnth: "Příští měsíc: ",
+
 	/* Lightbox */
 	"lb-curr": "Bod %curr% %total%",
 	"lb-xhr-err": "Tento obsah se nepodařilo načíst.",
 	"lb-img-err": "Tento obrázek se nepodařilo načíst.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabulka",
 	"tbl-dtls": "Graf. Podrobnosti v následující tabulce.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Vaše relace vyprší automaticky #min# min #sec# sec.",
 	"st-to-msg-end": "Zvolte \"Pokračovat v relaci\" rozšířit relaci.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Je nám líto, váš relace již vypršela. Prosím, přihlaste se znovu.",
 	"st-btn-cont": "pokračovat v relaci",
 	"st-btn-end": "Ukončit relaci nyní",
+
 	/* Toggle details */
 	"td-toggle": "Přepnout všechny",
 	"td-open": "Rozbalit všechny záložky",
 	"td-close": "Sbalit vše",
 	"td-ttl-open": "Rozbalit všechny části obsahu",
 	"td-ttl-close": "Minimalizovat všechny části obsahu",
+
 	/* Table enhancement */
 	sortAsc: ": aktivuje na vzestupně seřadit",
 	sortDesc: ": aktivujte pro sestupné řazení",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Zobrazit _MENU_ položek",
 	filter: "Filtrování položek",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Přiblížit",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Lokalita se nezdařilo. Ujistěte se, že umístění služby jsou povoleny.",
 	"geo-geoloc-uncapable": "Lokalizace není podporována ve vašem prohlížeči.",
 	"geo-lgnd-grphc": "Legenda grafický pro mapovou vrstvu.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Základní HTML verze",
 	"wb-enable": "Standardní verze",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Přihlásit"
 };

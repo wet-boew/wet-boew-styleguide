@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "ja",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "タブの一覧に戻る",
 	"tab-pnl-end3": "または、ページの残りの部分に進む。",
 	"tab-play": "再生",
+
 	/* Multimedia player */
 	"mmp-play": "再生",
 	pause: "一時停止",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "現在位置：",
 	dur: "合計時間：",
+
 	/* Share widget */
 	"shr-txt": "共有",
 	"shr-pg": "このページ",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": "このオーディオファイル",
 	"shr-hnt": "{s}と",
 	"shr-disc": "製品またはサービスを推薦／保証するものではありません。",
+
 	/* Form validation */
 	"frm-nosubmit": "フォームを送信できませんでした。原因：",
 	"errs-fnd": "複数のエラーが見つかりました。",
 	"err-fnd": "エラーが見つかりました。",
+
 	/* Date picker */
 	"date-hide": "カレンダーを非表示",
 	"date-show": "カレンダーから日付を選択：",
 	"date-sel": "選択済み",
+
 	/* Calendar */
 	days: [
 		"日曜日",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "進む",
 	prvMnth: "前の月へ",
 	nxtMnth: "次の月へ",
+
 	/* Lightbox */
 	"lb-curr": "%total% 件中 %curr% 件目",
 	"lb-xhr-err": "コンテンツをロードできませんでした。",
 	"lb-img-err": "画像をロードできませんでした。",
+
 	/* Charts widget */
 	"tbl-txt": "表",
 	"tbl-dtls": "チャート図。詳細については次の表を参照。",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "セッションは、 #min# 分 #sec# 秒で自動的に期限切れになります。",
 	"st-to-msg-end": "選択はあなたのセッションを延長する\"セッションを続ける\"。",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "セッションがタイムアウトしました。再度ログインを行なってください。",
 	"st-btn-cont": "セッションを続行",
 	"st-btn-end": "今セッションを終了します",
+
 	/* Toggle details */
 	"td-toggle": "表示形式を全て切り替える",
 	"td-open": "全て開く",
 	"td-close": "全て閉じる",
 	"td-ttl-open": "コンテンツの全てのセクションを開く",
 	"td-ttl-close": "コンテンツの全てのセクションを閉じる",
+
 	/* Table enhancement */
 	sortAsc: "：昇順ソートをオンにする",
 	sortDesc: "：降順ソートをオンにする",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: ",",
 	lenMenu: "_MENU_エントリーを表示",
 	filter: "検索条件を指定する",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "ズームイン",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "場所は、失敗しました。位置情報サービスが有効になっていることを確認してください。",
 	"geo-geoloc-uncapable": "ローカリゼーションは、お使いのブラウザでサポートされていません。",
 	"geo-lgnd-grphc": "マップレイヤの凡例のグラフィック。",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "HTMLベーシック版",
 	"wb-enable": "スタンダード版",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "サインイン"
 };

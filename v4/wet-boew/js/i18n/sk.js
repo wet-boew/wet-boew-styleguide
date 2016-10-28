@@ -7,6 +7,7 @@
  */
 ( function( wb ) {
 "use strict";
+
 /* main index */
 wb.i18nDict = {
 	"lang-code": "sk",
@@ -71,6 +72,7 @@ wb.i18nDict = {
 	"tab-pnl-end2": "Návrat na kartu zoznamu",
 	"tab-pnl-end3": "alebo pokračovať až do konca stránky.",
 	"tab-play": "Hrať",
+
 	/* Multimedia player */
 	"mmp-play": "Hrať",
 	pause: "Pauza",
@@ -92,6 +94,7 @@ wb.i18nDict = {
 	},
 	pos: "Aktuálna pozícia:",
 	dur: "Celkový čas:",
+
 	/* Share widget */
 	"shr-txt": "Zdieľať",
 	"shr-pg": " túto stránku",
@@ -99,14 +102,17 @@ wb.i18nDict = {
 	"shr-aud": " tento audio súbor",
 	"shr-hnt": " s {s} ",
 	"shr-disc": "Č schválenie akýchkoľvek výrobkov alebo služieb je vyjadrené alebo predpokladané.",
+
 	/* Form validation */
 	"frm-nosubmit": "Formulár nemožno predložené, pretože ",
 	"errs-fnd": " chyby boli nájdené.",
 	"err-fnd": " chyba bola nájdená.",
+
 	/* Date picker */
 	"date-hide": "Skryť kalendár",
 	"date-show": "Vyberte dátum z kalendára pre pole",
 	"date-sel": "Vybraný",
+
 	/* Calendar */
 	days: [
 		"Nedeľa",
@@ -141,13 +147,16 @@ wb.i18nDict = {
 	"cal-goToBtn": "Ísť",
 	prvMnth: "Predchádzajúci mesiac: ",
 	nxtMnth: "Budúci mesiac: ",
+
 	/* Lightbox */
 	"lb-curr": "Bod %curr% %total%",
 	"lb-xhr-err": "Tento obsah sa nepodarilo načítať.",
 	"lb-img-err": "Tento obrázok sa nepodarilo načítať.",
+
 	/* Charts widget */
 	"tbl-txt": "Tabuľka",
 	"tbl-dtls": "Graf. Podrobnosti v nasledujúcej tabuľke.",
+
 	/* Session timeout */
 	"st-to-msg-bgn": "Vaša relácia vyprší automaticky #min# min #sec# sec.",
 	"st-to-msg-end": "Zvoľte \"Pokračovať v relácii\" rozšíriť reláciu.",
@@ -155,12 +164,14 @@ wb.i18nDict = {
 	"st-alrdy-to-msg": "Je nám ľúto, váš relácie už vypršala. Prosím, prihláste sa znova.",
 	"st-btn-cont": "pokračovať v relácii",
 	"st-btn-end": "Ukončiť reláciu teraz",
+
 	/* Toggle details */
 	"td-toggle": "Prepnúť všetky",
 	"td-open": "Rozbaliť všetko",
 	"td-close": "Zbaliť všetko",
 	"td-ttl-open": "Rozbaliť všetky časti obsahu",
 	"td-ttl-close": "Minimalizovať všetky časti obsahu",
+
 	/* Table enhancement */
 	sortAsc: ": aktivuje na vzostupne zoradiť",
 	sortDesc: ": aktivujte pre zostupné radenie",
@@ -171,6 +182,7 @@ wb.i18nDict = {
 	info1000: "&#160;",
 	lenMenu: "Zobraziť _MENU_ položiek",
 	filter: "Filtrovanie položiek",
+
 	/* Geomap */
 	"geo-mapctrl": "@geo-mapctrl@",
 	"geo-zmin": "Priblížiť",
@@ -205,11 +217,14 @@ wb.i18nDict = {
 	"geo-geoloc-fail": "Lokalita zlyhalo. Uistite sa, že umiestnenie služby sú povolené.",
 	"geo-geoloc-uncapable": "Lokalizácia nie je podporovaná vo vašom prehliadači.",
 	"geo-lgnd-grphc": "Legenda grafický pre mapovú vrstvu.",
+
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Základné HTML verzia",
 	"wb-enable": "Štandardná verzia",
+
 	/* Dismissable content */
 	"dismiss": "Dismiss",
+
 	/* Template */
 	"tmpl-signin": "Prihlásiť"
 };
