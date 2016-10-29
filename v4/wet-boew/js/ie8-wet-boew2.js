@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.23-development - 2016-10-28
+ * v4.0.23-development - 2016-10-29
  *
  *//**
  * @title WET-BOEW JQuery Helper Methods
@@ -6425,6 +6425,13 @@ $document.on( "mouseleave", selector + " .menu", function( event ) {
 	globalTimeout = setTimeout( function() {
 		menuClose( $currentTarget.find( ".active" ), true );
 	}, hoverDelay );
+} );
+
+// Prevent opening another menu if mouse re-enters already opened menu
+$document.on( "mouseenter", selector + " .sm", function() {
+	if ( $( this ).attr( "aria-expanded" ) === "true" ) {
+		clearTimeout( globalTimeout );
+	}
 } );
 
 // Touchscreen "touches" on menubar items should close the submenu if it is open
