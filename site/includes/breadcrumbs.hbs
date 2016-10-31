@@ -4,24 +4,24 @@
 			<li>
 				<a href="http://wet-boew.github.io/wet-boew/index-{{language}}.html">{{{i18n "tmpl-home"}}}</a>
 			</li>
+			{{#isnt page.notlisted true}}
 			<li>
-				<a href="{{assets}}/index-{{language}}.html">{{{i18n "tmpl-style-guide"}}}</a>
+				<a href="../index-{{language}}.html">{{{i18n "tmpl-style-guide"}}}</a>
 			</li>
+			{{/isnt}}
+			{{#contains page.src "/accessibility/"}}
 			{{#contains page.src "index"}}
 			{{else}}
-				{{#contains page.src "/accessibility/"}}
 				<li>
-					<a href="{{assets}}/accessibility/index-{{language}}.html">{{{i18n "tmpl-accessibility-guide"}}}</a>
+					<a href="./index-{{language}}.html">{{{i18n "tmpl-accessibility-guide"}}}</a>
 				</li>
 			{{/contains}}
-				{{#contains page.src "/design/"}}
-				<li>
-					<a href="{{assets}}/design/index-{{language}}.html">{{{i18n "tmpl-design-guide"}}}</a>
-				</li>
 			{{/contains}}
-				{{#contains page.src "/writing/"}}
+			{{#contains page.src "/writing/"}}
+			{{#contains page.src "prncpls"}}
+			{{else}}
 				<li>
-					<a href="{{assets}}/writing/index-{{language}}.html">{{{i18n "tmpl-writing-guide"}}}</a>
+					<a href="./prncpls-{{language}}.html">{{{i18n "tmpl-writing-guide"}}}</a>
 				</li>
 			{{/contains}}
 			{{/contains}}
