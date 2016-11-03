@@ -183,17 +183,116 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     <li>Fonctions visant à améliorer la fonctionnalité d'une page (Ajax, expiration de la  session et ainsi de suite)</li>
   </ul>
   <p class="mrgn-bttm-lg">Consultez : <a href="http://wet-boew.github.io/v4.0-ci/demos/index-fr.html">Exemples pratiques</a> pour plus de détails. </p>
-  <div class="well">
-    <table class="wb-tables tbl-gridify" data-wb-tables='{"order" : [ 0, "asc" ], "bPaginate" : false }'>
+
+<form class="wb-tables-filter" data-bind-to="designlayout">
+<div class="row">
+<div class="col-md-4">
+<div class="form-group">
+<label for="dt_wetfeature">Fonctionalité relative à</label>
+<select class="form-control" id="dt_wetfeature" name="dt_wetfeature" data-column="4">
+	<option value="">Tous</option>
+	<option value="Style CSS">Style CSS</option>
+	<option value="Plugiciels">Plugiciels</option>
+	<option value="Thèmes">Thèmes</option>
+	<option value="Variants">Variants</option>
+</select>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label for="dt_corecategory">Catégorie de style</label>
+<select class="form-control" id="dt_corecategory" name="dt_corecategory" data-column="5">
+	<option value="">Tous</option>
+	<option value="Structure et mise en forme">Structure et mise en forme</option>
+	<option value="Effets de base">Effets de base</option>
+	<option value="Effet textuel">Effet textuel</option>
+	<option value="Menu et navigation">Menu et navigation</option>
+	<option value="Mise en évidence">Mise en évidence</option>
+</select>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label for="dt_specificfeatures">Fonctionalité</label>
+<select class="form-control" id="dt_specificfeatures" name="dt_specificfeatures" data-column="6">
+<option value="">Tous</option>
+<optgroup label="Structure et mise en forme">
+ <option value="Positionnement absolu">Positionnement absolu</option>
+ <option value="Alignement">Alignement</option>
+ <option value="Éléments flottants">Éléments flottants</option>
+ <option value="Grilles">Grilles</option>
+ <option value="Proximité des marges">Proximité des marges</option>
+ <option value="Redistribution du contenu autour de grilles">Redistribution du contenu autour de grilles</option>
+</optgroup>
+<optgroup label="Effets de base">
+ <option value="Bordures">Bordures</option>
+ <option value="Couleur">Couleur</option>
+ <option value="Boutons">Boutons</option>
+ <option value="Formulaires">Formulaires</option>
+ <option value="Icônes">Icônes</option>
+ <option value="Images">Images</option>
+ <option value="Contenu invisible et visible">Contenu invisible et visible</option>
+ <option value="Opacité">Opacité</option>
+</optgroup>
+<optgroup label="Effet textuel">
+ <option value="Code">Code</option>
+ <option value="En-têtes">En-têtes</option>
+ <option value="Touches de clavier">Touches de clavier</option>
+ <option value="Liens">Liens</option>
+ <option value="Listes">Listes</option>
+ <option value="Citations">Citations</option>
+ <option value="Redimensionnement">Redimensionnement</option>
+ <option value="Tableaux">Tableaux</option>
+ <option value="Édition de texte">Édition de texte</option>
+ <option value="Variables">Variables</option>
+ <option value="Espacement">Espacement</option>
+</optgroup>
+<optgroup label="Menu et navigation">
+ <option value="Boutons">Boutons</option>
+ <option value="Regroupement de liste">Regroupement de liste</option>
+ <option value="Pagination">Pagination</option>
+ <option value="Pills">Pills</option>
+</optgroup>
+<optgroup label="Mise en évidence">
+ <option value="Alertes">Alertes</option>
+ <option value="Badges">Badges</option>
+ <option value="Boutons">Boutons</option>
+ <option value="Étiquettes">Étiquettes</option>
+ <option value="Panneaux">Panneaux</option>
+ <option value="Boîte grisonné">Boîte grisonné</option>
+ <option value="Jumbotron">Jumbotron</option>
+ <option value="Barre de progrès et mesure">Barre de progrès et mesure</option>
+</optgroup>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3 pull-right">
+<div class="pull-right">
+	<button type="submit" class="btn btn-primary" aria-controls="dataset-filter">Filtrer</button>
+	<button type="reset" class="btn btn-default">Réinitialiser</button>
+</div>
+</div>
+</div>
+</form>
+    <table id="designlayout" class="wb-tables tbl-gridify" data-wb-tables='{"order" : [ 0, "asc" ], "bPaginate" : false,
+             "columnDefs": [
+                { "targets": [4], "visible": false },
+                { "targets": [5], "visible": false },
+                { "targets": [6], "visible": false }
+              ]}'>
       <caption class="wb-inv">
       Éléments de conception
       </caption>
       <thead>
         <tr>
-          <th scope="col">Option de conception </th>
-          <th scope="col">Description</th>
-          <th scope="col">Mots clés</th>
-          <th scope="col">Exemple</th>
+          <th>Option de conception </th>
+          <th>Description</th>
+          <th>Mots clés</th>
+          <th>Exemple</th>
+		  <th>Relatif à</th>
+		  <th>Catégorie</th>
+		  <th>Fonctions</th>
         </tr>
       </thead>
       <tbody class="row wb-eqht">
@@ -207,6 +306,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <p class="well brdr-rds-0 well-sm mrgn-bttm-sm mrgn-rght-md mrgn-lft-md opct-90 pstn-bttm-xs pstn-rght-xs">Lien au-dessus de l'image</p>
                 </a> </div>
             </div></td>
+			<td>Style CSS</td>
+			<td>Structure et mise en forme</td>
+			<td>Positionnement absolu</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-ajax/data-ajax-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Ajax</a></td>
@@ -215,6 +317,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/alerts-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Alertes</a></td>
@@ -245,6 +350,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </section>
               </div>
             </div></td>
+			<td>Style CSS</td>
+            <td>Mise en évidence</td>
+			<td>Alertes</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/alignment-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Alignement</a></td>
@@ -254,6 +362,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <p class="text-left"><span class="glyphicon glyphicon-align-left"></span> Texte aligné à gauche</p>
             <p class="text-center"><span class="glyphicon glyphicon-align-center"></span> Texte ou image alignés au centre <img alt="Image substituable carrée générique aux coins arrondis" class="img-rounded center-block" src="http://placehold.it/200x40"></p>
             <p class="text-right"><span class="glyphicon glyphicon-align-right"></span> Texte aligné à droite</p></td>
+			<td>Style CSS</td>
+            <td>Structure et mise en forme</td>
+			<td>Alignement</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/archived/archived-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Information archivée</a></td>
@@ -262,6 +373,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/badges-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Badges</a></td>
@@ -271,6 +385,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <p><a href="#">Texte de lien <span class="badge">42</span></a></p>
             <p><a href="#">Texte de lien <span class="badge">20</span></a></p>
             <p><a href="#">Texte de lien <span class="badge">5</span></a></p></td>
+            <td>Style CSS</td>
+            <td>Mise en évidence</td>
+			<td>Badges</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/borders-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Bordures</a></td>
@@ -289,6 +406,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <div class="brdr-bttm">
               <p class="mrgn-lft-md mrgn-rght-md">Bordure du bas</p>
             </div></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Bordures</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/buttons-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Boutons</a></td>
@@ -332,6 +452,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <button type="button" class="btn btn-default">F</button>
               </li>
             </ul></td>
+            <td>Style CSS</td>
+            <td>Effets de base,Menu et navigation,Mise en évidence</td>
+			<td>Boutons</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/cal-events/cal-events-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Calendrier d'événements</a></td>
@@ -340,6 +463,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Carrousel</a></td>
@@ -348,6 +474,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Graphiques</a></td>
@@ -356,6 +485,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/code-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Code</a></td>
@@ -367,6 +499,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             ...
             &lt;/div&gt;
             &lt;/div&gt;</code> </td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Code</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Code « <span lang="en">prettify</span> »</a></td>
@@ -379,6 +514,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		...
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/colour-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Couleur</a></td>
@@ -398,6 +536,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <li class="text-danger">Danger</li>
               <li class="bg-danger">Danger</li>
             </ul></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Couleur</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/country-content/country-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Identificateur de pays</a></td>
@@ -406,6 +547,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-inview/data-inview-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data inview</span></a></td>
@@ -414,6 +558,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data picture</span></a></td>
@@ -422,6 +569,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">DataTables</span></a></td>
@@ -430,6 +580,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique)</a></td>
@@ -457,6 +610,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <!--[if lte IE 9]></select><![endif]-->
               </datalist>
             </div></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-dynamic-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique) − Dynamique</a></td>
@@ -465,6 +621,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Sélecteur de date</a></td>
@@ -473,6 +632,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/dismissable-content/dismissable-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu écartable</a></td>
@@ -483,6 +645,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <p>Contenu statique régulier</p>
             <p class="wb-dismissable">Contenu écartable B</p>
             <p>Contenu statique régulier</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Égalisation (égalisation des hauteurs)</a></td>
@@ -512,6 +677,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </section>
               </div>
             </div></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Agrandir et dissimuler « affichable/masquable  »</a></td>
@@ -532,6 +700,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </details>
               </li>
             </ul></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/favicon/favicon-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Favoricône</a></td>
@@ -540,6 +711,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feedback/feedback-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Formulaire de rétroaction</a></td>
@@ -548,6 +722,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fils de syndication</a></td>
@@ -556,6 +733,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/floats-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Éléments flottants</a></td>
@@ -564,6 +744,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p class="pull-left"> Flottement à gauche </p>
             <p class="pull-right"> Flottement à droite </p></td>
+            <td>Style CSS</td>
+            <td>Structure et mise en forme</td>
+			<td>Éléments flottants</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/footnotes/footnotes-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Notes de bas de page</a></td>
@@ -582,6 +765,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </dd>
               </dl>
             </aside></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/forms-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Formulaires</a></td>
@@ -599,6 +785,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               </div>
               <button type="submit" class="btn btn-default">Soumettre</button>
             </form></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Formulaires</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validation des formulaires</a></td>
@@ -616,6 +805,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               </div>
               <button type="submit" class="btn btn-default">Soumettre</button>
             </form></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/geomap/geomap-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Géocarte</a></td>
@@ -624,6 +816,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/grids-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Grilles</a></td>
@@ -657,6 +852,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <div class="panel panel-default brdr-rds-0">1/3</div>
               </div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Structure et mise en forme</td>
+			<td>Grilles</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/headings-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">En-têtes</a></td>
@@ -669,6 +867,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <h4 class="mrgn-tp-0 mrgn-bttm-sm">h4 en-tête</h4>
             <h5 class="mrgn-tp-0 mrgn-bttm-sm">h5 en-tête</h5>
             <h6 class="mrgn-tp-0 mrgn-bttm-md">h6 en-tête</h6></td>
+            <td>Style CSS</td>
+            <td></td>
+			<td>En-têtes</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/icons-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Icônes</a></td>
@@ -676,6 +877,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td class="text-muted small">Balises : <span lang="en">Glyphicons</span>, <span lang="en">Font Awesome</span>, Couleur</td>
           <td><hr class="mrgn-tp-0">
             <span class="fa fa-adjust text-default"></span> <span class="fa fa-anchor text-primary"></span> <span class="fa fa-archive text-success"></span> <span class="fa fa-area-chart text-warning"></span> <span class="fa fa-arrows text-danger"></span> <span class="fa fa-arrows-h"></span> <span class="fa fa-arrows-v"></span> <span class="fa fa-asterisk"></span> <span class="fa fa-at"></span> <span class="fa fa-automobile"></span> <span class="fa fa-balance-scale"></span> <span class="fa fa-ban"></span> <span class="fa fa-bank"></span> <span class="fa fa-bar-chart"></span> <span class="fa fa-barcode"></span><span class="fa fa-bars"></span><span class="fa fa-battery-empty"></span> <span class="fa fa-battery-full"></span> <span class="fa fa-battery-half"></span> <span class="fa fa-battery-quarter"></span> <span class="fa fa-battery-three-quarters"></span> <span class="fa fa-bed"></span> <span class="fa fa-beer"></span> <span class="fa fa-bell"></span> <span class="fa fa-bell-o"></span> <span class="fa fa-bell-slash"></span> <span class="fa fa-bell-slash-o"></span> <span class="fa fa-bicycle"></span> <span class="fa fa-binoculars"></span> <span class="fa fa-birthday-cake"></span> <span class="fa fa-bluetooth"></span> <span class="fa fa-bolt"></span> <span class="fa fa-bomb"></span> <span class="fa fa-book"></span> <span class="fa fa-bookmark"></span> <span class="fa fa-bookmark-o"></span> <span class="fa fa-briefcase"></span> <span class="fa fa-bug"></span> <span class="fa fa-building"></span> <span class="fa fa-bullhorn"></span> <span class="fa fa-bullseye"></span> <span class="fa fa-bus"></span> <span class="fa fa-calculator"></span> <span class="fa fa-calendar"></span> <span class="fa fa-calendar-check-o"></span> <span class="fa fa-calendar-minus-o"></span> <span class="fa fa-calendar-o"></span> <span class="fa fa-calendar-plus-o"></span> <span class="fa fa-calendar-times-o"></span> <span class="fa fa-camera"></span> <span class="fa fa-camera-retro"></span> <span class="fa fa-car"></span> <span class="fa fa-caret-square-o-down"></span> <span class="fa fa-caret-square-o-left"></span> <span class="fa fa-caret-square-o-right"></span> <span class="fa fa-caret-square-o-up"></span> <span class="fa fa-cart-arrow-down"></span> <span class="fa fa-cart-plus"></span> <span class="fa fa-cc"></span> <span class="fa fa-certificate"></span> <span class="fa fa-check"></span> <span class="fa fa-check-circle"></span> <span class="fa fa-check-circle-o"></span> <span class="fa fa-check-square"></span> <span class="fa fa-check-square-o"></span> <span class="fa fa-child"></span> <span class="fa fa-circle"></span> <span class="fa fa-circle-o"></span> <span class="fa fa-circle-o-notch"></span> <span class="fa fa-circle-thin"></span> <span class="fa fa-clock-o"></span> <span class="fa fa-clone"></span> <span class="fa fa-cloud"></span> <span class="fa fa-cloud-download"></span> <span class="fa fa-cloud-upload"></span> <span class="fa fa-code"></span> <span class="fa fa-code-fork"></span> <span class="fa fa-coffee"></span> <span class="fa fa-cog"></span> <span class="fa fa-cogs"></span> ... et des centaines d'autres</td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Icônes</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/images-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Images</a></td>
@@ -687,7 +891,25 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <div class="col-sm-4"> <img alt="Image substituable générique carrée où seule la partie du cercle qui entoure le carré est visible" class="img-circle img-responsive" src="http://placehold.it/140x140"></div>
               <div class="col-sm-4"> <img alt="Image substituable générique carrée avec une bordure blanche, ce qui la fait ressembler à une photo prise avec un vieil appareil-photo à développement instantané" class="img-thumbnail img-responsive" src="http://placehold.it/140x140"></div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Images</td>
         </tr>
+
+		<tr class="col-xs-12 col-sm-6 col-md-4">
+          <td><a href="design/jumbotron-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Jumbotron</a></td>
+          <td><p lang="en">A lightweight, flexible component that can optionally extend the entire viewport to showcase key content on your site.</p></td>
+          <td class="text-muted small">Balises : Couleur, Alertes</td>
+          <td><hr class="mrgn-tp-0">
+			<div class="jumbotron">
+				<p>Bonjour le monde</p>
+			</div>
+		  </td>
+		  <td>Style CSS</td>
+		  <td>Mise en évidence</td>
+		  <td>Jumbotron</td>
+        </tr>
+
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/visible-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu invisible et visible</a></td>
           <td><p>Utilisez-le pour montrer ou cacher du contenu – tout dépend de ce que vous voulez accomplir. Il y a des styles propres aux technologies adaptées (aide aux utilisateurs de lecteur d'écran), à la conception réactive (vue à partir d'appareils petits ou grands), à l'usage général (utilisation d'onglets de basculement) et à l'impression (impression de l'information nécessaire seulement). </p></td>
@@ -695,6 +917,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Contenu invisible et visible</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/keyboard-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Touches de clavier</a></td>
@@ -704,6 +929,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <p>Appuyez sur <kbd>Maj</kbd></p>
             <p>Appuyez sur <kbd><abbr title="Contrôle">Ctrl</abbr></kbd></p>
             <p>Appuyez sur <kbd>Entrée</kbd></p></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Touches de clavier</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/labels-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Étiquettes</a></td>
@@ -718,6 +946,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <li>Texte <span class="label label-warning">Avertissement</span></li>
               <li>Texte <span class="label label-danger">Danger</span></li>
             </ul></td>
+            <td>Style CSS</td>
+            <td>Mise en évidence</td>
+			<td>Étiquettes</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/links-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Liens</a></td>
@@ -725,14 +956,20 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td class="text-muted small">Balises : Hyperlien</td>
           <td><hr class="mrgn-tp-0">
             <a href="#">Texte de lien</a> </td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Liens</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/listgroup-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">List group</span></a></td>
-          <td><p>Utilisez des composantes « <span lang="en">list group</span> » pour contenir des éléments de contenu connexes. </p></td>
+          <td><a href="design/listgroup-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Regroupement de liste</a></td>
+          <td><p>Utilisez des composantes regroupement de liste pour contenir des éléments de contenu connexes. </p></td>
           <td class="text-muted small">Balises : Liens, Badges, Couleur</td>
           <td><hr class="mrgn-tp-0">
             <div class="list-group"> <a class="list-group-item" href="#"><span class="badge">14</span> Texte de lien </a> <a class="list-group-item" href="#"><span class="badge">2</span> Texte de lien</a> </div>
             <div class="list-group mrgn-bttm-0"> <a href="#" class="list-group-item active">Texte de lien (élément actif)</a> <a href="#" class="list-group-item">Texte de lien</a> </div></td>
+            <td>Style CSS</td>
+            <td>Menu et navigation</td>
+			<td>Regroupement de liste</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/lists-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Listes</a></td>
@@ -759,6 +996,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <dt>Élément</dt>
               <dd>Description de l'élément</dd>
             </dl></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Listes</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">MathML</a></td>
@@ -805,7 +1045,22 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <mn>12</mn>
               </mrow>
             </math></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
+
+		<tr class="col-xs-12 col-sm-6 col-md-4">
+           <td><a href="design/pills-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0" lang="en">Pills</a></td>
+          <td><p>(Description manquante)</p></td>
+          <td class="text-muted small">Balises : Liste</td>
+          <td><hr class="mrgn-tp-0">
+            <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.</p></td>
+		  <td>Style CSS</td>
+		  <td>Menu et navigation</td>
+		  <td lang="en">Pills</td>
+        </tr>
+
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/proximity-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Proximité des marges</a></td>
           <td><p>L'utiliser pour augmenter ou diminuer la proximité d'un objet par rapport à un autre. Cela vient modifier les espaces blancs entre deux éléments afin d'indiquer si les éléments sont liés ou non. De plus, ces classes permettent à des éléments de contenu figurant et ne figurant pas dans une grille d'exister dans la même rangée.</p></td>
@@ -821,6 +1076,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <p>Éloignés l'un de l'autre</p>
               </div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Structure et mise en forme</td>
+			<td>Proximité des marges</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/meter/meter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Meter</a></td>
@@ -838,6 +1096,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <meter high="180" max="200" value="115" low="120" min="100">15 % (trop bas)</meter>
               </li>
             </ul></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fenêtre modale (lightbox)</a></td>
@@ -854,6 +1115,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <button class="btn btn-primary popup-modal-dismiss" type="button">Fermer la fenêtre modale</button>
               </div>
             </section>          </td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/multimedia/multimedia-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Lecteur multimédia</a></td>
@@ -862,6 +1126,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/opacity-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Opacité</a></td>
@@ -879,6 +1146,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <div class="col-sm-4"><img class="mrgn-bttm-md opct-30 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-30"></div>
               <div class="col-sm-4"><img class="mrgn-bttm-md opct-20 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-20"></div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Effets de base</td>
+			<td>Opacité</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu superposé</a></td>
@@ -892,6 +1162,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               </header>
               <div class="modal-body">Bonjour! Je suis une superposition et je peux m'afficher à gauche, en haut, en bas ou à droite.</div>
             </section>          </td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/pagination-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Pagination</a></td>
@@ -909,6 +1182,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <li><a href="#" rel="prev">Précédent</a></li>
               <li><a href="#" rel="next">Suivant</a></li>
             </ul></td>
+            <td>Style CSS</td>
+            <td>Menu et navigation</td>
+			<td>Pagination</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/panels-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Panneaux</a></td>
@@ -967,7 +1243,21 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </section>
               </div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Mise en évidence</td>
+			<td>Panneaux</td>
         </tr>
+
+		<tr class="col-xs-12 col-sm-6 col-md-4">
+           <td><a href="design/progressmeter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre de progrès et mesure</a></td>
+          <td><p>(Description manquante)</p></td>
+          <td class="text-muted small">Tags: </td>
+		  <td><p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.</p></td>
+		  <td>Style CSS</td>
+		  <td>Mise en évidence</td>
+		  <td>Barre de progrès et mesure</td>
+        </tr>
+
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/progress/progress-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre de progrès</a></td>
           <td><p>L'utiliser pour afficher les progrès d'une tâche.</p></td>
@@ -981,6 +1271,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <progress max="300" value="198"><span class="wb-inv">66 %</span></progress>
               </li>
             </ul></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/quotations-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Citations</a></td>
@@ -991,6 +1284,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
               <footer>Quelqu'un de connu dans <cite>Titre source</cite></footer>
             </blockquote></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Citations</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/reflow-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Redistribution du contenu autour de grilles</a></td>
@@ -1007,6 +1303,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <p>Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles. Redistribution du contenu autour de grilles.</p>
               </div>
             </div></td>
+            <td>Style CSS</td>
+            <td>Structure et mise en forme</td>
+			<td>Redistribution du contenu autour de grilles</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Expiration de la session</a></td>
@@ -1015,6 +1314,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/share/share-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Widget partager</a></td>
@@ -1022,6 +1324,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td class="text-muted small">Balises : Liens, Icônes, Twitter, YouTube</td>
           <td><hr class="mrgn-tp-0">
             <div class="wb-share" data-wb-share='{"pnlId": "pnl1"}'></div></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/sizing-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Redimensionnement</a></td>
@@ -1038,6 +1343,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
               <li class="h6 mrgn-tp-0 mrgn-bttm-md">Taille h6</li>
               <li class="small mrgn-tp-0 mrgn-bttm-md">Petite taille</li>
             </ul></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Redimensionnement</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/slider/slider-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre coulissante (gamme)</a></td>
@@ -1045,6 +1353,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td class="text-muted small">Balises : Saisie</td>
           <td><hr class="mrgn-tp-0">
             <input name="html5shim-1" id="html5shim-1" type="range" min="0" max="100" step="1" title="Plage: 0 à 100 par coups de 1" value="50" /></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validateur de tableau</a></td>
@@ -1053,6 +1364,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/tables-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Tableaux</a></td>
@@ -1061,6 +1375,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Tableaux</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Onglets</a></td>
@@ -1083,10 +1400,13 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </details>
               </div>
             </div></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/textediting-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Effets d'édition de texte</a></td>
-          <td>On les utilise pour indiquer les éditions de texte sur une page.</td>
+          <td><a href="design/textediting-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Effet d'édition de texte</a></td>
+          <td>On les utilise pour indiquer les éditions de texte sur une page. <span class="badge">Nouveau</span></td>
           <td class="text-muted small">Balises : Éditions de texte</td>
           <td><hr class="mrgn-tp-0">
             <p>Ceci est du
@@ -1095,6 +1415,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <p>Ceci est du <s>texte barré</s>.</p>
             <p>N'utilisez pas le <ins>texte inséré</ins>.</p>
             <p>N'utilisez pas le <u>texte souligné</u>.</p></td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Édition de texte</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/texthighlight/texthighlight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Mise en surbrillance de texte</a></td>
@@ -1103,6 +1426,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-fr.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Base</a></td>
@@ -1111,6 +1437,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Thèmes</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Canada.ca</a></td>
@@ -1119,6 +1448,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Thèmes</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Intranet du gouvernement du Canada</a></td>
@@ -1127,6 +1459,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Thèmes</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Plate-forme de gouvernement ouvert (<abbr title="Plate-forme de gouvernement ouvert">PGO</abbr>)</a></td>
@@ -1135,6 +1470,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Thèmes</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/theme/index-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Boîte à outils de l'expérience Web (<abbr title="Boîte à outils de l'expérience Web">BOEW</abbr>)</a></td>
@@ -1143,6 +1481,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Thèmes</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Galerie de miniatures et de photos  (lightbox)</a></td>
@@ -1161,6 +1502,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 <div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_b.jpg" title="Image 3"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_s.jpg" alt="Image 3" class="img-responsive img-thumbnail" /> </a> </div>
               </div>
             </section></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Basculer</a></td>
@@ -1187,6 +1531,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                 </div>
               </details>
             </div></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions</a></td>
@@ -1195,6 +1542,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/twitter/twitter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Chronologie intégrée Twitter</a></td>
@@ -1203,6 +1553,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wiki.drupalwxt.org/" class="h4 mrgn-tp-0 mrgn-bttm-0">Variante : Drupal</a></td>
@@ -1211,6 +1564,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Variants</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/wet-boew-jekyll/index-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Variante : Jekyll</a></td>
@@ -1219,6 +1575,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Variants</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/https://github.com/wet-boew/wet-boew-php/wiki/Php-variant-4.0" class="h4 mrgn-tp-0 mrgn-bttm-0">Variante : <span lang="en"><abbr title="Hypertext Preprocessor (P H P)">PHP</abbr></span></a></td>
@@ -1227,6 +1586,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Variants</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/https://github.com/wet-boew/wet-boew-ssi#web-experience-toolkit-wet---ssi-variant-v40" class="h4 mrgn-tp-0 mrgn-bttm-0">Variante : <span lang="en"><abbr title="Server side includes (S S I)">SSI</abbr></span></a></td>
@@ -1235,13 +1597,19 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Variants</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/variables-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Variables</a></td>
-          <td><p>Les utiliser lorsque l'on fait référence à une variable comme « x », « n » ou « y » dans une phrase (expression non mathématique). </p></td>
+          <td><p>Les utiliser lorsque l'on fait référence à une variable comme « x », « n » ou « y » dans une phrase (expression non mathématique). <span class="badge">Nouveau</span></p></td>
           <td class="text-muted small">Balises : Calculs</td>
           <td><hr class="mrgn-tp-0">
             Sur <var>n</var> années, l'augmentation des paiements est de <var>x</var>.</td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Variables</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="design/https://github.com/wet-boew/wet-boew-wordpress#wet-boew-wordpress" class="h4 mrgn-tp-0 mrgn-bttm-0">Variante : WordPress</a></td>
@@ -1250,21 +1618,30 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Variants</td>
+            <td></td>
+			<td></td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/wells-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Wells</span></a></td>
+          <td><a href="design/wells-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Boîte grisonné</a></td>
           <td>Les utiliser pour mettre un élément de contenu en évidence en le plaçant dans une case de couleur gris clair.</td>
           <td class="text-muted small">Balises : Couleur, Alertes</td>
           <td><hr class="mrgn-tp-0">
             <p class="well">Regardez, je suis dans un puits!</p>
             <p class="well well-sm">Regardez, je suis dans un petit puits!</p></td>
+            <td>Style CSS</td>
+            <td>Mise en évidence</td>
+			<td>Boîte grisonné</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/whitespace-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Espacement / No wrap</a></td>
+          <td><a href="design/whitespace-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Espacement</a></td>
           <td>Les utiliser pour empêcher que du texte retourne à la ligne suivante.</td>
           <td class="text-muted small">Balises : Break</td>
           <td><hr class="mrgn-tp-0">
             <span class="nowrap">Une ligne de texte vraiment longue qui ne retournera pas à la ligne suivante</span> </td>
+            <td>Style CSS</td>
+            <td>Effet textuel</td>
+			<td>Espacement</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Zébrures (technique avancée)</a></td>
@@ -1273,10 +1650,12 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
           <td><hr class="mrgn-tp-0">
             <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
               Pour voir cette fonction en action, allez à sa page thématique.</p></td>
+			<td>Plugiciels</td>
+            <td></td>
+			<td></td>
         </tr>
       </tbody>
     </table>
-  </div>
 
 		<dl id="wb-dtmd">
 	<dt>Date de modification&#160;:&#32;</dt>
