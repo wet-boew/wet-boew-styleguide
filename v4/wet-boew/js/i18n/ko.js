@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "방법 :지도 탐색",
 	"geo-tgllyr": "레이어의 표시를 전환",
 	"geo-hdnlyr": "이 층은 현재 숨겨져 있습니다!",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - 캐나다 기본지도 (영어 나 불어 만)",
 	"geo-sel": "선택",
 	"geo-lblsel": "지도에서 요소를 선택하려면 선택",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "위치&#44; 우편 번호&#44; 주소 (우편), NTS의 개수의 이름을 나타내 ...",
 	"geo-loc-label": "위치",
 	"geo-aoi-north": "북쪽",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "지도 계층에 대한 전설 그래픽.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "기본 HTML 버전",
-	"wb-enable": "표준 버전",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Инструкции: навигационна карта",
 	"geo-tgllyr": "Превключване на дисплея на слоя",
 	"geo-hdnlyr": "Този слой в момента е скрит.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Канада основната карта (на английски или френски език)",
 	"geo-sel": "Изберете",
 	"geo-lblsel": "Проверете, за да изберете елемента на картата",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Посочете името на мястото&#44; пощенски код&#44; адрес (пощенски)&#44; броят на НТС ...",
 	"geo-loc-label": "Място",
 	"geo-aoi-north": "На север",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Legend графичен за карта слой.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Базов HTML версия",
-	"wb-enable": "Стандартната версия",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

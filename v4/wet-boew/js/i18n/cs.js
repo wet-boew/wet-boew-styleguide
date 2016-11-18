@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Návod: Mapa navigace",
 	"geo-tgllyr": "Přepnout zobrazení vrstvy",
 	"geo-hdnlyr": "Tato vrstva je v současné době skrývá.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada základní mapa (pouze anglicky nebo francouzsky)",
 	"geo-sel": "Vybrat",
 	"geo-lblsel": "Zkontrolujte, vyberte prvek na mapě",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Uveďte název místa&#44; poštovní směrovací číslo&#44; adresu (poštovní)&#44; počet NTS ...",
 	"geo-loc-label": "Umístění",
 	"geo-aoi-north": "Sever",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Legenda grafický pro mapovou vrstvu.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Základní HTML verze",
-	"wb-enable": "Standardní verze",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

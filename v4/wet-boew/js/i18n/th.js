@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "คำแนะนำ: แผนที่นำร่อง",
 	"geo-tgllyr": "สลับการแสดงผลของชั้น",
 	"geo-hdnlyr": "ชั้นนี้ซ่อนอยู่.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis-แคนาดาฐานแผนที่ (ภาษาอังกฤษหรือภาษาฝรั่งเศสเท่านั้น)",
 	"geo-sel": "เลือก",
 	"geo-lblsel": "ตรวจสอบเพื่อเลือกองค์ประกอบบนแผนที่",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "ระบุชื่อสถานที่&#44; รหัสไปรษณีย์ที่อยู่ (ไปรษณีย์) จำนวน NTS ...",
 	"geo-loc-label": "ตำแหน่งที่ตั้ง",
 	"geo-aoi-north": "เหนือ",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "กราฟิกตำนานสำหรับชั้นแผนที่",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "เวอร์ชันพื้นฐานของ HTM​​L",
-	"wb-enable": "รุ่นมาตรฐาน",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

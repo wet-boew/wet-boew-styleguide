@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Hướng dẫn: Bản đồ Navigation",
 	"geo-tgllyr": "Chuyển đổi các màn hình hiển thị của lớp",
 	"geo-hdnlyr": "Lớp này hiện đang ẩn!",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Canada bản đồ cơ bản (tiếng Anh hoặc tiếng Pháp chỉ)",
 	"geo-sel": "Chọn",
 	"geo-lblsel": "Kiểm tra để chọn phần tử trên bản đồ",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Cho biết tên của địa điểm&#44; mã vùng&#44; địa chỉ (bưu điện)&#44; số lượng NTS ...",
 	"geo-loc-label": "Nơi",
 	"geo-aoi-north": "Bắc",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Truyền thuyết đồ họa cho các lớp bản đồ.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Phiên bản HTML cơ bản",
-	"wb-enable": "Phiên bản tiêu chuẩn",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "निर्देश: मानचित्र नेविगेशन",
 	"geo-tgllyr": "परत के प्रदर्शन टॉगल करें",
 	"geo-hdnlyr": "इस परत वर्तमान में छिपा हुआ है.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - कनाडा आधार नक्शा (अंग्रेजी या फ्रेंच केवल)",
 	"geo-sel": "चयन",
 	"geo-lblsel": "नक्शे पर तत्व का चयन करने के लिए जाँच करें",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "स्थान&#44; ज़िप कोड&#44; पता (डाक)&#44; एनटीएस की संख्या के नाम का संकेत ...",
 	"geo-loc-label": "स्थान",
 	"geo-aoi-north": "उत्तर",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "नक्शा परत के लिए लीजेंड ग्राफिक।",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "मूल HTML संस्करण",
-	"wb-enable": "मानक संस्करण",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Instrukcijas: Karte navigācija",
 	"geo-tgllyr": "Pārslēgt displeja slāņa",
 	"geo-hdnlyr": "Šis slānis pašlaik paslēpta.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanāda bāze karte (angļu vai franču valodā)",
 	"geo-sel": "Atlasīt",
 	"geo-lblsel": "Pārbaudiet, lai izvēlētos elementu uz kartes",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Norāda nosaukumu vietu&#44; pasta indekss&#44; adresi (pasta)&#44; skaits NTS ...",
 	"geo-loc-label": "Vieta",
 	"geo-aoi-north": "Ziemeļu",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Leģenda grafiskais attiecīgā karte slāni.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Pamata HTML versija",
-	"wb-enable": "Standarta versija",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

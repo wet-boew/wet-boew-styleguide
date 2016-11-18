@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.23-development - 2016-11-15
+ * v4.0.23-development - 2016-11-18
  *
  *//**
  * @title WET-BOEW JQuery Helper Methods
@@ -3919,6 +3919,163 @@ wb.add( selector );
 } )( jQuery, window, wb );
 
 /**
+ * @title WET-BOEW Data Json [data-json-after], [data-json-append],
+ * [data-json-before], [data-json-prepend], [data-json-replace] and [data-json-replacewith]
+ * @overview Insert content extracted from JSON file.
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ * @author @duboisp
+ */
+( function( $, window, wb ) {
+"use strict";
+
+/*
+ * Variable and function definitions.
+ * These are global to the plugin - meaning that they will be initialized once per page,
+ * not once per instance of plugin on the page. So, this is a good place to define
+ * variables that are common to all instances of the plugin on a page.
+ */
+var componentName = "wb-data-json",
+	selectors = [
+		"[data-json-after]",
+		"[data-json-append]",
+		"[data-json-before]",
+		"[data-json-prepend]",
+		"[data-json-replace]",
+		"[data-json-replacewith]"
+	],
+	selectorsLength = selectors.length,
+	selector = selectors.join( "," ),
+	initEvent = "wb-init." + componentName,
+	updateEvent = "wb-update." + componentName,
+	contentUpdatedEvent = "wb-contentupdated",
+	$document = wb.doc,
+	s,
+
+	/**
+	 * @method init
+	 * @param {jQuery Event} event Event that triggered this handler
+	 * @param {string} ajaxType The type of JSON operation, either after, append, before or replace
+	 */
+	init = function( event, ajaxType ) {
+
+		// Start initialization
+		// returns DOM object = proceed with init
+		// returns undefined = do not proceed with init (e.g., already initialized)
+		var elm = wb.init( event, componentName + "-" + ajaxType, selector );
+
+		if ( elm ) {
+
+			ajax.apply( this, arguments );
+
+			// Identify that initialization has completed
+			wb.ready( $( elm ), componentName, [ ajaxType ] );
+		}
+	},
+
+	ajax = function( event, ajaxType ) {
+		var elm = event.target,
+			$elm = $( elm ),
+			settings = window[ componentName ],
+			url = elm.getAttribute( "data-json-" + ajaxType ),
+			fetchObj = {
+				url: url
+			},
+			urlParts;
+
+		// Detect CORS requests
+		if ( settings && ( url.substr( 0, 4 ) === "http" || url.substr( 0, 2 ) === "//" ) ) {
+			urlParts = wb.getUrlParts( url );
+			if ( ( wb.pageUrlParts.protocol !== urlParts.protocol || wb.pageUrlParts.host !== urlParts.host ) && ( !Modernizr.cors || settings.forceCorsFallback ) ) {
+				if ( typeof settings.corsFallback === "function" ) {
+					fetchObj.dataType = "jsonp";
+					fetchObj.jsonp = "callback";
+					fetchObj = settings.corsFallback( fetchObj );
+				}
+			}
+		}
+
+		$elm.trigger( {
+			type: "json-fetch.wb",
+			fetch: fetchObj
+		} );
+	};
+
+$document.on( "timerpoke.wb " + initEvent + " " + updateEvent + " json-fetched.wb", selector, function( event ) {
+	var eventTarget = event.target,
+		ajaxTypes = [
+			"before",
+			"replace",
+			"replacewith",
+			"after",
+			"append",
+			"prepend"
+		],
+		len = ajaxTypes.length,
+		$elm, ajaxType, i, content, jQueryCaching;
+
+	for ( i = 0; i !== len; i += 1 ) {
+		ajaxType = ajaxTypes[ i ];
+		if ( this.getAttribute( "data-json-" + ajaxType ) !== null ) {
+			break;
+		}
+	}
+
+	switch ( event.type ) {
+
+	case "timerpoke":
+	case "wb-init":
+		init( event, ajaxType );
+		break;
+	case "wb-update":
+		ajax( event, ajaxType );
+		break;
+	default:
+
+		// Filter out any events triggered by descendants
+		if ( event.currentTarget === eventTarget ) {
+			$elm = $( eventTarget );
+
+			// json-fetched event
+			content = event.fetch.response;
+			if ( content &&  content.length > 0 ) {
+
+				//Prevents the force caching of nested resources
+				jQueryCaching = jQuery.ajaxSettings.cache;
+				jQuery.ajaxSettings.cache = true;
+
+				// "replace" and "replaceWith" doesn't map to a jQuery function
+				if ( ajaxType === "replace" ) {
+					$elm.html( content );
+				} else if ( ajaxType === "replacewith" ) {
+					$elm.replaceWith( content );
+				} else {
+					$elm[ ajaxType ]( content );
+				}
+
+				//Resets the initial jQuery caching setting
+				jQuery.ajaxSettings.cache = jQueryCaching;
+
+				$elm.trigger( contentUpdatedEvent, { "ajax-type": ajaxType, "content": content } );
+			}
+		}
+	}
+
+	/*
+	 * Since we are working with events we want to ensure that we are being
+	 * passive about our control, so returning true allows for events to always
+	 * continue
+	 */
+	return true;
+} );
+
+// Add the timerpoke to initialize the plugin
+for ( s = 0; s !== selectorsLength; s += 1 ) {
+	wb.add( selectors[ s ] );
+}
+
+} )( jQuery, window, wb );
+
+/**
  * @title WET-BOEW Data Picture
  * @overview Event driven port of the Picturefill library: https://github.com/scottjehl/picturefill
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
@@ -5522,6 +5679,139 @@ $document.on( "timerpoke.wb " + initEvent, selector, init );
 wb.add( selector );
 
 } )( jQuery, wb );
+
+/**
+ * @title WET-BOEW JSON Fetch [ json-fetch ]
+ * @overview Load and filter data from a JSON file
+ * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ * @author @duboisp
+ */
+/*global jsonpointer */
+( function( $, wb, window ) {
+"use strict";
+
+/*
+ * Variable and function definitions.
+ * These are global to the plugin - meaning that they will be initialized once per page,
+ * not once per instance of plugin on the page. So, this is a good place to define
+ * variables that are common to all instances of the plugin on a page.
+ */
+var $document = wb.doc,
+	component = "json-fetch",
+	fetchEvent = component + ".wb",
+	jsonCache = component + "cache",
+	jsonCacheBacklog = component + "backlog",
+	completeJsonFetch = function( callerId, response, status, xhr, selector ) {
+		if ( selector ) {
+			response = jsonpointer.get( response, selector );
+		}
+
+		$( "#" + callerId ).trigger( {
+			type: "json-fetched.wb",
+			fetch: {
+				response: response,
+				status: status,
+				xhr: xhr
+			}
+		}, this );
+	};
+
+// Event binding
+$document.on( fetchEvent, function( event ) {
+
+	// TODO: Remove event.element in future versions
+	var caller = event.element || event.target,
+		fetchOpts = event.fetch,
+		urlParts = fetchOpts.url.split( "#" ),
+		url = urlParts[ 0 ],
+		selector = urlParts[ 1 ] || false,
+		callerId,
+		uri = "json:" + url, cachedResponse;
+
+	// Separate the URL from the filtering criteria
+	if ( selector ) {
+		fetchOpts.url = url;
+	}
+
+	// Filter out any events triggered by descendants
+	if ( caller === event.target || event.currentTarget === event.target ) {
+
+		Modernizr.load( {
+
+			load: "site!deps/jsonpointer" + wb.getMode() + ".js",
+
+			complete: function() {
+
+				if ( !caller.id ) {
+					caller.id = wb.getId();
+				}
+				callerId = caller.id;
+
+				if ( !window[ jsonCache ] ) {
+					window[ jsonCache ] = { };
+					window[ jsonCacheBacklog ] = { };
+				}
+
+				if ( !fetchOpts.nocache ) {
+					cachedResponse = window[ jsonCache ][ uri ];
+
+					if ( cachedResponse ) {
+						completeJsonFetch( callerId, cachedResponse, "success", undefined, selector );
+						return;
+					} else {
+						if ( !window[ jsonCacheBacklog ][ uri ] ) {
+							window[ jsonCacheBacklog ][ uri ] = [ ];
+						} else {
+							window[ jsonCacheBacklog ][ uri ].push( {
+								"callerId": callerId,
+								"selector": selector
+							} );
+							return;
+						}
+					}
+				}
+
+				$.ajax( fetchOpts )
+					.done( function( response, status, xhr ) {
+						var i, i_len, i_cache, backlog;
+						if ( !fetchOpts.nocache ) {
+							try {
+								window[ jsonCache ][ uri ] = response;
+							} catch ( error ) {
+								return;
+							}
+						}
+
+						completeJsonFetch( callerId, response, status, xhr, selector );
+
+						if ( window[ jsonCacheBacklog ][ uri ] ) {
+							backlog = window[ jsonCacheBacklog ][ uri ];
+
+							i_len = backlog.length;
+
+							for ( i = 0; i !== i_len; i += 1 ) {
+								i_cache = backlog[ i ];
+								completeJsonFetch( i_cache.callerId, response, status, xhr, i_cache.selector );
+							}
+						}
+
+					} )
+					.fail( function( xhr, status, error ) {
+						$( "#" + callerId ).trigger( {
+							type: "json-failed.wb",
+							fetch: {
+								xhr: xhr,
+								status: status,
+								error: error
+							}
+						}, this );
+					}, this );
+			}
+		} );
+	}
+} );
+
+} )( jQuery, wb, window );
 
 /**
  * @title WET-BOEW Lightbox

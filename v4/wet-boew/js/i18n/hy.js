@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Հրահանգներ: Նավիգացիոն քարտեզ",
 	"geo-tgllyr": "Ցուցադրման կամ թաքցնել շերտը",
 	"geo-hdnlyr": "Այս շերտի այժմ թաքնված.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Կանադա բազա քարտեզ (անգլերեն կամ ֆրանսերեն միայն)",
 	"geo-sel": "Ընտրել",
 	"geo-lblsel": "Ստուգեք ընտրել տարրը քարտեզի վրա",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Նշեք անունը&#44; գտնվելու վայրը&#44; փոստային կոդը&#44; հասցեն&#44; (փոստային) համարը NTS ...",
 	"geo-loc-label": "Որտեղից",
 	"geo-aoi-north": "Հյուսիս",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Լեգենդ արվեստ քարտեզ շերտ.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "հիմնական HTML տարբերակ",
-	"wb-enable": "Դնել",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

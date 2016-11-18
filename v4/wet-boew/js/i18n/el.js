@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Οδηγίες: Χάρτης πλοήγησης",
 	"geo-tgllyr": "Εναλλαγή την οθόνη του του στρώμα",
 	"geo-hdnlyr": "Αυτό το στρώμα είναι κρυφές αυτή τη στιγμή.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Καναδάς χάρτη βάσης (αγγλικά ή γαλλικά)",
 	"geo-sel": "Επιλέξτε το",
 	"geo-lblsel": "Ελέγξτε τις για να επιλέξετε το στοιχείο σχετικά με την χάρτη",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Να αναφερθεί το όνομα της τοποθεσίας&#44; ταχυδρομικό κώδικα&#44; διεύθυνση (ταχυδρομική)&#44; ο αριθμός των NTS ...",
 	"geo-loc-label": "Τοποθεσία",
 	"geo-aoi-north": "βόρεια Προάστια",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Γραφικό Υπόμνημα για χάρτη στρώμα.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Βασικές έκδοση HTML",
-	"wb-enable": "Βασική έκδοση",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

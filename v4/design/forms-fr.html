@@ -200,6 +200,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
                     <li><a href="#forms-control-disabled">État désactivé </a></li>
                     <li><a href="#height">Régler la hauteur</a></li>
                     <li><a href="#width">Régler la largeur</a></li>
+										<li><a href="#fieldset">Bordures de Légende</a></li>
                     <li><a href="#addon">Fonctions complémentaires</a></li>
                   </ul>
                 </li>
@@ -297,7 +298,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 &lt;/form&gt;</code></pre>
       </details>
     </div>
-  </div> 
+  </div>
 
 
   <h4 id="labels"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-align-left fa-stack-1x fa-inverse"></span></span> Étiquettes</h4>
@@ -1042,6 +1043,66 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
       </details>
     </div>
   </div>
+	<h4 id="fieldset"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span></span> Bordures de Légende</h4>
+	<p>Par défaut, les balises <code>fieldset/legend</code> ont une bordure au-dessus pour séparer chaque groupe de control. Il est possible de changer ce style afin d'avoir la bordure en dessous de la légende en utilisant la classe <code>.legend-brdr-bttm</code> sur la balise <code>legend</code>.</p>
+	<div class="row">
+	  <div class="col-md-4">
+	    <div class="panel panel-default">
+	      <div class="panel-body">
+	        <h5 class="mrgn-tp-0">Apparence</h5>
+	        <form class="form-horizontal" method="get" action="#">
+	          <fieldset>
+	            <legend class="legend-brdr-bttm">Lettres de créance</legend>
+	            <div class="form-group">
+	              <label for="inputEmail3" class="col-sm-4 control-label">Courriel</label>
+	              <div class="col-sm-8">
+	                <input type="email" class="form-control" id="inputEmail3" placeholder="Courriel" />
+	              </div>
+	            </div>
+	            <div class="form-group">
+	              <label for="inputPassword3" class="col-sm-4 control-label">Mot de passe</label>
+	              <div class="col-sm-8">
+	                <input type="password" class="form-control" id="inputPassword3" placeholder="Mot de passe" />
+	              </div>
+	            </div>
+	          </fieldset>
+	          <div class="form-group">
+	            <div class="col-sm-offset-4 col-sm-8">
+	              <button type="submit" class="btn btn-default">Ouvrir une session</button>
+	            </div>
+	          </div>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col-md-8">
+	    <details>
+	      <summary>Code source</summary>
+	      <pre><code>&lt;form <strong>class=&quot;form-horizontal&quot;</strong> role=&quot;form&quot; method=&quot;get&quot; action=&quot;#&quot;&gt;
+	        &lt;fieldset&gt;
+	        &lt;legend <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;Lettres de créance&lt;/legend&gt;
+	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+	        &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Courriel</strong>&lt;/label&gt;
+	        &lt;div class=&quot;col-sm-10&quot;&gt;
+	        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Courriel&quot; /&gt;
+	        &lt;/div&gt;
+	        &lt;/div&gt;
+	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+	        &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Mot de passe</strong>&lt;/label&gt;
+	        &lt;div class=&quot;col-sm-10&quot;&gt;
+	        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Mot de passe&quot; /&gt;
+	        &lt;/div&gt;
+	        &lt;/div&gt;
+	        &lt;/fieldset&gt;
+	        &lt;div<strong> class=&quot;form-group&quot;</strong>&gt;
+	        &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+	        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;<strong>Ouvrir une session</strong>&lt;/button&gt;
+	        &lt;/div&gt;
+	        &lt;/div&gt;
+	        &lt;/form&gt;</code></pre>
+	      </details>
+	    </div>
+	  </div>
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">

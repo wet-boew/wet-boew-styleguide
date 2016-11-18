@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Utasítás: Térkép navigáció",
 	"geo-tgllyr": "Váltás a megjelenítési réteg",
 	"geo-hdnlyr": "Ez a réteg jelenleg rejtve.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada alaptérkép (angol vagy francia nyelven esetén)",
 	"geo-sel": "Választ",
 	"geo-lblsel": "Ellenőrizze, hogy jelölje ki az elemet a térképen",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Adja meg a helység nevét&#44; irányítószám&#44; cím (postai)&#44; a száma NTS ...",
 	"geo-loc-label": "Elhelyezkedés",
 	"geo-aoi-north": "Észak",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Legend grafika térképen réteg.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Egyszerű HTML verzió",
-	"wb-enable": "Standard verzió",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

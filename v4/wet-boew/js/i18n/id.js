@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Petunjuk: Peta navigasi",
 	"geo-tgllyr": "Mengganti display lapisan",
 	"geo-hdnlyr": "Lapisan ini saat ini tersembunyi.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Canada peta dasar (bahasa Inggris atau Perancis hanya)",
 	"geo-sel": "Memilih",
 	"geo-lblsel": "Periksa untuk memilih elemen pada peta",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Menunjukkan nama lokasi&#44; kode pos&#44; alamat (pos)&#44; jumlah NTS ...",
 	"geo-loc-label": "Tempat",
 	"geo-aoi-north": "Utara",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Legenda grafis untuk layer peta.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Versi HTML dasar",
-	"wb-enable": "Versi standar",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

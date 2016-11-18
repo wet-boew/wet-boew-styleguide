@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Leiðbeiningar: Kort flakk",
 	"geo-tgllyr": "Víxla birtingu lag",
 	"geo-hdnlyr": "Þetta lag er nú falin.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada stöð kort (enska eða franska aðeins)",
 	"geo-sel": "Veldu",
 	"geo-lblsel": "Athugaðu að velja atriði á kortinu",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "Tilgreina nafn staðsetningu&#44; póstnúmer&#44; heimilisfang (Postal)&#44; fjölda NTS ...",
 	"geo-loc-label": "Staðsetning",
 	"geo-aoi-north": "Norður",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Legend grafík fyrir kortinu lag.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Undirstöðu HTML útgáfa",
-	"wb-enable": "Standard útgáfa",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",

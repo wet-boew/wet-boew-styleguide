@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "Instructions : comment naviguer dans la carte",
 	"geo-tgllyr": "Basculer l'affichage de la couche",
 	"geo-hdnlyr": "Cette couche est présentement cachée.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBCT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBCT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=fr",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=fr",
 	"geo-attrttl": "GéoGratis - Carte de base du Canada",
 	"geo-sel": "Sélectionnez",
 	"geo-lblsel": "Cochez pour sélectionner cet élément sur la carte",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/fr/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/fr/locate",
 	"geo-loc-placeholder": "Indiquer le nom de l&#39;endroit&#44; le code postal&#44; l&#39;adresse (postale)&#44; le numéro du SNRC...",
 	"geo-loc-label": "Location",
 	"geo-aoi-north": "Nord",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Graphique légende couche cartographique.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Version HTML simplifiée",
-	"wb-enable": "Version standard",
+	"wb-disable": "Passer au version HTML simplifiée",
+	"wb-enable": "Passer au version standard",
 
 	/* Dismissable content */
 	"dismiss": "Écarter",

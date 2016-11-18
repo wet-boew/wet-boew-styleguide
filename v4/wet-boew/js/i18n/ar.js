@@ -196,14 +196,14 @@ wb.i18nDict = {
 	"geo-allyttl": "تعليمات: خريطة الملاحة",
 	"geo-tgllyr": "تبديل عرض طبقة",
 	"geo-hdnlyr": "حاليا يتم إخفاء هذه الطبقة.",
-	"geo-bmapurl": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
 	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
-	"geo-attrlnk": "http://geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
+	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - كندا قاعدة الخريطة (الإنجليزية أو الفرنسية فقط)",
 	"geo-sel": "حدد",
 	"geo-lblsel": "تحقق لتحديد عنصر على الخريطة",
-	"geo-locurl-geogratis": "http://geogratis.gc.ca/services/geolocation/en/locate",
+	"geo-locurl-geogratis": "//geogratis.gc.ca/services/geolocation/en/locate",
 	"geo-loc-placeholder": "تشير إلى اسم الموقع، والرمز البريدي والعنوان (البريدي)، وعدد من NTS ...",
 	"geo-loc-label": "موقع",
 	"geo-aoi-north": "شمال",
@@ -219,8 +219,8 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "رسم خريطة لأسطورة طبقة.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "إصدار HTML الأساسي",
-	"wb-enable": "الإصدار القياسي",
+	"wb-disable": "Switch to basic HTML version",
+	"wb-enable": "Switch to standard version",
 
 	/* Dismissable content */
 	"dismiss": "Dismiss",
