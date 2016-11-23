@@ -88,7 +88,7 @@
  <option value="Tableaux">Tableaux</option>
  <option value="Édition de texte">Édition de texte</option>
  <option value="Variables">Variables</option>
- <option value="Espacement">Espacement</option>
+ <option value="Envelopper et tronquer le texte">Envelopper et tronquer le texte</option>
 </optgroup>
 <optgroup label="Menu et navigation">
  <option value="Boutons">Boutons</option>
@@ -1478,14 +1478,19 @@
 			<td>Boîte grisonné</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/whitespace-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Espacement</a></td>
+          <td><a href="design/whitespace-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Envelopper et tronquer le texte</a></td>
           <td>Les utiliser pour empêcher que du texte retourne à la ligne suivante.</td>
           <td class="text-muted small">Balises : Break</td>
           <td><hr class="mrgn-tp-0">
-            <span class="nowrap">Une ligne de texte vraiment longue qui ne retournera pas à la ligne suivante</span> </td>
+           <p>Défaut :</p>
+          <p>Lorem ipsum dolor sit amet, consectetur <strong>30 avril</strong>.</p>
+          <p class="mrgn-tp-lg">Avec <code>.nowrap</code> :</p>
+          <p>Lorem ipsum dolor sit amet, consectetur <span class="nowrap"><strong>30 avril</strong></span>.</p>
+			<p>Avec <code>.wb-elps</code> :
+		   </p><p class="wb-elps">Lorem ipsum dolor sit amet, consectetur <strong>30 avril</strong>.</td>
             <td>Style CSS</td>
             <td>Effet textuel</td>
-			<td>Espacement</td>
+			<td>Envelopper et tronquer le texte</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Zébrures (technique avancée)</a></td>

@@ -87,7 +87,7 @@
 	<option value="Tables">Tables</option>
 	<option value="Text editing effects">Text editing effects</option>
 	<option value="Variables">Variables</option>
-	<option value="Whitespace">Whitespace</option>
+	<option value="Wrapping and truncating text">Wrapping and truncating text</option>
 </optgroup>
 <optgroup label="Menus and navigation">
 	<option value="Buttons">Buttons</option>
@@ -1552,14 +1552,19 @@
 		  <td>Wells</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
-          <td><a href="design/whitespace-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Whitespace / No wrap</a></td>
+          <td><a href="design/whitespace-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Wrapping and truncating text</a></td>
           <td>Use to prevent text from wrapping to the next line.</td>
           <td class="text-muted small">Tags: Break</td>
           <td><hr class="mrgn-tp-0">
-            <span class="nowrap">A really long line of text that won't word wrap to the next line</span> </td>
+            <p>Default:</p>
+          <p>This year's deadline to filing your taxes is  April 30.</p>
+          <p class="mrgn-tp-lg">With <code>.nowrap</code>:</p>
+          <p>This year's deadline to filing your taxes is <span class="nowrap">April 30</span>.</p>	
+<p>With <code>.wb-elps</code>:
+		   </p><p class="wb-elps">This year's deadline to filing your taxes is April 30.</p>		  </td>
 		  <td>CSS Style</td>
 		  <td>Text effects</td>
-		  <td>Whitespace</td>
+		  <td>Wrapping and truncating text</td>
         </tr>
         <tr class="col-xs-12 col-sm-6 col-md-4">
           <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Zebra striping (Advanced) </a></td>
