@@ -1042,16 +1042,16 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
       </details>
     </div>
   </div>
-	<h4 id="fieldset"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span></span> Fieldsets Borders</h4>
-	<p>By default a single <code>&lt;fieldset&gt;</code> has no top border. Each fieldset after the first <code>&lt;fieldset&gt;</code> well have a border to sperate the two fieldsets. This can be changed by using <code>.legend-brdr-bttm</code> class on the <code>&lt;fieldset&gt;</code> to create a border under each <code>&lt;legend&gt;</code>.</p>
+	<h4 id="fieldset"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span></span> Fieldsets/Legend Borders</h4>
+	<p>By default all <code>fieldset/legend</code> tags have a border above them to separate each fieldset group if you wish for the border to be under the <code>fieldset/legend</code> use <code>.legend-brdr-bttm</code> class on the <code>legend</code> tag.</p>
 	<div class="row">
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
 	      <div class="panel-body">
 	        <h5 class="mrgn-tp-0">Appearance</h5>
 	        <form class="form-horizontal" method="get" action="#">
-	          <fieldset class="legend-brdr-bttm">
-	            <legend>Credentials</legend>
+	          <fieldset>
+	            <legend class="legend-brdr-bttm">Credeintals</legend>
 	            <div class="form-group">
 	              <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
 	              <div class="col-sm-8">
@@ -1078,8 +1078,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	    <details>
 	      <summary>Source code</summary>
 	      <pre><code>&lt;form <strong>class=&quot;form-horizontal&quot;</strong> role=&quot;form&quot; method=&quot;get&quot; action=&quot;#&quot;&gt;
-	        &lt;fieldset <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;
-	        &lt;legend&gt;<strong>Credeintals</strong>&lt;/legend&gt;
+	        &lt;fieldset&gt;
+	        &lt;legend <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;<strong>Credeintals</strong>&lt;/legend&gt;
 	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
 	        &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Email</strong>&lt;/label&gt;
 	        &lt;div class=&quot;col-sm-10&quot;&gt;
