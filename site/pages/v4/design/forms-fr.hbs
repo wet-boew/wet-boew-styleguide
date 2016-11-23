@@ -882,15 +882,15 @@
     </div>
   </div>
 	<h4 id="fieldset"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span></span> Bordures de Légende</h4>
-	<p>Par défaut, les balises <code>fieldset/legend</code> ont une bordure au-dessus pour séparer chaque groupe de control. Il est possible de changer ce style afin d'avoir la bordure en dessous de la légende en utilisant la classe <code>.legend-brdr-bttm</code> sur la balise <code>legend</code>.</p>
+	<p>By default a single <code>&lt;fieldset&gt;</code> has no top border. Each fieldset after the first <code>&lt;fieldset&gt;</code> well have a border to sperate the two fieldsets. This can be changed by using <code>.legend-brdr-bttm</code> class on the <code>&lt;fieldset&gt;</code> to create a border under each <code>&lt;legend&gt;</code>.</p>
 	<div class="row">
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
 	      <div class="panel-body">
 	        <h5 class="mrgn-tp-0">Apparence</h5>
 	        <form class="form-horizontal" method="get" action="#">
-	          <fieldset>
-	            <legend class="legend-brdr-bttm">Lettres de créance</legend>
+	          <fieldset class="legend-brdr-bttm">
+	            <legend>Lettres de créance</legend>
 	            <div class="form-group">
 	              <label for="inputEmail3" class="col-sm-4 control-label">Courriel</label>
 	              <div class="col-sm-8">
@@ -917,8 +917,8 @@
 	    <details>
 	      <summary>Code source</summary>
 	      <pre><code>&lt;form <strong>class=&quot;form-horizontal&quot;</strong> role=&quot;form&quot; method=&quot;get&quot; action=&quot;#&quot;&gt;
-	        &lt;fieldset&gt;
-	        &lt;legend <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;Lettres de créance&lt;/legend&gt;
+	        &lt;fieldset <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;
+	        &lt;legend&gt;Lettres de créance&lt;/legend&gt;
 	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
 	        &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Courriel</strong>&lt;/label&gt;
 	        &lt;div class=&quot;col-sm-10&quot;&gt;
