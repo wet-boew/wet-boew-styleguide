@@ -148,7 +148,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 			
 			
 			
-			<li>Whitespace/No wrap</li>
+			<li>Wrapping and truncating text</li>
 		</ol>
 	</div>
 </div>
@@ -161,7 +161,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 	<main role="main" property="mainContentOfPage" class="container">
 
-		<h1 id="wb-cont" property="name">Whitespace/No wrap</h1>
+		<h1 id="wb-cont" property="name">Wrapping and truncating text</h1>
 
 		
 
@@ -170,9 +170,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 
 		
-
-  <span class="wb-prettify all-pre"></span>
-  <div class="row">
+<span class="wb-prettify all-pre"></span>
+ <div class="row">
     <section class="col-md-8">
       <div class="panel panel-default">
         <header class="panel-heading">
@@ -184,6 +183,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
             <li><a href="#design">Design and coding</a>
               <ul>
                 <li><a href="#basic">Basic use</a> </li>
+				<li><a href="#enhanced">Enhanced use</a> </li>
               </ul>
             </li>
           </ul>
@@ -199,7 +199,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         </div>
       </div>
     </section>
-  </div>
+</div>
+   <section>
   <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
   <p>Use to prevent text from wrapping to the next line.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
@@ -244,11 +245,56 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
     </div>
   </div>
 
+ 
+
+
+    <h3 id="enhanced">Enhanced use</h3>
+	
+	
+	<h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></span></span> Truncated</h4>
+	 <p>Use to truncate text to fit within a grid column on a single line.  Any text beyond the grid border will be cropped and replaced with an ellipsis (three dots). The text only disappears visually, and it can still be read by screen readers. </p>
+
+     <div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+           
+		  <p>Default:</p>
+		    <p>This year's deadline to filing your taxes is April 30.</p>
+			<p>With <code>.wb-elps</code>:
+		   <p class="wb-elps">This year's deadline to filing your taxes is April 30.</p>
+           
+          </div>
+ </div>
+       </div>
+	
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Use primarily for hyperlinks to prevent word wrap (if height is a concern and <code>.wb-eqht</code> cannot be applied) or if it displays outside of a grid columns (when <code>.nowrap</code> is applied)</li>
+		  
+		  
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not use this styling for sentences, as it can hide  information to a visual user</li>
+		  <li>Do not use in place of <code>.wb-eqht</code> when trying to achieve equal height on a grid row</li>
+          <li>Do not use this component in a way that conflicts with the preceding compliance point(s)</li>
+        </ul>
+      </div>
+    <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+      <pre>&lt;p class=&quot;wb-elps&quot;&gt;...&lt;/p&gt;</pre>
+      </div>
+    </div>
 
 
 		<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2016-10-17</time></dd>
+	<dd><time property="dateModified">2016-11-23</time></dd>
 </dl>
 
 

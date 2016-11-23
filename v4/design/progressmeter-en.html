@@ -171,295 +171,143 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 		
 <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <section class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#design">Design and coding</a>
+                <ul>
+                  <li><a href="#basic">Basic use</a>
+                      <ul>
+                        <li><a href="#progress">Progress bar</a></li>
+                        <li><a href="#meter">Meter</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Work in progress</h2>
+          <p>This page is a work in progress.</p>
+          <p>Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section>
+    <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
+    <p>The progress bar is used to provide up-to-date feedback on the progress of a workflow or action. Meter is used to display a value in a range when there is a known minimum and maximum value (scalar measurement).</p>
+  </section>
+  <section>
+    <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
+    <h3 id="basic">Basic use</h3>
+	<p> Because some browsers do not support the functionality natively, these polyfills emulate the same functionality using generic HTML and WAI-ARIA.</p>
+	<h4 id="progress">Progress bar</h4>
+	<p>The HTML5 <code>progress</code> element displays the progress of a task.</p>
 
-<div class="alert alert-info">
-   <p>We are currently working on redesigning the following content.</p>
-</div>
-
-<div class="row">
-	<section class="col-md-8">
-		<div class="panel panel-default">
-			<header class="panel-heading">
-				<h2 class="panel-title">Table of contents</h2>
-			</header>
-			<div class="panel-body">
-				<ul>
-					<li><a href="#progress">Progress bar</a></li>
-					<li><a href="#meter">Meter</a></li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<section class="col-md-4">
-		<div class="well">
-			<h2 class="h3 mrgn-tp-0">Related</h2>
-			<section>
-				<h3 class="h4">Design guide</h3>
-				<ul class="list-unstyled mrgn-lft-lg lst-spcd">
-					<li><a href="http://wet-boew.github.io/v4.0-ci/demos/progress/progress-en.html">Progress polyfill</a></li>
-					<li><a href="http://wet-boew.github.io/v4.0-ci/demos/meter/meter-en.html">Meter polyfill</a></li>
-				</ul>
-			</section>
-		</div>
-	</section>
-</div>
-
-<section>
-	<h2 class="page-header" id="progress">Progress bar</h2>
-	<p>Provide up-to-date feedback on the progress of a workflow or action with progress bars. The HTML5 <code>progress</code> element can be used to display progress.</p>
-
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th scope="col">Value</th>
-				<th scope="col">Max</th>
-				<th scope="col">Result</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>22</td>
-				<td>100</td>
-				<td><progress value="22" max="100"><span class="wb-inv">22%</span></progress></td>
-			</tr>
-			<tr>
-				<td>198</td>
-				<td>300</td>
-				<td><progress value="198" max="300"><span class="wb-inv">66%</span></progress></td>
-			</tr>
-			<tr>
-				<td>500</td>
-				<td>500</td>
-				<td><progress value="500" max="500"><span class="wb-inv">100%</span></progress></td>
-			</tr>
-			<tr>
-				<td colspan="2"><button class="btn btn-default" id="updateProgress">Update</button></td>
-				<td><progress id="updateTest" value="82" max="100"><span class="wb-inv">82%</span></progress></td>
-			</tr>
-		</tbody>
-	</table>
-
-	<details class="mrgn-bttm-md">
-		<summary>View code</summary>
-		<section>
-			<h3>HTML</h3>
-			<pre><code>&lt;table class=&quot;table table-striped&quot;&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th scope=&quot;col&quot;&gt;Value&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Max&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Result&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;22&lt;/td&gt;
-			&lt;td&gt;100&lt;/td&gt;
-			&lt;td&gt;&lt;progress value=&quot;22&quot; max=&quot;100&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;22%&lt;/span&gt;&lt;/progress&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;198&lt;/td&gt;
-			&lt;td&gt;300&lt;/td&gt;
-			&lt;td&gt;&lt;progress value=&quot;198&quot; max=&quot;300&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;66%&lt;/span&gt;&lt;/progress&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;500&lt;/td&gt;
-			&lt;td&gt;500&lt;/td&gt;
-			&lt;td&gt;&lt;progress value=&quot;500&quot; max=&quot;500&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;100%&lt;/span&gt;&lt;/progress&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td colspan=&quot;2&quot;&gt;&lt;button class=&quot;btn btn-default&quot; id=&quot;updateProgress&quot;&gt;Update&lt;/button&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;progress id=&quot;updateTest&quot; value=&quot;82&quot; max=&quot;100&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;82%&lt;/span&gt;&lt;/progress&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-		</section>
-
-		<section>
-			<h3>JavaScript (demo only)</h3>
-			<pre><code>(function( $, wb ) {
-&quot;use strict&quot;;
-
-$( document ).on( &quot;click vclick&quot;, &quot;#updateProgress&quot;, function() {
-	var $elm = $( &quot;#updateTest&quot; ),
-		valuenow = parseInt( $elm.attr( &quot;value&quot; ), 10 ),
-		newValue = valuenow === parseInt( $elm.attr( &quot;max&quot; ), 10 ) ? 0 : valuenow + 1;
-
-	$elm
-		.attr( &quot;value&quot;, newValue )
-		.find( &quot;span&quot; )
-			.text( newValue + &quot;%&quot; );
-
-	// Update the visuals
-	$elm.trigger( &quot;wb-update.wb-progress&quot; );
-});
-
-})( jQuery, wb );</code></pre>
-		</section>
-	</details>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+          
+         <p><progress value="22" max="100" class="full-width"><span class="wb-inv">22%</span></progress></p>
+		<p><progress value="198" max="300" class="full-width"><span class="wb-inv">66%</span></progress></p>
+		<p><progress value="500" max="500" class="full-width"><span class="wb-inv">100%</span></progress></p>
 	</div>
-</section>
+        </div>
+ </div>
+      
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Provide visual data of the current and maximum value (in a table or aligned with the progress bar)</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Displaying a value in a range when there is a known minimum and maximum value (refer to <a href="#meter">meter</a>) </li>
+          <li>Do not use the <code>.progress .progress-bar</code> classes that come with Bootstrap, as it is not semantically correct 
+            <div class="progress progress-striped mrgn-bttm-sm mrgn-tp-xs">
+              <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> 70% </div>
+            </div>
+</li>
+          <li>Do not use this component in a way that conflicts with the preceding compliance point(s)</li>
+        </ul>
+      </div>
+    <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+      <pre>&lt;progress value=&quot;22&quot; max=&quot;100&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;22%&lt;/span&gt;&lt;/progress&gt;
+&lt;progress value=&quot;198&quot; max=&quot;300&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;66%&lt;/span&gt;&lt;/progress&gt;
+&lt;progress value=&quot;500&quot; max=&quot;500&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;100%&lt;/span&gt;&lt;/progress&gt;</pre>
+<p> Refer to <a href="http://wet-boew.github.io/v4.0-ci/demos/progress/progress-en.html">Progress polyfill</a> for additional options.</p> 
+      </div>
+    </div>
+ <h4 id="progress">Meter</h4>
+	<p>The HTML5 <code>meter</code> element displays a scalar measurement within a known range.  </p>
 
-<section>
-	<h2 class="page-header" id="meter">Meter</h2>
-	<p>The HTML5 <code>meter</code> element displays a scalar measurement within a known range.</p>
-
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th scope="col">Description</th>
-				<th scope="col">Min</th>
-				<th scope="col">Low</th>
-				<th scope="col">Value</th>
-				<th scope="col">Max</th>
-				<th scope="col">High</th>
-				<th scope="col">Result</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Normal (75%)</td>
-				<td>20</td>
-				<td>n/a</td>
-				<td>65</td>
-				<td>80</td>
-				<td>n/a</td>
-				<td><meter min="20" value="65" max="80">75% (normal)</meter></td>
-			</tr>
-			<tr>
-				<td>Too high (90%)</td>
-				<td>0</td>
-				<td>n/a</td>
-				<td>90</td>
-				<td>100</td>
-				<td>80</td>
-				<td><meter min="0" value="90" max="100" high="80">90% (too high)</meter></td>
-			</tr>
-			<tr>
-				<td>Too low (15%)</td>
-				<td>100</td>
-				<td>120</td>
-				<td>115</td>
-				<td>200</td>
-				<td>180</td>
-				<td><meter min="100" low="120" value="115" max="200" high="180">15% (too low)</meter></td>
-			</tr>
-			<tr>
-				<td colspan="3"><button class="btn btn-default" id="decreaseMeter">Decrease</button></td>
-				<td colspan="3"><button class="btn btn-default" id="increaseMeter">Increase</button></td>
-				<td><meter id="updateTest" min="100" low="120" value="150" max="200" high="180"><span class="wb-inv">150</span></meter>
-			</tr>
-		</tbody>
-	</table>
-
-	<details class="mrgn-bttm-md">
-		<summary>View code</summary>
-		<section>
-			<h3>HTML</h3>
-			<pre><code>&lt;table class=&quot;table table-striped&quot;&gt;
-	&lt;thead&gt;
-		&lt;tr&gt;
-			&lt;th scope=&quot;col&quot;&gt;Description&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Min&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Low&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Value&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Max&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;High&lt;/th&gt;
-			&lt;th scope=&quot;col&quot;&gt;Result&lt;/th&gt;
-		&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Normal (75%)&lt;/td&gt;
-			&lt;td&gt;20&lt;/td&gt;
-			&lt;td&gt;n/a&lt;/td&gt;
-			&lt;td&gt;65&lt;/td&gt;
-			&lt;td&gt;80&lt;/td&gt;
-			&lt;td&gt;n/a&lt;/td&gt;
-			&lt;td&gt;&lt;meter min=&quot;20&quot; value=&quot;65&quot; max=&quot;80&quot;&gt;75% (normal)&lt;/meter&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Too high (90%)&lt;/td&gt;
-			&lt;td&gt;0&lt;/td&gt;
-			&lt;td&gt;n/a&lt;/td&gt;
-			&lt;td&gt;90&lt;/td&gt;
-			&lt;td&gt;100&lt;/td&gt;
-			&lt;td&gt;80&lt;/td&gt;
-			&lt;td&gt;&lt;meter min=&quot;0&quot; value=&quot;90&quot; max=&quot;100&quot; high=&quot;80&quot;&gt;90% (too high)&lt;/meter&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td&gt;Too low (15%)&lt;/td&gt;
-			&lt;td&gt;100&lt;/td&gt;
-			&lt;td&gt;120&lt;/td&gt;
-			&lt;td&gt;115&lt;/td&gt;
-			&lt;td&gt;200&lt;/td&gt;
-			&lt;td&gt;180&lt;/td&gt;
-			&lt;td&gt;&lt;meter min=&quot;100&quot; low=&quot;120&quot; value=&quot;115&quot; max=&quot;200&quot; high=&quot;180&quot;&gt;15% (too low)&lt;/meter&gt;&lt;/td&gt;
-		&lt;/tr&gt;
-		&lt;tr&gt;
-			&lt;td colspan=&quot;3&quot;&gt;&lt;button class=&quot;btn btn-default&quot; id=&quot;decreaseMeter&quot;&gt;Decrease&lt;/button&gt;&lt;/td&gt;
-			&lt;td colspan=&quot;3&quot;&gt;&lt;button class=&quot;btn btn-default&quot; id=&quot;increaseMeter&quot;&gt;Increase&lt;/button&gt;&lt;/td&gt;
-			&lt;td&gt;&lt;meter id=&quot;updateTest&quot; min=&quot;100&quot; low=&quot;120&quot; value=&quot;150&quot; max=&quot;200&quot; high=&quot;180&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;150&lt;/span&gt;&lt;/meter&gt;
-		&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-		</section>
-
-		<section>
-			<h3>JavaScript (demo only)</h3>
-			<pre><code>(function( $, wb ) {
-&quot;use strict&quot;;
-
-$( document ).on( &quot;click vclick&quot;, &quot;#increaseMeter, #decreaseMeter&quot;, function( event ) {
-	var $elm = $( &quot;#updateTest&quot; ),
-		increase = event.currentTarget.id === &quot;increaseMeter&quot;,
-		valuenow = parseInt( $elm.attr( &quot;value&quot; ), 10 ),
-		limit = parseInt( $elm.attr( increase ? &quot;max&quot; : &quot;min&quot; ), 10 ),
-		change = increase ? 1 : -1,
-		newValue = valuenow === limit ? 0 : valuenow + change;
-
-	$elm
-		.attr( &quot;value&quot;, newValue )
-		.find( &quot;span&quot; )
-			.text( newValue );
-
-	// Update the visuals
-	$elm.trigger( &quot;wb-update.wb-meter&quot; );
-});
-
-})( jQuery, wb );</code></pre>
-		</section>
-	</details>
-
-	<div class="row wb-eqht mrgn-tp-lg mrgn-bttm-xl">
-		<section class="col-md-6">
-			<h3 class="mrgn-tp-0 text-success h4">Use when <span class="glyphicon glyphicon-ok-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-
-		<section class="col-md-6 brdr-lft">
-			<h3 class="mrgn-tp-0 text-danger h4">Do not use when <span class="glyphicon glyphicon-remove-circle"></span></h3>
-			<p>(Info goes here)</p>
-		</section>
-	</div>
-</section>
-
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+           <p><meter value="3" min="0" max="10">3 out of 10</meter></p>
+		   <p><meter value="0.7">70%</meter></p>
+          </div>
+ </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Provide visual data of the minimum, maximum and current value (in a table or aligned with the progress bar)
+            <ul>
+              <li>Include <code>low</code> and<code> high</code> attributes to indicate levels above or below normal amounts, colour of bar will change
+                <ul>
+                  <li>Too low: <br>
+                  <meter min="100" low="120" value="115" max="200" high="180">15% (too low)</meter><br>
+                  <code>&lt;meter min="100" low="120" value="115" max="200" high="180"&gt;15% (too low)&lt;/meter&gt;</code></li>
+				  <li>Too high: <br>
+                  <meter min="0" value="90" max="100" high="80">90% (too high)</meter><br>
+                  <code>&lt;meter min=&quot;0&quot; value=&quot;90&quot; max=&quot;100&quot; high=&quot;80&quot;&gt;90% (too high)&lt;/meter&gt;</code></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
+        <p>Compliance point(s):</p>
+        <ul>
+          <li>Do not display the progress of a task (refer to <a href="#progress">progress bar</a>) </li>
+          <li>Do not use to represent values that have no maximum range</li>
+          <li>Do not use this component in a way that conflicts with the preceding compliance point(s)</li>
+        </ul>
+      </div>
+    <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+      <pre>&lt;meter value=&quot;3&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;3 out of 10&lt;/meter&gt;
+&lt;meter value=&quot;0.7&quot;&gt;70%&lt;/meter&gt;</pre>
+<p>Refer to <a href="http://wet-boew.github.io/v4.0-ci/demos/meter/meter-en.html">Meter polyfill</a> for additional options.</p>
+      </div>
+    </div>
+  </section>
+  <p class="mrgn-tp-lg">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  
 
 		<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2016-11-02</time></dd>
+	<dd><time property="dateModified">2016-11-23</time></dd>
 </dl>
 
 
