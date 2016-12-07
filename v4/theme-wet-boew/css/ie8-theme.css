@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.24-development - 2016-11-23
+ * v4.0.24-development - 2016-12-07
  *
  */
 @charset "UTF-8";
@@ -5684,11 +5684,21 @@ fieldset {
   border-top: 1px solid #e5e5e5;
   padding-top: 10px;
   /*
+	 *  Allows fieldSet/legend to have a bottom border under legend title
+	 *	https://github.com/wet-boew/wet-boew/issues/7766
+	 */
+  /*
 	 *	Fieldset/legend as a label for a group of checkboxes or radio buttons
 	 *	https://github.com/wet-boew/wet-boew/issues/5797
 	 */ }
   fieldset:first-child {
     border-top: 0; }
+  fieldset.legend-brdr-bttm {
+    border-top: 0; }
+    fieldset.legend-brdr-bttm legend {
+      border-bottom: 1px solid #e5e5e5;
+      float: none;
+      margin-bottom: 10px; }
   fieldset.chkbxrdio-grp {
     border-top: 0;
     padding-top: 0; }
@@ -8460,8 +8470,35 @@ table.dataTable {
   right: 0;
   z-index: 101; }
 
-.wb-tabs.carousel-s1 [role="tabpanel"] a, .wb-tabs.carousel-s1 figcaption a, .wb-tabs.carousel-s2 [role="tabpanel"] a, .wb-tabs.carousel-s2 figcaption a {
+.wb-tabs.carousel-s1 [role="tabpanel"] a figure::before, .wb-tabs.carousel-s2 [role="tabpanel"] a figure::before, .wb-tabs.carousel-s1 [role="tabpanel"] a figure::after, .wb-tabs.carousel-s2 [role="tabpanel"] a figure::after {
+  content: "";
+  outline: inherit;
+  position: absolute; }
+
+.wb-tabs.carousel-s1 [role="tabpanel"] a, .wb-tabs.carousel-s2 [role="tabpanel"] a {
+  color: #000;
+  outline-offset: 0; }
+  .wb-tabs.carousel-s1 [role="tabpanel"] a figure, .wb-tabs.carousel-s2 [role="tabpanel"] a figure {
+    outline: inherit; }
+    .wb-tabs.carousel-s1 [role="tabpanel"] a figure::before, .wb-tabs.carousel-s2 [role="tabpanel"] a figure::before {
+      height: calc(100% - 4px);
+      margin: 2px;
+      outline-color: #FFF;
+      width: calc(100% - 4px); }
+    .wb-tabs.carousel-s1 [role="tabpanel"] a figure::after, .wb-tabs.carousel-s2 [role="tabpanel"] a figure::after {
+      height: calc(100% - 2px);
+      margin: 1px;
+      top: 0;
+      width: calc(100% - 2px); }
+  .wb-tabs.carousel-s1 [role="tabpanel"] a figcaption, .wb-tabs.carousel-s2 [role="tabpanel"] a figcaption {
+    color: #fff;
+    text-decoration: underline; }
+
+.wb-tabs.carousel-s1 [role="tabpanel"] figure a, .wb-tabs.carousel-s2 [role="tabpanel"] figure a {
   color: #fff; }
+
+.wb-tabs.carousel-s1 video:focus, .wb-tabs.carousel-s2 video:focus {
+  outline-offset: -1px; }
 
 .wb-tabs.carousel-s2 [role="tablist"] > li.prv, .wb-tabs.carousel-s2 [role="tablist"] > li.nxt {
   background: none;
@@ -8576,7 +8613,7 @@ table.dataTable {
         line-height: normal; }
         .wb-tabs [role="tablist"] > li.tab-count > div {
           position: relative;
-          top: .4em; }
+          top: 0; }
         .wb-tabs [role="tablist"] > li.tab-count .curr-count {
           font-size: 1.5em; }
         .wb-tabs [role="tablist"] > li.tab-count:focus, .wb-tabs [role="tablist"] > li.tab-count:hover {
@@ -8606,14 +8643,11 @@ table.dataTable {
       .wb-tabs.carousel-s1 [role="tablist"] > li.tab-count {
         background: none;
         border: 0;
-        font-size: .9em; }
-        .wb-tabs.carousel-s1 [role="tablist"] > li.tab-count > div {
-          top: .7em; }
+        font-size: .9em;
+        padding: 0 .1em;
+        top: .55em; }
         .wb-tabs.carousel-s1 [role="tablist"] > li.tab-count.active, .wb-tabs.carousel-s1 [role="tablist"] > li.tab-count:focus, .wb-tabs.carousel-s1 [role="tablist"] > li.tab-count:hover {
-          cursor: default;
-          top: 0; }
-      .wb-tabs.carousel-s1 [role="tablist"] > li.active, .wb-tabs.carousel-s1 [role="tablist"] > li:focus, .wb-tabs.carousel-s1 [role="tablist"] > li:hover {
-        top: 1px; }
+          cursor: default; }
   .wb-tabs.carousel-s2 {
     background: #eee; }
     .wb-tabs.carousel-s2.wb-init {
@@ -8640,6 +8674,8 @@ table.dataTable {
             margin-right: .65em;
             margin-top: .4em;
             padding: 8px 10px 4px; }
+      .wb-tabs.carousel-s2 [role="tablist"] a:focus {
+        outline-offset: 0; }
 
 .wb-disable .csstransitions .wb-tabs [role="tabpanel"].out {
   position: static;
@@ -9321,6 +9357,16 @@ details {
       border-width: 10px;
       margin-bottom: 1px;
       padding: 0; }
+      .wb-tabs.carousel-s2.show-thumbs [role="tablist"] li.active a:focus::before {
+        content: "";
+        height: calc(100% - 6px);
+        left: 0;
+        margin: 2px;
+        outline: inherit;
+          outline-color: #FFF;
+        position: absolute;
+        top: 0;
+        width: calc(100% - 4px); }
     .wb-tabs.carousel-s2.show-thumbs [role="tablist"] li[role="presentation"] {
       display: inline-block; }
       .wb-tabs.carousel-s2.show-thumbs [role="tablist"] li[role="presentation"] img {
