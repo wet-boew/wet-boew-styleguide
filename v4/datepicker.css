@@ -21,7 +21,7 @@
 .picker-overlay {
   display: none;
   position: absolute;
-  z-index: 1000; }
+  z-index: 10000; }
   .picker-overlay.open {
     display: block; }
   .picker-overlay .picker-close {

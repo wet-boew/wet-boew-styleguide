@@ -20,7 +20,7 @@
     .no-details details[open] > summary:before {
       /* Add the opened pointer */ }
   .no-details details summary {
-    display: block !important; }
+    display: list-item !important; }
   .no-details[dir="rtl"] details > summary:before {
     /* Add the close pointer */
     content: "\25C4\a0"; }

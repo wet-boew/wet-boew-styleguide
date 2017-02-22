@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.24-development - 2016-12-07
+ * v4.0.24-development - 2017-02-22
  *
  *//**
  * @title WET-BOEW JQuery Helper Methods
@@ -5837,7 +5837,7 @@ var componentName = "wb-lbx",
 	initEvent = "wb-init" + selector,
 	setFocusEvent = "setfocus.wb",
 	dependenciesLoadedEvent = "deps-loaded" + selector,
-	extendedGlobal = false,
+	modalHideSelector = "#wb-tphp, body > header, body > main, body > footer",
 	$document = wb.doc,
 	callbacks, i18n, i18nText,
 
@@ -5965,6 +5965,8 @@ var componentName = "wb-lbx",
 						len = $buttons.length,
 						i, button;
 
+					$document.find( "body" ).addClass( "wb-modal" );
+					$document.find( modalHideSelector ).attr( "aria-hidden", "true" );
 					for ( i = 0; i !== len; i += 1 ) {
 						button = $buttons[ i ];
 						button.innerHTML += "<span class='wb-inv'> " + button.title + "</span>";
@@ -5980,6 +5982,10 @@ var componentName = "wb-lbx",
                         .find( ".activate-open" )
                         .trigger( "wb-activate" );
 
+				},
+				close: function() {
+					$document.find( "body" ).removeClass( "wb-modal" );
+					$document.find( modalHideSelector ).removeAttr( "aria-hidden" );
 				},
 				change: function() {
 					var $item = this.currItem,
@@ -6062,7 +6068,6 @@ var componentName = "wb-lbx",
 
 				// Set the dependency i18nText only once
 				$.extend( true, $.magnificPopup.defaults, i18nText );
-				extendedGlobal = true;
 
 				$document.trigger( dependenciesLoadedEvent );
 			}
@@ -6071,62 +6076,6 @@ var componentName = "wb-lbx",
 
 // Bind the init event of the plugin
 $document.on( "timerpoke.wb " + initEvent, selector, init );
-
-$document.on( "keydown", ".mfp-wrap", function( event ) {
-	var $elm, $focusable, index, length;
-
-	// If the tab key is used and filter out any events triggered by descendants
-	if ( extendedGlobal && event.which === 9 ) {
-		event.preventDefault();
-		$elm = $( this );
-		$focusable = $elm.find( ":focusable" );
-		length = $focusable.length;
-		index = $focusable.index( event.target ) + ( event.shiftKey ? -1 : 1 );
-		if ( index === -1 ) {
-			index = length - 2;
-		} else if ( index === length - 1 ) {
-			index = 0;
-		}
-		$focusable.eq( index ).trigger( setFocusEvent );
-	}
-
-	/*
-	 * Since we are working with events we want to ensure that we are being passive about our control,
-	 * so returning true allows for events to always continue
-	 */
-	return true;
-} );
-
-/*
- * Sends focus to the close button if focus moves beyond the Lightbox (Jaws fix)
- */
-$document.on( "focus", ".lbx-end", function( event ) {
-	event.preventDefault();
-	$( this )
-		.closest( ".mfp-wrap" )
-			.find( ":focusable" )
-				.eq( 0 )
-					.trigger( setFocusEvent );
-
-	/*
-	 * Since we are working with events we want to ensure that we are being passive about our control,
-	 * so returning true allows for events to always continue
-	 */
-	return true;
-} );
-
-// Outside focus detection (for screen readers that exit the lightbox
-// outside the normal means)
-$document.on( "focusin", "body", function( event ) {
-
-	if ( extendedGlobal && $.magnificPopup.instance.currItem &&
-		$( event.target ).closest( ".mfp-wrap" ).length === 0 &&
-		$( ".popup-modal-dismiss" ).length === 0 ) {
-
-		// Close the popup
-		$.magnificPopup.close();
-	}
-} );
 
 // Handler for clicking on a same page link within the overlay to outside the overlay
 $document.on( "click vclick", ".mfp-wrap a[href^='#']", function( event ) {
@@ -7035,7 +6984,7 @@ wb.add( selector );
 
 /**
  * @title WET-BOEW Multimedia PLayer
- * @overview An accessible multimedia player for <audio> and <video> tags, including a Flash fallback
+ * @overview An accessible multimedia player for <audio> and <video> tags
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author WET Community
  */
@@ -7383,7 +7332,7 @@ var componentName = "wb-mltmd",
 
 	/**
 	 * @method playerApi
-	 * @description Normalizes the calls to the HTML5 media API and Flash Fallback
+	 * @description Normalizes the calls to the HTML5 media API
 	 * @param {String} fn The function to call
 	 * @param {object} args The arguments to send to the function call
 	 */
@@ -7626,7 +7575,7 @@ $document.on( initializedEvent, selector, function( event ) {
 			url = wb.getUrlParts( $this.find( "[type='video/youtube']" ).attr( "src" ) );
 
 			// lets set the flag for the call back
-			data.youTubeId = url.params.v;
+			data.youTubeId = url.params.v ? url.params.v : url.pathname.substr( 1 );
 
 			if ( youTube.ready === false ) {
 				$document.one( youtubeReadyEvent, function() {
@@ -8083,7 +8032,7 @@ var componentName = "wb-navcurr",
 				pageUrlQuery = windowLocation.search,
 				match = false,
 				className = classNameOverride ? classNameOverride : componentName,
-				len, i, j, link, linkHref, linkUrl, linkQuery, linkQueryLen,
+				child, len, i, j, link, linkHref, linkUrl, linkQuery, linkQueryLen,
 				localBreadcrumbLinks, localBreadcrumbLinksArray, localBreadcrumbLinksUrlArray,
 				localBreadcrumbQuery, localBreadcrumbLinkUrl;
 
@@ -8118,14 +8067,15 @@ var componentName = "wb-navcurr",
 						// Pre-process the breadcrumb links
 						localBreadcrumbLinksArray = [];
 						localBreadcrumbLinksUrlArray = [];
-						localBreadcrumbLinks = ( breadcrumb.jquery ? breadcrumb[ 0 ] : breadcrumb ).getElementsByTagName( "a" );
+						localBreadcrumbLinks = ( breadcrumb.jquery ? breadcrumb[ 0 ] : breadcrumb ).getElementsByTagName( "li" );
 						len = localBreadcrumbLinks.length;
-						for ( i = 0; i !== len; i += 1 ) {
-							link = localBreadcrumbLinks[ i ];
-							linkHref = link.getAttribute( "href" );
-							if ( linkHref.length !== 0 && linkHref.charAt( 0 ) !== "#" ) {
-								localBreadcrumbLinksArray.push( link );
-								localBreadcrumbLinksUrlArray.push( link.hostname + link.pathname.replace( /^([^\/])/, "/$1" ) );
+						if ( len ) {
+							link = localBreadcrumbLinks[ len - 1 ];
+							child = link.firstChild;
+							linkHref = ( child && child.nodeName === "A" ) ? child.getAttribute( "href" ) : "";
+							if ( linkHref && linkHref.charAt( 0 ) !== "#" ) {
+								localBreadcrumbLinksArray.push( child );
+								localBreadcrumbLinksUrlArray.push( child.hostname + child.pathname.replace( /^([^\/])/, "/$1" ) );
 							}
 						}
 
