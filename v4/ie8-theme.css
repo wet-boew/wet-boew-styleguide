@@ -2,7 +2,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.25-development - 2017-02-27
+ * v4.0.25-development - 2017-04-10
  *
  */
 @charset "UTF-8";
@@ -5975,11 +5975,11 @@ q:before, q:after {
 * http://jquery.org/license
 *
 */
-.pop.in, .fade.in {
+.pop.in, .fade.in, .fade.reverse.out {
   opacity: 1;
   visibility: visible; }
 
-.pop.out, .fade.out {
+.pop.out, .fade.out, .fade.reverse.in {
   opacity: 0;
   visibility: hidden; }
 
@@ -6038,6 +6038,10 @@ q:before, q:after {
     .fade.out.noheight {
       animation-name: fadeoutnoheight;
       max-height: 0; }
+  .fade.reverse.in {
+    animation-name: fadeout; }
+  .fade.reverse.out {
+    animation-name: fadein; }
 
 @keyframes fadein {
   0% {
@@ -6619,7 +6623,7 @@ details.alert, details.alert[open] {
   details.alert > *, details.alert[open] > * {
     margin-left: .7em; }
   details.alert > :first-child, details.alert[open] > :first-child {
-    margin-left: .4em; }
+    margin-left: .2em; }
     details.alert > :first-child:before, details.alert[open] > :first-child:before {
       color: #000;
       content: ""; }
@@ -6636,16 +6640,16 @@ details.alert, details.alert[open] {
     color: #d3080c;
     content: "\e101"; }
 
-.no-details details.alert > summary, .no-details details.alert[open] > summary {
-  margin-left: 1.4em; }
-  .no-details details.alert > summary:before, .no-details details.alert[open] > summary:before {
+.wb-enable.no-details details.alert > summary {
+  margin-left: 1.2em; }
+  .wb-enable.no-details details.alert > summary:before {
     content: "\25BA\a0"; }
 
-.no-details details.alert[open] > summary:before, .no-details details.alert[open][open] > summary:before {
+.wb-enable.no-details details.alert[open] > summary:before {
   content: "\25BC\a0"; }
 
-.no-details[dir="rtl"] details.alert > summary {
-  margin-right: 1.4em; }
+.wb-enable.no-details[dir="rtl"] details.alert > summary {
+  margin-right: 1.2em; }
 
 /*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7656,7 +7660,7 @@ body.wb-modal .modal-dialog summary {
 .hidden-hd .modal-body {
   padding-top: 50px; }
 
-.hidden-hd .overlay-close {
+.hidden-hd .overlay-close:not(.btn) {
   background-color: #000;
   border-radius: 999px;
   height: 1em;
@@ -8321,10 +8325,6 @@ table.dataTable {
           cursor: default; }
   .wb-tabs.carousel-s2 {
     background: #eee; }
-    .wb-tabs.carousel-s2.wb-init {
-      padding-bottom: 4.375em; }
-    .wb-tabs.carousel-s2.exclude-controls {
-      padding-bottom: 0; }
     .wb-tabs.carousel-s2 [role="tablist"] {
       bottom: 0;
       position: absolute;
@@ -8348,9 +8348,12 @@ table.dataTable {
       .wb-tabs.carousel-s2 [role="tablist"] a:focus {
         outline-offset: 0; }
 
-.wb-disable .csstransitions .wb-tabs [role="tabpanel"].out {
+.wb-disable.csstransitions .wb-tabs [role="tabpanel"].out {
   position: static;
   width: auto; }
+
+.wb-disable .wb-tabs.carousel-s2 {
+  background: transparent; }
 
 .wb-disable .wb-tabs > details[open] > summary {
   display: list-item !important; }
@@ -8358,12 +8361,18 @@ table.dataTable {
 .wb-disable .wb-tabs > .tabpanels > details[open] > summary {
   display: list-item !important; }
 
+.wb-disable .wb-tabs .out {
+  visibility: visible; }
+
 .wb-disable .wb-tabs [role="tablist"] {
   display: none; }
 
 .wb-disable .wb-tabs [role="tabpanel"] {
+  animation: none;
   display: block;
-  opacity: 1; }
+  margin-bottom: .5em;
+  opacity: 1;
+  transform: none; }
 
 /*
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -8979,7 +8988,6 @@ details {
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  */
-  #details-facebook,
   #details-flickr,
   #details-youtube {
     padding-left: 0;
@@ -8999,6 +9007,10 @@ details {
         display: none !important; }
   .wb-tabs {
     /* Only for backwards compatibility. Should be removed in v4.1. */ }
+    .wb-tabs.carousel-s2.wb-init {
+      padding-bottom: 4.375em; }
+    .wb-tabs.carousel-s2.exclude-controls {
+      padding-bottom: 0; }
     .wb-tabs.carousel-s2.show-thumbs [role="tablist"] li.active a {
       border-color: #666;
       border-style: solid;
@@ -9246,15 +9258,27 @@ details {
  */
   .wb-tabs [role="tablist"], .wb-tabs.print-active > .tabpanels > div.out, .wb-tabs.print-active > .tabpanels > details.out .tgl-panel, .wb-tabs.print-active > .tabpanels > details > summary[aria-expanded="false"] + .tgl-panel {
     display: none !important; }
+  .wb-tabs.carousel-s1 [role="tabpanel"], .wb-tabs.carousel-s2 [role="tabpanel"] {
+    margin-bottom: .5em; }
+  .wb-tabs.carousel-s1 figure, .wb-tabs.carousel-s2 figure {
+    page-break-inside: avoid; }
+  .wb-tabs.carousel-s1 figcaption, .wb-tabs.carousel-s2 figcaption {
+    border: 1px solid #000; }
   .wb-tabs [role="tabpanel"] {
     display: block !important;
     opacity: 1 !important;
+    overflow: visible !important;
     position: static !important;
+    transform: none;
     visibility: visible !important; }
     .wb-tabs [role="tabpanel"] figcaption {
       position: static; }
     .wb-tabs [role="tabpanel"] summary {
-      display: list-item !important; } }
+      display: list-item !important; }
+    .wb-tabs [role="tabpanel"].noheight {
+      max-height: none; }
+  .wb-tabs > .tabpanels {
+    overflow: visible !important; } }
 
 /*! WET-BOEW Core and Plugins */
 /*
