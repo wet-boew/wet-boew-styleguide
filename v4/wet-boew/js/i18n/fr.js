@@ -221,6 +221,8 @@ wb.i18nDict = {
 	/* Disable/enable WET plugins and polyfills */
 	"wb-disable": "Passer au version HTML simplifiée",
 	"wb-enable": "Passer au version standard",
+	"disable-notice-h": "Avis: Version HTML simplifiée",
+	"disable-notice": "Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaine fonctionalités peuvent être déactivées.",
 
 	/* Dismissable content */
 	"dismiss": "Écarter",

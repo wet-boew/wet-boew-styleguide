@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.25-development - 2017-04-10
+ * v4.0.25-development - 2017-04-27
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
@@ -3905,6 +3905,16 @@ var getUrlParts = function( url ) {
 			"#23447e",
 			"#999999"
 		],
+
+		// Get and generate a unique session id
+		sessionGUID: function() {
+			var sessionId = sessionStorage.getItem( "wb-session-GUID" );
+			if ( !sessionId ) {
+				sessionId = wb.guid();
+				sessionStorage.setItem( "wb-session-GUID", sessionId );
+			}
+			return sessionId;
+		},
 
 		// Add a selector to be targeted by timerpoke
 		add: function( selector ) {
