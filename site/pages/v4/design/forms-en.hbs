@@ -284,6 +284,7 @@
   &lt;/form&gt;</pre>
       </details>
     </div>
+	</div>
     <h4 id="inputs"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-square-o fa-stack-1x fa-inverse"></span></span> Inputs</h4>
     <p>Use text-based input fields (most common form control). This includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
     <div class="row">
@@ -880,7 +881,7 @@
     </div>
   </div>
 	<h4 id="fieldset"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span></span> Fieldsets Borders</h4>
-	<p>By default a single <code>&lt;fieldset&gt;</code> has no top border. Each fieldset after the first <code>&lt;fieldset&gt;</code> well have a border to sperate the two fieldsets. This can be changed by using <code>.legend-brdr-bttm</code> class on the <code>&lt;fieldset&gt;</code> to create a border under each <code>&lt;legend&gt;</code>.</p>
+	<p>By default a single <code>fieldset/legend</code> has no top border. Each fieldset after the first <code>fieldset/legend</code> well have a border to sperate the two fieldsets. This can be changed by using <code>.legend-brdr-bttm</code> class on the <code>&lt;fieldset&gt;</code> to create a border under each <code>&lt;legend&gt;</code>.</p>
 	<div class="row">
 	  <div class="col-md-4">
 	    <div class="panel panel-default">
@@ -888,23 +889,38 @@
 	        <h5 class="mrgn-tp-0">Appearance</h5>
 	        <form class="form-horizontal" method="get" action="#">
 	          <fieldset class="legend-brdr-bttm">
-	            <legend>Credentials</legend>
+	            <legend>Identification Information</legend>
 	            <div class="form-group">
-	              <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+	              <label for="inputFullName" class="col-sm-4 control-label">Full Name</label>
 	              <div class="col-sm-8">
-	                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+	                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name" />
 	              </div>
 	            </div>
-	            <div class="form-group">
-	              <label for="inputPassword3" class="col-sm-4 control-label">Password</label>
-	              <div class="col-sm-8">
-	                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
-	              </div>
-	            </div>
+							<div class="form-group">
+								<label for="dob" class="col-sm-4 control-label">Date of Birth <span class="datepicker-format"> (YYYY-MM-DD)</span></label>
+								<div class="col-sm-8">
+									<input class="form-control" id="dob" name="dob" type="date" />
+								</div>
+							</div>
 	          </fieldset>
+						<fieldset class="legend-brdr-bttm">
+							<legend>Contact Information</legend>
+							<div class="form-group">
+								<label for="tel1" class="col-sm-4 control-label">Telephone number</label>
+								<div class="col-sm-8">
+									<input class="form-control" id="tel1" name="tel1" type="tel" />
+								</div>
+							</div>
+							<div class="form-group">
+	              <label for="inputEmail4" class="col-sm-4 control-label">Email</label>
+	              <div class="col-sm-8">
+	                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
+	              </div>
+	            </div>
+						</fieldset>
 	          <div class="form-group">
 	            <div class="col-sm-offset-4 col-sm-8">
-	              <button type="submit" class="btn btn-default">Sign in</button>
+	              <button type="submit" class="btn btn-default">Sign Up</button>
 	            </div>
 	          </div>
 	        </form>
@@ -915,27 +931,42 @@
 	    <details>
 	      <summary>Source code</summary>
 	      <pre><code>&lt;form <strong>class=&quot;form-horizontal&quot;</strong> role=&quot;form&quot; method=&quot;get&quot; action=&quot;#&quot;&gt;
-	        &lt;fieldset <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;
-	        &lt;legend&gt;<strong>Credeintals</strong>&lt;/legend&gt;
-	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
-	        &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Email</strong>&lt;/label&gt;
-	        &lt;div class=&quot;col-sm-10&quot;&gt;
-	        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot; /&gt;
-	        &lt;/div&gt;
-	        &lt;/div&gt;
-	        &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
-	        &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;<strong>Password</strong>&lt;/label&gt;
-	        &lt;div class=&quot;col-sm-10&quot;&gt;
-	        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot; /&gt;
-	        &lt;/div&gt;
-	        &lt;/div&gt;
-	        &lt;/fieldset&gt;
-	        &lt;div<strong> class=&quot;form-group&quot;</strong>&gt;
-	        &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
-	        &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;<strong>Sign in</strong>&lt;/button&gt;
-	        &lt;/div&gt;
-	        &lt;/div&gt;
-	        &lt;/form&gt;</code></pre>
+&lt;fieldset <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;
+	&lt;legend&gt;<strong>Identification Information</strong>&lt;/legend&gt;
+	&lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+		&lt;label for=&quot;inputFullName&quot; class=&quot;col-sm-4 control-label&quot;&gt;<strong>Full Name</strong>&lt;/label&gt;
+		&lt;div class="col-sm-8"&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputFullName&quot; placeholder=&quot;Full Name&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+		&lt;label for=&quot;dob&quot; class=&quot;col-sm-4 control-label&quot;&gt;<strong>Date of Birth</strong>&lt;span  <strong>class=&quot;datepicker-format&quot;&gt;</strong> (YYYY-MM-DD)&lt;/span&gt;&lt;/label&gt;
+		&lt;div class="col-sm-8"&gt;
+		&lt;input class=&quot;form-control&quot; id=&quot;dob&quot; name=&quot;dob&quot; type=&quot;date&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset <strong>class=&quot;legend-brdr-bttm&quot;</strong>&gt;
+	&lt;legend&gt;<strong>Contact Information</strong>&lt;/legend&gt;
+	&lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+		&lt;label for=&quot;tel1&quot; class=&quot;col-sm-4 control-label&quot;&gt;<strong>Telephone number</strong>&lt;/label&gt;
+		&lt;div class=&quot;col-sm-8&quot;&gt;
+		&lt;input class=&quot;form-control&quot; id=&quot;tel1&quot; name=&quot;tel1&quot; type=&quot;tel&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+		&lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-4 control-label&quot;&gt;<strong>Email</strong>&lt;/label&gt;
+		&lt;div class=&quot;col-sm-8&quot;&gt;
+		&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot; /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
+	&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+		&lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;<strong>Sign in</strong>&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;</code></pre>
 	      </details>
 	    </div>
 	  </div>
