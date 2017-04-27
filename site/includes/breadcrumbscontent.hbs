@@ -1,0 +1,25 @@
+<li>
+	<a href="http://wet-boew.github.io/wet-boew/index-{{language}}.html">{{{i18n "tmpl-home"}}}</a>
+</li>
+{{#isnt page.notlisted true}}
+<li>
+	<a href="../index-{{language}}.html">{{{i18n "tmpl-style-guide"}}}</a>
+</li>
+{{/isnt}}
+{{#contains page.src "/accessibility/"}}
+{{#contains page.src "index"}}
+{{else}}
+	<li>
+		<a href="./index-{{language}}.html">{{{i18n "tmpl-accessibility-guide"}}}</a>
+	</li>
+{{/contains}}
+{{/contains}}
+{{#contains page.src "/writing/"}}
+{{#contains page.src "prncpls"}}
+{{else}}
+	<li>
+		<a href="./prncpls-{{language}}.html">{{{i18n "tmpl-writing-guide"}}}</a>
+	</li>
+{{/contains}}
+{{/contains}}
+<li>{{title}}</li>
