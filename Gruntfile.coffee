@@ -311,7 +311,7 @@ module.exports = (grunt) ->
 
 			travis:
 				options:
-					repo: "https://" + process.env.GH_TOKEN + "@github.com/wet-boew/wet-boew-styleguide.git"
+					repo: process.env.DIST_REPO
 					message: "Travis build " + process.env.TRAVIS_BUILD_NUMBER
 					silent: true
 				src: [
