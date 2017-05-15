@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.25-development - 2017-04-27
+ * v4.0.25-development - 2017-05-15
  *
  *//**
  * @title WET-BOEW JQuery Helper Methods
@@ -3657,7 +3657,7 @@ var componentName = "wb-data-ajax",
 			ajaxType = ajxInfo.type,
 			elm = wb.init( event, componentName + "-" + ajaxType, selector );
 
-		if ( elm ) {
+		if ( elm && ajxInfo.url ) {
 
 			ajax.call( this, event, ajxInfo );
 
@@ -3718,10 +3718,14 @@ var componentName = "wb-data-ajax",
 
 		if ( !url ) {
 			dtAttr = wb.getData( $( elm ), shortName );
-			url = dtAttr.url;
+
+			url = getURL( dtAttr.url, dtAttr.httpref );
+			if ( !url ) {
+				return {};
+			}
 			ajaxType = dtAttr.type;
-			if ( ajaxTypes.indexOf( ajaxType ) === -1 || !url ) {
-				throw "Invalid ajax type or missing url";
+			if ( ajaxTypes.indexOf( ajaxType ) === -1 ) {
+				throw "Invalid ajax type";
 			}
 			nocache = dtAttr.nocache;
 			nocachekey = dtAttr.nocachekey;
@@ -3733,6 +3737,37 @@ var componentName = "wb-data-ajax",
 			"nocache": nocache,
 			"nocachekey": nocachekey
 		};
+	},
+
+	// Return url for conditional display if regexp match http refer
+	getURL = function( url, referer ) {
+		var refers, httpRef, regHttpRef,
+			i, i_len;
+
+		if ( referer ) {
+			if ( !$.isArray( referer ) ) {
+				refers = [];
+				refers.push( referer );
+			} else {
+				refers = referer;
+			}
+
+			httpRef = window.document.referrer;
+			i_len = refers.length;
+			for ( i = 0; i !== i_len; i += 1 ) {
+				regHttpRef = new RegExp( refers[ i ] );
+				if ( regHttpRef.test( httpRef ) ) {
+					if ( $.isArray( url ) && url.length === i_len ) {
+						return url[ i ];
+					} else {
+						return url;
+					}
+				}
+			}
+		} else {
+			return url;
+		}
+		return "";
 	},
 
 	ajxFetched = function( elm, fetchObj ) {
@@ -4437,6 +4472,66 @@ $document.on( eventTimerpoke + " " + initEvent, selector, init );
 
 // Handle text and window resizing
 $document.on( "txt-rsz.wb win-rsz-width.wb win-rsz-height.wb " + contentUpdatedEvent + " wb-updated.wb-tables wb-update" + selector, onResize );
+
+// Add the timer poke to initialize the plugin
+wb.add( selector );
+
+} )( jQuery, window, wb );
+
+/**
+* @title WET-BOEW Facebook embedded page
+* @overview Helps with implementing Facebook embedded pages.
+* @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+* @author @pjackson28
+*/
+( function( $, window, wb ) {
+"use strict";
+
+	/*
+	* Variable and function definitions.
+	* These are global to the plugin - meaning that they will be initialized once per page,
+	* not once per instance of plugin on the page. So, this is a good place to define
+	* variables that are common to all instances of the plugin on a page.
+	*/
+var componentName = "wb-facebook",
+	selector = "." + componentName,
+	initEvent = "wb-init" + selector,
+	$document = wb.doc,
+	fbinited = false,
+
+	/**
+	* @method init
+	* @param {jQuery Event} event Event that triggered the function call
+	*/
+	init = function( event ) {
+
+		// Start initialization
+		// returns DOM object = proceed with init
+		// returns undefined = do not proceed with init (e.g., already initialized)
+		var ele = wb.init( event, componentName, selector ),
+			protocol = wb.pageUrlParts.protocol;
+
+		if ( ele ) {
+			Modernizr.load(
+				{
+					load: [ ( protocol.indexOf( "http" ) === -1 ? "http:" : protocol ) + "//connect.facebook.net/" + wb.lang + "_US/sdk.js" ],
+					complete: function() {
+						if ( !fbinited ) {
+							window.FB.init( {
+								version: "v2.4"
+							} );
+							fbinited = true;
+						}
+
+						window.FB.XFBML.parse( ele[ 0 ] );
+						wb.ready( $( ele ), componentName );
+					}
+				}
+			);
+		}
+	};
+
+$document.on( "timerpoke.wb " + initEvent, selector, init );
 
 // Add the timer poke to initialize the plugin
 wb.add( selector );
