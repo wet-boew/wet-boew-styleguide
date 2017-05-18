@@ -347,16 +347,28 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
   <section>
     <h3 id="enhanced">Enhanced use</h3>
     <h4 id="unstyled"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-bars fa-stack-1x fa-inverse"></span></span> Unstyled lists</h4>
-    <p>Use to remove the bullets or numbers from a list, as well as the left margin on list items (for only the immediate children).</p>
+    <p>Use to remove the bullets or numbers from a list.</p>
     <div class="row">
       <div class="col-md-3">
         <div class="panel panel-default">
           <div class="panel-body">
             <h5 class="mrgn-tp-0">Appearance</h5>
-            <ul class="list-unstyled lst-spcd">
+            <p>Unstyled list:</p>
+            <ul class="list-unstyled">
               <li>List item 1</li>
               <li>List item 2
                 <ul>
+                  <li>List item 2a</li>
+                  <li>List item 2b</li>
+                </ul>
+              </li>
+              <li>List item 3</li>
+            </ul>
+            <p>Unstyled nested list:</p>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</lu>
+                <ul class="lst-none">
                   <li>List item 2a</li>
                   <li>List item 2b</li>
                 </ul>
@@ -370,12 +382,9 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
         <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
 <p>Compliance point(s):</p>
         <ul>
-          <li>Use <code>.list-unstyled</code> to  remove the bullets or numbers from a list</li>
+          <li>Use <code>.list-unstyled</code> to remove the bullets or numbers from a list</li>
+          <li>Use <code>.lst-none</code> to remove the bullets or numbers from a nested listed (maintains indenting)</li>
           <li>Add <code>.lst-spcd</code> to increase the white space between the items, and make them visually separate and distinct</li>
-          <li>Apply only to immediate children list items        <ul>
-              <li>Add only to  nested lists,  if needed</li>
-            </ul>
-          </li>
           <li>Use similar text and list types consistently within the same document</li>
         </ul>
         <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
@@ -384,8 +393,18 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
       </div>
       <div class="col-md-4">
 	  <h5 class="mrgn-tp-0">Code</h5>
-        <pre><code>&lt;ul <strong>class=&quot;list-unstyled lst-spcd&quot;</strong>&gt;
+      <p>Unstyled list:</p>
+        <pre><code>&lt;ul <strong>class=&quot;list-unstyled&quot;</strong>&gt;
   &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p>Unstyled nested list:</p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;List item 1
+    &lt;ul <strong>class=&quot;list-none&quot;</strong>&gt;
+      &lt;li&gt;List item 1a&lt;/li&gt;
+      &lt;li&gt;List item 1b&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
       </div>
     </div>
@@ -828,7 +847,7 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 
 		<dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">2016-10-17</time></dd>
+	<dd><time property="dateModified">2017-05-17</time></dd>
 </dl>
 
 
