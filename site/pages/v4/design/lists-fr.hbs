@@ -4,7 +4,7 @@
 	"language": "fr",
 	"altLangPrefix": "lists",
 	"css": ["https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome", "css/gridify" ],
-	"dateModified": "2016-10-17"
+	"dateModified": "2017-05-17"
 }
 ---
 
@@ -180,13 +180,14 @@
   <section>
     <h3 id="enhanced">Utilisation avancée</h3>
     <h4 id="unstyled"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-bars fa-stack-1x fa-inverse"></span></span> Listes sans style</h4>
-    <p>Les utiliser pour retirer les puces ou les nombres d'une liste, ainsi que la marge de gauche dans des listes d'éléments (seulement pour les enfants immédiats).</p>
+    <p>Les utiliser pour retirer les puces ou les nombres d'une liste.</p>
     <div class="row">
       <div class="col-md-3">
         <div class="panel panel-default">
           <div class="panel-body">
             <h5 class="mrgn-tp-0">Apparence</h5>
-            <ul class="list-unstyled lst-spcd">
+            <p>Liste sans style&#160;:</p>
+            <ul class="list-unstyled">
               <li>Élément de liste 1</li>
               <li>Élément de liste 2
                 <ul>
@@ -196,6 +197,16 @@
               </li>
               <li>Élément de liste 3</li>
             </ul>
+            <p>Liste imbriquée sans style&#160;:
+            <ul>
+              <li>Élément de liste 1</li>
+              <li>Élément de liste 2
+                <ul class="lst-none">
+                  <li>Élément de liste 2a</li>
+                  <li>Élément de liste 2b</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -204,12 +215,8 @@
 <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
         <ul>
           <li>Utilisez <code>.list-unstyled</code> pour enlever les puces ou les nombres d'une liste</li>
+          <li>Utilisez <code>.lst-none</code> pour enlever les puces ou les nombres d'une liste imbriquée</li>
           <li>Ajoutez <code>.lst-spcd</code> pour élargir l'espace blanc entre les éléments et pour rendre ceux-ci visuellement séparés et distincts</li>
-          <li>Ne s'applique qu'aux éléments de liste qui sont des enfants immédiats
-              <ul>
-              <li>N'ajouter qu'aux listes imbriquées, au besoin</li>
-            </ul>
-          </li>
           <li>Utilisez le texte semblable et les types de listes de façon uniforme dans le même document</li>
         </ul>
         <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Mauvaise utilisation</h5><p><span class="nowrap">Point d'observation&nbsp;:</span></p><ul>
@@ -218,10 +225,20 @@
       </div>
       <div class="col-md-4">
 	  <h5 class="mrgn-tp-0">Code</h5>
-        <pre><code>&lt;ul <strong>class=&quot;list-unstyled lst-spcd&quot;</strong>&gt;
+      <p>Liste sans style&#160;</p>
+        <pre><code>&lt;ul <strong>class=&quot;list-unstyled&quot;</strong>&gt;
   &lt;li&gt;...&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
       </div>
+      <p>Liste imbriquée sans style&#160;</p>
+        <pre><code>&lt;ul&gt;
+  &lt;li&gt;Élément de liste 1
+    &lt;ul <strong>class=&quot;lst-none&quot;</strong>&gt;
+      &lt;Élément de liste 1a&gt;
+      &lt;Élément de liste 1b&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
     </div>
   </section>
   <section>
