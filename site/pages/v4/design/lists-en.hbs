@@ -133,7 +133,7 @@
 &lt;/ol&gt;</code></pre>
       </div>
     </div>
-    
+
     <h4 id="definition"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-align-left fa-stack-1x fa-inverse"></span></span> Definition lists</h4>
     <p>Use to list data terms with their associated definitions.</p>
     <div class="row">
@@ -288,7 +288,7 @@
 &lt;/ol&gt;</code></pre>
       </div>
     </div>
- 
+
     <h4 id="alpha-upper"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">AB</span></span> Alpha lists − Upper alpha</h4>
     <p>Use to modify an <code>&lt;ol&gt;</code> to display letters instead of numbers. This applies only to immediate children list items. This means you also <strong>need to add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
     <div class="row">
@@ -330,7 +330,7 @@
       </div>
     </div>
   </section>
- 
+
 <h4 id="roman-lower"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">vii</span></span> Roman numeral − Lower Roman</h4>
   <p>Use to modify an <code>&lt;ol&gt;</code> to display Roman (<abbr title="Roman numeral one two three four">I, II, III, IV</abbr> or <abbr title="Lower case Roman numeral one two three four">i, ii, iii, iv</abbr>&hellip;) instead of Arabic (1, 2, 3, 4&hellip;) numerals. This applies only to immediate children list items. This means you <strong>also need to add the <abbr title="cascading style sheet">CSS</abbr> class for any nested lists</strong>.</p>
   <div class="row">
@@ -416,7 +416,7 @@
 &lt;/ol&gt;</code></pre>
     </div>
   </div>
- 
+
   <h4 id="inline"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-ellipsis-h fa-inverse"></span></span> List inline</h4>
   <p>Use to horizontally align list items. </p>
   <div class="row">
@@ -514,6 +514,17 @@
           </dl>
         </div>
       </div>
+	  <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> With no border</h5>
+          <dl class="dl-horizontal brdr-0">
+            <dt>Term 1</dt>
+            <dd>Definition of term 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition of term 2</dd>
+          </dl>
+        </div>
+      </div>
     </div>
     <div class="col-md-4">
       <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
@@ -532,10 +543,15 @@
       <pre><code>&lt;dl <strong>class=&quot;dl-horizontal&quot;</strong>&gt;
   &lt;dt&gt;...&lt;/dt&gt;
   &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;dl <strong>class=&quot;dl-horizontal brdr-0&quot;</strong>&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
     </div>
   </div>
- 
+
   <h4 id="columns"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-columns fa-inverse"></span></span> List columns</h4>
   <p>Use to make a list spread over 2, 3 or 4 columns with the <abbr title="cascading style sheet">CSS</abbr> attribute <code>.column-count</code>. Since columns are similar to grids, they adhere to the same <a href="grids-en.html#options">breakpoints as grids</a>. Therefore, the classes available are:</p>
   <ul>
