@@ -1,7 +1,7 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.26-development - 2017-05-18
+ * v4.0.26-development - 2017-06-23
  *
  *//**
  * @title WET-BOEW JQuery Helper Methods
@@ -3742,6 +3742,11 @@ var componentName = "wb-data-ajax",
 		if ( !url ) {
 			dtAttr = wb.getData( $( elm ), shortName );
 
+			// Abort the init when called on an invalid element (related to #8058)
+			if ( !dtAttr ) {
+				return {};
+			}
+
 			url = getURL( dtAttr.url, dtAttr.httpref );
 			if ( !url ) {
 				return {};
@@ -5845,6 +5850,7 @@ var componentName = "wb-lbx",
 		if ( !i18nText ) {
 			i18n = wb.i18n;
 			i18nText = {
+				fClose: i18n( "close" ),
 				tClose: i18n( "overlay-close" ) + i18n( "space" ) + i18n( "esc-key" ),
 				tLoading: i18n( "load" ),
 				gallery: {
@@ -5867,9 +5873,12 @@ var componentName = "wb-lbx",
 					var $item = this.currItem,
 						$content = this.contentContainer,
 						$wrap = this.wrap,
+						$modal = $wrap.find( ".modal-dialog" ),
 						$buttons = $wrap.find( ".mfp-close, .mfp-arrow" ),
 						len = $buttons.length,
 						i, button;
+
+					createCloseButton( $modal );
 
 					$document.find( "body" ).addClass( "wb-modal" );
 					$document.find( modalHideSelector ).attr( "aria-hidden", "true" );
@@ -5957,6 +5966,7 @@ var componentName = "wb-lbx",
 					} else {
 						$response = $( mfpResponse.data );
 					}
+					createCloseButton( $response );
 
 					$response
 						.find( ".modal-title, h1" )
@@ -5979,6 +5989,38 @@ var componentName = "wb-lbx",
 				$document.trigger( dependenciesLoadedEvent );
 			}
 		} );
+	},
+	createCloseButton = function( $modal ) {
+		if ( $modal !== null && $modal.hasClass( "modal-dialog" ) ) {
+			var footer = $modal.find( ".modal-footer" ).first(),
+				hasFooter = footer.length,
+				hasButton = hasFooter && $( footer ).find( ".popup-modal-dismiss" ).length !== 0,
+				closeClassFtr = "popup-modal-dismiss",
+				closeTextFtr = i18nText.fClose,
+				spanTextFtr, overlayCloseFtr;
+
+			if ( !hasButton ) {
+				if ( hasFooter ) {
+					spanTextFtr = footer.innerHTML + i18nText.tClose;
+				} else {
+					footer = document.createElement( "div" );
+					footer.setAttribute( "class", "modal-footer" );
+					footer.style.background = "#fff";
+					spanTextFtr = i18nText.tClose;
+				}
+				spanTextFtr = spanTextFtr.replace( "'", "&#39;" );
+
+				overlayCloseFtr = "<button type='button' id='ftrClose' class='btn btn-sm btn-primary pull-left " + closeClassFtr +
+					"' title='" + closeTextFtr + " " + spanTextFtr + "'>" +
+					closeTextFtr +
+					"<span class='wb-inv'>" + spanTextFtr + "</span></button>";
+
+				$( footer ).append( overlayCloseFtr );
+				if ( !hasFooter ) {
+					$modal.append( footer );
+				}
+			}
+		}
 	};
 
 // Bind the init event of the plugin
@@ -8112,7 +8154,7 @@ var componentName = "wb-overlay",
 					footer.style.border = "0";
 				}
 
-				overlayCloseFtr = "<button type='button' id='ftrClose' class='btn btn-sm btn-default " + closeClassFtr +
+				overlayCloseFtr = "<button type='button' id='ftrClose' class='btn btn-sm btn-primary " + closeClassFtr +
 					"' style='" + buttonStyle +
 					"' title='" + closeTextFtr + " " + spanTextFtr + "'>" +
 					closeTextFtr +
@@ -8401,12 +8443,12 @@ wb.add( selector );
 
 /**
  * @title WET-BOEW Prettify Plugin
- * @overview Wrapper for Google Code Prettify library: https://code.google.com/p/google-code-prettify/
+ * @overview Wrapper for Google Code Prettify library: https://github.com/google/code-prettify
  * @license wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
  * @author @patheard
  */
 /*
- * Syntax highlighting of source code snippets in an html page using [google-code-prettify](http://code.google.com/p/google-code-prettify/).
+ * Syntax highlighting of source code snippets in an html page using [google-code-prettify](https://github.com/google/code-prettify).
  *
  * 1. Apply `class="prettyprint"` to a `pre` or `code` element to apply syntax highlighting. Alternatively use `class="all-pre"` to apply syntax highlighting to all `pre` elements on the page.
  * 2. Apply `class="linenums"` to a `pre` or `code` element to add line numbers. Alternatively use `class="all-linenums"` to all applicable `pre` elements. Specify the starting number by adding `linenums:#` before `linenums`.
