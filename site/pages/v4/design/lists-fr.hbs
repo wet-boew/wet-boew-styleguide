@@ -133,7 +133,7 @@
 &lt;/ol&gt;</code></pre>
       </div>
     </div>
-    
+
     <h4 id="definition"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-align-left fa-stack-1x fa-inverse"></span></span> Listes de définitions </h4>
     <p>Les utiliser pour énumérer des termes de données avec leurs définitions associées.</p>
     <div class="row">
@@ -287,7 +287,7 @@
 &lt;/ol&gt;</code></pre>
       </div>
     </div>
- 
+
     <h4 id="alpha-upper"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">AB</span></span> Listes alphabétiques – majuscules alphabétiques</h4>
     <p>Les utiliser pour modifier un élément <code>&lt;ol&gt;</code> afin d'afficher des lettres au lieu de chiffres. Cela s'applique seulement aux éléments de la liste qui sont des enfants immédiats. Cela signifie que vous devez aussi <strong>ajouter la classe <abbr title="feuille de style en cascade">CSS</abbr> pour toute liste imbriquée</strong>.</p>
     <div class="row">
@@ -329,7 +329,7 @@
       </div>
     </div>
   </section>
- 
+
 <h4 id="roman-lower"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">vii</span></span> Chiffres romains – minuscules romaines</h4>
   <p>On les utilise pour modifier un élément <code>&lt;ol&gt;</code> afin d'afficher des chiffres romains (<abbr title="Chiffre romain une, deux, trois, quatre">I, II, III, IV</abbr> ou <abbr title="chiffre minuscules romain une, deux, trois, quatre">i, ii, iii, iv</abbr>&hellip;) au lieu de chiffres arabes (1, 2, 3, 4.&hellip;). Cela s'applique seulement aux éléments de la liste qui sont des enfants immédiats. Cela signifie que vous <strong>devez aussi ajouter la classe <abbr title="feuille de style en cascade">CSS</abbr> pour toute liste imbriquée</strong>.</p>
   <div class="row">
@@ -415,7 +415,7 @@
 &lt;/ol&gt;</code></pre>
     </div>
   </div>
- 
+
   <h4 id="inline"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-ellipsis-h fa-inverse"></span></span> List-inline</h4>
   <p>On l'utilise pour aligner horizontalement les éléments d'une liste. </p>
   <div class="row">
@@ -513,6 +513,17 @@
           </dl>
         </div>
       </div>
+	  <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0"> Sans bordure</h5>
+          <dl class="dl-horizontal brdr-0">
+            <dt>Terme 1</dt>
+            <dd>Définition du terme 1</dd>
+            <dt>Terme 2</dt>
+            <dd>Définition du terme 2</dd>
+          </dl>
+        </div>
+      </div>
     </div>
     <div class="col-md-4">
       <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Bonne utilisation</h5>
@@ -531,10 +542,15 @@
       <pre><code>&lt;dl <strong>class=&quot;dl-horizontal&quot;</strong>&gt;
   &lt;dt&gt;...&lt;/dt&gt;
   &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;dl <strong>class=&quot;dl-horizontal brdr-0&quot;</strong>&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
     </div>
   </div>
- 
+
   <h4 id="columns"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-columns fa-inverse"></span></span> Colonnes de liste</h4>
   <p>Les utiliser pour étendre la liste sur 2, 3 ou 4 colonnes avec l'attribut <abbr title="feuille de style en cascade">CSS</abbr>  <code>.column-count</code>. Puisque les colonnes sont semblables à des grilles, elles sont assujetties aux mêmes   <a href="grids-fr.html#options">points d'arrêt que les grilles</a>. Par conséquent, les classes disponibles sont les suivantes :</p>
   <ul>
