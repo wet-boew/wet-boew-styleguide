@@ -4,8 +4,7 @@
   "description": "dsd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "bower update"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,6 +16,9 @@
     "url": "https://github.com/wet-boew/wet-boew-styleguide/issues"
   },
   "homepage": "https://github.com/wet-boew/wet-boew-styleguide",
+  "dependencies": {
+    "wet-boew": "wet-boew/wet-boew"
+  },
   "devDependencies": {
     "assemble": "~0.4.36",
     "autoprefixer": "^8.5.0",

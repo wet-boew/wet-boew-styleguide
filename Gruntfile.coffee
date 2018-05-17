@@ -1,4 +1,7 @@
 #global module:false
+
+path = require("path")
+
 module.exports = (grunt) ->
 
 	# Default task.
@@ -64,8 +67,10 @@ module.exports = (grunt) ->
 
 	@initConfig
 		pkg: @file.readJSON "package.json"
-		jqueryVersion: @file.readJSON "lib/jquery/bower.json"
-		jqueryOldIEVersion: @file.readJSON "lib/jquery-oldIE/bower.json"
+		jqueryVersion: grunt.file.readJSON(
+			path.join require.resolve( "jquery" ), "../../package.json"
+		).version
+		jqueryOldIEVersion: "1.12.4"
 		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" * <%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
@@ -77,18 +82,18 @@ module.exports = (grunt) ->
 					sanitize: false
 				production: false
 				data: [
-					"lib/wet-boew/site/data/**/*.{yml,json}"
+					"node_modules/wet-boew/site/data/**/*.{yml,json}"
 					"site/data/**/*.{yml,json}"
 				]
 				helpers: [
-					"lib/wet-boew/site/helpers/helper-*.js"
+					"node_modules/wet-boew/site/helpers/helper-*.js"
 					"site/helpers/helper-*.js"
 				]
 				partials: [
-					"lib/wet-boew/site/includes/**/*.hbs"
+					"node_modules/wet-boew/site/includes/**/*.hbs"
 					"site/includes/**/*.hbs"
 				]
-				layoutdir: "lib/wet-boew/site/layouts"
+				layoutdir: "node_modules/wet-boew/site/layouts"
 				layout: "default.hbs"
 				environment:
 					suffix: ".min"
@@ -123,7 +128,7 @@ module.exports = (grunt) ->
 		copy:
 			wetboew:
 				expand: true
-				cwd: "lib/wet-boew/dist"
+				cwd: "node_modules/wet-boew/dist"
 				src: [
 					"**/*.*"
 					"!demos/**/*.*"
@@ -296,7 +301,7 @@ module.exports = (grunt) ->
 		hub:
 			"wet-boew":
 				src: [
-					"lib/wet-boew/Gruntfile.coffee"
+					"node_modules/wet-boew/Gruntfile.coffee"
 				]
 				tasks: [
 					"build"
@@ -307,7 +312,7 @@ module.exports = (grunt) ->
 
 		"install-dependencies":
 			options:
-				cwd: "lib/wet-boew"
+				cwd: "node_modules/wet-boew"
 				failOnError: false
 				isDevelopment: true
 
