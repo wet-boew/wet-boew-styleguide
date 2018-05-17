@@ -2,12 +2,10 @@
   padding-top: 15px; }
 
 .tbl-gridify tr {
-  -webkit-background-clip: content-box;
-          background-clip: content-box;
+  background-clip: content-box;
   /* background-color: #f5f5f5 !important; */
   background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");
-  -webkit-background-origin: content-box;
-          background-origin: content-box;
+  background-origin: content-box;
   background-position: left top, left top, left bottom, right top;
   background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
   padding-bottom: 30px; }

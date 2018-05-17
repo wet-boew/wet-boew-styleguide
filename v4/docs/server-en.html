@@ -1,0 +1,192 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Server configuration - Documentation - Web Experience Toolkit
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Instructions for configuring the server.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Language selection</h2>
+<ul class="text-right">
+<li><a lang="fr" hreflang="fr" href="server-fr.html">Français</a></li>
+<li class="curr">English&#32;<span>(current)</span></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Search and menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../index-en.html">
+<img src="../theme-wet-boew/assets/logo.svg" alt="">
+<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Search</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Search website</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Topics menu</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../index-en.html">WET project</a></li>
+<li><a href="../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../docs/start-en.html">Contribute to WET</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../index-en.html">Home</a>
+</li>
+<li>
+<a href="../docs/index-en.html">Documentation</a>
+</li>
+<li>Server configuration</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Server configuration</h1>
+<section>
+<h2>Enable SVG MIME type</h2>
+<p>Certain webservers (e.g. IIS 6, 7.x) do not serve .svg files by default. If not already configured, you will need to add the <code>image/svg+xml</code> MIME type. Example configuration steps below:</p>
+<ul>
+<li><a href="http://support.microsoft.com/kb/326965">IIS 6.0</a></li>
+<li><a href="http://technet.microsoft.com/en-us/library/cc725608%28WS.10%29.aspx">IIS 7.0</a></li>
+</ul>
+<p><strong>Note:</strong> If this MIME type is not enabled, it can result in 404 "File Not Found" errors, or display issues with the GCWU and other themes headers.</p>
+</section>
+<section>
+<h2>IE Compatibility Mode</h2>
+<p>By default, IE displays Intranet web pages using Compatibility View (IE7 standards mode). This causes display and JavaScript problems with the WET template. To fix the problem, configure your web server to send the <strong>"X-UA-Compatible" "IE=Edge"</strong> HTTP header. Instructions for <a rel="external" href="http://msdn.microsoft.com/en-ca/cc817572.aspx">configuring IIS</a> and for <a rel="external" href="http://msdn.microsoft.com/en-ca/library/cc817573.aspx">configuring Apache</a> can be found on MSDN. The HTTP header ensures that IE 8, 9, and 10 use their most recent rendering engine, as opposed to Compatibility View.</p>
+<p><strong>Note:</strong> Setting the <strong>meta tag</strong> in the HTML document (<code>&lt;http-equiv="X-UA-Compatible" content="IE=edge"&#160;/&gt;</code>) will '''not''' work for WET because of the conditional comments that configure the HTML element at the top of the page. These conditional comments force IE's rendering engine and the meta tag can't override it:</p>
+<pre><code>&lt;!--[if IE 7]&gt;&lt;html lang="en" class="no-js ie7"&gt;&lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;&lt;html lang="en" class="no-js ie8"&gt;&lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt;</code></pre>
+<section>
+<h3>Troubleshooting</h3>
+<p>It is possible for public facing, Internet webpages to display in Compatibility View because of user or administrator settings:</p>
+<ul>
+<li><a rel="external" href="http://blogs.msdn.com/b/ie/archive/2010/03/02/how-ie8-determines-document-mode.aspx">How IE Determines Document Mode</a></li>
+<li><a rel="external" href="http://blogs.msdn.com/b/ieinternals/archive/2012/06/05/the-local-intranet-security-zone.aspx">IE's Intranet Zone Mapping</a></li>
+</ul>
+<p>To troubleshoot display problems in IE 8 and above, use the <a rel="external" href="http://msdn.microsoft.com/en-us/library/ie/gg589512(v=vs.85).aspx">F12 Developer Tools</a> which are accessible by pressing F12 on your keyboard:</p>
+<figure>
+<img src="img/ie-compat-view.png" class="image-actual" alt="F12 Developer Tools showing a web page rendering in Compatibility View">
+<figcaption>F12 Developer Tools showing a web page rendering in Compatibility View</figcaption>
+</figure>
+<p>Fixing a web page that's displaying in Compatibility View can be accomplished by:</p>
+<ol>
+<li>sending the "X-UA-Compatible" "IE=Edge" HTTP header,</li>
+<li>disabling the user or administrator setting that is triggering Compatibility View, or</li>
+<li>configuring the <a rel="external" href="http://blogs.msdn.com/b/ie/archive/2008/10/02/ie8-group-policy.aspx">group policy objects</a> that control Compatibility View.</li>
+</ol>
+</section>
+</section>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">2014-10-15</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>About this site</h2>
+<section class="col-sm-3">
+<h3>Contact us</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>About</h3>
+<ul class="list-unstyled">
+<li><a href="../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>News</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Stay connected</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>

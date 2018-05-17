@@ -1,0 +1,645 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Thème de la BOEW - Exemples pratiques - Boîte à outils de l'expérience Web
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Sélection de la langue</h2>
+<ul class="text-right">
+<li class="curr">Français&#32;<span>(actuel)</span></li>
+<li><a lang="en" hreflang="en" href="index-en.html">English</a></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Recherche et menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Recherche et menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Recherche et menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../index-fr.html">
+<img src="../theme-wet-boew/assets/logo.svg" alt="">
+<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Recherche</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Recherchez le site Web</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../ajax/sitemenu-fr.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Menu des sujets</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../index-fr.html">Projet de la BOEW</a></li>
+<li><a href="../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+<li><a href="../docs/start-fr.html">Contribuer à la BOEW</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>Vous êtes ici :</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../index-fr.html">Accueil</a>
+</li>
+<li>
+<a href="../demos/index-fr.html">Exemples pratiques</a>
+</li>
+<li>Thème de la BOEW</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Thème de la BOEW</h1>
+<nav role="navigation">
+<h2>Table des matières</h2>
+<ul>
+<li><a href="#af">afrikaans</a></li>
+<li><a href="#ar">arabe</a></li>
+<li><a href="#bg">bulgare</a></li>
+<li><a href="#cs">tchèque</a></li>
+<li><a href="#de">allemand</a></li>
+<li><a href="#el">grec</a></li>
+<li><a href="#en">anglais</a></li>
+<li><a href="#es">espagnol</a></li>
+<li><a href="#et">estonien</a></li>
+<li><a href="#fr">français</a></li>
+<li><a href="#hi">hindi</a></li>
+<li><a href="#hu">hongrois</a></li>
+<li><a href="#hy">arménien</a></li>
+<li><a href="#id">indonésien</a></li>
+<li><a href="#is">islandais</a></li>
+<li><a href="#it">italien</a></li>
+<li><a href="#iu">Inuktitut</a></li>
+<li><a href="#ja">japonais</a></li>
+<li><a href="#ko">coréen</a></li>
+<li><a href="#lt">lituanien</a></li>
+<li><a href="#lv">letton</a></li>
+<li><a href="#nl">néerlandais</a></li>
+<li><a href="#pl">polonais</a></li>
+<li><a href="#pt">portugais</a></li>
+<li><a href="#pt-BR">portugais (brésilien)</a></li>
+<li><a href="#ru">russe</a></li>
+<li><a href="#sk">slovaque</a></li>
+<li><a href="#sq">albanais</a></li>
+<li><a href="#th">thaï</a></li>
+<li><a href="#tr">turc</a></li>
+<li><a href="#uk">ukrainien</a></li>
+<li><a href="#vi">vietnamien</a></li>
+<li><a href="#zh">chinois</a></li>
+<li><a href="#zh-Hans">chinois (simplifié)</a></li>
+</ul>
+</nav>
+<section>
+<h2 id="af">afrikaans</h2>
+<ul>
+<li><a href="content-af.html">Page de contenu<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-secmenu-af.html">Page de contenu - Menu secondaire<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-nosearchlang-af.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-nositemenubc-af.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-af.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-signedoff-af.html">Page de contenu - Session Fermée<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="content-signedon-af.html">Page de contenu - Session Ouverte<span class="wb-inv"> - afrikaans</span></a></li>
+<li><a href="servermessage-af.html">Page de message du serveur<span class="wb-inv"> - afrikaans</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="ar">arabe</h2>
+<ul>
+<li><a href="content-ar.html">Page de contenu<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-secmenu-ar.html">Page de contenu - Menu secondaire<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-nosearchlang-ar.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-nositemenubc-ar.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-ar.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-signedoff-ar.html">Page de contenu - Session Fermée<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="content-signedon-ar.html">Page de contenu - Session Ouverte<span class="wb-inv"> - arabe</span></a></li>
+<li><a href="servermessage-ar.html">Page de message du serveur<span class="wb-inv"> - arabe</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="bg">bulgare</h2>
+<ul>
+<li><a href="content-bg.html">Page de contenu<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-secmenu-bg.html">Page de contenu - Menu secondaire<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-nosearchlang-bg.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-nositemenubc-bg.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-bg.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-signedoff-bg.html">Page de contenu - Session Fermée<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="content-signedon-bg.html">Page de contenu - Session Ouverte<span class="wb-inv"> - bulgare</span></a></li>
+<li><a href="servermessage-bg.html">Page de message du serveur<span class="wb-inv"> - bulgare</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="cs">tchèque</h2>
+<ul>
+<li><a href="content-cs.html">Page de contenu<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-secmenu-cs.html">Page de contenu - Menu secondaire<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-nosearchlang-cs.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-nositemenubc-cs.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-cs.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-signedoff-cs.html">Page de contenu - Session Fermée<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="content-signedon-cs.html">Page de contenu - Session Ouverte<span class="wb-inv"> - tchèque</span></a></li>
+<li><a href="servermessage-cs.html">Page de message du serveur<span class="wb-inv"> - tchèque</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="de">allemand</h2>
+<ul>
+<li><a href="content-de.html">Page de contenu<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-secmenu-de.html">Page de contenu - Menu secondaire<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-nosearchlang-de.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-nositemenubc-de.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-de.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-signedoff-de.html">Page de contenu - Session Fermée<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="content-signedon-de.html">Page de contenu - Session Ouverte<span class="wb-inv"> - allemand</span></a></li>
+<li><a href="servermessage-de.html">Page de message du serveur<span class="wb-inv"> - allemand</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="el">grec</h2>
+<ul>
+<li><a href="content-el.html">Page de contenu<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-secmenu-el.html">Page de contenu - Menu secondaire<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-nosearchlang-el.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-nositemenubc-el.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-el.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-signedoff-el.html">Page de contenu - Session Fermée<span class="wb-inv"> - grec</span></a></li>
+<li><a href="content-signedon-el.html">Page de contenu - Session Ouverte<span class="wb-inv"> - grec</span></a></li>
+<li><a href="servermessage-el.html">Page de message du serveur<span class="wb-inv"> - grec</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="en">anglais</h2>
+<ul>
+<li><a href="content-en.html">Page de contenu<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-secmenu-en.html">Page de contenu - Menu secondaire<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-nosearchlang-en.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-nositemenubc-en.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-en.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-signedoff-en.html">Page de contenu - Session Fermée<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="content-signedon-en.html">Page de contenu - Session Ouverte<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="splashpage-en.html">Page d'entrée<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="404-en.html">Page d'erreur 404<span class="wb-inv"> - anglais</span></a></li>
+<li><a href="404-en-fr.html">Page d'erreur 404 - anglais/français</a></li>
+<li><a href="servermessage-en-fr.html">Page de message du serveur - anglais/français</a></li>
+<li><a href="servermessage-en.html">Page de message du serveur<span class="wb-inv"> - anglais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="es">espagnol</h2>
+<ul>
+<li><a href="content-es.html">Page de contenu<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-secmenu-es.html">Page de contenu - Menu secondaire<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-nosearchlang-es.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-nositemenubc-es.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-es.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-signedoff-es.html">Page de contenu - Session Fermée<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="content-signedon-es.html">Page de contenu - Session Ouverte<span class="wb-inv"> - espagnol</span></a></li>
+<li><a href="servermessage-es.html">Page de message du serveur<span class="wb-inv"> - espagnol</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="et">estonien</h2>
+<ul>
+<li><a href="content-et.html">Page de contenu<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-secmenu-et.html">Page de contenu - Menu secondaire<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-nosearchlang-et.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-nositemenubc-et.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-et.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-signedoff-et.html">Page de contenu - Session Fermée<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="content-signedon-et.html">Page de contenu - Session Ouverte<span class="wb-inv"> - estonien</span></a></li>
+<li><a href="servermessage-et.html">Page de message du serveur<span class="wb-inv"> - estonien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="fr">français</h2>
+<ul>
+<li><a href="content-fr.html">Page de contenu<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-secmenu-fr.html">Page de contenu - Menu secondaire<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-nosearchlang-fr.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-nositemenubc-fr.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-fr.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-signedoff-fr.html">Page de contenu - Session Fermée<span class="wb-inv"> - français</span></a></li>
+<li><a href="content-signedon-fr.html">Page de contenu - Session Ouverte<span class="wb-inv"> - français</span></a></li>
+<li><a href="splashpage-fr.html">Page d'entrée<span class="wb-inv"> - français</span></a></li>
+<li><a href="404-fr.html">Page d'erreur 404<span class="wb-inv"> - français</span></a></li>
+<li><a href="404-fr-en.html">Page d'erreur 404 - français/anglais</a></li>
+<li><a href="servermessage-fr-en.html">Page de message du serveur - français/anglais</a></li>
+<li><a href="servermessage-fr.html">Page de message du serveur<span class="wb-inv"> - français</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="hi">hindi</h2>
+<ul>
+<li><a href="content-hi.html">Page de contenu<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-secmenu-hi.html">Page de contenu - Menu secondaire<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-nosearchlang-hi.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-nositemenubc-hi.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-hi.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-signedoff-hi.html">Page de contenu - Session Fermée<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="content-signedon-hi.html">Page de contenu - Session Ouverte<span class="wb-inv"> - hindi</span></a></li>
+<li><a href="servermessage-hi.html">Page de message du serveur<span class="wb-inv"> - hindi</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="hu">hongrois</h2>
+<ul>
+<li><a href="content-hu.html">Page de contenu<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-secmenu-hu.html">Page de contenu - Menu secondaire<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-nosearchlang-hu.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-nositemenubc-hu.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-hu.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-signedoff-hu.html">Page de contenu - Session Fermée<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="content-signedon-hu.html">Page de contenu - Session Ouverte<span class="wb-inv"> - hongrois</span></a></li>
+<li><a href="servermessage-hu.html">Page de message du serveur<span class="wb-inv"> - hongrois</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="hy">arménien</h2>
+<ul>
+<li><a href="content-hy.html">Page de contenu<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-secmenu-hy.html">Page de contenu - Menu secondaire<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-nosearchlang-hy.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-nositemenubc-hy.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-hy.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-signedoff-hy.html">Page de contenu - Session Fermée<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="content-signedon-hy.html">Page de contenu - Session Ouverte<span class="wb-inv"> - arménien</span></a></li>
+<li><a href="servermessage-hy.html">Page de message du serveur<span class="wb-inv"> - arménien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="id">indonésien</h2>
+<ul>
+<li><a href="content-id.html">Page de contenu<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-secmenu-id.html">Page de contenu - Menu secondaire<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-nosearchlang-id.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-nositemenubc-id.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-id.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-signedoff-id.html">Page de contenu - Session Fermée<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="content-signedon-id.html">Page de contenu - Session Ouverte<span class="wb-inv"> - indonésien</span></a></li>
+<li><a href="servermessage-id.html">Page de message du serveur<span class="wb-inv"> - indonésien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="is">islandais</h2>
+<ul>
+<li><a href="content-is.html">Page de contenu<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-secmenu-is.html">Page de contenu - Menu secondaire<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-nosearchlang-is.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-nositemenubc-is.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-is.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-signedoff-is.html">Page de contenu - Session Fermée<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="content-signedon-is.html">Page de contenu - Session Ouverte<span class="wb-inv"> - islandais</span></a></li>
+<li><a href="servermessage-is.html">Page de message du serveur<span class="wb-inv"> - islandais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="it">italien</h2>
+<ul>
+<li><a href="content-it.html">Page de contenu<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-secmenu-it.html">Page de contenu - Menu secondaire<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-nosearchlang-it.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-nositemenubc-it.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-it.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-signedoff-it.html">Page de contenu - Session Fermée<span class="wb-inv"> - italien</span></a></li>
+<li><a href="content-signedon-it.html">Page de contenu - Session Ouverte<span class="wb-inv"> - italien</span></a></li>
+<li><a href="servermessage-it.html">Page de message du serveur<span class="wb-inv"> - italien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="iu">Inuktitut</h2>
+<ul>
+<li><a href="content-iu.html">Page de contenu<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-secmenu-iu.html">Page de contenu - Menu secondaire<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-nosearchlang-iu.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-nositemenubc-iu.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-iu.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-signedoff-iu.html">Page de contenu - Session Fermée<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="content-signedon-iu.html">Page de contenu - Session Ouverte<span class="wb-inv"> - Inuktitut</span></a></li>
+<li><a href="servermessage-iu.html">Page de message du serveur<span class="wb-inv"> - Inuktitut</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="ja">japonais</h2>
+<ul>
+<li><a href="content-ja.html">Page de contenu<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-secmenu-ja.html">Page de contenu - Menu secondaire<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-nosearchlang-ja.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-nositemenubc-ja.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-ja.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-signedoff-ja.html">Page de contenu - Session Fermée<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="content-signedon-ja.html">Page de contenu - Session Ouverte<span class="wb-inv"> - japonais</span></a></li>
+<li><a href="servermessage-ja.html">Page de message du serveur<span class="wb-inv"> - japonais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="ko">coréen</h2>
+<ul>
+<li><a href="content-ko.html">Page de contenu<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-secmenu-ko.html">Page de contenu - Menu secondaire<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-nosearchlang-ko.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-nositemenubc-ko.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-ko.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-signedoff-ko.html">Page de contenu - Session Fermée<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="content-signedon-ko.html">Page de contenu - Session Ouverte<span class="wb-inv"> - coréen</span></a></li>
+<li><a href="servermessage-ko.html">Page de message du serveur<span class="wb-inv"> - coréen</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="lt">lituanien</h2>
+<ul>
+<li><a href="content-lt.html">Page de contenu<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-secmenu-lt.html">Page de contenu - Menu secondaire<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-nosearchlang-lt.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-nositemenubc-lt.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-lt.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-signedoff-lt.html">Page de contenu - Session Fermée<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="content-signedon-lt.html">Page de contenu - Session Ouverte<span class="wb-inv"> - lituanien</span></a></li>
+<li><a href="servermessage-lt.html">Page de message du serveur<span class="wb-inv"> - lituanien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="lv">letton</h2>
+<ul>
+<li><a href="content-lv.html">Page de contenu<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-secmenu-lv.html">Page de contenu - Menu secondaire<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-nosearchlang-lv.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-nositemenubc-lv.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-lv.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-signedoff-lv.html">Page de contenu - Session Fermée<span class="wb-inv"> - letton</span></a></li>
+<li><a href="content-signedon-lv.html">Page de contenu - Session Ouverte<span class="wb-inv"> - letton</span></a></li>
+<li><a href="servermessage-lv.html">Page de message du serveur<span class="wb-inv"> - letton</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="nl">néerlandais</h2>
+<ul>
+<li><a href="content-nl.html">Page de contenu<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-secmenu-nl.html">Page de contenu - Menu secondaire<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-nosearchlang-nl.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-nositemenubc-nl.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-nl.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-signedoff-nl.html">Page de contenu - Session Fermée<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="content-signedon-nl.html">Page de contenu - Session Ouverte<span class="wb-inv"> - néerlandais</span></a></li>
+<li><a href="servermessage-nl.html">Page de message du serveur<span class="wb-inv"> - néerlandais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="pl">polonais</h2>
+<ul>
+<li><a href="content-pl.html">Page de contenu<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-secmenu-pl.html">Page de contenu - Menu secondaire<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-nosearchlang-pl.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-nositemenubc-pl.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-pl.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-signedoff-pl.html">Page de contenu - Session Fermée<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="content-signedon-pl.html">Page de contenu - Session Ouverte<span class="wb-inv"> - polonais</span></a></li>
+<li><a href="servermessage-pl.html">Page de message du serveur<span class="wb-inv"> - polonais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="pt">portugais</h2>
+<ul>
+<li><a href="content-pt.html">Page de contenu<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-secmenu-pt.html">Page de contenu - Menu secondaire<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-nosearchlang-pt.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-nositemenubc-pt.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-pt.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-signedoff-pt.html">Page de contenu - Session Fermée<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="content-signedon-pt.html">Page de contenu - Session Ouverte<span class="wb-inv"> - portugais</span></a></li>
+<li><a href="servermessage-pt.html">Page de message du serveur<span class="wb-inv"> - portugais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="pt-BR">portugais (brésilien)</h2>
+<ul>
+<li><a href="content-pt-BR.html">Page de contenu<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-secmenu-pt-BR.html">Page de contenu - Menu secondaire<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-nosearchlang-pt-BR.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-nositemenubc-pt-BR.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-pt-BR.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-signedoff-pt-BR.html">Page de contenu - Session Fermée<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="content-signedon-pt-BR.html">Page de contenu - Session Ouverte<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+<li><a href="servermessage-pt-BR.html">Page de message du serveur<span class="wb-inv"> - portugais (brésilien)</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="ru">russe</h2>
+<ul>
+<li><a href="content-ru.html">Page de contenu<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-secmenu-ru.html">Page de contenu - Menu secondaire<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-nosearchlang-ru.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-nositemenubc-ru.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-ru.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-signedoff-ru.html">Page de contenu - Session Fermée<span class="wb-inv"> - russe</span></a></li>
+<li><a href="content-signedon-ru.html">Page de contenu - Session Ouverte<span class="wb-inv"> - russe</span></a></li>
+<li><a href="servermessage-ru.html">Page de message du serveur<span class="wb-inv"> - russe</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="sk">slovaque</h2>
+<ul>
+<li><a href="content-sk.html">Page de contenu<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-secmenu-sk.html">Page de contenu - Menu secondaire<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-nosearchlang-sk.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-nositemenubc-sk.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-sk.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-signedoff-sk.html">Page de contenu - Session Fermée<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="content-signedon-sk.html">Page de contenu - Session Ouverte<span class="wb-inv"> - slovaque</span></a></li>
+<li><a href="servermessage-sk.html">Page de message du serveur<span class="wb-inv"> - slovaque</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="sq">albanais</h2>
+<ul>
+<li><a href="content-sq.html">Page de contenu<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-secmenu-sq.html">Page de contenu - Menu secondaire<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-nosearchlang-sq.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-nositemenubc-sq.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-sq.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-signedoff-sq.html">Page de contenu - Session Fermée<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="content-signedon-sq.html">Page de contenu - Session Ouverte<span class="wb-inv"> - albanais</span></a></li>
+<li><a href="servermessage-sq.html">Page de message du serveur<span class="wb-inv"> - albanais</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="th">thaï</h2>
+<ul>
+<li><a href="content-th.html">Page de contenu<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-secmenu-th.html">Page de contenu - Menu secondaire<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-nosearchlang-th.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-nositemenubc-th.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-th.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-signedoff-th.html">Page de contenu - Session Fermée<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="content-signedon-th.html">Page de contenu - Session Ouverte<span class="wb-inv"> - thaï</span></a></li>
+<li><a href="servermessage-th.html">Page de message du serveur<span class="wb-inv"> - thaï</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="tr">turc</h2>
+<ul>
+<li><a href="content-tr.html">Page de contenu<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-secmenu-tr.html">Page de contenu - Menu secondaire<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-nosearchlang-tr.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-nositemenubc-tr.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-tr.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-signedoff-tr.html">Page de contenu - Session Fermée<span class="wb-inv"> - turc</span></a></li>
+<li><a href="content-signedon-tr.html">Page de contenu - Session Ouverte<span class="wb-inv"> - turc</span></a></li>
+<li><a href="servermessage-tr.html">Page de message du serveur<span class="wb-inv"> - turc</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="uk">ukrainien</h2>
+<ul>
+<li><a href="content-uk.html">Page de contenu<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-secmenu-uk.html">Page de contenu - Menu secondaire<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-nosearchlang-uk.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-nositemenubc-uk.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-uk.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-signedoff-uk.html">Page de contenu - Session Fermée<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="content-signedon-uk.html">Page de contenu - Session Ouverte<span class="wb-inv"> - ukrainien</span></a></li>
+<li><a href="servermessage-uk.html">Page de message du serveur<span class="wb-inv"> - ukrainien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="vi">vietnamien</h2>
+<ul>
+<li><a href="content-vi.html">Page de contenu<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-secmenu-vi.html">Page de contenu - Menu secondaire<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-nosearchlang-vi.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-nositemenubc-vi.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-vi.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-signedoff-vi.html">Page de contenu - Session Fermée<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="content-signedon-vi.html">Page de contenu - Session Ouverte<span class="wb-inv"> - vietnamien</span></a></li>
+<li><a href="servermessage-vi.html">Page de message du serveur<span class="wb-inv"> - vietnamien</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="zh">chinois</h2>
+<ul>
+<li><a href="content-zh.html">Page de contenu<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-secmenu-zh.html">Page de contenu - Menu secondaire<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-nosearchlang-zh.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-nositemenubc-zh.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-zh.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-signedoff-zh.html">Page de contenu - Session Fermée<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="content-signedon-zh.html">Page de contenu - Session Ouverte<span class="wb-inv"> - chinois</span></a></li>
+<li><a href="servermessage-zh.html">Page de message du serveur<span class="wb-inv"> - chinois</span></a></li>
+</ul>
+</section>
+<section>
+<h2 id="zh-Hans">chinois (simplifié)</h2>
+<ul>
+<li><a href="content-zh-Hans.html">Page de contenu<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-secmenu-zh-Hans.html">Page de contenu - Menu secondaire<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-nosearchlang-zh-Hans.html">Page de contenu - Sans recherche ou lien de sélection de la langue<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-nositemenubc-zh-Hans.html">Page de contenu - Sans menu du site ou fil d'Ariane<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-nosearchlangsitemenubc-zh-Hans.html">Page de contenu - Sans recherche, lien de sélection de la langue, menu du site ou fil d'Ariane<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-signedoff-zh-Hans.html">Page de contenu - Session Fermée<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="content-signedon-zh-Hans.html">Page de contenu - Session Ouverte<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+<li><a href="servermessage-zh-Hans.html">Page de message du serveur<span class="wb-inv"> - chinois (simplifié)</span></a></li>
+</ul>
+</section>
+<dl id="wb-dtmd">
+<dt>Date de modification&#160;:&#32;</dt>
+<dd><time property="dateModified">2017-05-03</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>À propos de ce site</h2>
+<section class="col-sm-3">
+<h3>Contactez-nous</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>À propos</h3>
+<ul class="list-unstyled">
+<li><a href="../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Nouvelles</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Restez branchés</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>

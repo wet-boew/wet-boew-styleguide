@@ -1,0 +1,217 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>v4.0.9 release notes - Version history - Web Experience Toolkit
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="v4.0.9 release notes - Version history - Web Experience Toolkit (WET)">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Language selection</h2>
+<ul class="text-right">
+<li><a lang="fr" hreflang="fr" href="v4.0.9-fr.html">Français</a></li>
+<li class="curr">English&#32;<span>(current)</span></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Search and menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../../../index-en.html">
+<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
+<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Search</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Search website</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../../../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Topics menu</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../../../index-en.html">WET project</a></li>
+<li><a href="../../../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../../../docs/start-en.html">Contribute to WET</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../../../index-en.html">Home</a>
+</li>
+<li>
+<a href="../../../docs/versions/index-en.html">Version history</a>
+</li>
+<li>v4.0.9 release notes</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">v4.0.9 release notes</h1>
+<ul>
+<li><strong>Release date:</strong> <time>2014-12-11</time></li>
+<li><a href="../dwnld-en.html#v409">Downloads</a></li>
+</ul>
+<span class="wb-prettify all-pre"></span>
+<section>
+<h2>What's New</h2>
+<ul>
+<li><strong>Lightbox:</strong> Add ability to filter Ajax response to selector</li>
+<li><strong>Carousel:</strong> Added an option to toggle thumbnail controls on medium-and-above screens</li>
+<li><strong>Tabbed Interface:</strong> Fixed clipping issue when tab panel content overflows the tabbed interface container</li>
+<li><strong>Tabbed Interface:</strong> Added option to update the URL hash on every tab panel change</li>
+<li><strong>Tabbed Interface:</strong> Fixed play function of carousel</li>
+<li><strong>Data Ajax:</strong> Prevents the caching of nested scripts</li>
+<li><strong>Data Ajax:</strong> Added support for protocol-less CORS fallback</li>
+<li><strong>Feeds:</strong> Fix french characters in the Facebook feeds</li>
+<li><strong>Multimedia Player:</strong> Fixed inline captions not loading when the current URL has an empty hash</li>
+<li><strong>Form Validation:</strong> Allow using the styles without using the Javascript part</li>
+<li><strong>Data Table:</strong> Fixed the sorting icons in IE8</li>
+</ul>
+</section>
+<section>
+<h2>Details</h2>
+<p><strong>Number of commits:</strong> 23</p>
+<ul>
+<li><a href="https://github.com/LaurentGoderre">@LaurentGoderre</a>: 13 commits</li>
+<li><a href="https://github.com/pjackson28">@pjackson28</a>: 6 commits</li>
+<li><a href="https://github.com/Pacoup">@Pacoup</a>: 1 commits</li>
+<li><a href="https://github.com/dubbs">@dubbs</a>: 1 commits</li>
+<li><a href="https://github.com/thomasgohard">@thomasgohard</a>: 1 commits</li>
+<li><a href="https://github.com/zachfalsetto">@zachfalsetto</a>: 1 commits</li>
+</ul>
+<section>
+<h3>List of commits</h3>
+<ul>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/3b803fb">Lightbox: Add ability to filter Ajax response to selector</a> - Kevin Warrington, 2014-10-28 08:47:57 -0600</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/fd4ad2a">Form validation: Dropped redundant aria-required attribute addition (duplicates jQuery Validation addition)</a> - Paul Jackson, 2014-11-19 14:33:48 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/67ee485">Build: Updated the post build grunt task</a> - Laurent Goderre, 2014-11-20 17:34:02 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/29b3548">[Carousel style 2] Added an option to toggle thumbnail controls on medium-and-above screens.</a> - Thomas Gohard, 2014-11-21 16:35:21 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/c8ebda1">changing the height of thumbnails</a> - Zach Falsetto, 2014-11-21 16:35:21 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/f2a39e3">Tabs: Fixed clipping issue when tab panel content overflows the tabbed interface container</a> - Paul Jackson, 2014-11-21 16:48:24 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/dfb5730">Updated the build version to v4.0.9-development</a> - Laurent Goderre, 2014-11-21 17:52:13 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/159e454">Fixed the v4.0.8+1 release notes</a> - Laurent Goderre, 2014-11-24 09:59:55 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/9b56541">Added the v4.0.8+2 release notes</a> - Laurent Goderre, 2014-11-24 12:48:05 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/a3db871">Data Ajax: Prevents the caching of nested scripts</a> - Laurent Goderre, 2014-11-27 14:21:18 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/11ebdf8">Data Ajax: Added support for protocol-less CORS fallback Fixes #6316</a> - Laurent Goderre, 2014-11-28 15:54:51 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/0c888b1">Tabs: Fixed in panel links in the tabbed interface accordion</a> - Paul Jackson, 2014-12-02 14:49:30 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/7e6f13e">Tabs: Added option to update the URL hash on every tab panel change</a> - Paul Jackson, 2014-12-03 09:36:40 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/94f1c81">Tabs: Changed updateHash functionality into a function</a> - Paul Jackson, 2014-12-03 11:00:14 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/96545d9">Core: Added an ID on all plugin elements that don't already have one</a> - Laurent Goderre, 2014-12-08 16:37:23 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/866c15f">Ajax Fetch: Cache the caller ID instead of the caller If a DOM changes occurs which affects the cached element, the event listener stops working. On caching the ID instead, DOM change do not disrupt events</a> - Laurent Goderre, 2014-12-08 16:38:57 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/f8197b2">Multimedia: Remove the ID generation logic</a> - Laurent Goderre, 2014-12-08 16:39:19 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/54593b3">Tabs: Fixed play function of carousel</a> - Paul Jackson, 2014-12-08 17:10:22 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/40f1893">Fix details background disappearing in collapsible alerts</a> - Etienne Levesque Guitard, 2014-12-08 18:07:40 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/c40f467">Feeds: Fix french characters in the Facebook feeds Fixes https://github.com/wet-boew/GCWeb/issues/809</a> - Laurent Goderre, 2014-12-09 16:15:51 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/80f94e8">Data Table: Fixed the sorting issues in IE8 Fixes #6257</a> - Laurent Goderre, 2014-12-09 17:20:25 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/eab6192">Fixed inline captions not loading when the current URL has an empty hash Fixes #6322</a> - Laurent Goderre, 2014-12-10 11:28:54 -0500</li>
+<li><a href="https://github.com/wet-boew/wet-boew/commit/8abd9fa">Form Validation: Allow using the styles without using the Javascript part By using the `wb-frm` class you can now access the form validation styles without using the validation portion. Fixes #6292</a> - Laurent Goderre, 2014-12-10 11:32:48 -0500</li>
+</ul>
+</section>
+</section>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">2014-12-11</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>About this site</h2>
+<section class="col-sm-3">
+<h3>Contact us</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>About</h3>
+<ul class="list-unstyled">
+<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>News</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Stay connected</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>

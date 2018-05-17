@@ -1,0 +1,445 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Form validation - Plugins - Documentation - Web Experience Toolkit
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Provides generic validation and error message handling for Web forms.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Language selection</h2>
+<ul class="text-right">
+<li><a lang="fr" hreflang="fr" href="formvalid-fr.html">Français</a></li>
+<li class="curr">English&#32;<span>(current)</span></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Search and menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../../../index-en.html">
+<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
+<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Search</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Search website</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../../../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Topics menu</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../../../index-en.html">WET project</a></li>
+<li><a href="../../../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../../../docs/start-en.html">Contribute to WET</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../../../index-en.html">Home</a>
+</li>
+<li>
+<a href="../../../docs/index-en.html">Documentation</a>
+</li>
+<li>
+<a href="../../../docs/ref/plugins-en.html">Plugins</a>
+</li>
+<li>Form validation</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Form validation</h1>
+<p>
+<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Form%20validation:%20">Questions or comments?</a>
+</p>
+<span class="wb-prettify all-pre hide"></span>
+<section>
+<h2>Purpose</h2>
+<p>This component provides generic validation and error message handling for Web forms.</p>
+</section>
+<section>
+<h2>Use when</h2>
+<ul>
+<li>Web forms</li>
+</ul>
+</section>
+<section>
+<h2>Working example</h2>
+<ul>
+<li><a href="../../../demos/formvalid/formvalid-en.html">English example</a></li>
+<li><a href="../../../demos/formvalid/formvalid-fr.html">French example</a></li>
+</ul>
+</section>
+<section>
+<h2>How to implement</h2>
+<ol>
+<li>Add <code>class="wb-frmvld"</code> to a <code>div</code> element surrounding the <code>form</code> element
+<pre><code>&lt;div class="wb-frmvld"&gt;
+	&lt;form action="#" method="get" id="validation-example"&gt;
+	...
+	&lt;/form&gt;</code></pre>
+</li>
+<li><strong>Optional:</strong> Wrap each form field name with <code>&lt;span class="field-name"&gt;...&lt;/span&gt;</code>. This specifies the prefix to use for the error message summary.
+<pre><code>&lt;label for="fname1"&gt;
+	&lt;span class="field-name"&gt;First Name&lt;/span&gt; &lt;strong class="required">(required)&lt;/strong&gt;
+&lt;/label&gt;</code></pre>
+</li>
+<li>Add <code>required="required"</code> to each mandatory form field
+<pre><code>&lt;input id="fname1" name="fname1" type="text" required="required" /&gt;</code></pre>
+</li>
+<li><strong>Optional:</strong> For input fields, add one of the <a href="#config">configuration options</a> for specialized validation.</li>
+</ol>
+</section>
+<section>
+<h2 id="config">Configuration options</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>How to configure</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdLvl</code></td>
+<td>Heading level for error summary.</td>
+<td>Add <code>"hdLvl": "headingLevel"</code> to the <code>data-wb-frmvld</code> attribute or <code>window[ "wb-frmvld" ]</code> where <code>headingLevel</code> is the heading level. Use the following JavaScript code instead to configure all instances of the plugin: <code>window[ "wb-frmvld" ] = {"hdLvl": "headingLevel"};</code>.</td>
+<td>
+<dl>
+<dt><code>h2</code> (default):</dt>
+<dd>Heading level 2</dd>
+<dt><code>h3</code>:</dt>
+<dd>Heading level 3</dd>
+<dt><code>h4</code>:</dt>
+<dd>Heading level 4</dd>
+<dt><code>h5</code>:</dt>
+<dd>Heading level 5</dd>
+<dt><code>h6</code>:</dt>
+<dd>Heading level 6</dd>
+</dl>
+</td>
+</tr>
+<tr>
+<td><code>ignore</code></td>
+<td>Selector identifying the fields to ignore.</td>
+<td>Add <code>"ignore": "selector"</code> to the <code>data-wb-frmvld</code> attribute or <code>window[ "wb-frmvld" ]</code> where <code>selector</code> is a valid jQuery selector. Use the following JavaScript code instead to configure all instances of the plugin: <code>window[ "wb-frmvld" ] = {"ignore": ".ignore"};</code>.</td>
+<td>
+<dl>
+<dt><code>:hidden</code> (default):</dt>
+<dd>All hidden fields</dd>
+<dt><code>.ignore</code>:</dt>
+<dd>All fields with the <code>ignore</code> class</dd>
+<dt>Empty string ("")</dt>
+<dd>None of the fields</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<section>
+<h3>Specialized validation</h3>
+<p>Add specialized validation to an input field by applying the following options.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Option</th>
+<th>Validation type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>data-rule-alphanumeric="true"</code></td>
+<td>Alphanumeric</td>
+</tr>
+<tr>
+<td><code>data-rule-cifES="true"</code></td>
+<td>CIF code (Spain)</td>
+</tr>
+<tr>
+<td><code>data-rule-creditcard="true"</code></td>
+<td>Credit card number</td>
+</tr>
+<tr>
+<td><code>type="date"</code></td>
+<td>Date</td>
+</tr>
+<tr>
+<td><code>type="date" data-rule-dateISO="true"</code></td>
+<td>Date (ISO)</td>
+</tr>
+<tr>
+<td><code>type="date" data-rule-dateITA="true"</code></td>
+<td>Date (Italy)</td>
+</tr>
+<tr>
+<td><code>type="number"</code></td>
+<td>Digits only</td>
+</tr>
+<tr>
+<td><code>type="email"</code></td>
+<td>Email</td>
+</tr>
+<tr>
+<td><code>data-rule-equalTo="#x"</code></td>
+<td>Equal to field with id = "x"</td>
+</tr>
+<tr>
+<td><code>data-rule-lettersonly="true"</code></td>
+<td>Letters only</td>
+</tr>
+<tr>
+<td><code>data-rule-letterswithbasicpunc="true"</code></td>
+<td>Letters and basic punctuation only (allowed punctuation: [.])</td>
+</tr>
+<tr>
+<td><code>data-rule-maxlength="x"</code></td>
+<td>Maximum length of x</td>
+</tr>
+<tr>
+<td><code>max="x"</code></td>
+<td>Maximum number x</td>
+</tr>
+<tr>
+<td><code>data-rule-maxWords="x"</code></td>
+<td>Maximum of x words</td>
+</tr>
+<tr>
+<td><code>data-rule-minlength="x"</code></td>
+<td>Minimum length of x</td>
+</tr>
+<tr>
+<td><code>data-rule-strippedminlength="x"</code></td>
+<td>Minimum length of x (when HTML tags are removed)</td>
+</tr>
+<tr>
+<td><code>min="x"</code></td>
+<td>Minimum number x</td>
+</tr>
+<tr>
+<td><code>data-rule-minWords="x"</code></td>
+<td>Minimum of x words</td>
+</tr>
+<tr>
+<td><code>data-rule-nieES="true"</code></td>
+<td>NIE code (Spain)</td>
+</tr>
+<tr>
+<td><code>data-rule-nifES="true"</code></td>
+<td>NIF code (Spain)</td>
+</tr>
+<tr>
+<td><code>data-rule-nowhitespace="true"</code></td>
+<td>No white space</td>
+</tr>
+<tr>
+<td><code>data-rule-postalCodeCA="true"</code></td>
+<td>Postal code (Canada)</td>
+</tr>
+<tr>
+<td><code>data-rule-rangelength="[x,y]"</code></td>
+<td>Range (number)</td>
+</tr>
+<tr>
+<td><code>data-rule-rangelength="[x,y]"</code></td>
+<td>Range length x to y</td>
+</tr>
+<tr>
+<td><code>data-rule-rangeWords="[x,y]"</code></td>
+<td>Range of x to y words</td>
+</tr>
+<tr>
+<td><code>type="tel" data-rule-phoneUK="true"</code></td>
+<td>Telephone number (UK)</td>
+</tr>
+<tr>
+<td><code>type="tel" data-rule-mobileUK="true"</code></td>
+<td>Mobile number (UK)</td>
+</tr>
+<tr>
+<td><code>type="tel" data-rule-phoneUS="true"</code></td>
+<td>Telephone number (US)</td>
+</tr>
+<tr>
+<td><code>type="time"</code></td>
+<td>Time</td>
+</tr>
+<tr>
+<td><code>type="url"</code></td>
+<td>URL (IPv4)</td>
+</tr>
+<tr>
+<td><code>type="url" data-rule-ipv6="true"</code></td>
+<td>URL (IPv6)</td>
+</tr>
+<tr>
+<td><code>type="url" data-rule-url2="true"</code></td>
+<td>URL (TLD optional)</td>
+</tr>
+<tr>
+<td><code>data-rule-vinUS="true"</code></td>
+<td>Vehice Identification Number (VIN, US)</td>
+</tr>
+<tr>
+<td><code>data-rule-require_from_group='[1,".group"]'</code></td>
+<td>Validates the minimum number of fields within an group (each input requires the validation rule).
+<br>The minium and group is defined by the options passed (number being the minium and a common class for each input).
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="http://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for more details.</p>
+</section>
+</section>
+<section>
+<h2>Events</h2>
+<p>Document the public events that can be used by implementers or developers.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wb-init.wb-frmvld</code></td>
+<td>Triggered manually (e.g., <code>$( ".wb-frmvld" ).trigger( "wb-init.wb-frmvld" );</code>).</td>
+<td>Used to manually initialize the form validation. <strong>Note:</strong> The Form validation plugin will be initialized automatically unless the form elements are added after the page has already loaded.</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb-frmvld</code> (v4.0.5+)</td>
+<td>Triggered automatically after form validation initializes.</td>
+<td>Used to identify the element where form validation has initialized (target of the event)
+<pre><code>$( document ).on( "wb-ready.wb-frmvld", ".wb-frmvld", function( event ) {
+});</code></pre>
+<pre><code>$( ".wb-frmvld" ).on( "wb-ready.wb-frmvld", function( event ) {
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb</code> (v4.0.5+)</td>
+<td>Triggered automatically when WET has finished loading and executing.</td>
+<td>Used to identify when all WET plugins and polyfills have finished loading and executing.
+<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
+});</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="http://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for details about events specific to jQuery Validation.</p>
+</section>
+<section>
+<h2>Source code</h2>
+<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/formvalid">Form validation source code on GitHub</a></p>
+</section>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">2015-07-22</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>About this site</h2>
+<section class="col-sm-3">
+<h3>Contact us</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>About</h3>
+<ul class="list-unstyled">
+<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>News</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Stay connected</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>

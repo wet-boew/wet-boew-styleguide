@@ -156,6 +156,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tableau",
 	"tbl-dtls": "Graphique. Plus de détails dans le tableau suivant.",
+	"chrt-cmbslc": "Quartier regroupé",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Votre session expirera automatiquement dans #min# min #sec# sec.",
@@ -198,7 +199,7 @@ wb.i18nDict = {
 	"geo-hdnlyr": "Cette couche est présentement cachée.",
 	"geo-bmapurl": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_CBCT_GEOM_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-bmapttl": "BaseMaps_CBCT3978",
-	"geo-bmapurltxt": "http://geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBCT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBCT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=fr",
 	"geo-attrttl": "GéoGratis - Carte de base du Canada",
 	"geo-sel": "Sélectionnez",
@@ -219,21 +220,35 @@ wb.i18nDict = {
 	"geo-lgnd-grphc": "Graphique légende couche cartographique.",
 
 	/* Disable/enable WET plugins and polyfills */
-	"wb-disable": "Passer au version HTML simplifiée",
-	"wb-enable": "Passer au version standard",
-	"disable-notice-h": "Avis: Version HTML simplifiée",
-	"disable-notice": "Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaine fonctionalités peuvent être déactivées.",
+	"wb-disable": "Passer à la version HTML simplifiée",
+	"wb-enable": "Passer à la version standard",
+	"disable-notice-h": "Avis : Version HTML simplifiée",
+	"disable-notice": "Vous naviguez présentement sur la version HTML simplifiée de cette page. Certaines fonctionnalités peuvent être déactivées.",
 
 	/* Dismissable content */
 	"dismiss": "Écarter",
 
 	/* Template */
-	"tmpl-signin": "Ouvrir une session"
+	"tmpl-signin": "Ouvrir une session",
+
+	/* Filter */
+	"fltr-lbl": "Filtrer<span class=\"wb-inv\"> le contenu: Les résultats s'afficherons au moment même de la saisie.</span>",
+	"fltr-info": "Affiche _NBITEM_ de _TOTAL_ éléments filtrés."
 };
 
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: FR (French; français)
@@ -249,6 +264,7 @@ $.extend( $.validator.messages, {
 	digits: "Veuillez fournir seulement des chiffres.",
 	creditcard: "Veuillez fournir un numéro de carte de crédit valide.",
 	equalTo: "Veuillez fournir encore la même valeur.",
+	notEqualTo: "Veuillez fournir une valeur différente, les valeurs ne doivent pas être identiques.",
 	extension: "Veuillez fournir une valeur avec une extension valide.",
 	maxlength: $.validator.format( "Veuillez fournir au plus {0} caractères." ),
 	minlength: $.validator.format( "Veuillez fournir au moins {0} caractères." ),
@@ -256,6 +272,7 @@ $.extend( $.validator.messages, {
 	range: $.validator.format( "Veuillez fournir une valeur entre {0} et {1}." ),
 	max: $.validator.format( "Veuillez fournir une valeur inférieure ou égale à {0}." ),
 	min: $.validator.format( "Veuillez fournir une valeur supérieure ou égale à {0}." ),
+	step: $.validator.format( "Veuillez fournir une valeur multiple de {0}." ),
 	maxWords: $.validator.format( "Veuillez fournir au plus {0} mots." ),
 	minWords: $.validator.format( "Veuillez fournir au moins {0} mots." ),
 	rangeWords: $.validator.format( "Veuillez fournir entre {0} et {1} mots." ),
@@ -283,6 +300,7 @@ $.extend( $.validator.messages, {
 	cifES: "Veuillez fournir un numéro CIF valide.",
 	postalCodeCA: "Veuillez fournir un code postal valide."
 } );
-
+return $;
+}));
 
 });

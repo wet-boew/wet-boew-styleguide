@@ -1,0 +1,392 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Lecteur multimédia - Plugiciels - Documentation - Boîte à outils de l'expérience Web
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Un lecteur multimédia accessible permettant d&#x27;intégrer des contenus vidéo et audio sur les pages Web.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Sélection de la langue</h2>
+<ul class="text-right">
+<li class="curr">Français&#32;<span>(actuel)</span></li>
+<li><a lang="en" hreflang="en" href="multimedia-en.html">English</a></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Recherche et menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Recherche et menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Recherche et menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../../../index-fr.html">
+<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
+<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Recherche</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Recherchez le site Web</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../../../ajax/sitemenu-fr.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Menu des sujets</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../../../index-fr.html">Projet de la BOEW</a></li>
+<li><a href="../../../docs/start-fr.html#implement">Mise en œuvre de la BOEW</a></li>
+<li><a href="../../../docs/start-fr.html">Contribuer à la BOEW</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>Vous êtes ici :</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../../../index-fr.html">Accueil</a>
+</li>
+<li>
+<a href="../../../docs/index-fr.html">Documentation</a>
+</li>
+<li>
+<a href="../../../docs/ref/plugins-fr.html">Plugiciels</a>
+</li>
+<li>Lecteur multimédia</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Lecteur multimédia</h1>
+<p>
+<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Lecteur%20multim%C3%A9dia:%20">Questions ou commentaires?</a>
+</p>
+<span class="wb-prettify all-pre hide"></span>
+<div lang="fr">
+<section>
+<h2>But</h2>
+<p>Fournir un lecteur multimédia accessible permettant d'intégrer des contenus vidéo et audio sur les pages Web.</p>
+</section>
+<section>
+<h2>Exemples</h2>
+<ul>
+<li><a href="../../../demos/multimedia/multimedia-en.html">Exemple vidéo anglais</a></li>
+<li><a href="../../../demos/multimedia/multimedia-fr.html">Exemple vidéo français</a></li>
+<li><a href="../../../demos/multimedia/multimedia-audio-en.html">Exemple audio anglais</a></li>
+<li><a href="../../../demos/multimedia/multimedia-audio-fr.html">Exemple audio français</a></li>
+<li><a href="../../../demos/multimedia/multimedia-youtube-en.html">Exemple YouTube anglais</a></li>
+<li><a href="../../../demos/multimedia/multimedia-youtube-fr.html">Exemple YouTube français</a></li>
+</ul>
+</section>
+<section>
+<h2>Comment implémenter</h2>
+<p>Le lecteur multimédia requiert l'utilisation de quelques balises HTML5 et un lien vers la source média que vous désirez intégrer.</p>
+<section>
+<h3>Formats des médias</h3>
+<p>Le lecteur multimédia supporte plusieurs formats, énumérés ci-dessous. Toutefois, nous recommandons que vous fournissiez au minimum tout média vidéo au format MPEG4 (en utilisant les codecs H264 et AAC) afin de pouvoir rejoindre le plus grand auditoire, puisque tous les lecteurs mobiles et la plupart des navigateurs sont en mesure de jouer ce format. Nous recommandons également que vous fournissiez les médias en format WebM (en utilisant le codec VP8) en plus du format MPEG4 afin de prendre avantage du support natif du navigateur, par exemple Firefox.</p>
+<section>
+<h4>Formats compatibles</h4>
+<ul>
+<li><strong>Vidéo :</strong> MPEG4 (H264+AAC), WebM (VP8)</li>
+<li><strong>Audio :</strong> MP3, Ogg Vorbis</li>
+<li><strong>Sous-titrage :</strong> TTML, HTML5 Data</li>
+</ul>
+</section>
+</section>
+<section>
+<h3>Éléments requis</h3>
+<ol>
+<li>Chaque lecteur multimédia doit être placé dans sa propre balise <code>&lt;figure&gt;</code> en utilisant la classe <code>wb-mltmd</code> :
+<pre><code>&lt;figure class="wb-mltmd"&gt;</code></pre>
+</li>
+<li>Chaque contenant devrait contenir une balise <code>&lt;video&gt;</code> ou <code>&lt;audio&gt;</code>.</li>
+<li>
+<strong>Facultatif :</strong> Ajoutez un lien "Partagez cette vidéo" ou "Partagez ce fichier audio" en ajoutant ce qui suit à la balise <code>figure</code> :
+<pre><code>data-wb-mltmd='{"shareUrl": "url"}'</code></pre>
+</li>
+<li>
+Ajoutez l'élément <code>figcaption</code> à l'élément <code>figure</code> avec le titre du fichier vidéo ou audio. Si une transcription est requise, ajoutez soit le lien vers la transcription, soit un "details/summary" contenant le texte de la transcription.
+<pre><code>&lt;figcaption&gt;
+	&lt;p&gt;Trouver un emploi&lt;/p&gt;
+&lt;/figcaption&gt;</code></pre>
+<pre><code>&lt;figcaption&gt;
+	&lt;p&gt;Trouver un emploi (&lt;a href="cpts-lg-fr.html"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
+&lt;/figcaption&gt;</code></pre>
+<pre><code>&lt;figcaption&gt;
+	&lt;details id="inline-captions"&gt;
+		&lt;summary&gt;Trouver un emploi - Transcription/Sous-titrage HTML5 &lt;/summary&gt;
+		&lt;p class="wet-boew-vd"&gt;&lt;strong&gt;(La vidéo débute par une image de l'animatrice s'avançant vers la caméra. Un trait rouge suit le texte « Trouver un emploi ».)&lt;/strong&gt;&lt;/p&gt;
+		&lt;p class="wet-boew-vd"&gt;&lt;strong&gt;(Coupure et plan moyen de l'animatrice. DESSIN AU TRAIT : Le bonhomme-allumettes apparaît à l'écran.)&lt;/strong&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span class="wb-tmtxt" data-begin="2.50s" data-dur="3.84s"&gt;Bonjour, je m'appelle Amélie et je travaille à Service Canada.&lt;/span&gt;&lt;/p&gt;
+		...
+	&lt;/details&gt;
+&lt;/figcaption&gt;</code></pre>
+</li>
+</ol>
+<section>
+<h4>Vidéo</h4>
+<ol>
+<li>Ajoutez l'attribut <code>poster</code> à l'élément <code>video</code> avec la valeur étant l'URL de la vignette de l'image illustrant la vidéo.</li>
+<li>Ajoutez l'attribut <code>title</code> à l'élément <code>video</code> avec la valeur étant le titre de la vidéo.</li>
+<li>
+Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>video</code> avec l'attribut <code>src</code> ayant comme valeur l'URL du fichier média et l'attribut <code>type</code> étant son type MIME.<br>
+<strong>Note :</strong> Si vous indiquez plusieurs sources média pour la vidéo, le lecteur jouera le premier média qui fonctionne (est disponible, compatible, etc.).
+<pre><code>&lt;source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
+&lt;source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;</code></pre>
+</li>
+<li>Ajoutez l'élément <code>track</code> avec <code>kind="captions"</code> à l'élément <code>video</code> pour inclure le sous-titrage.
+<ol>
+<li>
+Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément <code>track</code> pour identifier la langue du sous-titrage.
+<pre><code>&lt;track srclang="fr" label="Français" /&gt;</code></pre>
+</li>
+<li>Ajoutez les attributs <code>src</code> et <code>data-type</code> à l'élément <code>track</code> pour identifier la source du sous-titrage.
+<ul>
+<li><strong>Timed Text Markup Language :</strong> <code>data-type="application/ttml+xml"</code> et <code>src</code> est l'URL du fichier de sous-titrage de format <a rel="external" href="http://www.w3.org/TR/ttaf1-dfxp/">Timed Text Markup Language</a>.</li>
+<li><strong>Fichier de sous-titrage HTML :</strong> <code>data-type="text/html"</code> et <code>src</code> est l'URL du fichier de sous-titrage HTML.</li>
+<li><strong>Sous-titrage HTML en ligne :</strong> <code>data-type="text/html"</code> and <code>src</code> est l'URL du sous-titrage HTML en ligne (e.g., <code>src="#inline-captions"</code>).</li>
+</ul>
+</li>
+</ol>
+<pre><code>&lt;track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" /&gt;</code></pre>
+</li>
+<li><strong>Facultatif : </strong>Ajoutez des boutons pour accéder aux marqueurs temporels dans la vidéo.
+<ul>
+<li>Ajoutez un élément <code>button</code> dans le contenant <code>figure</code>.</li>
+<li>Spécifiez le marqueur en secondes (ex. 75s) ou en temps (01:15)</li>
+</ul>
+<pre><code>&lt;button class="btn btn-info cuepoint" data-cuepoint="75s"&gt;Marqueur temporel - 75s&lt;/button&gt;</code></pre>
+<pre><code>&lt;button class="btn btn-info cuepoint" data-cuepoint="01:15"&gt;Marqueur temporel - 01:15&lt;/button&gt;</code></pre>
+</li>
+</ol>
+<section>
+<h5>Code</h5>
+<pre><code>&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'&gt;
+	&lt;video poster="demo/video1-fr.jpg" title="Trouver un emploi"&gt;
+		&lt;source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
+		&lt;source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;
+		&lt;track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" /&gt;
+	&lt;/video&gt;
+	&lt;button class="btn btn-info cuepoint" data-cuepoint="75s"&gt;Marqueur temporel - 75s&lt;/button&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Trouver un emploi (&lt;a href="cpts-lg-fr.html"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</section>
+</section>
+<section>
+<h4>Vidéo (YouTube)</h4>
+<ol>
+<li>Ajoutez l'attribut <code>title</code> à l'élément <code>video</code> avec la valeur étant le titre de la vidéo.</li>
+<li><p>Ajoutez un élément <code>source</code> à l'élément <code>video</code> avec l'attribut <code>type="video/youtube"</code> et l'attribut <code>src</code> étant l'URL de la vidéo.</p>
+<pre><code>&lt;source type="video/youtube" src="http://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;</code></pre>
+<p>Ou</p>
+<pre><code>&lt;source type="video/youtube" src="https://youtu.be/9znKJqnFuuY" /&gt;</code></pre>
+</li>
+<li>Si le sous-titrage n'est pas déjà inclut pour la vidéo, l'ajouter avec les outils fournis par YouTube.</li>
+</ol>
+<section>
+<h5>Code</h5>
+<pre><code>&lt;figure class="wb-mltmd"&gt;
+	&lt;video title="Suspect"&gt;
+		&lt;source type="video/youtube" src="http://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;
+	&lt;/video&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Suspect&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</section>
+</section>
+<section>
+<h4>Audio</h4>
+<ol>
+<li>Ajoutez l'attribut <code>title</code> à l'élément <code>audio</code> avec la valeur étant le titre de l'audio.</li>
+<li>
+Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>audio</code> avec l'attribut <code>src</code> avec la valeur étant l'URL du fichier média et l'attribut <code>type</code> étant le type MIME du fichier.<br>
+<strong>Note :</strong> Si vous indiquez plusieurs sources média pour l'audio, le lecteur jouera le premier fichier média qui fonctionne (est disponible, compatible, etc.).
+<pre><code>&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
+&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;</code></pre>
+</li>
+</ol>
+<section>
+<h5>Code</h5>
+<pre><code>&lt;figure class="wb-mltmd"&gt;
+	&lt;audio title="Ride of the Valkyries"&gt;
+		&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
+		&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;
+	&lt;/audio&gt;
+	&lt;figcaption&gt;
+		&lt;p&gt;Ride of the Valkyries&lt;/p&gt;
+	&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</section>
+</section>
+</section>
+</section>
+<section>
+<h2>Options de configuration</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Comment configurer</th>
+<th>Valeurs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shareUrl</code></td>
+<td>Ajoute un lien "Partagez cette vidéo" ou "Partagez ce fichier audio"</td>
+<td>Ajoutez <pre><code>data-wb-mltmd='{"shareUrl": "url"}'</code></pre> à l'élément avec l'attribut <code>class="wb-mltmd"</code>.</td>
+<td>
+<dl>
+<dt>URL</dt>
+<dd>URL de la vidéo ou du fichier audio à partager.</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Événements</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Événement</th>
+<th>Déclencheur</th>
+<th>Ce qu'il fait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wb-init.wb-mltmd</code></td>
+<td>Déclenché manuellement (e.g., <code>$( ".wb-mltmd" ).trigger( "wb-init.wb-mltmd" );</code>).</td>
+<td>Utilisé pour initialiser manuellement le lecteur multimédia. <strong>Note :</strong> Le lecteur sera initialisé automatiquement à moins que le code du lecteur soit ajouté après que la page ait déjà été chargée.</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb-mltmd</code> (v4.0.5+)</td>
+<td>Déclenché automatiquement après que le lecteur soit initialisé.</td>
+<td>Utilisé pour identifier quel lecteur est initialisé (cible de l'événement)
+<pre><code>$( document ).on( "wb-ready.wb-mltmd", ".wb-mltmd", function( event ) {
+});</code></pre>
+<pre><code>$( ".wb-mltmd" ).on( "wb-ready.wb-mltmd", function( event ) {
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb</code> (v4.0.5+)</td>
+<td>Déclenché automatiquement quant BOEW a fini son chargement et son exécution.</td>
+<td>Utilisé pour identifier quand tous les plugiciels BOEW et les polyfills ont terminé leur chargement et leur exécution.
+<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
+});</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Code source</h2>
+<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/multimedia">Code source du lecteur multimédia sur GitHub</a></p>
+</section>
+</div>
+<dl id="wb-dtmd">
+<dt>Date de modification&#160;:&#32;</dt>
+<dd><time property="dateModified">2018-04-18</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>À propos de ce site</h2>
+<section class="col-sm-3">
+<h3>Contactez-nous</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions ou commentaires?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>À propos</h3>
+<ul class="list-unstyled">
+<li><a href="../../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Nouvelles</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Activité du projet récente</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Statistiques du projet</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Restez branchés</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>

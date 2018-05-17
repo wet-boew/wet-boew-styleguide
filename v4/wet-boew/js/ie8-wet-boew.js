@@ -1,355 +1,13 @@
 /*!
  * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
  * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- * v4.0.26-development - 2017-06-29
+ * v4.0.29-development - 2018-05-17
  *
  *//*! Modernizr (Custom Build) | MIT & BSD */
 /* Modernizr (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-elem_details-elem_progress_meter-mathml-cors-load-mq-css3-input-inputtypes-svg-cssclasses-csstransitions-fontface-backgroundsize-borderimage-teststyles-testprops-testallprops-hasevents-prefixes-domprefixes
  */
 ;window.Modernizr=function(e,t,n){function L(e){f.cssText=e}function A(e,t){return L(p.join(e+";")+(t||""))}function O(e,t){return typeof e===t}function M(e,t){return!!~(""+e).indexOf(t)}function _(e,t){for(var r in e){var i=e[r];if(!M(i,"-")&&f[i]!==n)return t=="pfx"?i:!0}return!1}function D(e,t,r){for(var i in e){var s=t[e[i]];if(s!==n)return r===!1?e[i]:O(s,"function")?s.bind(r||t):s}return!1}function P(e,t,n){var r=e.charAt(0).toUpperCase()+e.slice(1),i=(e+" "+v.join(r+" ")+r).split(" ");return O(t,"string")||O(t,"undefined")?_(i,t):(i=(e+" "+m.join(r+" ")+r).split(" "),D(i,t,n))}function H(){i.input=function(n){for(var r=0,i=n.length;r<i;r++)w[n[r]]=n[r]in l;return w.list&&(w.list=!!t.createElement("datalist")&&!!e.HTMLDataListElement),w}("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")),i.inputtypes=function(e){for(var r=0,i,s,u,a=e.length;r<a;r++)l.setAttribute("type",s=e[r]),i=l.type!=="text",i&&(l.value=c,l.style.cssText="position:absolute;visibility:hidden;",/^range$/.test(s)&&l.style.WebkitAppearance!==n?(o.appendChild(l),u=t.defaultView,i=u.getComputedStyle&&u.getComputedStyle(l,null).WebkitAppearance!=="textfield"&&l.offsetHeight!==0,o.removeChild(l)):/^(search|tel)$/.test(s)||(/^(url|email)$/.test(s)?i=l.checkValidity&&l.checkValidity()===!1:i=l.value!=c)),b[e[r]]=!!i;return b}("search tel url email datetime date month week time datetime-local number range color".split(" "))}var r="2.8.3",i={},s=!0,o=t.documentElement,u="modernizr",a=t.createElement(u),f=a.style,l=t.createElement("input"),c=":)",h={}.toString,p=" -webkit- -moz- -o- -ms- ".split(" "),d="Webkit Moz O ms",v=d.split(" "),m=d.toLowerCase().split(" "),g={svg:"http://www.w3.org/2000/svg"},y={},b={},w={},E=[],S=E.slice,x,T=function(e,n,r,i){var s,a,f,l,c=t.createElement("div"),h=t.body,p=h||t.createElement("body");if(parseInt(r,10))while(r--)f=t.createElement("div"),f.id=i?i[r]:u+(r+1),c.appendChild(f);return s=["&#173;",'<style id="s',u,'">',e,"</style>"].join(""),c.id=u,(h?c:p).innerHTML+=s,p.appendChild(c),h||(p.style.background="",p.style.overflow="hidden",l=o.style.overflow,o.style.overflow="hidden",o.appendChild(p)),a=n(c,e),h?c.parentNode.removeChild(c):(p.parentNode.removeChild(p),o.style.overflow=l),!!a},N=function(t){var n=e.matchMedia||e.msMatchMedia;if(n)return n(t)&&n(t).matches||!1;var r;return T("@media "+t+" { #"+u+" { position: absolute; } }",function(t){r=(e.getComputedStyle?getComputedStyle(t,null):t.currentStyle)["position"]=="absolute"}),r},C={}.hasOwnProperty,k;!O(C,"undefined")&&!O(C.call,"undefined")?k=function(e,t){return C.call(e,t)}:k=function(e,t){return t in e&&O(e.constructor.prototype[t],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(t){var n=this;if(typeof n!="function")throw new TypeError;var r=S.call(arguments,1),i=function(){if(this instanceof i){var e=function(){};e.prototype=n.prototype;var s=new e,o=n.apply(s,r.concat(S.call(arguments)));return Object(o)===o?o:s}return n.apply(t,r.concat(S.call(arguments)))};return i}),y.backgroundsize=function(){return P("backgroundSize")},y.borderimage=function(){return P("borderImage")},y.csstransitions=function(){return P("transition")},y.fontface=function(){var e;return T('@font-face {font-family:"font";src:url("https://")}',function(n,r){var i=t.getElementById("smodernizr"),s=i.sheet||i.styleSheet,o=s?s.cssRules&&s.cssRules[0]?s.cssRules[0].cssText:s.cssText||"":"";e=/src/i.test(o)&&o.indexOf(r.split(" ")[0])===0}),e},y.svg=function(){return!!t.createElementNS&&!!t.createElementNS(g.svg,"svg").createSVGRect};for(var B in y)k(y,B)&&(x=B.toLowerCase(),i[x]=y[B](),E.push((i[x]?"":"no-")+x));return i.input||H(),i.addTest=function(e,t){if(typeof e=="object")for(var r in e)k(e,r)&&i.addTest(r,e[r]);else{e=e.toLowerCase();if(i[e]!==n)return i;t=typeof t=="function"?t():t,typeof s!="undefined"&&s&&(o.className+=" "+(t?"":"no-")+e),i[e]=t}return i},L(""),a=l=null,i._version=r,i._prefixes=p,i._domPrefixes=m,i._cssomPrefixes=v,i.mq=N,i.testProp=function(e){return _([e])},i.testAllProps=P,i.testStyles=T,o.className=o.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(s?" js "+E.join(" "):""),i}(this,this.document),function(e,t,n){function r(e){return"[object Function]"==d.call(e)}function i(e){return"string"==typeof e}function s(){}function o(e){return!e||"loaded"==e||"complete"==e||"uninitialized"==e}function u(){var e=v.shift();m=1,e?e.t?h(function(){("c"==e.t?k.injectCss:k.injectJs)(e.s,0,e.a,e.x,e.e,1)},0):(e(),u()):m=0}function a(e,n,r,i,s,a,f){function l(t){if(!d&&o(c.readyState)&&(w.r=d=1,!m&&u(),c.onload=c.onreadystatechange=null,t)){"img"!=e&&h(function(){b.removeChild(c)},50);for(var r in T[n])T[n].hasOwnProperty(r)&&T[n][r].onload()}}var f=f||k.errorTimeout,c=t.createElement(e),d=0,g=0,w={t:r,s:n,e:s,a:a,x:f};1===T[n]&&(g=1,T[n]=[]),"object"==e?c.data=n:(c.src=n,c.type=e),c.width=c.height="0",c.onerror=c.onload=c.onreadystatechange=function(){l.call(this,g)},v.splice(i,0,w),"img"!=e&&(g||2===T[n]?(b.insertBefore(c,y?null:p),h(l,f)):T[n].push(c))}function f(e,t,n,r,s){return m=0,t=t||"j",i(e)?a("c"==t?E:w,e,t,this.i++,n,r,s):(v.splice(this.i++,0,e),1==v.length&&u()),this}function l(){var e=k;return e.loader={load:f,i:0},e}var c=t.documentElement,h=e.setTimeout,p=t.getElementsByTagName("script")[0],d={}.toString,v=[],m=0,g="MozAppearance"in c.style,y=g&&!!t.createRange().compareNode,b=y?c:p.parentNode,c=e.opera&&"[object Opera]"==d.call(e.opera),c=!!t.attachEvent&&!c,w=g?"object":c?"script":"img",E=c?"script":w,S=Array.isArray||function(e){return"[object Array]"==d.call(e)},x=[],T={},N={timeout:function(e,t){return t.length&&(e.timeout=t[0]),e}},C,k;k=function(e){function t(e){var e=e.split("!"),t=x.length,n=e.pop(),r=e.length,n={url:n,origUrl:n,prefixes:e},i,s,o;for(s=0;s<r;s++)o=e[s].split("="),(i=N[o.shift()])&&(n=i(n,o));for(s=0;s<t;s++)n=x[s](n);return n}function o(e,i,s,o,u){var a=t(e),f=a.autoCallback;a.url.split(".").pop().split("?").shift(),a.bypass||(i&&(i=r(i)?i:i[e]||i[o]||i[e.split("/").pop().split("?")[0]]),a.instead?a.instead(e,i,s,o,u):(T[a.url]?a.noexec=!0:T[a.url]=1,s.load(a.url,a.forceCSS||!a.forceJS&&"css"==a.url.split(".").pop().split("?").shift()?"c":n,a.noexec,a.attrs,a.timeout),(r(i)||r(f))&&s.load(function(){l(),i&&i(a.origUrl,u,o),f&&f(a.origUrl,u,o),T[a.url]=2})))}function u(e,t){function n(e,n){if(e){if(i(e))n||(f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}),o(e,f,t,0,u);else if(Object(e)===e)for(p in h=function(){var t=0,n;for(n in e)e.hasOwnProperty(n)&&t++;return t}(),e)e.hasOwnProperty(p)&&(!n&&!--h&&(r(f)?f=function(){var e=[].slice.call(arguments);l.apply(this,e),c()}:f[p]=function(e){return function(){var t=[].slice.call(arguments);e&&e.apply(this,t),c()}}(l[p])),o(e[p],f,t,p,u))}else!n&&c()}var u=!!e.test,a=e.load||e.both,f=e.callback||s,l=f,c=e.complete||s,h,p;n(u?e.yep:e.nope,!!a),a&&n(a)}var a,f,c=this.yepnope.loader;if(i(e))o(e,0,c,0);else if(S(e))for(a=0;a<e.length;a++)f=e[a],i(f)?o(f,0,c,0):S(f)?k(f):Object(f)===f&&u(f,c);else Object(e)===e&&u(e,c)},k.addPrefix=function(e,t){N[e]=t},k.addFilter=function(e){x.push(e)},k.errorTimeout=1e4,null==t.readyState&&t.addEventListener&&(t.readyState="loading",t.addEventListener("DOMContentLoaded",C=function(){t.removeEventListener("DOMContentLoaded",C,0),t.readyState="complete"},0)),e.yepnope=l(),e.yepnope.executeStack=u,e.yepnope.injectJs=function(e,n,r,i,a,f){var l=t.createElement("script"),c,d,i=i||k.errorTimeout;l.src=e;for(d in r)l.setAttribute(d,r[d]);n=f?u:n||s,l.onreadystatechange=l.onload=function(){!c&&o(l.readyState)&&(c=1,n(),l.onload=l.onreadystatechange=null)},h(function(){c||(c=1,n(1))},i),a?l.onload():p.parentNode.insertBefore(l,p)},e.yepnope.injectCss=function(e,n,r,i,o,a){var i=t.createElement("link"),f,n=a?u:n||s;i.href=e,i.rel="stylesheet",i.type="text/css";for(f in r)i.setAttribute(f,r[f]);o||(p.parentNode.insertBefore(i,p),h(n,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))},Modernizr.addTest("details",function(){var e=document,t=e.createElement("details"),n,r,i;return"open"in t?(r=e.body||function(){var t=e.documentElement;return n=!0,t.insertBefore(e.createElement("body"),t.firstElementChild||t.firstChild)}(),t.innerHTML="<summary>a</summary>b",t.style.display="block",r.appendChild(t),i=t.offsetHeight,t.open=!0,i=i!=t.offsetHeight,r.removeChild(t),n&&r.parentNode.removeChild(r),i):!1}),Modernizr.addTest("progressbar",function(){return document.createElement("progress").max!==undefined}),Modernizr.addTest("meter",function(){return document.createElement("meter").max!==undefined}),Modernizr.addTest("mathml",function(){var e=!1;if(document.createElementNS){var t="http://www.w3.org/1998/Math/MathML",n=document.createElement("div");n.style.position="absolute";var r=n.appendChild(document.createElementNS(t,"math")).appendChild(document.createElementNS(t,"mfrac"));r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("xx")),r.appendChild(document.createElementNS(t,"mi")).appendChild(document.createTextNode("yy")),document.body.appendChild(n),e=n.offsetHeight>n.offsetWidth}return e}),Modernizr.addTest("cors",!!(window.XMLHttpRequest&&"withCredentials"in new XMLHttpRequest));
-/*! Respond.js v1.4.0: min/max-width media query polyfill. (c) Scott Jehl. MIT Lic. j.mp/respondjs  */
-(function( w ){
-
-	"use strict";
-
-	//exposed namespace
-	var respond = {};
-	w.respond = respond;
-
-	//define update even in native-mq-supporting browsers, to avoid errors
-	respond.update = function(){};
-
-	//define ajax obj
-	var requestQueue = [],
-		xmlHttp = (function() {
-			var xmlhttpmethod = false;
-			try {
-				xmlhttpmethod = new w.XMLHttpRequest();
-			}
-			catch( e ){
-				xmlhttpmethod = new w.ActiveXObject( "Microsoft.XMLHTTP" );
-			}
-			return function(){
-				return xmlhttpmethod;
-			};
-		})(),
-
-		//tweaked Ajax functions from Quirksmode
-		ajax = function( url, callback ) {
-			var req = xmlHttp();
-			if (!req){
-				return;
-			}
-			req.open( "GET", url, true );
-			req.onreadystatechange = function () {
-				if ( req.readyState !== 4 || req.status !== 200 && req.status !== 304 ){
-					return;
-				}
-				callback( req.responseText );
-			};
-			if ( req.readyState === 4 ){
-				return;
-			}
-			req.send( null );
-		};
-
-	//expose for testing
-	respond.ajax = ajax;
-	respond.queue = requestQueue;
-
-	// expose for testing
-	respond.regex = {
-		media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
-		keyframes: /@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,
-		urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
-		findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
-		only: /(only\s+)?([a-zA-Z]+)\s?/,
-		minw: /\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,
-		maxw: /\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/
-	};
-
-	//expose media query support flag for external use
-	respond.mediaQueriesSupported = w.matchMedia && w.matchMedia( "only all" ) !== null && w.matchMedia( "only all" ).matches;
-
-	//if media queries are supported, exit here
-	if( respond.mediaQueriesSupported ){
-		return;
-	}
-
-	//define vars
-	var doc = w.document,
-		docElem = doc.documentElement,
-		mediastyles = [],
-		rules = [],
-		appendedEls = [],
-		parsedSheets = {},
-		resizeThrottle = 30,
-		head = doc.getElementsByTagName( "head" )[0] || docElem,
-		base = doc.getElementsByTagName( "base" )[0],
-		links = head.getElementsByTagName( "link" ),
-
-		lastCall,
-		resizeDefer,
-
-		//cached container for 1em value, populated the first time it's needed
-		eminpx,
-
-		// returns the value of 1em in pixels
-		getEmValue = function() {
-			var ret,
-				div = doc.createElement('div'),
-				body = doc.body,
-				originalHTMLFontSize = docElem.style.fontSize,
-				originalBodyFontSize = body && body.style.fontSize,
-				fakeUsed = false;
-
-			div.style.cssText = "position:absolute;font-size:1em;width:1em";
-
-			if( !body ){
-				body = fakeUsed = doc.createElement( "body" );
-				body.style.background = "none";
-			}
-
-			// 1em in a media query is the value of the default font size of the browser
-			// reset docElem and body to ensure the correct value is returned
-			docElem.style.fontSize = "100%";
-			body.style.fontSize = "100%";
-
-			body.appendChild( div );
-
-			if( fakeUsed ){
-				docElem.insertBefore( body, docElem.firstChild );
-			}
-
-			ret = div.offsetWidth;
-
-			if( fakeUsed ){
-				docElem.removeChild( body );
-			}
-			else {
-				body.removeChild( div );
-			}
-
-			// restore the original values
-			docElem.style.fontSize = originalHTMLFontSize;
-			if( originalBodyFontSize ) {
-				body.style.fontSize = originalBodyFontSize;
-			}
-
-
-			//also update eminpx before returning
-			ret = eminpx = parseFloat(ret);
-
-			return ret;
-		},
-
-		//enable/disable styles
-		applyMedia = function( fromResize ){
-			var name = "clientWidth",
-				docElemProp = docElem[ name ],
-				currWidth = doc.compatMode === "CSS1Compat" && docElemProp || doc.body[ name ] || docElemProp,
-				styleBlocks	= {},
-				lastLink = links[ links.length-1 ],
-				now = (new Date()).getTime();
-
-			//throttle resize calls
-			if( fromResize && lastCall && now - lastCall < resizeThrottle ){
-				w.clearTimeout( resizeDefer );
-				resizeDefer = w.setTimeout( applyMedia, resizeThrottle );
-				return;
-			}
-			else {
-				lastCall = now;
-			}
-
-			for( var i in mediastyles ){
-				if( mediastyles.hasOwnProperty( i ) ){
-					var thisstyle = mediastyles[ i ],
-						min = thisstyle.minw,
-						max = thisstyle.maxw,
-						minnull = min === null,
-						maxnull = max === null,
-						em = "em";
-
-					if( !!min ){
-						min = parseFloat( min ) * ( min.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
-					}
-					if( !!max ){
-						max = parseFloat( max ) * ( max.indexOf( em ) > -1 ? ( eminpx || getEmValue() ) : 1 );
-					}
-
-					// if there's no media query at all (the () part), or min or max is not null, and if either is present, they're true
-					if( !thisstyle.hasquery || ( !minnull || !maxnull ) && ( minnull || currWidth >= min ) && ( maxnull || currWidth <= max ) ){
-						if( !styleBlocks[ thisstyle.media ] ){
-							styleBlocks[ thisstyle.media ] = [];
-						}
-						styleBlocks[ thisstyle.media ].push( rules[ thisstyle.rules ] );
-					}
-				}
-			}
-
-			//remove any existing respond style element(s)
-			for( var j in appendedEls ){
-				if( appendedEls.hasOwnProperty( j ) ){
-					if( appendedEls[ j ] && appendedEls[ j ].parentNode === head ){
-						head.removeChild( appendedEls[ j ] );
-					}
-				}
-			}
-			appendedEls.length = 0;
-
-			//inject active styles, grouped by media type
-			for( var k in styleBlocks ){
-				if( styleBlocks.hasOwnProperty( k ) ){
-					var ss = doc.createElement( "style" ),
-						css = styleBlocks[ k ].join( "\n" );
-
-					ss.type = "text/css";
-					ss.media = k;
-
-					//originally, ss was appended to a documentFragment and sheets were appended in bulk.
-					//this caused crashes in IE in a number of circumstances, such as when the HTML element had a bg image set, so appending beforehand seems best. Thanks to @dvelyk for the initial research on this one!
-					head.insertBefore( ss, lastLink.nextSibling );
-
-					if ( ss.styleSheet ){
-						ss.styleSheet.cssText = css;
-					}
-					else {
-						ss.appendChild( doc.createTextNode( css ) );
-					}
-
-					//push to appendedEls to track for later removal
-					appendedEls.push( ss );
-				}
-			}
-		},
-		//find media blocks in css text, convert to style blocks
-		translate = function( styles, href, media ){
-			var qs = styles.replace( respond.regex.keyframes, '' ).match( respond.regex.media ),
-				ql = qs && qs.length || 0;
-
-			//try to get CSS path
-			href = href.substring( 0, href.lastIndexOf( "/" ) );
-
-			var repUrls = function( css ){
-					return css.replace( respond.regex.urls, "$1" + href + "$2$3" );
-				},
-				useMedia = !ql && media;
-
-			//if path exists, tack on trailing slash
-			if( href.length ){ href += "/"; }
-
-			//if no internal queries exist, but media attr does, use that
-			//note: this currently lacks support for situations where a media attr is specified on a link AND
-				//its associated stylesheet has internal CSS media queries.
-				//In those cases, the media attribute will currently be ignored.
-			if( useMedia ){
-				ql = 1;
-			}
-
-			for( var i = 0; i < ql; i++ ){
-				var fullq, thisq, eachq, eql;
-
-				//media attr
-				if( useMedia ){
-					fullq = media;
-					rules.push( repUrls( styles ) );
-				}
-				//parse for styles
-				else{
-					fullq = qs[ i ].match( respond.regex.findStyles ) && RegExp.$1;
-					rules.push( RegExp.$2 && repUrls( RegExp.$2 ) );
-				}
-
-				eachq = fullq.split( "," );
-				eql = eachq.length;
-
-				for( var j = 0; j < eql; j++ ){
-					thisq = eachq[ j ];
-					mediastyles.push( {
-						media : thisq.split( "(" )[ 0 ].match( respond.regex.only ) && RegExp.$2 || "all",
-						rules : rules.length - 1,
-						hasquery : thisq.indexOf("(") > -1,
-						minw : thisq.match( respond.regex.minw ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" ),
-						maxw : thisq.match( respond.regex.maxw ) && parseFloat( RegExp.$1 ) + ( RegExp.$2 || "" )
-					} );
-				}
-			}
-
-			applyMedia();
-		},
-
-		//recurse through request queue, get css text
-		makeRequests = function(){
-			if( requestQueue.length ){
-				var thisRequest = requestQueue.shift();
-
-				ajax( thisRequest.href, function( styles ){
-					translate( styles, thisRequest.href, thisRequest.media );
-					parsedSheets[ thisRequest.href ] = true;
-
-					// by wrapping recursive function call in setTimeout
-					// we prevent "Stack overflow" error in IE7
-					w.setTimeout(function(){ makeRequests(); },0);
-				} );
-			}
-		},
-
-		//loop stylesheets, send text content to translate
-		ripCSS = function(){
-
-			for( var i = 0; i < links.length; i++ ){
-				var sheet = links[ i ],
-				href = sheet.href,
-				media = sheet.media,
-				isCSS = sheet.rel && sheet.rel.toLowerCase() === "stylesheet";
-
-				//only links plz and prevent re-parsing
-				if( !!href && isCSS && !parsedSheets[ href ] ){
-					// selectivizr exposes css through the rawCssText expando
-					if (sheet.styleSheet && sheet.styleSheet.rawCssText) {
-						translate( sheet.styleSheet.rawCssText, href, media );
-						parsedSheets[ href ] = true;
-					} else {
-						if( (!/^([a-zA-Z:]*\/\/)/.test( href ) && !base) ||
-							href.replace( RegExp.$1, "" ).split( "/" )[0] === w.location.host ){
-							// IE7 doesn't handle urls that start with '//' for ajax request
-							// manually add in the protocol
-							if ( href.substring(0,2) === "//" ) { href = w.location.protocol + href; }
-							requestQueue.push( {
-								href: href,
-								media: media
-							} );
-						}
-					}
-				}
-			}
-			makeRequests();
-		};
-
-	//translate CSS
-	ripCSS();
-
-	//expose update for re-running respond later on
-	respond.update = ripCSS;
-
-	//expose getEmValue
-	respond.getEmValue = getEmValue;
-
-	//adjust on resize
-	function callMedia(){
-		applyMedia( true );
-	}
-
-	if( w.addEventListener ){
-		w.addEventListener( "resize", callMedia, false );
-	}
-	else if( w.attachEvent ){
-		w.attachEvent( "onresize", callMedia );
-	}
-})(this);
-
 // Copyright 2006 Google Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -1768,12 +1426,12 @@ if (!document.createElement('canvas').getContext) {
 } // if
 
 /**
-* @preserve HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
+* @preserve HTML5 Shiv 3.7.3-pre | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 */
 ;(function(window, document) {
 /*jshint evil:true */
   /** version */
-  var version = '3.7.2';
+  var version = '3.7.3';
 
   /** Preset options */
   var options = window.html5 || {};
@@ -2286,7 +1944,11 @@ if (!document.createElement('canvas').getContext) {
   // shiv for print
   shivPrint(document);
 
-}(this, document));
+  if(typeof module == 'object' && module.exports){
+    module.exports = html5;
+  }
+
+}(typeof window !== "undefined" ? window : this, document));
 
 // Copyright 2009-2012 by contributors, MIT License
 // vim: ts=4 sts=4 sw=4 expandtab
@@ -3675,7 +3337,7 @@ var getUrlParts = function( url ) {
 			host: a.host,
 			hostname: a.hostname,
 			port: a.port,
-			pathname: a.pathname,
+			pathname: a.pathname.replace( /^([^\/])/, "/$1" ), // Prefix pathname with a slash in browsers that don't natively do it (i.e. all versions of IE and possibly early versions of Edge). See pull request #8110.
 			protocol: a.protocol,
 			hash: a.hash,
 			search: a.search,
@@ -3884,6 +3546,7 @@ var getUrlParts = function( url ) {
 		ielt8: ( oldie < 8 ),
 		ielt9: ( oldie < 9 ),
 		ielt10: ( oldie < 10 ),
+		ie11: ( !!navigator.userAgent.match( /Trident\/7\./ ) ),
 
 		selectors: [],
 
@@ -4054,6 +3717,18 @@ var getUrlParts = function( url ) {
 
 		stripWhitespace: function( str ) {
 			return str.replace( /\s+/g, "" );
+		},
+
+		// Core function to deal with the dependency racing issue
+		whenLibReady: function( testCallback, readyCallback ) {
+			if ( testCallback() ) {
+				readyCallback();
+			} else {
+				setTimeout( function() {
+					wb.whenLibReady( testCallback, readyCallback );
+				}, 50 );
+			}
+
 		}
 	};
 
@@ -4111,6 +3786,36 @@ yepnope.addPrefix( "i18n", function( resourceObj ) {
 	resourceObj.url = paths.js + "/" + resourceObj.url + lang + paths.mode + ".js";
 	return resourceObj;
 } );
+
+/**
+ * @prefix: mthjx! - adds the root directory of MathJax resources
+ */
+yepnope.addPrefix( "mthjx", function( resourceObj ) {
+	resourceObj.url = paths.js + "/MathJax/" + resourceObj.url;
+	return resourceObj;
+} );
+
+/*-----------------------------
+ * Deps loading, call "complete" callback when the deps is ready if a testReady is defined
+ *-----------------------------*/
+wb.modernizrLoad = Modernizr.load;
+Modernizr.load = function( options ) {
+	var i, i_len, i_cache,
+		testReady, complete;
+	if ( !$.isArray( options ) ) {
+		options = [ options ];
+	}
+	i_len = options.length;
+	for ( i = 0; i !== i_len; i += 1 ) {
+		i_cache = options[ i ];
+		testReady = i_cache.testReady;
+		complete = i_cache.complete;
+		if ( testReady && complete ) {
+			i_cache.complete = wb.whenLibReady( testReady, complete );
+		}
+	}
+	wb.modernizrLoad( options );
+};
 
 /*-----------------------------
  * Modernizr Polyfill Loading
@@ -4178,14 +3883,18 @@ Modernizr.load( [
 
 					// Load the MathML dependency. Since the polyfill is only loaded
 					// when !Modernizr.mathml, we can skip the test here.
-					Modernizr.load( {
-						load: "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=Accessible",
+					Modernizr.load( [ {
+						load: "timeout=500!https://cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=Accessible",
 						complete: function() {
+							Modernizr.load( [ {
+								test: window.MathJax === undefined,
+								yep: "mthjx!MathJax.js?config=Accessible"
+							} ] );
 
 							// Identify that initialization has completed
 							wb.ready( $document, componentName );
 						}
-					} );
+					} ] );
 				} );
 
 				wb.add( selector );
@@ -4205,6 +3914,9 @@ Modernizr.load( [
 		nope: "plyfll!svg.min.js"
 	}, {
 		load: "i18n!i18n/",
+		testReady: function() {
+			return wb.i18nDict.tphp;
+		},
 		complete: function() {
 			wb.start();
 		}

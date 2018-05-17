@@ -1,0 +1,436 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>Feeds - Plugins - Documentation - Web Experience Toolkit
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
+<meta name="description" content="Aggregates and displays entries from one or more Web feeds.">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Language selection</h2>
+<ul class="text-right">
+<li><a lang="fr" hreflang="fr" href="feeds-fr.html">Français</a></li>
+<li class="curr">English&#32;<span>(current)</span></li>
+</ul>
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Search and menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Search and menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../../../index-en.html">
+<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
+<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Search</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Search website</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Search</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+<nav role="navigation" id="wb-sm" data-ajax-replace="../../../ajax/sitemenu-en.html" data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+<div class="container nvbar">
+<h2>Topics menu</h2>
+<div class="row">
+<ul class="list-inline menu">
+<li><a href="../../../index-en.html">WET project</a></li>
+<li><a href="../../../docs/start-en.html#implement">Implement WET</a></li>
+<li><a href="../../../docs/start-en.html">Contribute to WET</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+<h2>You are here:</h2>
+<div class="container">
+<div class="row">
+<ol class="breadcrumb">
+<li>
+<a href="../../../index-en.html">Home</a>
+</li>
+<li>
+<a href="../../../docs/index-en.html">Documentation</a>
+</li>
+<li>
+<a href="../../../docs/ref/plugins-en.html">Plugins</a>
+</li>
+<li>Feeds</li>
+</ol>
+</div>
+</div>
+</nav>
+</header>
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">Feeds</h1>
+<p>
+<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Feeds:%20">Questions or comments?</a>
+</p>
+<span class="wb-prettify all-pre hide"></span>
+<section>
+<h2>Purpose</h2>
+<p>The purpose of this feature is to provides a widget for aggregating and displaying the entries from one or more Web feeds on a Web page. Supported Web feed formats are Atom, RSS, and Media RSS.</p>
+</section>
+<section>
+<h2>Use when</h2>
+<ul>
+<li>Promoting and sharing information from Web feeds on a Web page </li>
+</ul>
+</section>
+<section>
+<h2>Working example</h2>
+<ul>
+<li><a href="../../../demos/feeds/feeds-en.html">English working examples</a></li>
+<li><a href="../../../demos/feeds/feeds-fr.html">French working examples</a></li>
+</ul>
+</section>
+<section>
+<h2>How to implement</h2>
+<ol>
+<li>For each area that will display Web feeds, create a <code>section</code> element with <code>class="wb-feeds"</code>.
+<pre><code>&lt;section class="wb-feeds"&gt;&lt;/section&gt;</code></pre>
+</li>
+<li>Inside the <code>section</code> element add a heading (<code>h1</code> - <code>h6</code>).</li>
+<li>Add an unordered list (<code>ul</code>) after the heading with the <code>feeds-cont</code> class.
+<ul>
+<li><strong>Flickr and YouTube feeds:</strong>
+<ol>
+<li>Add the <code>list-inline</code> class to the unordered list.</li>
+<li>Add <code>&lt;div class="clearfix"&gt;&lt;/div&gt;</code> after the unordered list.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>For every Web feed source to display, add a list element containing a link to the feed.
+<ul>
+<li><strong>Regular feeds:</strong>
+<pre><code>&lt;li&gt;
+	&lt;a href="http://canada.ca/sample.atom"&gt;Sample Atom Feed&lt;/a&gt;
+&lt;/li&gt;</code></pre>
+</li>
+<li><strong>Flickr feeds:</strong>
+<ol>
+<li>The link <code>href</code> attribute needs to contain the URL of the Flickr account's photostream.</li>
+<li>Add a <code>data-ajax</code> attribute to the link containing the URL of the <a href="https://www.flickr.com/services/feeds/">Flickr account JSON feed</a>.</li>
+</ol>
+<pre><code>&lt;li&gt;
+	&lt;a href="https://www.flickr.com/photos/environmentcan" rel="external" data-ajax="https://api.flickr.com/services/feeds/photos_public.gne?id=47711201@N05&amp;amp;format=json"&gt;Environment Canada Flickr&lt;/a&gt;
+&lt;/li&gt;</code></pre>
+</li>
+<li><strong>YouTube feeds:</strong>
+<ol>
+<li>The link <code>href</code> attribute needs to contain the URL of the YouTube account.</li>
+<li>Add a <code>data-ajax</code> attribute to the link with the URL of the YouTube account JSON feed.</li>
+</ol>
+<pre><code>&lt;li&gt;
+	&lt;a href="https://www.youtube.com/user/ParksCanadaAgency" rel="external" data-ajax="https://gdata.youtube.com/feeds/api/users/UCzJRhTw3KVtDlcdNz33eDMQ/uploads?v=2&amp;amp;alt=json"&gt;Parks Canada Youtube&lt;/a&gt;
+&lt;/li&gt;</code></pre>
+</li>
+</ul>
+</li>
+<li><strong>Optional:</strong> Group multiple types of feeds into a tabbed interface. The benefit of this approach is it will only load the feeds that are currently visible (significantly improves performance when there are lots of feeds).
+<ol>
+<li>Create a <code>div</code> element with <code>class="wb-tabs"</code>.</li>
+<li>Add a <code>div</code> element with <code>class="tabpanels"</code> within the previous <code>div</code> element.</li>
+<li>For each group of feeds (group feeds by type), add a <code>details</code> element. Add <code>open="open"</code> to the group of feeds that should be displayed by default.</li>
+<li>Add a <code>summary</code> element at the start of each <code>details</code> element with the name of the group of feeds (e.g., <code>&lt;summary&gt;Pinterest&lt;/summary&gt;</code>).</li>
+<li>Add the areas to display Web feeds after each <code>summary</code> element as described in steps 1 to 4, except add the <code>wb-inv</code> class to the heading for each area.</li>
+</ol>
+<pre><code>&lt;section&gt;
+	&lt;h3&gt;Tabbed Social Feeds&lt;/h3&gt;
+	&lt;div class="wb-tabs col-md-5 wb-eqht"&gt;
+		&lt;div class="tabpanels"&gt;
+		&lt;details id="details-pinterest" open="open"&gt;
+			&lt;summary&gt;Pinterest&lt;/summary&gt;
+				&lt;section class="wb-feeds limit-5"&gt;
+					&lt;h4 class="wb-inv"&gt;Pinterestk&lt;/h4&gt;
+					&lt;ul class="feeds-cont media-list"&gt;
+						...
+					&lt;/ul&gt;
+					&lt;div class="clearfix"&gt;&lt;/div&gt;
+				&lt;/section&gt;
+			&lt;/details&gt;
+
+			&lt;details id="details-flickr"&gt;
+				&lt;summary&gt;Flickr&lt;/summary&gt;
+				&lt;section class="wb-feeds limit-10"&gt;
+					&lt;h4 class="wb-inv"&gt;Flickr&lt;/h4&gt;
+					&lt;ul class="feeds-cont list-inline"&gt;
+						...
+					&lt;/ul&gt;
+					&lt;div class="clearfix"&gt;&lt;/div&gt;
+				&lt;/section&gt;
+			&lt;/details&gt;
+
+			&lt;details id="details-youtube"&gt;
+				&lt;summary&gt;YouTube&lt;/summary&gt;
+				&lt;section class="wb-feeds limit-10"&gt;
+					&lt;h4 class="wb-inv"&gt;YouTube&lt;/h4&gt;
+					&lt;ul class="feeds-cont list-inline"&gt;
+						...
+					&lt;/ul&gt;
+					&lt;div class="clearfix"&gt;&lt;/div&gt;
+				&lt;/section&gt;
+			&lt;/details&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</li>
+</ol>
+<section>
+<h3>Example code</h3>
+<section>
+<h4>Regular feeds</h4>
+<pre><code>&lt;section class="wb-feeds limit-5"&gt;
+	&lt;h3&gt;Road News Releases and Safety Recalls&lt;/h3&gt;
+	&lt;ul class="feeds-cont"&gt;
+		&lt;li&gt;
+			&lt;a href="http://www.tc.gc.ca/mediaroom/rss/road.xml" rel="external"&gt;Road News Releases (All)&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="http://wwwapps.tc.gc.ca/Saf-Sec-Sur/7/VRDB-BDRV/search-recherche/rss.aspx?lang=eng" rel="external"&gt;Road Safety Recalls&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/section&gt;</code></pre>
+</section>
+<section>
+<h4>Flickr feeds</h4>
+<pre><code>&lt;section class="wb-feeds limit-15"&gt;
+	&lt;ul class="feeds-cont list-inline"&gt;
+		&lt;li&gt;
+			&lt;a href="https://www.flickr.com/photos/environmentcan" rel="external" data-ajax="https://api.flickr.com/services/feeds/photos_public.gne?id=47711201@N05&amp;amp;format=json"&gt;Environment Canada Flickr&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</section>
+<section>
+<h4>YouTube feeds</h4>
+<pre><code>&lt;section class="wb-feeds limit-15"&gt;
+	&lt;ul class="feeds-cont list-inline"&gt;
+		&lt;li&gt;
+			&lt;a href="https://www.youtube.com/user/ParksCanadaAgency" rel="external" data-ajax="https://gdata.youtube.com/feeds/api/users/UCzJRhTw3KVtDlcdNz33eDMQ/uploads?v=2&amp;amp;alt=json"&gt;Parks Canada Youtube&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href="https://www.youtube.com/user/fisheriescanada?feature=results_main" rel="external" data-ajax="https://gdata.youtube.com/feeds/api/users/UC5D1a5R8bbrTXEJrjmRX7gA/uploads?v=2&amp;amp;alt=json"&gt;Department of Fisheries and Oceans’ YouTube&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</section>
+<section>
+<h4>Tabbed feeds</h4>
+<pre><code>&lt;section&gt;
+	&lt;h3&gt;Tabbed Social Feeds&lt;/h3&gt;
+	&lt;div class="wb-tabs col-md-5 wb-eqht"&gt;
+		&lt;div class="tabpanels"&gt;
+
+		&lt;details id="details-flickr"&gt;
+				&lt;summary&gt;Flickr&lt;/summary&gt;
+				&lt;section class="wb-feeds limit-10"&gt;
+					&lt;h4 class="wb-inv"&gt;Flickr&lt;/h4&gt;
+					&lt;ul class="feeds-cont list-inline"&gt;
+						&lt;li&gt;
+							&lt;a href="https://www.flickr.com/photos/environmentcan" rel="external" data-ajax="https://api.flickr.com/services/feeds/photos_public.gne?id=47711201@N05&amp;amp;format=json"&gt;Environment Canada Flickr&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;div class="clearfix"&gt;&lt;/div&gt;
+				&lt;/section&gt;
+			&lt;/details&gt;
+
+			&lt;details id="details-youtube"&gt;
+				&lt;summary&gt;YouTube&lt;/summary&gt;
+				&lt;section class="wb-feeds limit-10"&gt;
+					&lt;h4 class="wb-inv"&gt;YouTube&lt;/h4&gt;
+					&lt;ul class="feeds-cont list-inline"&gt;
+						&lt;li&gt;
+							&lt;a href="https://www.youtube.com/user/ParksCanadaAgency" rel="external" data-ajax="https://gdata.youtube.com/feeds/api/users/UCzJRhTw3KVtDlcdNz33eDMQ/uploads?v=2&amp;amp;alt=json"&gt;Parks Canada Youtube&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="https://www.youtube.com/user/fisheriescanada?feature=results_main" rel="external" data-ajax="https://gdata.youtube.com/feeds/api/users/UC5D1a5R8bbrTXEJrjmRX7gA/uploads?v=2&amp;amp;alt=json"&gt;Department of Fisheries and Oceans’ YouTube&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;div class="clearfix"&gt;&lt;/div&gt;
+				&lt;/section&gt;
+			&lt;/details&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</section>
+</section>
+</section>
+<section>
+<h2>Configuration options</h2>
+<p>Document the public configuration options that can be used by implementers or developers.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>How to configure</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>limit-x</code></td>
+<td>Controls the amount of items the Web feeds widget will display.</td>
+<td>Add the <code>limit-x</code> class after the <code>wb-feeds</code> class and replace <code>x</code> with an integer.</td>
+<td>
+<dl>
+<dt><code>limit-4</code> (default):</dt>
+<dd>Limits display to four items.</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Events</h2>
+<p>Document the public events that can be used by implementers or developers.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Event</th>
+<th>Trigger</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>wb-init.wb-feeds</code></td>
+<td>Triggered manually (e.g., <code>$( ".wb-feeds" ).trigger( "wb-init.wb-feeds" );</code>).</td>
+<td>Used to manually initialize the Feeds widget. <strong>Note:</strong> The Feeds widget will be initialized automatically unless it is added after the page has already loaded.</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb-feeds</code> (v4.0.5+)</td>
+<td>Triggered automatically after the Feeds plugin has initialized.</td>
+<td>Used to identify where the Feeds plugin has finished initializing (target of the event).
+<pre><code>$( document ).on( "wb-ready.wb-feeds", ".wb-feeds", function( event ) {
+});</code></pre>
+<pre><code>$( ".wb-feeds" ).on( "wb-ready.wb-feeds", function( event ) {
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td><code>wb-feed-ready.wb-feeds</code> (v4.0.5+)</td>
+<td>Triggered automatically after a feed has become visible.</td>
+<td>Used to identify which feed has become visible (target of the event).
+<pre><code>$( document ).on( "wb-feed-ready.wb-feeds", ".wb-feeds .feeds-cont", function( event ) {
+});</code></pre>
+<pre><code>$( ".wb-feeds .feeds-cont" ).on( "wb-feed-ready.wb-feeds", function( event ) {
+});</code></pre>
+</td>
+</tr>
+<tr>
+<td><code>wb-ready.wb</code> (v4.0.5+)</td>
+<td>Triggered automatically when WET has finished loading and executing.</td>
+<td>Used to identify when all WET plugins and polyfills have finished loading and executing.
+<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
+});</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h2>Source code</h2>
+<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/feeds">Feeds widget source code on GitHub</a></p>
+</section>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">2014-08-04</time></dd>
+</dl>
+</main>
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>About this site</h2>
+<section class="col-sm-3">
+<h3>Contact us</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/issues/new">Questions or comments?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>About</h3>
+<ul class="list-unstyled">
+<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>News</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew/pulse">Recent project activity</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew/graphs">Project statistics</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Stay connected</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+</ul>
+</section> </nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
+</body>
+</html>
