@@ -1,4 +1,7 @@
 #global module:false
+
+path = require("path")
+
 module.exports = (grunt) ->
 
 	# Default task.
@@ -56,7 +59,7 @@ module.exports = (grunt) ->
 		"Build and deploy artifacts to wet-boew-dist"
 		[
 			"sass:all"
-			"autoprefixer"
+			"postcss"
 			#"csslint:unmin"
 			"cssmin:v4"
 		]
@@ -64,8 +67,10 @@ module.exports = (grunt) ->
 
 	@initConfig
 		pkg: @file.readJSON "package.json"
-		jqueryVersion: @file.readJSON "lib/jquery/bower.json"
-		jqueryOldIEVersion: @file.readJSON "lib/jquery-oldIE/bower.json"
+		jqueryVersion: grunt.file.readJSON(
+			path.join require.resolve( "jquery" ), "../../package.json"
+		).version
+		jqueryOldIEVersion: "1.12.4"
 		banner: "/*!\n * Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)\n * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html\n" +
 				" * <%= pkg.version %> - " + "<%= grunt.template.today('yyyy-mm-dd') %>\n *\n */"
 
@@ -77,18 +82,18 @@ module.exports = (grunt) ->
 					sanitize: false
 				production: false
 				data: [
-					"lib/wet-boew/site/data/**/*.{yml,json}"
+					"node_modules/wet-boew/site/data/**/*.{yml,json}"
 					"site/data/**/*.{yml,json}"
 				]
 				helpers: [
-					"lib/wet-boew/site/helpers/helper-*.js"
+					"node_modules/wet-boew/site/helpers/helper-*.js"
 					"site/helpers/helper-*.js"
 				]
 				partials: [
-					"lib/wet-boew/site/includes/**/*.hbs"
+					"node_modules/wet-boew/site/includes/**/*.hbs"
 					"site/includes/**/*.hbs"
 				]
-				layoutdir: "lib/wet-boew/site/layouts"
+				layoutdir: "node_modules/wet-boew/site/layouts"
 				layout: "default.hbs"
 				environment:
 					suffix: ".min"
@@ -123,7 +128,7 @@ module.exports = (grunt) ->
 		copy:
 			wetboew:
 				expand: true
-				cwd: "lib/wet-boew/dist"
+				cwd: "node_modules/wet-boew/dist"
 				src: [
 					"**/*.*"
 					"!demos/**/*.*"
@@ -173,18 +178,19 @@ module.exports = (grunt) ->
 					ext: ".css"
 				]
 
-		autoprefixer:
+		postcss:
 			# Only vendor prefixing and no IE8
 			modern:
 				options:
-					browsers: [
-						"last 2 versions"
-						"android >= 2.3"
-						"bb >= 7"
-						"ff >= 17"
-						"ie > 8"
-						"ios 5"
-						"opera 12.1"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"last 2 versions"
+								"bb >= 10"
+								"Firefox ESR"
+								"ie > 10"
+							]
+						)
 					]
 				cwd: "dist/v4"
 				src: [
@@ -197,14 +203,15 @@ module.exports = (grunt) ->
 			# Needs both IE8 and vendor prefixing
 			mixed:
 				options:
-					browsers: [
-						"last 2 versions"
-						"android >= 2.3"
-						"bb >= 7"
-						"ff >= 17"
-						"ie >= 8"
-						"ios 5"
-						"opera 12.1"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"last 2 versions"
+								"bb >= 10"
+								"Firefox ESR"
+								"ie > 10"
+							]
+						)
 					]
 				files: [
 					cwd: "dist/v4"
@@ -220,8 +227,12 @@ module.exports = (grunt) ->
 			# Only IE8 support
 			oldIE:
 				options:
-					browsers: [
-						"ie 8"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"ie 8"
+							]
+						)
 					]
 				cwd: "dist/v4"
 				src: [
@@ -290,7 +301,7 @@ module.exports = (grunt) ->
 		hub:
 			"wet-boew":
 				src: [
-					"lib/wet-boew/Gruntfile.coffee"
+					"node_modules/wet-boew/Gruntfile.coffee"
 				]
 				tasks: [
 					"build"
@@ -301,7 +312,7 @@ module.exports = (grunt) ->
 
 		"install-dependencies":
 			options:
-				cwd: "lib/wet-boew"
+				cwd: "node_modules/wet-boew"
 				failOnError: false
 				isDevelopment: true
 
@@ -332,17 +343,7 @@ module.exports = (grunt) ->
 						middlewares
 
 	# These plugins provide necessary tasks.
-	@loadNpmTasks "assemble"
-	@loadNpmTasks "grunt-autoprefixer"
-	@loadNpmTasks "grunt-contrib-clean"
-	@loadNpmTasks "grunt-contrib-connect"
-	@loadNpmTasks "grunt-contrib-copy"
-	@loadNpmTasks "grunt-contrib-csslint"
-	@loadNpmTasks "grunt-contrib-cssmin"
-	@loadNpmTasks "grunt-gh-pages"
-	@loadNpmTasks "grunt-hub"
-	@loadNpmTasks "grunt-install-dependencies"
-	@loadNpmTasks "grunt-sass"
+	require( "load-grunt-tasks" )( grunt, requireResolution: true )
 
 	require( "time-grunt" )( grunt )
 	@
