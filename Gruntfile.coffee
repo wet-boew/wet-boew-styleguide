@@ -338,17 +338,7 @@ module.exports = (grunt) ->
 						middlewares
 
 	# These plugins provide necessary tasks.
-	@loadNpmTasks "assemble"
-	@loadNpmTasks "grunt-contrib-clean"
-	@loadNpmTasks "grunt-contrib-connect"
-	@loadNpmTasks "grunt-contrib-copy"
-	@loadNpmTasks "grunt-contrib-csslint"
-	@loadNpmTasks "grunt-contrib-cssmin"
-	@loadNpmTasks "grunt-gh-pages"
-	@loadNpmTasks "grunt-hub"
-	@loadNpmTasks "grunt-install-dependencies"
-	@loadNpmTasks "grunt-postcsss"
-	@loadNpmTasks "grunt-sass"
+	require( "load-grunt-tasks" )( grunt, requireResolution: true )
 
 	require( "time-grunt" )( grunt )
 	@
