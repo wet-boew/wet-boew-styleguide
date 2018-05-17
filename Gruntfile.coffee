@@ -56,7 +56,7 @@ module.exports = (grunt) ->
 		"Build and deploy artifacts to wet-boew-dist"
 		[
 			"sass:all"
-			"autoprefixer"
+			"postcss"
 			#"csslint:unmin"
 			"cssmin:v4"
 		]
@@ -173,18 +173,19 @@ module.exports = (grunt) ->
 					ext: ".css"
 				]
 
-		autoprefixer:
+		postcss:
 			# Only vendor prefixing and no IE8
 			modern:
 				options:
-					browsers: [
-						"last 2 versions"
-						"android >= 2.3"
-						"bb >= 7"
-						"ff >= 17"
-						"ie > 8"
-						"ios 5"
-						"opera 12.1"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"last 2 versions"
+								"bb >= 10"
+								"Firefox ESR"
+								"ie > 10"
+							]
+						)
 					]
 				cwd: "dist/v4"
 				src: [
@@ -197,14 +198,15 @@ module.exports = (grunt) ->
 			# Needs both IE8 and vendor prefixing
 			mixed:
 				options:
-					browsers: [
-						"last 2 versions"
-						"android >= 2.3"
-						"bb >= 7"
-						"ff >= 17"
-						"ie >= 8"
-						"ios 5"
-						"opera 12.1"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"last 2 versions"
+								"bb >= 10"
+								"Firefox ESR"
+								"ie > 10"
+							]
+						)
 					]
 				files: [
 					cwd: "dist/v4"
@@ -220,8 +222,12 @@ module.exports = (grunt) ->
 			# Only IE8 support
 			oldIE:
 				options:
-					browsers: [
-						"ie 8"
+					processors: [
+						require("autoprefixer")(
+							browsers: [
+								"ie 8"
+							]
+						)
 					]
 				cwd: "dist/v4"
 				src: [
@@ -333,7 +339,6 @@ module.exports = (grunt) ->
 
 	# These plugins provide necessary tasks.
 	@loadNpmTasks "assemble"
-	@loadNpmTasks "grunt-autoprefixer"
 	@loadNpmTasks "grunt-contrib-clean"
 	@loadNpmTasks "grunt-contrib-connect"
 	@loadNpmTasks "grunt-contrib-copy"
@@ -342,6 +347,7 @@ module.exports = (grunt) ->
 	@loadNpmTasks "grunt-gh-pages"
 	@loadNpmTasks "grunt-hub"
 	@loadNpmTasks "grunt-install-dependencies"
+	@loadNpmTasks "grunt-postcsss"
 	@loadNpmTasks "grunt-sass"
 
 	require( "time-grunt" )( grunt )
