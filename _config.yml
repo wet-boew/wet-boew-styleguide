@@ -1,0 +1,41 @@
+# standard jekyll configuration
+
+title_en: "Web Experience Toolkit (WET)"
+title_fr: "Boîte à outils de l'expérience Web (BOEW)"
+title_accessibility_en: Accessibility Guide
+title_accessibility_en: Accessibility Guide
+title_design_en: Design Guide
+title_design_fr: Guide de conception
+title_writing_en: Writing Guide
+title_writing_fr: Guide de rédaction
+title_style_en: Style Guide
+title_style_fr: Guide de style
+description_en: "Style, Writing, Design, and Accessibility Guide for Web Experience Toolkit (WET)."
+description_fr: "Style, Writing, Design, and Accessibility Guide for Web Experience Toolkit (WET)."
+languages: true
+search: false
+subsite: false
+site_menu: true
+breadcrumb: true
+content_editable: true
+content_revision_history: true
+content_questions_comments: true
+date_modified: false
+secondary_menu: false
+secondary_menu_include: null
+url: "http://wet-boew.github.io/wet-boew-styleguide/"
+repo_name: "wet-boew-styleguide"
+branch: "master"
+
+# global settings, no need to change these
+root_url: "http://wet-boew.github.io/wet-boew-styleguide/"
+org_name: "wet-boew"
+prose_url: "http://prose.io"
+
+# default build settings for running locally, no need to edit
+pymgemnts: true
+exclude: ['README.md']
+exclude: [archive]
+
+# Ensure URLs are meaningful
+permalink: /:title

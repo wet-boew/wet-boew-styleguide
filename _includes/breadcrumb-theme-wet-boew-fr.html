@@ -1,0 +1,33 @@
+<nav role="navigation" id="wb-bc" property="breadcrumb">
+	<h2>Vous êtes ici :</h2>
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li>
+					<a href="../../wet-boew/index-fr.html">Accueil</a>
+				</li>
+				{% unless page.url == '/index-fr.html' %}
+				<li>
+					<a href="../../wet-boew-styleguide/index-fr.html">Guide de style</a>
+				</li>
+				{% endunless %}
+				{% unless page.url contains 'index-fr' %}
+					{% if page.dir contains 'accessibility' %}
+					<li>
+						<a href="../../wet-boew-styleguide/accessibility/index-fr.html">{{ site.title_accessibility_fr }}</a>
+					</li>
+					{% elsif page.dir contains 'design' %}
+					<li>
+						<a href="../../wet-boew-styleguide/design/index-fr.html">{{ site.title_design_fr }}</a>
+					</li>
+					{% elsif page.dir contains 'writing' %}
+					<li>
+						<a href="../../wet-boew-styleguide/writing/index-fr.html">{{ site.title_writing_fr }}</a>
+					</li>
+					{% endif %}
+				{% endunless %}
+				<li>{{ page.title }}</li>
+			</ol>
+		</div>
+	</div>
+</nav>

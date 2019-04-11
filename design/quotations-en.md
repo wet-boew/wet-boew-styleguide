@@ -1,0 +1,230 @@
+---
+published: true
+layout: default-theme-wet-boew-en
+title: Quotations
+hide_breadcrumb: false
+modified: 2019-04-11
+---
+{::nomarkdown}
+{% raw %}
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <nav role="navigation" class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table of contents</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Purpose</a></li>
+            <li><a href="#design">Design and coding</a>
+              <ul>
+                <li><a href="#basic">Basic use</a>
+                  <ul>
+                    <li><a href="#blockquote">Blockquotes</a></li>
+                    <li><a href="#cite">Cite a source</a></li>
+                    <li><a href="#inline">Inline quotes</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Work in progress</h2>
+          <p>This page is a work in progress.</p>
+          <p>Please <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">file an issue</a> or submit a pull request if information or coding is missing, incorrect or out of sync with the main repository (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Purpose</h2>
+  <p>Use  quotations to cite a group of words by someone other than the original author  or speaker.</p>
+  <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
+  <h3 id="basic">Basic use</h3>
+  <p>Use to quote blocks of content from another source within your document.</p>
+  <section>
+    <h4 id="blockquote"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-quote-left fa-stack-1x fa-inverse"></span></span> Blockquotes</h4>
+    <p>Use to indicate a<strong> large quotation </strong>of text that comes from another source.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <p>Default blockquote:</p>
+			<blockquote>
+
+              <p>Text goes here.</p>
+            </blockquote>
+			<p>Blockquote-reverse:</p>
+            <blockquote class="blockquote-reverse">
+              <p>Text goes here.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Wrap <code>&lt;blockquote&gt;</code> around any quotations that are<strong> more than a few words in length</strong></li>
+          <li>Use <code>&lt;p&gt;</code> inside of <code>&lt;blockquote&gt;</code></li>
+          <li>Use <code>.blockquote-reverse</code> for a floated, right-aligned blockquote</li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li><strong>Do not add quotation marks </strong>(<strong>&quot;</strong>) (<code>&amp;quot;</code>) or images of quotation marks to the text, as this is redundant styling</li>
+          <li>Do not use if  you can link directly to the source content</li>
+          <li>Do not use if you can rephrase the content into concise, plain language</li>
+          <li>Do not use to format content that is not a quote</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Default blockquote:<strong>
+&lt;blockquote&gt;</strong>
+  <strong>&lt;p&gt;</strong>...&lt;/p&gt;
+&lt;/blockquote&gt;
+
+// Right-aligned blockquote:
+&lt;blockquote <strong>class=&quot;blockquote-reverse&quot;</strong>&gt;
+  &lt;p&gt;...&lt;/p&gt;
+&lt;/blockquote&gt;
+</code>
+</pre>
+
+      </div>
+    </div>
+    <h4 id="cite"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="glyphicon glyphicon-user fa-stack-1x fa-inverse"></span></span> Cite a source</h4>
+    <p>Use to identify the the content author, as well as title of the source. </p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+			<p>Blockquote with default footer:</p>
+			<blockquote>
+              <p>Text goes here.</p>
+              <footer>Author's name<br>
+                <cite>Title of Cited Source Content</cite></footer>
+            </blockquote>
+			<p>Blockquote with a right-aligned footer:</p>
+            <blockquote>
+              <p>Text goes here.</p>
+              <footer class="text-right">Author's name<br>
+                <cite>Title of Cited Source Content</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Name the quote source when possible with <code>&lt;footer&gt;</code> (author's name) and <code>&lt;cite&gt;</code> (source title) </li>
+          <li>Use a <code>&lt;br&gt;</code> to place the title of the cited source under the author's name</li>
+          <li>Capitalize the cited source title <strong>the same as the author does</strong></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not omit the quotation source when a quote is cited</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>// Default footer:
+ &lt;blockquote&gt;
+   &lt;p&gt;...&lt;/p&gt;
+   <strong>&lt;footer&gt;</strong>Author's name<strong>&lt;br&gt;</strong>
+    <strong>&lt;cite&gt;</strong>Title of Cited Source Content&lt;/cite&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+// Right-aligned footer:
+&lt;blockquote&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  <strong>&lt;footer class=&quot;text-right&quot;&gt;</strong>Author's name<strong>&lt;br&gt;</strong>
+    <strong>&lt;cite&gt;</strong>Title of Cited Source Content&lt;/cite&gt;
+ &lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+      </div>
+    </div>
+    <h4 id="inline"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-inverse">-&ldquo;-</span></span> Inline quotes</h4>
+    <p>Use inline quotes for  snippets of content that are quoted from another source. They appear <strong>within a sentence</strong>. </p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <p>Complete sentence with colon: "<q>Quoted sentence!</q>"</p>
+            <p>Someone states or intro phrase, &quot;section of quoted text.&quot; </p>
+            <p>Someone states or intro phrase, &quot;Quoted sentence.&quot; </p>
+            <p>Introductory phrase,  &quot;section of quoted text that now needs a comma,&quot; text text text. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use  inline quotes if the quote is <strong>less than a few words in length</strong></li>
+          <li>Use double quotation marks (<strong>&quot;</strong>) (<code>&amp;quot;</code>) for inline quotes</li>
+          <li>Wrap the quote in quotation marks <strong>and</strong> <code>&lt;q&gt;</code> element</li>
+          <li>Place periods and commas<strong> inside </strong>the closing <code>&lt;/q&gt;</code>        <ul>
+              <li>This is the style <abbr title="Canada Revenue Agency">CRA</abbr>  uses for quotation marks</li>
+              <li>Unless they are part of the original quotation, place all other marks  <strong>outside</strong> the quotation marks</li>
+            </ul>
+          </li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use if the content can be rephrased into concise, plain language</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>
+// Complete sentence with colon, then quote:
+<strong>&lt;p&gt;</strong>Complete sentence<strong>:</strong> <strong>&amp;quot;&lt;q&gt;Quoted sentence!&amp;quot;&lt;/q&gt;&lt;/p&gt;</strong>
+
+// Someone states or intro phrase, then quote:
+&lt;p&gt;...<strong>, &amp;quot;&lt;q&gt;...&amp;quot;&lt;/q&gt;</strong>&lt;/p&gt;
+
+// Someone states or intro phrase, quote that now needs a comma:
+&lt;p&gt;...<strong>, &amp;quot;&lt;q&gt;...,&amp;quot;&lt;/q&gt; </strong>...&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+    <p class="mrgn-tp-lg">Use to identify a title, button, or action that is not a link.</p>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Appearance</h5>
+            <p>Then select the "Sign in" button. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Correct use</h5>
+<p>Compliance point(s):</p>
+        <ul>
+          <li>Use quotation marks to identify a <strong>title</strong>,<strong> button</strong>, or<strong> action</strong> that is <strong>not around or in a link</strong></li>
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5><p>Compliance point(s):</p><ul>
+          <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
+          <li>Do not use quotations around a link</li>
+          <li>Do not use if the content can be rephrased into concise, plain language</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+        <pre><code>&lt;p&gt;... <strong>&amp;quot;...&amp;quot;</strong> ...&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+  </section>
+{% endraw %}
+{:/}

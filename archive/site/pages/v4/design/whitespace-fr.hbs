@@ -1,0 +1,130 @@
+---
+{
+	"title": "Envelopper et tronquer le texte",
+	"language": "fr",
+	"altLangPrefix": "whitespace",
+	"css": ["https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome", "css/gridify" ],
+	"dateModified": "2016-11-23"
+}
+---
+  
+  <span class="wb-prettify all-pre"></span>
+  <div class="row">
+    <nav role="navigation" class="col-md-8">
+      <div class="panel panel-default">
+        <header class="panel-heading">
+          <h2 class="panel-title">Table des matières</h2>
+        </header>
+        <div class="panel-body">
+          <ul>
+            <li><a href="#purpose">Usage</a></li>
+            <li><a href="#design">Conception et codage</a>
+              <ul>
+                <li><a href="#basic">Utilisation de base</a></li>
+				<li><a href="#enhanced">Utilisation améliorée</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="col-md-4">
+      <div class="panel panel-warning">
+        <div class="panel-body">
+          <h2 class="mrgn-tp-0 h4 text-warning"><span class="fa fa-exclamation-triangle"></span> Chantier</h2>
+          <p>Cette page est en chantier.</p>
+          <p>Veuillez <a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">transmettre un problème</a> ou soumettre une demande de tirage s'il manque des renseignements ou des codes ou si la synchronisation est incorrecte ou déphasée avec le principal référentiel (wet-boew/wet-boew).</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <h2 id="purpose"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-info fa-stack-1x fa-inverse"></span></span> Usage</h2>
+  <p>Les utiliser pour empêcher que du texte retourne à la ligne suivante.</p>
+  <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
+  <h3 id="basic">Utilisation de base</h3>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <p>S'en servir pour contrôler où et comment les mots retournent automatiquement à la ligne suivante à l'intérieur d'une ligne de texte. </p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h5 class="mrgn-tp-0">Apparence</h5>
+          <p>Défaut :</p>
+          <p>Lorem ipsum dolor sit amet, consectetur <strong>30 avril</strong>.</p>
+          <p class="mrgn-tp-lg">Avec <code>.nowrap</code> :</p>
+          <p>Lorem ipsum dolor sit amet, consectetur <span class="nowrap"><strong>30 avril</strong></span>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Bonne utilisation</h5>
+      <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
+      <ul>
+        <li>L'utiliser pour empêcher que des éléments de contenu comme le numéro de téléphone, le code postal, une équation mathématique, une date et la ponctuation française (le deux-points, les crochets et les autres éléments qui nécessitent des espaces) retournent automatiquement à la ligne suivante sur plusieurs lignes</li>
+        <li>Rappelez-vous que la page est réactive à la largeur du navigateur
+          <ul>
+            <li>Le texte retourne automatiquement à la ligne suivante à des points différents sur des appareils et des espaces de visionnement différents</li>
+            <li>Ajoutez <code>.nowrap</code> pour convenir aux résolutions différentes</li>
+          </ul>
+        </li>
+      </ul>
+      <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Mauvaise utilisation</h5>
+      <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
+      <ul>
+        <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec <span class="nowrap">les points</span> de conformité  <span class="nowrap">précédents</span></li>
+        <li>Ne l'utilisez pas pour renvoyer automatiquement des phrases complètes à la ligne suivante</li>
+        <li>Ne l'utilisez pas pour l'information non textuelle</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h5 class="mrgn-tp-0">Code</h5>
+      <pre><code>&lt;p&gt;... &lt;span<strong> class=&quot;nowrap&quot;</strong>&gt;30 avril&lt;/span&gt;.&lt;/p&gt;</code></pre>
+    </div>
+  </div>
+    <h3 id="enhanced">Utilisation améliorée</h3>
+	<h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-ellipsis-h fa-stack-1x fa-inverse"></span></span> Tronqué</h4>
+	 <p>Utiliser pour tronquer le texte pour qu'il s'insère dans une colonne de grille sur une seule ligne. Tout texte au-delà de la bordure de la grille sera recadré et remplacé par un trois points. Le texte disparaît seulement visuellement, il peut cependant toujours être lu par les lecteurs d'écran.</p>
+     <div class="row">
+    <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h5 class="mrgn-tp-0">Apparence</h5>
+		  <p>Défaut :</p>
+		    <p>Lorem ipsum dolor sit amet, consectetur <strong>30 avril</strong>.</p>
+			<p>Avec <code>.wb-elps</code> :
+		   <p class="wb-elps">Lorem ipsum dolor sit amet, consectetur <strong>30 avril</strong>.</p>
+          </div>
+ </div>
+       </div>
+      <div class="col-md-4">
+        <h5 class="mrgn-tp-0 text-success"><span class="glyphicon glyphicon-ok-circle"></span> Bonne utilisation</h5>
+        <p>Point de conformité :</p>
+        <ul>
+          <li>Utilisez principalement avec des hyperliens pour prévenir un retour automatique à la ligne (si la hauteur est une préoccupation et que <code>.wb-eqht</code> ne peut être appliqué) ou s'il affiche en dehors des colonnes d'une grille (quand <code>.nowrap</code> est appliqué)</li> 
+        </ul>
+        <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Mauvaise utilisation</h5>
+        <p>Points de conformité :</p>
+        <ul>
+          <li>Ne pas utiliser ce style pour des phrases, car il peut cacher des informations à un utilisateur visuel</li>
+		  <li>Ne pas utiliser à la place de <code>.wb-eqht</code> lorsque vous tentez d'obtenir une hauteur égale sur une rangée de grille</li>
+          <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec le point de conformité précédent</li>
+        </ul>
+      </div>
+    <div class="col-md-4">
+        <h5 class="mrgn-tp-0">Code</h5>
+      <pre>&lt;p class=&quot;wb-elps&quot;&gt;...&lt;/p&gt;</pre>
+      </div>
+    </div>
+
+  <!-- SEARCH CONTENT ENDS / CONTENU RECHERCHE TERMINE -->
+ 
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="/wet40/js/jquery.js"></script>
+<script src="/wet40/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="/wet40/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+<script src="/wet40/js/theme.min.js"></script>
+</body>
+</html>
