@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: En-tête - Guide de style
+title: En-tête
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Icônes - Guide de style
+title: Icônes
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

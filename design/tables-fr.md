@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Tableaux - Guide de style
+title: Tableaux
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

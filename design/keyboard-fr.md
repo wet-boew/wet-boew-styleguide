@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Touches de clavier - Guide de style
+title: Touches de clavier
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

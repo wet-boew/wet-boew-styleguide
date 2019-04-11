@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Panneaux - Guide de style
+title: Panneaux
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

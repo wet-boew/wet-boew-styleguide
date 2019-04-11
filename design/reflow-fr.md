@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Redistribution du contenu autour de grilles - Guide de style
+title: Redistribution du contenu autour de grilles
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

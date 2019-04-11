@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Éléments flottants - Guide de style
+title: Éléments flottants
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

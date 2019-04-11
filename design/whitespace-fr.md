@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Envelopper et tronquer le texte - Guide de style
+title: Envelopper et tronquer le texte
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

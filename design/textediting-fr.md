@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Effets d'édition de texte - Guide de style
+title: Effets d'édition de texte
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

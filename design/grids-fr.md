@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Grilles - Guide de style
+title: Grilles
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

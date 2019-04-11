@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Variables - Guide de style
+title: Variables
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

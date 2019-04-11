@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Citations - Guide de style
+title: Citations
 hide_breadcrumb: false
 modified: 2019-04-11
 ---
