@@ -1,0 +1,719 @@
+---
+published: true
+layout: default-theme-wet-boew-fr
+title: Requirements
+hide_breadcrumb: false
+written_lang: en
+modified: 2019-04-11
+---
+{::nomarkdown}
+{% raw %}
+<p>The following summarizes selected techniques from the <a href="http://www.w3.org/TR/WCAG20/" rel="external">Web Content Accessibilitylines (WCAG) 2.0</a> for satisfying the most common applicable success criteria related to this topic.Additional WCAG 2.0 success criteria, techniques, and failures not listed here may also be applicable depending on the content.</p>
+<div class="wb-prettify all-pre">
+	<div class="row">
+		<nav role="navigation" class="col-md-6 mrgn-bttm-lg">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Table of contents</h2>
+				</div>
+				<ul class="mrgn-tp-md">
+					<li><a href="#text">Text</a></li>
+					<li><a href="#headings">Headings</a></li>
+					<li><a href="#links">Links</a></li>
+					<li><a href="#images">Images</a></li>
+					<li><a href="#quot">Quotations</a></li>
+					<li><a href="#lang">Language</a></li>
+					<li><a href="#pgtitle">Page titles</a></li>
+					<li><a href="#forms">Forms</a></li>
+					<li><a href="#tables">Tables</a></li>
+					<li><a href="#related-links">Related Links</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- Text -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="text" class="page-header">Text</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/alerts-en.html" class="list-group-item">Alerts<span class="wb-inv"> - Design guide</span></a> <a href="../design/colour-en.html" class="list-group-item">Colour<span class="wb-inv"> - Design guide</span></a> <a href="../design/labels-en.html" class="list-group-item">Labels<span class="wb-inv"> - Design guide</span></a> <a href="../design/panels-en.html" class="list-group-item">Panels<span class="wb-inv"> - Design guide</span></a> <a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>Text is combinations of characters on a web page that can be read with the purpose of receiving an informative message.</p>
+			<h3 id="ct">Colour contrast</h3>
+			<p>Colour contrast is a ratio calculated using a text's foreground colour against its background colour with <a href="#links">free software tools</a>.</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>4.5:1</strong> minimum color contrast ratio</a> is required for all text.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>3:1</strong> minimum color contrast ratio</a> may be used for large text which is at least 18 <a href="#pts">points</a> (or 14 <a href="#pts">points</a> <strong>if bolded)</strong></p>
+				</li>
+			</ul>
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="pts"><strong>Note:</strong> A point of text is a fixed unit of measurement equivalent to 1/72 of an inch, while pixels is a variable unit of measurement that changes according to a user's screen resolution.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Headings -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="headings" class="page-header">Headings</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span> </a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Writing guide</h3>
+				</div>
+				<div class="list-group"><a href="../writing/principals-en.html#heading" class="list-group-item">Heading principles- Writing guide</a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting- Writing guide</a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>A heading is a short text phrase which identifies the section of content that immediately follows it. Heading elements are <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>.</p>
+			<p>When using headings:</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H42" rel="external" title="WCAG 2.0, Technique H42">Identify heading text</a> using heading elements (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>).</p>
+					<ul>
+						<li>Start at heading element <code>&lt;h1&gt;</code> <em>(recommended)</em>.</li>
+						<li>Don't skip heading element levels <small>(e.g <code>&lt;h2&gt;</code>, <code>&lt;h4&gt;</code>)</small> <em>(recommended)</em>.</li>
+					</ul>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G130" rel="external" title="WCAG 2.0, Technique G130">Use descriptive text</a> to <strong>identify and differentiate</strong> the contents of its section from other content on the web page.</p>
+				</li>
+			</ul>
+			<div class="alert alert-danger mrgn-tp-lg col-md-8">
+				<p id="nonhead"><strong>Important:</strong> Enlarge non-heading text using <strong>only</strong> CSS. <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F43" rel="external" title="WCAG 2.0, Failure F43">Do <strong>not</strong> use heading elements.</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- Links -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="links" class="page-header">Links</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-skip.html" rel="external">2.4.1 Bypass Blocks</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html" rel="external">2.4.4 Link Purpose (In Context)</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html" rel="external">2.4.5 Multiple Ways</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html" rel="external">3.2.4 Consistent Identification</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-consistent-locations.html" rel="external">3.2.3 Consistent Navigation</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/headings-en.html" class="list-group-item">Headings<span class="wb-inv"> - Design guide</span> </a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Writing guide</h3>
+				</div>
+				<div class="list-group"><a href="../writing/principals-en.html#heading" class="list-group-item">Heading principles- Writing guide</a> <a href="../writing/formatting-en.html#headings" class="list-group-item">Heading and subheading formatting- Writing guide</a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>
+				A link is a type of <a href="keyboard-en.html">
+					<abbr title="User Interface">UI</abbr>
+					control</a> that performs one or more of the following behaviours:
+			</p>
+			<ul>
+				<li>Takes the user to another web page</li>
+				<li>Jumps to another location within the same web page</li>
+				<li>Performs specialized
+					<abbr title="User Interface">UI</abbr>
+					functionality determined by client side scripting (JavaScript)</li>
+			</ul>
+			<p>The link element is <code>&lt;a&gt;</code></p>
+			<h3 id="lt">Link text</h3>
+			<p>Provide link text inside <strong>either</strong> the:</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30" rel="external" title="WCAG 2.0, Technique H30"><code>&lt;a&gt;</code> element</a></li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33" rel="external" title="WCAG 2.0, Technique H33"><code>title</code> attribute</a></li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30" rel="external" title="WCAG 2.0, Technique H30"><code>alt</code> attribute of any <code>&lt;img&gt;</code> element</a> within the link</li>
+			</ul>
+			<p>Ensure <a href="#ic">independent context</a> of link text. Additional context can be established using <strong>either</strong>:</p>
+			<ul>
+				<li>The <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H78" rel="external" title="WCAG 2.0, Technique H78">paragraph</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G53" rel="external" title="WCAG 2.0, Technique G53">sentence</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H77" rel="external" title="WCAG 2.0, Technique H77">list item</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H81" rel="external" title="WCAG 2.0, Technique H81">parent list item</a>, <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H79" rel="external" title="WCAG 2.0, Technique H79">table cell, or table heading enclosing the link</a>; or</li>
+				<li>The <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H80" rel="external" title="WCAG 2.0, Technique H80">preceding heading element</a>.</li>
+			</ul>
+			<p>Use <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G197" rel="external" title="WCAG 2.0, Technique G197">consistent link text</a> for all links which perform the same function.</p>
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="ic"><strong>Note:</strong> Independent context means that the purpose of the link can be determined from the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html#pdlinkcontextdef" rel="external" title="WCAG 2.0, Understanding SC 2.4.4">link text alone or other elements with a programmatically determinable relationship with the link</a>.</p>
+			</div>
+			<h3 id="rp">Repeated navigation links</h3>
+			<p>When a group of links are repeated on multiple web pages:</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G61" rel="external" title="WCAG 2.0, Technique G61">The relative order</a> of the links must be the same on each page</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G1" rel="external" title="WCAG 2.0, Technique G1">A skip mechanism</a> is provided <small><em>(satisfied by default in
+					<abbr title="Web Experience Toolkit">WET</abbr>
+					for primary navigation)</em></small>.</li>
+			</ul>
+			<h3 id="sr">Finding web pages</h3>
+			<p>When establishing navigation on a web site, provide <strong>either</strong> a:</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G63" rel="external" title="WCAG 2.0, Technique G63">Site map</a>, providing links to different sections of the site; or</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G126" rel="external" title="WCAG 2.0, Technique G126">List of links</a> to all web pages within the web site; or</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G161" rel="external" title="WCAG 2.0, Technique G161">Search engine</a> for the site.</li>
+			</ul>
+			<div class="alert alert-danger mrgn-tp-lg">
+				<p>
+					<strong>Important:</strong> Links have additional requirements because they are a type of <a href="#ui">
+						<abbr title="User Interface">UI control</abbr></a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- Images -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="images" class="page-header">Images</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html" rel="external">1.1.1 Non-text Content</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Color</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-text-presentation.html" rel="external">1.4.5 Images of Text</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/images-en.html" class="list-group-item">Images<span class="wb-inv"> - Design guide</span></a> <a href="../design/icons-en.html" class="list-group-item">Icons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/lightbox-en.html" class="list-group-item">Lightbox<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tabs/tabs-carousel-en.html" class="list-group-item">Tabbed interface: Carousel<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/data-picture/data-picture-en.html" class="list-group-item">Data picture<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Writing guide</h3>
+				</div>
+				<div class="list-group"><a href="../writing/principals-en.html#image" class="list-group-item">Images<span class="wb-inv"> - Writing guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>An image is a static two dimensional visual artifact that is a type of <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#non-text-contentdef">non-text content</a>.</p>
+			<p>The image element is <code>&lt;img&gt;</code>.</p>
+			<h3 id="imgds">Describing images</h3>
+			<h4>Description text
+			</h4>
+			<p>All images require a text description which serves the <strong>same purpose</strong> and <strong>presents the same information</strong> as the image including all:</p>
+			<ul>
+				<li>Data</li>
+				<li>Relationships</li>
+				<li><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G14" rel="external" title="WCAG 2.0 Technique G14">Colour differences</a> <small>(which convey meaning)</small></li>
+			</ul>
+			<p>A description can be empty if the image provides <a href="http://www.w3.org/TR/2013/NOTE-UNDERSTANDING-WCAG20-20130905/text-equiv-all.html" rel="external" title="WCAG 2.0, Understanding SC 1.1.1"><strong>all of the following</strong></a>:</p>
+			<ul>
+				<li>No information</li>
+				<li>No functionality</li>
+				<li>Asthetic purpose only</li>
+			</ul>
+			<h4>Description length</h4>
+			<p>For descriptions which are:</p>
+			<ul>
+				<li>
+					<p>Empty, <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/H67" rel="external" title="WCAG 2.0, Technique H67">use an empty string</a> (<code>&quot;&quot;</code>) as a <strong>short text</strong> description.</p>
+				</li>
+				<li>
+					<p>Less than 140 chars, use <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G94" rel="external" title="WCAG 2.0, Technique G94">the entire description</a> as a <strong>short text</strong> description.</p>
+				</li>
+				<li>
+					<p>Greater than or equal to 140 chars:</p>
+					<ul>
+						<li><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G95" rel="external" title="WCAG 2.0, Technique G95">Summarizes the image in a few words</a> as a <strong>short text</strong> description, and</li>
+						<li>Use the entire description as a <strong>long text</strong> description.</li>
+					</ul>
+				</li>
+			</ul>
+			<h4>Description coding</h4>
+			<p>Short text descriptions must be coded in <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/H37" rel="external" title="WCAG 2.0, Technique H37">the <code>alt</code> attribute</a> of the <code>&lt;img&gt;</code> element.</p>
+			<p>Long text descriptions can be coded anywhere (either on the current page or another page) and must <strong>either</strong>:</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G73" rel="external" title="WCAG 2.0, Technique G73">Provide a link to it</a> immediately adjacent to the image.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G74" rel="external" title="WCAG 2.0, Technique G74">Append how to locate it</a> to the short text description.</p>
+				</li>
+			</ul>
+			<h3 id="im">Images of text</h3>
+			<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22" rel="external" title="WCAG 2.0, Technique C22">Use CSS</a> to customize text presentation.</p>
+			<p>Do not use images of text unless a particular presentation of text is essential to the information being conveyed.</p>
+			<h3 id="animated">Animated images</h3>
+			<p>Animated images are considered the same as video-only content and the requirements for video-only content apply.</p>
+		</div>
+	</div>
+	<!-- Quotations -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="quot" class="page-header">Quotations</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/quotations-en.html" class="list-group-item">Quotations<span class="wb-inv"> - Design guide</span></a> </div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Writing guide</h3>
+				</div>
+				<div class="list-group"><a href="../writing/formatting-en.html#quotations" class="list-group-item">Quotations<span class="wb-inv"> - Writing guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>A quotation is a strict repetition of an expression re-produced in the natural human language it was originally delivered.</p>
+			<p>Quotation elements are <code>&lt;q&gt;</code> and <code>&lt;blockquote&gt;</code>.</p>
+			<p>When using quotations and the length is:</p>
+			<ul>
+				<li>
+					<p>Short <small>(no paragraph breaks)</small>, use the <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;q&gt;</code> element</a>.</p>
+					<ul>
+						<li>Quotations marks (<code>&quot;, ̋, ̏</code>) are coded <strong>outside</strong> the <code>&lt;q&gt;</code> element</li>
+					</ul>
+				</li>
+				<li>
+					<p>Long <small>(with paragraph breaks)</small>, use the <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;blockquote&gt;</code> element</a>.</p>
+					<ul>
+						<li>Quotations marks (<code>&quot;, ̋, ̏</code>) are coded <strong>inside</strong> the <code>&lt;blockquote&gt;</code> element</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Language -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="lang" class="page-header">Language</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/meaning-doc-lang-id.html" rel="external">3.1.1 Language of Page</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html" rel="external">3.1.2 Language of Parts</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>
+				When coding web pages, specify the <strong>natural human language</strong> of content by setting a:
+			</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H57" rel="external" title="WCAG 2.0, Technique H57">Default language</a> using the <code>lang</code> attribute in the <code>&lt;html&gt;</code> element</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/meaning-other-lang-id.html" rel="external" title="3.1.2 Language of Parts">Change of language</a> using the <code>lang</code> atrribute in <strong>any</strong> element enclosing the text in a different language.</p>
+				</li>
+			</ul>
+			<p>When using the <code>lang</code> attribute, use:</p>
+			<ul>
+				<li><code>en</code> for English</li>
+				<li><code>fr</code> for French</li>
+				<li><a href="http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">These codes</a> for other languages <small>(see 639-1 column)</small></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Page Titles -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="pgtitle" class="page-header">Page titles</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-title.html" rel="external">2.4.2 Page Titled</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>When using page titles:</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H25" rel="external" title="WCAG 2.0, Technique H25">Use the <code>&lt;title&gt;</code> element.</a></p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G88" rel="external" title="WCAG 2.0, Technique G88">Use descriptive text</a> to <strong>identify and differentiate</strong> the contents of the web page from other content of other web pages.</p>
+				</li>
+			</ul>
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="webapptitle"><strong>Note:</strong> It is sufficent for a web application <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html" rel="external" title="WCAG 2.0, Understanding SC 2.4.2">to use only its web application title</a> on all of its web screens.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Forms -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="forms" class="page-header">Forms</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html" rel="external">1.1.1 Non-text Content</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html" rel="external">1.4.1 Use of Color</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external">2.2.1 Timing Adjustable</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html" rel="external">2.4.6 Headings and Labels</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-consistent-functionality.html" rel="external">3.2.4 Consistent Identification</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-identified.html" rel="external">3.3.1 Error Identification</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html" rel="external">3.3.2 Labels or Instructions</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-suggestions.html" rel="external">3.3.3 Error Suggestion</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html" rel="external">3.3.4 Error Prevention (Legal, Financial, Data)</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html" rel="external">4.1.2 Name, Role, Value</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Accessibility</h3>
+				</div>
+				<div class="list-group">
+					<a href="keyboard-en.html" class="list-group-item">Keyboard and
+					<abbr title="User Interface">UI</abbr>
+						Controls<span class="wb-inv"></span></a>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Design guide</h3>
+				</div>
+				<div class="list-group"><a href="../design/forms-en.html" class="list-group-item">Forms<span class="wb-inv"> - Design guide</span></a> <a href="../design/buttons-en.html" class="list-group-item">Buttons<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html" class="list-group-item">Form validation<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/feedback/feedback-en.html" class="list-group-item">Feedback form<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>
+				A form contains a set of form elements, which are <a href="keyboard-en.html">
+					<abbr title="User Interface">UI</abbr>
+					controls</a> that accepts input.
+			</p>
+			<p>Form elements are <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code>.</p>
+			<h3 id="instructions">Labels and Instructions</h3>
+			<p>Associate form elements to labels by setting <strong>either</strong> its:</p>
+			<ul>
+				<li>
+					<p><code>id</code> attribute to the <code>for</code> value of a <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44" title="WCAG 2.0, Technique H44"><code>&lt;label&gt;</code> element</a> enclosing the label value.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65" title="WCAG 2.0, Technique H65"><code>title</code> attribute</a> to a label value.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G167" title="WCAG 2.0, Technique G167"><code>value</code> attribute</a>, <strong>if it is a button</strong>, to a label value.</p>
+				</li>
+			</ul>
+			<p>Use <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G197" rel="external" title="WCAG 2.0, Technique G197">consistent label text</a> for all form elements which perform the same function.</p>
+			<p>Describe form elements purposes clearly with <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G131" rel="external" title="WCAG 2.0, Technique G131">descriptive label text</a>.</p>
+			<p><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-cues.html" title="WCAG 2.0, Sufficient Techniques #1">Provide clear instructions</a> <em>(with examples, if applicable)</em> identifying form elements requiring:</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H90" rel="external" title="WCAG 2.0, Technique H90">Mandatory data</a> <small><em>(e.g. required fields)</em></small></li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G184" rel="external" title="WCAG 2.0, Technique G184">Limited set of values</a> <small><em>(e.g. numeric or text only, upper and/or lower limits)</em></small></li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G89" rel="external" title="WCAG 2.0, Technique G89">Expected data format</a> <small><em>(e.g. dates, phone numbers, postal codes)</em></small></li>
+			</ul>
+			<p><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G14" rel="external" title="WCAG 2.0, Technique G14">Supplement colour</a> instructions with symbols or text. <small><em>(e.g. identifying required fields)</em></small></p>
+			<h3 id="err">Error messages</h3>
+			<p>When providing error messages:</p>
+			<ul>
+				<li>
+					<p>Identify the form(s) element affected.</p>
+				</li>
+				<li>Explain the error and, if applicable, <strong>how to fix it</strong> for:
+	 <ul>
+		 <li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83" rel="external" title="WCAG 2.0, Technique G83">Missing data</a> <small><em>(e.g. required fields)</em></small></li>
+		 <li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G84" rel="external" title="WCAG 2.0, Technique G84">Outside of allowed values</a> <small><em>(e.g. numeric or text only, upper and/or lower limits)</em></small></li>
+		 <li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85" rel="external" title="WCAG 2.0, Technique G85">Incorrect format</a> <small><em>(e.g. dates, phone numbers, postal codes)</em></small></li>
+	 </ul>
+				</li>
+			</ul>
+			<div class="alert alert-info mrgn-tp-lg">
+				<p id="errmsgtop"><strong>Note:</strong> For optimal use, it is recommended that error messages appear at the top of the form (when they are server generated).</p>
+			</div>
+			<h3 id="slt">Session time limits</h3>
+			<p>When a time limit is present, <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external" title="WCAG 2.0, Success Criterion 2.2.1 Timing Adjustable">a user must be able</a> to <strong>either</strong>:</p>
+			<ul>
+				<li>
+					<p>Turn off the time limit.</p>
+				</li>
+				<li>
+					<p>Adjust the time limit by extending incrementally up to at least ten times the length of the default setting, ensuring:</p>
+					<ul>
+						<li>Prompting the user, on each occurence, to adjust the time limit at least 20 seconds before the time expires.</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Turning off or adjusting the <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html" rel="external" title="WCAG 2.0, Success Criterion 2.2.1 Timing Adjustable">time limit is <strong>not</strong> required</a> when the time limit is <strong>either</strong>:</p>
+			<ul>
+				<li>
+					<p>Real-time <small><em>(e.g. auctions)</em></small></p>
+				</li>
+				<li>
+					<p>Essential to the activity and extending it would invalidate the activity <small><em>(e.g. exams)</em></small></p>
+				</li>
+				<li>
+					<p>20 hours or more in length</p>
+				</li>
+			</ul>
+			<h3 id="lg">Legal committments and financial transactions</h3>
+			<p>When legal committments or financial transactions occur as a result of a user submission, a user must be able to <strong>either</strong>:</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G164" rel="external" title="WCAG 2.0, Technique G164">Reverse</a> the submission <small>(or <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G99" rel="external" title="WCAG 2.0, Technique G99">recover</a> the original data)</small></p>
+					<ul>
+						<li>Time limits on the reversal are permitted provided it is stated on the form.</li>
+					</ul>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G98" rel="external" title="WCAG 2.0, Technique G98">Review and correct input</a> before finalizing the submission.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G168" rel="external" title="WCAG 2.0, Technique G168">Confirm</a> their intent to finalize the submission.</p>
+				</li>
+			</ul>
+			<div class="alert alert-danger mrgn-tp-lg">
+				<p>
+					<strong>Important:</strong> Form elements have additional requirements because they are a type of <a href="#ui">
+						<abbr title="User Interface">UI control</abbr></a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- UI Controls -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="ui" class="page-header">
+				<abbr title="User Interface">UI</abbr>
+				controls</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-keyboard-operable.html" rel="external">2.1.1 Keyboard</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-trapping.html" rel="external">2.1.2 No Keyboard Trap</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-order.html" rel="external">2.4.3 Focus Order</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/navigation-mechanisms-focus-visible.html" rel="external">2.4.7 Focus Visible</a></li>
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-receive-focus.html" rel="external">3.2.1 On Focus</a></li>
+						<li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html" rel="external">3.2.2 On Input</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>
+				<abbr title="User Interface">UI</abbr>
+				controls are elements that can perform an action (or "do something").
+			</p>
+			<p>
+				<abbr title="User Interface">UI</abbr>
+				controls are <a href="links-en.html">links</a> and <a href="forms-en.html">form elements</a> by default. However scripting can transform <strong>any element</strong> into a
+				<abbr title="User Interface">UI</abbr>
+				control.
+			</p>
+			<h3 id="ap">Appearance</h3>
+			<p>
+				Without colour,
+				<abbr title="User Interface">UI</abbr>
+				controls <small>(specifically links)</small> must be <a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/F73" rel="external" title="WCAG 2.0, Technique F73">visually evident</a> <small><em>(e.g. text decoration or using layout)</em></small>.
+			</p>
+			<h3 id="fi">Focus and input</h3>
+			<p>
+				Focus <strong>exclusively</strong> activates a
+				<abbr title="User Interface">UI</abbr>
+				control for use by the user. Losing focus deactivates the
+				<abbr title="User Interface">UI</abbr>
+				control.
+			</p>
+			<p>
+				Input occurs when a user changes the value of the active
+				<abbr title="User Interface">UI</abbr>
+				control by interacting with it.
+			</p>
+			<p>
+				When using
+				<abbr title="User Interface">UI</abbr>
+				controls with a keyboard,
+			</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G21" rel="external" title="WCAG 2.0, Technique G21">Changing focus</a> is always available to the user (no trapping).</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G202" rel="external" title="WCAG 2.0, Technique G202">Receiving focus</a> is always available for all
+					<abbr title="User Interface">UI</abbr>
+					controls.</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G149" rel="external" title="WCAG 2.0, Technique G149">A visual focus indicator</a> is exclusively visible on the active
+					<abbr title="User Interface">UI</abbr>
+					control.</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G59" rel="external" title="WCAG 2.0, Technique G59">The order</a> that
+					<abbr title="User Interface">UI</abbr>
+					controls receive focus reflects the intended flow, meaning, and operation of the page.</li>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G107" rel="external" title="WCAG 2.0, Technique G107">Page context</a> must not change when a
+					<abbr title="User Interface">UI</abbr>
+					control receives focus or input.</li>
+			</ul>
+			<div class="alert alert-info">
+				<p>
+					<strong>Note:</strong> By default, HTML
+					<abbr title="User Interface">UI</abbr>
+					controls which have not been modified by JavaScript will satisfy focus and input requirements.
+				</p>
+			</div>
+			<h3 id="js">Event handlers (JavaScript)
+			</h3>
+			<p>
+				Event handlers are special methods executed in JavaScript when a user activates or interacts with an
+				<abbr title="User Interface">UI</abbr>
+				control.
+			</p>
+			<p>When using JavaScript, event handlers must be:</p>
+			<ul>
+				<li><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR20.html" rel="external" title="WCAG 2.0 Technique SCR20">Independent</a> (<code>onFocus</code>, <code>onBlur</code>, <code>onSelect</code>, <code>onChange</code>, and <code>onClick</code>)</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Tables -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 id="tables" class="page-header">Tables</h2>
+		</div>
+		<div class="col-md-4 pull-right">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">Related to success criteria</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title">Design guide</h2>
+				</div>
+				<div class="list-group"><a href="../design/tables-en.html" class="list-group-item">Tables<span class="wb-inv"> - Design guide</span></a> <a href="http://wet-boew.github.io/v4.0-ci/demos/tables/tables-en.html" class="list-group-item">Tables plug-in<span class="wb-inv"> - Design guide</span></a></div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h2 class="panel-title">Writing</h2>
+				</div>
+				<div class="list-group"><a href="../writing/principals-en.html#tables" class="list-group-item">Tables<span class="wb-inv"> - Writing guide</span></a></div>
+			</div>
+		</div>
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<p>A table is a mechanism for dividing tabular data into rows and columns.</p>
+			<p>Table elements are <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>.</p>
+			<p><small>Additional related table elements include <code>&lt;caption&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;col&gt;</code>, and <code>&lt;colgroup&gt;</code></small></p>
+			<div class="alert alert-warning mrgn-tp-md col-md-8">
+				<p><strong>Notice:</strong> The <code>summary</code> attribute is deprecated in HTML5, see alternatives: <a href="http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques" rel="external">http://www.w3.org/TR/html5/tabular-data.html#table-descriptions-techniques</a></p>
+			</div>
+			<p>When using tables:</p>
+			<ul>
+				<li>
+					<p><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/H51" rel="external" title="WCAG 2.0 Technique H51">Ensure table markup</a> is used for data tables</p>
+				</li>
+				<li>
+					<p>Avoid layout only tables, use CSS instead <small><em>(Recommended)</em></small>.</p>
+				</li>
+				<li>
+					<p><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G14" rel="external" title="WCAG 2.0 Technique G14">Supplement colour usage</a> <small>(that conveys meaning)</small> with equivalent text.</p>
+				</li>
+				<li>
+					<p>Associate <code>&lt;td&gt;</code> data cells to one or more <code>&lt;th&gt;</code> header cells for <a href="simpletable">non-simple tables</a>.</p>
+					<ul>
+						<li>See <a href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html">Table Usability</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="alert alert-info mrgn-tp-md">
+				<p id="simpletable"><strong>Note:</strong> A simple table is one where all cells span exactly one row and one column, <strong>and</strong> all <code>&lt;th&gt;</code> header cells appear in the first row and/or column.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Related Links -->
+	<div class="row">
+		<div class="mrgn-lft-md mrgn-rght-md">
+			<h2 class="page-header" id="related-links">Related links</h2>
+			<ul>
+				<li><a href="http://www.paciellogroup.com/resources/contrast-analyser.html" rel="external">Contrast Analyser for Windows and Mac</a></li>
+				<li><a href="http://juicystudio.com/services/luminositycontrastratio.php" rel="external">Juicy Studios Luminosity Analyzer</a></li>
+				<li><a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck Color Vision Simulator Tool</a></li>
+				<li><a href="http://wet-boew.github.io/wet-boew/demos/tableparser/tbl-simp-en.html">Table Simplification - Optimal Content Examples</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+{% endraw %}
+{:/}
