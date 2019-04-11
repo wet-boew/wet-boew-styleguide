@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Barre de progression et compteur - Guide de style
+title: Barre de progression et compteur
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

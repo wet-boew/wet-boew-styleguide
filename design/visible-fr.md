@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Contenu visible et invisible - Guide de style
+title: Contenu visible et invisible
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Couleur - Guide de style
+title: Couleur
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

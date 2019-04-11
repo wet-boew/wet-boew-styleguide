@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Développement de contenu - Guide de style
+title: Développement de contenu
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

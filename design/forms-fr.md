@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Formulaires - Guide de style
+title: Formulaires
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

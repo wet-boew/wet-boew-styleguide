@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Positionnement absolu - Guide de style
+title: Positionnement absolu
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

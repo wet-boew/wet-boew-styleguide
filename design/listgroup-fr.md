@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Regroupement de liste - Guide de style
+title: Regroupement de liste
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

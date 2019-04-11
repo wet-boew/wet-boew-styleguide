@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Proximité des marges - Guide de style
+title: Proximité des marges
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Principes de création du contenu - Guide de style
+title: Principes de création du contenu
 hide_breadcrumb: false
 modified: 2019-04-11
 ---

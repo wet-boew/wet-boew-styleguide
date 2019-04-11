@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default-theme-wet-boew-fr
-title: Boîte grisonné - Guide de style
+title: Boîte grisonné
 hide_breadcrumb: false
 modified: 2019-04-11
 ---
