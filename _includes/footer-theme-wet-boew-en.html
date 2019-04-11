@@ -1,0 +1,45 @@
+<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+<div class="container">
+<nav role="navigation" class="row">
+<h2>About this site</h2>
+<section class="col-sm-3">
+<h3>Contact us</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew-styleguide/issues/new">Questions or comments?</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>About</h3>
+<ul class="list-unstyled">
+<li><a href="../../wet-boew/index-en.html#about">About the Web Experience Toolkit</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>News</h3>
+<ul class="list-unstyled">
+<li><a href="https://github.com/wet-boew/wet-boew-styleguide/pulse">Recent project activity</a></li>
+<li><a href="https://github.com/wet-boew/wet-boew-styleguide/graphs">Project statistics</a></li>
+</ul>
+</section>
+<section class="col-sm-3">
+<h3>Stay connected</h3>
+<ul class="list-unstyled">
+<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
+</ul>
+</section>
+</nav>
+</div>
+</footer>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://wet-boew.github.io/wet-boew/wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://wet-boew.github.io/wet-boew/wet-boew/js/ie8-wet-boew2.min.js"></script>
+<![endif]-->
+{% if page.script_src and page.script_src contains '.js' %}
+<script src='{{ page.script_src }}'></script>
+{% endif %}
+</body>
+</html>

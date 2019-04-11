@@ -1,0 +1,16 @@
+{% include header-theme-wet-boew-fr.html %}
+<main role="main" property="mainContentOfPage" class="container">
+<h1 id="wb-cont" property="name">{{ page.title }}</h1>
+{% include content-buttons-fr.html %}
+
+{{ content }}
+
+{% if page.modified == null or page.modified == '' %}{% elsif page.date_modified == false %}{% elsif site.date_modified == false and page.date_modified != true %}
+{% else %}
+<dl id="wb-dtmd">
+	<dt>Date modified:&#32;</dt>
+	<dd><time property="dateModified">{{ page.modified }}</time></dd>
+</dl>
+{% endif %}
+</main>
+{% include footer-theme-wet-boew-fr.html %}  

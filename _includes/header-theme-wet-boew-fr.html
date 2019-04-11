@@ -1,0 +1,100 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+<title>
+  {{ page.title }} -
+  {% unless page.url contains 'index-fr' %}
+    {% if page.dir contains 'accessibility' %}
+      {{ site.title_accessibility_fr }} -
+    {% elsif page.dir contains 'design' %}
+      {{ site.title_design_fr }} -
+    {% elsif page.dir contains 'writing' %}
+      {{ site.title_writing_fr }} -
+    {% endif %}
+    {{ site.title_style_fr }} -
+  {% endunless %}
+  {{ site.title_fr }}
+</title>
+<meta content="width=device-width,initial-scale=1" name="viewport">
+<meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!--[if gte IE 9 | !IE ]><!-->
+<link href="https://wet-boew.github.io/wet-boew/theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="https://wet-boew.github.io/wet-boew/theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="https://wet-boew.github.io/wet-boew/theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="https://wet-boew.github.io/wet-boew/theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://wet-boew.github.io/wet-boew/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+{% if page.css_href and page.css_href contains '.css' %}
+<link rel='stylesheet' href='{{ page.css_href }}' />
+{% endif %}
+<noscript><link rel="stylesheet" href="https://wet-boew.github.io/wet-boew/wet-boew/css/noscript.css" /></noscript>
+</head>
+<body vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+</li>
+<li class="wb-slc visible-sm visible-md visible-lg">
+<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+</li>
+</ul>
+<header role="banner">
+<div id="wb-bnr">
+<div id="wb-bar">
+<div class="container">
+<div class="row">
+<section id="wb-lng" class="visible-md visible-lg">
+<h2>Sélection de la langue</h2>
+{% if page.languages == false or site.languages == false and page.languages != true %}
+{% else %}
+<ul class="text-right">
+<li class="curr">Français&#32;<span>(actuel)</span></li>
+<li><a lang="en" hreflang="en" href="{{ page.url | replace: 'fr', 'en' }}">English</a></li>
+</ul>
+{% endif %}
+</section>
+<section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+<h2>Recherche et menus</h2>
+<ul class="pnl-btn list-inline text-right">
+<li><a href="#mb-pnl" title="Recherche et menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"><span class="glyphicon glyphicon-search"><span class="glyphicon glyphicon-th-list"><span class="wb-inv">Recherche et menus</span></span></span></a></li>
+</ul>
+<div id="mb-pnl"></div>
+</section>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div id="wb-sttl" class="col-md-8">
+<a href="../../wet-boew/index.html">
+<img src="https://wet-boew.github.io/wet-boew/theme-wet-boew/assets/logo.svg" alt="">
+<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
+</a>
+</div>
+<section id="wb-srch" class="col-md-4 visible-md visible-lg">
+<h2>Recherche</h2>
+<form action="https://google.ca/search" method="get" role="search" class="form-inline">
+<div class="form-group">
+<label for="wb-srch-q">Recherchez le site Web</label>
+<input id="wb-srch-q" class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+<input type="hidden" name="q" value="site:wet-boew.github.io OR site:github.com/wet-boew/">
+</div>
+<button type="submit" id="wb-srch-sub" class="btn btn-default">Recherche</button>
+</form>
+</section>
+</div>
+</div>
+</div>
+{% include sitemenu-theme-wet-boew-fr.html %}
+{% if page.hide_breadcrumb == false %}
+{% include breadcrumb-theme-wet-boew-fr.html %}
+{% endif %}
+</header>
