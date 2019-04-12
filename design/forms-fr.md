@@ -81,8 +81,8 @@ date_modified: 2019-04-11
               <input type="file" id="exampleInputFile" />
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="checked">
+              <input id="checked" type="checkbox" />
               Cochez-moi</label>
             </div>
             <button type="submit" class="btn btn-default">Soumettre</button>
@@ -389,30 +389,30 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Apparence</h5>
           <h6>Cases à cocher par défaut</h6>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="">
+            <label for="defaultCheck1">
+            <input id="defaultCheck1" type="checkbox" value="">
             Option 1</label>
           </div>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="">
+            <label for="defaultCheck2">
+            <input id="defaultCheck2" type="checkbox" value="">
             Option 2</label>
           </div>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="" >
+            <label for="defaultCheck3">
+            <input id="defaultCheck3" type="checkbox" value="" >
             Option 3</label>
           </div>
           <hr>
           <h6>Cases à cocher incorporées</h6>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck1" class="checkbox-inline">
+          <input id="inlineCheck1" type="checkbox" value="">
           Option 1</label>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck2" class="checkbox-inline">
+          <input id="inlineCheck2" type="checkbox" value="">
           Option 2</label>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck3" class="checkbox-inline">
+          <input id="inlineCheck3" type="checkbox" value="">
           Option 3</label>
         </div>
       </div>
@@ -435,12 +435,12 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Cases à cocher par défaut :
 &lt;div <strong>class=&quot;checkbox&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;defaultCheck1&quot; label&gt;&lt;input id=&quot;defaultCheck1&quot; <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;
 
 // Cases à cocher incorporées :
 &lt;div <strong>class=&quot;checkbox-inline&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;inlineCheck1&quot; label&gt;&lt;input id=&quot;inlineCheck1&quot; <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;</code></pre>
     </div>
   </div>
@@ -453,30 +453,30 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Apparence</h5>
           <h6>Boutons radio</h6>
           <div class="radio">
-            <label>
-            <input type="radio" name="optradio">
+            <label for="radio1">
+            <input id="radio1" type="radio" name="optradio">
             Option 1</label>
-            <div class="radio disabled">
-              <label>
-              <input type="radio" name="optradio" disabled>
-              Option 3</label>
-            </div>
           </div>
           <div class="radio">
-            <label>
-            <input type="radio" name="optradio">
+            <label for="radio2">
+            <input id="radio2" type="radio" name="optradio">
             Option 2</label>
+          </div>
+          <div class="radio disabled">
+            <label for="radio3">
+            <input id="radio3" type="radio" name="optradio" disabled>
+            Option 3</label>
           </div>
           <hr>
           <h6>Boutons radio incorporés</h6>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio1" class="radio-inline">
+          <input id="inlineRadio1" type="radio" name="optradio">
           Option 1</label>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio2" class="radio-inline">
+          <input id="inlineRadio2" type="radio" name="optradio">
           Option 2</label>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio3" class="radio-inline">
+          <input id="inlineRadio3" type="radio" name="optradio">
           Option 3</label>
         </div>
       </div>
@@ -499,12 +499,12 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Boutons radio :
 &lt;div <strong>class=&quot;radio&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;radio1&quot; label&gt;&lt;input id=&quot;radio1&quot; <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;
 
 // Boutons radio incorporés :
 &lt;div <strong>class=&quot;radio-inline&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;inlineRadio1&quot; label&gt;&lt;input id=&quot;inlineRadio1&quot; <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;</code></pre>
     </div>
   </div>
@@ -597,8 +597,8 @@ date_modified: 2019-04-11
             <div class="form-group">
               <div class="col-sm-offset-4 col-sm-8">
                 <div class="checkbox">
-                  <label>
-                  <input type="checkbox" />
+                  <label for="remember1">
+                  <input id="remember1" type="checkbox" />
                   Se souvenir de moi</label>
                 </div>
               </div>
@@ -631,7 +631,7 @@ date_modified: 2019-04-11
   &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
 	&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
 		&lt;div class=&quot;checkbox&quot;&gt;
-			&lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; <strong>Se souvenir de moi</strong>&lt;/label&gt;
+			&lt; for=&quot;remember1&quot; label&gt;&lt;input id=&quot;remember1&quot; type=&quot;checkbox&quot; /&gt; <strong>Se souvenir de moi</strong>&lt;/label&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
   &lt;/div&gt;
@@ -661,8 +661,8 @@ date_modified: 2019-04-11
               <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe" />
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="remember2">
+              <input id="remember2" type="checkbox" />
               Se souvenir de moi</label>
             </div>
             <button type="submit" class="btn btn-default">Ouvrir une session</button>
@@ -683,7 +683,7 @@ date_modified: 2019-04-11
 	&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword2&quot; placeholder=&quot;Mot de passe&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;checkbox&quot;&gt;
-	&lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; Se souvenir de moi&lt;/label&gt;
+	&lt; for=&quot;remember2&quot; label&gt;&lt;input id=&quot;remember2&quot; type=&quot;checkbox&quot; /&gt; Se souvenir de moi&lt;/label&gt;
   &lt;/div&gt;
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Ouvrir une session&lt;/button&gt;
 &lt;/form&gt;</code></pre>
@@ -745,8 +745,8 @@ date_modified: 2019-04-11
               </select>
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="unchecked">
+              <input id="unchecked" type="checkbox" />
               Impossible de cocher</label>
             </div>
             <button type="submit" class="btn btn-primary">Soumettre</button>
@@ -771,8 +771,8 @@ date_modified: 2019-04-11
 		&lt;/select&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;checkbox&quot;&gt;
-		&lt;label&gt;
-		&lt;input type=&quot;checkbox&quot; /&gt; Impossible de cocher&lt;/label&gt;
+		&lt; for=&quot;unchecked&quot; label&gt;
+		&lt;input id=&quot;unchecked&quot; type=&quot;checkbox&quot; /&gt; Impossible de cocher&lt;/label&gt;
 	&lt;/div&gt;
 	&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Soumettre&lt;/button&gt;
   &lt;/fieldset&gt;

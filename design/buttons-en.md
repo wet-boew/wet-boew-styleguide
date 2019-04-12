@@ -684,14 +684,14 @@ date_modified: 2019-04-11
             <li>Text only: <a href="#">Submit</a> </li>
           </ul>
           <div class="checkbox mrgn-tp-lg">
-            <label>
-            <input type="checkbox" />
+            <label for="certified">
+            <input id="certified" type="checkbox" />
             I certify that <abbr title="X X X ">XXX</abbr></label>
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
           <div class="checkbox mrgn-tp-lg">
-            <label>
-            <input type="checkbox" />
+            <label for="confirmed">
+            <input id="confirmed" type="checkbox" />
             I confirm that <abbr title="X X X ">XXX</abbr></label>
           </div>
           <button type="submit" class="btn btn-default">Submit</button></td>
@@ -1009,8 +1009,8 @@ date_modified: 2019-04-11
           <ul class="list-unstyled lst-spcd">
             <li>
               <div class="checkbox">
-                <label>
-                <input type="checkbox" />
+                <label for="agreed">
+                <input id="agreed" type="checkbox" />
                 I agree</label>
               </div>
             </li>

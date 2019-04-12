@@ -81,8 +81,8 @@ date_modified: 2019-04-11
               <input type="file" id="exampleInputFile" />
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="checked">
+              <input id="checked" type="checkbox" />
               Check me out</label>
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
@@ -388,30 +388,30 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Appearance</h5>
           <h6>Default checkboxes</h6>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="">
+            <label for="defaultCheck1">
+            <input id="defaultCheck1" type="checkbox" value="">
             Option 1</label>
           </div>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="">
+            <label for="defaultCheck2">
+            <input id="defaultCheck2" type="checkbox" value="">
             Option 2</label>
           </div>
           <div class="checkbox">
-            <label>
-            <input type="checkbox" value="" >
+            <label for="defaultCheck3">
+            <input id="defaultCheck3" type="checkbox" value="" >
             Option 3</label>
           </div>
           <hr>
           <h6>Inline checkboxes</h6>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck1" class="checkbox-inline">
+          <input id="inlineCheck1" type="checkbox" value="">
           Option 1</label>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck2" class="checkbox-inline">
+          <input id="inlineCheck2" type="checkbox" value="">
           Option 2</label>
-          <label class="checkbox-inline">
-          <input type="checkbox" value="">
+          <label for="inlineCheck3" class="checkbox-inline">
+          <input id="inlineCheck3" type="checkbox" value="">
           Option 3</label>
         </div>
       </div>
@@ -434,12 +434,12 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Default checkboxes:
 &lt;div <strong>class=&quot;checkbox&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;defaultCheck1&quot; label&gt;&lt;input id=&quot;defaultCheck1&quot; <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;
 
 // Inline checkboxes:
 &lt;div <strong>class=&quot;checkbox-inline&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;inlineCheck1&quot; label&gt;&lt;input id=&quot;inlineCheck1&quot; <strong>type=&quot;checkbox&quot;</strong> value=&quot;&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;</code></pre>
     </div>
   </div>
@@ -452,30 +452,30 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Appearance</h5>
           <h6>Radio buttons</h6>
           <div class="radio">
-            <label>
-            <input type="radio" name="optradio">
+            <label for="radio1">
+            <input id="radio1" type="radio" name="optradio">
             Option 1</label>
-            <div class="radio disabled">
-              <label>
-              <input type="radio" name="optradio" disabled>
-              Option 3</label>
-            </div>
           </div>
           <div class="radio">
-            <label>
-            <input type="radio" name="optradio">
+            <label for="radio2">
+            <input id="radio2" type="radio" name="optradio">
             Option 2</label>
+          </div>
+          <div class="radio disabled">
+            <label for="radio3">
+            <input id="radio3" type="radio" name="optradio" disabled>
+            Option 3</label>
           </div>
           <hr>
           <h6>Inline radio buttons</h6>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio1" class="radio-inline">
+          <input id="inlineRadio1" type="radio" name="optradio">
           Option 1</label>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio2" class="radio-inline">
+          <input id="inlineRadio2" type="radio" name="optradio">
           Option 2</label>
-          <label class="radio-inline">
-          <input type="radio" name="optradio">
+          <label for="inlineRadio3" class="radio-inline">
+          <input id="inlineRadio3" type="radio" name="optradio">
           Option 3</label>
         </div>
       </div>
@@ -498,12 +498,12 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Radio buttons:
 &lt;div <strong>class=&quot;radio&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;radio1&quot;  label&gt;&lt;input id=&quot;radio1&quot; <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;
 
 // Inline radio buttons:
 &lt;div <strong>class=&quot;radio-inline&quot;</strong>&gt;
-   &lt;label&gt;&lt;input <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
+   &lt; for=&quot;inlineRadio1&quot; label&gt;&lt;input id=&quot;inlineRadio1&quot; <strong>type=&quot;radio&quot;</strong> name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
 &lt;/div&gt;</code></pre>
     </div>
   </div>
@@ -596,8 +596,8 @@ date_modified: 2019-04-11
             <div class="form-group">
               <div class="col-sm-offset-4 col-sm-8">
                 <div class="checkbox">
-                  <label>
-                  <input type="checkbox" />
+                  <label for="remember1">
+                  <input id="remember1" type="checkbox" />
                   Remember me</label>
                 </div>
               </div>
@@ -630,7 +630,7 @@ date_modified: 2019-04-11
   &lt;div <strong>class=&quot;form-group&quot;</strong>&gt;
 	&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
 		&lt;div class=&quot;checkbox&quot;&gt;
-			&lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; <strong>Remember me</strong>&lt;/label&gt;
+			&lt; for=&quot;remember1&quot; label&gt;&lt;input id=&quot;remember1&quot; type=&quot;checkbox&quot; /&gt; <strong>Remember me</strong>&lt;/label&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
   &lt;/div&gt;
@@ -660,8 +660,8 @@ date_modified: 2019-04-11
               <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" />
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="remember2">
+              <input id="remember2" type="checkbox" />
               Remember me</label>
             </div>
             <button type="submit" class="btn btn-default">Sign in</button>
@@ -682,7 +682,7 @@ date_modified: 2019-04-11
 	&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword2&quot; placeholder=&quot;Password&quot; /&gt;
   &lt;/div&gt;
   &lt;div class=&quot;checkbox&quot;&gt;
-	&lt;label&gt;&lt;input type=&quot;checkbox&quot; /&gt; Remember me&lt;/label&gt;
+	&lt; for=&quot;remember2&quot; label&gt;&lt;input id=&quot;remember2&quot; type=&quot;checkbox&quot; /&gt; Remember me&lt;/label&gt;
   &lt;/div&gt;
   &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Sign in&lt;/button&gt;
 &lt;/form&gt;</code></pre>
@@ -744,8 +744,8 @@ date_modified: 2019-04-11
               </select>
             </div>
             <div class="checkbox">
-              <label>
-              <input type="checkbox" />
+              <label for="unchecked">
+              <input id="unchecked" type="checkbox" />
               Can't check this</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -770,8 +770,8 @@ date_modified: 2019-04-11
 		&lt;/select&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;checkbox&quot;&gt;
-		&lt;label&gt;
-		&lt;input type=&quot;checkbox&quot; /&gt; Can&#39;t check this&lt;/label&gt;
+		&lt; for=&quot;unchecked&quot; label&gt;
+		&lt;input id=&quot;unchecked&quot; type=&quot;checkbox&quot; /&gt; Can&#39;t check this&lt;/label&gt;
 	&lt;/div&gt;
 	&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
   &lt;/fieldset&gt;

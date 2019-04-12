@@ -686,14 +686,14 @@ date_modified: 2019-04-11
             <li>Texte seulement : <a href="#">Soumettre</a> </li>
           </ul>
           <div class="checkbox mrgn-tp-lg">
-            <label>
-            <input type="checkbox" />
+            <label for="certified">
+            <input id="certified" type="checkbox" />
             J'atteste que  <abbr title="X X X ">XXX</abbr></label>
           </div>
           <button type="submit" class="btn btn-default">Soumettre</button>
           <div class="checkbox mrgn-tp-lg">
-            <label>
-            <input type="checkbox" />
+            <label for="confirmed">
+            <input id="confirmed" type="checkbox" />
             Je confirme que <abbr title="X X X ">XXX</abbr></label>
           </div>
           <button type="submit" class="btn btn-default">Soumettre</button></td>
@@ -1011,8 +1011,8 @@ date_modified: 2019-04-11
           <ul class="list-unstyled lst-spcd">
             <li>
               <div class="checkbox">
-                <label>
-                <input type="checkbox" />
+                <label for="agreed">
+                <input id="agreed" type="checkbox" />
                 Je suis d'accord </label>
               </div>
             </li>
