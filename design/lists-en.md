@@ -232,7 +232,7 @@ date_modified: 2019-04-11
       <p>Unstyled nested list:</p>
         <pre><code>&lt;ul&gt;
   &lt;li&gt;List item 1
-    &lt;ul <strong>class=&quot;list-none&quot;</strong>&gt;
+    &lt;ul <strong>class=&quot;lst-none&quot;</strong>&gt;
       &lt;li&gt;List item 1a&lt;/li&gt;
       &lt;li&gt;List item 1b&lt;/li&gt;
     &lt;/ul&gt;
