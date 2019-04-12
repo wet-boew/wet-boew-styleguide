@@ -5,11 +5,10 @@
 
 {{ content }}
 
-{% if page.modified == null or page.modified == '' %}{% elsif page.date_modified == false %}{% elsif site.date_modified == false and page.date_modified != true %}
-{% else %}
+{% if page.date_modified != null and page.date_modified != '' %}
 <dl id="wb-dtmd">
 	<dt>Date modified:&#32;</dt>
-	<dd><time property="dateModified">{{ page.modified }}</time></dd>
+	<dd><time property="dateModified">{{ page.date_modified }}</time></dd>
 </dl>
 {% endif %}
 </main>

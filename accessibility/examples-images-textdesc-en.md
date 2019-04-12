@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-en
 title: Description of Graphic - Organizational Chart
 hide_breadcrumb: false
-modified: 2019-04-11
+date_modified: 2019-04-11
 ---
 {::nomarkdown}
 {% raw %}
