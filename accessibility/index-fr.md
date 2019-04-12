@@ -4,7 +4,7 @@ layout: default-theme-wet-boew-fr
 title: Accessibility guide
 hide_breadcrumb: false
 written_lang: en
-modified: 2019-04-11
+date_modified: 2019-04-11
 ---
 {::nomarkdown}
 {% raw %}

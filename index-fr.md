@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-fr
 title: Guide de style
 css_href: assets/css/gridify.css
-modified: 2019-04-11
+date_modified: 2019-04-11
 ---
 {::nomarkdown}
 {% raw %}
