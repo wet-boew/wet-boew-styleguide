@@ -10,6 +10,8 @@ modified: 2019-04-11
 <h2><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-font fa-stack-1x fa-inverse"></span> </span> Content creation</h2>
 <p>Before creating content, content creators and content providers need to understand and comply with the following: </p>
 <dl>
+<dt><a href="accessibility/index-en.html">Accessibility guideline</a></dt>
+<dd>Provides content authors and webmasters with an understanding of how to create and code content so that is accessible to all users.</dd>
 <dt><a href="writing/prncpls-en.html">Content creation principles</a></dt>
 <dd>Information related to content (development, architecture, structure, style and flow), and print versus Web. </dd>
 <dt><a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp" rel="external">Canada.ca Content Style Guide</a></dt>

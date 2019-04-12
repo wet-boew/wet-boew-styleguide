@@ -10,6 +10,8 @@ modified: 2019-04-11
 <h2><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-font fa-stack-1x fa-inverse"></span> </span> Création de contenu</h2>
 <p>Avant de créer du contenu, les créateurs de contenu et les fournisseurs de contenu doivent comprendre ce qui suit et s'y conformer : </p>
 <dl>
+<dt lang="en"><a href="accessibility/index-fr.html" hreflang="en">Accessibility guideline</a></dt>
+<dd lang="en">Provides content authors and webmasters with an understanding of how to create and code content so that is accessible to all users.</dd>
 <dt><a href="writing/prncpls-fr.html">Principes de création du contenu</a></dt>
 <dd>Renseignements liés au contenu (développement, architecture,  structure, style et flux), et comparaison entre l'impression et le Web. </dd>
 <dt><a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-fra.asp" rel="external">Guide de rédaction du contenu du site Canada.ca</a></dt>
