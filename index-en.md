@@ -1352,6 +1352,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Canada.ca </a></td>
 <td>Use the Canada.ca theme template to meet the layout and design requirements of Canada.ca pages.</td>
@@ -1363,6 +1364,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Government of Canada intranet</a></td>
 <td>Use the Government of Canada intranet theme template to adapt the Government of Canada Web Usability theme to intranet sites.</td>
@@ -1374,6 +1376,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Open Government Platform (<abbr title="Open Government Platform">OGPL</abbr>) </a></td>
 <td>Use the Open Government Platform (<abbr title="Open Government Platform">OGPL</abbr>)   template to support the <abbr title="Open Government Platform">OGPL</abbr>   theme.</td>
@@ -1385,6 +1388,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/v4.0-ci/theme/index-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Web Experience Toolkit (<abbr title="Web Experience Toolkit">WET</abbr>) </a></td>
 <td>Use the Web Experience Toolkit theme template to provide an example of an implemented Base theme.</td>
@@ -1396,6 +1400,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thumbnail and photo gallery  (lightbox) </a></td>
 <td><p>Use  to display images in a lightbox, either individually or as part of a gallery. </p></td>
@@ -1418,6 +1423,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Toggle</a></td>
 <td>Use to toggle elements between on and off states, with only one section expanding open at a time and the previous section collapsing automatically.</td>
@@ -1447,6 +1453,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions </a></td>
 <td><p>Use to create a content transition with optional states  (fade in, fade out, slide right or slide left). </p></td>
@@ -1472,7 +1479,18 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wiki.drupalwxt.org/"  class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: Drupal </a></td>
+<td><a href="design/variables-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Variables</a></td>
+<td><p>Use  when there is reference to a variable like “x.”, &quot;n&quot; or &quot;y&quot; within a  sentence (a non-mathematical phrase). <span class="badge">New</span></p></td>
+<td class="text-muted small">Tags: Calculations</td>
+<td><hr class="mrgn-tp-0">
+Over <var>n</var> years, the increase in payments is <var>x</var>.</td>
+<td>CSS Style</td>
+<td>Text effects</td>
+<td>Variables</td>
+</tr>
+
+<tr class="col-xs-12 col-sm-6 col-md-4">
+<td><a href="https://github.com/wet-boew/wet-boew-drupal/"  class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: Drupal </a></td>
 <td>Use to adapt <abbr title="Web Experience Toolkit">WET</abbr> for use with Drupal.</td>
 <td class="text-muted small">Tags: Technology</td>
 <td><hr class="mrgn-tp-0">
@@ -1484,7 +1502,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/wet-boew-jekyll/index-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: Jekyll </a></td>
+<td><a href="https://github.com/wet-boew/wet-boew-jekyll/"  class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: Jekyll </a></td>
 <td>Use to adapt <abbr title="Web Experience Toolkit">WET</abbr> for use with Jekyll.</td>
 <td class="text-muted small">Tags: Technology</td>
 <td><hr class="mrgn-tp-0">
@@ -1496,7 +1514,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="design/https://github.com/wet-boew/wet-boew-php/wiki/Php-variant-4.0" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: <abbr title="script for Hypertext Preprocessor">PHP</abbr> </a></td>
+<td><a href="https://github.com/wet-boew/wet-boew-php/" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: <abbr title="script for Hypertext Preprocessor">PHP</abbr> </a></td>
 <td>Use to adapt <abbr title="Web Experience Toolkit">WET</abbr> for use with <abbr title="script for Hypertext Preprocessor">PHP</abbr>.</td>
 <td class="text-muted small">Tags: Technology</td>
 <td><hr class="mrgn-tp-0">
@@ -1508,7 +1526,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="design/https://github.com/wet-boew/wet-boew-ssi#web-experience-toolkit-wet---ssi-variant-v40" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: <abbr title="Server Side Includes">SSI</abbr></a></td>
+<td><a href="https://github.com/wet-boew/wet-boew-ssi/" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: <abbr title="Server Side Includes">SSI</abbr></a></td>
 <td>Use to adapt <abbr title="Web Experience Toolkit">WET</abbr> for use with <abbr title="Server Side Includes">SSI</abbr>.</td>
 <td class="text-muted small">Tags: Technology</td>
 <td><hr class="mrgn-tp-0">
@@ -1520,17 +1538,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="design/variables-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Variables</a></td>
-<td><p>Use  when there is reference to a variable like “x.”, &quot;n&quot; or &quot;y&quot; within a  sentence (a non-mathematical phrase). <span class="badge">New</span></p></td>
-<td class="text-muted small">Tags: Calculations</td>
-<td><hr class="mrgn-tp-0">
-Over <var>n</var> years, the increase in payments is <var>x</var>.</td>
-<td>CSS Style</td>
-<td>Text effects</td>
-<td>Variables</td>
-</tr>
-<tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="design/https://github.com/wet-boew/wet-boew-wordpress#wet-boew-wordpress" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: WordPress </a></td>
+<td><a href="https://github.com/wet-boew/wet-boew-wordpress" class="h4 mrgn-tp-0 mrgn-bttm-0">Variant: WordPress </a></td>
 <td>Use to adapt <abbr title="Web Experience Toolkit">WET</abbr> for use with WordPress.</td>
 <td class="text-muted small">Tags: Technology</td>
 <td><hr class="mrgn-tp-0">
@@ -1540,6 +1548,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td></td>
 <td></td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="design/wells-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Wells </a></td>
 <td>Use to spotlight content by placing it in a light grey box.</td>
@@ -1551,6 +1560,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td>Callouts</td>
 <td>Wells</td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="design/whitespace-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Wrapping and truncating text</a></td>
 <td>Use to prevent text from wrapping to the next line.</td>
@@ -1566,6 +1576,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td>Text effects</td>
 <td>Wrapping and truncating text</td>
 </tr>
+
 <tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Zebra striping (Advanced) </a></td>
 <td><p>Use to provide alternate white and grey stripes to table rows in horizontal or multiple directions. This  helps to visually connect horizontal with vertical data.</p></td>
