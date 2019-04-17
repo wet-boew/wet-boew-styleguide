@@ -47,7 +47,7 @@ date_modified: 2019-04-11
   <p>Use list group components to contain related content. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
   <p>Use to group related content as  an unordered list.  Add links by using anchor tags instead of list items (that means use a parent <code>&lt;div&gt;</code> instead of a <code>&lt;ul&gt;</code>).</p>
   <div class="row">
     <div class="col-md-4">
@@ -159,7 +159,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="badges"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-circle-o fa-stack-1x fa-inverse"></span></span> Badges</h4>
+  <h4 id="badges"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-circle fa-stack-1x fa-inverse"></span></span> Badges</h4>
   <p>Use the badges component to any list group item, and it  is automatically positioned on the right.</p>
   <div class="row">
     <div class="col-md-4">

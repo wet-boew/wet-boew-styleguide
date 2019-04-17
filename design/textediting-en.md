@@ -48,7 +48,7 @@ date_modified: 2019-04-11
   <p>Use to indicate text edits on a page.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="marked"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></span></span> Marked text</h4>
+  <h4 id="marked"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-edit fa-stack-1x fa-inverse"></span></span> Marked text</h4>
   <p>Use to highlight a section of text for reference purposes, due to its relevance in another context.</p>
   <div class="row">
     <div class="col-md-4">
@@ -84,7 +84,7 @@ date_modified: 2019-04-11
       <pre><code>&lt;p&gt;...<strong>&lt;mark&gt;...&lt;/mark&gt;</strong>...&lt;/p&gt;</code></pre>
     </div>
   </div>
-  <h4 id="deleted"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-trash fa-stack-1x fa-inverse"></span></span> Deleted text</h4>
+  <h4 id="deleted"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-trash-alt fa-stack-1x fa-inverse"></span></span> Deleted text</h4>
   <p>Use to indicate text was deleted.</p>
   <div class="row">
     <div class="col-md-4">

@@ -50,7 +50,7 @@ date_modified: 2019-04-11
   <p>Utilisez un index de pagination pour les documents longs qu'il est préférable de diviser en plusieurs pages. Un utilisateur peut sélectionner une page particulière dans un document à l'aide des fonctions « Suivant » ou « Précédent », ou (s'ils sont présents) des hyperliens de pagination numériques.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>L'utiliser pour séparer des éléments de contenu et les étendre sur un grand nombre de pages. Ainsi, les sections au contenu volumineux sont plus faciles à lire.</p>
   <div class="row">
     <div class="col-md-4">

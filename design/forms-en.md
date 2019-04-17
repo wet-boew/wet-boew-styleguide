@@ -284,7 +284,7 @@ date_modified: 2019-04-11
       </details>
     </div>
 	</div>
-    <h4 id="inputs"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-square-o fa-stack-1x fa-inverse"></span></span> Inputs</h4>
+    <h4 id="inputs"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-square fa-stack-1x fa-inverse"></span></span> Inputs</h4>
     <p>Use text-based input fields (most common form control). This includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
     <div class="row">
       <div class="col-md-4">
@@ -346,7 +346,7 @@ date_modified: 2019-04-11
       </div>
     </div>
   </div>
-  <h4 id="textarea"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-square-o fa-stack-1x fa-inverse"></span></span> Textarea</h4>
+  <h4 id="textarea"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-square fa-stack-1x fa-inverse"></span></span> Textarea</h4>
   <p>Use textareas so users can insert multiple lines of  text within a form. </p>
   <div class="row">
     <div class="col-md-4">
@@ -379,7 +379,7 @@ date_modified: 2019-04-11
       <pre><code>&lt;textarea <strong>class=&quot;form-control&quot;</strong> <strong>rows=&quot;3&quot;</strong>&gt;&lt;/textarea&gt;</code></pre>
     </div>
   </div>
-  <h4 id="checkboxes"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-check-square-o fa-stack-1x fa-inverse"></span></span> Checkboxes</h4>
+  <h4 id="checkboxes"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-check-square fa-stack-1x fa-inverse"></span></span> Checkboxes</h4>
   <p>Use checkboxes so users can select  one <strong>or </strong>several options.</p>
   <div class="row">
     <div class="col-md-4">
@@ -443,7 +443,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="radio"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-circle-o fa-stack-1x fa-inverse"></span></span> Radio buttons</h4>
+  <h4 id="radio"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-circle fa-stack-1x fa-inverse"></span></span> Radio buttons</h4>
   <p>Use radio buttons so users can select  <strong>only one </strong>of several options.</p>
   <div class="row">
     <div class="col-md-4">
@@ -507,7 +507,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="selects"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-caret-square-o-down fa-stack-1x fa-inverse"></span></span> Selects</h4>
+  <h4 id="selects"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-caret-square-down fa-stack-1x fa-inverse"></span></span> Selects</h4>
   <p>Use so users can select<strong> only one </strong>of several options from within a list. A single item in a dropdown list, or multiple options can display at once. </p>
   <div class="row">
     <div class="col-md-4">
@@ -779,7 +779,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="height"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-v fa-stack-1x fa-inverse"></span></span> Set height</h4>
+  <h4 id="height"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-v fa-stack-1x fa-inverse"></span></span> Set height</h4>
   <p>Use to create larger or smaller form controls that match button sizes with the classes <code>.input-lg</code> or <code>.input-sm</code>. Medium is the default  size. </p>
   <div class="row">
     <div class="col-md-4">
@@ -841,7 +841,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Set width</h4>
+  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Set width</h4>
   <p>Use to wrap inputs in grid columns such as <code>.col-xs-4</code> or <code>.col-xs-8</code> (or any custom parent element) to easily enforce desired widths.</p>
   <div class="row">
     <div class="col-md-4">

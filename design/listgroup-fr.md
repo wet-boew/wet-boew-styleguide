@@ -47,7 +47,7 @@ date_modified: 2019-04-11
   <p>Utilisez les composantes « groupe de listes » pour contenir des éléments de contenu liés. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>L'utiliser pour grouper des éléments de contenu liés en tant que liste non ordonnée. Ajoutez des liens en utilisant des  balises d'ancrage au lieu d'éléments de liste (autrement dit, en utilisant le parent <code>&lt;div&gt;</code> au lieu de <code>&lt;ul&gt;</code>).</p>
   <div class="row">
     <div class="col-md-4">
@@ -159,7 +159,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="badges"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-circle-o fa-stack-1x fa-inverse"></span></span> Badges</h4>
+  <h4 id="badges"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-circle fa-stack-1x fa-inverse"></span></span> Badges</h4>
   <p>Appliquez la composante des badges à n'importe quel élément « list group », et il sera automatiquement positionné à droite.</p>
   <div class="row">
     <div class="col-md-4">

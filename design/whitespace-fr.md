@@ -41,7 +41,7 @@ date_modified: 2019-04-11
   <p>Les utiliser pour empêcher que du texte retourne à la ligne suivante.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>S'en servir pour contrôler où et comment les mots retournent automatiquement à la ligne suivante à l'intérieur d'une ligne de texte. </p>
   <div class="row">
     <div class="col-md-4">

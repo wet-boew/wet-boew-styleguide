@@ -57,7 +57,7 @@ date_modified: 2019-04-11
   <p>Use a grid system (a series of rows and columns that  house content) to create page layouts. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Responsive grid options</h4>
+  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Responsive grid options</h4>
   <p>Use a grid system to create a responsive, mobile first, fluid grid system. It scales appropriately up to 12 columns, as the device or viewport size increases.</p>
   <ul>
     <li>Place rows within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding</li>
@@ -259,7 +259,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="fluid"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Fluid container</h4>
+  <h4 id="fluid"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Fluid container</h4>
   <p>Use to turn any fixed width grid layout into a full width layout. Change the outermost <code>.container</code> to <code>.container-fluid</code>.</p>
   <h5 class="mrgn-tp-0">Code</h5>
   <pre><code>&lt;div <strong>class=&quot;container-fluid&quot;</strong>&gt;
@@ -268,7 +268,7 @@ date_modified: 2019-04-11
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
   <h3 id="enhanced">Enhanced use</h3>
-  <h4 id="mixed"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-mobile fa-stack-1x fa-inverse"></span></span> Mobile and desktop</h4>
+  <h4 id="mixed"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-mobile-alt fa-stack-1x fa-inverse"></span></span> Mobile and desktop</h4>
   <p>Use to prevent columns from simply stacking in smaller devices. Use the extra small and medium device grid classes. Add <code>.col-xs-*</code> <code>.col-md-*</code> to the columns. Refer to the example below for a better idea of how this works.</p>
   <div class="row">
     <div class="col-md-7">
@@ -329,7 +329,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="mixed-complete"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-tablet fa-stack-1x fa-inverse"></span></span> Mobile, tablet, desktops</h4>
+  <h4 id="mixed-complete"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-tablet-alt fa-stack-1x fa-inverse"></span></span> Mobile, tablet, desktops</h4>
   <p>Use to create even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
   <div class="row">
     <div class="col-md-7">

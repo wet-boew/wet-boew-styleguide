@@ -49,7 +49,7 @@ date_modified: 2019-04-11
   <p>Utiliser l'étiquette appropriée pour décrire et mettre en surbrillance des renseignements textuels (non numériques).</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Étiquette par défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Étiquette par défaut</h4>
   <p>Utilisez-la pour présenter quelques mots à l'arrière-plan. Elle donne du contexte supplémentaire sur le contenu adjacent.</p>
   <div class="row">
     <div class="col-md-3">

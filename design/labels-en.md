@@ -49,7 +49,7 @@ date_modified: 2019-04-11
   <p>Use the appropriate label to describe and highlight text-based (non-numerical) information.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default label</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default label</h4>
   <p>Use to feature a few words within a coloured background. It provides additional context about the adjacent content. </p>
   <div class="row">
     <div class="col-md-3">

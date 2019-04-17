@@ -53,7 +53,7 @@ date_modified: 2019-04-11
   <p>Use buttons to create a call to action that entices the user to  submit content from a form. Also, use buttons  also take users to a webpage that provides  additional information. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
   <p>Use the button classes on  <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> elements to create visual consistency. The browser shows certain elements as a button. However, there is often a lack of visual consistency for each button type. Each browser can have a different button default appearance.</p>
 
   <div class="row">
@@ -261,7 +261,7 @@ date_modified: 2019-04-11
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default <strong>btn-xs&quot;</strong>&gt;Extra small button&lt;/button&gt;</code></pre>
     </div>
   </div>
-  <h4 id="buttons-block"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Full width</h4>
+  <h4 id="buttons-block"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Full width</h4>
   <p>Use to create block level buttons (those that span the full width of a parent).</p>
   <div class="row">
     <div class="col-md-3">
@@ -605,12 +605,12 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-primary">Sign in</button>
             </li>
             <li>
-              <button type="submit" class="btn btn-primary"><span class="fa fa-sign-in"></span> Sign in</button>
+              <button type="submit" class="btn btn-primary"><span class="fas fa-sign-in-alt"></span> Sign in</button>
             </li>
             <li>
               <button type="submit" class="btn btn-primary"><span class="="glyphicon glyphicon-off"></span> Sign in</button>
             </li>
-            <li>Text only: <a href="#"><span class="fa fa-sign-in"></span> Sign in</a> or <a href="#"> Sign in</a> </li>
+            <li>Text only: <a href="#"><span class="fas fa-sign-in-alt"></span> Sign in</a> or <a href="#"> Sign in</a> </li>
           </ul></td>
         <td><ul>
             <li>Use to log into an application</li>
@@ -632,13 +632,13 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-default">Sign out</button>
             </li>
             <li>
-              <button type="submit" class="btn btn-default"><span class="fa fa-sign-out"></span> Sign out</button>
+              <button type="submit" class="btn btn-default"><span class="fas fa-sign-out-alt"></span> Sign out</button>
             </li>
             <li>
               <button type="submit" class="btn btn-primary"><span class="="glyphicon glyphicon-off"></span> Sign out</button>
             </li>
 
-            <li>Text only: <a href="#"><span class="fa fa-sign-out"></span> Sign out</a> or <a href="#"> Sign out</a> </li>
+            <li>Text only: <a href="#"><span class="fas fa-sign-out-alt"></span> Sign out</a> or <a href="#"> Sign out</a> </li>
           </ul></td>
         <td><ul>
             <li>Use to log out of an application</li>
@@ -856,14 +856,14 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-warning">Delete (x)</button>
             </li>
             <li>
-              <button type="submit" class="btn btn-warning"><span class="fa fa-trash"></span> Delete</button>
+              <button type="submit" class="btn btn-warning"><span class="fas fa-trash-alt"></span> Delete</button>
             </li>
             <li>
-              <button type="submit" class="btn btn-warning"><span class="fa fa-trash"></span> Delete (x)</button>
+              <button type="submit" class="btn btn-warning"><span class="fas fa-trash-alt"></span> Delete (x)</button>
             </li>
-            <li><a href="#" class="btn btn-warning"><span class="fa fa-trash"></span><span class="wb-inv">Delete</span></a></li>
-            <li><a href="#" class="btn btn-link"><span class="fa fa-trash"></span><span class="wb-inv">Delete</span></a></li>
-            <li>Text only: <a href="#">Delete</a>, <a href="#">Delete (x)</a>, <a href="#"><span class="fa fa-trash"></span> Delete</a>, or <a href="#"><span class="fa fa-trash"></span> Delete (x)</a></li>
+            <li><a href="#" class="btn btn-warning"><span class="fas fa-trash-alt"></span><span class="wb-inv">Delete</span></a></li>
+            <li><a href="#" class="btn btn-link"><span class="fas fa-trash-alt"></span><span class="wb-inv">Delete</span></a></li>
+            <li>Text only: <a href="#">Delete</a>, <a href="#">Delete (x)</a>, <a href="#"><span class="fas fa-trash-alt"></span> Delete</a>, or <a href="#"><span class="fas fa-trash-alt"></span> Delete (x)</a></li>
           </ul></td>
         <td><ul>
             <li>Use to delete an item for example,  delete an address

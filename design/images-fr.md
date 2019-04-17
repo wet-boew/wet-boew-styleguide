@@ -182,7 +182,7 @@ date_modified: 2019-04-11
     </div>
   </div>
   <h3 id="enhanced">Utilisation améliorée </h3>
-  <h4 id="thumbnails"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-image fa-stack-1x fa-inverse"></span></span> Pavés de miniatures</h4>
+  <h4 id="thumbnails"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-image fa-stack-1x fa-inverse"></span></span> Pavés de miniatures</h4>
   <p>Utilisez pour ajouter toute sorte de contenu tel que les en-têtes, les paragraphes ou les boutons dans une miniature afin de créer un effet de pavé de miniatures.</p>
   <div class="row">
     <div class="col-md-4">

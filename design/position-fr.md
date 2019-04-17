@@ -45,7 +45,7 @@ date_modified: 2019-04-11
   <p>L'utiliser pour positionner un élément de contenu par-dessus un autre élément de contenu.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>L'utiliser pour contrôler la position du contenu dans une page. Le navigateur positionne toujours le contenu dans le coin supérieur gauche. Pour modifier l'emplacement par défaut, il <strong>faut </strong>définir à la fois la position <var>x</var> et la position <var>y</var>. Les positions <var>x</var> sont  <code>pstn-lft-*</code> et <code>pstn-rght-*</code>. Les positions <var>y</var> sont <code>pstn-tp-*</code> et <code>pstn-bttm-*</code>. Puisque les positions <var>x</var> et <var>y</var> sont utilisées de concert, l'affichage est réactif. Lorsque le système de grilles entraîne une linéarisation pour les petits espaces d'affichage, le positionnement en fait autant.</p>
   <table class="table table-bordered">
   <caption class="wb-inv">

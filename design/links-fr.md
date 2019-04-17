@@ -47,7 +47,7 @@ date_modified: 2019-04-11
     <p>Utilisez un lien  (texte et/ou  image) pour faire passer un utilisateur à une autre page Web, à un autre endroit sur la même page Web ou pour exécuter une fonction de contrôle de l'utilisateur déterminé par un script du côté du client (JavaScript). </p>
     <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
     <h3 id="basic">Utilisation de base </h3>
-    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut </h4>
+    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut </h4>
     <p>Utiliser un mot, une expression ou une  image qui permet à l'utilisateur d'interagir avec le contenu sur un écran, ce qui peut prendre la forme d'une navigation, d'une interrogation ou d'une  interaction avec le contenu.</p>
     <div class="row">
       <div class="col-md-3">

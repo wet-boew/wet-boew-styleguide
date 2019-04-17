@@ -285,7 +285,7 @@ date_modified: 2019-04-11
       </details>
       </div>
     </div>
-    <h4 id="inputs"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-square-o fa-stack-1x fa-inverse"></span></span> Saisies</h4>
+    <h4 id="inputs"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-square fa-stack-1x fa-inverse"></span></span> Saisies</h4>
     <p>Utilisez des zones de saisie textuelle (le formulaire de contrôle le plus courant). Cela comprend la prise en charge de tous les types HTML5 : <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code> et <code>color</code>.</p>
     <div class="row">
       <div class="col-md-4">
@@ -347,7 +347,7 @@ date_modified: 2019-04-11
       </div>
     </div>
 
-  <h4 id="textarea"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-square-o fa-stack-1x fa-inverse"></span></span> Zone de texte </h4>
+  <h4 id="textarea"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-square fa-stack-1x fa-inverse"></span></span> Zone de texte </h4>
   <p>Utilisez la zone de texte pour que les utilisateurs puissent insérer plusiurs lignes de texte dans un formulaire. </p>
   <div class="row">
     <div class="col-md-4">
@@ -380,7 +380,7 @@ date_modified: 2019-04-11
       <pre><code>&lt;textarea <strong>class=&quot;form-control&quot;</strong> <strong>rows=&quot;3&quot;</strong>&gt;&lt;/textarea&gt;</code></pre>
     </div>
   </div>
-  <h4 id="checkboxes"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-check-square-o fa-stack-1x fa-inverse"></span></span> Cases à cocher</h4>
+  <h4 id="checkboxes"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-check-square fa-stack-1x fa-inverse"></span></span> Cases à cocher</h4>
   <p>Utilisez les cases à cocher pour que les utilisateurs puissent sélectionner une  <strong>ou</strong> plusieurs options.</p>
   <div class="row">
     <div class="col-md-4">
@@ -444,7 +444,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="radio"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-circle-o fa-stack-1x fa-inverse"></span></span> Boutons radio</h4>
+  <h4 id="radio"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-circle fa-stack-1x fa-inverse"></span></span> Boutons radio</h4>
   <p>Utilisez des boutons radio pour que les utilisateurs ne puissent choisir qu'<strong>une seule</strong> option parmi plusieurs.</p>
   <div class="row">
     <div class="col-md-4">
@@ -508,7 +508,7 @@ date_modified: 2019-04-11
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="selects"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-caret-square-o-down fa-stack-1x fa-inverse"></span></span> Sélections</h4>
+  <h4 id="selects"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-caret-square-down fa-stack-1x fa-inverse"></span></span> Sélections</h4>
   <p>On utilise les sélections pour permettre aux utilisateurs de ne sélectionner qu'<strong>une seule</strong> des options dans une liste. On peut afficher en même temps un seul élément ou bien plusieurs options dans une liste déroulante.</p>
   <div class="row">
     <div class="col-md-4">
@@ -780,7 +780,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="height"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-v fa-stack-1x fa-inverse"></span></span> Régler la hauteur</h4>
+  <h4 id="height"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-v fa-stack-1x fa-inverse"></span></span> Régler la hauteur</h4>
   <p>Utilisez cette fonction pour créer des contrôles de formulaire plus grands ou plus petits qui font correspondre la taille des bouttons avec les classes  <code>.input-lg</code> ou <code>.input-sm</code>. La taille moyenne est celle par défaut. </p>
   <div class="row">
     <div class="col-md-4">
@@ -842,7 +842,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Régler la largeur</h4>
+  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Régler la largeur</h4>
   <p>Utilisez cette fonction  pour envelopper les saisies dans des colonnes de grille comme  <code>.col-xs-4</code> ou <code>.col-xs-8</code> (ou tout élément parent personnalisé) afin d'appliquer facilement les largeurs désirées.</p>
   <div class="row">
     <div class="col-md-4">
