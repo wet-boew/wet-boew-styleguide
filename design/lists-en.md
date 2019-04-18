@@ -449,7 +449,7 @@ date_modified: 2019-04-11
 &lt;/ol&gt;</code></pre>
     </div>
   </div>
-  <h4 id="spacing"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-v fa-stack-1x fa-inverse"></span></span> Spacing lists</h4>
+  <h4 id="spacing"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-v fa-stack-1x fa-inverse"></span></span> Spacing lists</h4>
   <p>Use to add space between list items. </p>
   <div class="row">
     <div class="col-md-3">

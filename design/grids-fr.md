@@ -57,7 +57,7 @@ date_modified: 2019-04-11
   <p>Utiliser un système de grille (une série de rangées et de colonnes qui hébergent du contenu) afin de créer de la mise en page. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base </h3>
-  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Options de grilles souples </h4>
+  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Options de grilles souples </h4>
   <p>Utilisez un système de grilles afin de créer un système de grille souple, fluide et mobile d'abord. Il met à l'échelle jusqu'à 12 colonnes environ, au fur et à mesure que la taille de l'appareil ou de la fenêtre d'affichage augmente.</p>
   <ul>
     <li>Placez les rangées dans  <code>.container</code> (largeur fixe) ou <code>.container-fluid</code> (pleine largeur) pour un alignement et un remplissage appropriés</li>
@@ -259,7 +259,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="fluid"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Conteneur fluide</h4>
+  <h4 id="fluid"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Conteneur fluide</h4>
   <p>Utilisez pour  transformer n'importe quelle mise en page de grille à largeur fixe en  mise en page de pleine largeur. Changez le <code>.container</code> le plus à l'extérieur pour  <code>.container-fluid</code>.</p>
   <h5 class="mrgn-tp-0">Code</h5>
   <pre><code>&lt;div <strong>class=&quot;container-fluid&quot;</strong>&gt;
@@ -268,7 +268,7 @@ date_modified: 2019-04-11
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
   <h3 id="enhanced">Utilisation améliorée </h3>
-  <h4 id="mixed"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-mobile fa-stack-1x fa-inverse"></span></span> Appareils mobiles et ordinateurs de bureau</h4>
+  <h4 id="mixed"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-mobile-alt fa-stack-1x fa-inverse"></span></span> Appareils mobiles et ordinateurs de bureau</h4>
   <p>Utilisez-le pour empêcher les colonnes de simplement s'empiler dans des appareils plus petits. Utilisez les catégories de grille d'appareils très petits et moyens. Ajoutez <code>.col-xs-*</code> <code>.col-md-*</code> aux colonnes. Reportez-vous à l'exemple ci-dessous pour avoir une meilleure idée de son fonctionnement.</p>
   <div class="row">
     <div class="col-md-7">
@@ -329,7 +329,7 @@ date_modified: 2019-04-11
       </details>
     </div>
   </div>
-  <h4 id="mixed-complete"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-tablet fa-stack-1x fa-inverse"></span></span> Appareils mobiles, tablettes et ordinateurs de bureau</h4>
+  <h4 id="mixed-complete"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-tablet-alt fa-stack-1x fa-inverse"></span></span> Appareils mobiles, tablettes et ordinateurs de bureau</h4>
   <p>Utilisez pour créer des mises en page encore plus dynamiques et puissantes avec des catégories <code>.col-sm-*</code> de tablette.</p>
   <div class="row">
     <div class="col-md-7">

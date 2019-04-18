@@ -47,7 +47,7 @@ date_modified: 2019-04-11
     <p>Use a link  (text and/or image) to take a user to another webpage, jump to another  location within the same webpage, or perform a user-control function determined  by client-side scripting (JavaScript). </p>
     <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
     <h3 id="basic">Basic use</h3>
-    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
     <p>Use a word, phrase, or image that allows the user to to interact with the content on a screen.  This can take the form of navigation, querying or content interaction.</p>
     <div class="row">
       <div class="col-md-3">

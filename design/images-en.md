@@ -182,7 +182,7 @@ date_modified: 2019-04-11
     </div>
   </div>
   <h3 id="enhanced">Enhanced use</h3>
-  <h4 id="thumbnails"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-image fa-stack-1x fa-inverse"></span></span> Thumbnail tiles</h4>
+  <h4 id="thumbnails"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-image fa-stack-1x fa-inverse"></span></span> Thumbnail tiles</h4>
   <p>Use to add any kind of content like headings, paragraphs, or buttons into a thumbnail, to create a thumbnail tile effect.</p>
   <div class="row">
     <div class="col-md-4">

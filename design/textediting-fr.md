@@ -48,7 +48,7 @@ date_modified: 2019-04-11
   <p>On les utilise pour indiquer les éditions de texte sur une page.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="marked"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></span></span> Texte marqué</h4>
+  <h4 id="marked"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-edit fa-stack-1x fa-inverse"></span></span> Texte marqué</h4>
   <p>L'utiliser pour mettre en surbrillance une section du texte à titre de référence en raison de sa pertinente dans un autre contexte.</p>
   <div class="row">
     <div class="col-md-4">
@@ -84,7 +84,7 @@ date_modified: 2019-04-11
       <pre><code>&lt;p&gt;...<strong>&lt;mark&gt;...&lt;/mark&gt;</strong>...&lt;/p&gt;</code></pre>
     </div>
   </div>
-  <h4 id="deleted"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-trash fa-stack-1x fa-inverse"></span></span> Texte supprimé</h4>
+  <h4 id="deleted"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-trash-alt fa-stack-1x fa-inverse"></span></span> Texte supprimé</h4>
   <p>L'utiliser pour indiquer que du texte a été supprimé.</p>
   <div class="row">
     <div class="col-md-4">

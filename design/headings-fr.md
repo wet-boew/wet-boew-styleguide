@@ -56,7 +56,7 @@ date_modified: 2019-04-11
 	  </section>
 
 	  <section>
-    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut </h4>
+    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut </h4>
     <p>Utilisez les en-têtes pour que le moteur de recherche puisse classer de façon appropriée votre contenu. Les en-têtes sont classés plus importants que le texte normal. Choisissez les en-têtes de façon stratégique. L'en-tête <code>&lt;h1&gt;</code> est le plus important et l'en-tête  <code>&lt;h6&gt;</code> est le moins  important.</p>
     <div class="row">
       <div class="col-md-4">

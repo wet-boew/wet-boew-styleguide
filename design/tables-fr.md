@@ -54,7 +54,7 @@ date_modified: 2019-04-11
   <p>Les utiliser pour organiser les données en rangées et en colonnes afin de créer des cellules de données. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>Les utiliser pour appliquer un style de base (seulement les séparateurs horizontaux et le remplissage léger). Ajoutez le <abbr title="feuille de style en cascade">CSS</abbr> de base  <code>.table</code> à n'importe quelle balise de tableau <code>&lt;table&gt;</code>. Vu la grande popularité des tableaux pour d'autres plugiciels comme les calendriers et les sélecteurs de date, cette page énumère des styles de tableau personnalisés isolés.</p>
   <div class="row">
     <div class="col-md-3">
@@ -211,7 +211,7 @@ date_modified: 2019-04-11
     </div>
   </div>
   <h3 id="enhanced">Utilisation avancée</h3>
-  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Modifier la largeur des colonnes et des tableaux</h4>
+  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Modifier la largeur des colonnes et des tableaux</h4>
   <p>Utilisez le <a href="grids-fr.html"><abbr title="feuille de style en cascade">CSS</abbr> de grille</a> pour modifier la largeur des colonnes.</p>
   <div class="row">
     <div class="col-md-3">
@@ -353,7 +353,7 @@ date_modified: 2019-04-11
 &lt;/table&gt;</code></pre>
     </div>
   </div>
-  <h4 id="hover"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-hand-o-up fa-stack-1x fa-inverse"></span></span> Rangées à pointage</h4>
+  <h4 id="hover"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-hand-point-up fa-stack-1x fa-inverse"></span></span> Rangées à pointage</h4>
   <p>Les utiliser pour ajouter un effet de pointage appliquant des zébrures à n'importe quelle rangée d'un tableau à l'intérieur de  <code>&lt;tbody&gt;</code>.</p>
   <div class="row">
     <div class="col-md-3">
@@ -540,7 +540,7 @@ date_modified: 2019-04-11
 &lt;/table&gt;</code></pre>
     </div>
   </div>
-  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-mobile fa-stack-1x fa-inverse"></span></span> Tableaux réactifs</h4>
+  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-mobile-alt fa-stack-1x fa-inverse"></span></span> Tableaux réactifs</h4>
   <p>Créez des tableaux réactifs pour permettre le défilement horizontal de tableaux sur les petits appareils (d'une largeur de moins de 768 px). Lorsque la largeur est supérieure à 768 px, il n'y a aucune différence visuelle dans ces tableaux.</p>
   <div class="row">
     <div class="col-md-4">

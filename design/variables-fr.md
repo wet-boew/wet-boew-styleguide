@@ -45,7 +45,7 @@ date_modified: 2019-04-11
   <p>Les utiliser lorsqu'on fait référence à une variable comme « x », « n » ou « y » dans une phrase (expression non mathématique). </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Défaut</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Défaut</h4>
   <p>Utilisez la balise <code>&lt;var&gt;</code> pour indiquer une variable comme « x », « n » ou « y » dans une phrase . À elle seule, la balise <code>&lt;var&gt;</code><strong> n'indique pas une équation mathématique</strong>. </p>
   <div class="row">
     <div class="col-md-3">

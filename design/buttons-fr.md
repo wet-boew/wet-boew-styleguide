@@ -53,7 +53,7 @@ date_modified: 2019-04-11
   <p>Utilisez des boutons pour créer un appel à l'action qui incite l'utilisateur à soumettre du contenu à partir d'un formulaire. De plus, utilisez des boutons pour amener les utilisateurs à une page Web qui présente des renseignements supplémentaires. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Conception et codage</h2>
   <h3 id="basic">Utilisation de base</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Par défaut </h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Par défaut </h4>
   <p>Utilisez les catégories de boutons sur des éléments <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code> ou <code>&lt;input&gt;</code> afin de créer une uniformité visuelle. Le navigateur présente certains éléments comme un bouton. Toutefois, il manque d'uniformité visuelle pour chaque genre de bouton. L'apparence de bouton par défaut peut être différente pour chaque navigateur.</p>
 
   <div class="row">
@@ -264,7 +264,7 @@ date_modified: 2019-04-11
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default <strong>btn-xs&quot;</strong>&gt;Très petit bouton&lt;/button&gt;</code></pre>
     </div>
   </div>
-  <h4 id="buttons-block"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Largeur maximale </h4>
+  <h4 id="buttons-block"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Largeur maximale </h4>
   <p>Utilisez pour créer des boutons de blocage de niveau (ceux qui s'étend sur toute la largeur d'un contenant apparenté).</p>
   <div class="row">
     <div class="col-md-3">
@@ -608,12 +608,12 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-primary">Ouvrir une session </button>
             </li>
             <li>
-              <button type="submit" class="btn btn-primary"><span class="fa fa-sign-in"></span> Ouvrir une session </button>
+              <button type="submit" class="btn btn-primary"><span class="fas fa-sign-in-alt"></span> Ouvrir une session </button>
             </li>
             <li>
               <button type="submit" class="btn btn-primary"><span class="="glyphicon glyphicon-off"></span> Ouvrir une session </button>
             </li>
-            <li>Texte seulement&nbsp;: <a href="#"><span class="fa fa-sign-in"></span> Ouvrir une session </a> ou <a href="#"> Ouvrir une session </a> </li>
+            <li>Texte seulement&nbsp;: <a href="#"><span class="fas fa-sign-in-alt"></span> Ouvrir une session </a> ou <a href="#"> Ouvrir une session </a> </li>
           </ul></td>
         <td><ul>
             <li>Utilisez pour ouvrir une session dans une application</li>
@@ -635,12 +635,12 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-default">Fermer la session </button>
             </li>
             <li>
-              <button type="submit" class="btn btn-default"><span class="fa fa-sign-out"></span> Fermer la session </button>
+              <button type="submit" class="btn btn-default"><span class="fas fa-sign-out-alt"></span> Fermer la session </button>
             </li>
             <li>
               <button type="submit" class="btn btn-primary"><span class="="glyphicon glyphicon-off"></span> Fermer la session</button>
             </li>
-            <li>Texte seulement : <a href="#"><span class="fa fa-sign-out"></span> Fermer la session </a> or <a href="#"> Fermer une session </a> </li>
+            <li>Texte seulement : <a href="#"><span class="fas fa-sign-out-alt"></span> Fermer la session </a> or <a href="#"> Fermer une session </a> </li>
           </ul></td>
         <td><ul>
             <li>Utilisez pour fermer la session dans une  application</li>
@@ -858,14 +858,14 @@ date_modified: 2019-04-11
               <button type="submit" class="btn btn-warning">Supprimer (x)</button>
             </li>
             <li>
-              <button type="submit" class="btn btn-warning"><span class="fa fa-trash"></span> Supprimer </button>
+              <button type="submit" class="btn btn-warning"><span class="fas fa-trash-alt"></span> Supprimer </button>
             </li>
             <li>
-              <button type="submit" class="btn btn-warning"><span class="fa fa-trash"></span> Supprimer (x)</button>
+              <button type="submit" class="btn btn-warning"><span class="fas fa-trash-alt"></span> Supprimer (x)</button>
             </li>
-            <li><a href="#" class="btn btn-warning"><span class="fa fa-trash"></span><span class="wb-inv">Supprimer</span></a></li>
-            <li><a href="#" class="btn btn-link"><span class="fa fa-trash"></span><span class="wb-inv">Supprimer</span></a></li>
-            <li>Texte seulement&nbsp;: <a href="#">Supprimer</a>, <a href="#">Supprimer (x)</a>, <a href="#"><span class="fa fa-trash"></span> Supprimer</a> ou <a href="#"><span class="fa fa-trash"></span> Supprimer (x)</a></li>
+            <li><a href="#" class="btn btn-warning"><span class="fas fa-trash-alt"></span><span class="wb-inv">Supprimer</span></a></li>
+            <li><a href="#" class="btn btn-link"><span class="fas fa-trash-alt"></span><span class="wb-inv">Supprimer</span></a></li>
+            <li>Texte seulement&nbsp;: <a href="#">Supprimer</a>, <a href="#">Supprimer (x)</a>, <a href="#"><span class="fas fa-trash-alt"></span> Supprimer</a> ou <a href="#"><span class="fas fa-trash-alt"></span> Supprimer (x)</a></li>
           </ul></td>
         <td><ul>
             <li>Utilisez-le pour supprimer un item, par exemple, supprimer une adresse

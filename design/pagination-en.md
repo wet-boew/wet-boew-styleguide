@@ -50,7 +50,7 @@ date_modified: 2019-04-11
   <p>Use a  pagination index for long documents that are  best broken up over several pages. A user can select a specific page within a  document through either the &quot;Next&quot;, &quot;Previous&quot;, or (if present) the numeric pagination hyperlinks.</p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
   <p>Use to break up content and spread it over numerous pages. This makes large content sections easier to read.</p>
   <div class="row">
     <div class="col-md-4">

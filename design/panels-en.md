@@ -183,7 +183,7 @@ when it is necessary to make the caption invisible
 &lt;/div&gt;</code></pre>
     </div>
   </div>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default panel</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default panel</h4>
   <p>Use to spotlight general information/actions within a self-contained box.</p>
   <div class="row">
     <div class="col-md-4">

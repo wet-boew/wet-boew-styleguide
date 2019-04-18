@@ -50,7 +50,7 @@ date_modified: 2019-04-11
   <section>
     <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
     <h3 id="basic">Basic use</h3>
-    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+    <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
 	<p>Navigation list exists horizontally. </p>
     <div class="row">
       <div class="col-md-3">
@@ -89,7 +89,7 @@ date_modified: 2019-04-11
 &lt;/ul&gt;</pre>
       </div>
     </div>
-    <h4 id="vertical"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-v fa-stack-1x fa-inverse"></span></span> Vertical</h4>
+    <h4 id="vertical"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-v fa-stack-1x fa-inverse"></span></span> Vertical</h4>
 	<p>Navigation list exists vertically by adding <code>.nav-stacked</code>. </p>
     <div class="row">
       <div class="col-md-3">
@@ -168,7 +168,7 @@ date_modified: 2019-04-11
 &lt;/ul&gt;</code></pre>
       </div>
     </div>
-    <h4 id="justified"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Justified</h4>
+    <h4 id="justified"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Justified</h4>
 	<p>Navigation list exists horizontally across entire grid column using <code>.nav-justify</code>.
     <div class="row">
       <div class="col-md-3">

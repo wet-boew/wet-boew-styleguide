@@ -54,7 +54,7 @@ date_modified: 2019-04-11
   <p>Use  to organize data into rows and columns in order to create data cells. </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
   <p>Use for  basic styling (only horizontal dividers and light padding). Add the base <code>.table</code> <abbr title="cascading style sheet">CSS</abbr> to any <code>&lt;table&gt;</code>. Given the widespread use of tables for other plugins like calendars and date pickers, this page lists some isolated custom table styles.</p>
   <div class="row">
     <div class="col-md-3">
@@ -213,7 +213,7 @@ date_modified: 2019-04-11
     </div>
   </div>
   <h3 id="enhanced">Enhanced use</h3>
-  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-arrows-h fa-stack-1x fa-inverse"></span></span> Adjust column and table widths</h4>
+  <h4 id="width"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-arrows-alt-h fa-stack-1x fa-inverse"></span></span> Adjust column and table widths</h4>
   <p>Use <a href="grids-en.html">grid <abbr title="cascading style sheet">CSS</abbr></a> to adjust the width of the columns.</p>
   <div class="row">
     <div class="col-md-3">
@@ -355,7 +355,7 @@ date_modified: 2019-04-11
 &lt;/table&gt;</code></pre>
     </div>
   </div>
-  <h4 id="hover"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-hand-o-up fa-stack-1x fa-inverse"></span></span> Hover rows</h4>
+  <h4 id="hover"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="far fa-hand-point-up fa-stack-1x fa-inverse"></span></span> Hover rows</h4>
   <p>Use to add a zebra-striped hover effect to any table row within the <code>&lt;tbody&gt;</code>.</p>
   <div class="row">
     <div class="col-md-3">
@@ -542,7 +542,7 @@ date_modified: 2019-04-11
 &lt;/table&gt;</code></pre>
     </div>
   </div>
-  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-mobile fa-stack-1x fa-inverse"></span></span> Responsive tables</h4>
+  <h4 id="responsive"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-mobile-alt fa-stack-1x fa-inverse"></span></span> Responsive tables</h4>
   <p>Create responsive tables to make a table scroll horizontally for small devices (under 768px). On anything larger than 768px wide, there is no visual difference in these tables.</p>
   <div class="row">
     <div class="col-md-4">

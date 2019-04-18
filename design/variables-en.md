@@ -45,7 +45,7 @@ date_modified: 2019-04-11
   <p>Use  when there is reference to a variable like “x.”, &quot;n&quot; or &quot;y&quot; within a  sentence (a non-mathematical phrase). </p>
   <h2 id="design"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-paint-brush fa-stack-1x fa-inverse"></span></span> Design and coding</h2>
   <h3 id="basic">Basic use</h3>
-  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-gears fa-stack-1x fa-inverse"></span></span> Default</h4>
+  <h4 id="default"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fas fa-cogs fa-stack-1x fa-inverse"></span></span> Default</h4>
   <p>Use the <code>&lt;var&gt;</code> tag to indicate a variable like “x.”, "n" or "y" within a sentence . On its own, <code>&lt;var&gt;</code> is <strong>not a mathematical equation</strong>. </p>
   <div class="row">
     <div class="col-md-3">

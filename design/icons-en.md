@@ -73,7 +73,7 @@ date_modified: 2019-04-11
   <p>Glyphicons provides 250 glyphs. This is part of the <abbr title="Web Experience Toolkit">WET</abbr> core build. </p>
   <p><a href="http://bootstrapdocs.com/v3.3.1/docs/components/#glyphicons"  class="btn btn-primary" >View Glyphicons</a></p>
   <h3 id="fon">Font Awesome icons</h3>
-  <p>Font Awesome provides 600+ glyphs. These icons are <strong>not</strong> part of the <abbr title="Web Experience Toolkit">WET</abbr> core build. Simply add this code within the <code>&lt;head&gt;</code> of the page: <code>&lt;link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"&gt;</code></p>
+  <p>Font Awesome provides 600+ glyphs. These icons are <strong>not</strong> part of the <abbr title="Web Experience Toolkit">WET</abbr> core build. Consult the <a href="https://fontawesome.com/start">Font Awesome</a> website for implementation instruction.</p>
   <p><a href="http://fortawesome.github.io/Font-Awesome/icons/" class="btn btn-primary"  >View Font Awesome icons</a> <a href="http://fortawesome.github.io/Font-Awesome/examples/"  class="btn btn-primary">View Font Awesome stacking, resizing, rotating, spinning icon examples</a></p>
   <h2 id="enh">Enhanced use</h2>
   <h3 id="add"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h3>
