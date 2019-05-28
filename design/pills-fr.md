@@ -71,7 +71,7 @@ date_modified: 2019-04-11
           <li><strong>N'utilisez pas cette fonction</strong>
             <ul>
               <li>Il est hérité de Bootstrap mais son but n'est pas compatible avec la <abbr title="Boîte à outils de l'expérience Web">BOEW</abbr></li>
-              <li>Utilisez d'autres options, comme <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
+              <li>Utilisez d'autres options, comme <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
             </ul>
           </li>
         </ul>
@@ -110,7 +110,7 @@ date_modified: 2019-04-11
           <li><strong>N'utilisez pas cette fonction </strong>
             <ul>
               <li>Il est hérité de Bootstrap mais son but n'est pas compatible avec la <abbr title="Boîte à outils de l'expérience Web">BOEW</abbr></li>
-              <li>Utilisez d'autres options, comme <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
+              <li>Utilisez d'autres options, comme <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
             </ul>
           </li>
         </ul>
@@ -148,7 +148,7 @@ date_modified: 2019-04-11
           <li><strong>N'utilisez pas cette fonction </strong>
             <ul>
               <li>Il est hérité de Bootstrap mais son but n'est pas compatible avec la <abbr title="Boîte à outils de l'expérience Web">BOEW</abbr></li>
-              <li>Utilisez d'autres options, comme <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
+              <li>Utilisez d'autres options, comme <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
               <li>Cette classe ne changera que l'apparence du <code>&lt;a&gt;</code>, et non sa fonctionnalité</li>
             </ul>
           </li>
@@ -189,7 +189,7 @@ date_modified: 2019-04-11
           <li><strong>N'utilisez pas cette fonction </strong>
             <ul>
               <li>Il est hérité de Bootstrap mais son but n'est pas compatible avec la <abbr title="Boîte à outils de l'expérience Web">BOEW</abbr></li>
-              <li>Utilisez d'autres options, comme <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
+              <li>Utilisez d'autres options, comme <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html">Interface à onglets</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-fr.html">Regroupement de liste</a> ou <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-fr.html">Pagination</a> pour un usage navigationel</li>
             </ul>
           </li>
         </ul>
@@ -208,6 +208,6 @@ date_modified: 2019-04-11
       </div>
     </div>
   </section>
-  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

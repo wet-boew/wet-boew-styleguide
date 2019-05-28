@@ -116,7 +116,7 @@ date_modified: 2019-04-11
       <div class="panel panel-default">
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Appearance</h5>
-          <img src="http://placehold.it/140x140" class="img-rounded center-block" alt="A generic square placeholder image with rounded corners" /> </div>
+          <img src="https://placehold.it/140x140" class="img-rounded center-block" alt="A generic square placeholder image with rounded corners" /> </div>
       </div>
     </div>
     <div class="col-md-5">
@@ -171,6 +171,6 @@ date_modified: 2019-04-11
       <pre><code>&lt;p <strong>class=&quot;text-right&quot;</strong>&gt;...&lt;/p&gt;</code></pre>
     </div>
   </div>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

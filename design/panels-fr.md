@@ -453,9 +453,9 @@ lorsqu'il faut rendre la légende invisible
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des caractéristiques et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-fr.html"  class="btn btn-default">Égalisation (égalisation des hauteurs)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-fr.html"  class="btn btn-default">Égalisation (égalisation des hauteurs)</a></li>
     <li><a href="proximity-fr.html" class="btn btn-default">Proximité des marges </a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

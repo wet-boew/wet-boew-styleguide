@@ -680,7 +680,7 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des caractéristiques et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-fr.html" class="btn btn-default" >Fils de syndication</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-fr.html" class="btn btn-default" >Fils de syndication</a></li>
     <li><a href="listgroup-fr.html" class="btn btn-default">List group</a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Principes à l'appui</h2>
@@ -689,6 +689,6 @@ date_modified: 2019-04-11
   <div data-ajax-replace="../writing/stl-fr.html #scan-info"></div>
   <h3><span data-ajax-replace="../writing/stl-fr.html #parallel-heading"></span></h3>
   <div data-ajax-replace="../writing/stl-fr.html #parallel-info"></div>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

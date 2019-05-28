@@ -65,7 +65,7 @@ date_modified: 2019-04-11
       <p><span class="nowrap">Points de conformité&nbsp;:</span></p>
       <ul>
         <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec <span class="nowrap">les points</span>  d'observation  <span class="nowrap">précédents</span></li>
-        <li>Ne les utilisez pas pour les équations mathématiques.  Consulter : <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-fr.html">Correctif MathML</a></li>
+        <li>Ne les utilisez pas pour les équations mathématiques.  Consulter : <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-fr.html">Correctif MathML</a></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -77,8 +77,8 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des caractéristiques et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/mathml/mathml-fr.html" >MathML</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/mathml/mathml-fr.html" >MathML</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

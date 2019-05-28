@@ -334,8 +334,8 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires </h4>
   <p>Des fonctions complémentaires et des comportements supplémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" class="btn btn-default">Égaliser (hauteur égale)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" class="btn btn-default">Égaliser (hauteur égale)</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page provient de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page provient de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

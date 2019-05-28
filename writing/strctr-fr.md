@@ -89,7 +89,7 @@ date_modified: 2019-04-11
       <p>[Traduction] En structurant le contenu en fonction de la réutilisation, nous pouvons créer, publier et utiliser le contenu avec une plus grande efficience. Nous pouvons l'assembler et le réassembler  pour des produits, des publics, des appareils ou des contextes d'utilisation différents. L'information qui est intégrée aux documents rend ce processus difficile, si ce n'est impossible. [...] Le volume de contenu a aussi un effet sur la trouvabilité. La mentalité « nous pourrions le mettre en ligne » ne subit aucun contrôle lorsque la publication est aussi facile que d'« enregistrer en tant que <abbr title="format de document portable">PDF</abbr> » et de téléverser. Les sites Web peuvent se transformer en classeurs énormes, obligeant leurs visiteurs de passer à travers d'autres liens et résultats de recherche pour trouver ce qu'ils cherchent. La Banque mondiale a affirmé récemment que plus de 31 % de ses rapports n'avaient jamais été téléchargés.</p>
 <p>Nos essais de convivialité montrent souvent que les gens ont plus de problèmes avec le contenu des documents <abbr title="format de document portable">PDF</abbr> qu'avec les pages Web. Ils cliquent sur un lien et amorcent un téléchargement imprévu ou non souhaité. Le téléchargement échoue ou ils l'abandonnent lorsqu'ils constatent la grosseur du fichier. Les gens ont parfois de la difficulté à explorer les documents volumineux dont la mise en page est axée sur l'impression, qui présentent des graphiques énormes et qui n'ont aucun signet interne. Souvent, l'information qu'ils veulent se trouve dans un seul paragraphe. Les documents <abbr title="format de document portable">PDF</abbr> peuvent nécessiter d'importants efforts malgré des besoins en information simples.</p>
       <footer class="text-right">4Syllables<br>
-      <cite><a href="http://4syllables.com.au/articles/relying-on-pdf/" rel="external"><span lang="en">Relying on <abbr title="Portable file document">PDF</abbr> online?</span> 6 reasons to stop (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+      <cite><a href="https://4syllables.com.au/articles/relying-on-pdf/" rel="external"><span lang="en">Relying on <abbr title="Portable file document">PDF</abbr> online?</span> 6 reasons to stop (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
 </blockquote>
 
 
@@ -97,7 +97,7 @@ date_modified: 2019-04-11
 <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Près du tiers des rapports <abbr title="format de document portable">PDF</abbr> [de la Banque mondiale] n'ont jamais été téléchargés, pas même une fois. Environ 40 % des rapports ont été téléchargés moins de 100 fois. </p>
       <footer class="text-right">The Sydney Morning Herald<br>
-      <cite><a href="http://www.smh.com.au/world/world-bank-learns-most-pdfs-it-produces-go-unread-20140509-zr7fs.html" rel="external"><span lang="en">World Bank learns most <abbr title="Portable file document">PDF</abbr>s it produces go unread</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+      <cite><a href="https://www.smh.com.au/world/world-bank-learns-most-pdfs-it-produces-go-unread-20140509-zr7fs.html" rel="external"><span lang="en">World Bank learns most <abbr title="Portable file document">PDF</abbr>s it produces go unread</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
 </blockquote>
 
 <p>Une fois que vous définissez les tâches de vos utilisateurs, déterminez l'information dont ces derniers ont besoin pour accomplir ces tâches : </p>
@@ -105,7 +105,7 @@ date_modified: 2019-04-11
   <li><strong>Gardez l'information spécifiques au tâches</strong></li>
   <li><strong>Présentez la logiquement ou séquentiellement dans un endroit ou les utilisateurs peuvent espérer la trouver</strong></li>
   <li>Assurez-vous que l'information est récente et pertinente, non redondante ou triviale</li>
-  <li><a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#alt">Évitez les médias substituts et de remplacement</a></li>
+  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#alt">Évitez les médias substituts et de remplacement</a></li>
 </ul>
 
 
@@ -162,7 +162,7 @@ date_modified: 2019-04-11
         </tr>
       </tbody>
     </table>
-    <p><strong>Les sous-titres rendent les grands blocs de texte plus faciles à lire et à parcourir rapidement.</strong> Assurez-vous que les sous-titres sont clairs et concis et qu'ils suivent une  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a>.</p>
+    <p><strong>Les sous-titres rendent les grands blocs de texte plus faciles à lire et à parcourir rapidement.</strong> Assurez-vous que les sous-titres sont clairs et concis et qu'ils suivent une  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a>.</p>
     <p>Une bonne pratique consiste à utiliser des sous-titres dans les longs documents. Lorsque de l'information figure sur le Web, les sous-titres améliorent la convivialité et la lisibilité.</p>
     <p><strong>De bons en-têtes et de bons sous-titres sont essentiels afin de rendre accessible le contenu sur le Web. </strong> Les utilisateurs de lecteur d'écran peuvent utiliser les titres et les sous-titres pour passer rapidement d'une section à l'autre et pour mieux comprendre ou résumer le contenu.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -175,7 +175,7 @@ date_modified: 2019-04-11
         <li><strong>prévisible</strong>, afin que les utilisateurs sachent s'ils aimeront l'article complet  <em>avant </em>de cliquer (parce que les gens n'aiment pas retourner aux sites qui ne tiennent pas promesse).</li>
       </ul>
       <footer class="text-right">Nielsen Norman <span lang="en">Group</span><br>
-        <cite><a href="http://www.nngroup.com/articles/worlds-best-headlines-bbc-news/" rel="external"><span lang="en">World's Best Headlines: <abbr title="British Broadcasting Corporation">BBC</abbr> News</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/worlds-best-headlines-bbc-news/" rel="external"><span lang="en">World's Best Headlines: <abbr title="British Broadcasting Corporation">BBC</abbr> News</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
     <p>Des approches différentes s'appliquent à la rédaction destinée à l'impression et à la rédaction destinée au Web. Cela s'applique également aux en-têtes.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -191,7 +191,7 @@ date_modified: 2019-04-11
         </li>
       </ul>
       <footer class="text-right">Nielsen Norman <span lang="en">Group</span><br>
-        <cite><a href="http://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external">Writing Style for Print <abbr title="versus">vs.</abbr> Web (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external">Writing Style for Print <abbr title="versus">vs.</abbr> Web (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
     <div id="intranet-ia-info">
       <p>Sur l'intranet, les   étiquettes de menu et les en-têtes doivent être distincts et significatifs aux yeux des utilisateurs, étant centrés sur les sujets et les tâches plutôt que sur la structure organisationnelle.</p>
@@ -227,15 +227,15 @@ date_modified: 2019-04-11
     </div>
     <p><strong>Les hyperliens orientent les utilisateurs</strong> vers l'information qu'ils cherchent. Utilisez des hyperliens pour éviter de répéter des renseignements qui sont déjà clairement exprimés  sur une autre page ou pour renvoyer à des renseignements connexes, tels que des définitions, des renseignements à l'appui ou des renseignements généraux.</p>
     <p><strong>Utilisez le titre de la page cible en tant que texte de l'hyperlien</strong>. Les utilisateurs sont très confus si le texte du lien et le nom de la page ne correspondent pas. Dans les situations où vous devez modifier le texte du lien, tentez de le <strong>faire correspondre le plus étroitement possible</strong> au nom de la page.</p>
-    <p>Pour répondre aux exigences en matière d'accessibilité, indiquez  <strong>clairement la cible de chaque lien, sans contexte supplémentaire outre le texte du lien</strong>. Les utilisateurs de lecteur d'écran peuvent lire les pages en générant une liste de tous les liens sur la page, et, à l'aide de la touche de tabulation, passer d'un lien à l'autre sans aucun contexte  environnant. Si la formulation du lien ne résume pas clairement le contenu de la cible, cela peut porter à confusion les utilisateurs de lecteur d'écran. Voir  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#heading">Optimisez les en-têtes et les étiquettes de menu</a>. </p>
+    <p>Pour répondre aux exigences en matière d'accessibilité, indiquez  <strong>clairement la cible de chaque lien, sans contexte supplémentaire outre le texte du lien</strong>. Les utilisateurs de lecteur d'écran peuvent lire les pages en générant une liste de tous les liens sur la page, et, à l'aide de la touche de tabulation, passer d'un lien à l'autre sans aucun contexte  environnant. Si la formulation du lien ne résume pas clairement le contenu de la cible, cela peut porter à confusion les utilisateurs de lecteur d'écran. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#heading">Optimisez les en-têtes et les étiquettes de menu</a>. </p>
     <p>Si vous mentionnez plus d'une fois une autre page Web,  <strong>mettez en hyperlien la première mention seulement</strong>. Évitez d'insérer trop d'hyperliens dans un seul paragraphe. Un trop grand rapprochement des liens peut porter à confusion. Les utilisateurs ne sont pas toujours en mesure de déterminer où arrête un lien et où commence le suivant.</p>
-    <p>Les utilisateurs sont attirés vers les hyperliens et les suivent s'ils les voient. Puisque vous ne voulez pas que les utilisateurs passent outre le contenu de la page où ils se trouvent, <strong> ajoutez seulement un hyperlien vers les références qui peuvent aider les utilisateurs à accomplir leur tâche ou qui présentent des renseignements utiles à propos de la tâche.</strong> N'ajoutez pas d'hyperliens inutiles ou d'information non connexe. La présence de trop d'hyperliens est distrayante, et il devient difficile, pour les utilisateurs, de faire la distinction entre l'information qui est importante et celle qui ne l'est pas. Assurez-vous que les hyperliens acheminent les utilisateurs à la bonne page. Voir  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#scent">Créez des chemins d'information clairs</a> pour en savoir plus sur les hyperliens.</p>
+    <p>Les utilisateurs sont attirés vers les hyperliens et les suivent s'ils les voient. Puisque vous ne voulez pas que les utilisateurs passent outre le contenu de la page où ils se trouvent, <strong> ajoutez seulement un hyperlien vers les références qui peuvent aider les utilisateurs à accomplir leur tâche ou qui présentent des renseignements utiles à propos de la tâche.</strong> N'ajoutez pas d'hyperliens inutiles ou d'information non connexe. La présence de trop d'hyperliens est distrayante, et il devient difficile, pour les utilisateurs, de faire la distinction entre l'information qui est importante et celle qui ne l'est pas. Assurez-vous que les hyperliens acheminent les utilisateurs à la bonne page. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#scent">Créez des chemins d'information clairs</a> pour en savoir plus sur les hyperliens.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
     <p>Faites en sorte que les liens textuels soient assez longs pour être compris, mais assez courts pour réduire l'habillage au minimum.</p>
     <br>
     <footer class="text-right">
     <span lang="en"><abbr title="United States">U.S.</abbr> Health and Human Services, Standards and Usability  Guidelines</span><br>
-    <cite><a href="http://guidelines.usability.gov/guidelines/102" rel="external"><span lang="en">Use appropriate text link lengths</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite>
+    <cite><a href="https://guidelines.usability.gov/guidelines/102" rel="external"><span lang="en">Use appropriate text link lengths</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite>
     </footer></blockquote>
   </div>
   <h2 id="presentation"><span id="presentation-heading">Utilisez efficacement les éléments de mise en forme et de présentation</span></h2>
@@ -262,7 +262,7 @@ date_modified: 2019-04-11
       <li>Par ordre logique ou séquentiel</li>
       <li>Par ordre de priorité, d'importance ou de popularité</li>
     </ul>
-    <p>Si vous énumérez une série d'éléments  <strong>et que l'ordre est important, utilisez des chiffres plutôt que des puces</strong>. Énumérez les éléments en suivant une  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a> pour aider les utilisateurs à parcourir rapidement les listes.</p>
+    <p>Si vous énumérez une série d'éléments  <strong>et que l'ordre est important, utilisez des chiffres plutôt que des puces</strong>. Énumérez les éléments en suivant une  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a> pour aider les utilisateurs à parcourir rapidement les listes.</p>
     <p>En règle générale,  <strong>ne mettez pas les listes en ordre alphabétique</strong>. L'utilisateur peut ne pas être certain de la lettre qui correspond à l'information voulue. Mettez les listes en ordre alphabétique lorsque l'information est assortie à une convention d'appellation stable, comme dans le cas de noms de personnes ou de lieux.</p>
      <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>Pour rendre les listes uniformes, </strong>par souci d'harmonisation avec le  <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-fra.asp" rel="external">Guide de rédaction du contenu du site Canada.ca <span class="wb-inv"> (lien externe)</span></a> (la source qui fait actuellement autorité) et pour faciliter, pour les utilisateurs, le fait de parcourir rapidement des listes à des tailles d'écran et des résolutions différentes :</p>
      <ul>
@@ -300,7 +300,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Les utilisateurs accordent une attention soutenue aux photos et aux autres images qui comportent des renseignements pertinents, mais ils passent outre les images légères qui servent à « animer » des pages Web.</p>
       <footer class="text-right">Nielsen Norman <span lang="en">Group</span><br>
-        <cite><a href="http://www.nngroup.com/articles/photos-as-web-content/" rel="external"><span lang="en">Photos as Web Content</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/photos-as-web-content/" rel="external"><span lang="en">Photos as Web Content</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
   </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Les bonnes images expliquent un concept, évoquent un sentiment, transmettent de l'information et enrichissent l'expérience globale des gens sur un site. Les mauvaises images sont un gaspillage d'espace, les utilisateurs les passent outre et, pire encore, elles portent à confusion.</p>
@@ -352,7 +352,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Le codage par couleurs permet aux utilisateurs de parcourir rapidement les éléments et d'y percevoir rapidement les modèles et les liens. Les éléments de même couleur seront considérés comme liés les uns aux autres, tandis que les éléments présentant des différences de couleur bien visibles seront considérés comme différents. </p>
       <footer class="text-right">Health and Human Services Department.gov<br>
-        <cite><a href="http://guidelines.usability.gov/guidelines/185" rel="external"><span lang="en">Standards and usability guidelines</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://guidelines.usability.gov/guidelines/185" rel="external"><span lang="en">Standards and usability guidelines</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
   <h3 id="font"><span id="font-heading">Police</span></h3>
@@ -366,7 +366,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> N'écrivez pas tout en majuscules</li>
       </ul>
     </div>
-    <p>Sur le Web, 90 % de l'information se trouve sous forme de langage écrit et est présentée à l'aide de polices. La police a un effet sur la <strong>vitesse et le degré d'aisance</strong> avec lesquels les utilisateurs comprennent et lisent le contenu. Voir aussi <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#colour">Couleur</a>.</p>
+    <p>Sur le Web, 90 % de l'information se trouve sous forme de langage écrit et est présentée à l'aide de polices. La police a un effet sur la <strong>vitesse et le degré d'aisance</strong> avec lesquels les utilisateurs comprennent et lisent le contenu. Voir aussi <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#colour">Couleur</a>.</p>
     <p>Lorsque vous choisissez des polices, suivez les principes suivants :</p>
     <ul>
       <li><strong>N'utilisez pas plus de 3 polices et de 3 couleurs </strong>dans un seul site Web.

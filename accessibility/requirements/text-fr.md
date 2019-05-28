@@ -20,7 +20,7 @@ date_modified: 2019-04-11
 			</div>
 			<div class="panel-body">
 				<ul class="list-unstyled">
-					<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></li>
+					<li><a href="https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/visual-audio-contrast-contrast.html" rel="external">1.4.3 Contrast (Minimum)</a></li>
 				</ul>
 			</div>
 		</div>
@@ -37,10 +37,10 @@ date_modified: 2019-04-11
 		<p>Colour contrast is a ratio calculated using a text's foreground colour against its background colour with <a href="#links">free software tools</a>.</p>
 		<ul>
 			<li>
-				<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>4.5:1</strong> minimum color contrast ratio</a> is required for all text.</p>
+				<p><a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>4.5:1</strong> minimum color contrast ratio</a> is required for all text.</p>
 			</li>
 			<li>
-				<p><a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>3:1</strong> minimum color contrast ratio</a> may be used for large text which is at least 18 <a href="#pts">points</a> (or 14 <a href="#pts">points</a> <strong>if bolded)</strong></p>
+				<p><a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18" rel="external"><strong>3:1</strong> minimum color contrast ratio</a> may be used for large text which is at least 18 <a href="#pts">points</a> (or 14 <a href="#pts">points</a> <strong>if bolded)</strong></p>
 			</li>
 		</ul>
 		<div class="alert alert-info mrgn-tp-lg">

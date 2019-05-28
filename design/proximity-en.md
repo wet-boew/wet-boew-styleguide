@@ -136,13 +136,13 @@ date_modified: 2019-04-11
     <p>Put things that are related close together, and space things that need to be seen as separate.</p>
     <p>We can apply the principle of proximity in reverse: elements that are spaced apart from each other are seen as separate. </p>
      <footer class="text-right">Formulate Information Design<br>
-      <cite><a href="http://www.formulate.com.au/blog/perception-5-proximity" >Perception and the design of forms — Part 5: Proximity</a></cite></footer>
+      <cite><a href="https://www.formulate.com.au/blog/perception-5-proximity" >Perception and the design of forms — Part 5: Proximity</a></cite></footer>
   </blockquote>
   <blockquote>
     <p>The principle of proximity calls for related items to be grouped visually, creating less clutter and making for a more organized layout. Items unrelated to each other should be placed further apart, to emphasize their lack of relationship.</p>
     <p>Using white space effectively and grouping related elements are critical to giving your website a clear visual hierarchy.</p>
     <footer class="text-right">Louis Lazaris<br>
-      <cite><a href="http://www.webdesignerdepot.com/2010/01/the-principle-of-proximity-in-web-design/" >The Principle of Proximity in Web Design </a></cite></footer>
+      <cite><a href="https://www.webdesignerdepot.com/2010/01/the-principle-of-proximity-in-web-design/" >The Principle of Proximity in Web Design </a></cite></footer>
   </blockquote>
 {% endraw %}
 {:/}

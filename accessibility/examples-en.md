@@ -91,7 +91,7 @@ date_modified: 2019-04-11
 				<textarea name="comments" cols="65" rows="3" id="comments"></textarea>
 			</div>
 			<h3>Required data, format, and values</h3>
-			<p>See the <a href="http://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html">form validation</a> project.</p>
+			<p>See the <a href="https://wet-boew.github.io/v4.0-ci/demos/formvalid/formvalid-en.html">form validation</a> project.</p>
 			<h3>Search box</h3>
 			<form class="form-inline" role="form">
 				<div class="form-group">
@@ -102,17 +102,17 @@ date_modified: 2019-04-11
 			</form>
 			<div class="alert alert-info">
 				<h3 class="mrgn-tp-0">Example</h3>
-				<img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor.gif" alt="">
+				<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor.gif" alt="">
 			</div>
 		</div>
 		<div class="alert alert-info">
 			<h3 class="mrgn-tp-0">Example</h3>
-			<img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg" alt="The RCMP musical ride performing, an example of a simple image">
+			<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg" alt="The RCMP musical ride performing, an example of a simple image">
 		</div>
 	</div>
 	<div class="alert alert-info">
 		<h3 class="mrgn-tp-0">Examples</h3>
-		<img src="http://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-cplx.jpg" alt="A bar graph, pie chart, and flow chart, which are all examples of complex images.">
+		<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-cplx.jpg" alt="A bar graph, pie chart, and flow chart, which are all examples of complex images.">
 	</div>
 </div>
 {% endraw %}

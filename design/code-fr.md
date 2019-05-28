@@ -143,8 +143,8 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires </h4>
   <p>Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-fr.html" ><span lang="en-ca" xml:lang="en-ca">Code prettify</span></a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-fr.html" ><span lang="en-ca" xml:lang="en-ca">Code prettify</span></a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

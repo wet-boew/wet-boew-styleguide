@@ -79,7 +79,7 @@ date_modified: 2019-04-11
 			<p>The term accessibility can be understood to mean accommodating characteristics a person cannot change.</p>
 			<p class="text-right">
 				-Joe Clark<br>
-				Author of <a href="http://joeclark.org/book/?ALA"><em>Building Accessible Websites</em></a>
+				Author of <a href="https://joeclark.org/book/?ALA"><em>Building Accessible Websites</em></a>
 			</p>
 		</blockquote>
 		<blockquote>

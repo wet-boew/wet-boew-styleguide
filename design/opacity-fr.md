@@ -54,21 +54,21 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Apparence</h5>
           <p>Défaut :</p>
           <div class="row mrgn-bttm-md">
-            <div class="col-sm-4"><img class="img-responsive" src="http://placehold.it/140x140" alt="Image par défaut, un carré gris"></div>
+            <div class="col-sm-4"><img class="img-responsive" src="https://placehold.it/140x140" alt="Image par défaut, un carré gris"></div>
           </div>
           <p>Avec l'opacité :</p>
           <div class="row">
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-100"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-90"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-80"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-100"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-90"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-80"></div>
             <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-70</code></p>
-              <img class="opct-70 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-70"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-60"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-50"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-40"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-30"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-20"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Démonstration d'opct-10"></div>
+              <img class="opct-70 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-70"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-60"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-50"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-40"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-30"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-20"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Démonstration d'opct-10"></div>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ date_modified: 2019-04-11
         <li>Utilisez <code>.opct-100</code> lorsqu'il faut une apparition en fondu à 100 % ou une disparition en fondu de 100 %</li>
         <li>Assurez-vous que la nouvelle couleur de texte plus claire répond toujours aux exigences d'accessibilité relatives au contraste des couleurs
               <ul>
-            <li>La ressource <a href="http://webaim.org/resources/contrastchecker/" rel="external">Color Contrast Checker (disponible en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a> permet de valider la conformité des couleurs</li>
+            <li>La ressource <a href="https://webaim.org/resources/contrastchecker/" rel="external">Color Contrast Checker (disponible en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a> permet de valider la conformité des couleurs</li>
             <li>L'opacité touche l'élément au complet et tout ce qui se trouve à l'intérieur</li>
           </ul>
         </li>

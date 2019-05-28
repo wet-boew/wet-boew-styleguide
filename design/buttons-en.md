@@ -1035,6 +1035,6 @@ date_modified: 2019-04-11
     <li><a class="btn btn-default" href="pagination-en.html">Pagination</a></li>
     <li><a class="btn btn-default" href="icons-en.html">Icons</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

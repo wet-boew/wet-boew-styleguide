@@ -122,7 +122,7 @@ date_modified: 2019-04-11
       <div class="panel panel-default">
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
-          <img src="http://placehold.it/140x140" class="img-rounded center-block" alt="Une image de paramètre fictif carré dont les coins sont arrondis" /></div>
+          <img src="https://placehold.it/140x140" class="img-rounded center-block" alt="Une image de paramètre fictif carré dont les coins sont arrondis" /></div>
       </div>
     </div>
     <div class="col-md-5">
@@ -183,6 +183,6 @@ date_modified: 2019-04-11
       <pre><code>&lt;p <strong>class=&quot;text-right&quot;</strong>&gt;...&lt;/p&gt;</code></pre>
     </div>
   </div>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page provient de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page provient de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

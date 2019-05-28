@@ -77,7 +77,7 @@ date_modified: 2019-04-11
         <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
         <p>Compliance point(s):</p>
         <ul>
-          <li>Do not use this styling if the content is confined to a <code>.container</code>, use <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/wells-en.html">wells</a> instead </li>
+          <li>Do not use this styling if the content is confined to a <code>.container</code>, use <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/wells-en.html">wells</a> instead </li>
 		  <li>Do not use in place of more effective ways to showcase content, such as alerts, images, carousel, lead in statements, and so forth</li>
           <li>Do not use this component in a way that conflicts with the preceding compliance point(s)</li>
         </ul>
@@ -94,6 +94,6 @@ date_modified: 2019-04-11
   <h4 id="full"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-expand fa-stack-1x fa-inverse"></span></span> Full width</h4>
 <p> To make the jumbotron full width, and without rounded corners, place it outside all <code>.container</code>s. Instead add a <code>.container</code> within.</p>
   </section>
-  <p class="mrgn-tp-lg">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" rel="external">Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}
