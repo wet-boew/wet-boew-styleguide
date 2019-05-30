@@ -25,7 +25,7 @@ date_modified: 2019-04-11
 <li>Solutions destinées à prendre en charge les anciens navigateurs avec des fonctions natives des navigateurs modernes (afficher et cacher, barre de progrès et ainsi de suite)</li>
 <li>Fonctions visant à améliorer la fonctionnalité d'une page (Ajax, expiration de la  session et ainsi de suite)</li>
 </ul>
-<p class="mrgn-bttm-lg">Consultez : <a href="http://wet-boew.github.io/v4.0-ci/demos/index-fr.html">Exemples pratiques</a> pour plus de détails. </p>
+<p class="mrgn-bttm-lg">Consultez : <a href="https://wet-boew.github.io/v4.0-ci/demos/index-fr.html">Exemples pratiques</a> pour plus de détails. </p>
 
 <form class="wb-tables-filter" data-bind-to="designlayout">
 <div class="row">
@@ -156,7 +156,7 @@ date_modified: 2019-04-11
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-ajax/data-ajax-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Ajax</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-ajax/data-ajax-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Ajax</a></td>
 <td><p>L'utiliser pour permettre à des parties d'une page Web d'être chargées ou mises à jour sur une seconde page Web (réutilisation de contenu). </p></td>
 <td class="text-muted small">Balises : Technologie, Dynamique</td>
 <td><hr class="mrgn-tp-0">
@@ -207,7 +207,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 <td class="text-muted small">Balises : Position</td>
 <td><hr class="mrgn-tp-0">
 <p class="text-left"><span class="glyphicon glyphicon-align-left"></span> Texte aligné à gauche</p>
-<p class="text-center"><span class="glyphicon glyphicon-align-center"></span> Texte ou image alignés au centre <img alt="Image substituable carrée générique aux coins arrondis" class="img-rounded center-block" src="http://placehold.it/200x40"></p>
+<p class="text-center"><span class="glyphicon glyphicon-align-center"></span> Texte ou image alignés au centre <img alt="Image substituable carrée générique aux coins arrondis" class="img-rounded center-block" src="https://placehold.it/200x40"></p>
 <p class="text-right"><span class="glyphicon glyphicon-align-right"></span> Texte aligné à droite</p></td>
 <td>Style CSS</td>
 <td>Structure et mise en forme</td>
@@ -215,7 +215,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/archived/archived-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Information archivée</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/archived/archived-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Information archivée</a></td>
 <td>L'utiliser pour aider les utilisateurs à déterminer les pages Web qui ont été archivées en ligne.</td>
 <td class="text-muted small">Balises : Contenu superposé, Invisible, Visible, Montrer, Caché, Fermer, Sortir</td>
 <td><hr class="mrgn-tp-0">
@@ -309,7 +309,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/cal-events/cal-events-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Calendrier d'événements</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/cal-events/cal-events-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Calendrier d'événements</a></td>
 <td><p>Utilisez l'interface du calendrier d'événements pour explorer une liste chronologique d'événements.</p></td>
 <td class="text-muted small">Balises : Tableaux</td>
 <td><hr class="mrgn-tp-0">
@@ -321,7 +321,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Carrousel</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Carrousel</a></td>
 <td><p>Utiliser un carrousel pour parcourir des éléments de contenu à l'aide d'onglets ou passer d'un élément à l'autre  dans un format de diaporama.</p></td>
 <td class="text-muted small">Balises : Onglets, Invisible, Montrer, Cacher, Visible, Images, Barre de défilement, Liens, Détails, Sommaire, Afficher </td>
 <td><hr class="mrgn-tp-0">
@@ -333,7 +333,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Graphiques</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Graphiques</a></td>
 <td><p>Les utiliser pour générer dynamiquement des graphiques à partir d'un tableau.</p></td>
 <td class="text-muted small">Balises : Tableaux</td>
 <td><hr class="mrgn-tp-0">
@@ -360,7 +360,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Code « <span lang="en">prettify</span> »</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Code « <span lang="en">prettify</span> »</a></td>
 <td><p>L'utiliser pour fournir une syntaxe et mettre en surbrillance des extraits de code source dans une page <abbr title="Langage hypertexte">HTML</abbr>. </p></td>
 <td class="text-muted small">Balises : Codage</td>
 <td><hr class="mrgn-tp-0">
@@ -399,8 +399,8 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/country-content/country-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Identificateur de pays</a></td>
-<td><p>Utilisez un identificateur de pays, un enveloppeur simple pour AjaxLoader, afin d'insérer du contenu téléchargé via Ajax, selon le pays d'un visiteur (déterminé par <a href="http://freegeoip.net" rel="external"><span lang="en">Free Geo <abbr title="Protocole Internet">IP</abbr></span> (disponible en anglais seulement)<span class="wb-inv"> (lien externe)</span></a>).</p></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/country-content/country-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Identificateur de pays</a></td>
+<td><p>Utilisez un identificateur de pays, un enveloppeur simple pour AjaxLoader, afin d'insérer du contenu téléchargé via Ajax, selon le pays d'un visiteur (déterminé par <a href="https://freegeoip.net" rel="external"><span lang="en">Free Geo <abbr title="Protocole Internet">IP</abbr></span> (disponible en anglais seulement)<span class="wb-inv"> (lien externe)</span></a>).</p></td>
 <td class="text-muted small">Balises : Lieu</td>
 <td><hr class="mrgn-tp-0">
 <p><span class="glyphicon glyphicon-eye-close"></span> Aucune prévisualisation rapide n'est disponible.<br>
@@ -411,7 +411,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-inview/data-inview-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data inview</span></a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-inview/data-inview-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data inview</span></a></td>
 <td><p>Utilisez <span lang="en">Data inview</span> pour afficher une superposition lorsqu'une section se déplace en dehors de l'espace d'affichage.</p></td>
 <td class="text-muted small">Balises : Contenu superposé, Invisible, Visible, Montrer, Caché, Fermer, Sortir</td>
 <td><hr class="mrgn-tp-0">
@@ -423,7 +423,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data picture</span></a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Data picture</span></a></td>
 <td><p>L'utiliser pour permettre à une page Web de préciser des sources d'images différentes à afficher, selon les requêtes de médias.</p></td>
 <td class="text-muted small">Balises : Images</td>
 <td><hr class="mrgn-tp-0">
@@ -435,7 +435,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">DataTables</span></a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">DataTables</span></a></td>
 <td><p>L'utiliser pour enrichir un tableau de données et permettre le tri, le filtrage, la recherche, la pagination et d'autres fonctions du genre.</p></td>
 <td class="text-muted small">Balises : Paginer</td>
 <td><hr class="mrgn-tp-0">
@@ -447,7 +447,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique)</a></td>
 <td><p>L'utiliser pour ajouter une fonction de saisie automatique à des zones de saisie particulières; affiche dynamiquement une liste de mots qui correspondent à un élément « <span lang="en">datalist</span> ». </p></td>
 <td class="text-muted small">Balises : Formulaires</td>
 <td><hr class="mrgn-tp-0">
@@ -478,7 +478,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-dynamic-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique) − Dynamique</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-dynamic-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0"><span lang="en">Datalist</span> (saisie automatique) − Dynamique</a></td>
 <td><p>L'utiliser pour mettre à jour le contenu d'un élément « <span lang="en">datalist</span> » de façon dynamique, selon la saisie de l'utilisateur.</p></td>
 <td class="text-muted small">Balises : Formulaires</td>
 <td><hr class="mrgn-tp-0">
@@ -490,7 +490,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Sélecteur de date</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Sélecteur de date</a></td>
 <td><p>L'utiliser pour fournir une interface permettant de sélectionner une date dans un formulaire. </p></td>
 <td class="text-muted small">Balises : Saisie, Formulaires</td>
 <td><hr class="mrgn-tp-0">
@@ -502,8 +502,8 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/dismissable-content/dismissable-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu écartable</a></td>
-<td>L'utiliser pour rendre du contenu écartable par les utilisateurs. Il ne s'agit pas de la même chose que la fonction <a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-fr.html">Afficher/masquer</a>, puisque le contenu disparaît jusqu'à ce que l'utilisateur supprime les témoins de son navigateur.</td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/dismissable-content/dismissable-content-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu écartable</a></td>
+<td>L'utiliser pour rendre du contenu écartable par les utilisateurs. Il ne s'agit pas de la même chose que la fonction <a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-fr.html">Afficher/masquer</a>, puisque le contenu disparaît jusqu'à ce que l'utilisateur supprime les témoins de son navigateur.</td>
 <td class="text-muted small">Balises : Visible, Invisible, Montrer, Cacher, </td>
 <td><hr class="mrgn-tp-0">
 <p class="wb-dismissable">Contenu écartable A</p>
@@ -516,7 +516,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Égalisation (égalisation des hauteurs)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Égalisation (égalisation des hauteurs)</a></td>
 <td><p>L'utiliser pour appliquer la même hauteur à des cellules de grille. Fait en sorte que les éléments intérieurs (panneaux, <span lang="en">wells</span> et ainsi de suite) héritent de la hauteur de la grille parent. </p></td>
 <td class="text-muted small">Balises : Panneaux, <span lang="en">Wells</span>, Bordures</td>
 <td><hr class="mrgn-tp-0">
@@ -549,7 +549,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Agrandir et dissimuler « affichable/masquable  »</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Agrandir et dissimuler « affichable/masquable  »</a></td>
 <td><p>L'utiliser pour créer des widgets affichages et masquables repliables qu'un utilisateur peut sélectionner pour montrer ou cacher du contenu. </p></td>
 <td class="text-muted small">Balises : Basculer, Liens</td>
 <td><hr class="mrgn-tp-0">
@@ -573,7 +573,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/favicon/favicon-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Favoricône</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/favicon/favicon-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Favoricône</a></td>
 <td>Utilisez ce plugiciel pour avoir la capacité d'ajouter et de mettre à jour un favoricône pour une page Web.</td>
 <td class="text-muted small">Balises : Branding</td>
 <td><hr class="mrgn-tp-0">
@@ -585,7 +585,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feedback/feedback-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Formulaire de rétroaction</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/feedback/feedback-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Formulaire de rétroaction</a></td>
 <td>Utilisez cette composante pour permettre aux utilisateurs de soumettre leur rétroaction sur une  page Web particulière ou sur le site Web en général.</td>
 <td class="text-muted small">Balises : Formulaires, Saisie, Soumettre</td>
 <td><hr class="mrgn-tp-0">
@@ -597,7 +597,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fils de syndication</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fils de syndication</a></td>
 <td><p>Utilisez un widget de fil de syndication pour regrouper et afficher les entrées d'un ou plusieurs fils de syndication sur une page Web. Les formats pris en charge sont Atom, <abbr title="syndication vraiment simple (R S S)">RSS</abbr> et Media <abbr title="syndication vraiment simple (R S S)">RSS</abbr>.</p></td>
 <td class="text-muted small">Balises : Listes, Liens</td>
 <td><hr class="mrgn-tp-0">
@@ -621,7 +621,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/footnotes/footnotes-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Notes de bas de page</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/footnotes/footnotes-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Notes de bas de page</a></td>
 <td><p>Utilisez une note de bas de page pour indiquer une référence, une citation ou un commentaire qui expose des détails à propos de quelque chose sur cette page. Il s'agit de contenu non critique qui se rapporte au texte principal, et il figure toujours en bas de page. </p></td>
 <td class="text-muted small">Balises : Liens</td>
 <td><hr class="mrgn-tp-0">
@@ -664,7 +664,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validation des formulaires</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validation des formulaires</a></td>
 <td>L'utiliser pour fournir des messages de validation et d'erreur génériques qui portent sur les formulaires Web. </td>
 <td class="text-muted small">Balises : Saisie, Étiquette, Bouton, Soumettre, Validation</td>
 <td class="mrgn-bttm-xl"><hr class="mrgn-tp-0">
@@ -685,7 +685,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/geomap/geomap-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Géocarte</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/geomap/geomap-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Géocarte</a></td>
 <td><p>Utilisez une géocarte pour afficher une carte dynamique et superposer de l'information venant de sources supplémentaires. </p></td>
 <td class="text-muted small">Balises : Emplacement, Dynamique </td>
 <td><hr class="mrgn-tp-0">
@@ -766,9 +766,9 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 <td class="text-muted small">Balises : Miniatures, Réactif, Photos </td>
 <td><hr class="mrgn-tp-0">
 <div class="row">
-<div class="col-sm-4"> <img alt="Image substituable générique carrée aux coins arrondis" class="img-rounded img-responsive" src="http://placehold.it/140x140"></div>
-<div class="col-sm-4"> <img alt="Image substituable générique carrée où seule la partie du cercle qui entoure le carré est visible" class="img-circle img-responsive" src="http://placehold.it/140x140"></div>
-<div class="col-sm-4"> <img alt="Image substituable générique carrée avec une bordure blanche, ce qui la fait ressembler à une photo prise avec un vieil appareil-photo à développement instantané" class="img-thumbnail img-responsive" src="http://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="Image substituable générique carrée aux coins arrondis" class="img-rounded img-responsive" src="https://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="Image substituable générique carrée où seule la partie du cercle qui entoure le carré est visible" class="img-circle img-responsive" src="https://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="Image substituable générique carrée avec une bordure blanche, ce qui la fait ressembler à une photo prise avec un vieil appareil-photo à développement instantané" class="img-thumbnail img-responsive" src="https://placehold.it/140x140"></div>
 </div></td>
 <td>Style CSS</td>
 <td>Effets de base</td>
@@ -886,7 +886,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">MathML</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">MathML</a></td>
 <td><p>L'utiliser pour afficher des formules mathématiques (et non des  <a href="variables-fr.html">variables</a> dans une phrase) à l'aide de MathML.</p></td>
 <td class="text-muted small">Balises : Calculs</td>
 <td><hr class="mrgn-tp-0">
@@ -967,7 +967,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/meter/meter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Meter</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/meter/meter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Meter</a></td>
 <td><p>L'utiliser pour afficher une valeur dans une gamme lorsqu'il y a une valeur minimale et une valeur maximale connues (par exemple, la hauteur de quelque chose). </p></td>
 <td class="text-muted small">Balises : Couleur, Alertes, Barre de progrès</td>
 <td><hr class="mrgn-tp-0">
@@ -988,7 +988,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fenêtre modale (lightbox)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Fenêtre modale (lightbox)</a></td>
 <td><p>Utilisez une fenêtre modale pour de l'information qui reste devant la fenêtre originale. </p></td>
 <td class="text-muted small">Balises : Liens, Boutons, Invisible, Montrer, Cacher, Visible, Fermer, Sortir</td>
 <td><hr class="mrgn-tp-0">
@@ -1008,7 +1008,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/multimedia/multimedia-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Lecteur multimédia</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/multimedia/multimedia-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Lecteur multimédia</a></td>
 <td><p>L'utiliser pour fournir un lecteur multimédia accessible afin d'intégrer du contenu vidéo et audio à des pages Web.</p></td>
 <td class="text-muted small">Balises : Vidéo, Audio, YouTube</td>
 <td><hr class="mrgn-tp-0">
@@ -1025,15 +1025,15 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 <td class="text-muted small">Balises : Images</td>
 <td><hr class="mrgn-tp-0">
 <div class="row">
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-100 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-100"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-90 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-90"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-80 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-80"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-70 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-70"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-60 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-60"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-50 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-50"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-40 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-40"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-30 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-30"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-20 img-responsive" src="http://placehold.it/140x140" alt="Démonstration d'opct-20"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-100 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-100"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-90 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-90"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-80 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-80"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-70 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-70"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-60 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-60"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-50 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-50"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-40 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-40"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-30 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-30"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-20 img-responsive" src="https://placehold.it/140x140" alt="Démonstration d'opct-20"></div>
 </div></td>
 <td>Style CSS</td>
 <td>Effets de base</td>
@@ -1041,7 +1041,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu superposé</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Contenu superposé</a></td>
 <td><p>L'utiliser pour positionner un élément devant un autre. </p></td>
 <td class="text-muted small">Balises : Liens, Boutons, Invisible, Montrer, Cacher, Visible, Fermer, Sortir</td>
 <td><hr class="mrgn-tp-0">
@@ -1151,7 +1151,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/progress/progress-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre de progrès</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/progress/progress-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre de progrès</a></td>
 <td><p>L'utiliser pour afficher les progrès d'une tâche.</p></td>
 <td class="text-muted small">Balises : Couleur, Alertes, Meter</td>
 <td><hr class="mrgn-tp-0">
@@ -1203,7 +1203,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Expiration de la session</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Expiration de la session</a></td>
 <td><p>L'utiliser pour offrir une fonctionnalité d'expiration de session et d'expiration en raison de l'inactivité.</p></td>
 <td class="text-muted small">Balises : Fermer, Sortir</td>
 <td><hr class="mrgn-tp-0">
@@ -1215,7 +1215,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/share/share-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Widget partager</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/share/share-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Widget partager</a></td>
 <td>L'utiliser pour permettre aux utilisateurs de partager rapidement du contenu avec leurs réseaux.</td>
 <td class="text-muted small">Balises : Liens, Icônes, Twitter, YouTube</td>
 <td><hr class="mrgn-tp-0">
@@ -1246,7 +1246,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/slider/slider-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre coulissante (gamme)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/slider/slider-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Barre coulissante (gamme)</a></td>
 <td><p>L'utiliser pour afficher une barre coulissante. </p></td>
 <td class="text-muted small">Balises : Saisie</td>
 <td><hr class="mrgn-tp-0">
@@ -1257,7 +1257,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validateur de tableau</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Validateur de tableau</a></td>
 <td><p>Utilisez cet outil d'édition Web pour produire des tableaux qui se conforment à Règles pour l'accessibilité des contenus Web 2.0. Cet outil contribue à déterminer les erreurs de relations dans un tableau complexe.</p></td>
 <td class="text-muted small">Balises : Validation</td>
 <td><hr class="mrgn-tp-0">
@@ -1281,7 +1281,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Onglets</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Onglets</a></td>
 <td><p>Les utiliser pour montrer plusieurs aspects d'éléments de contenu connexes dans des panneaux différents, côte à côte.</p></td>
 <td class="text-muted small">Balises : Invisible, Montrer, Cacher, Visible, Liens Détails, Sommaire, Afficher</td>
 <td><hr class="mrgn-tp-0">
@@ -1323,7 +1323,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/texthighlight/texthighlight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Mise en surbrillance de texte</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/texthighlight/texthighlight-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Mise en surbrillance de texte</a></td>
 <td>L'utiliser pour mettre du texte en surbrillance dans une section prédéfinie qui correspond à des critères de recherche non sensibles à la casse, précisés dans la chaîne de requête de l'<abbr title="localisateur uniforme de ressource (U R L)">URL</abbr>.</td>
 <td class="text-muted small">Balises : Couleur</td>
 <td><hr class="mrgn-tp-0">
@@ -1335,7 +1335,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-fr.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Base</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-fr.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Base</a></td>
 <td>Utilisez le modèle de thème de base pour faciliter la création de nouveaux thèmes.</td>
 <td class="text-muted small">Balises : Core</td>
 <td><hr class="mrgn-tp-0">
@@ -1347,7 +1347,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Canada.ca</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Canada.ca</a></td>
 <td>Utilisez le modèle de thème du Canada.ca pour répondre aux exigences en matière de mise en page et de mise en forme pour les pages Canada.ca.</td>
 <td class="text-muted small">Balises : Gouvernement du Canada</td>
 <td><hr class="mrgn-tp-0">
@@ -1359,7 +1359,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Intranet du gouvernement du Canada</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Intranet du gouvernement du Canada</a></td>
 <td>Utilisez le modèle de thème d'intranet du gouvernement du Canada pour adapter le thème de convivialité du gouvernement du Canada aux sites intranet.</td>
 <td class="text-muted small">Balises : Gouvernement du Canada</td>
 <td><hr class="mrgn-tp-0">
@@ -1371,7 +1371,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Plate-forme de gouvernement ouvert (<abbr title="Plate-forme de gouvernement ouvert">PGO</abbr>)</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Plate-forme de gouvernement ouvert (<abbr title="Plate-forme de gouvernement ouvert">PGO</abbr>)</a></td>
 <td>Utilisez le modèle de la Plate-forme de gouvernement ouvert (<abbr title="Plate-forme de gouvernement ouvert">PGO</abbr>) pour prendre en charge le thème de la <abbr title="Plate-forme de gouvernement ouvert">PGO</abbr>.</td>
 <td class="text-muted small">Balises : India, États-Unis</td>
 <td><hr class="mrgn-tp-0">
@@ -1383,7 +1383,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/theme/index-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Boîte à outils de l'expérience Web (<abbr title="Boîte à outils de l'expérience Web">BOEW</abbr>)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/theme/index-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Thème : Boîte à outils de l'expérience Web (<abbr title="Boîte à outils de l'expérience Web">BOEW</abbr>)</a></td>
 <td>Utilisez le modèle du thème de la Boîte à outils de l'expérience Web pour donner un exemple d'un thème de base mis en œuvre.</td>
 <td class="text-muted small">Balises : Core </td>
 <td><hr class="mrgn-tp-0">
@@ -1395,20 +1395,20 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Galerie de miniatures et de photos  (lightbox)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Galerie de miniatures et de photos  (lightbox)</a></td>
 <td><p>L'utiliser pour afficher des images dans une  lightbox, individuellement ou dans le cadre d'une galerie.</p></td>
 <td class="text-muted small">Balises : Images, Invisible, Montrer, Cacher,   Visible, Liens</td>
 <td><hr class="mrgn-tp-0">
 <p>Une image</p>
 <div class="row">
-<div class="col-sm-4"> <a class="wb-lbx" href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_b.jpg" title="Image 1"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_s.jpg" alt="Image 1" class="thumbnail img-responsive" /> </a></div>
+<div class="col-sm-4"> <a class="wb-lbx" href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_b.jpg" title="Image 1"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_s.jpg" alt="Image 1" class="thumbnail img-responsive" /> </a></div>
 </div>
 <p>Galerie</p>
 <section class="wb-lbx lbx-gal">
 <div class="row">
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_b.jpg" title="Image 1"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_s.jpg" alt="Image 1" class="img-responsive img-thumbnail" /> </a> </div>
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_b.jpg" title="Image 2"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_s.jpg" alt="Image 2" class="img-responsive img-thumbnail" /> </a></div>
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_b.jpg" title="Image 3"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_s.jpg" alt="Image 3" class="img-responsive img-thumbnail" /> </a> </div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_b.jpg" title="Image 1"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_s.jpg" alt="Image 1" class="img-responsive img-thumbnail" /> </a> </div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_b.jpg" title="Image 2"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_s.jpg" alt="Image 2" class="img-responsive img-thumbnail" /> </a></div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_b.jpg" title="Image 3"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_s.jpg" alt="Image 3" class="img-responsive img-thumbnail" /> </a> </div>
 </div>
 </section></td>
 <td>Plugiciels</td>
@@ -1417,7 +1417,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Basculer</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Basculer</a></td>
 <td>L'utiliser pour faire basculer des éléments entre les états activé et désactivé, avec une seule section de développée à la fois, la section précédente se repliant automatiquement.</td>
 <td class="text-muted small">Balises : Afficher, Cacher,  Visible, Invisible, Montrer, Cacher, Accordéon </td>
 <td><hr class="mrgn-tp-0">
@@ -1447,7 +1447,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions</a></td>
 <td><p>Les utiliser pour créer une transition de contenu avec des états facultatifs (apparition et disparition en fondu, glissement à droite ou glissement à gauche). </p></td>
 <td class="text-muted small">Balises : Effets</td>
 <td><hr class="mrgn-tp-0">
@@ -1459,7 +1459,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/twitter/twitter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Chronologie intégrée Twitter</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/twitter/twitter-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Chronologie intégrée Twitter</a></td>
 <td><p>L'utiliser pour mettre en oeuvre et intégrer des chronologies Twitter.</p></td>
 <td class="text-muted small">Balises : Widget Partager</td>
 <td><hr class="mrgn-tp-0">
@@ -1570,7 +1570,7 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Zébrures (technique avancée)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Zébrures (technique avancée)</a></td>
 <td><p>L'utiliser afin de fournir des rayures blanches et grises de remplacement pour des rangées de tableau dans des directions horizontales ou multiples. Cela contribue à relier visuellement des données horizontales à des données verticales.</p></td>
 <td class="text-muted small">Balises : Tables</td>
 <td><hr class="mrgn-tp-0">

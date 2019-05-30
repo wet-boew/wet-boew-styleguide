@@ -88,7 +88,7 @@ date_modified: 2019-04-11
       <pre>&lt;progress value=&quot;22&quot; max=&quot;100&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;22 %&lt;/span&gt;&lt;/progress&gt;
 &lt;progress value=&quot;198&quot; max=&quot;300&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;66 %&lt;/span&gt;&lt;/progress&gt;
 &lt;progress value=&quot;500&quot; max=&quot;500&quot;&gt;&lt;span class=&quot;wb-inv&quot;&gt;100 %&lt;/span&gt;&lt;/progress&gt;</pre>
-<p>Faites référence à <a href="http://wet-boew.github.io/v4.0-ci/demos/progress/progress-fr.html">Correctif « progress »</a> pour des options supplémentaires.</p>
+<p>Faites référence à <a href="https://wet-boew.github.io/v4.0-ci/demos/progress/progress-fr.html">Correctif « progress »</a> pour des options supplémentaires.</p>
       </div>
     </div>
  <h4 id="meter">Compteur</h4>
@@ -135,10 +135,10 @@ date_modified: 2019-04-11
         <h5 class="mrgn-tp-0">Code</h5>
       <pre>&lt;meter value=&quot;3&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;3 sur 10&lt;/meter&gt;
 &lt;meter value=&quot;0.7&quot;&gt;70 %&lt;/meter&gt;</pre>
-<p>Faites référence à <a href="http://wet-boew.github.io/v4.0-ci/demos/meter/meter-en.html">Correctif «&nbsp;meter&nbsp;»</a> pour des options supplémentaires.</p>
+<p>Faites référence à <a href="https://wet-boew.github.io/v4.0-ci/demos/meter/meter-en.html">Correctif «&nbsp;meter&nbsp;»</a> pour des options supplémentaires.</p>
       </div>
     </div>
   </section>
-  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

@@ -55,7 +55,7 @@ date_modified: 2019-04-11
           <div class="panel-body">
             <h5 class="mrgn-tp-0 h5">Apparence</h5>
             <p><a href="#">Lien par défaut</a></p>
-            <p class="mrgn-bttm-0"><a href="#">Lien et image liée.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="http://placehold.it/100x100"></a></p>
+            <p class="mrgn-bttm-0"><a href="#">Lien et image liée.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="https://placehold.it/100x100"></a></p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ date_modified: 2019-04-11
         <ul>
           <li>Utilisez-les pour relier une page à une autre</li>
           <li>Utilisez-les pour faire un lien vers une section sur une  page</li>
-          <li>Utilisez-les pour ouvrir un <a href="http://wet-boew.github.io/wet-boew/demos/overlay/overlay-fr.html" >contenu superposé</a> ou une <a href="http://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-fr.html" >boîte de dialogue modale ou la lightbox</a></li>
+          <li>Utilisez-les pour ouvrir un <a href="https://wet-boew.github.io/wet-boew/demos/overlay/overlay-fr.html" >contenu superposé</a> ou une <a href="https://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-fr.html" >boîte de dialogue modale ou la lightbox</a></li>
           <li>Utilisez-les pour lancer un événement ou une interrogation</li>
           <li>Utilisez-les pour ouvrir un nouveau message de courriel sortant</li>
           <li>Comprenez et mettez en place les <a href="#supporting">principes de soutien </a>connexes</li>
@@ -91,15 +91,15 @@ date_modified: 2019-04-11
   <p>Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
     <li><a href="buttons-fr.html" class="btn btn-default">Boutons</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html"  class="btn btn-default">Carrousel</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/details/details-fr.html"   class="btn btn-default">Agrandir et dissimuler « affichable/masquable » </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html"  class="btn btn-default">Carrousel</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/details/details-fr.html"   class="btn btn-default">Agrandir et dissimuler « affichable/masquable » </a></li>
     <li><a href="listgroup-fr.html" class="btn btn-default">List group </a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default">Fenêtre modale (lightbox)</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-fr.html"  class="btn btn-default">Contenu superposé  </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default">Fenêtre modale (lightbox)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-fr.html"  class="btn btn-default">Contenu superposé  </a></li>
     <li><a href="pagination-fr.html" class="btn btn-default">Pagination</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html"  class="btn btn-default">Onglets</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-fr.html" class="btn btn-default">Basculer</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default">Galerie de miniatures et de photos (lightbox) </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-fr.html"  class="btn btn-default">Onglets</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-fr.html" class="btn btn-default">Basculer</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default">Galerie de miniatures et de photos (lightbox) </a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Principes de soutien </h2>
   <h3><span data-ajax-replace="../writing/strctr-fr.html #links-heading"></span></h3>
@@ -112,6 +112,6 @@ date_modified: 2019-04-11
   <div data-ajax-replace="../writing/stl-fr.html #scan-info"></div>
   <h3><span data-ajax-replace="../writing/rchtctr-fr.html #alphabetization-heading"></span></h3>
   <div data-ajax-replace="../writing/rchtctr-fr.html #alphabetization-info"></div>
-  <p class="mrgn-tp-lg text-muted">Remarque&nbsp;: Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Remarque&nbsp;: Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

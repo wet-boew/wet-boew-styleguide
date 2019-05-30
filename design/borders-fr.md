@@ -273,7 +273,7 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires </h4>
   <p> Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-fr.html" >Égaliser (égalisation des hauteurs)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-fr.html" >Égaliser (égalisation des hauteurs)</a></li>
   </ul>
   <h2 id="supporting" tabindex="-1"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Principes de soutien </h2>
   <p> Selon le principe de la région commune, les objets se trouvant dans la même région délimitée (bordée) sont perçus comme regroupés. </p>

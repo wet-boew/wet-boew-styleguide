@@ -75,6 +75,6 @@ date_modified: 2019-04-11
       </div>
     </div>
   </section>
-  <p class="mrgn-tp-lg text-muted"> Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted"> Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

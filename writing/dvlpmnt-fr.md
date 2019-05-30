@@ -71,19 +71,19 @@ date_modified: 2019-04-11
       <p>Puisque le visiteur de la page est la seule personne qui clique sur le bouton de la souris et qui prend donc toutes les décisions, la conception centrée sur l'utilisateur est devenue une norme.</p>
       <p>Essentiellement, les habitudes des utilisateurs sur le Web ne sont pas très différentes des habitudes des clients dans un magasin. Les visiteurs jettent un coup d'œil à chaque nouvelle page, parcourent une partie du texte et cliquent sur le premier lien qui attire leur intérêt ou qui ressemble vaguement à la chose qu'ils cherchent. En fait, il y a de grandes parties de la page qu'ils ne regardent même pas.</p>
        <footer class="text-right">Smashing Magazine<br>
-        <cite><a href="http://uxdesign.smashingmagazine.com/2008/01/31/10-principles-of-effective-web-design/" rel="external"><span lang="en-ca" xml:lang="en-ca">10 Principles of Effective Web Design</span> (en anglais seulement)  (disponible en anglais seulement) <span  class="wb-inv">lien externe</span></a></cite></footer>
+        <cite><a href="https://uxdesign.smashingmagazine.com/2008/01/31/10-principles-of-effective-web-design/" rel="external"><span lang="en-ca" xml:lang="en-ca">10 Principles of Effective Web Design</span> (en anglais seulement)  (disponible en anglais seulement) <span  class="wb-inv">lien externe</span></a></cite></footer>
     </blockquote>
     <p>Tout comme les clients parcourent rapidement les tablettes et les étagères d'un magasin pour y trouver un article précis, les utilisateurs parcourent les pages Web pour y trouver des renseignements précis. L'article que veut un client peut en fait se trouver en magasin; toutefois, si le client ne parvient pas à le trouver facilement, il s'en va. Le même principe s'applique aux utilisateurs et aux pages Web. Les utilisateurs quittent complètement la page Web ou le site Web si la localisation des renseignements qu'ils cherchent nécessite des efforts.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Dans les médias linéaires – comme la presse écrite et la télévision – les gens s'attendent à ce que l'on construise leur expérience pour eux. Les lecteurs sont prêts à suivre la voie tracée par l'auteur.</p>
       <p>Dans l'hypertexte non linéaire, les règles sont inversées. Les utilisateurs veulent construire leur propre expérience en assemblant le contenu à partir de sources multiples, se concentrant sur leurs volontés du moment présent. Les gens arrivent à un site Web avec un but à l'esprit, et c'est sans aucune pitié qu'ils agissent dans leur propre intérêt et qu'ils rejettent tout ce qu'un site tente de leur imposer.</p>
        <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external"><span lang="en-ca" xml:lang="en-ca">Writing Style for Print vs. Web</span> (en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external"><span lang="en-ca" xml:lang="en-ca">Writing Style for Print vs. Web</span> (en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Le paysage des appareils change constamment. Les capacités changent constamment. Un contenu qui est correctement structuré peut être transféré aux plateformes futures.</p>
        <footer class="text-right">A List Apart<br>
-        <cite><a href="http://alistapart.com/article/for-a-future-friendly-web" rel="external"><span lang="en-ca" xml:lang="en-ca">For a Future-Friendly Web</span> (en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a></cite></footer>
+        <cite><a href="https://alistapart.com/article/for-a-future-friendly-web" rel="external"><span lang="en-ca" xml:lang="en-ca">For a Future-Friendly Web</span> (en anglais seulement) <span  class="wb-inv"> (lien externe)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] La conception universelle tient compte de toute la diversité humaine, y compris les capacités physiques, cognitives et de perception, ainsi que des diverses tailles et formes corporelles. En articulant la conception autour de cette diversité, nous pouvons créer des choses qui sont plus fonctionnelles et plus conviviales pour tout le monde. Par exemple, les bateaux de trottoirs ont à l'origine été conçus pour les utilisateurs de fauteuils roulants, mais ils sont maintenant aussi utilisés par les piétons qui ont une poussette ou une valise roulante.  Les bateaux de trottoir ont ajouté aux trottoirs une fonctionnalité dont nous pouvons tous profiter. </p>
@@ -117,7 +117,7 @@ date_modified: 2019-04-11
       <li>des renseignements inexacts ou insignifiants</li>
       <li>de la confusion quant à savoir quelle est la version qui est la version actuelle faisant autorité</li>
     </ul>
-    <p>La <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#links">bonne façon de réutiliser faisant autorité est d'y ajouter un lien</a>. Si les renseignements que vous voulez indiquer en référence ne sont pas disponibles, sont incomplets ou sont inexacts, communiquez avec l'autorité fonctionnelle pour discuter de l'ajout ou du recadrage du contenu nécessaire. </p>
+    <p>La <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#links">bonne façon de réutiliser faisant autorité est d'y ajouter un lien</a>. Si les renseignements que vous voulez indiquer en référence ne sont pas disponibles, sont incomplets ou sont inexacts, communiquez avec l'autorité fonctionnelle pour discuter de l'ajout ou du recadrage du contenu nécessaire. </p>
   </div>
   <h3 id="users"><span id="users-heading">Qui sont vos utilisateurs?</span></h3>
   <div id="users-info">
@@ -243,7 +243,7 @@ date_modified: 2019-04-11
     </ul>
     <p>L'innovation n'a pas à être synonyme de création de nouvelles choses. Vous pouvez contribuer à une saine innovation en réutilisant et en recyclant ce qui est déjà là :</p>
     <ul>
-      <li>Réutilisez le contenu en <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#links">établissant correctement des liens qui y mènent</a>. Pour d'autres options, adressez-vous à votre équipe Web, puisqu'il peut y avoir des façons d'ajouter dynamiquement du contenu d'une autre page, faisant en sorte qu'une seule source d'information cohérente puisse être annexée à plusieurs pages
+      <li>Réutilisez le contenu en <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#links">établissant correctement des liens qui y mènent</a>. Pour d'autres options, adressez-vous à votre équipe Web, puisqu'il peut y avoir des façons d'ajouter dynamiquement du contenu d'une autre page, faisant en sorte qu'une seule source d'information cohérente puisse être annexée à plusieurs pages
         <ul>
           <li>Rappelez-vous que le contenu dynamique peut changer sans préavis.  Par souci d'exactitude ou d'exhaustivité, tenez-en compte dans la stratégie</li>
         </ul>

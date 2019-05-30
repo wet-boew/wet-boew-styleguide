@@ -55,7 +55,7 @@ date_modified: 2019-04-11
           <div class="panel-body">
             <h5 class="mrgn-tp-0 h5">Appearance</h5>
             <p><a href="#">Default link</a></p>
-            <p class="mrgn-bttm-0"><a href="#">Link and linked image.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="http://placehold.it/100x100"></a></p>
+            <p class="mrgn-bttm-0"><a href="#">Link and linked image.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="https://placehold.it/100x100"></a></p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ date_modified: 2019-04-11
         <ul>
           <li>Use to link from one page to another</li>
           <li>Use to link from to a section on a page</li>
-          <li>Use to open an <a href="http://wet-boew.github.io/wet-boew/demos/overlay/overlay-en.html" >overlay</a> or <a href="http://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-en.html" >modal/lightbox</a></li>
+          <li>Use to open an <a href="https://wet-boew.github.io/wet-boew/demos/overlay/overlay-en.html" >overlay</a> or <a href="https://wet-boew.github.io/wet-boew/demos/lightbox/lightbox-en.html" >modal/lightbox</a></li>
           <li>Use to initiate an event/query </li>
           <li>Use to <span data-hveid="70">open a new outgoing email message</span></li>
           <li>Understand and implement the related <a href="#supporting">supporting principles</a></li>
@@ -91,15 +91,15 @@ date_modified: 2019-04-11
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
     <li><a href="buttons-en.html" class="btn btn-default">Buttons</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="btn btn-default">Carousel</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/details/details-en.html"   class="btn btn-default">Expand and hide (Details/summary) </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="btn btn-default">Carousel</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/details/details-en.html"   class="btn btn-default">Expand and hide (Details/summary) </a></li>
     <li><a href="listgroup-en.html" class="btn btn-default">List group</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default">Modal popup (Lightbox)</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-en.html"  class="btn btn-default">Overlay </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default">Modal popup (Lightbox)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-en.html"  class="btn btn-default">Overlay </a></li>
     <li><a href="pagination-en.html" class="btn btn-default">Pagination</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="btn btn-default">Tabs</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-en.html" class="btn btn-default">Toggle</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default">Thumbnail and photo gallery (Lightbox) </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="btn btn-default">Tabs</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-en.html" class="btn btn-default">Toggle</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default">Thumbnail and photo gallery (Lightbox) </a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Supporting principles</h2>
   <h3><span data-ajax-replace="../writing/strctr-en.html #links-heading"></span></h3>
@@ -112,6 +112,6 @@ date_modified: 2019-04-11
   <div data-ajax-replace="../writing/stl-en.html #scan-info"></div>
   <h3><span data-ajax-replace="../writing/rchtctr-en.html #alphabetization-heading"></span></h3>
   <div data-ajax-replace="../writing/rchtctr-en.html #alphabetization-info"></div>
-  <p class="mrgn-tp-lg text-muted">Note: Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Note: Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

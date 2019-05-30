@@ -25,7 +25,7 @@ date_modified: 2019-04-11
 <li>Solutions to support legacy browsers with features that are native to modern browsers (expand/hide, progress bar and so forth)</li>
 <li>Features to enhance the functionality of a page (ajax, session timeout and so forth)</li>
 </ul>
-<p class="mrgn-bttm-lg">Refer to: <a href="http://wet-boew.github.io/v4.0-ci/demos/index-en.html">Working examples</a> for further details. </p>
+<p class="mrgn-bttm-lg">Refer to: <a href="https://wet-boew.github.io/v4.0-ci/demos/index-en.html">Working examples</a> for further details. </p>
 <form class="wb-tables-filter" data-bind-to="designlayout">
 <div class="row">
 <div class="col-md-4">
@@ -156,7 +156,7 @@ Design elements
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-ajax/data-ajax-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Ajax </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-ajax/data-ajax-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Ajax </a></td>
 <td><p>Use  to allow parts of  one webpage to load or update within a second webpage (repurpose content).</p></td>
 <td class="text-muted small">Tags: Technology, Dynamic</td>
 <td><hr class="mrgn-tp-0">
@@ -207,7 +207,7 @@ To see this feature in action, go to its topic page. </p></td>
 <td class="text-muted small">Tags: Position</td>
 <td><hr class="mrgn-tp-0">
 <p class="text-left"><span class="glyphicon glyphicon-align-left"></span> Left aligned text</p>
-<p class="text-center"><span class="glyphicon glyphicon-align-center"></span> Center aligned text/image <img alt="A generic square placeholder image with rounded corners" class="img-rounded center-block" src="http://placehold.it/200x40"></p>
+<p class="text-center"><span class="glyphicon glyphicon-align-center"></span> Center aligned text/image <img alt="A generic square placeholder image with rounded corners" class="img-rounded center-block" src="https://placehold.it/200x40"></p>
 <p class="text-right"><span class="glyphicon glyphicon-align-right"></span> Right aligned text</p></td>
 <td>CSS Style</td>
 <td>Structure and placement</td>
@@ -215,7 +215,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/archived/archived-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Archived information </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/archived/archived-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Archived information </a></td>
 <td>Use to helps users identify Web pages that have been archived online.</td>
 <td class="text-muted small">Tags: Overlay, Invisible, Visible, Show, Hidden, Close, Exit</td>
 <td><hr class="mrgn-tp-0">
@@ -309,7 +309,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/cal-events/cal-events-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Calendar of events </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/cal-events/cal-events-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Calendar of events </a></td>
 <td><p>Use the Calendar of events interface to navigate a chronological  list of events.</p></td>
 <td class="text-muted small">Tags: Tables</td>
 <td><hr class="mrgn-tp-0">
@@ -321,7 +321,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Carousel</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Carousel</a></td>
 <td><p>Use a carousel to tab or cycle through content in a slide show format.</p></td>
 <td class="text-muted small">Tags: Tabs, Invisible, Show, Hide,  Visible, Images, Slider, Links, Details, Summary, Expand</td>
 <td><hr class="mrgn-tp-0">
@@ -333,7 +333,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Charts and graphs </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Charts and graphs </a></td>
 <td><p>Use to dynamically generate charts and graphs from a table. </p></td>
 <td class="text-muted small">Tags: Tables</td>
 <td><hr class="mrgn-tp-0">
@@ -360,7 +360,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Code prettify</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/prettify/prettify-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Code prettify</a></td>
 <td><p>Use to provide syntax and highlight source code snippets within  an <abbr title="Hypertext Markup Language">HTML</abbr>  page. </p></td>
 <td class="text-muted small">Tags: Coding</td>
 <td><hr class="mrgn-tp-0">
@@ -399,8 +399,8 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/country-content/country-content-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Country identifier </a></td>
-<td><p>Use a country identifier, a basic AjaxLoader wrapper, to  insert Ajaxed-in content, based on a  visitor's country (determined by <a href="http://freegeoip.net" >Free Geo <abbr title="Internet Protocol">IP</abbr></a>).</p></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/country-content/country-content-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Country identifier </a></td>
+<td><p>Use a country identifier, a basic AjaxLoader wrapper, to  insert Ajaxed-in content, based on a  visitor's country (determined by <a href="https://freegeoip.net" >Free Geo <abbr title="Internet Protocol">IP</abbr></a>).</p></td>
 <td class="text-muted small">Tags: Location</td>
 <td><hr class="mrgn-tp-0">
 <p><span class="glyphicon glyphicon-eye-close"></span> No quick preview available.<br>
@@ -411,7 +411,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-inview/data-inview-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data inview </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-inview/data-inview-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data inview </a></td>
 <td><p>Use data inview to display an overlay when a section moves out of  the viewport. </p></td>
 <td class="text-muted small">Tags: Overlay, Invisible, Visible, Show, Hidden, Close, Exit</td>
 <td><hr class="mrgn-tp-0">
@@ -423,7 +423,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data picture</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data picture</a></td>
 <td><p>Use  to allow a webpage to specify different image  sources to display, based on media queries. </p></td>
 <td class="text-muted small">Tags: Images</td>
 <td><hr class="mrgn-tp-0">
@@ -435,7 +435,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data tables </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Data tables </a></td>
 <td><p>Use  to enhance a data table and allow sorting,  filtering, searching, pagination and other such features. </p></td>
 <td class="text-muted small">Tags: Paginate</td>
 <td><hr class="mrgn-tp-0">
@@ -447,7 +447,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Datalist (auto complete) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Datalist (auto complete) </a></td>
 <td><p>Use  to add auto-complete functionality to specific  input fields; dynamically display a list of words that match a datalist. </p></td>
 <td class="text-muted small">Tags: Forms</td>
 <td><hr class="mrgn-tp-0">
@@ -478,7 +478,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-dynamic-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Datalist (auto complete) − Dynamic </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/datalist/datalist-dynamic-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Datalist (auto complete) − Dynamic </a></td>
 <td><p>Use  to update the contents of a datalist element dynamically, based upon user  input. </p></td>
 <td class="text-muted small">Tags: Forms</td>
 <td><hr class="mrgn-tp-0">
@@ -490,7 +490,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Date picker </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Date picker </a></td>
 <td><p>Use  to provide an interface to select a date in a form. </p></td>
 <td class="text-muted small">Tags: Input, Forms</td>
 <td><hr class="mrgn-tp-0">
@@ -502,8 +502,8 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/dismissable-content/dismissable-content-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Dismissible content </a></td>
-<td>Use  to make content dismissible  by users. This is not the same as the <a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-en.html">Expand/collapse</a> feature, as the content dissapears until the user clears their browser cookies.</td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/dismissable-content/dismissable-content-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Dismissible content </a></td>
+<td>Use  to make content dismissible  by users. This is not the same as the <a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-en.html">Expand/collapse</a> feature, as the content dissapears until the user clears their browser cookies.</td>
 <td class="text-muted small">Tags: Visible, Invisible, Show, Hide, </td>
 <td><hr class="mrgn-tp-0">
 <p class="wb-dismissable">Dismissible content A</p>
@@ -516,7 +516,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Equalize (Equal height) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Equalize (Equal height) </a></td>
 <td><p>Use  to make grid cells the same height. Make the inner  elements (panels, wells and so forth) inherit the height from the parent grid. </p></td>
 <td class="text-muted small">Tags: Panels, Wells, Borders</td>
 <td><hr class="mrgn-tp-0">
@@ -549,7 +549,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/details/details-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Expand and hide (Details/summary) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/details/details-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Expand and hide (Details/summary) </a></td>
 <td><p>Use  to create collapsible expand and hide widgets that a  user can select to show or hide content. </p></td>
 <td class="text-muted small">Tags: Toggle, Links</td>
 <td><hr class="mrgn-tp-0">
@@ -573,7 +573,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/favicon/favicon-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Favicon </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/favicon/favicon-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Favicon </a></td>
 <td>Use this plugin to provide the ability to add and update a webpage favicon.</td>
 <td class="text-muted small">Tags: Branding</td>
 <td><hr class="mrgn-tp-0">
@@ -585,7 +585,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feedback/feedback-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Feedback form </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/feedback/feedback-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Feedback form </a></td>
 <td>Use this  component to allow users to submit feedback for a specific webpage or the website in general.</td>
 <td class="text-muted small">Tags: Forms, Input, Submit</td>
 <td><hr class="mrgn-tp-0">
@@ -597,7 +597,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Feeds </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/feeds/feeds-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Feeds </a></td>
 <td><p>Use a feed widget to aggregate and display the entries from one  or more web feeds on a webpage. Supported Web feed formats are Atom, <abbr title="Really Simple Syndication">RSS</abbr>, and  Media <abbr title="Really Simple Syndication">RSS</abbr>.</p></td>
 <td class="text-muted small">Tags: Lists, Links</td>
 <td><hr class="mrgn-tp-0">
@@ -621,7 +621,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/footnotes/footnotes-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Footnotes </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/footnotes/footnotes-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Footnotes </a></td>
 <td><p>Use a footnote to note a reference, citation, or comment that  provides details about something on that page. It is non-critical content that  relates to the main text, and is always at the bottom of the page. </p></td>
 <td class="text-muted small">Tags: Links</td>
 <td><hr class="mrgn-tp-0">
@@ -665,7 +665,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Forms validation</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Forms validation</a></td>
 <td>Use to provide generic validation  and error messages that handle web forms. </td>
 <td class="text-muted small">Tags: Input, Label, Button, Submit, Validation</td>
 <td class="mrgn-bttm-xl"><hr class="mrgn-tp-0">
@@ -686,7 +686,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/geomap/geomap-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Geomap </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/geomap/geomap-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Geomap </a></td>
 <td><p>Use  a geomap to display a dynamic map and overlay information from additional  sources. </p></td>
 <td class="text-muted small">Tags: Location, Dynamic </td>
 <td><hr class="mrgn-tp-0">
@@ -767,9 +767,9 @@ To see this feature in action, go to its topic page. </p></td>
 <td class="text-muted small">Tags: Thumbnails, Responsive, Photos </td>
 <td><hr class="mrgn-tp-0">
 <div class="row">
-<div class="col-sm-4"> <img alt="A generic square placeholder image with rounded corners" class="img-rounded img-responsive" src="http://placehold.it/140x140"></div>
-<div class="col-sm-4"> <img alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible" class="img-circle img-responsive" src="http://placehold.it/140x140"></div>
-<div class="col-sm-4"> <img alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-thumbnail img-responsive" src="http://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="A generic square placeholder image with rounded corners" class="img-rounded img-responsive" src="https://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible" class="img-circle img-responsive" src="https://placehold.it/140x140"></div>
+<div class="col-sm-4"> <img alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" class="img-thumbnail img-responsive" src="https://placehold.it/140x140"></div>
 </div></td>
 <td>CSS Style</td>
 <td>Basic effects</td>
@@ -888,7 +888,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">MathML</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/mathml/mathml-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">MathML</a></td>
 <td><p>Use  to display mathematical formulas (not <a href="variables-en.html">variables</a> within a sentence) with MathML.</p></td>
 <td class="text-muted small">Tags: Calculations</td>
 <td><hr class="mrgn-tp-0">
@@ -958,7 +958,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/meter/meter-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Meter </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/meter/meter-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Meter </a></td>
 <td><p>Use  to display a value in a range when there is a known minimum and maximum value  (for example, the height of something). </p></td>
 <td class="text-muted small">Tags: Colour, Alerts, Progress bar</td>
 <td><hr class="mrgn-tp-0">
@@ -979,7 +979,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Modal popup (lightbox) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Modal popup (lightbox) </a></td>
 <td><p>Use  a modal pop-up window for information that stays in front of the original  window. </p></td>
 <td class="text-muted small">Tags: Links, Buttons, Invisible, Show, Hide,  Visible, Close, Exit</td>
 <td><hr class="mrgn-tp-0">
@@ -1000,7 +1000,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/multimedia/multimedia-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Multimedia player</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/multimedia/multimedia-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Multimedia player</a></td>
 <td><p>Use  to provide an accessible multimedia player to embed video and audio into webpages. </p></td>
 <td class="text-muted small">Tags: Video, Audio, YouTube</td>
 <td><hr class="mrgn-tp-0">
@@ -1017,15 +1017,15 @@ To see this feature in action, go to its topic page. </p></td>
 <td class="text-muted small">Tags: Images</td>
 <td><hr class="mrgn-tp-0">
 <div class="row">
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-100 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-100"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-90 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-90"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-80 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-80"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-70 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-70"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-60 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-60"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-50 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-50"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-40 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-40"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-30 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-30"></div>
-<div class="col-sm-4"><img class="mrgn-bttm-md opct-20 img-responsive" src="http://placehold.it/140x140" alt="Demo of opct-20"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-100 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-100"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-90 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-90"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-80 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-80"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-70 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-70"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-60 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-60"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-50 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-50"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-40 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-40"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-30 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-30"></div>
+<div class="col-sm-4"><img class="mrgn-bttm-md opct-20 img-responsive" src="https://placehold.it/140x140" alt="Demo of opct-20"></div>
 </div></td>
 <td>CSS Style</td>
 <td>Basic effects</td>
@@ -1033,7 +1033,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Overlay </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/overlay/overlay-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Overlay </a></td>
 <td><p>Use to position one element over another. </p></td>
 <td class="text-muted small">Tags: Links, Buttons, Invisible, Show, Hide,  Visible, Close, Exit</td>
 <td><hr class="mrgn-tp-0">
@@ -1156,7 +1156,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/progress/progress-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Progress bar </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/progress/progress-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Progress bar </a></td>
 <td><p>Use  to display the progress of a task. </p></td>
 <td class="text-muted small">Tags: Colour, Alerts, Meter</td>
 <td><hr class="mrgn-tp-0">
@@ -1208,7 +1208,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Session timeout </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Session timeout </a></td>
 <td><p>Use  to provide session timeout and inactivity timeout functionality.</p></td>
 <td class="text-muted small">Tags: Close, Exit</td>
 <td><hr class="mrgn-tp-0">
@@ -1220,7 +1220,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/share/share-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Share widget </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/share/share-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Share widget </a></td>
 <td>Use to enable users to quickly share content with their networks.</td>
 <td class="text-muted small">Tags: Links, Icons, Twitter, YouTube</td>
 <td><hr class="mrgn-tp-0">
@@ -1251,7 +1251,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/slider/slider-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Slider control (range)</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/slider/slider-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Slider control (range)</a></td>
 <td><p>Use  to display a slider control bar. </p></td>
 <td class="text-muted small">Tags: Input</td>
 <td><hr class="mrgn-tp-0">
@@ -1263,7 +1263,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Table validator </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Table validator </a></td>
 <td><p>Use  this web editor tool to produce tables that conform to <abbr title="Web Content Accessibilitylines">WCAG</abbr> 2.0. This tool  helps to identify relationship errors within a complex table. </p></td>
 <td class="text-muted small">Tags: Validation</td>
 <td><hr class="mrgn-tp-0">
@@ -1287,7 +1287,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Tabs </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Tabs </a></td>
 <td><p>Use to show multiple aspects of related content in different panes, side by side.</p></td>
 <td class="text-muted small">Tags: Invisible, Show, Hide,  Visible, Links, Details, Summary, Expand</td>
 <td><hr class="mrgn-tp-0">
@@ -1330,7 +1330,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/texthighlight/texthighlight-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Text highlighting </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/texthighlight/texthighlight-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Text highlighting </a></td>
 <td>Use to highlight text within a pre-defined area  that matches case-insensitive search criteria, specified through the <abbr title="Uniform Resource Locator">URL</abbr>s  query string.</td>
 <td class="text-muted small">Tags: Colour</td>
 <td><hr class="mrgn-tp-0">
@@ -1342,7 +1342,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-en.html"   class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Base</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-en.html"   class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Base</a></td>
 <td>Use the Base theme template to aid in the creation of new themes.</td>
 <td class="text-muted small">Tags: Core</td>
 <td><hr class="mrgn-tp-0">
@@ -1354,7 +1354,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Canada.ca </a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/GCWeb/docs/ref/GCWeb/GCWeb-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Canada.ca </a></td>
 <td>Use the Canada.ca theme template to meet the layout and design requirements of Canada.ca pages.</td>
 <td class="text-muted small">Tags: Government of Canada</td>
 <td><hr class="mrgn-tp-0">
@@ -1366,7 +1366,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Government of Canada intranet</a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-gc-intranet/docs/ref/theme-gc-intranet/theme-gc-intranet-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Government of Canada intranet</a></td>
 <td>Use the Government of Canada intranet theme template to adapt the Government of Canada Web Usability theme to intranet sites.</td>
 <td class="text-muted small">Tags: Government of Canada</td>
 <td><hr class="mrgn-tp-0">
@@ -1378,7 +1378,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Open Government Platform (<abbr title="Open Government Platform">OGPL</abbr>) </a></td>
+<td><a href="https://wet-boew.github.io/themes-dist/theme-ogpl/docs/ref/theme-ogpl/theme-ogpl-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Open Government Platform (<abbr title="Open Government Platform">OGPL</abbr>) </a></td>
 <td>Use the Open Government Platform (<abbr title="Open Government Platform">OGPL</abbr>)   template to support the <abbr title="Open Government Platform">OGPL</abbr>   theme.</td>
 <td class="text-muted small">Tags: India, United States</td>
 <td><hr class="mrgn-tp-0">
@@ -1390,7 +1390,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/theme/index-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Web Experience Toolkit (<abbr title="Web Experience Toolkit">WET</abbr>) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/theme/index-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Theme: Web Experience Toolkit (<abbr title="Web Experience Toolkit">WET</abbr>) </a></td>
 <td>Use the Web Experience Toolkit theme template to provide an example of an implemented Base theme.</td>
 <td class="text-muted small">Tags: Core</td>
 <td><hr class="mrgn-tp-0">
@@ -1402,20 +1402,20 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thumbnail and photo gallery  (lightbox) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Thumbnail and photo gallery  (lightbox) </a></td>
 <td><p>Use  to display images in a lightbox, either individually or as part of a gallery. </p></td>
 <td class="text-muted small">Tags: Images, Invisible, Show, Hide,  Visible, Links</td>
 <td><hr class="mrgn-tp-0">
 <p>One image</p>
 <div class="row">
-<div class="col-sm-4"> <a class="wb-lbx" href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_b.jpg" title="Image 1"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_s.jpg" alt="Image 1" class="thumbnail img-responsive" /> </a></div>
+<div class="col-sm-4"> <a class="wb-lbx" href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_b.jpg" title="Image 1"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/1_s.jpg" alt="Image 1" class="thumbnail img-responsive" /> </a></div>
 </div>
 <p>Gallery</p>
 <section class="wb-lbx lbx-gal">
 <div class="row">
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_b.jpg" title="Image 1"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_s.jpg" alt="Image 1" class="img-responsive img-thumbnail" /> </a> </div>
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_b.jpg" title="Image 2"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_s.jpg" alt="Image 2" class="img-responsive img-thumbnail" /> </a></div>
-<div class="col-sm-4"> <a href="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_b.jpg" title="Image 3"> <img src="http://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_s.jpg" alt="Image 3" class="img-responsive img-thumbnail" /> </a> </div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_b.jpg" title="Image 1"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/2_s.jpg" alt="Image 1" class="img-responsive img-thumbnail" /> </a> </div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_b.jpg" title="Image 2"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/3_s.jpg" alt="Image 2" class="img-responsive img-thumbnail" /> </a></div>
+<div class="col-sm-4"> <a href="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_b.jpg" title="Image 3"> <img src="https://wet-boew.github.io/v4.0-ci/demos/lightbox/demo/4_s.jpg" alt="Image 3" class="img-responsive img-thumbnail" /> </a> </div>
 </div>
 </section>
 </td>
@@ -1425,7 +1425,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Toggle</a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/toggle/toggle-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Toggle</a></td>
 <td>Use to toggle elements between on and off states, with only one section expanding open at a time and the previous section collapsing automatically.</td>
 <td class="text-muted small">Tags: Expand, Hide, Visible, Invisible, Show, Hide,  Accordion </td>
 <td><hr class="mrgn-tp-0">
@@ -1455,7 +1455,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/demos/transitions/transitions-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Transitions </a></td>
 <td><p>Use to create a content transition with optional states  (fade in, fade out, slide right or slide left). </p></td>
 <td class="text-muted small">Tags: Effects</td>
 <td><hr class="mrgn-tp-0">
@@ -1467,7 +1467,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/twitter/twitter-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Twitter embedded timeline </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/twitter/twitter-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Twitter embedded timeline </a></td>
 <td><p>Use  to implement and embed Twitter timelines.</p></td>
 <td class="text-muted small">Tags: Share widget</td>
 <td><hr class="mrgn-tp-0">
@@ -1578,7 +1578,7 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
-<td><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Zebra striping (Advanced) </a></td>
+<td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Zebra striping (Advanced) </a></td>
 <td><p>Use to provide alternate white and grey stripes to table rows in horizontal or multiple directions. This  helps to visually connect horizontal with vertical data.</p></td>
 <td class="text-muted small">Tags: Tables</td>
 <td><hr class="mrgn-tp-0">

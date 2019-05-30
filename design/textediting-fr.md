@@ -212,6 +212,6 @@ date_modified: 2019-04-11
       <pre><code>&lt;p&gt;...<strong>&lt;u&gt;...&lt;/u&gt;</strong>...&lt;/p&gt;</code></pre>
     </div>
   </div>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

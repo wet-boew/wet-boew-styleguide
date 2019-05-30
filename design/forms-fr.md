@@ -221,11 +221,11 @@ date_modified: 2019-04-11
           </ul>
         </li>
         <li>Utilisez du texte d'étiquette unique sur une page donnée afin de respecter les normes d'accessibilité</li>
-        <li>Placez « (requis) » à la fin de l'étiquette de zone si l'information est requise. Consultez : <a rel="external" href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html">Validation de formulaires<span class="wb-inv"> (external link)</span></a></li>
+        <li>Placez « (requis) » à la fin de l'étiquette de zone si l'information est requise. Consultez : <a rel="external" href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html">Validation de formulaires<span class="wb-inv"> (external link)</span></a></li>
       </ul>
       <p class="h6" ><strong>Conception de l'option d'alignement 1 : </strong> </p>
       <ul>
-        <li> Placez l'étiquette  <strong>au-dessus de la zone de saisie</strong>. Conformément à la publication <a href="http://rosenfeldmedia.com/books/web-form-design/" rel="external"><span lang="en">Web form design: Filling in the blanks</span> (disponible en anglais seulement)<span class="wb-inv"> (external link)</span></a>, il s'agit de la mise en page <strong>recommandée</strong>
+        <li> Placez l'étiquette  <strong>au-dessus de la zone de saisie</strong>. Conformément à la publication <a href="https://rosenfeldmedia.com/books/web-form-design/" rel="external"><span lang="en">Web form design: Filling in the blanks</span> (disponible en anglais seulement)<span class="wb-inv"> (external link)</span></a>, il s'agit de la mise en page <strong>recommandée</strong>
           <ul>
             <li>Cette mise en page permet aux utilisateurs de saisir à la fois les étiquettes et les zones de saisie d'un seul coup d'œil. Bien qu'il s'agisse de la plus simple des mises en page, les utilisateurs peuvent traiter l'information dix fois plus vite que si l'information est alignée à gauche. Cela est montré dans l'« Option d'alignement 3 − Alignement à gauche ».  Cette solution utilise plus d'espace vertical,  mais n'a pas d'incidence sur l'expérience de l'utilisateur. Si elle ne convient pas à la mise en page particulière dont vous avez besoin, il est aussi acceptable d'utiliser l'« Option d'alignement 2 − Alignement à droite »</li>
           </ul>
@@ -971,11 +971,11 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html"  class="btn btn-default">Correctif « datalist » (saisie automatique)</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html"  class="btn btn-default">Correctif « datalist » (saisie automatique) – dynamique</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-fr.html"  class="btn btn-default">Sélecteur de date</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html"  class="btn btn-default">Validation de formulaires</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html"  class="btn btn-default">Correctif « datalist » (saisie automatique)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-fr.html"  class="btn btn-default">Correctif « datalist » (saisie automatique) – dynamique</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-fr.html"  class="btn btn-default">Sélecteur de date</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-fr.html"  class="btn btn-default">Validation de formulaires</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/"><span lang="en">Bootstrap</span><span  class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/"><span lang="en">Bootstrap</span><span  class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

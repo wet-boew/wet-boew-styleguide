@@ -20,7 +20,7 @@ date_modified: 2019-04-11
 			</div>
 			<div class="panel-body">
 				<ul class="list-unstyled">
-					<li><a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
+					<li><a href="https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/content-structure-separation-programmatic.html" rel="external">1.3.1 Info and Relationships</a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,13 +43,13 @@ date_modified: 2019-04-11
 		<p>When using quotations and the length is:</p>
 		<ul>
 			<li>
-				<p>Short <small>(no paragraph breaks)</small>, use the <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;q&gt;</code> element</a>.</p>
+				<p>Short <small>(no paragraph breaks)</small>, use the <a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;q&gt;</code> element</a>.</p>
 				<ul>
 					<li>Quotations marks (<code>&quot;, ̋, ̏</code>) are coded <strong>outside</strong> the <code>&lt;q&gt;</code> element</li>
 				</ul>
 			</li>
 			<li>
-				<p>Long <small>(with paragraph breaks)</small>, use the <a href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;blockquote&gt;</code> element</a>.</p>
+				<p>Long <small>(with paragraph breaks)</small>, use the <a href="https://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49" rel="external" title="WCAG 2.0, Technique H49"><code>&lt;blockquote&gt;</code> element</a>.</p>
 				<ul>
 					<li>Quotations marks (<code>&quot;, ̋, ̏</code>) are coded <strong>inside</strong> the <code>&lt;blockquote&gt;</code> element</li>
 				</ul>

@@ -296,6 +296,6 @@ date_modified: 2019-04-11
   <div data-ajax-replace="../writing/rchtctr-en.html #length-info"></div>
   <h3><span data-ajax-replace="../writing/stl-en.html #scent-heading"></span></h3>
   <div data-ajax-replace="../writing/stl-en.html #scent-info"></div>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

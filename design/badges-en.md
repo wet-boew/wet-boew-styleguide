@@ -125,6 +125,6 @@ date_modified: 2019-04-11
     <li><a class="btn btn-default" href="buttons-en.html">Buttons</a></li>
     <li><a class="btn btn-default" href="listgroup-en.html">List group</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

@@ -85,7 +85,7 @@ date_modified: 2019-04-11
       <p>Structuring content for reuse means we can create, publish  and use content more efficiently. We can assemble and reassemble it for  different products, audiences, devices or contexts of use. Information embedded  in documents makes this process difficult, if not impossible. [&hellip;] Content  volume also affects findability. The &ldquo;we could put that online&rdquo; mentality runs  unchecked when publishing is as easy as &lsquo;save as <abbr title="Portable document format">PDF</abbr>&rsquo; and upload. Websites can  turn into massive filing cabinets &mdash;making website visitors wade through more  links and search results to find what they&rsquo;re looking for. Perhaps they  never will. The World Bank said recently that over 31% of its reports had never  been downloaded.&rdquo;</p>
 <p>&ldquo;Our usability testing often shows people have  more problems with content in <abbr title="Portable document format">PDF</abbr> documents than web pages. They click a  link and start an unexpected or unwanted download. The download fails, or they  bail out when they see how big the file is. People sometimes struggle to  navigate a large document with print layouts, huge graphics and no internal  bookmarks. &nbsp;Often the information they want is in a single paragraph. <abbr title="Portable document format">PDF</abbr>s  can make hard work of simple information needs.</p>
       <footer class="text-right">4Syllables<br>
-      <cite><a href="http://4syllables.com.au/articles/relying-on-pdf/" rel="external">Relying on <abbr title="Portable document format">PDF</abbr> online? 6 reasons to stop<span  class="wb-inv"> (external link)</span></a></cite></footer>
+      <cite><a href="https://4syllables.com.au/articles/relying-on-pdf/" rel="external">Relying on <abbr title="Portable document format">PDF</abbr> online? 6 reasons to stop<span  class="wb-inv"> (external link)</span></a></cite></footer>
 </blockquote>
 
 
@@ -93,7 +93,7 @@ date_modified: 2019-04-11
 <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Nearly one-third of [World Bank] <abbr title="Portable document format">PDF</abbr> reports had never been downloaded, not even once. Another 40 per cent of their reports had been downloaded fewer than 100 times</p>
       <footer class="text-right">The Sydney Morning Herald<br>
-      <cite><a href="http://www.smh.com.au/world/world-bank-learns-most-pdfs-it-produces-go-unread-20140509-zr7fs.html" rel="external">World Bank learns most <abbr title="Portable document format">PDF</abbr>s it produces go unread<span  class="wb-inv"> (external link)</span></a></cite></footer>
+      <cite><a href="https://www.smh.com.au/world/world-bank-learns-most-pdfs-it-produces-go-unread-20140509-zr7fs.html" rel="external">World Bank learns most <abbr title="Portable document format">PDF</abbr>s it produces go unread<span  class="wb-inv"> (external link)</span></a></cite></footer>
 </blockquote>
 
 <p>Once you define users' tasks, determine the information they need to  complete those tasks: </p>
@@ -101,7 +101,7 @@ date_modified: 2019-04-11
   <li><strong>Keep information specific to  the tasks </strong></li>
   <li><strong>Present it logically or  sequentially in a location where users expect to find it</strong></li>
   <li>Ensure information is timely  and relevant, not redundant or trivial</li>
-  <li><a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#alt">Avoid multiple and alternative formats </a></li>
+  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#alt">Avoid multiple and alternative formats </a></li>
 </ul>
 
 
@@ -158,7 +158,7 @@ date_modified: 2019-04-11
         </tr>
       </tbody>
     </table>
-    <p><strong>Sub-headings  make large blocks of text easier to read and scan.</strong> Ensure that sub-headings are  clear, concise and in <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a>.</p>
+    <p><strong>Sub-headings  make large blocks of text easier to read and scan.</strong> Ensure that sub-headings are  clear, concise and in <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a>.</p>
     <p>It is  a good writing practice to use sub-headings in longer documents. When information is on the web, sub-headings improve usability and readability.</p>
     <p><strong>Good headings and sub-headings  are essential to making web content accessible</strong>. Screen reader users  can use the headings and sub-headings to navigate quickly between sections, and  to better understand or summarize content.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -171,7 +171,7 @@ date_modified: 2019-04-11
         <li><strong>predictable </strong>, so users know whether they'll like the full article <em>before </em>they click (because people don't return to sites that promise more than they deliver).</li>
       </ul>
       <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/worlds-best-headlines-bbc-news/" rel="external">World's Best Headlines: <abbr title="British Broadcasting Corporation">BBC</abbr> News<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/worlds-best-headlines-bbc-news/" rel="external">World's Best Headlines: <abbr title="British Broadcasting Corporation">BBC</abbr> News<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <p>There  are different approaches to writing for print and writing for web. This applies  to headings as well.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -187,7 +187,7 @@ date_modified: 2019-04-11
         </li>
       </ul>
       <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external">Writing Style for Print <abbr title="versus">vs.</abbr> Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/writing-style-for-print-vs-web/" rel="external">Writing Style for Print <abbr title="versus">vs.</abbr> Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <div id="intranet-ia-info">
       <p>On the intranet, headings and menu labels have to be distinct and meaningful to users, focusing on topics and tasks rather than organizational structure.</p>
@@ -223,13 +223,13 @@ date_modified: 2019-04-11
     </div>
     <p><strong>Hyperlinks  guide users</strong> to the information they are looking for. Use hyperlinks to avoid  repeating information that is already clearly expressed on another web page or  to reference related information, such as definitions, supporting information,  and background information.</p>
     <p><strong>Use the title of the  target page as the text in the hyperlink</strong>. It is very confusing to  users if the link text and page name don't match. In  situations when you need to modify the link text, try to <strong>match the text as closely as possible</strong> to the page name.</p>
-    <p>To meet accessibility requirements,make the <strong>target  of each link clear, and without any additional context beyond the link text</strong>.&nbsp; Screen reader users can read pages by  generating a list of all the links on the page, and tab from link to link  without any surrounding context. If the wording of the link does not clearly  summarize the content of the target, it can confuse screen reader users. Refer to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings and menu labels</a>. </p>
+    <p>To meet accessibility requirements,make the <strong>target  of each link clear, and without any additional context beyond the link text</strong>.&nbsp; Screen reader users can read pages by  generating a list of all the links on the page, and tab from link to link  without any surrounding context. If the wording of the link does not clearly  summarize the content of the target, it can confuse screen reader users. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings and menu labels</a>. </p>
     <p>If  you refer to another web page more than once, <strong>add a hyperlink only to the first reference</strong>. Avoid putting  too many hyperlinks in a single paragraph. It can be confusing if they  are too close together. Users are not always able to tell where one hyperlink  ends and the next one begins.</p>
-    <p>Users  are attracted to hyperlinks and follow them if they see them. Since you don&rsquo;t  want users to ignore the content of the page they are on<strong>, only add a hyperlink to references that can help users complete their  task or that provide valuable information about the task.</strong> Do not add a  hyperlink to unnecessary or unrelated information. Too many hyperlinks are  distracting and it becomes difficult for users to distinguish between important  and unimportant information. Ensure that the hyperlinks direct users to the  right page. Refer to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#scent">Create clear paths to  information</a> for more on hyperlinks.</p>
+    <p>Users  are attracted to hyperlinks and follow them if they see them. Since you don&rsquo;t  want users to ignore the content of the page they are on<strong>, only add a hyperlink to references that can help users complete their  task or that provide valuable information about the task.</strong> Do not add a  hyperlink to unnecessary or unrelated information. Too many hyperlinks are  distracting and it becomes difficult for users to distinguish between important  and unimportant information. Ensure that the hyperlinks direct users to the  right page. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#scent">Create clear paths to  information</a> for more on hyperlinks.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
     <p>Make  text links long enough to be understood, but short enough to minimize  wrapping.</p><br>
     <footer class="text-right">
-    <abbr title="United States">U.S.</abbr> Health and Human Services, Standards and Usability  Guidelines <cite><a href="http://guidelines.usability.gov/guidelines/102" rel="external">Use  appropriate text link lengths<span  class="wb-inv"> (external link)</span></a></cite>
+    <abbr title="United States">U.S.</abbr> Health and Human Services, Standards and Usability  Guidelines <cite><a href="https://guidelines.usability.gov/guidelines/102" rel="external">Use  appropriate text link lengths<span  class="wb-inv"> (external link)</span></a></cite>
     </footer></blockquote>
   </div>
   <h2 id="presentation"><span id="presentation-heading">Use formatting and presentation elements effectively</span></h2>
@@ -256,7 +256,7 @@ date_modified: 2019-04-11
       <li>logical or sequential order, or by</li>
       <li>priority, importance, or popularity</li>
     </ul>
-    <p>If  you list a series of items <strong>where the  order is important, use numbers rather than bullets</strong>. List items with <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a> to  help users quickly scan lists.</p>
+    <p>If  you list a series of items <strong>where the  order is important, use numbers rather than bullets</strong>. List items with <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a> to  help users quickly scan lists.</p>
     <p>Generally, <strong>do not alphabetize lists</strong>. The user  may not be sure which letter their desired information  falls under.  Alphabetize lists when the information has a stable naming convention, like  the names of people or places.</p>
      <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>To make lists consistent, </strong>to align with <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp" rel="external">Canada.ca style guide <span class="wb-inv"> (external link)</span></a> (the current authoritative source), and to make it easier for readers to  scan lists at different screen sizes and resolutions:</p>
 <ul>
@@ -293,7 +293,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Users pay close attention to photos and other images that contain   relevant information but ignore fluffy pictures used to "jazz up" Web   pages.</p>
       <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/photos-as-web-content/" rel="external">Photos as Web Content<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/photos-as-web-content/" rel="external">Photos as Web Content<span  class="wb-inv"> (external link)</span></a></cite></footer>
   </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Good images explain a concept, conjure a feeling, convey information, and enhance people's overall experience on a site. Bad images waste  space, are ignored by users, and, even worse, are confusing.</p>
@@ -345,7 +345,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Color coding permits users to rapidly scan and quickly perceive patterns  and relationships among items. Items that share the same color will be  considered as being related to each other, while items with prominent color  differences will seem to be different. </p>
       <footer class="text-right">Health and Human Services Department.gov<br>
-        <cite><a href="http://guidelines.usability.gov/guidelines/185" rel="external">Standards and usability  guidelines<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://guidelines.usability.gov/guidelines/185" rel="external">Standards and usability  guidelines<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h3 id="font"><span id="font-heading">Font</span></h3>
@@ -359,7 +359,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Do not use all capitals</li>
       </ul>
     </div>
-    <p>On the web, 90% of information is in the form of written  language, and is presented with fonts. Fonts affect the <strong>speed and comfort</strong> with which users understand and read content. Refer  also to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#colour">Colour</a>.</p>
+    <p>On the web, 90% of information is in the form of written  language, and is presented with fonts. Fonts affect the <strong>speed and comfort</strong> with which users understand and read content. Refer  also to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#colour">Colour</a>.</p>
     <p>When choosing fonts, follow these principles:</p>
     <ul>
       <li><strong>Do not use more than 3 fonts and 3  colours </strong>across a single website.

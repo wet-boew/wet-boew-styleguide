@@ -64,18 +64,18 @@ date_modified: 2019-04-11
           <div class="row mrgn-bttm-md">
             <div class="col-md-6">
               <p>Default:</p>
-              <img src="http://placehold.it/250x250" class="img-responsive" alt="A generic square placeholder image" /></div>
+              <img src="https://placehold.it/250x250" class="img-responsive" alt="A generic square placeholder image" /></div>
             <div class="col-md-6">
               <p>Rounded:</p>
-              <img src="http://placehold.it/250x250" class="img-rounded img-responsive" alt="A generic square placeholder with rounded corners" /></div>
+              <img src="https://placehold.it/250x250" class="img-rounded img-responsive" alt="A generic square placeholder with rounded corners" /></div>
           </div>
           <div class="row">
             <div class="col-md-6">
               <p>Circle:</p>
-              <img src="http://placehold.it/250x250" class="img-circle img-responsive" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible" /></div>
+              <img src="https://placehold.it/250x250" class="img-circle img-responsive" alt="A generic square placeholder image where only the portion within the circle circumscribed about said square is visible" /></div>
             <div class="col-md-6">
               <p>Thumbnail (hyperlinked):</p>
-              <a href="#"><img src="http://placehold.it/250x250" class="img-thumbnail img-responsive" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" /></a></div>
+              <a href="#"><img src="https://placehold.it/250x250" class="img-thumbnail img-responsive" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera" /></a></div>
           </div>
         </div>
       </div>
@@ -118,9 +118,9 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Appearance</h5>
           <p>Image is too large for the available space: </p>
-          <img src="http://placehold.it/400x100" alt="Generic placeholder image" />
+          <img src="https://placehold.it/400x100" alt="Generic placeholder image" />
           <p class="mrgn-tp-lg">Same image is now responsive, and fits the parent container:</p>
-          <img src="http://placehold.it/400x100" class="img-responsive" alt="Generic placeholder image" /> </div>
+          <img src="https://placehold.it/400x100" class="img-responsive" alt="Generic placeholder image" /> </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -151,13 +151,13 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Appearance</h5>
           <p>Image (100x25)  is too small  and blurry: </p>
-          <img src="http://placehold.it/100x25" alt="Generic placeholder image" />
+          <img src="https://placehold.it/100x25" alt="Generic placeholder image" />
           <p class="mrgn-tp-md">Image (200x50) is still too small for the space:</p>
-          <img src="http://placehold.it/200x50"  alt="Generic placeholder image" />
+          <img src="https://placehold.it/200x50"  alt="Generic placeholder image" />
           <p class="mrgn-tp-lg">Stretched image (100x25) is blurry:</p>
-          <img src="http://placehold.it/100x25" class="full-width" alt="Generic placeholder image" />
+          <img src="https://placehold.it/100x25" class="full-width" alt="Generic placeholder image" />
           <p class="mrgn-tp-lg">Stretched, clear image (200x50)  fits space: </p>
-          <img src="http://placehold.it/200x50" class="full-width" alt="A generic square placeholder image" /></div>
+          <img src="https://placehold.it/200x50" class="full-width" alt="A generic square placeholder image" /></div>
       </div>
     </div>
     <div class="col-md-4">
@@ -189,7 +189,7 @@ date_modified: 2019-04-11
       <div class="panel panel-default">
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Appearance</h5>
-          <figure class="thumbnail"><a href="#"><img src="http://placehold.it/350x200" alt="Generic placeholder thumbnail" /></a>
+          <figure class="thumbnail"><a href="#"><img src="https://placehold.it/350x200" alt="Generic placeholder thumbnail" /></a>
             <figcaption class="caption">
               <h4>Title (caption) </h4>
               <p>Content</p>
@@ -224,7 +224,7 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Thumbnail:
 <strong>&lt;figure class=&quot;thumbnail&quot;&gt;</strong>
-  <strong>&lt;a href=&quot;#&quot;&gt;</strong>&lt;img src=&quot;http://placehold.it/350x200&quot; alt=&quot;&quot; /&gt;<strong>&lt;/a&gt;</strong>
+  <strong>&lt;a href=&quot;#&quot;&gt;</strong>&lt;img src=&quot;https://placehold.it/350x200&quot; alt=&quot;&quot; /&gt;<strong>&lt;/a&gt;</strong>
 
 // Title (caption):
   <strong>&lt;figcaption class=&quot;caption&quot;&gt;</strong>
@@ -248,13 +248,13 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Appearance</h5>
           <h6>Default:</h6>
-          <section class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+          <section class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
             <div class="media-body">
               <h5 class="media-heading">Media heading</h5>
               <p>Content, image pulls left </p>
             </div>
           </section>
-          <section class="media mrgn-tp-xl"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+          <section class="media mrgn-tp-xl"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
             <div class="media-body">
               <h5 class="media-heading">Media heading</h5>
               <p>Content, image pulls right </p>
@@ -262,13 +262,13 @@ date_modified: 2019-04-11
           </section>
           <h6 class="mrgn-tp-xl">As lists:</h6>
           <ul class="media-list">
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">Heading</h5>
                 <p>Content, image pulls left </p>
               </div>
             </li>
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">Heading</h5>
                 <p>Content, image pulls left </p>
@@ -276,13 +276,13 @@ date_modified: 2019-04-11
             </li>
           </ul>
           <ul class="media-list   mrgn-tp-xl">
-            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">Heading</h5>
                 <p>Content, image pulls right </p>
               </div>
             </li>
-            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Generic placeholder image" /> </a>
+            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Generic placeholder image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">Heading</h5>
                 <p>Content, image pulls right </p>
@@ -356,13 +356,13 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default" >Thumbnail and photo gallery (Lightbox)</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-en.html"  class="btn btn-default" >Data picture</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-en.html"  class="btn btn-default" >Thumbnail and photo gallery (Lightbox)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-en.html"  class="btn btn-default" >Data picture</a></li>
     <li><a href="position-en.html" class="btn btn-default">Absolute positioning</a></li>
     <li><a href="opacity-en.html" class="btn btn-default">Opacity</a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Supporting principles</h2>
   <div data-ajax-replace="../writing/strctr-en.html #image-info"></div>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

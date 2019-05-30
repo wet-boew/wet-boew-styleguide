@@ -13,7 +13,7 @@
 {% if content_editable == true or content_revision_history == true or content_questions_comments == true %}
 <ul class="list-inline">
 {% if content_editable == true %}
-<li><a class="btn btn-default" id="edit-page" href="http://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ page.path }}">Modifier cette page</a></li>
+<li><a class="btn btn-default" id="edit-page" href="https://prose.io/#{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ page.path }}">Modifier cette page</a></li>
 {% endif %}
 {% if content_revision_history == true %}
 <li><a class="btn btn-default" href="https://github.com/{{ site.org_name }}/{{ site.repo_name }}/commits/{{ site.branch }}/{{ page.path }}">Historique des révisions</a></li>

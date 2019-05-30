@@ -714,14 +714,14 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p>Des caractéristiques et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-fr.html" >DataTables</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-fr.html" >Graphiques</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" >Zébrures (technique avancée)</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-fr.html" >Validateur de tableau</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" >Égalisation (égalisation des hauteurs)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-fr.html" >DataTables</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-fr.html" >Graphiques</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-fr.html" >Zébrures (technique avancée)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-fr.html" >Validateur de tableau</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-fr.html" >Égalisation (égalisation des hauteurs)</a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Principes à l'appui</h2>
   <div data-ajax-replace="../writing/strctr-fr.html #tables-info"></div>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

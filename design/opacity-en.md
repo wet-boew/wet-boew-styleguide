@@ -54,21 +54,21 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Appearance</h5>
           <p>Default:</p>
           <div class="row mrgn-bttm-md">
-            <div class="col-sm-4"><img class="img-responsive" src="http://placehold.it/140x140" alt="Default image, a grey aquare"></div>
+            <div class="col-sm-4"><img class="img-responsive" src="https://placehold.it/140x140" alt="Default image, a grey aquare"></div>
           </div>
           <p>With opacity:</p>
           <div class="row">
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-100"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-90"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-80"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-100"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-90"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-80"></div>
             <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-70</code></p>
-              <img class="opct-70 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-70"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-60"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-50"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-40"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-30"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-20"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="http://placehold.it/140x140" alt="Demo of opct-10"></div>
+              <img class="opct-70 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-70"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-60"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-50"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-40"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-30"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-20"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-10"></div>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ date_modified: 2019-04-11
         </li>
         <li>Use <code>.opct-100</code> when a fade in to 100%, or fade out from 100% is required</li>
         <li> Ensure that the new lighter text colour still passes accessibility colour contrast requirements        <ul>
-            <li>The <a href="http://webaim.org/resources/contrastchecker/" rel="external">Color Contrast Checker <span  class="wb-inv"> (external link)</span></a> validates colours for compliance</li>
+            <li>The <a href="https://webaim.org/resources/contrastchecker/" rel="external">Color Contrast Checker <span  class="wb-inv"> (external link)</span></a> validates colours for compliance</li>
             <li>The opacity affects the whole element and everything within it</li>
           </ul>
         </li>

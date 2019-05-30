@@ -219,11 +219,11 @@ date_modified: 2019-04-11
           </ul>
         </li>
         <li>Use unique label text on any given page to meet accessibility standards</li>
-        <li>Place "(required)" at the end of the field label if information is required.  Refer to: <a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html">Form validation</a></li>
+        <li>Place "(required)" at the end of the field label if information is required.  Refer to: <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html">Form validation</a></li>
       </ul>
       <p class="h6" ><strong>Alignment option 1 design: </strong> </p>
       <ul>
-        <li> Place the label <strong>above the input field</strong>. Further  to <a href="http://rosenfeldmedia.com/books/web-form-design/" >Web form design: Filling in the blanks</a>, this is the <strong>recommended</strong> layout
+        <li> Place the label <strong>above the input field</strong>. Further  to <a href="https://rosenfeldmedia.com/books/web-form-design/" >Web form design: Filling in the blanks</a>, this is the <strong>recommended</strong> layout
           <ul>
             <li>This layout allows users to  capture both labels and input fields with a single eye movement. While  this is the simplest of layouts, users can process the  information ten times faster than if the information is left-aligned. This is shown in &quot;Alignment option 3 − Left aligned&quot;. This solution uses more vertical  space, but does not impact the user experience. If this does not suit your  specific layout needs &quot;Alignment option 2 − Right aligned&quot; is also <abbr title="O K ">OK</abbr> to use</li>
           </ul>
@@ -972,11 +972,11 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="btn btn-default">Datalist (autocomplete) </a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="btn btn-default">Datalist (autocomplete) − Dynamic</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-en.html"  class="btn btn-default">Date picker </a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html"  class="btn btn-default">Forms validation</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="btn btn-default">Datalist (autocomplete) </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datalist/datalist-en.html"  class="btn btn-default">Datalist (autocomplete) − Dynamic</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/datepicker/datepicker-en.html"  class="btn btn-default">Date picker </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/formvalid/formvalid-en.html"  class="btn btn-default">Forms validation</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

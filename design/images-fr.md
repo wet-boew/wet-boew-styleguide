@@ -64,18 +64,18 @@ date_modified: 2019-04-11
           <div class="row mrgn-bttm-md">
             <div class="col-md-6">
               <p>Par défaut :</p>
-              <img src="http://placehold.it/250x250" class="img-responsive" alt="Un espace carré générique pour une image" /></div>
+              <img src="https://placehold.it/250x250" class="img-responsive" alt="Un espace carré générique pour une image" /></div>
             <div class="col-md-6">
               <p>Arrondi&nbsp;:</p>
-            <img src="http://placehold.it/250x250" class="img-rounded img-responsive" alt="Un espace carré générique avec coins arrondis" /></div>
+            <img src="https://placehold.it/250x250" class="img-rounded img-responsive" alt="Un espace carré générique avec coins arrondis" /></div>
           </div>
           <div class="row">
             <div class="col-md-6">
               <p>Cercle&nbsp;:</p>
-            <img src="http://placehold.it/250x250" class="img-circle img-responsive" alt="Un espace carré générique pour une image ou seulement l'esapce contenue dans le cercle est visible" /></div>
+            <img src="https://placehold.it/250x250" class="img-circle img-responsive" alt="Un espace carré générique pour une image ou seulement l'esapce contenue dans le cercle est visible" /></div>
             <div class="col-md-6">
               <p>Miniature (en hyperlien)&nbsp;:</p>
-              <a href="#"><img src="http://placehold.it/250x250" class="img-thumbnail img-responsive" alt="Un espace carré générique pour une image avec une bordure blanche, lui faisant ressembler à une photo prise avec un ancien appareil photo instantané" /></a></div>
+              <a href="#"><img src="https://placehold.it/250x250" class="img-thumbnail img-responsive" alt="Un espace carré générique pour une image avec une bordure blanche, lui faisant ressembler à une photo prise avec un ancien appareil photo instantané" /></a></div>
           </div>
         </div>
       </div>
@@ -118,9 +118,9 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
           <p>Image trop grande pour l'espace disponible&nbsp;: </p>
-          <img src="http://placehold.it/400x100" alt="Un espace générique pour une image" />
+          <img src="https://placehold.it/400x100" alt="Un espace générique pour une image" />
           <p class="mrgn-tp-lg">La même image est maintenant réactive et entre dans le conteneur parent&nbsp;:</p>
-          <img src="http://placehold.it/400x100" class="img-responsive" alt="Un espace générique pour une image" /> </div>
+          <img src="https://placehold.it/400x100" class="img-responsive" alt="Un espace générique pour une image" /> </div>
       </div>
     </div>
     <div class="col-md-4">
@@ -151,13 +151,13 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
           <p>L'image (100x25) est trop petite et brouillée&nbsp;: </p>
-          <img src="http://placehold.it/100x25" alt="Un espace générique pour une image" />
+          <img src="https://placehold.it/100x25" alt="Un espace générique pour une image" />
           <p class="mrgn-tp-md">L'image (200x50) est toujours trop petite pour l'espace&nbsp;:</p>
-          <img src="http://placehold.it/200x50"  alt="Un espace générique pour une image" />
+          <img src="https://placehold.it/200x50"  alt="Un espace générique pour une image" />
           <p class="mrgn-tp-lg">L'image étirée (100x25) est floue&nbsp;:</p>
-          <img src="http://placehold.it/100x25" class="full-width" alt="Un espace générique pour une image" />
+          <img src="https://placehold.it/100x25" class="full-width" alt="Un espace générique pour une image" />
           <p class="mrgn-tp-lg">L'image étirée et claire (200x50) entre dans l'espace&nbsp;: </p>
-          <img src="http://placehold.it/200x50" class="full-width" alt="Un espace générique pour une image" /></div>
+          <img src="https://placehold.it/200x50" class="full-width" alt="Un espace générique pour une image" /></div>
       </div>
     </div>
     <div class="col-md-4">
@@ -189,7 +189,7 @@ date_modified: 2019-04-11
       <div class="panel panel-default">
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
-          <figure class="thumbnail"><a href="#"><img src="http://placehold.it/350x200" alt="Un espace générique pour une miniature" /></a>
+          <figure class="thumbnail"><a href="#"><img src="https://placehold.it/350x200" alt="Un espace générique pour une miniature" /></a>
             <figcaption class="caption">
               <h4>Titre (légende)</h4>
               <p>Contenu</p>
@@ -224,7 +224,7 @@ date_modified: 2019-04-11
       <h5 class="mrgn-tp-0">Code</h5>
       <pre><code>// Miniature&nbsp;:
 <strong>&lt;figure class=&quot;thumbnail&quot;&gt;</strong>
-  <strong>&lt;a href=&quot;#&quot;&gt;</strong>&lt;img src=&quot;http://placehold.it/350x200&quot; alt=&quot;&quot; /&gt;<strong>&lt;/a&gt;</strong>
+  <strong>&lt;a href=&quot;#&quot;&gt;</strong>&lt;img src=&quot;https://placehold.it/350x200&quot; alt=&quot;&quot; /&gt;<strong>&lt;/a&gt;</strong>
 
 // Titre (légende)&nbsp;:
   <strong>&lt;figcaption class=&quot;caption&quot;&gt;</strong>
@@ -248,13 +248,13 @@ date_modified: 2019-04-11
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
           <h6>Par défaut&nbsp; :</h6>
-          <section class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+          <section class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
             <div class="media-body">
               <h5 class="media-heading">En-tête du média</h5>
               <p>Contenu, image tirée vers la gauche</p>
             </div>
           </section>
-          <section class="media mrgn-tp-xl"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+          <section class="media mrgn-tp-xl"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
             <div class="media-body">
               <h5 class="media-heading">En-tête du média</h5>
               <p>Contenu, image tirée vers la droite</p>
@@ -262,13 +262,13 @@ date_modified: 2019-04-11
           </section>
           <h6 class="mrgn-tp-xl">Comme des listes :</h6>
           <ul class="media-list">
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">En-tête</h5>
                 <p>Contenu, image tirée vers la gauche</p>
               </div>
             </li>
-            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+            <li class="media"> <a class="pull-left" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">En-tête</h5>
                 <p>Contenu, image tirée vers la gauche</p>
@@ -276,13 +276,13 @@ date_modified: 2019-04-11
             </li>
           </ul>
           <ul class="media-list mrgn-tp-xl">
-            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">En-tête</h5>
                 <p>Contenu, image tirée vers la droite </p>
               </div>
             </li>
-            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="http://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
+            <li class="media"> <a class="pull-right" href="#"> <img class="media-object" src="https://placehold.it/64x64" alt="Un espace générique pour une image" /> </a>
               <div class="media-body">
                 <h5 class="media-heading">En-tête</h5>
                 <p>Contenu, image tirée vers la droite.</p>
@@ -356,13 +356,13 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h4>
   <p> Des fonctions et des comportements complémentaires sont disponibles.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default" >Galerie de miniatures et de photos (lightbox)</a></li>
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-fr.html"  class="btn btn-default" > Data Picture </a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/lightbox/lightbox-fr.html"  class="btn btn-default" >Galerie de miniatures et de photos (lightbox)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/data-picture/data-picture-fr.html"  class="btn btn-default" > Data Picture </a></li>
     <li><a href="position-fr.html" class="btn btn-default">Positionnement absolu </a></li>
     <li><a href="opacity-fr.html" class="btn btn-default">Opacité</a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span></span> Principes de soutien</h2>
   <div data-ajax-replace="../writing/strctr-fr.html #image-info"></div>
-  <p class="mrgn-tp-lg text-muted"> Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted"> Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

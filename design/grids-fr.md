@@ -592,6 +592,6 @@ date_modified: 2019-04-11
   <ul class="list-inline lst-spcd">
     <li><a class="btn btn-default" href="reflow-fr.html">Redistribuer le contenu autour des grilles</a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
+  <p class="mrgn-tp-lg text-muted">Une partie du code et des documents pour cette page est tirée de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a>.</p>
 {% endraw %}
 {:/}

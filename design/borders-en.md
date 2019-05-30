@@ -268,7 +268,7 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-en.html" >Equalize (Equal height)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-en.html" >Equalize (Equal height)</a></li>
   </ul>
   <h2 id="supporting" tabindex="-1"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Supporting principles</h2>
   <p> The Principle of Common Region states that objects that are within the same demarcated (bordered) region are perceived as grouped together. </p>

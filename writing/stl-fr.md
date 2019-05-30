@@ -146,7 +146,7 @@ date_modified: 2019-04-11
 	<blockquote class="mrgn-bttm-lg mrgn-lft-xl">
         <p>[Traduction] La peur fait en sorte que les gens cachent leur sens en ajoutant des mots. Cela se retourne contre eux. Nous savons que vous avez peur. L'ajout de mots rend les gens moins susceptibles de vous faire confiance.</p>
         <footer class="text-right">Josh Bernoff<br>
-          <cite><a href="http://withoutbullshit.com/blog/how-extra-words-undermine-trust-case-study/" rel="external"><span lang="en">How  extra words undermine trust: a case study</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+          <cite><a href="https://withoutbullshit.com/blog/how-extra-words-undermine-trust-case-study/" rel="external"><span lang="en">How  extra words undermine trust: a case study</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
 
@@ -302,7 +302,7 @@ date_modified: 2019-04-11
         <li><strong>la moitié </strong>(ou moins)<strong> du nombre de mots  </strong>de la rédaction conventionnelle </li>
       </ul>
      <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/how-users-read-on-the-web/" rel="external"><span lang="en">How Users Read on the Web</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" rel="external"><span lang="en">How Users Read on the Web</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="task"><span id="task-heading">Concentrez-vous sur la tâche </span></h2>
@@ -320,7 +320,7 @@ date_modified: 2019-04-11
 	 <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Un site Web typique pourrait avoir beaucoup de contenu qui n'aide pas les utilisateurs à atteindre leurs buts – comme des archives de communiqués de presse et de longs énoncés de la vision. Une grande partie de ce contenu peut habituellement être retiré, simplifié ou fusionné d'une certaine façon.</p>
 	  <footer class="text-right">A List Apart<br>
-       <cite><a href="http://alistapart.com/article/the-core-model-designing-inside-out-for-better-results" rel="external"><span lang="en">The Core Model: Designing Inside Out for Better Results</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer></blockquote>
+       <cite><a href="https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results" rel="external"><span lang="en">The Core Model: Designing Inside Out for Better Results</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer></blockquote>
   </div>
   <h2 id="parallel"><span id="parallel-heading">Utilisez une structure en parallèle</span></h2>
   <div id="parallel-info">
@@ -331,7 +331,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Utilisez des termes cohérents</li>
       </ul>
     </div>
-    <p>Il est beaucoup plus facile de lire ou de parcourir rapidement les en-têtes, les listes à puces, les hyperliens et les phrases  si vous les rédigez dans une structure en parallèle. Une structure en parallèle en est une où vous conservez le même modèle grammatical pour chaque élément. Utilisez le même temps de verbe, la même structure de phrase, la même voix et les mêmes termes. La structure en parallèle en est une où un thème logique relie chaque élément du groupe. De plus, chaque élément est distinct, les éléments ne se chevauchent pas et ceux-ci sont présentés dans un ordre logique, si l'ordre est important. Consultez la page des <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#lists">listes</a> pour en savoir plus sur l'organisation des listes.</p>
+    <p>Il est beaucoup plus facile de lire ou de parcourir rapidement les en-têtes, les listes à puces, les hyperliens et les phrases  si vous les rédigez dans une structure en parallèle. Une structure en parallèle en est une où vous conservez le même modèle grammatical pour chaque élément. Utilisez le même temps de verbe, la même structure de phrase, la même voix et les mêmes termes. La structure en parallèle en est une où un thème logique relie chaque élément du groupe. De plus, chaque élément est distinct, les éléments ne se chevauchent pas et ceux-ci sont présentés dans un ordre logique, si l'ordre est important. Consultez la page des <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#lists">listes</a> pour en savoir plus sur l'organisation des listes.</p>
     <table class="table table-bordered">
      <caption class="wb-inv">Exemples n'est pas et en parallèle</caption>
       <tr>
@@ -398,7 +398,7 @@ date_modified: 2019-04-11
       </ul>
     </div>
     <p><strong>Les utilisateurs chassent l'information</strong>. Ils arrivent sur une page Web et ils parcourent rapidement le contenu en quête d'information. S'ils ne trouvent pas ce qu'ils cherchent, ils continuent leur chasse en suivant un lien vers une autre page. Comment font-ils pour choisir le prochain lien? Ils flairent virtuellement le lien qui présente l'odeur la plus forte. On dit que cette pratique consiste à suivre l'odeur de l'information.</p>
-    <p>Dans l'optique de ce comportement des utilisateurs,  <strong>il est essentiel d'utiliser des liens descriptifs qui ressemblent étroitement au titre ou à l'en-tête de la page de destination</strong>. Les liens vagues, mal nommés, obscurs ou incomplets affaiblissent l'odeur et frustrent les utilisateurs. Parfois, ils font en sorte que ces derniers abandonnent leur chasse. En plus des liens descriptifs, les utilisateurs détectent l'odeur de l'information dans les graphiques et la mise en page. Voir  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#heading">Optimisez les en-têtes</a> pour en savoir plus sur la façon de rédiger des en-têtes descriptifs. Voir  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#image">Images</a> et <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#consistent">Veillez à la cohérence et à la prévisibilité</a> pour en savoir plus sur les graphiques et la mise en page.</p>
+    <p>Dans l'optique de ce comportement des utilisateurs,  <strong>il est essentiel d'utiliser des liens descriptifs qui ressemblent étroitement au titre ou à l'en-tête de la page de destination</strong>. Les liens vagues, mal nommés, obscurs ou incomplets affaiblissent l'odeur et frustrent les utilisateurs. Parfois, ils font en sorte que ces derniers abandonnent leur chasse. En plus des liens descriptifs, les utilisateurs détectent l'odeur de l'information dans les graphiques et la mise en page. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#heading">Optimisez les en-têtes</a> pour en savoir plus sur la façon de rédiger des en-têtes descriptifs. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#image">Images</a> et <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#consistent">Veillez à la cohérence et à la prévisibilité</a> pour en savoir plus sur les graphiques et la mise en page.</p>
     <p>Des chercheurs de Xerox, Peter Pirolli et Wai Tat-Fu, ont formulé la théorie du butinage d'informations, l'ancêtre de la théorie de l'odeur de l'information.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] [...] (1) les utilisateurs travaillant à des tâches mal connues devraient choisir des liens qui présentent une forte odeur d'information, (2) les utilisateurs quitteront un site lorsque l'odeur de l'information sur le site diminue en deçà d'un certain seuil</p>
@@ -435,7 +435,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] La cohérence est judicieuse du point de vue des affaires. Elle permet de développer un petit ensemble de modèles de pages et d'autres éléments de conception, puis de les appliquer à tout le site. Elle facilite la rédaction, la publication et la tenue à jour, et elle soutient la mise en œuvre de <abbr title="Langue de balisage extensible">XML</abbr>, de <abbr title="feuille de style en cascade">CSS</abbr> et d'autres technologies qui s'appuient sur le contenu structuré. </p>
       <footer class="text-right">Gerry Gaffney, Information &amp; Design<br>
-       <cite><a href="http://www.sitepoint.com/why-consistency-is-critical/" rel="external"><span lang="en">Why consistency is critical</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+       <cite><a href="https://www.sitepoint.com/why-consistency-is-critical/" rel="external"><span lang="en">Why consistency is critical</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="search"><span id="search-heading">Rédigez de manière à être trouvé</span></h2>
@@ -458,7 +458,7 @@ date_modified: 2019-04-11
       <li> <strong>Un contenu trop volumineux engorge le moteur de recherche et complique la localisation de la bonne information</strong>; une stratégie d'indexation spécialement adaptée au contexte de l'information, plutôt que l'opinion ou la préférence d'une personne, devrait définir le contenu qui sera indexé (apparaître dans les résultats de recherche) et celui qui ne le sera pas (à découvrir plus à fond par la navigation à partir des principales pages indexées)</li>
       <li> En règle générale, les utilisateurs ne regardent que les premiers liens sur la page des résultats de recherche. Lorsqu'il y a trop de résultats de recherche, les utilisateurs rateront probablement votre contenu</li>
     </ul>
-    <p><strong>La meilleure méthode d'optimisation des recherches consiste à  <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-fr.html#reuse">réutiliser, recycler et réduire le contenu</a>, et non pas à créer plus de contenu. </strong></p>
+    <p><strong>La meilleure méthode d'optimisation des recherches consiste à  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-fr.html#reuse">réutiliser, recycler et réduire le contenu</a>, et non pas à créer plus de contenu. </strong></p>
     <p>Pour présenter aux utilisateurs les résultats de recherche qu'ils cherchent, l'essentiel est d'<strong>utiliser les expressions et les termes de recherche qu'ils utiliseront probablement </strong> dans le titre, l'en-tête, le texte et les métadonnées : </p>
     <ul>
       <li>Déterminez les expressions et les termes de recherche courants alors que vous créez le contenu</li>
@@ -477,7 +477,7 @@ date_modified: 2019-04-11
       </ul>
       <p>Les mots familiers viennent à l'esprit lorsque les utilisateurs créent leurs requêtes de recherche. Si votre  écriture favorise les termes inventés plutôt que les mots existants, les utilisateurs ne trouveront pas votre site.</p>
       <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/web-writing-use-search-keywords/" rel="external"><span lang="en">Use Old Words When Writing for Findability</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/web-writing-use-search-keywords/" rel="external"><span lang="en">Use Old Words When Writing for Findability</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p> [Traduction] Il y a des années, nous regardions les gens essayer de trouver des produits sur  <abbr title="magasain Ikea">IKEA</abbr>.com...Lors de notre essai initial, les tâches étaient simples. L'une d'elles était la suivante : « Trouvez une bibliothèque pour votre salon qui peut contenir 200 livres. » Les participants ont tous fait la même chose. Ils ont cliqué dans la boîte de recherche sur la page d'accueil d'<abbr title="magasain Ikea">IKEA</abbr> et ils ont tapé « Bookcases » (Bibliothèques). De là, il était assez facile de parvenir au bon produit.</p>
@@ -485,7 +485,7 @@ date_modified: 2019-04-11
       <p>« Vous venez de déménager dans un nouveau logement qui a un salon que vous adorez à cause de ses vastes murs. Maintenant, il ne vous manque plus qu'un endroit où mettre ces 200 livres précieux que vous gardiez dans des boîtes depuis toujours. Comment le feriez-vous? » </p>
       <p>Comme nous le soupçonnions, les comportements des participants ont changé. Quelques personnes ont tapé « bookcase » (bibliothèque) dans la boîte de recherche. D'autres ont tapé «  shelves » (étagères), « book shelves » (rayons de bibliothèque) et « book shelf » (rayon de bibliothèque); une personne a tapé « shelves for books » (étagères pour livres). D'autres encore n'ont rien tapé dans la boîte de recherche, mais ont cliqué sur les liens de navigation dans la page, y compris les systèmes d'entreposage. La plupart des personnes (mais pas toutes) ont connu du succès en employant leur propre stratégie.</p>
       <footer class="text-right">Jared Spool<br>
-        <cite><a href="http://www.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external"><span lang="en">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson</span>  (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external"><span lang="en">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson</span>  (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="aesthetics"><span id="aesthetics-heading">Faites bel effet</span></h2>
@@ -504,7 +504,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Les chercheurs croient aussi que ces premières impressions formées rapidement perdurent à cause de ce que les psychologues appellent l'« effet de halo ». Si les gens croient qu'un site Web fait un bel effet, cette qualité positive s'étendra à d'autres secteurs, comme le contenu du site Web. Puisque les gens aiment avoir raison, ils continueront d'utiliser le site Web qui leur a fait une bonne première impression, puisque cela reconfirmera que leur décision initiale était la bonne.</p>
       <footer class="text-right"><span lang="en"><abbr title="British Broadcasting Corporation">BBC</abbr></span><br>
-        <cite><a href="http://news.bbc.co.uk/2/hi/technology/4616700.stm" rel="external"><span lang="en">First impressions count for Web</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://news.bbc.co.uk/2/hi/technology/4616700.stm" rel="external"><span lang="en">First impressions count for Web</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
     <p class="lead">L'esthétique et l'expérience de l'utilisateur</p>
     <p>Des recherches montrent que la présentation et la conception d'un site peuvent avoir un effet positif ou négatif sur l'expérience de l'utilisateur, voire avoir un effet sur la crédibilité du site.</p>
@@ -512,7 +512,7 @@ date_modified: 2019-04-11
       <p>[Traduction] D'après une étude réalisée en 2002, <em><span lang="en">How do People Evaluate a website's Credibility?</span></em>,   [traduction] l'« attrait de la conception visuelle globale d'un site, y compris la page en page, la typographie, la taille des polices et les agencements de couleurs », représente le facteur numéro un que nous utilisons pour évaluer la crédibilité d'un site Web.</p>
       <p>Plus nous en apprenons au sujet des gens et de la façon dont nos cerveaux traitent l'information, plus nous apprenons la véracité de cette expression : la forme et la fonction ne sont pas des choses distinctes. Si nous croyons que, d'une manière ou d'une autre, le style existe de façon indépendante de la fonctionnalité, que nous pouvons traiter l'esthétique et la fonction comme deux éléments distincts, nous faisons alors abstraction de la preuve qui indique que la beauté est bien plus que décorative. Nos cerveaux ne peuvent faire autrement qu'être d'accord.</p>
       <footer class="text-right">A List Apart<br>
-        <cite><a href="http://www.alistapart.com/articles/indefenseofeyecandy/" rel="external"><span lang="en">In defense of eye candy</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+        <cite><a href="https://www.alistapart.com/articles/indefenseofeyecandy/" rel="external"><span lang="en">In defense of eye candy</span> (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
     <p class="lead">L'esthétique et la convivialité</p>
     <p>Les utilisateurs croient que les conceptions de site Web qui sont agréables esthétiquement sont plus faciles à utiliser que les conceptions de site qui sont moins agréables. Cela est connu sous le nom d'<strong>effet esthétique-convivialité</strong>. </p>
@@ -520,7 +520,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[Traduction] Les conceptions esthétiques sont plus efficaces pour encourager une attitude positive face à la conception que les conceptions inesthétiques, et elles rendent les gens plus tolérants face aux problèmes de conception. Une relation aussi personnelle et positive avec une conception évoque des sentiments d'affectation, de loyauté et de patience – tous des facteurs importants pour assurer la convivialité à long terme et le succès général d'une conception.</p>
       <footer class="text-right">University of Washington<br>
-       <cite><a href="http://courses.washington.edu/art479/media/universal_principles1.pdf" rel="external"><span lang="en">Aesthetic-Usability Effect</span> (<abbr title="format de document portable">PDF</abbr>, 1.4 <abbr title="mégaoctets">Mo</abbr>) (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
+       <cite><a href="https://courses.washington.edu/art479/media/universal_principles1.pdf" rel="external"><span lang="en">Aesthetic-Usability Effect</span> (<abbr title="format de document portable">PDF</abbr>, 1.4 <abbr title="mégaoctets">Mo</abbr>) (disponible en anglais seulement)<span class="wb-inv"> lien externe</span></a></cite></footer>
     </blockquote>
   </div>
 {% endraw %}

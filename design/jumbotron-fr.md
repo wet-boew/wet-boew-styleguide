@@ -76,7 +76,7 @@ date_modified: 2019-04-11
         <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Mauvaise utilisation</h5>
         <p>Points de conformité :</p>
         <ul>
-          <li>N'utilisez pas ce style si le contenu est confiné à un <code>.container</code>, utilisez plutôt le module <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/design/wells-fr.html" rel="external">wells<span class="wb-inv"> (lien externe)</span></a></li>
+          <li>N'utilisez pas ce style si le contenu est confiné à un <code>.container</code>, utilisez plutôt le module <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/wells-fr.html" rel="external">wells<span class="wb-inv"> (lien externe)</span></a></li>
 		  <li>Ne pas utiliser à la place de moyens plus efficaces pour présenter le contenu, tels que les alertes, les images, le carrousel, «&nbsp;lead&nbsp;» dans les déclarations, et ainsi de suite</li>
           <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec les points de conformité précédents</li>
         </ul>
@@ -93,6 +93,6 @@ date_modified: 2019-04-11
   <h4 id="full"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-expand fa-stack-1x fa-inverse"></span></span> Pleine largeur</h4>
 <p>Pour mettre le jumbotron en pleine largeur, et sans les coins arrondis, le placer hors de tout <code>.container</code>. Au lieu, utilisez un <code>.container</code> à l'intérieur.</p>
   </section>
-  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="http://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
+  <p class="mrgn-tp-lg">Une partie du code et des documents pour cette page provient de <a href="https://getbootstrap.com/" rel="external">Bootstrap<span class="wb-inv"> (lien externe)</span></a></p>
 {% endraw %}
 {:/}

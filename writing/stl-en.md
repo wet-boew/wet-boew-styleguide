@@ -143,7 +143,7 @@ date_modified: 2019-04-11
 	<blockquote class="mrgn-bttm-lg mrgn-lft-xl">
         <p>Fear makes people hide their meaning with extra  words.&nbsp;It backfires.&nbsp;We know you&rsquo;re afraid. Adding words makes people  less likely to trust you.&rdquo;</p>
         <footer class="text-right">Josh Bernoff<br>
-          <cite><a href="http://withoutbullshit.com/blog/how-extra-words-undermine-trust-case-study/">How  extra words undermine trust: a case study<span  class="wb-inv"> (external link)</span></a></cite>
+          <cite><a href="https://withoutbullshit.com/blog/how-extra-words-undermine-trust-case-study/">How  extra words undermine trust: a case study<span  class="wb-inv"> (external link)</span></a></cite>
 </footer>
     </blockquote>
   </div>
@@ -300,7 +300,7 @@ date_modified: 2019-04-11
         <li><span class="wb-icon-exclamation-alt"></span><strong>half the word count </strong>(or less) than conventional writing </li>
       </ul>
      <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/how-users-read-on-the-web/" rel="external">How Users Read on the Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/how-users-read-on-the-web/" rel="external">How Users Read on the Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="task"><span id="task-heading">Focus on the task</span></h2>
@@ -318,7 +318,7 @@ date_modified: 2019-04-11
 	 <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Typically, a website might have a  lot of content that doesn't help users meet their goals&mdash;such as press release  archives and lengthy vision statements. A great deal of this content can  usually be removed, simplified, or merged in some way.</p>
 	  <footer class="text-right">A List Apart<br>
-       <cite><a href="http://alistapart.com/article/the-core-model-designing-inside-out-for-better-results" rel="external">The Core Model: Designing Inside Out for Better Results<span  class="wb-inv"> (external link)</span></a></cite></footer></blockquote>
+       <cite><a href="https://alistapart.com/article/the-core-model-designing-inside-out-for-better-results" rel="external">The Core Model: Designing Inside Out for Better Results<span  class="wb-inv"> (external link)</span></a></cite></footer></blockquote>
   </div>
   <h2 id="parallel"><span id="parallel-heading">Use parallel structure</span></h2>
   <div id="parallel-info">
@@ -329,7 +329,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Use       consistent terms</li>
       </ul>
     </div>
-    <p>Headings,  bulleted lists, hyperlinks, and sentences are read or scanned much easier if you  write them in a parallel structure. A parallel structure means you keep the  same grammatical pattern for each element. Use the same verb  tense, same sentence structure, same voice, and same terms. Parallel structure means there is a logical theme that connects every item in the group. In addition, every item is distinct, does not overlap and is presented in a logical order, if order is important. Refer to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#lists">Lists</a> for more on list organization.</p>
+    <p>Headings,  bulleted lists, hyperlinks, and sentences are read or scanned much easier if you  write them in a parallel structure. A parallel structure means you keep the  same grammatical pattern for each element. Use the same verb  tense, same sentence structure, same voice, and same terms. Parallel structure means there is a logical theme that connects every item in the group. In addition, every item is distinct, does not overlap and is presented in a logical order, if order is important. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#lists">Lists</a> for more on list organization.</p>
     <table class="table table-bordered">
     <caption class="wb-inv">Examples of parallel and non parallel statements</caption>
       <tr>
@@ -397,7 +397,7 @@ date_modified: 2019-04-11
       </ul>
     </div>
     <p><strong>Users  hunt for information</strong>. They arrive on a web page and scan the content in search of information. If they cannot find what  they are searching for, they continue their hunt by following a link to another  page. How do they choose the next link? They virtually sniff out the link that has  the strongest scent. This practice is known as following the scent of  information.</p>
-    <p>With  this user behaviour in mind, <strong>it is crucial to use descriptive links which closely resemble the title or heading of the destination page</strong>. Vague, poorly named, obscure, or  incomplete links decreases the scent and frustrates users. Sometimes it leads them  to abandon their hunt. In addition to descriptive links, users pick up the  scent of information from graphics and the layout. Refer to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings</a> for more on writing descriptive headings. Refer to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#image">Images</a> and <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#consistent">Ensure consistency and predictability</a> for more on graphics and layout.</p>
+    <p>With  this user behaviour in mind, <strong>it is crucial to use descriptive links which closely resemble the title or heading of the destination page</strong>. Vague, poorly named, obscure, or  incomplete links decreases the scent and frustrates users. Sometimes it leads them  to abandon their hunt. In addition to descriptive links, users pick up the  scent of information from graphics and the layout. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings</a> for more on writing descriptive headings. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#image">Images</a> and <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#consistent">Ensure consistency and predictability</a> for more on graphics and layout.</p>
     <p>Xerox  researchers, Peter Pirolli and Wai Tat-Fu, developed the information foraging  theory, which is the precursor to the scent of information theory.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>...(1) users working on unfamiliar tasks are expected to choose links that have high information scent, (2) users will leave a site when the information scent of the site diminishes below a certain threshold</p>
@@ -434,7 +434,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Consistency  makes business sense. It allows you to develop a small set of templates for  pages and other design elements, and apply them throughout the site. It makes  writing, publishing and maintenance easier, and supports the implementation of  <abbr title="Extensible Markup Language">XML</abbr>, <abbr title="cascading style sheet">CSS</abbr> and other technologies that rely on structured content. </p>
       <footer class="text-right">Gerry Gaffney, Information &amp; Design<br>
-       <cite><a href="http://www.sitepoint.com/why-consistency-is-critical/" rel="external">Why consistency is  critical<span  class="wb-inv"> (external link)</span></a></cite></footer>
+       <cite><a href="https://www.sitepoint.com/why-consistency-is-critical/" rel="external">Why consistency is  critical<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="search"><span id="search-heading">Write to be found</span></h2>
@@ -457,7 +457,7 @@ date_modified: 2019-04-11
       <li> <strong>Too much useful  content clogs up the search engine, and makes it difficult to find the right information</strong>; an indexing strategy specifically tailored to the information context, rather than any individual&rsquo;s opinion or preference, should define what content will be indexed (appear in search results) and what content will not be indexed (be further discovered through navigation from the main indexed pages)</li>
       <li> Users generally  only look at the first few links on the search results page. When  there are too many search results, users will likely  miss your content</li>
     </ul>
-    <p><strong>The best search optimization method is to <a href="http://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-en.html#reuse">reuse,  recycle, and reduce content</a>, not create more content. </strong></p>
+    <p><strong>The best search optimization method is to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-en.html#reuse">reuse,  recycle, and reduce content</a>, not create more content. </strong></p>
     <p>The key to providing users with the search results they are looking for is to <strong>use the search terms and phrases they likely use </strong> in the title, heading, text, and metadata: </p>
     <ul>
       <li>Identify common search terms and phrases as you develop the content</li>
@@ -476,7 +476,7 @@ date_modified: 2019-04-11
       </ul>
       <p>Familiar words spring to mind when users create their search queries. If   your writing favors made-up terms over legacy words, users won't find   your site.</p>
       <footer class="text-right">Nielsen Norman Group<br>
-        <cite><a href="http://www.nngroup.com/articles/web-writing-use-search-keywords/" rel="external">Use Old Words When Writing for Findability<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/web-writing-use-search-keywords/" rel="external">Use Old Words When Writing for Findability<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Years ago, we were watching people try to find products on <abbr title="Ikea store">IKEA</abbr>.com...Our initial stab had simple tasks. One of them was 'Find a bookcase for your living room that can hold 200 books.'...every participant did exactly the same thing. They clicked in the search box on the <abbr title="Ikea store">IKEA</abbr> home page and typed Bookcases. From here, it was pretty easy to get to the right product.</p>
@@ -484,7 +484,7 @@ date_modified: 2019-04-11
       <p>'You've just moved into a new place with a living room that you love because of its expansive walls. Now, you just need someplace to put those 200 prized books that you've had in boxes forever. How would you do that?' </p>
       <p>As we suspected, our participants' behaviors changed. A couple folks typed bookcase into the search box. Others typed shelves, book shelves, book shelf, and one shelves for books. And others didn't type anything into the search box, but clicked on the navigation links on the page, including storage systems. Most (but not all) found success using their own strategies.</p>
       <footer class="text-right">Jared Spool<br>
-        <cite><a href="http://www.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson <span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson <span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="aesthetics"><span id="aesthetics-heading">Look good</span></h2>
@@ -503,7 +503,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>The researchers also believe that these quickly formed first   impressions last because of what is known to psychologists as the "halo   effect". If people believe a website looks good, then this positive   quality will spread to other areas, such as the website's content. Since people like to be right, they will continue to   use the website that made a good first impression, as this will further   confirm that their initial decision was a good one.</p>
       <footer class="text-right"><abbr title="British Broadcasting Corporation">BBC</abbr><br>
-        <cite><a href="http://news.bbc.co.uk/2/hi/technology/4616700.stm" rel="external">First impressions count for Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://news.bbc.co.uk/2/hi/technology/4616700.stm" rel="external">First impressions count for Web<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <p class="lead">Aesthetics and the user experience</p>
     <p>Research shows that the presentation and design of a site can positively or negatively affect the users' experience and even affect the site's credibility.</p>
@@ -511,7 +511,7 @@ date_modified: 2019-04-11
       <p>According to a 2002 study: <em>How Do People Evaluate a website's Credibility?,</em> the 'appeal of the overall visual design of a site, including layout,   typography, font size, and colour schemes,' is the number one factor we   use to evaluate a website's credibility.</p>
       <p>The more we learn about people, and how our brains process   information, the more we learn the truth of that phrase: form and   function aren't separate items. If we believe that style somehow exists   independent of functionality, that we can treat aesthetics   and function as two separate pieces, then we ignore the evidence that   beauty is much more than decoration. Our brains can't help but agree.</p>
       <footer class="text-right">A List Apart<br>
-        <cite><a href="http://www.alistapart.com/articles/indefenseofeyecandy/" rel="external">In defense of eye candy<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.alistapart.com/articles/indefenseofeyecandy/" rel="external">In defense of eye candy<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <p class="lead">Aesthetics and usability</p>
     <p>Users think aesthetically pleasing website designs are easier to use than site designs that are less pleasing. This is known as the <strong>aesthetic-usability effect</strong>. </p>
@@ -519,7 +519,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Aesthetic designs are more effective at fostering positive design   attitude than unaesthetic design, and make people more tolerant of   design problems ' Such personal and positive relationships with a design   evoke feelings of affection, loyalty, and patience   &mdash; all significant factors in the long-term usability and overall   success of a design.</p>
       <footer class="text-right">University of Washington<br>
-       <cite><a href="http://courses.washington.edu/art479/media/universal_principles1.pdf" rel="external">Aesthetic-Usability Effect (<abbr title="Portable document format">PDF</abbr>, 1.4 <abbr title="megabytes">MB</abbr>)<span  class="wb-inv"> (external link)</span></a></cite></footer>
+       <cite><a href="https://courses.washington.edu/art479/media/universal_principles1.pdf" rel="external">Aesthetic-Usability Effect (<abbr title="Portable document format">PDF</abbr>, 1.4 <abbr title="megabytes">MB</abbr>)<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
 {% endraw %}

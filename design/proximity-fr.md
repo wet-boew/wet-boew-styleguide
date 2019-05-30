@@ -136,13 +136,13 @@ date_modified: 2019-04-11
     <p>Rapprochez les choses qui sont liées et distancez les choses qui doivent être considérées comme séparées.</p>
     <p>Nous pouvons appliquer le principe de la proximité à l'envers : les éléments qui sont distancés les uns des autres sont considérés comme séparés. </p>
      <footer class="text-right">Formulate Information Design<br>
-      <cite><a href="http://www.formulate.com.au/blog/perception-5-proximity" >Perception and the design of forms — Part 5: Proximity</a></cite></footer>
+      <cite><a href="https://www.formulate.com.au/blog/perception-5-proximity" >Perception and the design of forms — Part 5: Proximity</a></cite></footer>
   </blockquote>
   <blockquote>
     <p>[Traduction] Le principe de la proximité nécessite que les éléments liés soient groupés visuellement, ce qui crée moins d'encombrement et qui offre une mise en page plus organisée. Les éléments qui ne sont pas liés les uns aux autres devraient être plus éloignés les uns des autres pour souligner leur absence de relation.</p>
     <p>Une utilisation efficace des espaces blancs et le groupement des éléments liés sont essentiels afin d'appliquer à votre site Web une hiérarchie visuelle claire.</p>
     <footer class="text-right">Louis Lazaris<br>
-      <cite><a href="http://www.webdesignerdepot.com/2010/01/the-principle-of-proximity-in-web-design/" >The Principle of Proximity in Web Design </a></cite></footer>
+      <cite><a href="https://www.webdesignerdepot.com/2010/01/the-principle-of-proximity-in-web-design/" >The Principle of Proximity in Web Design </a></cite></footer>
   </blockquote>
 {% endraw %}
 {:/}

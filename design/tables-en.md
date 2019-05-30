@@ -716,14 +716,14 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-en.html" >Data tables</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-en.html" >Charts and graphs</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html" >Zebra striping (Advanced)</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html" >Table validator</a></li>
-    <li><a class="btn btn-default" href="http://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html" >Equalize (Equal height)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/tables/tables-en.html" >Data tables</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/charts/charts-en.html" >Charts and graphs</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/docs/ref/zebra/zebra-en.html" >Zebra striping (Advanced)</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html" >Table validator</a></li>
+    <li><a class="btn btn-default" href="https://wet-boew.github.io/v4.0-ci/demos/equalheight/equalheight-en.html" >Equalize (Equal height)</a></li>
   </ul>
   <h2 id="supporting"><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-bookmark fa-stack-1x fa-inverse"></span> </span> Supporting principles</h2>
   <div data-ajax-replace="../writing/strctr-en.html #tables-info"></div>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}

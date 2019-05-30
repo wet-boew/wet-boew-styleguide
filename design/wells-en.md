@@ -131,9 +131,9 @@ date_modified: 2019-04-11
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
-    <li><a href="http://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-en.html"  class="btn btn-default">Equalize (Equal height)</a></li>
+    <li><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/equalheight/equalheight-en.html"  class="btn btn-default">Equalize (Equal height)</a></li>
     <li><a href="proximity-en.html" class="btn btn-default">Margin proximity </a></li>
   </ul>
-  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="http://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
+  <p class="mrgn-tp-lg text-muted">Some of the code and documentation for this page is sourced from <a href="https://getbootstrap.com/" >Bootstrap<span  class="wb-inv"> (external link)</span></a></p>
 {% endraw %}
 {:/}
