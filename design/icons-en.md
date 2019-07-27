@@ -61,7 +61,7 @@ date_modified: 2019-04-11
         <li>Do not use this component in a way that conflicts with the preceding compliance <span class="nowrap">point(s)</span></li>
         <li>Do not use icons to represent a third party's logo, as this can be contrary   to that company's brand asset policy.   For instance:
           <ul>
-            <li><a  href="https://www.facebookbrand.com/dos-donts">Facebook's do's and don'ts</a> states: "Use any icons, images or trademarks to represent Facebook other than what is found on this resource center."</li>
+            <li><a  href="https://en.facebookbrand.com/#brand-guidelines-assets">Facebook's do's and don'ts</a> states: "Use any icons, images or trademarks to represent Facebook other than what is found on this resource center."</li>
             <li><a  href="https://about.twitter.com/press/brand-assets">Twitter's brand assets and guidelines</a> states: "Our logo is always either blue or white. The Twitter   bird is never shown in black or other colors.&quot;</li>
             <li>Pixel-perfect spacing and other considerations are also required. It is best, legally-speaking, to use  the actual third party logo image</li>
           </ul>
@@ -74,7 +74,7 @@ date_modified: 2019-04-11
   <p><a href="https://bootstrapdocs.com/v3.3.1/docs/components/#glyphicons"  class="btn btn-primary" >View Glyphicons</a></p>
   <h3 id="fon">Font Awesome icons</h3>
   <p>Font Awesome provides 600+ glyphs. These icons are <strong>not</strong> part of the <abbr title="Web Experience Toolkit">WET</abbr> core build. Consult the <a href="https://fontawesome.com/start">Font Awesome</a> website for implementation instruction.</p>
-  <p><a href="https://fortawesome.github.io/Font-Awesome/icons/" class="btn btn-primary"  >View Font Awesome icons</a> <a href="https://fortawesome.github.io/Font-Awesome/examples/"  class="btn btn-primary">View Font Awesome stacking, resizing, rotating, spinning icon examples</a></p>
+  <p><a href="https://fontawesome.com/icons?from=io" class="btn btn-primary"  >View Font Awesome icons</a> <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started"  class="btn btn-primary">View Font Awesome stacking, resizing, rotating, spinning icon examples</a></p>
   <h2 id="enh">Enhanced use</h2>
   <h3 id="add"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h3>
   <p>Additional add-on features and behaviours are available.</p>

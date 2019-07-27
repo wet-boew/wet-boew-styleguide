@@ -329,7 +329,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Use       consistent terms</li>
       </ul>
     </div>
-    <p>Headings,  bulleted lists, hyperlinks, and sentences are read or scanned much easier if you  write them in a parallel structure. A parallel structure means you keep the  same grammatical pattern for each element. Use the same verb  tense, same sentence structure, same voice, and same terms. Parallel structure means there is a logical theme that connects every item in the group. In addition, every item is distinct, does not overlap and is presented in a logical order, if order is important. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#lists">Lists</a> for more on list organization.</p>
+    <p>Headings,  bulleted lists, hyperlinks, and sentences are read or scanned much easier if you  write them in a parallel structure. A parallel structure means you keep the  same grammatical pattern for each element. Use the same verb  tense, same sentence structure, same voice, and same terms. Parallel structure means there is a logical theme that connects every item in the group. In addition, every item is distinct, does not overlap and is presented in a logical order, if order is important. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#lists">Lists</a> for more on list organization.</p>
     <table class="table table-bordered">
     <caption class="wb-inv">Examples of parallel and non parallel statements</caption>
       <tr>
@@ -397,12 +397,12 @@ date_modified: 2019-04-11
       </ul>
     </div>
     <p><strong>Users  hunt for information</strong>. They arrive on a web page and scan the content in search of information. If they cannot find what  they are searching for, they continue their hunt by following a link to another  page. How do they choose the next link? They virtually sniff out the link that has  the strongest scent. This practice is known as following the scent of  information.</p>
-    <p>With  this user behaviour in mind, <strong>it is crucial to use descriptive links which closely resemble the title or heading of the destination page</strong>. Vague, poorly named, obscure, or  incomplete links decreases the scent and frustrates users. Sometimes it leads them  to abandon their hunt. In addition to descriptive links, users pick up the  scent of information from graphics and the layout. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings</a> for more on writing descriptive headings. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#image">Images</a> and <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#consistent">Ensure consistency and predictability</a> for more on graphics and layout.</p>
+    <p>With  this user behaviour in mind, <strong>it is crucial to use descriptive links which closely resemble the title or heading of the destination page</strong>. Vague, poorly named, obscure, or  incomplete links decreases the scent and frustrates users. Sometimes it leads them  to abandon their hunt. In addition to descriptive links, users pick up the  scent of information from graphics and the layout. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#heading">Optimize headings</a> for more on writing descriptive headings. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#image">Images</a> and <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-en.html#consistent">Ensure consistency and predictability</a> for more on graphics and layout.</p>
     <p>Xerox  researchers, Peter Pirolli and Wai Tat-Fu, developed the information foraging  theory, which is the precursor to the scent of information theory.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>...(1) users working on unfamiliar tasks are expected to choose links that have high information scent, (2) users will leave a site when the information scent of the site diminishes below a certain threshold</p>
       <footer class="text-right">Peter Pirolli and Wai Tat-Fu<br>
-        <cite><a href="http://www2.parc.com/istl/groups/uir/publications/items/UIR-2003-02-Pirolli-UM-SNIFACT.pdf" rel="external"><abbr title="S N I F">SNIF</abbr>-<abbr title="A C T">ACT</abbr>: A Model of Information Foraging on the World Wide Web (239 <abbr title="kilobytes">KB</abbr>, <abbr title="Portable document format">PDF</abbr>)<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><abbr title="S N I F">SNIF</abbr>-<abbr title="A C T">ACT</abbr>: A Model of Information Foraging on the World Wide Web (239 <abbr title="kilobytes">KB</abbr>, <abbr title="Portable document format">PDF</abbr>)</cite></footer>
     </blockquote>
   </div>
   <h2 id="consistent"><span id="consistent-heading">Ensure consistency and predictability</span></h2>
@@ -429,7 +429,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Users should feel  [at home] when they visit your site. They shouldn&rsquo;t have to spend a long time  finding what they&rsquo;re looking for. A consistent website is predictable and  therefore learnable. After a while, users will find the information that  they&rsquo;re searching for effortlessly. [&hellip;] Don&rsquo;t take this as a ban on experimentation. Experimentation is  essential to design. Keep in mind, though, that experimentation may introduce  unpredictability, which can have a drastic impact on your website&rsquo;s usability. </p>
       <footer class="text-right">Timothy Smith, <abbr title="User Experience Design">UX</abbr>  booth<br>
-        <cite><a href="http://www.uxbooth.com/articles/consistency-key-to-a-better-user-experience/" rel="external">Consistency:  Key to a better user experience<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.uxbooth.com/articles/consistency-key-to-a-better-user-experience/" rel="external">Consistency:  Key to a better user experience<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Consistency  makes business sense. It allows you to develop a small set of templates for  pages and other design elements, and apply them throughout the site. It makes  writing, publishing and maintenance easier, and supports the implementation of  <abbr title="Extensible Markup Language">XML</abbr>, <abbr title="cascading style sheet">CSS</abbr> and other technologies that rely on structured content. </p>
@@ -457,7 +457,7 @@ date_modified: 2019-04-11
       <li> <strong>Too much useful  content clogs up the search engine, and makes it difficult to find the right information</strong>; an indexing strategy specifically tailored to the information context, rather than any individual&rsquo;s opinion or preference, should define what content will be indexed (appear in search results) and what content will not be indexed (be further discovered through navigation from the main indexed pages)</li>
       <li> Users generally  only look at the first few links on the search results page. When  there are too many search results, users will likely  miss your content</li>
     </ul>
-    <p><strong>The best search optimization method is to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-en.html#reuse">reuse,  recycle, and reduce content</a>, not create more content. </strong></p>
+    <p><strong>The best search optimization method is to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/dvlpmnt-en.html#reuse">reuse,  recycle, and reduce content</a>, not create more content. </strong></p>
     <p>The key to providing users with the search results they are looking for is to <strong>use the search terms and phrases they likely use </strong> in the title, heading, text, and metadata: </p>
     <ul>
       <li>Identify common search terms and phrases as you develop the content</li>
@@ -484,7 +484,7 @@ date_modified: 2019-04-11
       <p>'You've just moved into a new place with a living room that you love because of its expansive walls. Now, you just need someplace to put those 200 prized books that you've had in boxes forever. How would you do that?' </p>
       <p>As we suspected, our participants' behaviors changed. A couple folks typed bookcase into the search box. Others typed shelves, book shelves, book shelf, and one shelves for books. And others didn't type anything into the search box, but clicked on the navigation links on the page, including storage systems. Most (but not all) found success using their own strategies.</p>
       <footer class="text-right">Jared Spool<br>
-        <cite><a href="https://www.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson <span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://archive.uie.com/brainsparks/2012/04/27/guess-what-task-design-is-critically-important-a-hard-learned-lesson/" rel="external">Guess What?!? Task Design is Critically Important! &ndash; A hard-learned lesson <span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="aesthetics"><span id="aesthetics-heading">Look good</span></h2>

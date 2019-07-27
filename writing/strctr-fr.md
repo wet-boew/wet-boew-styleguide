@@ -105,7 +105,7 @@ date_modified: 2019-04-11
   <li><strong>Gardez l'information spécifiques au tâches</strong></li>
   <li><strong>Présentez la logiquement ou séquentiellement dans un endroit ou les utilisateurs peuvent espérer la trouver</strong></li>
   <li>Assurez-vous que l'information est récente et pertinente, non redondante ou triviale</li>
-  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#alt">Évitez les médias substituts et de remplacement</a></li>
+  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-fr.html#alt">Évitez les médias substituts et de remplacement</a></li>
 </ul>
 
 
@@ -162,7 +162,7 @@ date_modified: 2019-04-11
         </tr>
       </tbody>
     </table>
-    <p><strong>Les sous-titres rendent les grands blocs de texte plus faciles à lire et à parcourir rapidement.</strong> Assurez-vous que les sous-titres sont clairs et concis et qu'ils suivent une  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a>.</p>
+    <p><strong>Les sous-titres rendent les grands blocs de texte plus faciles à lire et à parcourir rapidement.</strong> Assurez-vous que les sous-titres sont clairs et concis et qu'ils suivent une  <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-fr.html#parallel">structure en parallèle</a>.</p>
     <p>Une bonne pratique consiste à utiliser des sous-titres dans les longs documents. Lorsque de l'information figure sur le Web, les sous-titres améliorent la convivialité et la lisibilité.</p>
     <p><strong>De bons en-têtes et de bons sous-titres sont essentiels afin de rendre accessible le contenu sur le Web. </strong> Les utilisateurs de lecteur d'écran peuvent utiliser les titres et les sous-titres pour passer rapidement d'une section à l'autre et pour mieux comprendre ou résumer le contenu.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -227,9 +227,9 @@ date_modified: 2019-04-11
     </div>
     <p><strong>Les hyperliens orientent les utilisateurs</strong> vers l'information qu'ils cherchent. Utilisez des hyperliens pour éviter de répéter des renseignements qui sont déjà clairement exprimés  sur une autre page ou pour renvoyer à des renseignements connexes, tels que des définitions, des renseignements à l'appui ou des renseignements généraux.</p>
     <p><strong>Utilisez le titre de la page cible en tant que texte de l'hyperlien</strong>. Les utilisateurs sont très confus si le texte du lien et le nom de la page ne correspondent pas. Dans les situations où vous devez modifier le texte du lien, tentez de le <strong>faire correspondre le plus étroitement possible</strong> au nom de la page.</p>
-    <p>Pour répondre aux exigences en matière d'accessibilité, indiquez  <strong>clairement la cible de chaque lien, sans contexte supplémentaire outre le texte du lien</strong>. Les utilisateurs de lecteur d'écran peuvent lire les pages en générant une liste de tous les liens sur la page, et, à l'aide de la touche de tabulation, passer d'un lien à l'autre sans aucun contexte  environnant. Si la formulation du lien ne résume pas clairement le contenu de la cible, cela peut porter à confusion les utilisateurs de lecteur d'écran. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#heading">Optimisez les en-têtes et les étiquettes de menu</a>. </p>
+    <p>Pour répondre aux exigences en matière d'accessibilité, indiquez  <strong>clairement la cible de chaque lien, sans contexte supplémentaire outre le texte du lien</strong>. Les utilisateurs de lecteur d'écran peuvent lire les pages en générant une liste de tous les liens sur la page, et, à l'aide de la touche de tabulation, passer d'un lien à l'autre sans aucun contexte  environnant. Si la formulation du lien ne résume pas clairement le contenu de la cible, cela peut porter à confusion les utilisateurs de lecteur d'écran. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-fr.html#heading">Optimisez les en-têtes et les étiquettes de menu</a>. </p>
     <p>Si vous mentionnez plus d'une fois une autre page Web,  <strong>mettez en hyperlien la première mention seulement</strong>. Évitez d'insérer trop d'hyperliens dans un seul paragraphe. Un trop grand rapprochement des liens peut porter à confusion. Les utilisateurs ne sont pas toujours en mesure de déterminer où arrête un lien et où commence le suivant.</p>
-    <p>Les utilisateurs sont attirés vers les hyperliens et les suivent s'ils les voient. Puisque vous ne voulez pas que les utilisateurs passent outre le contenu de la page où ils se trouvent, <strong> ajoutez seulement un hyperlien vers les références qui peuvent aider les utilisateurs à accomplir leur tâche ou qui présentent des renseignements utiles à propos de la tâche.</strong> N'ajoutez pas d'hyperliens inutiles ou d'information non connexe. La présence de trop d'hyperliens est distrayante, et il devient difficile, pour les utilisateurs, de faire la distinction entre l'information qui est importante et celle qui ne l'est pas. Assurez-vous que les hyperliens acheminent les utilisateurs à la bonne page. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#scent">Créez des chemins d'information clairs</a> pour en savoir plus sur les hyperliens.</p>
+    <p>Les utilisateurs sont attirés vers les hyperliens et les suivent s'ils les voient. Puisque vous ne voulez pas que les utilisateurs passent outre le contenu de la page où ils se trouvent, <strong> ajoutez seulement un hyperlien vers les références qui peuvent aider les utilisateurs à accomplir leur tâche ou qui présentent des renseignements utiles à propos de la tâche.</strong> N'ajoutez pas d'hyperliens inutiles ou d'information non connexe. La présence de trop d'hyperliens est distrayante, et il devient difficile, pour les utilisateurs, de faire la distinction entre l'information qui est importante et celle qui ne l'est pas. Assurez-vous que les hyperliens acheminent les utilisateurs à la bonne page. Voir  <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-fr.html#scent">Créez des chemins d'information clairs</a> pour en savoir plus sur les hyperliens.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
     <p>Faites en sorte que les liens textuels soient assez longs pour être compris, mais assez courts pour réduire l'habillage au minimum.</p>
     <br>
@@ -262,9 +262,9 @@ date_modified: 2019-04-11
       <li>Par ordre logique ou séquentiel</li>
       <li>Par ordre de priorité, d'importance ou de popularité</li>
     </ul>
-    <p>Si vous énumérez une série d'éléments  <strong>et que l'ordre est important, utilisez des chiffres plutôt que des puces</strong>. Énumérez les éléments en suivant une  <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-fr.html#parallel">structure en parallèle</a> pour aider les utilisateurs à parcourir rapidement les listes.</p>
+    <p>Si vous énumérez une série d'éléments  <strong>et que l'ordre est important, utilisez des chiffres plutôt que des puces</strong>. Énumérez les éléments en suivant une  <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-fr.html#parallel">structure en parallèle</a> pour aider les utilisateurs à parcourir rapidement les listes.</p>
     <p>En règle générale,  <strong>ne mettez pas les listes en ordre alphabétique</strong>. L'utilisateur peut ne pas être certain de la lettre qui correspond à l'information voulue. Mettez les listes en ordre alphabétique lorsque l'information est assortie à une convention d'appellation stable, comme dans le cas de noms de personnes ou de lieux.</p>
-     <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>Pour rendre les listes uniformes, </strong>par souci d'harmonisation avec le  <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-fra.asp" rel="external">Guide de rédaction du contenu du site Canada.ca <span class="wb-inv"> (lien externe)</span></a> (la source qui fait actuellement autorité) et pour faciliter, pour les utilisateurs, le fait de parcourir rapidement des listes à des tailles d'écran et des résolutions différentes :</p>
+     <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>Pour rendre les listes uniformes, </strong>par souci d'harmonisation avec le  <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html" rel="external">Guide de rédaction du contenu du site Canada.ca <span class="wb-inv"> (lien externe)</span></a> (la source qui fait actuellement autorité) et pour faciliter, pour les utilisateurs, le fait de parcourir rapidement des listes à des tailles d'écran et des résolutions différentes :</p>
      <ul>
   <li>Introduisez chaque liste par une phrase qui se termine par un deux-points (:)</li>
     <li>Écrivez le premier mot en majuscule dans un élément de liste que<strong> lorsque les points sont des pensées complètes, ou si le premier mot est un nom propre</strong></li>
@@ -366,7 +366,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> N'écrivez pas tout en majuscules</li>
       </ul>
     </div>
-    <p>Sur le Web, 90 % de l'information se trouve sous forme de langage écrit et est présentée à l'aide de polices. La police a un effet sur la <strong>vitesse et le degré d'aisance</strong> avec lesquels les utilisateurs comprennent et lisent le contenu. Voir aussi <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-fr.html#colour">Couleur</a>.</p>
+    <p>Sur le Web, 90 % de l'information se trouve sous forme de langage écrit et est présentée à l'aide de polices. La police a un effet sur la <strong>vitesse et le degré d'aisance</strong> avec lesquels les utilisateurs comprennent et lisent le contenu. Voir aussi <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-fr.html#colour">Couleur</a>.</p>
     <p>Lorsque vous choisissez des polices, suivez les principes suivants :</p>
     <ul>
       <li><strong>N'utilisez pas plus de 3 polices et de 3 couleurs </strong>dans un seul site Web.
@@ -387,7 +387,7 @@ date_modified: 2019-04-11
       </li>
       <li><strong> Ne pas utiliser italique </strong> car ils peuvent ralentir la vitesse de lecture
         <ul>
-          <li>Voir aussi <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-fra.asp" rel="external">Guide de rédaction du contenu du site Canada.ca <span class="wb-inv"> (lien externe)</span> </a> : Caractères gras, italique et soulignement </li>
+          <li>Voir aussi <a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html" rel="external">Guide de rédaction du contenu du site Canada.ca <span class="wb-inv"> (lien externe)</span> </a> : Caractères gras, italique et soulignement </li>
         </ul>
       </li>
       <li><strong>N'écrivez pas tout en majuscules</strong>; cela ralentit la lecture et peut sembler agressif</li>

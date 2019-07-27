@@ -14,7 +14,7 @@ date_modified: 2019-04-11
 <dd lang="en">Provides content authors and webmasters with an understanding of how to create and code content so that is accessible to all users.</dd>
 <dt><a href="writing/prncpls-fr.html">Principes de création du contenu</a></dt>
 <dd>Renseignements liés au contenu (développement, architecture,  structure, style et flux), et comparaison entre l'impression et le Web. </dd>
-<dt><a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-fra.asp" rel="external">Guide de rédaction du contenu du site Canada.ca</a></dt>
+<dt><a href="https://www.canada.ca/fr/secretariat-conseil-tresor/services/communications-gouvernementales/guide-redaction-contenu-canada.html" rel="external">Guide de rédaction du contenu du site Canada.ca</a></dt>
 <dd>Comprend les lignes directrices sur la rédaction, la qualité du langage, la terminologie, le langage clair et simple et les produits connexes.</dd>
 </dl>
 <h2><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-object-group fa-stack-1x fa-inverse"></span> </span> Conception et mise en page</h2>

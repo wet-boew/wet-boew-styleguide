@@ -101,7 +101,7 @@ date_modified: 2019-04-11
   <li><strong>Keep information specific to  the tasks </strong></li>
   <li><strong>Present it logically or  sequentially in a location where users expect to find it</strong></li>
   <li>Ensure information is timely  and relevant, not redundant or trivial</li>
-  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#alt">Avoid multiple and alternative formats </a></li>
+  <li><a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#alt">Avoid multiple and alternative formats </a></li>
 </ul>
 
 
@@ -158,7 +158,7 @@ date_modified: 2019-04-11
         </tr>
       </tbody>
     </table>
-    <p><strong>Sub-headings  make large blocks of text easier to read and scan.</strong> Ensure that sub-headings are  clear, concise and in <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a>.</p>
+    <p><strong>Sub-headings  make large blocks of text easier to read and scan.</strong> Ensure that sub-headings are  clear, concise and in <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-en.html#parallel">parallel structure</a>.</p>
     <p>It is  a good writing practice to use sub-headings in longer documents. When information is on the web, sub-headings improve usability and readability.</p>
     <p><strong>Good headings and sub-headings  are essential to making web content accessible</strong>. Screen reader users  can use the headings and sub-headings to navigate quickly between sections, and  to better understand or summarize content.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -223,9 +223,9 @@ date_modified: 2019-04-11
     </div>
     <p><strong>Hyperlinks  guide users</strong> to the information they are looking for. Use hyperlinks to avoid  repeating information that is already clearly expressed on another web page or  to reference related information, such as definitions, supporting information,  and background information.</p>
     <p><strong>Use the title of the  target page as the text in the hyperlink</strong>. It is very confusing to  users if the link text and page name don't match. In  situations when you need to modify the link text, try to <strong>match the text as closely as possible</strong> to the page name.</p>
-    <p>To meet accessibility requirements,make the <strong>target  of each link clear, and without any additional context beyond the link text</strong>.&nbsp; Screen reader users can read pages by  generating a list of all the links on the page, and tab from link to link  without any surrounding context. If the wording of the link does not clearly  summarize the content of the target, it can confuse screen reader users. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#heading">Optimize headings and menu labels</a>. </p>
+    <p>To meet accessibility requirements,make the <strong>target  of each link clear, and without any additional context beyond the link text</strong>.&nbsp; Screen reader users can read pages by  generating a list of all the links on the page, and tab from link to link  without any surrounding context. If the wording of the link does not clearly  summarize the content of the target, it can confuse screen reader users. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#heading">Optimize headings and menu labels</a>. </p>
     <p>If  you refer to another web page more than once, <strong>add a hyperlink only to the first reference</strong>. Avoid putting  too many hyperlinks in a single paragraph. It can be confusing if they  are too close together. Users are not always able to tell where one hyperlink  ends and the next one begins.</p>
-    <p>Users  are attracted to hyperlinks and follow them if they see them. Since you don&rsquo;t  want users to ignore the content of the page they are on<strong>, only add a hyperlink to references that can help users complete their  task or that provide valuable information about the task.</strong> Do not add a  hyperlink to unnecessary or unrelated information. Too many hyperlinks are  distracting and it becomes difficult for users to distinguish between important  and unimportant information. Ensure that the hyperlinks direct users to the  right page. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#scent">Create clear paths to  information</a> for more on hyperlinks.</p>
+    <p>Users  are attracted to hyperlinks and follow them if they see them. Since you don&rsquo;t  want users to ignore the content of the page they are on<strong>, only add a hyperlink to references that can help users complete their  task or that provide valuable information about the task.</strong> Do not add a  hyperlink to unnecessary or unrelated information. Too many hyperlinks are  distracting and it becomes difficult for users to distinguish between important  and unimportant information. Ensure that the hyperlinks direct users to the  right page. Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-en.html#scent">Create clear paths to  information</a> for more on hyperlinks.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
     <p>Make  text links long enough to be understood, but short enough to minimize  wrapping.</p><br>
     <footer class="text-right">
@@ -256,9 +256,9 @@ date_modified: 2019-04-11
       <li>logical or sequential order, or by</li>
       <li>priority, importance, or popularity</li>
     </ul>
-    <p>If  you list a series of items <strong>where the  order is important, use numbers rather than bullets</strong>. List items with <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#parallel">parallel structure</a> to  help users quickly scan lists.</p>
+    <p>If  you list a series of items <strong>where the  order is important, use numbers rather than bullets</strong>. List items with <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-en.html#parallel">parallel structure</a> to  help users quickly scan lists.</p>
     <p>Generally, <strong>do not alphabetize lists</strong>. The user  may not be sure which letter their desired information  falls under.  Alphabetize lists when the information has a stable naming convention, like  the names of people or places.</p>
-     <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>To make lists consistent, </strong>to align with <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp" rel="external">Canada.ca style guide <span class="wb-inv"> (external link)</span></a> (the current authoritative source), and to make it easier for readers to  scan lists at different screen sizes and resolutions:</p>
+     <p class="mrgn-tp-lg"><span class="fa  fa-check text-success"></span> <strong>To make lists consistent, </strong>to align with <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html" rel="external">Canada.ca style guide <span class="wb-inv"> (external link)</span></a> (the current authoritative source), and to make it easier for readers to  scan lists at different screen sizes and resolutions:</p>
 <ul>
   <li>Introduce each list with a statement that ends in a colon (:)</li>
     <li>Capitalize the first word in a list item <strong>only</strong> when bullets are <strong>complete thoughts, or if the first word is a proper noun</strong> </li>
@@ -359,7 +359,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Do not use all capitals</li>
       </ul>
     </div>
-    <p>On the web, 90% of information is in the form of written  language, and is presented with fonts. Fonts affect the <strong>speed and comfort</strong> with which users understand and read content. Refer  also to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#colour">Colour</a>.</p>
+    <p>On the web, 90% of information is in the form of written  language, and is presented with fonts. Fonts affect the <strong>speed and comfort</strong> with which users understand and read content. Refer  also to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#colour">Colour</a>.</p>
     <p>When choosing fonts, follow these principles:</p>
     <ul>
       <li><strong>Do not use more than 3 fonts and 3  colours </strong>across a single website.
@@ -380,7 +380,7 @@ date_modified: 2019-04-11
       </li>
       <li><strong>Do not use italics</strong> as they can slow down the reading speed
         <ul>
-          <li>Refer to <a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp">Canada.ca style guide: <span  class="wb-inv"> (external link)</span></a> Bold, italics and underlining</li>
+          <li>Refer to <a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html">Canada.ca style guide: <span  class="wb-inv"> (external link)</span></a> Bold, italics and underlining</li>
         </ul>
       </li>
       <li><strong>Do not use all capitals</strong>; this slows down reading and can appear aggressive</li>

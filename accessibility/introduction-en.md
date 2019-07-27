@@ -174,9 +174,9 @@ date_modified: 2019-04-11
 	</li>
 	<li>Legislation and Policies
 		<ul>
-			<li><a href="https://laws.justice.gc.ca/eng/charter/page-1.html#anchorbo-ga:l_I-gb:s_15" rel="external">Canadian Charter of Rights and Freedoms</a></li>
+			<li><a href="https://laws-lois.justice.gc.ca/eng/const/page-15.html" rel="external">Canadian Charter of Rights and Freedoms</a></li>
 			<li><a href="https://laws-lois.justice.gc.ca/eng/acts/H-6/page-1.html#h-3" rel="external">Canadian Human Rights Act</a></li>
-			<li><a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12541&amp;section=text#cha7" rel="external">Policy on the Duty to Accommodate</a></li>
+			<li><a href="https://www.canada.ca/en/government/publicservice/wellness-inclusion-diversity-public-service/diversity-inclusion-public-service/working-government-canada-duty-accommodate-right-non-discrimination.html" rel="external">The duty to accommodate and your right to non-discrimination</a></li>
 		</ul>
 	</li>
 	<li>Demos

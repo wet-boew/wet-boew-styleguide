@@ -77,7 +77,7 @@ date_modified: 2019-04-11
         <h5 class="mrgn-tp-0 text-danger"><span class="glyphicon glyphicon-remove-circle"></span> Incorrect use</h5>
         <p>Compliance point(s):</p>
         <ul>
-          <li>Do not use this styling if the content is confined to a <code>.container</code>, use <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/wells-en.html">wells</a> instead </li>
+          <li>Do not use this styling if the content is confined to a <code>.container</code>, use <a href="https://wet-boew.github.io/wet-boew-styleguide/design/wells-en.html">wells</a> instead </li>
 		  <li>Do not use in place of more effective ways to showcase content, such as alerts, images, carousel, lead in statements, and so forth</li>
           <li>Do not use this component in a way that conflicts with the preceding compliance point(s)</li>
         </ul>

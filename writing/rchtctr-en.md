@@ -46,7 +46,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Scrolls are better than pages when reading single articles or topics</li>
       </ul>
     </div>
-    <p>Historically,  content was broken down into smaller chunks and spread over numerous pages, as  users did not scroll down. This is no longer true today. Although a user spends  most of their time viewing information above the fold (the part of a webpage that is visible without scrolling), a strong <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/stl-en.html#scent">scent of information</a> prompts  them to explore the rest of the page. Users need a reason to scroll. <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/rchtctr-en.html#structure">Organize your page structure</a> in a way that highlights the most important information at the top, so that a user has an interest in reading information below the fold.</p>
+    <p>Historically,  content was broken down into smaller chunks and spread over numerous pages, as  users did not scroll down. This is no longer true today. Although a user spends  most of their time viewing information above the fold (the part of a webpage that is visible without scrolling), a strong <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/stl-en.html#scent">scent of information</a> prompts  them to explore the rest of the page. Users need a reason to scroll. <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/rchtctr-en.html#structure">Organize your page structure</a> in a way that highlights the most important information at the top, so that a user has an interest in reading information below the fold.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Web users spend 80% of their time looking at  information above the page fold. Although users do scroll, they  allocate only 20% of their attention below the fold. </p>
       <p>During the Web's first years, users often didn't scroll Web pages at  all...Today, users will scroll. However, you shouldn't ignore the fold  and create endless pages for two reasons: </p>
@@ -56,7 +56,7 @@ date_modified: 2019-04-11
       </ul>
       <p>So, yes, you can put information below the fold rather than limit  yourself to bite-sized pages. <strong>In fact, if you have a long article, it's  better to present it as one scrolling canvas than to split it across  multiple page views. Scrolling beats paging because it's easier for  users to simply keep going down the page than it is to decide whether  or not to click through for a next page of a fragmented article.</strong> But  no, the fact that users scroll doesn't free you from prioritizing and  making sure that anything truly important remains above the fold.  Information foraging theory states that people decide whether to  continue along a path (including scrolling path down a page) based on  the current content's information scent. In other words, users will  scroll below the fold only if the information above it makes them  believe the reset of the page will be valuable. </p>
       <footer class="text-right">Jakob Nielsen<br>
-       <cite> <a href="https://www.useit.com/alertbox/scrolling-attention.html" rel="external">Scrolling and Attention<span  class="wb-inv"> (external link)</span></a></cite></footer>
+       <cite> <a href="https://www.nngroup.com/articles/scrolling-and-attention/" rel="external">Scrolling and Attention<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Although people weren't used to scrolling in the mid-nineties,  nowadays it's absolutely natural to use the browser's scrollbar. For a  continuous and lengthy content, like an article or a tutorial,  scrolling provides even better usability than slicing up the text to  several pages. </p>
@@ -102,7 +102,7 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Third &ndash; background and details</li>
       </ul>
     </div>
-    <p>When  organizing the information on a web page, <strong>place the most important information  at the top of the page</strong> where users can easily find it. The rest of the  information should then follow in order of importance to your users. <strong>Start with  the conclusion, summary, or task, followed by supporting information and,  finally, background and details.</strong> This is known as the <strong>inverted pyramid</strong> methodology of writing. It is also important to keep your page structure simple  and consistent with your overall content structure. Refer also to, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/rchtctr-en.html#length">Page length and scrolling</a> </p>
+    <p>When  organizing the information on a web page, <strong>place the most important information  at the top of the page</strong> where users can easily find it. The rest of the  information should then follow in order of importance to your users. <strong>Start with  the conclusion, summary, or task, followed by supporting information and,  finally, background and details.</strong> This is known as the <strong>inverted pyramid</strong> methodology of writing. It is also important to keep your page structure simple  and consistent with your overall content structure. Refer also to, <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/rchtctr-en.html#length">Page length and scrolling</a> </p>
   </div>
   <h2 id="provide"><span id="provide-heading">Provide content at the point of need</span></h2>
   <div id="provide-info">
@@ -114,8 +114,8 @@ date_modified: 2019-04-11
         <li><span class="fa fa-li fa-check text-success"></span> Do not duplicate content</li>
       </ul>
     </div>
-    <p>Providing information &ldquo;at the point of need&rdquo; means placing the right amount of information &ndash; <strong>no more and no less</strong> &minus; in the context where a user would expect to find it. To provide information at the point of need, you need to know <strong>what information users would expect to find together in one place </strong>to help them complete a task and what information they would expect to find in a different context, without loss of meaning. You must also effectively balance it with the principle of progressive disclosure; refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/rchtctr-en.html#present">Present information gradually though progressive disclosure</a>.</p>
-    <p>Requirement to provide content at the point of need does not mean you can duplicate content! Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-en.html#reuse">Reuse, recycle, and reduce content.</a></p>
+    <p>Providing information &ldquo;at the point of need&rdquo; means placing the right amount of information &ndash; <strong>no more and no less</strong> &minus; in the context where a user would expect to find it. To provide information at the point of need, you need to know <strong>what information users would expect to find together in one place </strong>to help them complete a task and what information they would expect to find in a different context, without loss of meaning. You must also effectively balance it with the principle of progressive disclosure; refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/rchtctr-en.html#present">Present information gradually though progressive disclosure</a>.</p>
+    <p>Requirement to provide content at the point of need does not mean you can duplicate content! Refer to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/dvlpmnt-en.html#reuse">Reuse, recycle, and reduce content.</a></p>
   </div>
   <h2 id="present"><span id="present-heading">Present information gradually through progressive disclosure</span></h2>
   <div id="present-info">
@@ -230,7 +230,7 @@ date_modified: 2019-04-11
       </ul>
     </div>
     <p>Site  visitors do not access the same web pages during every visit, nor do they  access them in the same order during every visit. For this reason, <strong>write each web  page so it can stand on its own</strong>. Don't make assumptions as to what users have  previously read or will subsequently read. Web usage is never linear.</p>
-    <p>In  some instances, you need to repeat phrases or sentences across many web pages  so that the information on each page is complete. If you repeat a lot of  supporting content, you may want to create a new page for that information and  link to it from the other pages or you may have to <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/dvlpmnt-en.html#reuse">reuse and recycle content in another way</a>.</p>
+    <p>In  some instances, you need to repeat phrases or sentences across many web pages  so that the information on each page is complete. If you repeat a lot of  supporting content, you may want to create a new page for that information and  link to it from the other pages or you may have to <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/dvlpmnt-en.html#reuse">reuse and recycle content in another way</a>.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>When we look at a webpage, we tend to see it not as a whole, but rather   as compartmentalized chunks of information. We tend to read in blocks,   going directly to items that seem to match what we're actively looking   for.</p>
       <p>An eye-tracking study conducted by Nielsen revealed an eye-movement   pattern that could further support this idea that web users do indeed   read in chunks: We swipe our eyes from left to right, then continue on   down the page in an F-shaped pattern, skipping a lot of text in between.</p>
@@ -253,13 +253,13 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>...you can let the importance or  frequency of use guide how you prioritize long listings rather than  default to less-useful alphabetical sorting...But typically, when you reach  for an <abbr title="A to Z">A-Z</abbr> structure, you should give yourself a little extra kick and  seek out something better. </p>
       <footer class="text-right">Jakob Nielsen<br>
-        <cite><a href="https://www.useit.com/alertbox/alpha-sorting.html" rel="external">Alphabetical Sorting Must (Mostly) Die<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.nngroup.com/articles/alphabetical-sorting-must-mostly-die/" rel="external">Alphabetical Sorting Must (Mostly) Die<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>(Alphabetical order is good) only if the users knew the  wording of the links. The exact wording. This works well for people's  names, states, cities, car models, and sports teams.</p>
       <p>Where it falls apart is for things where users may not know the  exact wording. In that instance...they must scan  every link to make sure they can see what is relevant and what isn't. <strong>The moral of the story: Unless you can be absolutely sure that users  will know the exact terms in your list, alphabetical order is just  random order.</strong> </p>
       <footer class="text-right">Jared Spool<br>
-        <cite><a href="https://www.uie.com/brainsparks/2006/02/06/alphabetized-links-are-random-links/" rel="external">Alphabetized Links are Random Links<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://archive.uie.com/brainsparks/2006/02/06/alphabetized-links-are-random-links/" rel="external">Alphabetized Links are Random Links<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h2 id="faq"><span id="faq-heading">Avoid <abbr title="Frequently asked questions">FAQ</abbr>'s</span></h2>
@@ -337,7 +337,7 @@ date_modified: 2019-04-11
       <p>Frequently  asked questions usually aren&rsquo;t questions asked by the reader, but rather are  important information dumped in the <abbr title="Frequently asked questions">FAQ</abbr> section by the content editor. In most  cases, <abbr title="Frequently asked questions">FAQ</abbr> content is not where users expect to find it, which makes users&rsquo;  experience frustrating and less than informative.</p>
       <p>If you&rsquo;re thinking about  adding <abbr title="Frequently asked questions">FAQ</abbr>s, consider reviewing the content on your website that is generating  questions and think about how you can change the content or design to answer  the question &mdash; or provide an answer in context to prevent people from visiting  an additional webpage to find the answer. </p>
       <footer class="text-right">18F civic consultancy  inside the <abbr title="United States">US</abbr> government, for the government <br>
-        <cite><a href="https://pages.18f.gov/content-guide/" rel="external">Content guide<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://content-guide.18f.gov" rel="external">Content guide<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
 {% endraw %}

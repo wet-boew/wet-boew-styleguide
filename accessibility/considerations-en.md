@@ -13,7 +13,7 @@ date_modified: 2019-04-11
 			<h2 class="page-header">Visual impairments</h2>
 			<ul>
 				<li><strong>Colour:</strong> Ensure there is sufficient contrast between textual elements, and background colours or images.</li>
-				<li><strong>Colour:</strong> Ensure users can see the page even if they have colour deficits, or view it on a black and white screen. If the colour contrast for any colour combination is not significant enough, users with colour deficiencies will have problems seeing the content. It is helpful to determine compliance by using the <a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck color vision simulator tool (external link)</a> to simulate what the page looks like for users with certain colour deficiencies.
+				<li><strong>Colour:</strong> Ensure users can see the page even if they have colour deficits, or view it on a black and white screen. If the colour contrast for any colour combination is not significant enough, users with colour deficiencies will have problems seeing the content. It is helpful to determine compliance by using an color blindness tool to simulate what the page looks like for users with certain colour deficiencies.
 					<ul>
 						<li>Individuals classified as totally (uncommon) or partially colour deficit (more common) can have colour vision deficiencies that are either acquired or inherited.</li>
 						<li>The difficulty in distinguishing colours is usually between red and green, or between blue and yellow.</li>

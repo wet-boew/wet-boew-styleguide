@@ -61,7 +61,7 @@ date_modified: 2019-04-11
         <li>N'utilisez pas cet élément d'une façon qui entre en conflit avec les points de conformité précédents</li>
         <li>N'utilisez pas d'icônes pour représenter le logo d'un tiers, car cela est contraire à la politique sur l'image de marque de l'entreprise. Par exemple&nbsp;:
           <ul>
-            <li><a href="https://www.facebookbrand.com/dos-donts">Ce qui est acceptable et ce qui ne l'est pas – Facebook</a>&nbsp;: «&nbsp;Utiliser des icônes, images ou marques commerciales pour représenter Facebook, autres que celles qui se trouvent dans ce centre des ressources&nbsp;»</li>
+            <li><a href="https://fr.facebookbrand.com/#brand-guidelines-assets">Ce qui est acceptable et ce qui ne l'est pas – Facebook</a>&nbsp;: «&nbsp;Utiliser des icônes, images ou marques commerciales pour représenter Facebook, autres que celles qui se trouvent dans ce centre des ressources&nbsp;»</li>
             <li><a href="https://about.twitter.com/press/brand-assets">Lignes directrices et image de marque de Twitter</a> : [Traduction] «&nbsp;Notre logo est toujours bleu ou blanc. L'oiseau de Twitter n'est jamais présenté en noir ou en d'autres couleurs.&nbsp;»</li>
             <li>L'espacement du pixel parfait  et d'autres considérations sont aussi requis. Il est préférable, sur le plan juridique, d'utiliser l'image du logo du tiers</li>
           </ul>
@@ -74,7 +74,7 @@ date_modified: 2019-04-11
   <p><a href="https://bootstrapdocs.com/v3.3.1/docs/components/#glyphicons" class="btn btn-primary">Afficher les <span lang="en">Glyphicons</span></a></p>
   <h3 id="fon">Icônes de police <span lang="en">Font Awesome</span> </h3>
   <p>La police <span lang="en">Font Awesome</span> contient plus de 600 glyphes. Ces icônes <strong>ne font pas</strong> partie de   la version de base de la <abbr title="Boîte à outils de l'expérience Web">BOEW</abbr>. Consulter le site web de <a href="https://fontawesome.com/start" lang="en">Font Awesome</a> pour les instructions d'implémentation.</p>
-  <p><a href="https://fortawesome.github.io/Font-Awesome/icons/" class="btn btn-primary">Afficher les icônes de police <span lang="en">Font Awesome</span></a> <a href="https://fortawesome.github.io/Font-Awesome/examples/"  class="btn btn-primary">Afficher des exemples d'icône de police <span lang="en">Font Awesome</span> – Empiler, redimensionner, pivoter, tourner </a></p>
+  <p><a href="https://fontawesome.com/icons?from=io" class="btn btn-primary">Afficher les icônes de police <span lang="en">Font Awesome</span></a> <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started"  class="btn btn-primary">Afficher des exemples d'icône de police <span lang="en">Font Awesome</span> – Empiler, redimensionner, pivoter, tourner </a></p>
   <h2 id="enh">Utilisation améliorée</h2>
   <h3 id="add"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Fonctions complémentaires</h3>
   <p>Des fonctions et des comportements complémentaires sont disponibles.</p>

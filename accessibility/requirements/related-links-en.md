@@ -14,8 +14,7 @@ date_modified: 2019-04-11
 		<ul>
 			<li><a href="https://www.paciellogroup.com/resources/contrast-analyser.html" rel="external">Contrast Analyser for Windows and Mac</a></li>
 			<li><a href="http://juicystudio.com/services/luminositycontrastratio.php" rel="external">Juicy Studios Luminosity Analyzer</a></li>
-			<li><a href="http://www.vischeck.com/vischeck/vischeckURL.php" rel="external">Vischeck Color Vision Simulator Tool</a></li>
-			<li><a href="https://wet-boew.github.io/wet-boew/demos/tableparser/tbl-simp-en.html">Table Simplification - Optimal Content Examples</a></li>
+			<li><a href="https://wet-boew.github.io/v4.0-ci/demos/tablevalidator/tablevalidator-en.html">Table Validator</a></li>
 		</ul>
 	</div>
 </div>
