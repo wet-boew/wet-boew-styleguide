@@ -71,7 +71,7 @@ date_modified: 2019-04-11
       <p>Since the visitor of the page is the only person who clicks the mouse and therefore decides everything, user-centric design has become a standard.</p>
       <p>Basically, users' habits on the Web aren't that different from customers' habits in a store. Visitors glance at each new page, scan some of the text, and click on the first link that catches their interest or vaguely resembles the thing they're looking for. In fact, there are large parts of the page they don't even look at.</p>
        <footer class="text-right">Smashing Magazine<br>
-        <cite><a href="https://uxdesign.smashingmagazine.com/2008/01/31/10-principles-of-effective-web-design/" rel="external">10 Principles of Effective Web Design<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="https://www.smashingmagazine.com/2008/01/10-principles-of-effective-web-design/" rel="external">10 Principles of Effective Web Design<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
     <p>Much like how shoppers quickly scan a store's shelves and racks for a specific item, users scan webpages for specific information. The item a shopper wants may in fact be in the store, but if they can't easily find it, they leave. The same applies to users and webpages. Users leave the webpage or website altogether if it is an effort to find the information they seek.</p>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
@@ -88,7 +88,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>Universal Design takes into account the full range of human diversity,  including physical, perceptual and cognitive abilities, as well as different  body sizes and shapes. By designing for this diversity, we can create things  that are more functional and more user-friendly for everyone. For instance,  curb cuts at sidewalks were initially designed for people who use wheelchairs,  but they are now also used by pedestrians with strollers or rolling luggage.  Curb cuts have added functionality to sidewalks that we can all benefit from. </p>
        <footer class="text-right">Universal Design.com<br>
-        <cite><a href="http://www.universaldesign.com/about-universal-design.html" rel="external">What is Universal Design?<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite><a href="http://www.universaldesign.com/what-is-ud/" rel="external">What is Universal Design?<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
   <h3 id="exists"><span id="exists-heading">What content already exists and who owns it?</span></h3>
@@ -117,7 +117,7 @@ date_modified: 2019-04-11
       <li>inaccurate       and out of date information</li>
       <li>confusion       about which version is the authoritative and current one</li>
     </ul>
-    <p>The <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#links">correct way to reuse authoritative content is to link to it</a>. If the  information you want to reference is unavailable, incomplete, or incorrect,  contact the functional authority to discuss the addition or reframing of the  necessary content. </p>
+    <p>The <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#links">correct way to reuse authoritative content is to link to it</a>. If the  information you want to reference is unavailable, incomplete, or incorrect,  contact the functional authority to discuss the addition or reframing of the  necessary content. </p>
   </div>
   <h3 id="users"><span id="users-heading">Who are your users?</span></h3>
   <div id="users-info">
@@ -210,7 +210,7 @@ date_modified: 2019-04-11
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p> No amount  of research, information architecture, interaction design, or usability testing  can&nbsp;create a great user experience if the content isn&rsquo;t useful and  usable&mdash;if it doesn't help the user&nbsp;to get things done.</p>
       <footer class="text-right">Jonathan Kahn<br>
-        <cite><a href="https://lucidplot.com/2009/09/09/diy-content-strategy/" rel="external">Content strategy for the web  professional<span  class="wb-inv"> (external link)</span></a></cite></footer>
+        <cite>Content strategy for the web  professional<span  class="wb-inv"> (external link)</span></cite></footer>
     </blockquote>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
       <p>[&hellip;]in many  organizations, more content is perceived as more selling opportunities, more  user engagement, more help, more everything. But that&rsquo;s rarely the case.  [But][&hellip;] when content sucks &ndash; when it&rsquo;s overwritten, redundant, hard to find,  irrelevant &ndash; people come, look, and leave. [&hellip;] By prioritizing useful and  relevant over &lsquo;wouldn&rsquo;t it be cool&rsquo; and &lsquo;just in case,&rsquo;&nbsp; you will magically dismiss at least half of  your web content projects. That means you&rsquo;ll free up time and money for things  like planning and measurement, two content-related tasks that often get short  shrift in the race to do more online.</p>
@@ -243,7 +243,7 @@ date_modified: 2019-04-11
     </ul>
     <p>Innovation does not mean creating more of  something new. You can contribute to healthy innovation by reusing and  recycling what is already there:</p>
     <ul>
-      <li>Reuse content by <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/strctr-en.html#links">linking to content correctly</a>. For other options,  speak to your web team, as there may be ways to dynamically add content from another page, ensuring that a single and consistent source of information can be attached to multiple pages
+      <li>Reuse content by <a href="https://wet-boew.github.io/wet-boew-styleguide/writing/strctr-en.html#links">linking to content correctly</a>. For other options,  speak to your web team, as there may be ways to dynamically add content from another page, ensuring that a single and consistent source of information can be attached to multiple pages
       <ul>
           <li>Remember that  dynamic content can change without notice. Make this part of the  strategy to ensure correctness or completeness</li>
         </ul>
@@ -254,7 +254,7 @@ date_modified: 2019-04-11
     <p>If there is no  content that you can reuse or recycle, create&nbsp;less content, reduce your  existing content, and limit users&rsquo; options:</p>
     <ul>
       <li> Consolidate all the  information users need to know about a topic or task in as few places as  possible</li>
-      <li><a href="https://wet-boew.github.io/wet-boew-styleguide/v4/writing/rchtctr-en.html#faq">Do not create disconnected <abbr title="Frequently asked questions">FAQ</abbr>'s</a></li>
+      <li><a href="https://wet-boew.github.io/wet-boew-styleguide/writing/rchtctr-en.html#faq">Do not create disconnected <abbr title="Frequently asked questions">FAQ</abbr>'s</a></li>
       <li> Limit related content to as few links as possible, both in-text and in other areas of the page. Only add related links if there is proof this information is actually relevant to the users at that point in time</li>
       <li>Remove  old pages when new, more effective content replaces it. This ensures  users find only the most current and useful information</li>
     </ul>

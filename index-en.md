@@ -14,7 +14,7 @@ date_modified: 2019-04-11
 <dd>Provides content authors and webmasters with an understanding of how to create and code content so that is accessible to all users.</dd>
 <dt><a href="writing/prncpls-en.html">Content creation principles</a></dt>
 <dd>Information related to content (development, architecture, structure, style and flow), and print versus Web. </dd>
-<dt><a href="https://www.tbs-sct.gc.ca/hgw-cgf/oversight-surveillance/communications/csc-grc-eng.asp" rel="external">Canada.ca Content Style Guide</a></dt>
+<dt><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html" rel="external">Canada.ca Content Style Guide</a></dt>
 <dd>Includes writing guidelines, language quality, terminology, plain language, training, and related products.</dd>
 </dl>
 <h2><span class="fa-stack"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-object-group fa-stack-1x fa-inverse"></span> </span> Design and layout</h2>

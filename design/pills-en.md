@@ -71,7 +71,7 @@ date_modified: 2019-04-11
           <li><strong>Do not use this feature </strong>
             <ul>
               <li>It is inherited from Bootstrap but its intended purpose is not compatible with WET</li>
-              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-en.html">Pagination</a> for navigation purposes  </li>
+              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/design/pagination-en.html">Pagination</a> for navigation purposes  </li>
             </ul>
           </li>
         </ul>
@@ -110,7 +110,7 @@ date_modified: 2019-04-11
           <li><strong>Do not use this feature </strong>
             <ul>
               <li>It is inherited from Bootstrap but its intended purpose is not compatible with WET</li>
-              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-en.html">Pagination</a> for navigation purposes</li>
+              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/design/pagination-en.html">Pagination</a> for navigation purposes</li>
             </ul>
           </li>
         </ul>
@@ -148,7 +148,7 @@ date_modified: 2019-04-11
           <li><strong>Do not use this feature </strong>
             <ul>
               <li>It is inherited from Bootstrap but its intended purpose is not compatible with WET</li>
-              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-en.html">Pagination</a> for navigation purposes</li>
+              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/design/pagination-en.html">Pagination</a> for navigation purposes</li>
               <li>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality </li>
             </ul>
           </li>
@@ -189,7 +189,7 @@ date_modified: 2019-04-11
           <li><strong>Do not use this feature </strong>
             <ul>
               <li>It is inherited from Bootstrap but its intended purpose is not compatible with WET</li>
-              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/v4/design/pagination-en.html">Pagination</a> for navigation purposes</li>
+              <li>Use other options, such as <a href="https://wet-boew.github.io/v4.0-ci/docs/ref/tabs/tabs-en.html">Tabs</a>, <a href="https://wet-boew.github.io/wet-boew-styleguide/design/listgroup-en.html">List group</a> or <a href="https://wet-boew.github.io/wet-boew-styleguide/design/pagination-en.html">Pagination</a> for navigation purposes</li>
             </ul>
           </li>
         </ul>
