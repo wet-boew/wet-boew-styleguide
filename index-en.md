@@ -1208,6 +1208,18 @@ To see this feature in action, go to its topic page. </p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
+<td><a href="design/secmenu-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Secondary Menu</a></td>
+<td>Provides an interactive secondary menu.</td>
+<td class="text-muted small">Tags: Menu, List groups, Links/td>
+<td><hr class="mrgn-tp-0">
+<p><span class="glyphicon glyphicon-eye-close"></span> No quick preview available.<br>
+To see this feature in action, go to its topic page. </p></td>
+<td>Plugins</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-en.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Session timeout </a></td>
 <td><p>Use  to provide session timeout and inactivity timeout functionality.</p></td>
 <td class="text-muted small">Tags: Close, Exit</td>

@@ -1203,6 +1203,18 @@ Pour voir cette fonction en action, allez à sa page thématique.</p></td>
 </tr>
 
 <tr class="col-xs-12 col-sm-6 col-md-4">
+<td><a href="design/secmenu-fr.html"  class="h4 mrgn-tp-0 mrgn-bttm-0">Secondary Menu</a></td>
+<td>Provides an interactive secondary menu.</td>
+<td class="text-muted small">Tags: Menu, List groups, Links/td>
+<td><hr class="mrgn-tp-0">
+<p><span class="glyphicon glyphicon-eye-close"></span> No quick preview available.<br>
+To see this feature in action, go to its topic page. </p></td>
+<td>Plugins</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr class="col-xs-12 col-sm-6 col-md-4">
 <td><a href="https://wet-boew.github.io/v4.0-ci/docs/ref/session-timeout/session-timeout-fr.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Expiration de la session</a></td>
 <td><p>L'utiliser pour offrir une fonctionnalité d'expiration de session et d'expiration en raison de l'inactivité.</p></td>
 <td class="text-muted small">Balises : Fermer, Sortir</td>
