@@ -23,7 +23,7 @@ date_modified: 2019-04-11
             <li><a href="#present">Present information gradually through progressive disclosure</a></li>
             <li><a href="#write">Write in complete blocks</a></li>
             <li><a href="#alphabetization">Know when to alphabetize</a></li>
-            <li><a href="#faq">Avoid <abbr title="Frequently asked questions">FAQ</abbr>'s </a></li>
+            <li><a href="#faq">Avoid <abbr title="Frequently asked questions">FAQ</abbr>s</a></li>
           </ul>
         </div>
       </div>
@@ -262,23 +262,23 @@ date_modified: 2019-04-11
         <cite><a href="https://archive.uie.com/brainsparks/2006/02/06/alphabetized-links-are-random-links/" rel="external">Alphabetized Links are Random Links<span  class="wb-inv"> (external link)</span></a></cite></footer>
     </blockquote>
   </div>
-  <h2 id="faq"><span id="faq-heading">Avoid <abbr title="Frequently asked questions">FAQ</abbr>'s</span></h2>
+  <h2 id="faq"><span id="faq-heading">Avoid <abbr title="Frequently asked questions">FAQ</abbr>s</span></h2>
   <div id="faq-info">
     <div class="well">
       <p><strong>Key points:</strong></p>
       <ul class="fa-ul">
-        <li><span class="fa fa-li fa-check text-success"></span> Do not create extra  pages of content (such as <abbr title="Frequently asked questions">FAQ</abbr>'s) to compensate for lack of order and structure  of old content</li>
+        <li><span class="fa fa-li fa-check text-success"></span> Do not create extra  pages of content (such as <abbr title="Frequently asked questions">FAQ</abbr>s) to compensate for lack of order and structure  of old content</li>
         <li><span class="fa fa-li fa-check text-success"></span> Edit and re-organize  existing content to help users find the right information quickly</li>
         <li><span class="fa fa-li fa-check text-success"></span> Provide answers to users questions in  context with related information</li>
       </ul>
     </div>
-    <p><abbr title="Frequently asked questions">FAQ</abbr>  pages are often created as a band-aid solution to an otherwise messy content  environment. Contrary to improving discovery of important information, <strong><abbr title="Frequently asked questions">FAQ</abbr>'s are generally not user friendly</strong>.  They tend to:</p>
+    <p><abbr title="Frequently asked questions">FAQ</abbr>  pages are often created as a band-aid solution to an otherwise messy content  environment. Contrary to improving discovery of important information, <strong><abbr title="Frequently asked questions">FAQ</abbr>s are generally not user friendly</strong>.  They tend to:</p>
     <ul>
       <li> Separate information from the context in which it needs to  be understood </li>
       <li> Duplicate information </li>
       <li> Make users look for information in multiple places</li>
     </ul>
-    <p>Since  most <abbr title="Frequently asked questions">FAQ</abbr>'s are long and contain varied information, users find them frustrating  They have to go through a long list of questions without knowing if they can find  the answer they need. Also, multiple pages  equal more waiting time, as each page has to load.</p>
+    <p>Since  most <abbr title="Frequently asked questions">FAQ</abbr>s are long and contain varied information, users find them frustrating  They have to go through a long list of questions without knowing if they can find  the answer they need. Also, multiple pages  equal more waiting time, as each page has to load.</p>
     <p>In  general, <strong>users&rsquo;  questions are best answered in context with other information on the same  topic</strong>. Instead of having multiple pages on a single topic, find where the  content already exists.  Restructure the page to include the necessary  information. <strong>Do not create an extra <abbr title="Frequently asked questions">FAQ</abbr> page.</strong></p>
     <p>How  you organize the page depends on the  page content and the  users. For  example, procedures and processes are best organized by tasks. <strong>In most other  situations, topical organization can replace questions and answers.</strong> If you feel that your  information is best organized with questions and answers, ensure the page  breaks up questions into logical topic sub-sections, and has a meaningful and  descriptive title.</p>
     <table class="table table-bordered">
@@ -334,7 +334,8 @@ date_modified: 2019-04-11
       </tbody>
     </table>
     <blockquote class="mrgn-bttm-lg mrgn-lft-xl">
-      <p>Frequently  asked questions usually aren&rsquo;t questions asked by the reader, but rather are  important information dumped in the <abbr title="Frequently asked questions">FAQ</abbr> section by the content editor. In most  cases, <abbr title="Frequently asked questions">FAQ</abbr> content is not where users expect to find it, which makes users&rsquo;  experience frustrating and less than informative.</p>
+      <p>Frequently  asked questions usually aren&rsquo;t questions asked by the reader, but rather are  important information dumped in the <abbr title="Frequently asked questions">
+		  </abbr> section by the content editor. In most  cases, <abbr title="Frequently asked questions">FAQ</abbr> content is not where users expect to find it, which makes users&rsquo;  experience frustrating and less than informative.</p>
       <p>If you&rsquo;re thinking about  adding <abbr title="Frequently asked questions">FAQ</abbr>s, consider reviewing the content on your website that is generating  questions and think about how you can change the content or design to answer  the question &mdash; or provide an answer in context to prevent people from visiting  an additional webpage to find the answer. </p>
       <footer class="text-right">18F civic consultancy  inside the <abbr title="United States">US</abbr> government, for the government <br>
         <cite><a href="https://content-guide.18f.gov" rel="external">Content guide<span  class="wb-inv"> (external link)</span></a></cite></footer>
