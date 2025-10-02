@@ -120,9 +120,9 @@ date_modified: 2019-04-11
 </form>
 <table id="designlayout" class="wb-tables tbl-gridify" data-wb-tables='{"order" : [ 0, "asc" ], "bPaginate" : false,
 "columnDefs": [
+    { "targets": [3], "visible": false },
     { "targets": [4], "visible": false },
-    { "targets": [5], "visible": false },
-    { "targets": [6], "visible": false }
+    { "targets": [5], "visible": false }
 ]}'>
     <caption class="wb-inv">
         Design elements
