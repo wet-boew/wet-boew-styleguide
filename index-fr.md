@@ -32,7 +32,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_wetfeature">Fonctionalité relative à</label>
-                <select class="form-control" id="dt_wetfeature" name="dt_wetfeature" data-column="4">
+                <select class="form-control" id="dt_wetfeature" name="dt_wetfeature" data-column="3">
                     <option value="">Tous</option>
                     <option value="Style CSS">Style CSS</option>
                     <option value="Plugiciels">Plugiciels</option>
@@ -44,7 +44,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_corecategory">Catégorie de style</label>
-                <select class="form-control" id="dt_corecategory" name="dt_corecategory" data-column="5">
+                <select class="form-control" id="dt_corecategory" name="dt_corecategory" data-column="4">
                     <option value="">Tous</option>
                     <option value="Structure et mise en forme">Structure et mise en forme</option>
                     <option value="Effets de base">Effets de base</option>
@@ -57,7 +57,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_specificfeatures">Fonctionalité</label>
-                <select class="form-control" id="dt_specificfeatures" name="dt_specificfeatures" data-column="6">
+                <select class="form-control" id="dt_specificfeatures" name="dt_specificfeatures" data-column="5">
                     <option value="">Tous</option>
                     <optgroup label="Structure et mise en forme">
                         <option value="Positionnement absolu">Positionnement absolu</option>
