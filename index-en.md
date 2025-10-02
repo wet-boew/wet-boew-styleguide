@@ -31,7 +31,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_wetfeature">Features related to</label>
-                <select class="form-control" id="dt_wetfeature" name="dt_wetfeature" data-column="4">
+                <select class="form-control" id="dt_wetfeature" name="dt_wetfeature" data-column="3">
                     <option value="">All</option>
                     <option value="CSS Style">CSS Style</option>
                     <option value="Plugins">Plugins</option>
@@ -43,7 +43,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_corecategory">Core design category</label>
-                <select class="form-control" id="dt_corecategory" name="dt_corecategory" data-column="5">
+                <select class="form-control" id="dt_corecategory" name="dt_corecategory" data-column="4">
                     <option value="">All</option>
                     <option value="Structure and placement">Structure and placement</option>
                     <option value="Basic effects">Basic effects</option>
@@ -56,7 +56,7 @@ date_modified: 2019-04-11
         <div class="col-md-4">
             <div class="form-group">
                 <label for="dt_specificfeatures">Specific design features</label>
-                <select class="form-control" id="dt_specificfeatures" name="dt_specificfeatures" data-column="6">
+                <select class="form-control" id="dt_specificfeatures" name="dt_specificfeatures" data-column="5">
                     <option value="">All</option>
                     <optgroup label="Structure and placement">
                         <option value="Absolute positioning">Absolute positioning</option>
