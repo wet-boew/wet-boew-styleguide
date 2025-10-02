@@ -144,12 +144,6 @@ Design elements
 <td><a href="design/position-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Absolute positioning</a> </td>
 <td><p>Use  to position  content on top of other content.</p></td>
 <td class="text-muted small">Tags: Links</td>
-<td><hr class="mrgn-tp-0">
-<div class="row">
-<div class="col-xs-12"> <a href="#"><img alt="Decorative image with people" class="img-responsive full-width" src="https://www.canada.ca/content/canadasite/assets/finance/carousel/20141203-1.jpg">
-<p class="well brdr-rds-0 well-sm mrgn-bttm-sm mrgn-rght-md mrgn-lft-md opct-90 pstn-bttm-xs pstn-rght-xs">Link on top of image</p>
-</a> </div>
-</div></td>
 <td>CSS Style</td>
 <td>Structure and placement</td>
 <td>Absolute positioning</td>
