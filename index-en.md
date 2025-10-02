@@ -144,6 +144,7 @@ Design elements
 <td><a href="design/position-en.html" class="h4 mrgn-tp-0 mrgn-bttm-0">Absolute positioning</a> </td>
 <td><p>Use  to position  content on top of other content.</p></td>
 <td class="text-muted small">Tags: Links</td>
+<td></td>
 <td>CSS Style</td>
 <td>Structure and placement</td>
 <td>Absolute positioning</td>
