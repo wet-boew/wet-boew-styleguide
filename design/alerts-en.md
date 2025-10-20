@@ -51,6 +51,7 @@ date_modified: 2019-04-11
     <h3 id="basic">Basic use</h3>
     <p>Use to wrap any text and an optional dismiss button in <code>.alert</code>, or one of the four contextual classes (for example, <code>.alert-success</code>) for basic alert messages.</p>
     <p>Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so always specify a type with a contextual class. Choose from success, info, warning, or danger.</p>
+	</section>
   <h4 id="addon"><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa fa-stack-1x fa-plus fa-inverse"></span></span> Add-on features</h4>
   <p>Additional add-on features and behaviours are available.</p>
   <ul class="list-inline lst-spcd">
