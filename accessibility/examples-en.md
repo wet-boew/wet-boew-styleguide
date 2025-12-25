@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-en
 title: Examples
 hide_breadcrumb: false
-date_modified: 2019-04-11
+date_modified: {}
 ---
 {::nomarkdown}
 {% raw %}
@@ -105,11 +105,11 @@ date_modified: 2019-04-11
 				<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-decor.gif" alt="">
 			</div>
 		</div>
+  </div>
 		<div class="alert alert-info">
 			<h3 class="mrgn-tp-0">Example</h3>
 			<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-spl.jpg" alt="The RCMP musical ride performing, an example of a simple image">
 		</div>
-	</div>
 	<div class="alert alert-info">
 		<h3 class="mrgn-tp-0">Examples</h3>
 		<img src="https://wet-boew.github.io/wet-boew/demos/opt-cont/images/img-cplx.jpg" alt="A bar graph, pie chart, and flow chart, which are all examples of complex images.">
