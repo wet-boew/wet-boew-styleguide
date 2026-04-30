@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-fr
 title: Alignement
 hide_breadcrumb: false
-date_modified: 2019-04-11
+date_modified: 2026-04-30
 ---
 {::nomarkdown}
 {% raw %}
@@ -122,7 +122,7 @@ date_modified: 2019-04-11
       <div class="panel panel-default">
         <div class="panel-body">
           <h5 class="mrgn-tp-0">Apparence</h5>
-          <img src="https://placehold.it/140x140" class="img-rounded center-block" alt="Une image de paramètre fictif carré dont les coins sont arrondis" /></div>
+          <img src="https://dummyimage.com/140x140" class="img-rounded center-block" alt="Une image de paramètre fictif carré dont les coins sont arrondis" /></div>
       </div>
     </div>
     <div class="col-md-5">

@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-en
 title: Links
 hide_breadcrumb: false
-date_modified: 2019-04-11
+date_modified: 2026-04-30
 ---
 {::nomarkdown}
 {% raw %}
@@ -55,7 +55,7 @@ date_modified: 2019-04-11
           <div class="panel-body">
             <h5 class="mrgn-tp-0 h5">Appearance</h5>
             <p><a href="#">Default link</a></p>
-            <p class="mrgn-bttm-0"><a href="#">Link and linked image.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="https://placehold.it/100x100"></a></p>
+            <p class="mrgn-bttm-0"><a href="#">Link and linked image.<img class="img-thumbnail left-block" alt="A generic square placeholder image with a white border around it" src="https://dummyimage.com/100x100"></a></p>
           </div>
         </div>
       </div>
