@@ -3,7 +3,7 @@ published: true
 layout: default-theme-wet-boew-en
 title: Opacity
 hide_breadcrumb: false
-date_modified: 2019-04-11
+date_modified: 2026-04-30
 ---
 {::nomarkdown}
 {% raw %}
@@ -54,21 +54,21 @@ date_modified: 2019-04-11
           <h5 class="mrgn-tp-0">Appearance</h5>
           <p>Default:</p>
           <div class="row mrgn-bttm-md">
-            <div class="col-sm-4"><img class="img-responsive" src="https://placehold.it/140x140" alt="Default image, a grey aquare"></div>
+            <div class="col-sm-4"><img class="img-responsive" src="https://dummyimage.com/140x140" alt="Default image, a grey aquare"></div>
           </div>
           <p>With opacity:</p>
           <div class="row">
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-100"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-90"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-80"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-100</code></p><img class="opct-100 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-100"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-90</code></p><img class="opct-90 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-90"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-80</code></p><img class="opct-80 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-80"></div>
             <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-70</code></p>
-              <img class="opct-70 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-70"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-60"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-50"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-40"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-30"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-20"></div>
-            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="https://placehold.it/140x140" alt="Demo of opct-10"></div>
+              <img class="opct-70 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-70"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-60</code></p><img class="opct-60 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-60"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-50</code></p><img class="opct-50 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-50"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-40</code></p><img class="opct-40 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-40"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-30</code></p><img class="opct-30 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-30"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-20</code></p><img class="opct-20 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-20"></div>
+            <div class="col-sm-4"><p class="mrgn-bttm-sm"><code>opct-10</code></p><img class="opct-10 img-responsive mrgn-bttm-md" src="https://dummyimage.com/140x140" alt="Demo of opct-10"></div>
           </div>
         </div>
       </div>
